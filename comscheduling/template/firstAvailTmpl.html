@@ -1,0 +1,22 @@
+<h2>Next Available Appointment</h2>
+<div class="bannerbox">
+	<table>
+		<tr>
+			<th class="provider">PROVIDER</th>
+			<th class="date">DATE</th>
+			<th class="time">TIME</th>
+		</tr>
+		<tr>
+			<td>
+				<p><%= billedname %></p>
+				<p><%= department %></p>
+			</td>
+			<td>
+				<%= daylabel %>
+				<%= apptdate %>
+			</td>
+			<td><%= appttime %></td>
+		</tr>
+	</table>
+	<button type="button" class="p-schedule-now btn default schedulenow" data-slot="<%= cid %>">Schedule Now</button>
+</div>

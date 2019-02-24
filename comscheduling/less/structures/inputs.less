@@ -1,0 +1,214 @@
+@import "../primitives/colorpalette.less";
+@import "../primitives/font.less";
+@import "../constants/colors.less";
+@import "../canonicals/effects.less";
+
+input[type="text"], input[type="password"] {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	box-shadow: none;
+	border: 1px solid @border-input;
+	border-radius: 2px;
+	font-size: @font-size-medium;
+	height: 40px;
+	padding: 0.2rem;
+
+	&.requirederror {
+		.required-field();
+	}
+}
+
+textarea, select {
+	&.requirederror {
+		.required-field();
+	}
+}
+
+.touchcheck {
+	position: relative;
+	margin: 0 0 20px 0;
+
+	input[type="checkbox"] {
+		position: absolute;
+		left: 20px;
+		top: 10px;
+
+		&:focus + label:before {
+			background-color: @cobalt-white100;
+			box-shadow: 0 0 3px @cobalt-blue70;
+		}
+	}
+
+	label {
+		-webkit-tap-highlight-color: rgba(133,179,214,0.1);
+	}
+	//Checked state; General sibling selector (~) could also work because comcheck1 guaranteed to be parent of both label and checkbox
+	input[type="checkbox"]:checked + label:before {
+		background-color: @cobalt-blue36;
+		background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxODMuNzUiIGhlaWdodD0iMTQyLjUxIiB2aWV3Qm94PSIwIDAgNTQ1IDQyMyIgc2hhcGUtcmVuZGVyaW5nPSJnZW9tZXRyaWNQcmVjaXNpb24iIGltYWdlLXJlbmRlcmluZz0ib3B0aW1pemVRdWFsaXR5IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCI+PHBhdGggZmlsbD0iI2ZlZmVmZSIgZD0iTTAgMjE3IDIwNiA0MjMgNTQ1IDgxIDQ2MiAwIDIwNyAyNTMgODMgMTM1eiIvPjwvc3ZnPg==");
+		background-repeat: no-repeat;
+		background-size: 28px 24px;
+		background-position: center;
+		border: 1px solid @cobalt-blue70;
+	}
+	//Best if the label will be at least 2 lines
+	//otherwise use label.valignmiddle
+	label.valigntop {
+		.checkbox-box-position();
+
+		&:hover {
+			&:before {
+				border: 1px solid @cobalt-blue70;
+			}
+		}
+
+		&:before {
+			.default-background();
+			.checkbox-box();
+		}
+	}
+	//Best if the label is guaranteed to remain on one line.
+	//If not, consider using label.valigntop
+	label.valignmiddle {
+		.checkbox-box-position();
+		margin: 12px 0 0 0;
+
+		&:hover {
+			&:before {
+				border: 1px solid @cobalt-blue70;
+			}
+		}
+
+		&:before {
+			.default-background();
+			.checkbox-box(-12px);
+		}
+	}
+}
+
+.mousecheck, .mouseradio {
+	position: relative;
+	margin: 0 0 0.625rem 0;
+
+	.control {
+		display:inline-block;
+	}
+
+	.label {
+		display:inline-block;
+		margin-top:1px;
+		vertical-align:top;
+		width: ~"calc(100% - 30px)";
+	}
+	
+	/*input[type="radio"] {
+		margin:0;
+	}*/
+}
+
+.touchradio {
+	position: relative;
+
+	input[type="radio"] {
+		position: absolute;
+		left: 10px;
+		top: 20px;
+
+		&:focus + label:before {
+			background-color: @cobalt-white100;
+			box-shadow: 0 0 3px @cobalt-blue70;
+		}
+	}
+
+	label {
+		//Equivalent to @color-blue3
+		//Use to make webkit tap target feedback highlighting weaker
+		-webkit-tap-highlight-color: rgba(133,179,214,0.2);
+	}
+
+	label.valignmiddle {
+		.radio-disc-position();
+
+		&:hover {
+			&:before {
+				border: 1px solid @cobalt-blue70;
+			}
+		}
+
+		&:before {
+			.default-background();
+			.radio-disc(-12px);
+		}
+	}
+
+	label.valigntop {
+		.radio-disc-position();
+
+		&:hover {
+			&:before {
+				border: 1px solid @cobalt-blue70;
+			}
+		}
+
+		&:before {
+			.default-background();
+			.radio-disc(-2px);
+		}
+	}
+	//radio button bullet
+	input[type="radio"]:checked + label:before {
+		background-color: @cobalt-white100;
+		background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDIgMiIgc2hhcGUtcmVuZGVyaW5nPSJnZW9tZXRyaWNQcmVjaXNpb24iIGltYWdlLXJlbmRlcmluZz0ib3B0aW1pemVRdWFsaXR5IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCI+PGNpcmNsZSBjeD0iMSIgY3k9IjEiIHI9IjEiIGZpbGw9IiMwYjY2YWQiLz48L3N2Zz4=");
+		background-repeat: no-repeat;
+		background-size: 16px 16px;
+		background-position: center;
+		color: @cobalt-blue31;
+	}
+}
+
+.required-field() {
+	background: @background-input-error;
+	border: 1px solid @cobalt-red40;
+}
+
+.checkbox-box(@top: 0,@dimension: 40px) {
+	border: 1px solid @cobalt-gray78;
+	border-radius: @dimension/16;
+	content: "";
+	display: inline-block;
+	height: @dimension;
+	left: 0;
+	vertical-align: top;
+	width: @dimension;
+	position: absolute;
+	top: @top;
+}
+
+.checkbox-box-position(@topmargin: 0, @dimension: 40px) {
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+	margin: @topmargin 0 5px 0;
+	padding: 0 0 0 @dimension+16px;
+}
+
+.radio-disc(@top: 0, @dimension: 40px) {
+	border-radius: @dimension/2;
+	border: 1px solid @cobalt-gray78;
+	content: "";
+	display: inline-block;
+	height: @dimension;
+	left: 0;
+	position: absolute;
+	top: @top;
+	width: @dimension;
+}
+
+.radio-disc-position(@dimension: 40px) {
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+	padding: 0 0 0 @dimension+16px;
+	margin: 16px 0;
+}

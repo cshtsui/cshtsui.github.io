@@ -1,0 +1,16 @@
+<div class="dialogpositioner">
+	<div class="dialog <%= dialogSize %>">
+		<% if (dialogShowTitle) { %>
+		<header class="<%= dialogType %>">
+			<h1>
+				<%= dialogTitle %>
+			</h1>
+		</header>
+		<% } %>
+		<div class="dialogbody <%= dialogScrollable %>">
+			<%= dialogContent %>
+		</div>
+		<footer>
+		</footer>
+	</div>
+</div>
