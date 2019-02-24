@@ -1,0 +1,724 @@
+﻿.hscroll-container {
+  width: 100%;
+  overflow: hidden;
+  height: 2.4rem;
+  min-width: 320px;
+}
+.hscroll-container .leftarrow {
+  cursor: default;
+  height: 33px;
+  width: 20px;
+  float: left;
+}
+.hscroll-container .leftarrow p {
+  margin: 0;
+  text-align: center;
+}
+.hscroll-container .leftarrow:hover {
+  color: #fff;
+  background-color: #e0dfe1;
+}
+.hscroll-container .leftarrow .chevron {
+  color: #01733f;
+  display: inline-block;
+  font-size: 1rem;
+  position: relative;
+  text-align: center;
+  top: 0.5rem;
+  width: 100%;
+}
+.hscroll-container .leftarrow .chevron:hover {
+  color: #00542e;
+}
+.hscroll-container .rightarrow {
+  cursor: default;
+  height: 33px;
+  width: 20px;
+  float: right;
+}
+.hscroll-container .rightarrow p {
+  margin: 0;
+  text-align: center;
+}
+.hscroll-container .rightarrow:hover {
+  color: #fff;
+  background-color: #e0dfe1;
+}
+.hscroll-container .rightarrow .chevron {
+  color: #01733f;
+  display: inline-block;
+  font-size: 1rem;
+  position: relative;
+  text-align: center;
+  top: 0.5rem;
+  width: 100%;
+}
+.hscroll-container .rightarrow .chevron:hover {
+  color: #00542e;
+}
+.hscroll-container .hlist {
+  min-width: 4096px;
+  float: left;
+  height: 2.4rem;
+}
+.hscroll-container .scrollable-item {
+  float: left;
+  margin: 0 0.2rem;
+  position: relative;
+  max-height: 24px;
+  max-width: 100px;
+}
+.hscroll-container .scrollable-item button {
+  font-family: blessed-facit-light, Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  background-color: #fff;
+  border: 1px solid #25a66b;
+  border-radius: 0.2rem;
+  color: #01733f;
+  font-size: small;
+  line-height: 1.1rem;
+  padding: 0.5rem 0.3rem;
+  width: 76px;
+}
+.hscroll-container .scrollable-item button:hover {
+  background-color: #25a66b;
+  color: #fff;
+}
+.hscroll-container .hlist-container {
+  overflow: hidden;
+  width: calc(100% - 40px);
+  float: left;
+}
+.parselectionarea {
+  height: 350px;
+  left: 0;
+  position: relative;
+  right: 0;
+  top: 0;
+}
+.parselectionarea .parbackgroundbox {
+  background-color: #0a346e;
+  display: none;
+  height: 100%;
+  opacity: 0.95;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  -moz-animation-duration: 0.33s;
+  -webkit-animation-duration: 0.33s;
+  -o-animation-duration: 0.33s;
+  animation-duration: 0.33s;
+}
+.parselectionarea .largeparselector {
+  display: none;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+  -moz-animation-duration: 0.33s;
+  -webkit-animation-duration: 0.33s;
+  -o-animation-duration: 0.33s;
+  animation-duration: 0.33s;
+}
+.parselectionarea .largeparselector .parerror {
+  font-family: blessed-facit-light, Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  display: none;
+  background-color: #cc001d;
+  color: #fff;
+  font-size: 0.9rem;
+  margin: 0.5rem 0 0 0;
+  padding: 0 0.25rem 0.15rem 0.25rem;
+  position: absolute;
+  top: 22px;
+}
+.parselectionarea .largeparselector .parfooter {
+  bottom: 75px;
+  display: block;
+  margin: 0;
+  padding: 0.5rem 0 0 0;
+  position: absolute;
+  width: 100%;
+}
+.parselectionarea .largeparselector .parpagescontainer {
+  height: 100%;
+  margin: 1.75rem 2rem 2rem 3rem;
+  position: relative;
+}
+.parselectionarea .largeparselector .parpagescontainer .parpager {
+  position: absolute;
+  right: 0;
+  top: -5px;
+}
+.parselectionarea .largeparselector .parpagescontainer .parpager > button {
+  color: #59575d;
+  font-size: 3rem;
+  margin: 0;
+  padding: 0.5rem 1rem 1rem 1rem;
+}
+.parselectionarea .largeparselector .parpagescontainer .parpager > button:first-child {
+  margin: 0 1rem 0 0;
+}
+.parselectionarea .largeparselector .parpagescontainer .parpage {
+  overflow: hidden;
+  width: 100%;
+}
+.parselectionarea .largeparselector .parpagescontainer .parpage .parcolumns {
+  left: 0;
+  position: relative;
+  top: 0.6rem;
+  -moz-transition: left ease 0.4s;
+  -o-transition: left ease 0.4s;
+  -webkit-transition: left ease 0.4s;
+  transition: left ease 0.4s;
+  width: 6400px;
+}
+.parselectionarea .largeparselector h2 {
+  color: #fff;
+  margin: 0 0 1.4rem 0;
+}
+.parselectionarea .largeparselector p {
+  color: #fff;
+}
+.parselectionarea .largeparselector p.dontsee {
+  display: inline-block;
+  position: relative;
+  top: 5px;
+  z-index: 1;
+}
+.parselectionarea .largeparselector .parcolumn {
+  display: inline-block;
+  margin: 0 1.2rem 0 0;
+  padding: 0.5rem 0;
+  vertical-align: top;
+  width: 280px;
+}
+.parselectionarea .largeparselector .parcolumn label {
+  font-family: blessed-facit-light, Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  color: #fff;
+  font-size: 1rem;
+}
+.parselectionarea .schnewcontrol {
+  color: #202025;
+  left: 90px;
+  position: relative;
+  top: -5px;
+  width: 80%;
+  z-index: 2;
+}
+.parselectionarea .schnewcontrol h1 {
+  font-family: blessed-facit-light, Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 1.3rem;
+  margin: 0 0 0.6rem 0;
+}
+.parselectionarea .transparentbox {
+  background-color: #fff;
+  border-radius: 6px;
+  height: 132px;
+  margin: 0 auto;
+  opacity: 0.93;
+  position: relative;
+  top: 100px;
+  width: 88%;
+}
+.parselectionarea .unavailable {
+  background-color: #fe9800;
+  border-radius: 6px;
+  height: 64px;
+  margin: 0 auto;
+  opacity: 1;
+  padding: 1.5rem 1.5rem 1.8rem 1.5rem;
+  position: relative;
+  top: 100px;
+  width: 70%;
+}
+.parselectionarea .unavailable h1 {
+  font-family: blessed-facit-regular, Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  color: #fff;
+  font-size: 1.3rem;
+  padding: 0 0 0 4rem;
+  width: 100%;
+}
+.parmenu {
+  width: 100%;
+}
+.parmenu .clicktrap {
+  display: none;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+.parmenu .control {
+  position: relative;
+  width: 100%;
+}
+.parmenu .control .parerror {
+  font-family: blessed-facit-light, Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  color: #cc001d;
+  display: none;
+  font-size: 0.9rem;
+  margin: 0.25rem 0 0 0.25rem;
+}
+.parmenu .control .schedulebtn {
+  border-radius: 0;
+  float: right;
+  height: 42px;
+  width: 29%;
+}
+.parmenu .control .selectcontrol {
+  background-color: #fff;
+  border-bottom: 1px solid #c5c4c8;
+  border-left: 1px solid #c5c4c8;
+  border-top: 1px solid #c5c4c8;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: inline-block;
+  height: 42px;
+  min-width: 256px;
+  width: 71%;
+  position: relative;
+  vertical-align: top;
+}
+.parmenu .control .selectcontrol .selecttext {
+  font-family: blessed-facit-light, Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #202025;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1rem;
+  margin: 0.4rem 0 0 0;
+  padding: 0.3rem 0 0.4rem 0.8rem;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  width: 100%;
+}
+.parmenu .control .selectcontrol:after {
+  color: #8b8a91;
+  content: "\25BC";
+  cursor: pointer;
+  padding: 0.5rem;
+  position: absolute;
+  right: 0;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  top: 0.25rem;
+}
+.parmenu .control .supermenu {
+  box-shadow: 3px 3px 1.5px rgba(139, 138, 145, 0.7);
+  background-color: #fff;
+  border: 1px solid #c5c4c8;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: none;
+  height: 300px;
+  position: absolute;
+  top: 41px;
+  width: 100%;
+  z-index: 5;
+}
+.parmenu .control .supermenu .descriptionbox {
+  overflow-y: auto;
+  margin: 0 0 0 200px;
+  height: 300px;
+}
+.parmenu .control .supermenu .pardescription {
+  padding: 1rem 1.5rem 0 0.5rem;
+}
+.parmenu .control .supermenu .pardescription.visible {
+  display: inline-block;
+}
+.parmenu .control .supermenu .parchoices {
+  border-right: 1px solid #c5c4c8;
+  float: left;
+  height: 100%;
+  max-width: 180px;
+}
+.parmenu .control .supermenu .parchoices .rightchevron {
+  float: right;
+  font-size: 1.3rem;
+  line-height: 0.65rem;
+  margin: 0.2rem 0 0 0;
+}
+.parmenu .control .supermenu aside {
+  display: none;
+}
+.parmenu .control .supermenu aside.recommendeds {
+  display: block;
+}
+.parmenu .control ul li {
+  font-family: blessed-facit-light, Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  border-bottom: 1px solid transparent;
+  border-right: 2px solid #fff;
+  border-top: 1px solid transparent;
+  cursor: pointer;
+  font-size: 1rem;
+  list-style: none;
+  padding: 0.5rem 0.5rem 0.5rem 1.8rem;
+  position: relative;
+}
+.parmenu .control ul li:hover {
+  border-bottom: 1px solid #c5c4c8;
+  border-right: 2px solid #fff;
+  border-top: 1px solid #c5c4c8;
+}
+.parmenu .control ul li:first-child:hover {
+  border-top: 1px solid #fff;
+}
+.parmenu .control ul li .recbadge {
+  font-family: blessed-facit-regular, Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  background-color: #cc001d;
+  border-radius: 50%;
+  color: #fff;
+  display: inline-block;
+  font-size: 0.8rem;
+  height: 16px;
+  left: 8px;
+  padding: 1px 0 0 1px;
+  position: absolute;
+  text-align: center;
+  top: 6px;
+  width: 16px;
+}
+.schcalendar {
+  border-bottom: 1px dotted #c5c4c8;
+  margin: 0 0 1.5rem 0;
+}
+.schcalendar .calendarheading {
+  display: block;
+  margin: 0.8rem auto 0.8rem auto;
+  text-align: center;
+  width: 100%;
+}
+.schcalendar .calendarheading .prevmonthbtn {
+  color: #a1b4c2;
+  font-size: 1.3rem;
+  position: relative;
+  padding: 0;
+  top: -4px;
+  float: left;
+  left: 16px;
+}
+.schcalendar .calendarheading .prevmonthbtn:hover {
+  color: #0b66ad;
+}
+.schcalendar .calendarheading .nextmonthbtn {
+  color: #a1b4c2;
+  font-size: 1.3rem;
+  position: relative;
+  padding: 0;
+  top: -4px;
+  float: right;
+  right: 16px;
+}
+.schcalendar .calendarheading .nextmonthbtn:hover {
+  color: #0b66ad;
+}
+.schcalendar .calendarheading a {
+  font-family: blessed-facit-semibold, Arial, Helvetica, sans-serif;
+  padding: 0 1rem;
+  text-decoration: none;
+}
+.schcalendar .calendarheading .monthyeartitle {
+  font-size: 1rem;
+}
+table.scalendar:last-child {
+  margin: 0 auto 1rem auto;
+}
+table.scalendar th {
+  font-family: blessed-facit-regular, Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  background-color: #4d77b0;
+  border-right: 1px solid #fff;
+  color: #fff;
+  height: 1.8rem;
+  text-align: center;
+  vertical-align: middle;
+}
+table.scalendar th:last-child {
+  border-right: none;
+}
+table.scalendar td {
+  font-family: blessed-facit-light, Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  border-right: 1px solid #e0dfe1;
+  font-size: 0.9rem;
+  height: 34px;
+  width: 32px;
+  text-align: center;
+  vertical-align: middle;
+}
+table.scalendar td.pastday {
+  color: #c5c4c8;
+}
+table.scalendar td a {
+  font-size: 0.9rem;
+  padding: 2px 4px;
+  text-decoration: none;
+  margin: 0 2px;
+}
+table.scalendar td a.selectedday {
+  font-family: blessed-facit-regular, Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  background-color: #0a346e;
+  border-radius: 16px;
+  color: #fff;
+}
+table.scalendar td a.today {
+  border: 2px solid #8b8a91;
+  border-radius: 16px;
+  display: block;
+  height: 20px;
+}
+table.scalendar td a.availappointment {
+  background-color: #25a66b;
+  border-radius: 16px;
+  color: #fff;
+}
+table.scalendar td a:hover {
+  background-color: #0a346e;
+  border-radius: 16px;
+  color: #fff;
+  text-decoration: none;
+}
+table.scalendar td:last-child {
+  border-right: none;
+}
+.tabs {
+  background-color: #fff;
+  box-shadow: 0 25px 8px -23px #c5c4c8;
+  border: 1px solid #c5c4c8;
+}
+.tabs .tabcontainer {
+  font-size: 0;
+  width: 100%;
+}
+.tabs .tab-panel {
+  display: none;
+  margin: 2rem 2.5rem;
+}
+.tabs .tab-panel.active {
+  display: block;
+}
+.tabs .tab {
+  background-color: #f0eff1;
+  border: none;
+  border-bottom: 1px solid #c5c4c8;
+  display: inline-block;
+  padding: 1rem 0;
+  width: calc(50% - 1px);
+}
+.tabs .tab.active {
+  border-bottom: none;
+  border-left: 1px solid #8b8a91;
+  background-color: #fff;
+  box-shadow: -3px 0 3px -3px #c5c4c8;
+}
+.tabs .tab:first-child.active {
+  border-left: none;
+  border-right: 1px solid #8b8a91;
+  box-shadow: 3px 0 3px -3px #c5c4c8;
+}
+.tabs .tab:hover {
+  background: -moz-linear-gradient(top, #ffffff 60%, #f2f2f2 100%, #f2f2f2 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(60%, #ffffff), color-stop(100%, #f2f2f2), color-stop(100%, #f2f2f2));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #ffffff 60%, #f2f2f2 100%, #f2f2f2 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: linear-gradient(to bottom, #ffffff 60%, #f2f2f2 100%, #f2f2f2 100%);
+  /* W3C */
+}
+.tabs .tab label {
+  font-family: blessed-facit-light, Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  color: #59575d;
+  font-size: 1.3rem;
+  padding: 0 0 0 2.3rem;
+  position: relative;
+}
+.tabs .tab label.active {
+  color: #4d77b0;
+}
+.tabs .tab label.badged {
+  padding: 0 0 0 4.3rem;
+}
+.tabs .tab label .recbadge {
+  font-family: blessed-facit-regular, Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  background-color: #cc001d;
+  border-radius: 50%;
+  color: #fff;
+  display: inline-block;
+  font-size: 0.9rem;
+  height: 20px;
+  left: 2.5rem;
+  padding: 1px 0 0 0;
+  position: absolute;
+  top: 0.25rem;
+  text-align: center;
+  width: 22px;
+}
+.morelessline {
+  border-bottom: 1px solid #c5c4c8;
+  bottom: 5px;
+  height: 44px;
+  margin: 0;
+  position: absolute;
+  width: 100%;
+}
+.morelessline .opacitymask {
+  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.02) 1%, #ffffff 50%, #ffffff 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(1%, rgba(255, 255, 255, 0.02)), color-stop(50%, #ffffff), color-stop(100%, #ffffff));
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.02) 1%, #ffffff 50%, #ffffff 100%);
+  background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.02) 1%, #ffffff 50%, #ffffff 100%);
+  background: -ms-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.02) 1%, #ffffff 50%, #ffffff 100%);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.02) 1%, #ffffff 50%, #ffffff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#ffffff', GradientType=0);
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+.morelessline .morelessdivider {
+  background-color: #fff;
+  bottom: -6px;
+  display: block;
+  height: 5px;
+  position: absolute;
+  width: 100%;
+}
+.morelessline .morelessdivider:hover .morelesslabel {
+  color: #0a346e;
+}
+.morelessline .morelessdivider .morelesslabel {
+  font-family: blessed-facit-light, Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  background-color: #fff;
+  display: block;
+  font-size: 0.7rem;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  top: -1.3rem;
+  width: 100px;
+}
+.morelessline .morelessdivider .more {
+  display: block;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #c5c4c8;
+  bottom: 0;
+  height: 0;
+  left: 49%;
+  position: absolute;
+  width: 0;
+}
+.morelessline .morelessdivider .less {
+  display: block;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #c5c4c8;
+  bottom: 5px;
+  height: 0;
+  left: 49%;
+  position: absolute;
+  width: 0;
+}
+.apptsummarytable .rowcontainer {
+  margin: 3rem 0 0 0;
+  width: 100%;
+}
+.apptsummarytable .rowcontainer:first-child {
+  margin: 1rem 0 0 0;
+}
+.apptsummarytable .rowcontainer div {
+  display: inline-block;
+}
+.apptsummarytable .rowcontainer div h2 {
+  font-family: blessed-facit-semibold, Arial, Helvetica, sans-serif;
+  border: none;
+  font-size: 1.25rem;
+  margin: 0;
+  padding: 0;
+}
+.apptsummarytable .rowcontainer div h2.datetimeheading {
+  font-family: blessed-facit-light, Arial, Helvetica, sans-serif;
+  font-weight: normal;
+}
+.apptsummarytable .rowcontainer div p {
+  margin: 0;
+}
+.apptsummarytable .rowcontainer div p.upcomingsecondline {
+  margin: 0.25rem 0 0 0;
+}
+.apptsummarytable .apptpar {
+  max-width: 30%;
+  vertical-align: top;
+  width: 30%;
+}
+.apptsummarytable .appttimeloc {
+  min-width: 360px;
+  vertical-align: top;
+}
+.apptsummarytable .apptactions {
+  max-width: 180px;
+  vertical-align: top;
+  width: 22%;
+}
+.apptsummarytable .apptactions .otherupcomingactions {
+  display: inline-block;
+  margin: 0.75rem 0 0 0;
+}
+.apptsummarytable .upcominglink {
+  font-size: 0.9rem;
+  margin: 0 1rem 0.4rem 0;
+  padding: 0 0 0 1.2rem;
+}
+.apptsummarytable .apptinstrandforms {
+  height: 100px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.apptsummarytable .apptinstrandforms .instrheading {
+  color: #2e5d9e;
+  cursor: pointer;
+}
+.apptsummarytable .apptinstrandforms .instrheading:hover {
+  color: #0a346e;
+}
+.apptsummarytable .apptinstrandforms h3 {
+  font-family: blessed-facit-semibold, Arial, Helvetica, sans-serif;
+  border: none;
+  font-size: 0.9rem;
+  margin: 0.8rem 0 0 0;
+  padding: 0;
+}
+.apptsummarytable .apptinstrandforms p {
+  font-size: 0.9rem;
+}
+.apptsummarytable .apptinstrandforms li {
+  font-size: 0.9rem;
+  list-style: none;
+  padding: 0;
+}

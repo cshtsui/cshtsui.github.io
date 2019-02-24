@@ -1,0 +1,36 @@
+<div class="requestappointment">
+	<h2>Request an Appointment</h2>
+	<p>
+		<%= providerName %> is not available for online scheduling, but you can send an appointment request here.
+	</p>
+	<div class="menublock">
+		<p>Preferred time</p>
+		<select id="bestTime">
+			<option value="No preference">-No preference-</option>
+			<option value="Before 9AM">Before 9AM</option>
+			<option value="Before 12PM">Before 12PM</option>
+			<option value="12PM">12PM</option>
+			<option value="After 1PM">After 1PM</option>
+			<option value="After 5PM">After 5PM</option>
+		</select>
+	</div>
+	<div class="menublock">
+		<p>Preferred location</p>
+		<select id="bestLocation">
+			<option value="No preference">-No preference-</option>
+			<option value="Somerset Main Office">Somerset Main Office</option>
+			<option value="Blackwood Clinic">Blackwood Clinic</option>
+			<option value="Waldwick-Douglas Medical Center">Waldwick-Douglas Medical Center</option>			
+			<option value="Dumont Medical">Dumont Medical</option>
+			<option value="NYC Clinic">NYC Clinic</option>
+			<option value="Riverside Medical">Riverside Medical</option>
+			<option value="Park Ridge Medical">Park Ridge Medical</option>
+			<option value="Wayne Clinic">Wayne Clinic</option>
+		</select>
+	</div>
+	<div class="buttonblock">
+		<button type="button" class="p-request-appointment btn requestbtn">Request Appointment</button>
+	</div>
+</div>
+
+<h2 class="providersavailable">Providers Available for Online Scheduling</h2>

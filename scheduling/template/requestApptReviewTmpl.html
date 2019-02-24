@@ -1,0 +1,65 @@
+<div class="wrapper_review">
+	<header class="trail">
+		<h3>Review and Request Appointment</h3>
+		<span class="emptycircle"></span>
+		<span class="filledcircle"></span>
+		<span class="emptycircle"></span>
+	</header>
+
+	<h1>Appointment Preferences</h1>
+	<div class="review-appt-banner">
+		<div class="review-bannerbox">
+			<table>
+				<tbody>
+					<tr>
+						<th class="provider">APPOINTMENT</th>
+						<th class="location">LOCATION</th>
+						<th class="date">DATE</th>
+						<th class="time">TIME</th>
+					</tr>
+					<tr>
+						<td>
+							<p class="appt-type-review"><%= parLabel %></p>
+							<p><%= providerName %></p>
+						</td>
+						<td><p><%= bestLocation %></p></td>
+						<td>
+							<p>
+								<%= dayLabel %>
+								<br />
+								<%= selectedDate %>
+							</p>
+						</td>
+						<td><p><%= bestTime %></p></td>
+					</tr>
+				</tbody>
+			</table>		
+		</div>
+	</div>
+	
+	<div class="additional-details">
+		<h2 class="add-details-header">Additional Details</h2>
+		<div class="appt-details">
+			<p>Enter any additional details about your visit. Your message will not be read until the time of your visit. </p>
+			<textarea rows="10" cols="55"></textarea>
+			<p class="charcount">500 of 500 characters</p>
+		</div>
+		<div class="sms-opt-in">
+			<h2>Stay Connected with Text Alerts</h2>
+			<div class="sms-checkbox">
+				<input type="checkbox" name="#" value="#"></input>
+			</div>
+			<div class="sms-content">
+				<p>I want to receive alerts about appointments, test results, and more on my mobile phone.</p>
+				<p class="terms-use">I have read and agree to the <a class="sms-link" href="#" target="_blank">text message terms of use</a>.</p>
+			</div>	
+		</div>
+		<div class="emergency-message">
+			<p><span class="bold-copy">Note:</span> If you have a question which requires immediate attention, please call our office. If you are experiencing a medical emergency,<span class="emergency-red"> dial 911</span>.</p>
+		</div>
+	</div>
+	<div class="confirmBtns">
+		<button id="backBtn" type="button">Back</button>
+		<button id="confirmBtn" type="button">Request Appointment</button>
+	</div>
+</div><!--end-->

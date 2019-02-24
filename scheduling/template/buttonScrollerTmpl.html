@@ -1,0 +1,22 @@
+<div class="slotblock">
+	<div class="hscroll-container">
+		<div class="p-scroll-left leftarrow">
+			<span class="chevron">&#9664;</span>
+		</div>
+		<div class="p-scroll-right rightarrow">
+			<span class="chevron">&#9654;</span>
+		</div>
+		<div class="hlist-container">
+			<div class="hlist">
+				<%
+				for (var i=0; i<slots.length; i++) { %>
+					<span class="scrollable-item">
+						<button type="button" class="p-timeslot" data-slot="<%= slots[i].cid %>">
+							<%= slots[i].appttime.toUpperCase() %>
+						</button>
+					</span>
+					<% } %>
+			</div>
+		</div>
+	</div>
+</div>

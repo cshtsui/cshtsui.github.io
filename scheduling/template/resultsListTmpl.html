@@ -1,0 +1,29 @@
+<div class="resultlistcontainer">
+	<div class="daycontrol">
+		<button type="button" class="btn default dateyesterday p-prevDay">&#9664;</button>
+		<div class="datedisplay">
+			<span class="daylabel"><%= fullDateLabel %></span>
+		</div>
+		<button type="button" class="btn default datetomorrow p-nextDay">&#9654;</button>
+	</div>
+	<% if (scheduleType=="reschedule") { %>
+	<p class="reschcurrentappt">Current appointment: <%= sc.Calendar.getFullDateLabel(selectedDate) %> at <%= scheduledTime %>.</p>
+	<% } %>
+	<!-- Appointment slot scrollers grouped by primary group go here -->
+</div>
+<footer class="resultlistfooter">
+	<div class="pagebuttoncontainer">
+		<% if (scheduleType=="reschedule") { %>
+		<button type="button" class="p-change-par btn default footerbtn">Back to Appointments</button>	
+		<% } else { %>
+		<button type="button" class="p-change-par btn default footerbtn">Cancel</button>	
+		<% } %>
+		<div class="hgroup right">
+			<% for (var i=0; i<numPages; i++) { %>
+				<button type="button" 
+						  class="p-page btn pagebutton <%= (currentPage==(i+1)) ? 'primary' : 'default' %>" 
+						  value="<%= (i+1) %>"><%= (i+1) %></button>
+			<% } %>
+		</div>
+	</div>
+</footer>

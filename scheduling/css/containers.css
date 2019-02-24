@@ -1,0 +1,9 @@
+﻿.hgroup > .btn {
+  margin-right: 10px;
+}
+.hgroup > .btn:last-child {
+  margin-right: 0;
+}
+.hgroup.right {
+  float: right;
+}

@@ -1,0 +1,207 @@
+﻿input[type="text"],
+input[type="password"] {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  box-shadow: none;
+  border: 1px solid #8b8a91;
+  border-radius: 2px;
+  font-size: 1rem;
+  height: 40px;
+  padding: 0.2rem;
+}
+input[type="text"].requirederror,
+input[type="password"].requirederror {
+  background: #fee0e0;
+  border: 1px solid #cc001d;
+}
+textarea.requirederror,
+select.requirederror {
+  background: #fee0e0;
+  border: 1px solid #cc001d;
+}
+.touchcheck {
+  position: relative;
+  margin: 0 0 20px 0;
+}
+.touchcheck input[type="checkbox"] {
+  position: absolute;
+  left: 20px;
+  top: 10px;
+}
+.touchcheck input[type="checkbox"]:focus + label:before {
+  background-color: #ffffff;
+  box-shadow: 0 0 3px #a1b4c2;
+}
+.touchcheck label {
+  -webkit-tap-highlight-color: rgba(133, 179, 214, 0.1);
+}
+.touchcheck input[type="checkbox"]:checked + label:before {
+  background-color: #0b66ad;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxODMuNzUiIGhlaWdodD0iMTQyLjUxIiB2aWV3Qm94PSIwIDAgNTQ1IDQyMyIgc2hhcGUtcmVuZGVyaW5nPSJnZW9tZXRyaWNQcmVjaXNpb24iIGltYWdlLXJlbmRlcmluZz0ib3B0aW1pemVRdWFsaXR5IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCI+PHBhdGggZmlsbD0iI2ZlZmVmZSIgZD0iTTAgMjE3IDIwNiA0MjMgNTQ1IDgxIDQ2MiAwIDIwNyAyNTMgODMgMTM1eiIvPjwvc3ZnPg==");
+  background-repeat: no-repeat;
+  background-size: 28px 24px;
+  background-position: center;
+  border: 1px solid #a1b4c2;
+}
+.touchcheck label.valigntop {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  margin: 0 0 5px 0;
+  padding: 0 0 0 56px;
+}
+.touchcheck label.valigntop:hover:before {
+  border: 1px solid #a1b4c2;
+}
+.touchcheck label.valigntop:before {
+  background: -moz-linear-gradient(top, #ffffff 60%, #f2f2f2 100%, #f2f2f2 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(60%, #ffffff), color-stop(100%, #f2f2f2), color-stop(100%, #f2f2f2));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #ffffff 60%, #f2f2f2 100%, #f2f2f2 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: linear-gradient(to bottom, #ffffff 60%, #f2f2f2 100%, #f2f2f2 100%);
+  /* W3C */
+  border: 1px solid #c5c4c8;
+  border-radius: 2.5px;
+  content: "";
+  display: inline-block;
+  height: 40px;
+  left: 0;
+  vertical-align: top;
+  width: 40px;
+  position: absolute;
+  top: 0;
+}
+.touchcheck label.valignmiddle {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  margin: 0 0 5px 0;
+  padding: 0 0 0 56px;
+  margin: 12px 0 0 0;
+}
+.touchcheck label.valignmiddle:hover:before {
+  border: 1px solid #a1b4c2;
+}
+.touchcheck label.valignmiddle:before {
+  background: -moz-linear-gradient(top, #ffffff 60%, #f2f2f2 100%, #f2f2f2 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(60%, #ffffff), color-stop(100%, #f2f2f2), color-stop(100%, #f2f2f2));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #ffffff 60%, #f2f2f2 100%, #f2f2f2 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: linear-gradient(to bottom, #ffffff 60%, #f2f2f2 100%, #f2f2f2 100%);
+  /* W3C */
+  border: 1px solid #c5c4c8;
+  border-radius: 2.5px;
+  content: "";
+  display: inline-block;
+  height: 40px;
+  left: 0;
+  vertical-align: top;
+  width: 40px;
+  position: absolute;
+  top: -12px;
+}
+.mousecheck,
+.mouseradio {
+  position: relative;
+  margin: 0 0 0.625rem 0;
+  /*input[type="radio"] {
+		margin:0;
+	}*/
+}
+.mousecheck .control,
+.mouseradio .control {
+  display: inline-block;
+}
+.mousecheck .label,
+.mouseradio .label {
+  display: inline-block;
+  margin-top: 1px;
+  vertical-align: top;
+  width: calc(100% - 30px);
+}
+.touchradio {
+  position: relative;
+}
+.touchradio input[type="radio"] {
+  position: absolute;
+  left: 10px;
+  top: 20px;
+}
+.touchradio input[type="radio"]:focus + label:before {
+  background-color: #ffffff;
+  box-shadow: 0 0 3px #a1b4c2;
+}
+.touchradio label {
+  -webkit-tap-highlight-color: rgba(133, 179, 214, 0.2);
+}
+.touchradio label.valignmiddle {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  padding: 0 0 0 56px;
+  margin: 16px 0;
+}
+.touchradio label.valignmiddle:hover:before {
+  border: 1px solid #a1b4c2;
+}
+.touchradio label.valignmiddle:before {
+  background: -moz-linear-gradient(top, #ffffff 60%, #f2f2f2 100%, #f2f2f2 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(60%, #ffffff), color-stop(100%, #f2f2f2), color-stop(100%, #f2f2f2));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #ffffff 60%, #f2f2f2 100%, #f2f2f2 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: linear-gradient(to bottom, #ffffff 60%, #f2f2f2 100%, #f2f2f2 100%);
+  /* W3C */
+  border-radius: 20px;
+  border: 1px solid #c5c4c8;
+  content: "";
+  display: inline-block;
+  height: 40px;
+  left: 0;
+  position: absolute;
+  top: -12px;
+  width: 40px;
+}
+.touchradio label.valigntop {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  padding: 0 0 0 56px;
+  margin: 16px 0;
+}
+.touchradio label.valigntop:hover:before {
+  border: 1px solid #a1b4c2;
+}
+.touchradio label.valigntop:before {
+  background: -moz-linear-gradient(top, #ffffff 60%, #f2f2f2 100%, #f2f2f2 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(60%, #ffffff), color-stop(100%, #f2f2f2), color-stop(100%, #f2f2f2));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #ffffff 60%, #f2f2f2 100%, #f2f2f2 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: linear-gradient(to bottom, #ffffff 60%, #f2f2f2 100%, #f2f2f2 100%);
+  /* W3C */
+  border-radius: 20px;
+  border: 1px solid #c5c4c8;
+  content: "";
+  display: inline-block;
+  height: 40px;
+  left: 0;
+  position: absolute;
+  top: -2px;
+  width: 40px;
+}
+.touchradio input[type="radio"]:checked + label:before {
+  background-color: #ffffff;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDIgMiIgc2hhcGUtcmVuZGVyaW5nPSJnZW9tZXRyaWNQcmVjaXNpb24iIGltYWdlLXJlbmRlcmluZz0ib3B0aW1pemVRdWFsaXR5IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCI+PGNpcmNsZSBjeD0iMSIgY3k9IjEiIHI9IjEiIGZpbGw9IiMwYjY2YWQiLz48L3N2Zz4=");
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+  background-position: center;
+  color: #14468a;
+}

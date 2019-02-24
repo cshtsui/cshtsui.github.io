@@ -1,0 +1,303 @@
+@import "../../primitives/colorpalette.less";
+@import "../../primitives/font.less";
+@import "../../canonicals/icons.less";
+@import "../../canonicals/typography.less";
+@import "../../constants/colors.less";
+//Elements common across pages but are not components
+//(e.g. headers, footers, navigation, global styles
+//for scheduling headings, paragraphs, links, etc.
+
+//Overrides main class from patient portal. Assumes left navigation removed.
+//Allows element needing to reach the ends of the 960px container to do so.
+#body {
+	background-color: #fafafa;
+}
+
+.main {
+	background: none;
+	border: none;
+	float: none;
+	padding: 0;
+	width: 100%;
+}
+
+.sch {
+	background-color: #fafafa;
+	font-size: 100%;
+	overflow: hidden;
+
+	h1, h2, h3, h4, p, label, button, div, span, main, section, th, td {
+		color: @cobalt-gray14;
+		text-shadow: none;
+	}
+
+	h1 {
+		.font-facit-normal();
+		font-size: @font-size-larger;
+		margin: 0.5rem 0;
+	}
+
+	h2 {
+		.font-facit-normal();
+		font-size: @font-size-large;
+	}
+
+	h3, h4 {
+		.font-facit-normal();
+		font-size: medium;
+	}
+
+	p {
+		.font-facit-light();
+		font-size: @font-size-medium;
+	}
+
+	td {
+		.font-facit-light();
+		font-size: @font-size-medium;
+	}
+
+	nav {
+		&.portalleftnav {
+			background-color: @cobalt-gray88;
+			border-right: 1px solid @cobalt-gray94;
+			float: left;
+			width: 190px;
+		}
+
+		ul {
+			margin: 1rem;
+
+			li {
+				list-style: none;
+			}
+		}
+	}
+
+    sup {
+        vertical-align:super;
+    }
+
+	footer.portalfooter {
+		background-color: @cobalt-gray78;
+		height: 54px;
+		width: 100%;
+	}
+
+	header.portalheader {
+		background-color: @cobalt-gray78;
+		height: 50px;
+		width: 100%;
+	}
+
+	header {
+		&.trail {
+			background-color: @cobalt-blue24;
+			margin: 0;
+			padding: 0.5rem 0 0.6rem 3rem;
+
+            a {
+                font-size:@font-size-large;
+            }
+
+			h2 {
+				color: @cobalt-white100;
+			}
+
+			h3 {
+				border: none;
+				color: @cobalt-white100;
+				display: inline-block;
+				margin: 0 1rem 0 0;
+			}
+
+			.bullets() {
+				border: 1px solid @cobalt-blue70;
+				border-radius: 1rem;
+				display: inline-block;
+				height: 1rem;
+				margin: 0 0.3rem 0 0;
+				position: relative;
+				top: 0.2rem;
+				width: 1rem;
+			}
+
+			.emptycircle {
+				.bullets();
+			}
+
+			.filledcircle {
+				.bullets();
+				background-color: @cobalt-blue70;
+			}
+
+			.homebtn {
+				float: right;
+				margin: 1rem 2.5rem 0 0;
+			}
+		}
+	}
+
+	footer.resultlistfooter {
+		margin: 0.5rem 0 0 2rem;
+		width: 100%;
+
+		.footerbtn {
+			float: left;
+		}
+
+		.pagebuttoncontainer {
+			margin: 0 0 1rem 0;
+			text-align: right;
+			width: 100%;
+		}
+
+		.pagebutton {
+			//background-color: @cobalt-gray55;
+			//border: none;
+			//color: @cobalt-white100;
+			margin: 0 0.2rem;
+			padding: 0.5rem 1rem;
+
+			/*&.active {
+				background-color: @cobalt-green40;
+			}*/
+		}
+	}
+}
+
+.nineone1 {
+	.font-facit-normal();
+	background-color: @cobalt-white100;
+	background-image: url("../content/images/redcross.gif");
+	background-position: left;
+	background-repeat: no-repeat;
+	border-bottom: 1px solid @cobalt-gray78;
+	color: red;
+	font-size: @font-size-medium;
+	margin: 0;
+	padding: 0.5rem 0;
+	text-align: center;
+	width: 100%;
+
+	.redcross {
+		.font-facit-semibold();
+		font-size: @font-size-large;
+		display: inline-block;
+		border: 1px solid @cobalt-gray78;
+		border-radius: 1rem;
+		line-height: 1.25rem;
+		padding-bottom: 0.2rem;
+		width: 1.5rem;
+	}
+}
+
+//Do this as part of cobalt as part of an :after on some requiredlabel class?
+.requiredasterisk {
+	color:@text-error;
+	font-size:small;
+	vertical-align:super;
+}
+
+.formerrormsg {
+	.font-facit-light();
+	color: @text-error;
+	display: none;
+	font-size:@font-size-medium;
+}
+
+.warniconwhite {
+	.exclaim-white(48px);
+	background-position:left;
+	vertical-align: top;
+}
+
+.warnicon {
+	.exclaim-orange(48px);
+	margin: 0 12px 0 0;
+	vertical-align: top;
+}
+
+.checkiconwhite {
+	.check-white(48px);
+	margin: 0 0 16px 0;
+	vertical-align: top;
+}
+
+.icon-calendar {
+	background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAWCAYAAAAvg9c4AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDE0IDc5LjE1Njc5NywgMjAxNC8wOC8yMC0wOTo1MzowMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTQgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NDkwRkY0QjQyMTlBMTFFNUEyNzJDODE0RDBGMEM3NTciIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NDkwRkY0QjUyMTlBMTFFNUEyNzJDODE0RDBGMEM3NTciPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo0OTBGRjRCMjIxOUExMUU1QTI3MkM4MTREMEYwQzc1NyIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo0OTBGRjRCMzIxOUExMUU1QTI3MkM4MTREMEYwQzc1NyIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PsfIpKgAAAEnSURBVHja1FTBDYJAEDyJDRwlXAu0oCVoCfx4Ywn6hRctSAlQApQgJUgJuGfGZF33hEQ+bjIhwx3L3OzApigKo9QO19aE60Dosywb5EKkbK4IDVAp6wnhTrgSbmVZpnNNvUK/6QKkTDVXOBKOXin2vNUWV4uHHXgvlFnGHZrWhNzfILXPF5EVLW/a4GGtzso9+dIrmp+o8SWCisSsU5YrXaJODqtjdqmeynILVAVPx6fvpx0DRyBm6BdwVekY4DawbmgwI4b0Nfw/11aEWgY9Fz53gjdModOa1vA19O37LO9n+B97mrDQOyWLVnwUnudModWajixrr2MO4g/Wz/CPpgOG9UqCYdwiCbVIRss8zf/TUy//FAi/E57vZvjTns00Tasf/yHAAAedYQ1Som/aAAAAAElFTkSuQmCC');
+	background-repeat: no-repeat;
+	float: left;
+	height: 22px;
+	margin: -3px 6px 0 0;
+	width: 30px;
+}
+
+.rescheduleicon {
+	background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDE0IDc5LjE1Njc5NywgMjAxNC8wOC8yMC0wOTo1MzowMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTQgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6Njk2MEVDRkQyMUMyMTFFNTk2MTRGMUJEQ0NEMkQyRTEiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6Njk2MEVDRkUyMUMyMTFFNTk2MTRGMUJEQ0NEMkQyRTEiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo2OTYwRUNGQjIxQzIxMUU1OTYxNEYxQkRDQ0QyRDJFMSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo2OTYwRUNGQzIxQzIxMUU1OTYxNEYxQkRDQ0QyRDJFMSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PvigxtkAAAEJSURBVHjalFPLDcIwDE0RRy5ZgRW6AiyAxAplBBiBjkBGoBILkBUYgazQC/fiJz2jBy1CWLLs2o6ff62GYQhOi90lmtgad4/Tphf7CtJsOQjNwjtdjfeU/hDJzmDT9xpcAdmMSyIejdd8fDAGOnyR8UtWlfAxpxGZ648qjqInSpS/MjC0kPxxlMBTGNN2wvZCBmEYhdkdCdXcWG6gv54aGHrZIYCyxUPqnfhvnwO7M6sj5x/ISXv2sjsGtpxDQ9177rjKUdm9ZSs8hsI1qf7yT5Xdy16L7LXINtzfomxFRh9rDgwSw8nUk/jz1KoiL80vLn7RR3vOHE4jNx7kqpwavbhK/6p/6SnAAEpvfWWmoqyKAAAAAElFTkSuQmCC');
+	background-repeat: no-repeat;
+	background-position: 0 2px;
+}
+
+.cancelicon {
+	background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDE0IDc5LjE1Njc5NywgMjAxNC8wOC8yMC0wOTo1MzowMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTQgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6Njk2MEVDRjkyMUMyMTFFNTk2MTRGMUJEQ0NEMkQyRTEiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6Njk2MEVDRkEyMUMyMTFFNTk2MTRGMUJEQ0NEMkQyRTEiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo2OTYwRUNGNzIxQzIxMUU1OTYxNEYxQkRDQ0QyRDJFMSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo2OTYwRUNGODIxQzIxMUU1OTYxNEYxQkRDQ0QyRDJFMSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pgwj1OEAAADjSURBVHjapJPRDYJADIYP4pu+sAKz4AImxwgwAo6AI+AIEl1AR9AVWIEX37F/0jO/0PNBmzQH7X1t+RuSaZrcr7YKD5v6kstxEu+f3e4wvyh55JzkyhBL0FnBq3iu8T0XUNDrax8KpBroCIS1AjQGCPMSqxhGl3E2KQrcZyBsQPf32Nqh0G/OvmgEcCtjD9wZQtzkKI0JTPADpgKPCNwzuIBVnCICN0HEBWyoalnLBVIFu4iqdWQLnjsPEXGOhohjuM+rwjitpSqtEVaqsM4BDr6uzl484xjlcjjHkn/+qpcAAwDmAoppkZI7uAAAAABJRU5ErkJggg==');
+	background-repeat: no-repeat;
+	background-position: 0 2px;
+}
+
+
+//Original portal patient picker overrides.
+#patient-picker {
+	border: 1px solid @cobalt-gray78;
+	left: 0;
+	padding: 0;
+	top: -12px;
+	//Squeeze to make a bit more room for name
+	#patient-picker-switcher {
+		right: -4px;
+	}
+
+	#patient-picker-menu {
+		top: 1px;
+
+		li.option > span {
+			display: block;
+			overflow: hidden;
+			-ms-text-overflow: ellipsis;
+			-o-text-overflow: ellipsis;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			width: 140px;
+		}
+	}
+	//Replace inline CSS with this class for "You are viewing" label
+	.youareviewing {
+		color: @cobalt-gray35;
+		font-size: @font-size-small;
+		padding: 6px 0 3px 0;
+	}
+	//Fix for long names currently wrapping with awkward spacing
+	div.current {
+		> div.name {
+			color: @cobalt-black0;
+			overflow: hidden;
+			padding: 0 0 0 5px;
+			-ms-text-overflow: ellipsis;
+			-o-text-overflow: ellipsis;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			max-width: 128px;
+		}
+	}
+}
+
+//Top left button navigates to portal home page.
+#homebutton {
+	position: relative;
+	top: -10px;
+
+	.homeicon {
+		.house-light();
+		margin: 0 5px 0 0;
+	}
+}

@@ -1,0 +1,24 @@
+﻿.cobalt a {
+  font-family: blessed-facit-light, Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  color: #2e5d9e;
+  line-height: 1rem;
+}
+.cobalt a:hover {
+  color: #0a346e;
+  text-decoration: underline;
+}
+.cobalt a.dark {
+  color: #a1b4c2;
+}
+.cobalt a.dark:hover {
+  color: #d1880e;
+}
+.cobalt a.btn:hover {
+  color: #202025;
+  text-decoration: none;
+}
+.cobalt a.btn.primary:hover,
+.cobalt a.btn.action:hover {
+  color: #fff;
+}

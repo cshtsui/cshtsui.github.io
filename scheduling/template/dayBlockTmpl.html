@@ -1,0 +1,15 @@
+<div class="dayblock">
+	<div class="head">
+		<% if (showMonth) { %>
+		<p class="month"><%= month %></p>
+		<% } else { %>
+		<p>&nbsp;</p>
+		<% } %>
+		<p class="dayword"><%= daylabel %></p>
+	</div>
+	<div class="daynumber">
+		<a href="#apptList" class="p-day daylink <%= isToday ? 'todaybox' : '' %> <%= (hasAppointment==true) ? 'hasappt' : '' %> <%= active %>" data-date="<%= datestamp %>">
+			<%= daynumber %>
+		</a>
+	</div>
+</div>

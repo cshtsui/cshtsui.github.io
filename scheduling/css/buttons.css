@@ -1,0 +1,104 @@
+﻿.cobalt .btn {
+  font-family: blessed-facit-light, Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  border-radius: 0.2rem;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #202025;
+  font-size: 1rem;
+  line-height: 1rem;
+  margin: 0;
+  padding: 0.6rem 1.4rem;
+  text-decoration: none;
+  text-shadow: none;
+}
+.cobalt .btn:hover {
+  box-shadow: none;
+}
+.cobalt .btn.default {
+  background: -moz-linear-gradient(top, #ffffff 60%, #f2f2f2 100%, #f2f2f2 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(60%, #ffffff), color-stop(100%, #f2f2f2), color-stop(100%, #f2f2f2));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #ffffff 60%, #f2f2f2 100%, #f2f2f2 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: linear-gradient(to bottom, #ffffff 60%, #f2f2f2 100%, #f2f2f2 100%);
+  /* W3C */
+  border: 1px solid #8b8a91;
+}
+.cobalt .btn.default:hover {
+  background: transparent;
+  background-color: #e0dfe1;
+}
+.cobalt .btn.primary {
+  background: -moz-linear-gradient(top, #0b66ad 60%, #14468a 100%, #14468a 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(60%, #0b66ad), color-stop(100%, #14468a), color-stop(100%, #14468a));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #0b66ad 60%, #14468a 100%, #14468a 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: linear-gradient(to bottom, #0b66ad 60%, #14468a 100%, #14468a 100%);
+  /* W3C */
+  border: 1px solid #4d77b0;
+  color: #ffffff;
+}
+.cobalt .btn.primary:hover {
+  background: transparent;
+  background-color: #0a346e;
+}
+.cobalt .btn.action {
+  background: -moz-linear-gradient(top, #46b784 60%, #25a66b 100%, #25a66b 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(60%, #46b784), color-stop(100%, #25a66b), color-stop(100%, #25a66b));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #46b784 60%, #25a66b 100%, #25a66b 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: linear-gradient(to bottom, #46b784 60%, #25a66b 100%, #25a66b 100%);
+  /* W3C */
+  border: 1px solid #46b784;
+  color: #ffffff;
+}
+.cobalt .btn.action:hover {
+  background: transparent;
+  background-color: #25a66b;
+}
+.cobalt .btn.warn {
+  background: -moz-linear-gradient(top, #ffc462 60%, #fe9800 100%, #fe9800 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(60%, #ffc462), color-stop(100%, #fe9800), color-stop(100%, #fe9800));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #ffc462 60%, #fe9800 100%, #fe9800 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: linear-gradient(to bottom, #ffc462 60%, #fe9800 100%, #fe9800 100%);
+  /* W3C */
+  border: 1px solid #fe9800;
+  color: #ffffff;
+}
+.cobalt .btn.warn:hover {
+  background: transparent;
+  background-color: #fe9800;
+  color: #ffffff;
+}
+.cobalt .btn.disabled {
+  background-color: #85b3d6;
+  color: #59575d;
+}
+.cobalt .btn.small {
+  font-size: 0.9rem;
+  padding: 0.35rem 0.6rem;
+}
+.cobalt .btn::-moz-focus-inner {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+.cobalt .hgroup > .btn {
+  margin-right: 10px;
+}
+.cobalt .hgroup > .btn:last-child {
+  margin-right: 0;
+}
+.cobalt .hgroup.right {
+  float: right;
+}
