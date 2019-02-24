@@ -1,0 +1,23 @@
+﻿<script type="text/x-jqote-template" id="summaryItemTpl">
+	<![CDATA[
+	<div class="cartItemBlock">
+	<% for(var i=0; i<this.path.length; i++) { %>
+		<% if (i>0) { %>
+		<p style="display:inline;color:#999">in </p>
+		<% } %>
+		<h4><%= this.path[i].category %></h4>
+		<ul class="pathList">
+			<% 
+			var numItems = this.path[i].length;
+			var max = (numItems < this.maxLabelsPerCategory) ? numItems : this.maxLabelsPerCategory;
+			for (var j=0; j<max; j++) {  %>
+				<li class="pathItem"><%= this.path[i].at(j).get("name") %></li>	
+			<% } %>
+			<% if (numItems > this.maxLabelsPerCategory) { %>
+				<li class="pathItem">(<%= numItems-this.maxLabelsPerCategory %> more)
+			<% } %>
+		</ul>
+	<% } %>
+	</div>
+	]]>
+</script>

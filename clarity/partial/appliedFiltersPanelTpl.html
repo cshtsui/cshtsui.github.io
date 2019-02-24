@@ -1,0 +1,38 @@
+﻿<script type="text/x-jqote-template" id="appliedFiltersPanelTpl">
+	<![CDATA[
+	<div id="appliedFiltersSection">
+		<h3>Applied Filters</h3>
+		<% if (this.collection.length==0) { %>
+			<p>None</p>
+		<% } %>
+		<% for (var i=0; i<this.collection.length; i++) { %>
+		<div class="appliedFilterItem">
+			<p><%= this.collection[i].get("label") %>: <%= this.collection[i].get("filterCriteria") %></p>
+			<span class="editDelControls">
+				<span class="editControl">
+					<a>Edit</a>
+				</span>
+				<span class="delControl">
+					<a>X</a>
+				</span>
+			</span>
+		</div>
+		<% } %>
+	</div>
+	<div style="clear:both;display:block;height:5%;"></div>
+	<div id="unappliedFiltersSection">
+		<h3>Unselected Filter Categories</h3>
+		<% for (var i=0; i<this.unappliedCol.length; i++) { %>
+		<div class="unappliedFilterItem">
+			<p><%= this.unappliedCol[i].get("label") %></p>
+		</div>
+		<% } %>
+	</div>
+	
+	<div id="applyCancelButtons">
+		<span id="applyButton" class="applyBtn" style="margin-right: 10px;" data-action="cancelAppliedFilters">Apply</span>
+        <span id="cancelButton" class="cancelBtn" data-action="cancelAppliedFilters">Cancel</span>
+	</div>
+
+	]]>
+</script>

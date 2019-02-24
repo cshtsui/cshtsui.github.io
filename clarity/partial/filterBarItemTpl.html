@@ -1,0 +1,12 @@
+﻿<script type="text/x-jqote-template" id="filterBarItemTpl">
+	<![CDATA[
+	<!-- data-parent is a maker attribute to assist jQuery parentsUntil() 
+		 in the removal of this filterBarItem from the filterBar.  -->
+	<div id="filterButton_<%= this.id %>" class="filterBarButton" data-parent="filterBarItemContainer">
+		<%= this.label %>
+		<span class="filterBarItemCloseX">
+			<a data-action="removeFilterBarButton" id="barItemClose_<%= this.id %>">x</a>
+		</span>
+	</div>
+	]]>
+</script>

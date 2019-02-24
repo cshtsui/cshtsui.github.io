@@ -1,0 +1,681 @@
+﻿@clarity-buttonBorder: #b4b4b4;
+@clarity-charcoal: #313037;
+@clarity-green: #6b8137;
+@clarity-h3: #b4b4b4;
+@clarity-selected: #867796;
+@clarity-hover: #c2b5c7;
+@clarity-purple: #524c7a;
+@clarity-lightGrey: #f2f3f3;
+@filterbar-popup-grey: #f2f3f3;
+@filterbar-text-green: #0c555d;
+@organization-treeGroupHeader: #9b9aa0;
+@import "typography.less";
+
+div {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    -webkit-box-shadow: 1px 2px 1px #ddd;
+    box-shadow: 1px 2px 1px #ddd;
+    height: 80px;
+    min-width: 640px;
+    width: 100%;
+    z-index: 0;
+
+    #appliedFiltersMenu {
+        background: @clarity-lightGrey;
+        -webkit-box-shadow: 1px 2px 1px #ddd;
+        box-shadow: 1px 2px 1px #ddd;
+        display: block;
+        height: auto;
+        max-height: 80%;
+        position: absolute;
+        top: -75%;
+        -moz-transition: top 0.5s;
+        -o-transition: top 0.5s;
+        transition: top 0.5s;
+        width: 100%;
+        z-index: 3;
+        -webkit-transition: top 0.5s;
+
+        #applyCancelButtons {
+            display: block;
+            margin: 0 auto 15px auto;
+            width: 280px;
+        }
+    }
+
+    #filterBar {
+        background: @clarity-lightGrey;
+        height: 40px;
+        width: 100%;
+
+        .filterBarButton {
+            .filterBarComponent;
+            margin: 5px 1px 3px 2px;
+            padding: 5px 8px 5px 10px;
+            /* So popup tab appears over this */
+            position: relative;
+        }
+
+            .filterBarButton:hover {
+                background: @clarity-hover;
+                color: white;
+            }
+
+        .filterBarComponent {
+            background: white;
+            border: 1px solid @clarity-buttonBorder;
+            border-radius: 3px;
+            color: @filterbar-text-green;
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        #addFilterButton {
+            .filterBarComponent;
+            font-size: 20px;
+            font-weight: bold;
+            margin: 5px 0 5px 5px;
+            max-width: 40px;
+            min-width: 30px;
+            height: 23px;
+            padding: 0 0 5px 0;
+            position: relative;
+            text-align: center;
+            vertical-align: top;
+        }
+
+            #addFilterButton:hover {
+                background: @clarity-hover;
+                color: white;
+            }
+
+        #allFiltersMenu {
+            .filterBarComponent;
+            right: 5px;
+            font-size: 18px;
+            height: 26px;
+            margin: 4px 0 5px 5px;
+            padding: 4px 0 1px 0;
+            position: absolute;
+            text-align: center;
+            vertical-align: top;
+            width: 35px;
+
+            #offscreenBadge {
+                background: #6b8137;
+                border-radius: 8px;
+                color: white;
+                cursor: pointer;
+                display: none;
+                font-size: 10px;
+                padding: 0 4px 0px 4px;
+                position: absolute;
+                right: -5px;
+                top: -4px;
+            }
+        }
+
+            #allFiltersMenu:hover {
+                background: @clarity-hover;
+                color: white;
+            }
+
+        #addNewFilterLabel {
+            color: #666;
+            font-size: 13px;
+            display: inline-block;
+            height: 26px;
+            padding: 12px 0 0 0;
+            vertical-align: top;
+        }
+
+        #faderOverlay {
+            display: inline-block;
+            height: 40px;
+            position: absolute;
+            right: 40px;
+            width: 20px;
+        }
+
+        #filterBucket {
+            display: inline-block;
+            height: 40px;
+            left: 45px;
+            right: 45px;
+            overflow: hidden;
+            position: absolute;
+        }
+
+        #filterScroller {
+            position: relative;
+            height: 40px;
+            width: 2000%;
+        }
+    }
+
+    #topNav {
+        background: @clarity-purple;
+        height: 40px;
+        position: relative;
+        z-index: 4;
+
+        #centerPanel {
+            display: block;
+            font-size: 0;
+            margin: 0 auto 0 auto;
+            width: 463px;
+
+            .headerIcons {
+                color: white;
+                border-left: 1px solid black;
+                border-right: 1px solid grey;
+                display: inline-block;
+                height: 39px;
+                vertical-align: top;
+                width: 73px;
+
+                img {
+                    display: block;
+                    height: 24px;
+                    margin: 8px auto 0 auto;
+                    position: relative;
+                }
+
+                p {
+                    display: block;
+                    font-size: 14px;
+                    margin: 0;
+                    height: 100%;
+                    text-align: center;
+                    vertical-align: middle;
+                }
+            }
+
+            #logoLink {
+                margin: 0 10px 0 10px;
+                width: 125px;
+
+                #logo {
+                    width: 125px;
+                }
+            }
+        }
+    }
+
+    #userName {
+        color: white;
+        float: right;
+        font-size: 12px;
+        margin: 12px 10px 1px 0;
+        position: relative;
+    }
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.addFilterPopupTab {
+    .filterPopupTab;
+    max-width: 40px;
+    min-width: 30px;
+    padding: 0px;
+    width: 2.3%;
+}
+
+.clarityButton {
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    margin: 2px auto 3px auto;
+    min-width: 75px;
+    max-width: 200px;
+    padding: 5px 20px 5px 20px;
+    text-align: center;
+    width: auto;
+}
+
+.applyBtn {
+    .clarityButton;
+    background: #6b8137;
+    color: #fff;
+    font-weight: bold;
+}
+
+.cancelBtn {
+    .clarityButton;
+    background: #ddd;
+    color: #555;
+    -webkit-text-shadow: 0 1px 1px rgba(255,255,255,0.9);
+    text-shadow: 0 1px 1px rgba(255,255,255,0.9);
+}
+
+.filterBarItemCloseX {
+    color: lightgrey;
+    margin: 0 0 0 10px;
+    position: relative;
+    top: -1px;
+
+    a {
+        padding: 1px 2px 1px 2px;
+    }
+
+        a:hover {
+            color: #dd2e2e;
+        }
+}
+
+.filterPopupTab {
+    background: @filterbar-popup-grey;
+    border-bottom: none;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    -webkit-box-shadow: 2px 0px 0px #ddd;
+    box-shadow: 2px 0px 0px #ddd;
+    color: @filterbar-text-green;
+    cursor: pointer;
+    display: block;
+    height: 35px;
+    position: absolute;
+    padding: 5px 0 0 10px;
+    top: -2px;
+    left: -1px;
+    width: 100px;
+    z-index: 3;
+}
+
+.filterPopupPanel {
+    background: white;
+    border: 1px solid #999;
+    border-radius: 2px;
+    -webkit-box-shadow: 2px 2px 4px #999;
+    box-shadow: 2px 2px 4px #999;
+    display: block;
+    /* left needs to be calculated in JS */
+    left: 15px;
+    max-height: 97%;
+    max-width: 95%;
+    position: absolute;
+    top: -1px;
+    z-index: 3;
+
+    li {
+        cursor:pointer;
+    }
+}
+
+.filterSection {
+    display: block;
+    margin: 3% 5% 10% 5%;
+    width: 95%;
+
+    h3 {
+        color: @clarity-h3;
+        margin: 0 0 10px 0;
+    }
+
+    p {
+        color: @clarity-purple;
+        display: inline;
+        font-size: 12px;
+    }
+}
+
+#addFilterListPanel {
+    /* Define width or .filterPopupPanel will 
+       give it 90% */
+    background:@filterbar-popup-grey;
+    min-width: 120px;
+    max-width: 250px;
+    float: left;
+    overflow-y: auto;
+    position: absolute;
+    width: 20%;
+    z-index: 3;
+
+    ul {
+        margin: 10px 0px 10px 0px;
+        width: 100%;
+    }
+
+    li {
+        font-size: 12px;
+        margin: 5px 0 5px 0;
+        padding: 5px 10px 5px 10px;
+    }
+
+        li:hover {
+            background: @clarity-hover;
+            color: white;
+        }
+}
+
+#appliedFiltersSection {
+    .filterSection;
+
+    .appliedFilterItem {
+        border-bottom: 1px solid lightGrey;
+        float: left;
+        margin: 0 5% 0 0;
+        min-width: 33%;
+        padding: 5px;
+        width: 43%;
+
+        .editDelControls {
+            float: right;
+            font-size: 10px;
+            margin: 0 10px 0 0;
+            position: relative;
+            top: 6px;
+
+            .editControl {
+                font-size: 10px;
+                margin: 0 30px 0 0;
+            }
+        }
+    }
+}
+
+#unappliedFiltersSection {
+    .filterSection;
+
+    .unappliedFilterItem {
+        border-bottom: 1px solid lightGrey;
+        float: left;
+        min-width: 15%;
+        margin: 0 3% 0 0;
+        padding: 5px;
+        width: 20%;
+    }
+}
+
+#hierarchyPanel {
+    bottom: 20px;
+    padding: 15px;
+    width: 93%;
+
+    h2 {
+        color: @filterbar-text-green;
+        font-size: 14px;
+        font-family: FacitWeb-Semibold;
+    }
+
+    hr {
+        border:0px;
+        border-bottom:1px solid #eee;
+        position:relative;
+        top:-8px;
+    }
+
+    #closeX {
+        background: grey;
+        border-radius: 16px;
+        color: white;
+        cursor: pointer;
+        display: block;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 0 8px 3px 8px;
+        position: absolute;
+        right: -12px;
+        top: -12px;
+    }
+
+        #closeX:hover {
+            background: @clarity-hover;
+        }
+
+    #treeContainer {
+        bottom: 15px;
+        display: inline-block;
+        font-size: 13px;
+        left: 1%;
+        position: absolute;
+        width: 66%;
+        top: 45px;
+
+        h3 {
+            margin: 2px 0px 2px 0px;
+            padding: 2px 3px 2px 3px;
+        }
+
+        .selectedColumnLabel {
+            background: lightGrey;
+            border-radius: 3px;
+        }
+
+        .selectedTreeItem {
+            background: @clarity-selected;
+            color: white;
+        }
+
+            .selectedTreeItem:hover {
+                background: @clarity-selected;
+                color: white;
+            }
+
+        .selectedParentTreeItem {
+            background: #ccc;
+            color: black;
+        }
+
+        .treeColumn {
+            border-right: 1px dashed lightGrey;
+            float: left;
+            height: 100%;
+            min-width: 160px;
+            overflow: hidden;
+            padding: 0 1% 0 0;
+            position: relative;
+            width: 30%;
+            margin: 0 0.75% 0 0.75%;
+
+            .inputContainer {
+                position: absolute;
+                left: 0px;
+                right: 5px;
+
+                .searchBox {
+                    width: 98%;
+                }
+            }
+        }
+
+        .treeColumnLiGroup {
+            border-top: 1px dotted #ccc;
+            color: #888;
+            padding: 13px 0 5px 0;
+
+            .label {
+                color: @organization-treeGroupHeader;
+                display: block;
+                font-family: FacitWeb-Semibold;
+                font-size: 12px;
+                margin: 0 0 -2px 0;
+                position: relative;
+            }
+        }
+
+        .treeColumnLiDisabled {
+            .treeColumnLiUnselected;
+            cursor: default;
+        }
+
+        .treeColumnLiUnselected {
+            cursor: default;
+            margin: 2px 0px 2px 0px;
+            min-height: 20px;
+            padding: 2px 3px 2px 5px;
+        }
+
+            .treeColumnLiUnselected:hover {
+                background: @clarity-hover;
+                color: white;
+            }
+
+        .treeColumnScroller {
+            bottom: 0px;
+            left: 0px;
+            overflow-x: hidden;
+            overflow-y: auto;
+            position: absolute;
+            right: 5px;
+            top: 65px;
+        }
+    }
+
+    #summaryPanel {
+        bottom: 10px;
+        display: inline-block;
+        overflow-y: auto;
+        position: absolute;
+        right: 1%;
+        top: 45px;
+        width: 33%;
+
+        #addAnotherLink {
+            color: @clarity-green;
+            margin: 0 0 0 5px;
+            position: relative;
+            top: 10px;
+        }
+
+        #cart {
+            bottom: 70px;
+            overflow-y: auto;
+            position: absolute;
+            top: 20px;
+            width: 100%;
+        }
+
+        #cartButtons {
+            bottom: 0px;
+            position: absolute;
+            right: 0px;
+        }
+
+        #cartItemList {
+            font-size: 12px;
+            margin: 10px 0 0 5px;
+        }
+
+        .cartAll {
+            margin: 10px 0 0 5px;
+            padding: 0 0 5px 5px;
+            border-bottom: 1px dashed grey;
+        }
+
+        .cartItem {
+            line-height: 12px;
+
+            .summaryItemAnd {
+                display: inline;
+                top: -12px;
+                padding: 0 1px 0 4px;
+                background: white;
+                position: relative;
+                left: 44%;
+            }
+        }
+
+        .cartItemBlock {
+            cursor: default;
+            border-bottom: 1px dashed grey;
+            margin: 5px 0 5px 5px;
+            padding: 0 0 10px 0;
+            vertical-align: top;
+            width: 100%;
+        }
+
+        .cartItemLabel {
+            color: @clarity-purple;
+            cursor: default;
+            display: inline-block;
+            font-size: 12px;
+            width: 98%;
+        }
+
+        .cartItemLabelClear {
+            display: inline;
+            font-size: 11px;
+            float: right;
+            line-height: 0px;
+            position: relative;
+            top: 12px;
+        }
+
+        h4 {
+            color: #999;
+            display: inline;
+            font-size: 11px;
+            margin: 5px 0 0 0;
+            padding: 0px;
+        }
+
+
+        li .pathItem {
+            cursor: default;
+            margin: 0 0 0 8px;
+            padding: 3px 0 3px 0;
+            line-height: 12px;
+        }
+
+        p {
+            color: @clarity-purple;
+            font-size: 11px;
+        }
+
+        ul {
+            margin: 0px 0px 5px 0px;
+        }
+
+            ul .pathList {
+                margin-left: 5px;
+                list-style: none;
+            }
+    }
+}
+
+#mainDisplay {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 40px;
+    top: 80px;
+    width: 100%;
+    z-index: -5;
+}
+
+#menuArea {
+    bottom: 0px;
+    position: absolute;
+    top: 80px;
+    width: 100%;
+    z-index: 2;
+}
+
+#modalScreen {
+    background: black;
+    display: none;
+    height: 100%;
+    opacity: 0.2;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+}
+
+#rightNav {
+    background: @clarity-lightGrey;
+    bottom: 0px;
+    position: absolute;
+    right: 0px;
+    top: 2px;
+    width: 40px;
+}

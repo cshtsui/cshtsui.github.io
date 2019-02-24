@@ -1,0 +1,11 @@
+﻿<script type="text/x-jqote-template" id="addFilterPanelTpl">
+	<![CDATA[
+	<div id="addFilterListPanel" class="filterPopupPanel">
+		<ul>
+		<% for (var i=0; i<this.models.length; i++) { %>
+			<li data-action="addFilterToBar" data-index="<%= i %>"><%= this.models[i].get("label") %></li>
+		<% } %>
+		</ul>
+	</div>
+	]]>
+</script>

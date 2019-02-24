@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="x-ua-compatible" content="IE=edge" />
+	<title>athenaClarity Hierarchy Filter</title>
+	<link href="css/normalize.css" rel="stylesheet" />
+	<link href="css/facit.css" rel="stylesheet" />
+	<link href="css/font-awesome.min.css" rel="stylesheet" />
+	<!--<link href="css/typography.css" rel="stylesheet" />-->
+	<link href="css/filters.css" rel="stylesheet" />
+	<script src="js/jquery-1.10.1.min.js"></script>
+	<script src="js/jquery.jqote2.min.js"></script>
+	<script src="js/taffy-min.js"></script>
+	<script src="js/underscore.js"></script>
+	<script src="js/backbone-min.js"></script>
+	<script src="js/datastore.js"></script>
+	<script src="js/entities.js"></script>
+	<script src="js/models.js"></script>
+	<script src="js/filters.js"></script>
+	<script src="js/hierarchy.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<div id="modalScreen"></div>
+		<header>
+			<nav id="topNav">
+				<p id="userName" class="headAction">Donald Blake</p>
+				<div id="centerPanel">
+					<div class="headerIcons" >
+						<img src="img/peopleIcon.png"/>
+					</div>
+					<div class="headerIcons">
+						<img src="img/columnGraphIcon.png" />
+					</div>
+					<a id="logoLink" href="index.html">
+						<img id="logo" src="img/aclogo.png" />
+					</a>
+					<div class="headerIcons">
+						<img src="img/heartIcon.png" />
+					</div>
+					<div class="headerIcons">
+						<img src="img/medicIcon.png" />
+					</div>
+				</div>
+			</nav>
+			<nav id="filterBar">
+				<div id="addFilterButton" data-action="addFilter">
+					<i class="icon-plus"></i>
+				</div>
+				<div id="addNewFilterLabel">Add a new filter</div>
+				<div id="filterBucket">
+					<div id="filterScroller">
+					</div>
+				</div>
+				<div id="faderOverlay">
+					<img id="transBar" src="img/leftTransBar.png" />
+				</div>
+				<div id="allFiltersMenu" data-action="appliedFiltersMenuClick">
+					<i class="icon-chevron-down"></i>
+					<span id="offscreenBadge">0</span>
+				</div>
+			</nav>
+			<div id="appliedFiltersMenu">
+			</div>
+		</header>
+		<section id="menuArea"></section>
+		<section id="mainDisplay">
+			<!-- set width or max-width to center within mainDisplay -->
+			<div id="contentContainer">
+			</div>
+			<nav id="rightNav">
+			</nav>
+		</section>
+	</div>
+</body>
+</html>
+
+

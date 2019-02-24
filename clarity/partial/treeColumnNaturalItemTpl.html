@@ -1,0 +1,11 @@
+﻿<script type="text/x-jqote-template" id="treeColumnNaturalItemTpl">
+	<![CDATA[
+	<ul>
+	<%  for (var i=0; i<this.models.length; i++) { %>
+		<% if (this.models[i].get("visualState")!==ac.TreeItem.const.HIDDEN) { %>
+		<li id="<%=this.models[i].get("category") %>_<%= this.models[i].get("mid") %>" class="treeColumnLiUnselected"><%= this.models[i].get("name") %></li>
+		<% } %>
+	<% } %>
+	</ul>
+	]]>
+</script>

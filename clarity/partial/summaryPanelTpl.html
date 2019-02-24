@@ -1,0 +1,29 @@
+﻿<script type="text/x-jqote-template" id="summaryPanelTpl">
+	<![CDATA[
+	<p style="margin-left:5px;font-size:12px"><strong>Your selections</strong></p>
+	<div id="cart">
+		<ul id="cartItemList">
+		<% for (var i=0; i<this.models.length; i++) { %>
+			<li class="cartItem">
+			<% if (this.models[i].get("isEmpty")) { %>
+				<p class="cartAll"><em><%= this.models[i].get("label") %></em></p>
+			<% } %>
+			<% else { %>
+				<a class="cartItemLabelClear" data-action="clearSummaryItem" data-cid="<%= this.models[i].cid %>">Clear</a>
+				<a class="cartItemLabel"><%= this.models[i].get("label") %></a>
+				<% if (i<this.models.length-1) { %>
+					<p class="summaryItemAnd">and</p>
+				<% } %>
+			<% } %>
+			</li>
+		<% } %>
+		</ul>
+		<span style="display:block;height:10px"></span>
+		<a id="addAnotherLink" data-action="addAnother">+ Add another selection</a>
+	</div>
+	<div id="cartButtons">
+		<span id="applyButton" data-action="applySelected" class="applyBtn" style="margin-right: 10px;">Apply</span>
+		<span id="cancelButton" data-action="cancel" class="cancelBtn">Cancel</span>
+	</div>
+	]]>
+</script>

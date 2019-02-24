@@ -1,0 +1,23 @@
+﻿<script type="text/x-jqote-template" id="treeColumnGroupedItemLinksTpl">
+	<![CDATA[
+	<ul>
+	<% 
+    var groupName = "ungrouped";
+	var checked="";
+    for (var i=0; i<this.models.length; i++) { 
+    %>
+    <% if (this.models[i].get("group")!==groupName) { 
+        groupName=this.models[i].get("group"); 
+	%>
+        <li id="<%=this.models[i].get("category") %>_groupChecks" class="treeColumnLiGroup">
+            <p class="label"><%= this.models[i].get("group") %></p>
+				<a class="allLink" id="<%=this.models[i].get("category")%>_<%= this.models[i].get("groupId") %>_allLink" data-gid="<%=this.models[i].get("groupId")%>">Select all</a>
+<!--				&nbsp;|&nbsp;
+				<a class="noneLink" id="<%=this.models[i].get("category")%>_<%= this.models[i].get("groupId") %>_noneLink" data-gid="<%=this.models[i].get("groupId")%>">none</a> -->
+        </li>
+    <% } %>
+		<li id="<%=this.models[i].get("category") %>_<%= this.models[i].get("mid") %>" class="treeColumnLiUnselected"><%= this.models[i].get("name") %></li>
+	<% } %>
+	</ul>
+	]]>
+</script>
