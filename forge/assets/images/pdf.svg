@@ -1,0 +1,12 @@
+<svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>PDF file</title>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g itransform="translate(0.000000, 3.000000)">
+            <rect fill="#D22304" x="0" y="7" width="18" height="10" rx="2"></rect>
+            <path d="M19.7,0 L9.5,0 L9.5,21 L21.4,21 C23.6421423,20.947222 25.447222,19.1421423 25.5,16.9 L25.5,6.4 L19.7,0 Z M19.8,2.4 L23,5.9 L20.6,5.9 C20.1781049,5.85522847 19.8447715,5.52189514 19.8,5.1 L19.8,2.4 Z M21.4,19.5 L11,19.5 L11,1.5 L18.3,1.5 L18.3,5.1 C18.3,6.37025492 19.3297451,7.4 20.6,7.4 L24,7.4 L24,16.9 C24,18.3359403 22.8359403,19.5 21.4,19.5 Z" fill="#D22304" fill-rule="nonzero"></path>
+            <text font-family="OpenSans-SemiBold, Open Sans" font-size="7" font-weight="500" fill="#FFFFFF">
+                <tspan x="2.5" y="14.5">PDF</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,1510 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+    window.frctl = {
+        env: 'static'
+    };
+    </script>
+    <script>var cl = document.querySelector('html').classList; cl.remove('no-js'); cl.add('has-js');</script>
+    <link rel="shortcut icon" href="../../favicon_blue.ico" type="image/ico">
+
+<link rel="stylesheet" href="../../assets/css/styles.css?cachebust=1.2.0" type="text/css">
+
+<link rel="stylesheet" href="../../assets/css/prism-atom-dark.css?cachebust=1.2.0" type="text/css">
+
+<link rel="stylesheet" href="../../assets/css/ascetic.css?cachebust=1.2.0" type="text/css">
+
+<link rel="stylesheet" href="../../css/forge.css?cachebust=1.2.0" type="text/css">
+
+
+<title>Modal | athenahealth</title>
+
+</head>
+<body>
+
+
+
+<div class="fg_app">
+  <header class="fg_l_header fg_l_header--alpha">
+  <a class="fg_c_branding" href="../../index.html">
+    <img src="../../assets/images/logo.svg" />
+  </a>
+  <nav class="fg_c_nav-top">
+  <ul class="fg_c_nav-top__list">
+    
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link "
+            href="../guidelines/principles.html"
+            title="Guidelines"
+          >
+            Guidelines
+          </a>
+        </li>
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link "
+            href="../foundations/color.html"
+            title="Foundations"
+          >
+            Foundations
+          </a>
+        </li>
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link  fg_is-active"
+            href="accordion.html"
+            title="Components"
+          >
+            Components
+          </a>
+        </li>
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link "
+            href="../extensions/forge-extensions.html"
+            title="Extensions"
+          >
+            Extensions
+          </a>
+        </li>
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link "
+            href="../resources/release-notes.html"
+            title="Resources"
+          >
+            Resources
+          </a>
+        </li>
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link "
+            href="../resources/downloads.html"
+            title="Resources"
+          >
+            Resources
+          </a>
+        </li>
+      
+    
+  </ul>
+</nav>
+
+
+  <div class="fg_c_nav-version">
+    v2.0.0-beta.7
+  </div>
+</header>
+
+
+  
+
+<div class="fg_l_sidebar" data-role="sidebar">
+  <nav class="fg_c_nav-left">
+  <ul class="fg_c_nav-left__list">
+  
+    
+  
+    
+  
+    
+  
+    
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="accordion.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Accordion</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="banner.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Banner</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="button.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Button</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="card.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Card</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="checkbox.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Checkbox</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="date-input.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>DateInput</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="form.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Form</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="form-field.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>FormField</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="grid.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Grid</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="heading.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Heading</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="icon.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Icon</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="icon-button.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>IconButton</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="input.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Input</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="lightbox.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Lightbox</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="list.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>List</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="loader.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Loader</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href=""
+            
+            class="fg_c_nav-left__link  fg_is-active"
+          >
+            <span>Modal</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="multi-field.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>MultiField</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="multiselect.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Multiselect</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="paginator.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Paginator</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="radio-group.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>RadioGroup</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="read-only-input.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>ReadOnlyInput</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="redux-form.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>ReduxForm</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="redux-form-field.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>ReduxFormField</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="redux-multi-field.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>ReduxMultiField</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="removable-tag.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>RemovableTag</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="root.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Root</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="select.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Select</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="selection-list.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>SelectionList</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="status-tag.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>StatusTag</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="stepper.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Stepper</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="table.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Table</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="tabs.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Tabs</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="textarea.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Textarea</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="toast.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Toast</span>
+            
+              
+                <span class="fe_f_all"><span class="fe_c_status-tag">EXT</span></span>
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="toggle-switch.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>ToggleSwitch</span>
+            
+              
+            
+              
+                <span class="fe_f_all"><span class="fe_c_status-tag">EXT</span></span>
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="tooltip.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Tooltip</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="typeahead.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Typeahead</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+    
+  
+    
+  
+    
+  
+    
+  
+  </ul>
+</nav>
+
+</div>
+
+<div class="fg_l_main" data-role="main">
+  <div class="fg_doc">
+
+    
+      <nav class="fg_c_nav-page"></nav>
+
+    
+
+    <div class="fg_doc__header">
+      
+        <h1 class="fg_doc__title">Modal</h1>
+      
+    </div>
+    <div class="fg_doc__content">
+      
+
+  <div class="fg_markdown">
+    
+
+      
+      
+
+      
+        <p class="p--lead">Modal is a pop-up dialog that interrupts a workflow to force a user interaction.</p>
+
+<h2 id="demos">Demos</h2>
+<div class="fg_c_demos"><select class="fg_c_demos__select js-selector-demos"><option value="fc37e17c5d79279c8930ae18e9082256">Basic Modal</option><option value="6ed6033f589841adfdf393adbbf53d8b">Modal with Disabled Close</option><option value="5d4040b549a83135cbc91cbd9b3038da">Modal as an Alert</option><option value="590da7fcd40c4884e1bfa1edb0b0f2bc">Modal with a Form</option><option value="2f0a8023da41a698b61371d5ab9024f2">Large Modal</option></select><div class="fg_c_demos__demo js-demo-fc37e17c5d79279c8930ae18e9082256 ">
+    <div class="fg_c_preview js-resize-preview" style="height: 360px">
+      <iframe height="360" src="../../components/preview/modal-basic.html" class="fg_c_preview__iframe"></iframe>
+    </div>
+    <div class="fg_c_accordian js-accordian">
+      <button class="fg_c_accordian__button" role="heading">
+        <span class="fg_c_accordian__icon js-icon"></span>
+        <span class="fg_c_accordian__closed-text">Show Code</span>
+        <span class="fg_c_accordian__open-text">Hide Code</span>
+      </button>
+      <div class="fg_c_code-tabs fg_is-hidden js-tabs">
+        <ul class="fg_c_code-tabs__list" role="tablist">
+          <li class="fg_c_code-tabs__tab" role="tab">
+            <a href="#tab-jsx-fc37e17c5d79279c8930ae18e9082256">JSX</a>
+          </li>
+          <li class="fg_c_code-tabs__tab" role="tab">
+            <a href="#tab-html-fc37e17c5d79279c8930ae18e9082256">HTML</a>
+          </li>
+        </ul>
+        <div class="fg_c_code-tabs__panel" id="tab-jsx-fc37e17c5d79279c8930ae18e9082256" role="tabpanel">
+          <button type="button" class="fg_c_button--inverted fg_c_button--copy js-copy-code" data-clipboard-target="#tab-jsx-fc37e17c5d79279c8930ae18e9082256 pre">Copy Code</button>
+          <pre class="fg_c_code-block"><code class="language-jsx"><span class="token keyword">import</span> React<span class="token punctuation">,</span> <span class="token punctuation">{</span> Component <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&#39;react&#39;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> Modal<span class="token punctuation">,</span> Button <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&#39;@athena/forge&#39;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> loremIpsum <span class="token keyword">from</span> <span class="token string">&#39;lorem-ipsum&#39;</span><span class="token punctuation">;</span>
+<span style='display:none'>empty line</span>
+<span class="token keyword">class</span> <span class="token class-name">ModalToggle</span> <span class="token keyword">extends</span> <span class="token class-name">Component</span> <span class="token punctuation">{</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">super</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span style='display:none'>empty line</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>state <span class="token operator">=</span> <span class="token punctuation">{</span> shown<span class="token punctuation">:</span> props<span class="token punctuation">.</span>shownByDefault <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span style='display:none'>empty line</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>showModal <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>showModal<span class="token punctuation">.</span><span class="token function">bind</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>hideModal <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>hideModal<span class="token punctuation">.</span><span class="token function">bind</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>completeModal <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>completeModal<span class="token punctuation">.</span><span class="token function">bind</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span style='display:none'>empty line</span>
+  <span class="token function">showModal</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState</span><span class="token punctuation">(</span><span class="token punctuation">{</span> shown<span class="token punctuation">:</span> <span class="token boolean">true</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span style='display:none'>empty line</span>
+  <span class="token function">hideModal</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState</span><span class="token punctuation">(</span><span class="token punctuation">{</span> shown<span class="token punctuation">:</span> <span class="token boolean">false</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span style='display:none'>empty line</span>
+  <span class="token function">completeModal</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState</span><span class="token punctuation">(</span><span class="token punctuation">{</span> shown<span class="token punctuation">:</span> <span class="token boolean">false</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span style='display:none'>empty line</span>
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Button</span> <span class="token attr-name">text</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>Open Modal<span class="token punctuation">&quot;</span></span> <span class="token attr-name">onClick</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>showModal<span class="token punctuation">}</span></span> <span class="token punctuation">/&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Modal</span> <span class="token attr-name">show</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>shown<span class="token punctuation">}</span></span> <span class="token attr-name">headerText</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>Modal Header<span class="token punctuation">&quot;</span></span> <span class="token attr-name">onHide</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>hideModal<span class="token punctuation">}</span></span> <span class="token attr-name">onPrimaryClick</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>completeModal<span class="token punctuation">}</span></span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>This is example body text<span class="token punctuation">.</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>Modal</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span style='display:none'>empty line</span>
+<span class="token keyword">class</span> <span class="token class-name">ModalDefault</span> <span class="token keyword">extends</span> <span class="token class-name">Component</span> <span class="token punctuation">{</span>
+<span style='display:none'>empty line</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">super</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span style='display:none'>empty line</span>
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+<span style='display:none'>empty line</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">style</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span> height<span class="token punctuation">:</span> <span class="token string">&#39;280px&#39;</span> <span class="token punctuation">}</span><span class="token punctuation">}</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span><span class="token punctuation">{</span><span class="token function">loremIpsum</span><span class="token punctuation">(</span><span class="token punctuation">{</span> units<span class="token punctuation">:</span> <span class="token string">&#39;paragraphs&#39;</span><span class="token punctuation">,</span> count<span class="token punctuation">:</span> <span class="token number">1</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span><span class="token punctuation">{</span><span class="token function">loremIpsum</span><span class="token punctuation">(</span><span class="token punctuation">{</span> units<span class="token punctuation">:</span> <span class="token string">&#39;paragraphs&#39;</span><span class="token punctuation">,</span> count<span class="token punctuation">:</span> <span class="token number">1</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span><span class="token punctuation">{</span><span class="token function">loremIpsum</span><span class="token punctuation">(</span><span class="token punctuation">{</span> units<span class="token punctuation">:</span> <span class="token string">&#39;paragraphs&#39;</span><span class="token punctuation">,</span> count<span class="token punctuation">:</span> <span class="token number">1</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ModalToggle</span> <span class="token attr-name">shownByDefault</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token boolean">true</span><span class="token punctuation">}</span></span> <span class="token punctuation">/&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span style='display:none'>empty line</span>
+<span class="token punctuation">}</span>
+<span style='display:none'>empty line</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> ModalDefault<span class="token punctuation">;</span>
+</code></pre>
+        </div>
+        <div class="fg_c_code-tabs__panel" id="tab-html-fc37e17c5d79279c8930ae18e9082256" role="tabpanel">
+          <button type="button" class="fg_c_button--inverted fg_c_button--copy js-copy-code" data-clipboard-target="#tab-html-fc37e17c5d79279c8930ae18e9082256 pre">Copy Code</button>
+          <pre class="fg_c_code-block"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token style-attr language-css"><span class="token attr-name"> <span class="token attr-name">style</span></span><span class="token punctuation">=&quot;</span><span class="token attr-value"><span class="token property">height</span><span class="token punctuation">:</span>280px</span><span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>Amet laboris velit reprehenderit id eiusmod nulla ex pariatur do. Consectetur fugiat deserunt sint proident esse incididunt exercitation mollit dolor minim. Nostrud excepteur id minim culpa ea reprehenderit nisi. Exercitation fugiat irure nostrud velit. Labore occaecat magna amet laboris eu dolor tempor consequat ea nostrud culpa nulla nostrud.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>Et labore anim nulla incididunt ipsum sint cillum ullamco labore. Eiusmod sunt non do enim sit ad nulla cupidatat dolore ipsum eu enim. In in ut nisi do ullamco quis ut tempor et esse consectetur. Ipsum cillum ipsum veniam commodo excepteur sint minim. Labore minim veniam duis commodo duis excepteur magna laborum aliquip eiusmod culpa dolore. Pariatur tempor consectetur enim aliquip aliqua velit nostrud ipsum in non in qui.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>Nisi ea sint labore cupidatat dolor consectetur veniam labore aliqua mollit adipisicing ullamco. Cupidatat exercitation velit est occaecat tempor duis laboris ut excepteur elit sit. Cupidatat sint irure labore minim in. Proident cupidatat id qui esse voluptate quis sint est culpa excepteur enim. Proident non qui nisi non tempor consectetur deserunt aliquip non pariatur sit tempor elit laborum.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;button fe&#95;c&#95;button--primary<span class="token punctuation">&quot;</span></span> <span class="token attr-name">aria-disabled</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>false<span class="token punctuation">&quot;</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>button<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Open Modal<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+        </div>
+      </div>
+    </div>
+  </div><div class="fg_c_demos__demo js-demo-6ed6033f589841adfdf393adbbf53d8b fg_is-hidden">
+    <div class="fg_c_preview js-resize-preview" style="height: 360px">
+      <iframe height="360" src="../../components/preview/modal-disabled-close.html" class="fg_c_preview__iframe"></iframe>
+    </div>
+    <div class="fg_c_accordian js-accordian">
+      <button class="fg_c_accordian__button" role="heading">
+        <span class="fg_c_accordian__icon js-icon"></span>
+        <span class="fg_c_accordian__closed-text">Show Code</span>
+        <span class="fg_c_accordian__open-text">Hide Code</span>
+      </button>
+      <div class="fg_c_code-tabs fg_is-hidden js-tabs">
+        <ul class="fg_c_code-tabs__list" role="tablist">
+          <li class="fg_c_code-tabs__tab" role="tab">
+            <a href="#tab-jsx-6ed6033f589841adfdf393adbbf53d8b">JSX</a>
+          </li>
+          <li class="fg_c_code-tabs__tab" role="tab">
+            <a href="#tab-html-6ed6033f589841adfdf393adbbf53d8b">HTML</a>
+          </li>
+        </ul>
+        <div class="fg_c_code-tabs__panel" id="tab-jsx-6ed6033f589841adfdf393adbbf53d8b" role="tabpanel">
+          <button type="button" class="fg_c_button--inverted fg_c_button--copy js-copy-code" data-clipboard-target="#tab-jsx-6ed6033f589841adfdf393adbbf53d8b pre">Copy Code</button>
+          <pre class="fg_c_code-block"><code class="language-jsx"><span class="token keyword">import</span> React<span class="token punctuation">,</span> <span class="token punctuation">{</span> Component <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&#39;react&#39;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> Modal<span class="token punctuation">,</span> Button <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&#39;@athena/forge&#39;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> loremIpsum <span class="token keyword">from</span> <span class="token string">&#39;lorem-ipsum&#39;</span><span class="token punctuation">;</span>
+<span style='display:none'>empty line</span>
+<span class="token keyword">class</span> <span class="token class-name">ModalToggle</span> <span class="token keyword">extends</span> <span class="token class-name">Component</span> <span class="token punctuation">{</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">super</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span style='display:none'>empty line</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>state <span class="token operator">=</span> <span class="token punctuation">{</span> shown<span class="token punctuation">:</span> props<span class="token punctuation">.</span>shownByDefault <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span style='display:none'>empty line</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>showModal <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>showModal<span class="token punctuation">.</span><span class="token function">bind</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>hideModal <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>hideModal<span class="token punctuation">.</span><span class="token function">bind</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>completeModal <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>completeModal<span class="token punctuation">.</span><span class="token function">bind</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span style='display:none'>empty line</span>
+  <span class="token function">showModal</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState</span><span class="token punctuation">(</span><span class="token punctuation">{</span> shown<span class="token punctuation">:</span> <span class="token boolean">true</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span style='display:none'>empty line</span>
+  <span class="token function">hideModal</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState</span><span class="token punctuation">(</span><span class="token punctuation">{</span> shown<span class="token punctuation">:</span> <span class="token boolean">false</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span style='display:none'>empty line</span>
+  <span class="token function">completeModal</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState</span><span class="token punctuation">(</span><span class="token punctuation">{</span> shown<span class="token punctuation">:</span> <span class="token boolean">false</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span style='display:none'>empty line</span>
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Button</span> <span class="token attr-name">text</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>Open Modal<span class="token punctuation">&quot;</span></span> <span class="token attr-name">onClick</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>showModal<span class="token punctuation">}</span></span> <span class="token punctuation">/&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Modal</span> <span class="token attr-name">show</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>shown<span class="token punctuation">}</span></span> <span class="token attr-name">headerText</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>Multiple User Conflict<span class="token punctuation">&quot;</span></span> <span class="token attr-name">onHide</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>hideModal<span class="token punctuation">}</span></span> <span class="token attr-name">onPrimaryClick</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>completeModal<span class="token punctuation">}</span></span> <span class="token attr-name">disableClose</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token boolean">true</span><span class="token punctuation">}</span></span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>You made changes at the same time <span class="token keyword">as</span> another user<span class="token punctuation">.</span> Your changes could not be saved<span class="token punctuation">.</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>Modal</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span style='display:none'>empty line</span>
+<span class="token keyword">class</span> <span class="token class-name">ModalDisableClose</span> <span class="token keyword">extends</span> <span class="token class-name">Component</span> <span class="token punctuation">{</span>
+<span style='display:none'>empty line</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">super</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span style='display:none'>empty line</span>
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+<span style='display:none'>empty line</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">style</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span> height<span class="token punctuation">:</span> <span class="token string">&#39;280px&#39;</span> <span class="token punctuation">}</span><span class="token punctuation">}</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span><span class="token punctuation">{</span><span class="token function">loremIpsum</span><span class="token punctuation">(</span><span class="token punctuation">{</span> units<span class="token punctuation">:</span> <span class="token string">&#39;paragraphs&#39;</span><span class="token punctuation">,</span> count<span class="token punctuation">:</span> <span class="token number">1</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span><span class="token punctuation">{</span><span class="token function">loremIpsum</span><span class="token punctuation">(</span><span class="token punctuation">{</span> units<span class="token punctuation">:</span> <span class="token string">&#39;paragraphs&#39;</span><span class="token punctuation">,</span> count<span class="token punctuation">:</span> <span class="token number">1</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span><span class="token punctuation">{</span><span class="token function">loremIpsum</span><span class="token punctuation">(</span><span class="token punctuation">{</span> units<span class="token punctuation">:</span> <span class="token string">&#39;paragraphs&#39;</span><span class="token punctuation">,</span> count<span class="token punctuation">:</span> <span class="token number">1</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ModalToggle</span> <span class="token attr-name">shownByDefault</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token boolean">true</span><span class="token punctuation">}</span></span> <span class="token punctuation">/&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span style='display:none'>empty line</span>
+<span class="token punctuation">}</span>
+<span style='display:none'>empty line</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> ModalDisableClose<span class="token punctuation">;</span>
+</code></pre>
+        </div>
+        <div class="fg_c_code-tabs__panel" id="tab-html-6ed6033f589841adfdf393adbbf53d8b" role="tabpanel">
+          <button type="button" class="fg_c_button--inverted fg_c_button--copy js-copy-code" data-clipboard-target="#tab-html-6ed6033f589841adfdf393adbbf53d8b pre">Copy Code</button>
+          <pre class="fg_c_code-block"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token style-attr language-css"><span class="token attr-name"> <span class="token attr-name">style</span></span><span class="token punctuation">=&quot;</span><span class="token attr-value"><span class="token property">height</span><span class="token punctuation">:</span>280px</span><span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>Amet magna non laboris nisi. Cupidatat eiusmod consectetur et excepteur eu in. Nisi consectetur esse amet commodo irure fugiat ut commodo enim ut ea adipisicing. Elit tempor enim cillum veniam voluptate qui. Non ipsum duis nostrud ad et in occaecat adipisicing excepteur laboris aliqua pariatur laboris. Culpa cillum aute Lorem nostrud exercitation quis id do duis labore.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>Nulla anim incididunt adipisicing consequat nulla culpa dolore et laborum veniam quis. Tempor non qui ipsum fugiat dolore sint ex. Quis in eiusmod fugiat ad consectetur.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>Laborum enim Lorem velit non eiusmod ea adipisicing elit enim deserunt laboris nisi amet fugiat. Mollit occaecat non adipisicing dolor consectetur velit magna. Enim esse exercitation quis consectetur mollit cupidatat consectetur deserunt ipsum cillum.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;button fe&#95;c&#95;button--primary<span class="token punctuation">&quot;</span></span> <span class="token attr-name">aria-disabled</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>false<span class="token punctuation">&quot;</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>button<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Open Modal<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+        </div>
+      </div>
+    </div>
+  </div><div class="fg_c_demos__demo js-demo-5d4040b549a83135cbc91cbd9b3038da fg_is-hidden">
+    <div class="fg_c_preview js-resize-preview" style="height: 360px">
+      <iframe height="360" src="../../components/preview/modal-as-alert.html" class="fg_c_preview__iframe"></iframe>
+    </div>
+    <div class="fg_c_accordian js-accordian">
+      <button class="fg_c_accordian__button" role="heading">
+        <span class="fg_c_accordian__icon js-icon"></span>
+        <span class="fg_c_accordian__closed-text">Show Code</span>
+        <span class="fg_c_accordian__open-text">Hide Code</span>
+      </button>
+      <div class="fg_c_code-tabs fg_is-hidden js-tabs">
+        <ul class="fg_c_code-tabs__list" role="tablist">
+          <li class="fg_c_code-tabs__tab" role="tab">
+            <a href="#tab-jsx-5d4040b549a83135cbc91cbd9b3038da">JSX</a>
+          </li>
+          <li class="fg_c_code-tabs__tab" role="tab">
+            <a href="#tab-html-5d4040b549a83135cbc91cbd9b3038da">HTML</a>
+          </li>
+        </ul>
+        <div class="fg_c_code-tabs__panel" id="tab-jsx-5d4040b549a83135cbc91cbd9b3038da" role="tabpanel">
+          <button type="button" class="fg_c_button--inverted fg_c_button--copy js-copy-code" data-clipboard-target="#tab-jsx-5d4040b549a83135cbc91cbd9b3038da pre">Copy Code</button>
+          <pre class="fg_c_code-block"><code class="language-jsx"><span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">&#39;react&#39;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> Modal <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&#39;@athena/forge&#39;</span><span class="token punctuation">;</span>
+<span style='display:none'>empty line</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">function</span> <span class="token function">ModalLarge</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">style</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span> height<span class="token punctuation">:</span> <span class="token string">&#39;320px&#39;</span> <span class="token punctuation">}</span><span class="token punctuation">}</span></span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Modal</span> <span class="token attr-name">show</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token boolean">true</span><span class="token punctuation">}</span></span> <span class="token attr-name">headerText</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>Alert Modal<span class="token punctuation">&quot;</span></span> <span class="token attr-name">alertType</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>attention<span class="token punctuation">&quot;</span></span> <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>small<span class="token punctuation">&quot;</span></span> <span class="token attr-name">onHide</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span> <span class="token comment">/<em> see Basic Modal demo </em>/</span> <span class="token punctuation">}</span><span class="token punctuation">}</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>
+          Lorem ipsum dolor sit amet<span class="token punctuation">,</span> consectetur adipiscing elit<span class="token punctuation">,</span>
+          sed <span class="token keyword">do</span> eiusmod tempor incididunt ut labore et dolore magna aliqua<span class="token punctuation">.</span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>Modal</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+        </div>
+        <div class="fg_c_code-tabs__panel" id="tab-html-5d4040b549a83135cbc91cbd9b3038da" role="tabpanel">
+          <button type="button" class="fg_c_button--inverted fg_c_button--copy js-copy-code" data-clipboard-target="#tab-html-5d4040b549a83135cbc91cbd9b3038da pre">Copy Code</button>
+          <pre class="fg_c_code-block"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token style-attr language-css"><span class="token attr-name"> <span class="token attr-name">style</span></span><span class="token punctuation">=&quot;</span><span class="token attr-value"><span class="token property">height</span><span class="token punctuation">:</span>320px</span><span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+        </div>
+      </div>
+    </div>
+  </div><div class="fg_c_demos__demo js-demo-590da7fcd40c4884e1bfa1edb0b0f2bc fg_is-hidden">
+    <div class="fg_c_preview js-resize-preview" style="height: 450px">
+      <iframe height="450" src="../../components/preview/modal-with-form.html" class="fg_c_preview__iframe"></iframe>
+    </div>
+    <div class="fg_c_accordian js-accordian">
+      <button class="fg_c_accordian__button" role="heading">
+        <span class="fg_c_accordian__icon js-icon"></span>
+        <span class="fg_c_accordian__closed-text">Show Code</span>
+        <span class="fg_c_accordian__open-text">Hide Code</span>
+      </button>
+      <div class="fg_c_code-tabs fg_is-hidden js-tabs">
+        <ul class="fg_c_code-tabs__list" role="tablist">
+          <li class="fg_c_code-tabs__tab" role="tab">
+            <a href="#tab-jsx-590da7fcd40c4884e1bfa1edb0b0f2bc">JSX</a>
+          </li>
+          <li class="fg_c_code-tabs__tab" role="tab">
+            <a href="#tab-html-590da7fcd40c4884e1bfa1edb0b0f2bc">HTML</a>
+          </li>
+        </ul>
+        <div class="fg_c_code-tabs__panel" id="tab-jsx-590da7fcd40c4884e1bfa1edb0b0f2bc" role="tabpanel">
+          <button type="button" class="fg_c_button--inverted fg_c_button--copy js-copy-code" data-clipboard-target="#tab-jsx-590da7fcd40c4884e1bfa1edb0b0f2bc pre">Copy Code</button>
+          <pre class="fg_c_code-block"><code class="language-jsx"><span class="token keyword">import</span> React<span class="token punctuation">,</span> <span class="token punctuation">{</span> Component <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&#39;react&#39;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> createStore<span class="token punctuation">,</span> combineReducers <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&#39;redux&#39;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> reducer <span class="token keyword">as</span> formReducer<span class="token punctuation">,</span> submit <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&#39;redux-form&#39;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> Provider <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&#39;react-redux&#39;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> ReduxForm<span class="token punctuation">,</span> ReduxFormField<span class="token punctuation">,</span> Modal <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&#39;@athena/forge&#39;</span><span class="token punctuation">;</span>
+<span style='display:none'>empty line</span>
+<span class="token keyword">const</span> rootReducer <span class="token operator">=</span> <span class="token function">combineReducers</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  form<span class="token punctuation">:</span> formReducer<span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span style='display:none'>empty line</span>
+<span class="token keyword">const</span> store <span class="token operator">=</span> <span class="token function">createStore</span><span class="token punctuation">(</span>
+  rootReducer
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span style='display:none'>empty line</span>
+<span class="token keyword">class</span> <span class="token class-name">ModalForm</span> <span class="token keyword">extends</span> <span class="token class-name">Component</span> <span class="token punctuation">{</span>
+<span style='display:none'>empty line</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">super</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span style='display:none'>empty line</span>
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">style</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span> height<span class="token punctuation">:</span> <span class="token string">&#39;440px&#39;</span> <span class="token punctuation">}</span><span class="token punctuation">}</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Provider</span> <span class="token attr-name">store</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>store<span class="token punctuation">}</span></span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Modal</span>
+            <span class="token attr-name">show</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token boolean">true</span><span class="token punctuation">}</span></span>
+            <span class="token attr-name">headerText</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>Delete Encounter<span class="token punctuation">&quot;</span></span>
+            <span class="token attr-name">onPrimaryClick</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> store<span class="token punctuation">.</span><span class="token function">dispatch</span><span class="token punctuation">(</span><span class="token function">submit</span><span class="token punctuation">(</span><span class="token string">&#39;redux-modal-demo&#39;</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">}</span></span>
+            <span class="token attr-name">primaryButtonText</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>Delete<span class="token punctuation">&quot;</span></span>  <span class="token attr-name">onHide</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span> <span class="token comment">/<em> see Basic Modal demo </em>/</span> <span class="token punctuation">}</span><span class="token punctuation">}</span></span>
+          <span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>Are you sure you want to <span class="token keyword">delete</span> <span class="token keyword">this</span> encounter<span class="token operator">?</span> This action can not be undone<span class="token punctuation">.</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ReduxForm</span> <span class="token attr-name">form</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>redux-modal-demo<span class="token punctuation">&quot;</span></span> <span class="token attr-name">includeSubmitButton</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token boolean">false</span><span class="token punctuation">}</span></span> <span class="token attr-name">onSubmit</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">(</span>values<span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token function">alert</span><span class="token punctuation">(</span><span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span>values<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">}</span></span> <span class="token punctuation">&gt;</span></span>
+              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ReduxFormField</span>
+                <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>reason<span class="token punctuation">&quot;</span></span>
+                <span class="token attr-name">labelText</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>Reason<span class="token punctuation">&quot;</span></span>
+                <span class="token attr-name">required</span>
+              <span class="token punctuation">/&gt;</span></span>
+              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ReduxFormField</span>
+                <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>note<span class="token punctuation">&quot;</span></span>
+                <span class="token attr-name">labelText</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>Note<span class="token punctuation">&quot;</span></span>
+              <span class="token punctuation">/&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ReduxForm</span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>Modal</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>Provider</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span style='display:none'>empty line</span>
+<span class="token punctuation">}</span>
+<span style='display:none'>empty line</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> ModalForm<span class="token punctuation">;</span>
+</code></pre>
+        </div>
+        <div class="fg_c_code-tabs__panel" id="tab-html-590da7fcd40c4884e1bfa1edb0b0f2bc" role="tabpanel">
+          <button type="button" class="fg_c_button--inverted fg_c_button--copy js-copy-code" data-clipboard-target="#tab-html-590da7fcd40c4884e1bfa1edb0b0f2bc pre">Copy Code</button>
+          <pre class="fg_c_code-block"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token style-attr language-css"><span class="token attr-name"> <span class="token attr-name">style</span></span><span class="token punctuation">=&quot;</span><span class="token attr-value"><span class="token property">height</span><span class="token punctuation">:</span>440px</span><span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+        </div>
+      </div>
+    </div>
+  </div><div class="fg_c_demos__demo js-demo-2f0a8023da41a698b61371d5ab9024f2 fg_is-hidden">
+    <div class="fg_c_preview js-resize-preview" style="height: 550px">
+      <iframe height="550" src="../../components/preview/modal-large.html" class="fg_c_preview__iframe"></iframe>
+    </div>
+    <div class="fg_c_accordian js-accordian">
+      <button class="fg_c_accordian__button" role="heading">
+        <span class="fg_c_accordian__icon js-icon"></span>
+        <span class="fg_c_accordian__closed-text">Show Code</span>
+        <span class="fg_c_accordian__open-text">Hide Code</span>
+      </button>
+      <div class="fg_c_code-tabs fg_is-hidden js-tabs">
+        <ul class="fg_c_code-tabs__list" role="tablist">
+          <li class="fg_c_code-tabs__tab" role="tab">
+            <a href="#tab-jsx-2f0a8023da41a698b61371d5ab9024f2">JSX</a>
+          </li>
+          <li class="fg_c_code-tabs__tab" role="tab">
+            <a href="#tab-html-2f0a8023da41a698b61371d5ab9024f2">HTML</a>
+          </li>
+        </ul>
+        <div class="fg_c_code-tabs__panel" id="tab-jsx-2f0a8023da41a698b61371d5ab9024f2" role="tabpanel">
+          <button type="button" class="fg_c_button--inverted fg_c_button--copy js-copy-code" data-clipboard-target="#tab-jsx-2f0a8023da41a698b61371d5ab9024f2 pre">Copy Code</button>
+          <pre class="fg_c_code-block"><code class="language-jsx"><span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">&#39;react&#39;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> Modal <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&#39;@athena/forge&#39;</span><span class="token punctuation">;</span>
+<span style='display:none'>empty line</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">function</span> <span class="token function">ModalLarge</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">style</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span> height<span class="token punctuation">:</span> <span class="token string">&#39;550px&#39;</span> <span class="token punctuation">}</span><span class="token punctuation">}</span></span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Modal</span>
+        <span class="token attr-name">show</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token boolean">true</span><span class="token punctuation">}</span></span>
+        <span class="token attr-name">headerText</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>Large Modal<span class="token punctuation">&quot;</span></span>
+        <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>large<span class="token punctuation">&quot;</span></span>
+        <span class="token attr-name">primaryButtonText</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>Agree<span class="token punctuation">&quot;</span></span>
+        <span class="token attr-name">secondaryButtonText</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>Disagree<span class="token punctuation">&quot;</span></span>
+        <span class="token attr-name">onHide</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span> <span class="token comment">/<em> see Basic Modal demo </em>/</span> <span class="token punctuation">}</span><span class="token punctuation">}</span></span>
+      <span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>strong</span><span class="token punctuation">&gt;</span></span>Policy Statement<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>strong</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>athenahealth Mobile Device Management Program End<span class="token operator">-</span>User License Agreement<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ol</span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>strong</span><span class="token punctuation">&gt;</span></span>General terms<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>strong</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ol</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>
+            Enrollment <span class="token keyword">of</span> <span class="token keyword">this</span> device <span class="token keyword">in</span> athenahealth<span class="token entity" title="&#39;">&amp;#39;</span>s mobile device management program subjects <span class="token keyword">this</span> device to
+            athenahealth information systems use policies including<span class="token punctuation">,</span> but not limited to<span class="token punctuation">:</span> <span class="token entity" title="&ldquo;">&amp;ldquo;</span><span class="token constant">C</span><span class="token operator">-</span><span class="token number">600</span><span class="token operator">-</span>General Athena
+            Information Systems Use Policy<span class="token entity" title="&rdquo;">&amp;rdquo;</span><span class="token punctuation">,</span> <span class="token entity" title="&ldquo;">&amp;ldquo;</span><span class="token constant">C</span><span class="token operator">-</span><span class="token number">610</span><span class="token operator">-</span>Mobile Computing Device Security Policy<span class="token entity" title="&rdquo;">&amp;rdquo;</span><span class="token punctuation">,</span> <span class="token entity" title="&ldquo;">&amp;ldquo;</span>
+            <span class="token constant">C</span><span class="token operator">-</span><span class="token number">607</span><span class="token operator">-</span>Security Incident Reporting Policy<span class="token entity" title="&rdquo;">&amp;rdquo;</span><span class="token punctuation">,</span> <span class="token entity" title="&ldquo;">&amp;ldquo;</span><span class="token constant">C</span><span class="token operator">-</span><span class="token number">608</span><span class="token operator">-</span>Internet Monitoring and Filtering
+            Policy<span class="token entity" title="&rdquo;">&amp;rdquo;</span><span class="token punctuation">,</span> and <span class="token entity" title="&ldquo;">&amp;ldquo;</span><span class="token constant">D</span><span class="token operator">-</span><span class="token number">603</span><span class="token operator">-</span>Technical Safeguards Policy<span class="token entity" title="&rdquo;">&amp;rdquo;</span><span class="token punctuation">.</span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>
+            Full text <span class="token keyword">of</span> the above policies is available on SharePoint at<span class="token punctuation">:</span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>demo-link.html<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Approved policies and procedures<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span><span class="token punctuation">.</span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span><span class="token entity" title="&nbsp;">&amp;nbsp;</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ol</span> <span class="token attr-name">start</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>2<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>strong</span><span class="token punctuation">&gt;</span></span>Usage monitoring<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>strong</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ol</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>
+            It is the policy <span class="token keyword">of</span> athenahealth that all computing devices connected to athenahealth information systems
+            are subject to usage monitoring to ensure compliance <span class="token keyword">with</span> applicable laws and regulations and to safeguard
+            the integrity and confidentiality <span class="token keyword">of</span> sensitive information<span class="token punctuation">.</span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>
+            Monitoring measures may include auditing <span class="token keyword">of</span> device integrity<span class="token punctuation">,</span> configuration<span class="token punctuation">,</span> applications<span class="token punctuation">,</span> content<span class="token punctuation">,</span>
+            connected networks<span class="token punctuation">,</span> physical location<span class="token punctuation">,</span> and device usage statistics<span class="token punctuation">.</span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span><span class="token entity" title="&nbsp;">&amp;nbsp;</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ol</span> <span class="token attr-name">start</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>3<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>strong</span><span class="token punctuation">&gt;</span></span>Security incident reporting<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>strong</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ol</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>
+            Enrollment <span class="token keyword">of</span> <span class="token keyword">this</span> device obligates its assigned user to report any security incident related to its
+            usage<span class="token punctuation">,</span> including but not limited to<span class="token punctuation">:</span> loss or theft <span class="token keyword">of</span> <span class="token keyword">this</span> device<span class="token punctuation">,</span> unauthorized access to <span class="token keyword">this</span> device and
+            integrity compromise <span class="token keyword">of</span> <span class="token keyword">this</span> device<span class="token punctuation">.</span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>
+            All qualifying security incidents must be reported to <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>mailto:<a href="mailto:security@athenahealth.com">security@athenahealth.com</a><span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>security@athenahealth<span class="token punctuation">.</span>com<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span><span class="token punctuation">.</span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span><span class="token entity" title="&nbsp;">&amp;nbsp;</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ol</span> <span class="token attr-name">start</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>4<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>strong</span><span class="token punctuation">&gt;</span></span>Limitation <span class="token keyword">of</span> liability<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>strong</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ol</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>
+            You expressly understand and agree that athenahealth shall not be liable to you <span class="token keyword">for</span> any direct or indirect
+            damages which may be incurred by you<span class="token punctuation">,</span> however caused and under any theory <span class="token keyword">of</span> liability<span class="token punctuation">.</span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>
+            athenahealth does not warrant or guarantee the retention <span class="token keyword">of</span> any information on <span class="token keyword">this</span> device<span class="token punctuation">,</span> and may
+            destroy any and all information on <span class="token keyword">this</span> device <span class="token keyword">in</span> the event <span class="token keyword">of</span> a qualifying security incident<span class="token punctuation">.</span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>Modal</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+        </div>
+        <div class="fg_c_code-tabs__panel" id="tab-html-2f0a8023da41a698b61371d5ab9024f2" role="tabpanel">
+          <button type="button" class="fg_c_button--inverted fg_c_button--copy js-copy-code" data-clipboard-target="#tab-html-2f0a8023da41a698b61371d5ab9024f2 pre">Copy Code</button>
+          <pre class="fg_c_code-block"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token style-attr language-css"><span class="token attr-name"> <span class="token attr-name">style</span></span><span class="token punctuation">=&quot;</span><span class="token attr-value"><span class="token property">height</span><span class="token punctuation">:</span>550px</span><span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+        </div>
+      </div>
+    </div>
+  </div></div>
+
+<h2 id="usage">Usage</h2>
+<p><code>Modal</code> attracts attention to an issue or problem that must be immediately resolved before a workflow can proceed. It disables the main content with a darkened overlay until the user explicitly interacts with the dialog. Some typical use cases include:</p>
+<ul>
+<li>Soliciting users for small amounts of additional detail without large workflow context changes that may prove confusing or onerous</li>
+<li>Interrupting the user to communicate a potentially hazardous situation (e.g., patient safety)</li>
+<li>Requiring users to confirm a destructive action (e.g., deletion)</li>
+</ul>
+<p>Use modals sparingly because they interrupt a user&#39;s workflow. Excessive user interruptions with modals reduce their overall effectiveness in the application.</p>
+<p>Modals are intended for short, alert-style interactions. To present a workflow in a pop-up dialog, use <a href="lightbox.html"><code>Lightbox</code></a> instead.</p>
+<p>Avoid having modals that open another modal dialog.</p>
+<h2 id="design">Design</h2>
+<p>The <code>Modal</code> component has several parts that require design consideration.</p>
+<h3 id="modal-header">Modal Header</h3>
+<p>This is the title of the dialog and should indicate why the modal is appearing. Title text should use title case (e.g., &quot;Edit Details&quot;). This header also includes an icon allowing the dialog to be closed.</p>
+<h3 id="body">Body</h3>
+<p>This is the dialog content. For modals to be effective they need to be concise. Consider if a <code>Modal</code> is the correct pattern based on whether the following cases apply:</p>
+<ul>
+<li>The form is long. Having a form that requires scrolling within a dialog indicates that the modal is likely not the correct container for that form.</li>
+<li>The dialog contains multiple screens of information within a modal dialog. This is a sign that the task is too complex for a modal dialog.</li>
+<li>The content scrolls. Vertical scrolling will occur if the content exceeds the area inside the modal; try to minimize content in the modal. Horizontal scrolling is not enabled within the modal.</li>
+</ul>
+<h3 id="footer">Footer</h3>
+<p>Every <code>Modal</code> should have a clearly labeled call-to-action primary button. By design, these cannot be removed since the use of a <code>Modal</code> should be to convey unambiguous information or drive action. Button text should use title case (e.g., &quot;Save Changes&quot;).</p>
+<h3 id="overlay">Overlay</h3>
+<p><code>Modal</code> can be configured to be dismissed by clicking anywhere in the overlay (the darkened background). However, when displaying urgent information, do not allow users to dismiss the dialog by clicking the overlay, in order to avoid accidental dismissals.</p>
+<h2 id="implementation">Implementation</h2>
+<p><code>Modal</code> does not close itself. Its parent is responsible for setting the <code>show</code> prop to <code>false</code> in the <code>onHide</code> and <code>onPrimaryClick</code> callback functions.</p>
+<p><code>onPrimaryClick</code> is called when the primary button is clicked. <code>onHide</code> is called for all other interactions that should close the modal (e.g., clicking on the overlay). Therefore, implementing the close functionality within <code>onHide</code> is required, unless <code>disableClose</code> is set to <code>true</code>.</p>
+<h2 id="api-tables">API Tables</h2>
+<h3 id="import-modal-only">Import Modal Only</h3>
+<p><p>Importing individual components can reduce bundle size. <a href="https://athenaconfluence.athenahealth.com/display/UXDS/Forge+Import+for+Better+Tree+Shaking">Learn more</a></p><code>import Modal from &#39;@athena/forge/lib/modal&#39;;</code></p>
+<h3 id="modal-props">Modal Props</h3>
+<table class="api-table api-table--react">
+  <thead>
+    <tr>
+      <th>Prop</th>
+      <th>Type</th>
+      <th>Default</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>alertType</code></td>
+      <td>
+        custom: <span class="fg_text--code">ForgePropTypes<wbr />.alertTypes</span>
+      </td>
+      <td></td>
+      <td>Gives a default left border and header with icon that corresponds to status level</td>
+    </tr>
+    <tr>
+      <td><code>className</code></td>
+      <td>
+        string
+      </td>
+      <td></td>
+      <td>Adds a class to the root element of the component</td>
+    </tr>
+    <tr>
+      <td><code>disableClose</code></td>
+      <td>
+        bool
+      </td>
+      <td>false</td>
+      <td>Remove close button and background close clicking</td>
+    </tr>
+    <tr>
+      <td><code>headerText</code></td>
+      <td>
+        string
+      </td>
+      <td></td>
+      <td>Title text displayed at the top of the modal</td>
+    </tr>
+    <tr>
+      <td><code>includeButtonRow</code></td>
+      <td>
+        bool
+      </td>
+      <td>true</td>
+      <td>Includes default button row</td>
+    </tr>
+    <tr>
+      <td><code>onEnter</code></td>
+      <td>
+        func
+      </td>
+      <td></td>
+      <td>Callback fired before the Modal transitions in. Used to manage other animations while modal is opening.
+    Generated by the underlying <a href="https://reactcommunity.org/react-transition-group/">React Transition Group</a></td>
+    </tr>
+    <tr>
+      <td><code>onEntered</code></td>
+      <td>
+        func
+      </td>
+      <td></td>
+      <td>Callback fired after the Modal finishes transitioning in. Used to manage other animations while modal is opening.
+    Generated by the underlying <a href="https://reactcommunity.org/react-transition-group/">React Transition Group</a></td>
+    </tr>
+    <tr>
+      <td><code>onEntering</code></td>
+      <td>
+        func
+      </td>
+      <td></td>
+      <td>Callback fired as the Modal begins to transition in. Used to manage other animations while modal is opening.
+    Generated by the underlying <a href="https://reactcommunity.org/react-transition-group/">React Transition Group</a></td>
+    </tr>
+    <tr>
+      <td><code>onExit</code></td>
+      <td>
+        func
+      </td>
+      <td></td>
+      <td>Callback fired right before the Modal transitions out. Used to manage other animations while modal is closing.
+    Generated by the underlying <a href="https://reactcommunity.org/react-transition-group/">React Transition Group</a></td>
+    </tr>
+    <tr>
+      <td><code>onExited</code></td>
+      <td>
+        func
+      </td>
+      <td></td>
+      <td>Callback fired after the Modal finishes transitioning out. Used to manage other animations while modal is closing.
+    Generated by the underlying <a href="https://reactcommunity.org/react-transition-group/">React Transition Group</a></td>
+    </tr>
+    <tr>
+      <td><code>onExiting</code></td>
+      <td>
+        func
+      </td>
+      <td></td>
+      <td>Callback fired as the Modal begins to transition out. Used to manage other animations while modal is closing.
+    Generated by the underlying <a href="https://reactcommunity.org/react-transition-group/">React Transition Group</a></td>
+    </tr>
+    <tr>
+      <td><code>onHide</code></td>
+      <td>func</td>
+      <td></td>
+      <td>A callback fired when the close button, backdrop, or secondary button is clicked,
+    or escape key is pressed.
+    The onHide callback only signals intent from the Modal, you must actually set the show
+    prop to false for the Modal to close.</td>
+    </tr>
+    <tr>
+      <td><code>onPrimaryClick</code></td>
+      <td>
+        func
+      </td>
+      <td></td>
+      <td>Callback fired when the primary button is clicked</td>
+    </tr>
+    <tr>
+      <td><code>onShow</code></td>
+      <td>
+        func
+      </td>
+      <td></td>
+      <td>A callback fired when the Modal is opening</td>
+    </tr>
+    <tr>
+    </tr>
+      <td><code>padded</code></td>
+      <td>
+        bool
+      </td>
+      <td>true</td>
+      <td>If set to true, will provide default padding for content</td>
+    <tr>
+      <td><code>primaryButtonText</code></td>
+      <td>
+        string
+      </td>
+      <td>&#x27;OK&#x27;</td>
+      <td>Text for the primary action button</td>
+    </tr>
+    <tr>
+      <td><code>secondaryButtonText</code></td>
+      <td>
+        string
+      </td>
+      <td>&#x27;Cancel&#x27;</td>
+      <td>Text for the secondary button</td>
+    </tr>
+    <tr>
+      <td><code>show</code></td>
+      <td>
+        bool
+      </td>
+      <td>false</td>
+      <td>Set the visibility of the Modal</td>
+    </tr>
+    <tr>
+      <td><code>theme</code></td>
+      <td>
+        custom: ThemeConsumer.themePropType
+      </td>
+      <td></td>
+      <td>Theme variables for configuring an instance of Forge. See Root component for more details.</td>
+    </tr>
+    <tr>
+      <td><code>width</code></td>
+      <td>
+        enum
+          <ul>
+              <li>&#x27;small&#x27;</li>
+              <li>&#x27;medium&#x27;</li>
+              <li>&#x27;large&#x27;</li>
+          </ul>
+      </td>
+      <td>&#x27;small&#x27;</td>
+      <td>Width of modal dialog box</td>
+    </tr>
+    <tr>
+      <td><code>...rest</code></td>
+      <td></td>
+      <td></td>
+      <td>Passthrough props to the third party <a href="https://react-bootstrap.github.io/react-overlays/#modals"><code>React Overlay Modal</code></a> used to implement this component</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="custom-types">Custom Types</h3>
+<table class="api-table fg_api-table--types">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Values</th>
+      <th>Comments</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>  <td>    <code>ForgePropTypes.alertTypes</code>  </td>  <td>enum:    <ul>      <li>&#39;attention&#39;</li>      <li>&#39;critical&#39;</li>      <li>&#39;info&#39;</li>      <li>&#39;success&#39;</li>    </ul>  </td>  <td></td></tr>  </tbody>
+</table>
+
+<h3 id="html-api">HTML API</h3>
+<table class="api-table api-table--html">
+  <thead>
+      <tr>
+      <th>Class</th>
+      <th>Applies To</th>
+      <th>Description</th>
+      </tr>
+  </thead>
+  <tbody>
+    <tr><td><code>fe_c_modal</code></td><td><code>Modal</code> root</td><td>Base class required for <code>Modal</code></td></tr>
+    <tr><td><code>fe_c_modal__body</code></td><td><code>Modal</code> body element</td><td>Base class required for <code>Modal</code> body element</td></tr>
+    <tr><td><code>fe_c_modal__blocker</code></td><td><code>Modal</code> blocker element</td><td>Base class required for <code>Modal</code> blocker element</td></tr>
+    <tr><td><code>fe_c_modal__close</code></td><td><code>Modal</code> close element</td><td>Base class required for <code>Modal</code> close element</td></tr>
+    <tr><td><code>fe_c_modal__dialog</code></td><td><code>Modal</code> dialog element</td><td>Base class required for <code>Modal</code> dialog element</td></tr>
+    <tr><td><code>fe_c_modal__dialog--padded</code></td><td><code>Modal</code> dialog element</td><td>Adds default padding to dialog</td></tr>
+    <tr>
+      <td>
+        <ul>
+          <li><code>fe_c_modal__dialog--small</code></li>
+          <li><code>fe_c_modal__dialog--medium</code></li>
+          <li><code>fe_c_modal__dialog--large</code></li>
+        </ul>
+      </td>
+      <td><code>Modal</code> dialog element</td>
+      <td>sets the dialog size (default is small)</td>
+    </tr>
+    <tr><td><code>fe_c_modal__footer</code></td><td><code>Modal</code> footer element</td><td>Base class required for <code>Modal</code> footer element</td></tr>
+    <tr><td><code>fe_c_modal__header</code></td><td><code>Modal</code> header element</td><td>Base class required for <code>Modal</code> header element that wraps the icon and title</td></tr>
+    <tr><td><code>fe_c_modal__icon</code></td><td><code>Modal</code> icon element</td><td>Base class required for <code>Modal</code> icon element that appears next to the title</td></tr>
+    <tr>
+      <td>
+        <ul>
+          <li><code>fe_is-attention</code></li>
+          <li><code>fe_is-info</code></li>
+          <li><code>fe_is-critical</code></li>
+          <li><code>fe_is-success</code></li>
+        </ul>
+      </td>
+      <td><code>Modal</code> dialog and root element</td>
+      <td>Sets the dialog to the specified style</td>
+    </tr>
+  </tbody>
+</table>
+
+      
+
+    
+  </div>
+
+  <script>
+document.addEventListener("DOMContentLoaded", function(event) {
+    if (window.amplitude) {
+        amplitude.getInstance().init('d426be2bbef81471eeac4bca0c061243');
+
+        amplitude.getInstance().logEvent('viewed page', {
+          pageName: 'Modal',
+          pageCategory: 'components'.length > 0
+            ? 'components'
+            : null,
+          forgeVersion: '2.0.0-beta.7',
+          forgeGeneralVersion: /^\d*(?=\.)/.exec('2.0.0-beta.7')
+            ? /^\d*(?=\.)/.exec('2.0.0-beta.7').toString()
+            : null
+        });
+      }
+      else {
+        console.warn("amplitude is not logging events");
+      }
+});
+</script>
+
+
+
+    </div>
+    <!--div class="debug"><pre><code class="language-json">{"id":"456026dbdd9d9daa06cb96f685d1abc6","name":"modal","handle":"modal","label":"Modal","title":"Modal","order":1000000,"isHidden":false,"alias":null,"isEntity":true,"isDoc":true,"isIndex":false,"path":"components/modal","status":null,"content":"<p class=\"p--lead\">Modal is a pop-up dialog that interrupts a workflow to force a user interaction.</p>\n\n## Demos\n{{demo '@modal'}}\n\n## Usage\n`Modal` attracts attention to an issue or problem that must be immediately resolved before a workflow can proceed. It disables the main content with a darkened overlay until the user explicitly interacts with the dialog. Some typical use cases include:\n* Soliciting users for small amounts of additional detail without large workflow context changes that may prove confusing or onerous\n* Interrupting the user to communicate a potentially hazardous situation (e.g., patient safety)\n* Requiring users to confirm a destructive action (e.g., deletion)\n\nUse modals sparingly because they interrupt a user's workflow. Excessive user interruptions with modals reduce their overall effectiveness in the application.\n\nModals are intended for short, alert-style interactions. To present a workflow in a pop-up dialog, use [`Lightbox`]({{ path '/docs/components/lightbox' }}) instead.\n\nAvoid having modals that open another modal dialog.\n\n## Design\nThe `Modal` component has several parts that require design consideration.\n\n### Modal Header\nThis is the title of the dialog and should indicate why the modal is appearing. Title text should use title case (e.g., \"Edit Details\"). This header also includes an icon allowing the dialog to be closed.\n\n### Body\nThis is the dialog content. For modals to be effective they need to be concise. Consider if a `Modal` is the correct pattern based on whether the following cases apply:\n* The form is long. Having a form that requires scrolling within a dialog indicates that the modal is likely not the correct container for that form.\n* The dialog contains multiple screens of information within a modal dialog. This is a sign that the task is too complex for a modal dialog.\n* The content scrolls. Vertical scrolling will occur if the content exceeds the area inside the modal; try to minimize content in the modal. Horizontal scrolling is not enabled within the modal.\n\n### Footer\nEvery `Modal` should have a clearly labeled call-to-action primary button. By design, these cannot be removed since the use of a `Modal` should be to convey unambiguous information or drive action. Button text should use title case (e.g., \"Save Changes\").\n\n### Overlay\n`Modal` can be configured to be dismissed by clicking anywhere in the overlay (the darkened background). However, when displaying urgent information, do not allow users to dismiss the dialog by clicking the overlay, in order to avoid accidental dismissals.\n\n## Implementation\n`Modal` does not close itself. Its parent is responsible for setting the `show` prop to `false` in the `onHide` and `onPrimaryClick` callback functions.\n\n`onPrimaryClick` is called when the primary button is clicked. `onHide` is called for all other interactions that should close the modal (e.g., clicking on the overlay). Therefore, implementing the close functionality within `onHide` is required, unless `disableClose` is set to `true`.\n\n## API Tables\n### Import Modal Only\n{{> componentImportMessage}}\n`import Modal from '@athena/forge/lib/modal';`\n\n### Modal Props\n<table class=\"api-table api-table--react\">\n  <thead>\n    <tr>\n      <th>Prop</th>\n      <th>Type</th>\n      <th>Default</th>\n      <th>Description</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>`alertType`</td>\n      <td>\n        custom: <span class=\"fg_text--code\">ForgePropTypes<wbr />.alertTypes</span>\n      </td>\n      <td></td>\n      <td>Gives a default left border and header with icon that corresponds to status level</td>\n    </tr>\n    <tr>\n      <td>`className`</td>\n      <td>\n        string\n      </td>\n      <td></td>\n      <td>Adds a class to the root element of the component</td>\n    </tr>\n    <tr>\n      <td>`disableClose`</td>\n      <td>\n        bool\n      </td>\n      <td>false</td>\n      <td>Remove close button and background close clicking</td>\n    </tr>\n    <tr>\n      <td>`headerText`</td>\n      <td>\n        string\n      </td>\n      <td></td>\n      <td>Title text displayed at the top of the modal</td>\n    </tr>\n    <tr>\n      <td>`includeButtonRow`</td>\n      <td>\n        bool\n      </td>\n      <td>true</td>\n      <td>Includes default button row</td>\n    </tr>\n    <tr>\n      <td>`onEnter`</td>\n      <td>\n        func\n      </td>\n      <td></td>\n      <td>Callback fired before the Modal transitions in. Used to manage other animations while modal is opening.\n    Generated by the underlying [React Transition Group](https://reactcommunity.org/react-transition-group/)</td>\n    </tr>\n    <tr>\n      <td>`onEntered`</td>\n      <td>\n        func\n      </td>\n      <td></td>\n      <td>Callback fired after the Modal finishes transitioning in. Used to manage other animations while modal is opening.\n    Generated by the underlying [React Transition Group](https://reactcommunity.org/react-transition-group/)</td>\n    </tr>\n    <tr>\n      <td>`onEntering`</td>\n      <td>\n        func\n      </td>\n      <td></td>\n      <td>Callback fired as the Modal begins to transition in. Used to manage other animations while modal is opening.\n    Generated by the underlying [React Transition Group](https://reactcommunity.org/react-transition-group/)</td>\n    </tr>\n    <tr>\n      <td>`onExit`</td>\n      <td>\n        func\n      </td>\n      <td></td>\n      <td>Callback fired right before the Modal transitions out. Used to manage other animations while modal is closing.\n    Generated by the underlying [React Transition Group](https://reactcommunity.org/react-transition-group/)</td>\n    </tr>\n    <tr>\n      <td>`onExited`</td>\n      <td>\n        func\n      </td>\n      <td></td>\n      <td>Callback fired after the Modal finishes transitioning out. Used to manage other animations while modal is closing.\n    Generated by the underlying [React Transition Group](https://reactcommunity.org/react-transition-group/)</td>\n    </tr>\n    <tr>\n      <td>`onExiting`</td>\n      <td>\n        func\n      </td>\n      <td></td>\n      <td>Callback fired as the Modal begins to transition out. Used to manage other animations while modal is closing.\n    Generated by the underlying [React Transition Group](https://reactcommunity.org/react-transition-group/)</td>\n    </tr>\n    <tr>\n      <td>`onHide`</td>\n      <td>func</td>\n      <td></td>\n      <td>A callback fired when the close button, backdrop, or secondary button is clicked,\n    or escape key is pressed.\n    The onHide callback only signals intent from the Modal, you must actually set the show\n    prop to false for the Modal to close.</td>\n    </tr>\n    <tr>\n      <td>`onPrimaryClick`</td>\n      <td>\n        func\n      </td>\n      <td></td>\n      <td>Callback fired when the primary button is clicked</td>\n    </tr>\n    <tr>\n      <td>`onShow`</td>\n      <td>\n        func\n      </td>\n      <td></td>\n      <td>A callback fired when the Modal is opening</td>\n    </tr>\n    <tr>\n    </tr>\n      <td>`padded`</td>\n      <td>\n        bool\n      </td>\n      <td>true</td>\n      <td>If set to true, will provide default padding for content</td>\n    <tr>\n      <td>`primaryButtonText`</td>\n      <td>\n        string\n      </td>\n      <td>&#x27;OK&#x27;</td>\n      <td>Text for the primary action button</td>\n    </tr>\n    <tr>\n      <td>`secondaryButtonText`</td>\n      <td>\n        string\n      </td>\n      <td>&#x27;Cancel&#x27;</td>\n      <td>Text for the secondary button</td>\n    </tr>\n    <tr>\n      <td>`show`</td>\n      <td>\n        bool\n      </td>\n      <td>false</td>\n      <td>Set the visibility of the Modal</td>\n    </tr>\n    <tr>\n      <td>`theme`</td>\n      <td>\n        custom: ThemeConsumer.themePropType\n      </td>\n      <td></td>\n      <td>Theme variables for configuring an instance of Forge. See Root component for more details.</td>\n    </tr>\n    <tr>\n      <td>`width`</td>\n      <td>\n        enum\n          <ul>\n              <li>&#x27;small&#x27;</li>\n              <li>&#x27;medium&#x27;</li>\n              <li>&#x27;large&#x27;</li>\n          </ul>\n      </td>\n      <td>&#x27;small&#x27;</td>\n      <td>Width of modal dialog box</td>\n    </tr>\n    <tr>\n      <td>`...rest`</td>\n      <td></td>\n      <td></td>\n      <td>Passthrough props to the third party [`React Overlay Modal`](https://react-bootstrap.github.io/react-overlays/#modals) used to implement this component</td>\n    </tr>\n  </tbody>\n</table>\n\n### Custom Types\n<table class=\"api-table fg_api-table--types\">\n  <thead>\n    <tr>\n      <th>Name</th>\n      <th>Values</th>\n      <th>Comments</th>\n    </tr>\n  </thead>\n  <tbody>\n    {{> alertTypes }}\n  </tbody>\n</table>\n\n### HTML API\n<table class=\"api-table api-table--html\">\n  <thead>\n      <tr>\n      <th>Class</th>\n      <th>Applies To</th>\n      <th>Description</th>\n      </tr>\n  </thead>\n  <tbody>\n    <tr><td>`fe_c_modal`</td><td>`Modal` root</td><td>Base class required for `Modal`</td></tr>\n    <tr><td>`fe_c_modal__body`</td><td>`Modal` body element</td><td>Base class required for `Modal` body element</td></tr>\n    <tr><td>`fe_c_modal__blocker`</td><td>`Modal` blocker element</td><td>Base class required for `Modal` blocker element</td></tr>\n    <tr><td>`fe_c_modal__close`</td><td>`Modal` close element</td><td>Base class required for `Modal` close element</td></tr>\n    <tr><td>`fe_c_modal__dialog`</td><td>`Modal` dialog element</td><td>Base class required for `Modal` dialog element</td></tr>\n    <tr><td>`fe_c_modal__dialog--padded`</td><td>`Modal` dialog element</td><td>Adds default padding to dialog</td></tr>\n    <tr>\n      <td>\n        <ul>\n          <li>`fe_c_modal__dialog--small`</li>\n          <li>`fe_c_modal__dialog--medium`</li>\n          <li>`fe_c_modal__dialog--large`</li>\n        </ul>\n      </td>\n      <td>`Modal` dialog element</td>\n      <td>sets the dialog size (default is small)</td>\n    </tr>\n    <tr><td>`fe_c_modal__footer`</td><td>`Modal` footer element</td><td>Base class required for `Modal` footer element</td></tr>\n    <tr><td>`fe_c_modal__header`</td><td>`Modal` header element</td><td>Base class required for `Modal` header element that wraps the icon and title</td></tr>\n    <tr><td>`fe_c_modal__icon`</td><td>`Modal` icon element</td><td>Base class required for `Modal` icon element that appears next to the title</td></tr>\n    <tr>\n      <td>\n        <ul>\n          <li>`fe_is-attention`</li>\n          <li>`fe_is-info`</li>\n          <li>`fe_is-critical`</li>\n          <li>`fe_is-success`</li>\n        </ul>\n      </td>\n      <td>`Modal` dialog and root element</td>\n      <td>Sets the dialog to the specified style</td>\n    </tr>\n  </tbody>\n</table>\n","lang":{"name":"Markdown","mode":"markdown","scope":"source.gfm","color":"#083FA1"},"file":{"root":"C:\\","dir":"C:\\Users\\ctsui\\code\\forge-guide\\docs\\04-components","base":"modal.md","ext":".md","name":"modal","relPath":"04-components\\modal.md","fsName":"modal","path":"C:\\Users\\ctsui\\code\\forge-guide\\docs\\04-components\\modal.md","dirs":["C:\\Users\\ctsui\\code\\forge-guide\\docs\\04-components"],"isHidden":false,"order":1000000,"isFile":true,"isDirectory":false,"stat":{"dev":4102694615,"mode":33206,"nlink":1,"uid":0,"gid":0,"rdev":0,"ino":4222124650945713,"size":10612,"atimeMs":1547561625243.6597,"mtimeMs":1547561625243.6597,"ctimeMs":1547561625243.6597,"birthtimeMs":1528896974626.8567,"atime":"2019-01-15T14:13:45.244Z","mtime":"2019-01-15T14:13:45.244Z","ctime":"2019-01-15T14:13:45.244Z","birthtime":"2018-06-13T13:36:14.627Z"},"lang":{"name":"Markdown","mode":"markdown","scope":"source.gfm","color":"#083FA1"},"isBinary":false},"context":{"extensions":{"core":{"forge-toast":{"name":"Toast","version":"0.2.2","description":"Toast component for Forge"},"forge-toggle-switch":{"name":"ToggleSwitch","version":"0.1.1","description":"ToggleSwitch component for Forge"}},"community":{"clinicals-forge-extension":{"name":"Clinicals Forge Extension","owner":"Nursing Flowsheets","url":"https://bitbucket.athenahealth.com/projects/CLIFS/repos/clinicals-forge-extension/browse","version":"2.1.1","description":"A forge-extension containing components used by inpatient clinicals"}}},"isComponent":true,"amplitudeCategory":"components"}}</code></pre></div-->
+  </div>
+</div>
+
+
+
+</div>
+
+
+
+
+<script src="../../assets/clipboard.min.js?cachebust=1.2.0"></script>
+
+<script src="../../assets/main.js?cachebust=1.2.0"></script>
+
+<script src="../../assets/amplitude.js?cachebust=1.2.0"></script>
+
+
+
+</body>
+</html>

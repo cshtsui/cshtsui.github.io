@@ -1,0 +1,31 @@
+<svg width="24px" height="21px" viewBox="0 0 24 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Sketch file</title>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(0.500000, 0.000000)" fill-rule="nonzero">
+            <g fill="#FFAE00">
+                <polygon transform="translate(11.500000, 10.405870) rotate(-180.000000) translate(-11.500000, -10.405870) " points="11.5 -2.84217094e-14 23 13.3623482 18.0182186 20.1133603 11.5 20.8117409 4.98178138 20.1133603 2.84217094e-14 13.3623482"></polygon>
+            </g>
+            <g transform="translate(0.000000, 7.449393)" fill="#EC6C00">
+                <polygon transform="translate(11.500000, 6.681174) rotate(-180.000000) translate(-11.500000, -6.681174) " points="11.5 -2.84217094e-14 23 13.3623482 2.84217094e-14 13.3623482"></polygon>
+            </g>
+            <g transform="translate(4.655870, 7.449393)" fill="#FFAE00">
+                <polygon transform="translate(6.844130, 6.681174) rotate(-180.000000) translate(-6.844130, -6.681174) " points="6.84412955 -2.84217094e-14 13.6882591 13.3623482 2.84217094e-14 13.3623482"></polygon>
+            </g>
+            <g transform="translate(4.655870, 0.000000)" fill="#FFEFB4">
+                <polygon transform="translate(6.844130, 3.724696) rotate(-180.000000) translate(-6.844130, -3.724696) " points="6.84412955 7.44939271 13.6882591 1.14601985e-13 0 -1.42108547e-14"></polygon>
+            </g>
+            <g transform="translate(0.000000, 0.698381)" fill="#FFAE00">
+                <polygon transform="translate(2.490891, 3.375506) rotate(-180.000000) translate(-2.490891, -3.375506) " points="7.10542736e-15 6.75101215 2.56072874 3.35222672 4.98178138 1.24388129e-13 0.279352227 0"></polygon>
+            </g>
+            <g transform="translate(20.509109, 4.073887) scale(-1, 1) translate(-20.509109, -4.073887) translate(18.018219, 0.698381)" fill="#FFAE00">
+                <polygon transform="translate(2.490891, 3.375506) rotate(-180.000000) translate(-2.490891, -3.375506) " points="7.10542736e-15 6.75101215 2.56072874 3.35222672 4.98178138 1.24388129e-13 0.279352227 0"></polygon>
+            </g>
+            <g transform="translate(4.655870, 0.000000)" fill="#FED305">
+                <polygon transform="translate(3.422065, 3.724696) rotate(-180.000000) translate(-3.422065, -3.724696) " points="6.51821862 6.75101215 6.84412955 -1.42108547e-14 1.42108547e-14 7.44939271"></polygon>
+            </g>
+            <g transform="translate(11.500000, 0.000000)" fill="#FED305">
+                <polygon transform="translate(3.422065, 3.724696) scale(-1, 1) rotate(-180.000000) translate(-3.422065, -3.724696) " points="6.51821862 6.75101215 6.84412955 -1.42108547e-14 -1.42108547e-14 7.44939271"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

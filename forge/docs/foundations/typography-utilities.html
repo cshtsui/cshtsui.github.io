@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+    window.frctl = {
+        env: 'static'
+    };
+    </script>
+    <script>var cl = document.querySelector('html').classList; cl.remove('no-js'); cl.add('has-js');</script>
+    <link rel="shortcut icon" href="../../favicon_blue.ico" type="image/ico">
+
+<link rel="stylesheet" href="../../assets/css/styles.css?cachebust=1.2.0" type="text/css">
+
+<link rel="stylesheet" href="../../assets/css/prism-atom-dark.css?cachebust=1.2.0" type="text/css">
+
+<link rel="stylesheet" href="../../assets/css/ascetic.css?cachebust=1.2.0" type="text/css">
+
+<link rel="stylesheet" href="../../css/forge.css?cachebust=1.2.0" type="text/css">
+
+
+<title>Typography Utilities | athenahealth</title>
+
+</head>
+<body>
+
+
+
+<div class="fg_app">
+  <header class="fg_l_header fg_l_header--alpha">
+  <a class="fg_c_branding" href="../../index.html">
+    <img src="../../assets/images/logo.svg" />
+  </a>
+  <nav class="fg_c_nav-top">
+  <ul class="fg_c_nav-top__list">
+    
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link "
+            href="../guidelines/principles.html"
+            title="Guidelines"
+          >
+            Guidelines
+          </a>
+        </li>
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link  fg_is-active"
+            href="color.html"
+            title="Foundations"
+          >
+            Foundations
+          </a>
+        </li>
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link "
+            href="../components/accordion.html"
+            title="Components"
+          >
+            Components
+          </a>
+        </li>
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link "
+            href="../extensions/forge-extensions.html"
+            title="Extensions"
+          >
+            Extensions
+          </a>
+        </li>
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link "
+            href="../resources/release-notes.html"
+            title="Resources"
+          >
+            Resources
+          </a>
+        </li>
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link "
+            href="../resources/downloads.html"
+            title="Resources"
+          >
+            Resources
+          </a>
+        </li>
+      
+    
+  </ul>
+</nav>
+
+
+  <div class="fg_c_nav-version">
+    v2.0.0-beta.7
+  </div>
+</header>
+
+
+  
+
+<div class="fg_l_sidebar" data-role="sidebar">
+  <nav class="fg_c_nav-left">
+  <ul class="fg_c_nav-left__list">
+  
+    
+  
+    
+  
+    
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="color.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Color</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="typography.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Typography</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="grid.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Grid Foundation</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="form-design.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Form Design</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href=""
+            
+            class="fg_c_nav-left__link  fg_is-active"
+          >
+            <span>Typography Utilities</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="layout-utilities.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Layout Utilities</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  </ul>
+</nav>
+
+</div>
+
+<div class="fg_l_main" data-role="main">
+  <div class="fg_doc">
+
+    
+
+    <div class="fg_doc__header">
+      
+        <h1 class="fg_doc__title">Typography Utilities</h1>
+      
+    </div>
+    <div class="fg_doc__content">
+      
+
+  <div class="fg_markdown">
+    
+
+      
+      
+
+      
+        <p class="p--lead">These classes can be used to specify font sizes and weights outside of what would already be applied with .fe_f_typography (see the <a href="#implementation">implementation section</a>). Their style rules are applied with the highest level of specificity.</p>
+
+<h2 id="demos">Demos</h2>
+<div class="fg_c_demos"><select class="fg_c_demos__select js-selector-demos"><option value="f6151d86b004a1af9e03457eabcf673e">Text Colors</option><option value="92db568dcd015e63079c5892e3e79360">Text Sizes</option><option value="980e3b4eb9e01a93cebc9a7039217c1e">Text Weights</option><option value="17cf000a1694bc0368344d759b8ea2fb">Text Alignments</option><option value="ff5d85a823df3285cb6ce07acbf0ddcb">List Style</option></select><div class="fg_c_demos__demo js-demo-f6151d86b004a1af9e03457eabcf673e ">
+    <div class="fg_c_preview js-resize-preview" style="height: 350px">
+      <iframe height="350" src="../../components/preview/typography-utils-colors.html" class="fg_c_preview__iframe"></iframe>
+    </div>
+    <div class="fg_c_accordian js-accordian">
+      <button class="fg_c_accordian__button" role="heading">
+        <span class="fg_c_accordian__icon js-icon"></span>
+        <span class="fg_c_accordian__closed-text">Show Code</span>
+        <span class="fg_c_accordian__open-text">Hide Code</span>
+      </button>
+      <div class="fg_c_code-tabs fg_is-hidden js-tabs">
+        <ul class="fg_c_code-tabs__list" role="tablist">
+          <li class="fg_c_code-tabs__tab" role="tab">
+            <a href="#tab-jsx-f6151d86b004a1af9e03457eabcf673e">JSX</a>
+          </li>
+          <li class="fg_c_code-tabs__tab" role="tab">
+            <a href="#tab-html-f6151d86b004a1af9e03457eabcf673e">HTML</a>
+          </li>
+        </ul>
+        <div class="fg_c_code-tabs__panel" id="tab-jsx-f6151d86b004a1af9e03457eabcf673e" role="tabpanel">
+          <button type="button" class="fg_c_button--inverted fg_c_button--copy js-copy-code" data-clipboard-target="#tab-jsx-f6151d86b004a1af9e03457eabcf673e pre">Copy Code</button>
+          <pre class="fg_c_code-block"><code class="language-jsx"><span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">&#39;react&#39;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> GridRow<span class="token punctuation">,</span> GridCol<span class="token punctuation">,</span> Heading <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&#39;@athena/forge&#39;</span><span class="token punctuation">;</span>
+<span style='display:none'>empty line</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">function</span> <span class="token function">TypographyUtilsColors</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">className</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;f&#95;typography fe&#95;u&#95;padding--large<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>GridRow</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>GridCol</span> <span class="token attr-name">width</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span> small<span class="token punctuation">:</span> <span class="token number">12</span><span class="token punctuation">,</span> medium<span class="token punctuation">:</span> <span class="token number">6</span> <span class="token punctuation">}</span><span class="token punctuation">}</span></span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Heading</span> <span class="token attr-name">text</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>Font Colors<span class="token punctuation">&quot;</span></span> <span class="token attr-name">variant</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>section<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">className</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;u&#95;color--default<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token punctuation">.</span>fe&#95;u&#95;color<span class="token operator">--</span><span class="token keyword">default</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">className</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;u&#95;color--dark<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token punctuation">.</span>fe&#95;u&#95;color<span class="token operator">--</span>dark<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">className</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;u&#95;color--muted<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token punctuation">.</span>fe&#95;u&#95;color<span class="token operator">--</span>muted<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">className</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;u&#95;color--light<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token punctuation">.</span>fe&#95;u&#95;color<span class="token operator">--</span>light<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">className</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;u&#95;color--disabled<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token punctuation">.</span>fe&#95;u&#95;color<span class="token operator">--</span>disabled<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">className</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>demo-background--contrast<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">className</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;u&#95;color--invert<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token punctuation">.</span>fe&#95;u&#95;color<span class="token operator">--</span>invert<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>GridCol</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>GridCol</span> <span class="token attr-name">width</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span> small<span class="token punctuation">:</span> <span class="token number">12</span><span class="token punctuation">,</span> medium<span class="token punctuation">:</span> <span class="token number">6</span> <span class="token punctuation">}</span><span class="token punctuation">}</span></span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Heading</span> <span class="token attr-name">text</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>Alert Colors<span class="token punctuation">&quot;</span></span> <span class="token attr-name">variant</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>section<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">className</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;u&#95;color--critical<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token punctuation">.</span>fe&#95;u&#95;color<span class="token operator">--</span>critical<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">className</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;u&#95;color--info<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token punctuation">.</span>fe&#95;u&#95;color<span class="token operator">--</span>info<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">className</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;u&#95;color--attention<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token punctuation">.</span>fe&#95;u&#95;color<span class="token operator">--</span>attention<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">className</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;u&#95;color--success<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token punctuation">.</span>fe&#95;u&#95;color<span class="token operator">--</span>success<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>GridCol</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>GridRow</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+        </div>
+        <div class="fg_c_code-tabs__panel" id="tab-html-f6151d86b004a1af9e03457eabcf673e" role="tabpanel">
+          <button type="button" class="fg_c_button--inverted fg_c_button--copy js-copy-code" data-clipboard-target="#tab-html-f6151d86b004a1af9e03457eabcf673e pre">Copy Code</button>
+          <pre class="fg_c_code-block"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;f&#95;typography fe&#95;u&#95;padding--large<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row&#95;&#95;col fe&#95;l&#95;grid-row&#95;&#95;col--small-12 fe&#95;l&#95;grid-row&#95;&#95;col--medium-6<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;heading fe&#95;c&#95;heading--section<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Font Colors<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;u&#95;color--default<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>.fe&#95;u&#95;color--default<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;u&#95;color--dark<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>.fe&#95;u&#95;color--dark<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;u&#95;color--muted<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>.fe&#95;u&#95;color--muted<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;u&#95;color--light<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>.fe&#95;u&#95;color--light<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;u&#95;color--disabled<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>.fe&#95;u&#95;color--disabled<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>demo-background--contrast<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;u&#95;color--invert<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>.fe&#95;u&#95;color--invert<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row&#95;&#95;col fe&#95;l&#95;grid-row&#95;&#95;col--small-12 fe&#95;l&#95;grid-row&#95;&#95;col--medium-6<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;heading fe&#95;c&#95;heading--section<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Alert Colors<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;u&#95;color--critical<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>.fe&#95;u&#95;color--critical<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;u&#95;color--info<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>.fe&#95;u&#95;color--info<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;u&#95;color--attention<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>.fe&#95;u&#95;color--attention<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;u&#95;color--success<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>.fe&#95;u&#95;color--success<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+        </div>
+      </div>
+    </div>
+  </div><div class="fg_c_demos__demo js-demo-92db568dcd015e63079c5892e3e79360 fg_is-hidden">
+    <div class="fg_c_preview js-resize-preview" style="height: 340px">
+      <iframe height="340" src="../../components/preview/typography-utils-sizes.html" class="fg_c_preview__iframe"></iframe>
+    </div>
+    <div class="fg_c_accordian js-accordian">
+      <button class="fg_c_accordian__button" role="heading">
+        <span class="fg_c_accordian__icon js-icon"></span>
+        <span class="fg_c_accordian__closed-text">Show Code</span>
+        <span class="fg_c_accordian__open-text">Hide Code</span>
+      </button>
+      <div class="fg_c_code-tabs fg_is-hidden js-tabs">
+        <ul class="fg_c_code-tabs__list" role="tablist">
+          <li class="fg_c_code-tabs__tab" role="tab">
+            <a href="#tab-jsx-92db568dcd015e63079c5892e3e79360">JSX</a>
+          </li>
+          <li class="fg_c_code-tabs__tab" role="tab">
+            <a href="#tab-html-92db568dcd015e63079c5892e3e79360">HTML</a>
+          </li>
+        </ul>
+        <div class="fg_c_code-tabs__panel" id="tab-jsx-92db568dcd015e63079c5892e3e79360" role="tabpanel">
+          <button type="button" class="fg_c_button--inverted fg_c_button--copy js-copy-code" data-clipboard-target="#tab-jsx-92db568dcd015e63079c5892e3e79360 pre">Copy Code</button>
+          <pre class="fg_c_code-block"><code class="language-jsx"><span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">&#39;react&#39;</span><span class="token punctuation">;</span>
+<span style='display:none'>empty line</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">function</span> <span class="token function">TypographyUtilsSizes</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">className</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;f&#95;typography fe&#95;u&#95;padding--large<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">className</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;u&#95;font-size--xxlarge<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token punctuation">.</span>fe&#95;u&#95;font<span class="token operator">-</span>size<span class="token operator">--</span>xxlarge<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">className</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;u&#95;font-size--xlarge<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token punctuation">.</span>fe&#95;u&#95;font<span class="token operator">-</span>size<span class="token operator">--</span>xlarge<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">className</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;u&#95;font-size--large<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token punctuation">.</span>fe&#95;u&#95;font<span class="token operator">-</span>size<span class="token operator">--</span>large<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">className</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;u&#95;font-size--default<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token punctuation">.</span>fe&#95;u&#95;font<span class="token operator">-</span>size<span class="token operator">--</span><span class="token keyword">default</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">className</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;u&#95;font-size--small<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token punctuation">.</span>fe&#95;u&#95;font<span class="token operator">-</span>size<span class="token operator">--</span>small<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">className</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;u&#95;font-size--xsmall<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token punctuation">.</span>fe&#95;u&#95;font<span class="token operator">-</span>size<span class="token operator">--</span>xsmall<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+        </div>
+        <div class="fg_c_code-tabs__panel" id="tab-html-92db568dcd015e63079c5892e3e79360" role="tabpanel">
+          <button type="button" class="fg_c_button--inverted fg_c_button--copy js-copy-code" data-clipboard-target="#tab-html-92db568dcd015e63079c5892e3e79360 pre">Copy Code</button>
+          <pre class="fg_c_code-block"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;f&#95;typography fe&#95;u&#95;padding--large<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;u&#95;font-size--xxlarge<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>.fe&#95;u&#95;font-size--xxlarge<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;u&#95;font-size--xlarge<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>.fe&#95;u&#95;font-size--xlarge<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;u&#95;font-size--large<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>.fe&#95;u&#95;font-size--large<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;u&#95;font-size--default<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>.fe&#95;u&#95;font-size--default<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;u&#95;font-size--small<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>.fe&#95;u&#95;font-size--small<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;u&#95;font-size--xsmall<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>.fe&#95;u&#95;font-size--xsmall<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+        </div>
+      </div>
+    </div>
+  </div><div class="fg_c_demos__demo js-demo-980e3b4eb9e01a93cebc9a7039217c1e fg_is-hidden">
+    <div class="fg_c_preview js-resize-preview" style="height: 220px">
+      <iframe height="220" src="../../components/preview/typography-utils-weights.html" class="fg_c_preview__iframe"></iframe>
+    </div>
+    <div class="fg_c_accordian js-accordian">
+      <button class="fg_c_accordian__button" role="heading">
+        <span class="fg_c_accordian__icon js-icon"></span>
+        <span class="fg_c_accordian__closed-text">Show Code</span>
+        <span class="fg_c_accordian__open-text">Hide Code</span>
+      </button>
+      <div class="fg_c_code-tabs fg_is-hidden js-tabs">
+        <ul class="fg_c_code-tabs__list" role="tablist">
+          <li class="fg_c_code-tabs__tab" role="tab">
+            <a href="#tab-jsx-980e3b4eb9e01a93cebc9a7039217c1e">JSX</a>
+          </li>
+          <li class="fg_c_code-tabs__tab" role="tab">
+            <a href="#tab-html-980e3b4eb9e01a93cebc9a7039217c1e">HTML</a>
+          </li>
+        </ul>
+        <div class="fg_c_code-tabs__panel" id="tab-jsx-980e3b4eb9e01a93cebc9a7039217c1e" role="tabpanel">
+          <button type="button" class="fg_c_button--inverted fg_c_button--copy js-copy-code" data-clipboard-target="#tab-jsx-980e3b4eb9e01a93cebc9a7039217c1e pre">Copy Code</button>
+          <pre class="fg_c_code-block"><code class="language-jsx"><span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">&#39;react&#39;</span><span class="token punctuation">;</span>
+<span style='display:none'>empty line</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">function</span> <span class="token function">TypographyUtilsWeights</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">className</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;f&#95;typography fe&#95;u&#95;padding--large<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">className</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;u&#95;font-weight--light<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token punctuation">.</span>fe&#95;u&#95;font<span class="token operator">-</span>weight<span class="token operator">--</span>light<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">className</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;u&#95;font-weight--regular<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token punctuation">.</span>fe&#95;u&#95;font<span class="token operator">-</span>weight<span class="token operator">--</span>regular<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">className</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;u&#95;font-weight--semibold<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token punctuation">.</span>fe&#95;u&#95;font<span class="token operator">-</span>weight<span class="token operator">--</span>semibold<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">className</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;u&#95;font-weight--bold<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token punctuation">.</span>fe&#95;u&#95;font<span class="token operator">-</span>weight<span class="token operator">--</span>bold<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+        </div>
+        <div class="fg_c_code-tabs__panel" id="tab-html-980e3b4eb9e01a93cebc9a7039217c1e" role="tabpanel">
+          <button type="button" class="fg_c_button--inverted fg_c_button--copy js-copy-code" data-clipboard-target="#tab-html-980e3b4eb9e01a93cebc9a7039217c1e pre">Copy Code</button>
+          <pre class="fg_c_code-block"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;f&#95;typography fe&#95;u&#95;padding--large<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;u&#95;font-weight--light<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>.fe&#95;u&#95;font-weight--light<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;u&#95;font-weight--regular<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>.fe&#95;u&#95;font-weight--regular<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;u&#95;font-weight--semibold<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>.fe&#95;u&#95;font-weight--semibold<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;u&#95;font-weight--bold<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>.fe&#95;u&#95;font-weight--bold<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+        </div>
+      </div>
+    </div>
+  </div><div class="fg_c_demos__demo js-demo-17cf000a1694bc0368344d759b8ea2fb fg_is-hidden">
+    <div class="fg_c_preview js-resize-preview" style="height: 230px">
+      <iframe height="230" src="../../components/preview/typography-utils-alignments.html" class="fg_c_preview__iframe"></iframe>
+    </div>
+    <div class="fg_c_accordian js-accordian">
+      <button class="fg_c_accordian__button" role="heading">
+        <span class="fg_c_accordian__icon js-icon"></span>
+        <span class="fg_c_accordian__closed-text">Show Code</span>
+        <span class="fg_c_accordian__open-text">Hide Code</span>
+      </button>
+      <div class="fg_c_code-tabs fg_is-hidden js-tabs">
+        <ul class="fg_c_code-tabs__list" role="tablist">
+          <li class="fg_c_code-tabs__tab" role="tab">
+            <a href="#tab-jsx-17cf000a1694bc0368344d759b8ea2fb">JSX</a>
+          </li>
+          <li class="fg_c_code-tabs__tab" role="tab">
+            <a href="#tab-html-17cf000a1694bc0368344d759b8ea2fb">HTML</a>
+          </li>
+        </ul>
+        <div class="fg_c_code-tabs__panel" id="tab-jsx-17cf000a1694bc0368344d759b8ea2fb" role="tabpanel">
+          <button type="button" class="fg_c_button--inverted fg_c_button--copy js-copy-code" data-clipboard-target="#tab-jsx-17cf000a1694bc0368344d759b8ea2fb pre">Copy Code</button>
+          <pre class="fg_c_code-block"><code class="language-jsx"><span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">&#39;react&#39;</span><span class="token punctuation">;</span>
+<span style='display:none'>empty line</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">function</span> <span class="token function">TypographyUtilsAlignments</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">className</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;f&#95;typography fe&#95;u&#95;padding--large<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">className</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>typography-alignment-demo<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">className</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;u&#95;text-align--center<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token punctuation">.</span>fe&#95;u&#95;text<span class="token operator">-</span>align<span class="token operator">--</span>center<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">className</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>typography-alignment-demo<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">className</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;u&#95;text-align--left<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token punctuation">.</span>fe&#95;u&#95;text<span class="token operator">-</span>align<span class="token operator">--</span>left<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">className</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>typography-alignment-demo<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">className</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;u&#95;text-align--right<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token punctuation">.</span>fe&#95;u&#95;text<span class="token operator">-</span>align<span class="token operator">--</span>right<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">className</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>typography-alignment-demo<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">className</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;u&#95;text-align--justify<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token punctuation">.</span>fe&#95;u&#95;text<span class="token operator">-</span>align<span class="token operator">--</span>justify<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+        </div>
+        <div class="fg_c_code-tabs__panel" id="tab-html-17cf000a1694bc0368344d759b8ea2fb" role="tabpanel">
+          <button type="button" class="fg_c_button--inverted fg_c_button--copy js-copy-code" data-clipboard-target="#tab-html-17cf000a1694bc0368344d759b8ea2fb pre">Copy Code</button>
+          <pre class="fg_c_code-block"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;f&#95;typography fe&#95;u&#95;padding--large<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>typography-alignment-demo<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;u&#95;text-align--center<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>.fe&#95;u&#95;text-align--center<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>typography-alignment-demo<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;u&#95;text-align--left<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>.fe&#95;u&#95;text-align--left<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>typography-alignment-demo<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;u&#95;text-align--right<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>.fe&#95;u&#95;text-align--right<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>typography-alignment-demo<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;u&#95;text-align--justify<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>.fe&#95;u&#95;text-align--justify<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+        </div>
+      </div>
+    </div>
+  </div><div class="fg_c_demos__demo js-demo-ff5d85a823df3285cb6ce07acbf0ddcb fg_is-hidden">
+    <div class="fg_c_preview js-resize-preview" style="height: 240px">
+      <iframe height="240" src="../../components/preview/typography-utils-list-style.html" class="fg_c_preview__iframe"></iframe>
+    </div>
+    <div class="fg_c_accordian js-accordian">
+      <button class="fg_c_accordian__button" role="heading">
+        <span class="fg_c_accordian__icon js-icon"></span>
+        <span class="fg_c_accordian__closed-text">Show Code</span>
+        <span class="fg_c_accordian__open-text">Hide Code</span>
+      </button>
+      <div class="fg_c_code-tabs fg_is-hidden js-tabs">
+        <ul class="fg_c_code-tabs__list" role="tablist">
+          <li class="fg_c_code-tabs__tab" role="tab">
+            <a href="#tab-jsx-ff5d85a823df3285cb6ce07acbf0ddcb">JSX</a>
+          </li>
+          <li class="fg_c_code-tabs__tab" role="tab">
+            <a href="#tab-html-ff5d85a823df3285cb6ce07acbf0ddcb">HTML</a>
+          </li>
+        </ul>
+        <div class="fg_c_code-tabs__panel" id="tab-jsx-ff5d85a823df3285cb6ce07acbf0ddcb" role="tabpanel">
+          <button type="button" class="fg_c_button--inverted fg_c_button--copy js-copy-code" data-clipboard-target="#tab-jsx-ff5d85a823df3285cb6ce07acbf0ddcb pre">Copy Code</button>
+          <pre class="fg_c_code-block"><code class="language-jsx"><span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">&#39;react&#39;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> Heading <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&#39;@athena/forge&#39;</span><span class="token punctuation">;</span>
+<span style='display:none'>empty line</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">function</span> <span class="token function">TypographyUtilsListStyle</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">className</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;f&#95;typography fe&#95;u&#95;padding--large<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Heading</span> <span class="token attr-name">text</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>.fe&#95;u&#95;list-style--no-bullet<span class="token punctuation">&quot;</span></span> <span class="token attr-name">variant</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>section<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span> <span class="token attr-name">className</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;u&#95;list-style--no-bullet<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>Item one<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>Item two<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>Nested one<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>Nested two<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>Item three<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+        </div>
+        <div class="fg_c_code-tabs__panel" id="tab-html-ff5d85a823df3285cb6ce07acbf0ddcb" role="tabpanel">
+          <button type="button" class="fg_c_button--inverted fg_c_button--copy js-copy-code" data-clipboard-target="#tab-html-ff5d85a823df3285cb6ce07acbf0ddcb pre">Copy Code</button>
+          <pre class="fg_c_code-block"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;f&#95;typography fe&#95;u&#95;padding--large<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;heading fe&#95;c&#95;heading--section<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>.fe&#95;u&#95;list-style--no-bullet<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;u&#95;list-style--no-bullet<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>Item one<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>Item two<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>Nested one<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>Nested two<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>Item three<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+        </div>
+      </div>
+    </div>
+  </div></div>
+
+<h2 id="usage">Usage</h2>
+<p>These utilities are presented here to allow finer control of text without the need to create custom CSS purely for altering text.</p>
+<p>Larger font sizes intended to be used for headings should instead use the <a href="../components/heading.html"><code>Heading</code></a> component.</p>
+<h2 id="design">Design</h2>
+<p>Overuse of these classes can degrade application consistency or prove visually distracting to parts of the application requiring emphasis.</p>
+<h2 id="implementation">Implementation</h2>
+<table class="api-table api-table--html api-table--utilities">
+  <thead>
+    <tr>
+      <th>Class</th>
+      <th>Sass</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <ul>
+          <li><code>fe_u_color--default</code></li>
+          <li><code>fe_u_color--dark</code></li>
+          <li><code>fe_u_color--muted</code></li>
+          <li><code>fe_u_color--disabled</code></li>
+          <li><code>fe_u_color--invert</code></li>
+          <li><code>fe_u_color--light</code></li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li><code>map-get($color-font, default)</code></li>
+          <li><code>map-get($color-font, dark)</code></li>
+          <li><code>map-get($color-font, muted)</code></li>
+          <li><code>map-get($color-font, disabled)</code></li>
+          <li><code>map-get($color-font, invert)</code></li>
+          <li><code>map-get($color-font, light)</code></li>
+        </ul>
+      </td>
+      <td>Sets the element&#39;s text <code>color</code> to specified value from the <a href="color.html">palette</a></td>
+    </tr>
+    <tr>
+      <td>
+        <ul>
+          <li><code>fe_u_color--info</code></li>
+          <li><code>fe_u_color--attention</code></li>
+          <li><code>fe_u_color--critical</code></li>
+          <li><code>fe_u_color--success</code></li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li><code>map-get($color-alert, info)</code></li>
+          <li><code>map-get($color-alert, attention)</code></li>
+          <li><code>map-get($color-alert, critical)</code></li>
+          <li><code>map-get($color-alert, success)</code></li>
+        </ul>
+      </td>
+      <td>Sets the element&#39;s text <code>color</code> to specified value from the <a href="color.html">palette</a></td>
+    </tr>
+    <tr>
+      <td>
+        <ul>
+          <li><code>fe_u_font-size--default</code></li>
+          <li><code>fe_u_font-size--xxlarge</code></li>
+          <li><code>fe_u_font-size--xlarge</code></li>
+          <li><code>fe_u_font-size--large</code></li>
+          <li><code>fe_u_font-size--small</code></li>
+          <li><code>fe_u_font-size--xsmall</code></li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li><code>map-get($font-size, default)</code></li>
+          <li><code>map-get($font-size, xxlarge)</code></li>
+          <li><code>map-get($font-size, xlarge)</code></li>
+          <li><code>map-get($font-size, large)</code></li>
+          <li><code>map-get($font-size, small)</code></li>
+          <li><code>map-get($font-size, xsmall)</code></li>
+        </ul>
+      </td>
+      <td>Sets the element&#39;s <code>font-size</code> to specified semantic value</td>
+    </tr>
+    <tr>
+      <td>
+        <ul>
+          <li><code>fe_u_font-weight--light</code></li>
+          <li><code>fe_u_font-weight--regular</code></li>
+          <li><code>fe_u_font-weight--semibold</code></li>
+          <li><code>fe_u_font-weight--bold</code></li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li><code>map-get($font-weights, light)</code></li>
+          <li><code>map-get($font-weights, regular)</code></li>
+          <li><code>map-get($font-weights, semibold)</code></li>
+          <li><code>map-get($font-weights, bold)</code></li>
+        </ul>
+      </td>
+      <td>Sets the element&#39;s <code>font-weight</code> to specified value</td>
+    </tr>
+    <tr>
+      <td>
+        <ul>
+          <li><code>fe_u_text-align--center</code></li>
+          <li><code>fe_u_text-align--justify</code></li>
+          <li><code>fe_u_text-align--left</code></li>
+          <li><code>fe_u_text-align--right</code></li>
+        </ul>
+      </td>
+      <td>n/a</td>
+      <td>Sets the element&#39;s <code>text-align</code> property to specified value. These classes only affect <strong>inline</strong> descendants.</td>
+    </tr>
+    <tr>
+      <td>
+        <ul>
+          <li><code>fe_u_list-style--no-bullet</code></li>
+        </ul>
+      </td>
+      <td>n/a</td>
+      <td>Removes bullets/numbers from <code>&lt;ul&gt;</code> and <code>&lt;ol&gt;</code> list elements</td>
+    </tr>
+  </tbody>
+</table>
+
+      
+
+    
+  </div>
+
+  <script>
+document.addEventListener("DOMContentLoaded", function(event) {
+    if (window.amplitude) {
+        amplitude.getInstance().init('d426be2bbef81471eeac4bca0c061243');
+
+        amplitude.getInstance().logEvent('viewed page', {
+          pageName: 'Typography Utilities',
+          pageCategory: 'foundations'.length > 0
+            ? 'foundations'
+            : null,
+          forgeVersion: '2.0.0-beta.7',
+          forgeGeneralVersion: /^\d*(?=\.)/.exec('2.0.0-beta.7')
+            ? /^\d*(?=\.)/.exec('2.0.0-beta.7').toString()
+            : null
+        });
+      }
+      else {
+        console.warn("amplitude is not logging events");
+      }
+});
+</script>
+
+
+
+    </div>
+    <!--div class="debug"><pre><code class="language-json">{"id":"58912a63c7781a19d626093a16088d24","name":"typography-utilities","handle":"typography-utilities","label":"Typography Utilities","title":"Typography Utilities","order":5,"isHidden":false,"alias":null,"isEntity":true,"isDoc":true,"isIndex":false,"path":"foundations/typography-utilities","status":null,"content":"\r\n<p class=\"p--lead\">These classes can be used to specify font sizes and weights outside of what would already be applied with .fe_f_typography (see the [implementation section]({{ path '/docs/foundations/typography-utilities' }}#implementation)). Their style rules are applied with the highest level of specificity.</p>\r\n\r\n## Demos\r\n{{demo '@typography-utilities'}}\r\n\r\n## Usage\r\nThese utilities are presented here to allow finer control of text without the need to create custom CSS purely for altering text.\r\n\r\nLarger font sizes intended to be used for headings should instead use the [`Heading`]({{ path '/docs/components/heading' }}) component.\r\n\r\n## Design\r\nOveruse of these classes can degrade application consistency or prove visually distracting to parts of the application requiring emphasis.\r\n\r\n## Implementation\r\n\r\n<table class=\"api-table api-table--html api-table--utilities\">\r\n  <thead>\r\n    <tr>\r\n      <th>Class</th>\r\n      <th>Sass</th>\r\n      <th>Description</th>\r\n    </tr>\r\n  </thead>\r\n  <tbody>\r\n    <tr>\r\n      <td>\r\n        <ul>\r\n          <li>`fe_u_color--default`</li>\r\n          <li>`fe_u_color--dark`</li>\r\n          <li>`fe_u_color--muted`</li>\r\n          <li>`fe_u_color--disabled`</li>\r\n          <li>`fe_u_color--invert`</li>\r\n          <li>`fe_u_color--light`</li>\r\n        </ul>\r\n      </td>\r\n      <td>\r\n        <ul>\r\n          <li>`map-get($color-font, default)`</li>\r\n          <li>`map-get($color-font, dark)`</li>\r\n          <li>`map-get($color-font, muted)`</li>\r\n          <li>`map-get($color-font, disabled)`</li>\r\n          <li>`map-get($color-font, invert)`</li>\r\n          <li>`map-get($color-font, light)`</li>\r\n        </ul>\r\n      </td>\r\n      <td>Sets the element's text `color` to specified value from the [palette]({{ path '/docs/foundations/color' }})</td>\r\n    </tr>\r\n    <tr>\r\n      <td>\r\n        <ul>\r\n          <li>`fe_u_color--info`</li>\r\n          <li>`fe_u_color--attention`</li>\r\n          <li>`fe_u_color--critical`</li>\r\n          <li>`fe_u_color--success`</li>\r\n        </ul>\r\n      </td>\r\n      <td>\r\n        <ul>\r\n          <li>`map-get($color-alert, info)`</li>\r\n          <li>`map-get($color-alert, attention)`</li>\r\n          <li>`map-get($color-alert, critical)`</li>\r\n          <li>`map-get($color-alert, success)`</li>\r\n        </ul>\r\n      </td>\r\n      <td>Sets the element's text `color` to specified value from the [palette]({{ path '/docs/foundations/color' }})</td>\r\n    </tr>\r\n    <tr>\r\n      <td>\r\n        <ul>\r\n          <li>`fe_u_font-size--default`</li>\r\n          <li>`fe_u_font-size--xxlarge`</li>\r\n          <li>`fe_u_font-size--xlarge`</li>\r\n          <li>`fe_u_font-size--large`</li>\r\n          <li>`fe_u_font-size--small`</li>\r\n          <li>`fe_u_font-size--xsmall`</li>\r\n        </ul>\r\n      </td>\r\n      <td>\r\n        <ul>\r\n          <li>`map-get($font-size, default)`</li>\r\n          <li>`map-get($font-size, xxlarge)`</li>\r\n          <li>`map-get($font-size, xlarge)`</li>\r\n          <li>`map-get($font-size, large)`</li>\r\n          <li>`map-get($font-size, small)`</li>\r\n          <li>`map-get($font-size, xsmall)`</li>\r\n        </ul>\r\n      </td>\r\n      <td>Sets the element's `font-size` to specified semantic value</td>\r\n    </tr>\r\n    <tr>\r\n      <td>\r\n        <ul>\r\n          <li>`fe_u_font-weight--light`</li>\r\n          <li>`fe_u_font-weight--regular`</li>\r\n          <li>`fe_u_font-weight--semibold`</li>\r\n          <li>`fe_u_font-weight--bold`</li>\r\n        </ul>\r\n      </td>\r\n      <td>\r\n        <ul>\r\n          <li>`map-get($font-weights, light)`</li>\r\n          <li>`map-get($font-weights, regular)`</li>\r\n          <li>`map-get($font-weights, semibold)`</li>\r\n          <li>`map-get($font-weights, bold)`</li>\r\n        </ul>\r\n      </td>\r\n      <td>Sets the element's `font-weight` to specified value</td>\r\n    </tr>\r\n    <tr>\r\n      <td>\r\n        <ul>\r\n          <li>`fe_u_text-align--center`</li>\r\n          <li>`fe_u_text-align--justify`</li>\r\n          <li>`fe_u_text-align--left`</li>\r\n          <li>`fe_u_text-align--right`</li>\r\n        </ul>\r\n      </td>\r\n      <td>n/a</td>\r\n      <td>Sets the element's `text-align` property to specified value. These classes only affect <strong>inline</strong> descendants.</td>\r\n    </tr>\r\n    <tr>\r\n      <td>\r\n        <ul>\r\n          <li>`fe_u_list-style--no-bullet`</li>\r\n        </ul>\r\n      </td>\r\n      <td>n/a</td>\r\n      <td>Removes bullets/numbers from `<ul>` and `<ol>` list elements</td>\r\n    </tr>\r\n  </tbody>\r\n</table>\r\n","lang":{"name":"Markdown","mode":"markdown","scope":"source.gfm","color":"#083FA1"},"file":{"root":"C:\\","dir":"C:\\Users\\ctsui\\code\\forge-guide\\docs\\03-foundations","base":"05-typography-utilities.md","ext":".md","name":"typography-utilities","relPath":"03-foundations\\05-typography-utilities.md","fsName":"05-typography-utilities","path":"C:\\Users\\ctsui\\code\\forge-guide\\docs\\03-foundations\\05-typography-utilities.md","dirs":["C:\\Users\\ctsui\\code\\forge-guide\\docs\\03-foundations"],"isHidden":false,"order":5,"isFile":true,"isDirectory":false,"stat":{"dev":4102694615,"mode":33206,"nlink":1,"uid":0,"gid":0,"rdev":0,"ino":3659174697524376,"size":4522,"atimeMs":1542641056842.9265,"mtimeMs":1542641056842.9265,"ctimeMs":1542821273535.0603,"birthtimeMs":1528896974620.841,"atime":"2018-11-19T15:24:16.843Z","mtime":"2018-11-19T15:24:16.843Z","ctime":"2018-11-21T17:27:53.535Z","birthtime":"2018-06-13T13:36:14.621Z"},"lang":{"name":"Markdown","mode":"markdown","scope":"source.gfm","color":"#083FA1"},"isBinary":false},"context":{"extensions":{"core":{"forge-toast":{"name":"Toast","version":"0.2.2","description":"Toast component for Forge"},"forge-toggle-switch":{"name":"ToggleSwitch","version":"0.1.1","description":"ToggleSwitch component for Forge"}},"community":{"clinicals-forge-extension":{"name":"Clinicals Forge Extension","owner":"Nursing Flowsheets","url":"https://bitbucket.athenahealth.com/projects/CLIFS/repos/clinicals-forge-extension/browse","version":"2.1.1","description":"A forge-extension containing components used by inpatient clinicals"}}},"amplitudeCategory":"foundations"}}</code></pre></div-->
+  </div>
+</div>
+
+
+
+</div>
+
+
+
+
+<script src="../../assets/clipboard.min.js?cachebust=1.2.0"></script>
+
+<script src="../../assets/main.js?cachebust=1.2.0"></script>
+
+<script src="../../assets/amplitude.js?cachebust=1.2.0"></script>
+
+
+
+</body>
+</html>

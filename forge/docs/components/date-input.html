@@ -1,0 +1,1249 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+    window.frctl = {
+        env: 'static'
+    };
+    </script>
+    <script>var cl = document.querySelector('html').classList; cl.remove('no-js'); cl.add('has-js');</script>
+    <link rel="shortcut icon" href="../../favicon_blue.ico" type="image/ico">
+
+<link rel="stylesheet" href="../../assets/css/styles.css?cachebust=1.2.0" type="text/css">
+
+<link rel="stylesheet" href="../../assets/css/prism-atom-dark.css?cachebust=1.2.0" type="text/css">
+
+<link rel="stylesheet" href="../../assets/css/ascetic.css?cachebust=1.2.0" type="text/css">
+
+<link rel="stylesheet" href="../../css/forge.css?cachebust=1.2.0" type="text/css">
+
+
+<title>DateInput | athenahealth</title>
+
+</head>
+<body>
+
+
+
+<div class="fg_app">
+  <header class="fg_l_header fg_l_header--alpha">
+  <a class="fg_c_branding" href="../../index.html">
+    <img src="../../assets/images/logo.svg" />
+  </a>
+  <nav class="fg_c_nav-top">
+  <ul class="fg_c_nav-top__list">
+    
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link "
+            href="../guidelines/principles.html"
+            title="Guidelines"
+          >
+            Guidelines
+          </a>
+        </li>
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link "
+            href="../foundations/color.html"
+            title="Foundations"
+          >
+            Foundations
+          </a>
+        </li>
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link  fg_is-active"
+            href="accordion.html"
+            title="Components"
+          >
+            Components
+          </a>
+        </li>
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link "
+            href="../extensions/forge-extensions.html"
+            title="Extensions"
+          >
+            Extensions
+          </a>
+        </li>
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link "
+            href="../resources/release-notes.html"
+            title="Resources"
+          >
+            Resources
+          </a>
+        </li>
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link "
+            href="../resources/downloads.html"
+            title="Resources"
+          >
+            Resources
+          </a>
+        </li>
+      
+    
+  </ul>
+</nav>
+
+
+  <div class="fg_c_nav-version">
+    v2.0.0-beta.7
+  </div>
+</header>
+
+
+  
+
+<div class="fg_l_sidebar" data-role="sidebar">
+  <nav class="fg_c_nav-left">
+  <ul class="fg_c_nav-left__list">
+  
+    
+  
+    
+  
+    
+  
+    
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="accordion.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Accordion</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="banner.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Banner</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="button.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Button</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="card.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Card</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="checkbox.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Checkbox</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href=""
+            
+            class="fg_c_nav-left__link  fg_is-active"
+          >
+            <span>DateInput</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="form.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Form</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="form-field.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>FormField</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="grid.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Grid</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="heading.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Heading</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="icon.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Icon</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="icon-button.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>IconButton</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="input.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Input</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="lightbox.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Lightbox</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="list.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>List</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="loader.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Loader</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="modal.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Modal</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="multi-field.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>MultiField</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="multiselect.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Multiselect</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="paginator.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Paginator</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="radio-group.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>RadioGroup</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="read-only-input.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>ReadOnlyInput</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="redux-form.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>ReduxForm</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="redux-form-field.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>ReduxFormField</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="redux-multi-field.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>ReduxMultiField</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="removable-tag.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>RemovableTag</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="root.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Root</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="select.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Select</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="selection-list.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>SelectionList</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="status-tag.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>StatusTag</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="stepper.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Stepper</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="table.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Table</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="tabs.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Tabs</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="textarea.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Textarea</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="toast.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Toast</span>
+            
+              
+                <span class="fe_f_all"><span class="fe_c_status-tag">EXT</span></span>
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="toggle-switch.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>ToggleSwitch</span>
+            
+              
+            
+              
+                <span class="fe_f_all"><span class="fe_c_status-tag">EXT</span></span>
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="tooltip.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Tooltip</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="typeahead.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Typeahead</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+    
+  
+    
+  
+    
+  
+    
+  
+  </ul>
+</nav>
+
+</div>
+
+<div class="fg_l_main" data-role="main">
+  <div class="fg_doc">
+
+    
+      <nav class="fg_c_nav-page"></nav>
+
+    
+
+    <div class="fg_doc__header">
+      
+        <h1 class="fg_doc__title">DateInput</h1>
+      
+    </div>
+    <div class="fg_doc__content">
+      
+
+  <div class="fg_markdown">
+    
+
+      
+      
+
+      
+        <p class="p--lead">DateInput lets users enter a date by typing or by selecting in a popup calendar.</p>
+
+<h2 id="demos">Demos</h2>
+<div class="fg_c_demos"><select class="fg_c_demos__select js-selector-demos"><option value="0ddf3b755574db74ae4827621366ee7b">DateInput - Use within a FormField</option><option value="f1e312461eca9dd1b1246f626d3ceb80">DateInput - Standalone</option></select><div class="fg_c_demos__demo js-demo-0ddf3b755574db74ae4827621366ee7b ">
+    <div class="fg_c_preview js-resize-preview" style="height: 440px">
+      <iframe height="440" src="../../components/preview/date-input-with-form-field.html" class="fg_c_preview__iframe"></iframe>
+    </div>
+    <div class="fg_c_accordian js-accordian">
+      <button class="fg_c_accordian__button" role="heading">
+        <span class="fg_c_accordian__icon js-icon"></span>
+        <span class="fg_c_accordian__closed-text">Show Code</span>
+        <span class="fg_c_accordian__open-text">Hide Code</span>
+      </button>
+      <div class="fg_c_code-tabs fg_is-hidden js-tabs">
+        <ul class="fg_c_code-tabs__list" role="tablist">
+          <li class="fg_c_code-tabs__tab" role="tab">
+            <a href="#tab-jsx-0ddf3b755574db74ae4827621366ee7b">JSX</a>
+          </li>
+          <li class="fg_c_code-tabs__tab" role="tab">
+            <a href="#tab-html-0ddf3b755574db74ae4827621366ee7b">HTML</a>
+          </li>
+        </ul>
+        <div class="fg_c_code-tabs__panel" id="tab-jsx-0ddf3b755574db74ae4827621366ee7b" role="tabpanel">
+          <button type="button" class="fg_c_button--inverted fg_c_button--copy js-copy-code" data-clipboard-target="#tab-jsx-0ddf3b755574db74ae4827621366ee7b pre">Copy Code</button>
+          <pre class="fg_c_code-block"><code class="language-jsx"><span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">&#39;react&#39;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> DateInput<span class="token punctuation">,</span> FormField <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&#39;@athena/forge&#39;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> moment <span class="token keyword">from</span> <span class="token string">&#39;moment&#39;</span><span class="token punctuation">;</span>
+<span style='display:none'>empty line</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">function</span> <span class="token function">DateInputField</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">className</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;u&#95;padding--large<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>FormField</span> <span class="token attr-name">inputAs</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>DateInput<span class="token punctuation">}</span></span> <span class="token attr-name">labelText</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>Date of appointment<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>FormField</span> <span class="token attr-name">inputAs</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>DateInput<span class="token punctuation">}</span></span> <span class="token attr-name">labelText</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>Date of birth (don<span class="token punctuation">&#39;</span>t automatically pop the calendar)<span class="token punctuation">&quot;</span></span>
+        <span class="token attr-name">showCalendar</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token boolean">false</span><span class="token punctuation">}</span></span>
+        <span class="token attr-name">selectYearStart</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>moment<span class="token punctuation">.</span><span class="token function">utc</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">year</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">-</span> <span class="token number">100</span><span class="token punctuation">}</span></span>
+        <span class="token attr-name">selectYearEnd</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>moment<span class="token punctuation">.</span><span class="token function">utc</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">year</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">}</span></span>
+      <span class="token punctuation">/&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+        </div>
+        <div class="fg_c_code-tabs__panel" id="tab-html-0ddf3b755574db74ae4827621366ee7b" role="tabpanel">
+          <button type="button" class="fg_c_button--inverted fg_c_button--copy js-copy-code" data-clipboard-target="#tab-html-0ddf3b755574db74ae4827621366ee7b pre">Copy Code</button>
+          <pre class="fg_c_code-block"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;u&#95;padding--large<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;form-field<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row fe&#95;l&#95;grid-row--nested<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row&#95;&#95;col fe&#95;l&#95;grid-row&#95;&#95;col--small-12 fe&#95;l&#95;grid-row&#95;&#95;col--medium-3 fe&#95;c&#95;form-field&#95;&#95;label<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe-form-field-gen-400<span class="token punctuation">&quot;</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe-form-field-gen-400-label<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;label<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Date of appointment<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row&#95;&#95;col fe&#95;l&#95;grid-row&#95;&#95;col--small-12 fe&#95;l&#95;grid-row&#95;&#95;col--medium-9 fe&#95;c&#95;form-field&#95;&#95;right<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;form-field&#95;&#95;input-slot<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;date-input fe&#95;c&#95;form-field&#95;&#95;input<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;date-input&#95;&#95;input<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>text<span class="token punctuation">&quot;</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span><span class="token punctuation">&quot;</span></span> <span class="token attr-name">autoComplete</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>off<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;date-input-text-input<span class="token punctuation">&quot;</span></span> <span class="token attr-name">placeholder</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>MM-DD-YYYY<span class="token punctuation">&quot;</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe-form-field-gen-400<span class="token punctuation">&quot;</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe-form-field-gen-400<span class="token punctuation">&quot;</span></span> <span class="token attr-name">aria-labelledby</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe-form-field-gen-400-label<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span> <span class="token attr-name">xmlns</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span><a href="http://www.w3.org/2000/svg">http://www.w3.org/2000/svg</a><span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;icon fe&#95;c&#95;date-input&#95;&#95;icon<span class="token punctuation">&quot;</span></span> <span class="token attr-name">viewBox</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>0 0 25 25<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span>Calendar<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>
+                                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>g</span><span class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>g</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;icon&#95;&#95;background<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>rect</span> <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>25<span class="token punctuation">&quot;</span></span> <span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>25<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>rect</span><span class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>g</span><span class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>g</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;icon&#95;&#95;icon fe&#95;c&#95;icon&#95;&#95;icon--primary<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>path</span> <span class="token attr-name">d</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>M17.3,4.1V1.6H15.8V4.1H9.2V1.6H7.7V4.1H2.8V21.9H18.9a3.3,3.3,0,0,0,3.3-3.3V4.1ZM7.7,5.6V7.4H9.2V5.6h6.6V7.4h1.5V5.6h3.4V9.5H4.3V5.6ZM18.9,20.4H4.3V11H20.7v7.6A1.8,1.8,0,0,1,18.9,20.4Z<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>path</span><span class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>g</span><span class="token punctuation">&gt;</span></span>
+                                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>g</span><span class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;form-field&#95;&#95;message<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;form-field&#95;&#95;status<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;form-field<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row fe&#95;l&#95;grid-row--nested<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row&#95;&#95;col fe&#95;l&#95;grid-row&#95;&#95;col--small-12 fe&#95;l&#95;grid-row&#95;&#95;col--medium-3 fe&#95;c&#95;form-field&#95;&#95;label<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe-form-field-gen-401<span class="token punctuation">&quot;</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe-form-field-gen-401-label<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;label<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Date of birth (don<span class="token entity" title="&#x27;">&amp;#x27;</span>t automatically pop the calendar)<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row&#95;&#95;col fe&#95;l&#95;grid-row&#95;&#95;col--small-12 fe&#95;l&#95;grid-row&#95;&#95;col--medium-9 fe&#95;c&#95;form-field&#95;&#95;right<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;form-field&#95;&#95;input-slot<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;date-input fe&#95;c&#95;form-field&#95;&#95;input<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;date-input&#95;&#95;input<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>text<span class="token punctuation">&quot;</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span><span class="token punctuation">&quot;</span></span> <span class="token attr-name">autoComplete</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>off<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;date-input-text-input<span class="token punctuation">&quot;</span></span> <span class="token attr-name">placeholder</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>MM-DD-YYYY<span class="token punctuation">&quot;</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe-form-field-gen-401<span class="token punctuation">&quot;</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe-form-field-gen-401<span class="token punctuation">&quot;</span></span> <span class="token attr-name">aria-labelledby</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe-form-field-gen-401-label<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span> <span class="token attr-name">xmlns</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span><a href="http://www.w3.org/2000/svg">http://www.w3.org/2000/svg</a><span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;icon fe&#95;c&#95;date-input&#95;&#95;icon<span class="token punctuation">&quot;</span></span> <span class="token attr-name">viewBox</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>0 0 25 25<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span>Calendar<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>
+                                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>g</span><span class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>g</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;icon&#95;&#95;background<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>rect</span> <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>25<span class="token punctuation">&quot;</span></span> <span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>25<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>rect</span><span class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>g</span><span class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>g</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;icon&#95;&#95;icon fe&#95;c&#95;icon&#95;&#95;icon--primary<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>path</span> <span class="token attr-name">d</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>M17.3,4.1V1.6H15.8V4.1H9.2V1.6H7.7V4.1H2.8V21.9H18.9a3.3,3.3,0,0,0,3.3-3.3V4.1ZM7.7,5.6V7.4H9.2V5.6h6.6V7.4h1.5V5.6h3.4V9.5H4.3V5.6ZM18.9,20.4H4.3V11H20.7v7.6A1.8,1.8,0,0,1,18.9,20.4Z<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>path</span><span class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>g</span><span class="token punctuation">&gt;</span></span>
+                                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>g</span><span class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;form-field&#95;&#95;message<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;form-field&#95;&#95;status<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+        </div>
+      </div>
+    </div>
+  </div><div class="fg_c_demos__demo js-demo-f1e312461eca9dd1b1246f626d3ceb80 fg_is-hidden">
+    <div class="fg_c_preview js-resize-preview" style="height: 380px">
+      <iframe height="380" src="../../components/preview/date-input-standalone.html" class="fg_c_preview__iframe"></iframe>
+    </div>
+    <div class="fg_c_accordian js-accordian">
+      <button class="fg_c_accordian__button" role="heading">
+        <span class="fg_c_accordian__icon js-icon"></span>
+        <span class="fg_c_accordian__closed-text">Show Code</span>
+        <span class="fg_c_accordian__open-text">Hide Code</span>
+      </button>
+      <div class="fg_c_code-tabs fg_is-hidden js-tabs">
+        <ul class="fg_c_code-tabs__list" role="tablist">
+          <li class="fg_c_code-tabs__tab" role="tab">
+            <a href="#tab-jsx-f1e312461eca9dd1b1246f626d3ceb80">JSX</a>
+          </li>
+          <li class="fg_c_code-tabs__tab" role="tab">
+            <a href="#tab-html-f1e312461eca9dd1b1246f626d3ceb80">HTML</a>
+          </li>
+        </ul>
+        <div class="fg_c_code-tabs__panel" id="tab-jsx-f1e312461eca9dd1b1246f626d3ceb80" role="tabpanel">
+          <button type="button" class="fg_c_button--inverted fg_c_button--copy js-copy-code" data-clipboard-target="#tab-jsx-f1e312461eca9dd1b1246f626d3ceb80 pre">Copy Code</button>
+          <pre class="fg_c_code-block"><code class="language-jsx"><span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">&#39;react&#39;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> DateInput <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&#39;@athena/forge&#39;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> GridRow<span class="token punctuation">,</span> GridCol <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&#39;@athena/forge&#39;</span><span class="token punctuation">;</span>
+<span style='display:none'>empty line</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">class</span> <span class="token class-name">DateInputStandalone</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">super</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span style='display:none'>empty line</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>state <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span style='display:none'>empty line</span>
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>GridRow</span> <span class="token attr-name">className</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;u&#95;padding--large<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>GridCol</span> <span class="token attr-name">width</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span> <span class="token punctuation">{</span> small<span class="token punctuation">:</span> <span class="token number">12</span><span class="token punctuation">,</span> medium<span class="token punctuation">:</span> <span class="token number">6</span> <span class="token punctuation">}</span> <span class="token punctuation">}</span></span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">className</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;label<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Date to display<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>DateInput</span>
+            <span class="token attr-name">onDateChange</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">(</span>event<span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+              <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState</span><span class="token punctuation">(</span><span class="token punctuation">{</span> date<span class="token punctuation">:</span> event<span class="token punctuation">.</span>target<span class="token punctuation">.</span>dateValue <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span><span class="token punctuation">}</span></span>
+            <span class="token attr-name">onChange</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">(</span>event<span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+              <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+                raw<span class="token punctuation">:</span> event<span class="token punctuation">.</span>target<span class="token punctuation">.</span>rawValue<span class="token punctuation">,</span>
+                formatted<span class="token punctuation">:</span> event<span class="token punctuation">.</span>target<span class="token punctuation">.</span>value<span class="token punctuation">,</span>
+              <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span><span class="token punctuation">}</span></span>
+          <span class="token punctuation">/&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>GridCol</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>GridCol</span> <span class="token attr-name">width</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span> <span class="token punctuation">{</span> small<span class="token punctuation">:</span> <span class="token number">12</span><span class="token punctuation">,</span> medium<span class="token punctuation">:</span> <span class="token number">6</span> <span class="token punctuation">}</span> <span class="token punctuation">}</span></span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>Raw value<span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>raw<span class="token punctuation">}</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>Formatted value<span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>formatted<span class="token punctuation">}</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>Date value<span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>date <span class="token operator">&amp;&amp;</span> DateInput<span class="token punctuation">.</span><span class="token function">formatDate</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>date<span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>GridCol</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>GridRow</span><span class="token punctuation">&gt;</span></span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+        </div>
+        <div class="fg_c_code-tabs__panel" id="tab-html-f1e312461eca9dd1b1246f626d3ceb80" role="tabpanel">
+          <button type="button" class="fg_c_button--inverted fg_c_button--copy js-copy-code" data-clipboard-target="#tab-html-f1e312461eca9dd1b1246f626d3ceb80 pre">Copy Code</button>
+          <pre class="fg_c_code-block"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row fe&#95;u&#95;padding--large<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row&#95;&#95;col fe&#95;l&#95;grid-row&#95;&#95;col--small-12 fe&#95;l&#95;grid-row&#95;&#95;col--medium-6<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;label<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Date to display<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;date-input<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;date-input&#95;&#95;input<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>text<span class="token punctuation">&quot;</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span><span class="token punctuation">&quot;</span></span> <span class="token attr-name">autoComplete</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>off<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;date-input-text-input<span class="token punctuation">&quot;</span></span> <span class="token attr-name">placeholder</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>MM-DD-YYYY<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span> <span class="token attr-name">xmlns</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span><a href="http://www.w3.org/2000/svg">http://www.w3.org/2000/svg</a><span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;icon fe&#95;c&#95;date-input&#95;&#95;icon<span class="token punctuation">&quot;</span></span> <span class="token attr-name">viewBox</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>0 0 25 25<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span>Calendar<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>g</span><span class="token punctuation">&gt;</span></span>
+                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>g</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;icon&#95;&#95;background<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>rect</span> <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>25<span class="token punctuation">&quot;</span></span> <span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>25<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>rect</span><span class="token punctuation">&gt;</span></span>
+                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>g</span><span class="token punctuation">&gt;</span></span>
+                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>g</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;icon&#95;&#95;icon fe&#95;c&#95;icon&#95;&#95;icon--primary<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>path</span> <span class="token attr-name">d</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>M17.3,4.1V1.6H15.8V4.1H9.2V1.6H7.7V4.1H2.8V21.9H18.9a3.3,3.3,0,0,0,3.3-3.3V4.1ZM7.7,5.6V7.4H9.2V5.6h6.6V7.4h1.5V5.6h3.4V9.5H4.3V5.6ZM18.9,20.4H4.3V11H20.7v7.6A1.8,1.8,0,0,1,18.9,20.4Z<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>path</span><span class="token punctuation">&gt;</span></span>
+                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>g</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>g</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row&#95;&#95;col fe&#95;l&#95;grid-row&#95;&#95;col--small-12 fe&#95;l&#95;grid-row&#95;&#95;col--medium-6<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>Raw value: <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>Formatted value: <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>Date value: <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+        </div>
+      </div>
+    </div>
+  </div></div>
+
+<h2 id="usage">Usage</h2>
+<p>Use <code>DateInput</code> when users need to provide date information, such as date of birth. It can handle either manual entry or selection from a calendar interface.</p>
+<h3 id="keyboard-shortcuts">Keyboard Shortcuts</h3>
+<p>The <code>DateInput</code> component supports a variety of shortcuts and relative formatting functionality:</p>
+<ul>
+<li>Typing <code>t</code> will display today&#39;s date</li>
+<li>Typing <code>t+[# of days]</code> to display a future date</li>
+<li>Typing <code>t-[# of days]</code> to display a past date</li>
+</ul>
+<p>Feedback appears below the <code>DateInput</code> when a user begins to type a shortcut if <code>DateInput</code> is within a <a href="form-field.html"><code>FormField</code></a> or <a href="redux-form-field.html"><code>ReduxFormField</code></a>. To hook into these messages outside of a <code>FormField</code>, use the <code>onShortcutChange</code> prop or the <code>onHintTextChange</code> prop.</p>
+<h2 id="design">Design</h2>
+<p>By default, the popup calendar opens when focus is given to the <code>DateInput</code> field. This is helpful when users are selecting dates close to the present time.</p>
+<p>When a required date entry is distant from the present time, popping the calendar on focus can be disabled by setting the <code>showCalendar</code> prop to <code>false</code>. Users can still access the popup calendar by clicking on the calendar icon if they prefer date selection from the calendar.</p>
+<p>Label text should use sentence case (e.g., &quot;Date of birth&quot;).</p>
+<p>Find more guidance on the <a href="../foundations/form-design.html">Form Design</a> Foundations page.</p>
+<h2 id="implementation">Implementation</h2>
+<p><code>DateInput</code> is rendered as an <code>input[type=&quot;text&quot;]</code> to avoid the browser&#39;s default date input UI.</p>
+<h2 id="api-tables">API Tables</h2>
+<h3 id="import-dateinput-only">Import DateInput Only</h3>
+<p><p>Importing individual components can reduce bundle size. <a href="https://athenaconfluence.athenahealth.com/display/UXDS/Forge+Import+for+Better+Tree+Shaking">Learn more</a></p><code>import DateInput from &#39;@athena/forge/lib/date-input&#39;;</code></p>
+<h3 id="dateinput-props">DateInput Props</h3>
+<table class="api-table api-table--react">
+  <thead>
+    <tr>
+      <th>Prop</th>
+      <th>Type</th>
+      <th>Default</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>className</code></td>
+      <td>
+        string
+      </td>
+      <td></td>
+      <td>Adds classes to the root of <code>DateInput</code>.</td>
+    </tr>
+    <tr>
+      <td><code>dayModifiers</code></td>
+      <td>
+        object
+      </td>
+      <td></td>
+      <td>Applies modifier classes to sets of days. All dates should be created with <a href="https://momentjs.com/docs/#/parsing/utc/">moment.utc</a>.
+See <a href="http://react-day-picker.js.org/api/DayPicker#modifiers">DayPicker API</a> for more details.</td>
+    </tr>
+    <tr>
+      <td><code>dayPickerProps</code></td>
+      <td>
+        object
+      </td>
+      <td></td>
+      <td>Passes through to <a href="http://react-day-picker.js.org/api/DayPickerInput">DayPickerInput</a>. The following dayPickerProps are
+defined and cannot be overridden: captionElement, navbarElement. Use at your own risk and note that DayPicker
+assumes dates are midnight local time, not UTC.</td>
+    </tr>
+    <tr>
+      <td><code>disabled</code></td>
+      <td>
+        bool
+      </td>
+      <td>false</td>
+      <td>Applies styles to the input in addition to preventing changes</td>
+    </tr>
+    <tr>
+      <td><code>disabledDays</code></td>
+      <td>
+        object
+      </td>
+      <td></td>
+      <td>Disables specified days in the calendar. All dates should be created with <a href="https://momentjs.com/docs/#/parsing/utc/">moment.utc</a>.
+See <a href="http://react-day-picker.js.org/api/DayPicker#disabledDays">DayPicker API</a> for more details.
+Note that the calendar doesn&#x27;t prevent viewing months whose days are all disabled.</td>
+    </tr>
+    <tr>
+      <td><code>error</code></td>
+      <td>
+        string
+      </td>
+      <td></td>
+      <td>Highlights the input when defined (specific string doesn&#x27;t matter)</td>
+    </tr>
+    <tr>
+      <td><code>hintText</code></td>
+      <td>
+        string
+      </td>
+      <td></td>
+      <td>Adjusts calendar position to expose hint text when defined (specific string doesn&#x27;t matter)</td>
+    </tr>
+    <tr>
+      <td><code>htmlRef</code></td>
+      <td>
+        func
+      </td>
+      <td></td>
+      <td>ref function for getting a reference to the underlying input</td>
+    </tr>
+    <tr>
+      <td><code>onBlur</code></td>
+      <td>
+        func
+      </td>
+      <td></td>
+      <td>Triggered when the DateInput component loses focus.
+Not triggered when focus shifts between the input and the calendar.</td>
+    </tr>
+    <tr>
+      <td><code>onCalendarMonthChange</code></td>
+      <td>
+        func
+      </td>
+      <td></td>
+      <td>Triggered when the user changes which month (or year) is visible in the calendar.
+Intended for cases where calendar data like <code>disabledDays</code> is loaded incrementally.</td>
+    </tr>
+    <tr>
+      <td><code>onChange</code></td>
+      <td>
+        func
+      </td>
+      <td></td>
+      <td>Triggered when the value changes from the user typing, using a shortcut, or choosing a day in the calendar. Provides the formatted value
+    as <code>event.target.value</code> and the unformatted value as <code>event.target.rawValue</code>.</td>
+    </tr>
+    <tr>
+      <td><code>onDateChange</code></td>
+      <td>
+        func
+      </td>
+      <td></td>
+      <td>Triggered after change or blur when current value is a valid date.
+Adds <code>parsedDate</code> property of type moment to <code>event.target</code>.</td>
+    </tr>
+    <tr>
+      <td><code>onErrorChange</code></td>
+      <td>
+        func
+      </td>
+      <td></td>
+      <td>Handles the input reporting a change in its error status or message</td>
+    </tr>
+    <tr>
+      <td><code>onHintTextChange</code></td>
+      <td>
+        func
+      </td>
+      <td></td>
+      <td>Handles the input reporting a change in its hint text message</td>
+    </tr>
+    <tr>
+      <td><code>onShortcutChange</code></td>
+      <td>
+        func
+      </td>
+      <td></td>
+      <td>Triggered after keypress while inputting a shortcut. The shortcut status is available as <code>event.target.shortcutState</code>. </td>
+    </tr>
+    <tr>
+      <td><code>selectYearEnd</code></td>
+      <td>
+        number
+      </td>
+      <td>date().year() + 3</td>
+      <td>The upper bound of a range used to customize the calendar picker&#x27;s year selection.
+Does not impact prev/next month navigation.</td>
+    </tr>
+    <tr>
+      <td><code>selectYearStart</code></td>
+      <td>
+        number
+      </td>
+      <td>date().year() - 3</td>
+      <td>The lower bound of a range used to customize the calendar picker&#x27;s year selection.
+Does not impact prev/next month navigation.</td>
+    </tr>
+    <tr>
+      <td><code>showCalendar</code></td>
+      <td>
+        bool
+      </td>
+      <td>true</td>
+      <td>When true calendar picker is shown automatically on input focus</td>
+    </tr>
+    <tr>
+      <td><code>theme</code></td>
+      <td>
+        custom: ThemeConsumer.themePropType
+      </td>
+      <td></td>
+      <td>Theme variables for configuring an instance of Forge. See Root component for more details.</td>
+    </tr>
+    <tr>
+      <td><code>...rest</code></td>
+      <td></td>
+      <td></td>
+      <td>Passthrough props to <code>DayPickerInput</code>&#39;s <a href="http://react-day-picker.js.org/api/DayPickerInput#inputProps">inputProps</a>.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="date-parsing-formatting-api">Date parsing/formatting API</h3>
+<table class="api-table api-table--class-info">
+  <thead>
+    <tr>
+      <th>Class Field/Method</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>DateInput.DATE_FORMAT</code></td>
+      <td>string</td>
+      <td>Constant that represents the date format: &#39;MM-DD-YYYY&#39;</td>
+    </tr>
+    <tr>
+      <td><code>DateInput.DATE_FORMAT_CONSTRAINT</code></td>
+      <td>object</td>
+      <td>Constraint object containing the regex &#39;pattern&#39; and &#39;message&#39; used by <code>DateInput</code></td>
+    </tr>
+    <tr>
+      <td><code>DateInput.formatDate(Date)</code></td>
+      <td>func</td>
+      <td>Returns a formatted string representing the date.</td>
+    </tr>
+    <tr>
+      <td><code>DateInput.parseDate(string)</code></td>
+      <td>func</td>
+      <td>Takes a well-formatted string and returns a Date object. If the string isn&#39;t in DATE_FORMAT, it returns an invalid date object.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="html-api">HTML API</h3>
+<p><table class="api-table api-table--html">
+  <thead>
+    <tr>
+      <th>Class</th>
+      <th>Applies To</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td><code>fe_c_date-input</code></td><td><code>DateInput</code> root</td><td>Indicates that this is a date input</td></tr>
+    <tr><td><code>fe_c_date-input__input</code></td><td><code>DateInput</code> input container</td><td>Class for the <code>DateInput</code>&#39;s container for the text input part</td></tr>
+    <tr><td><code>fe_c_date-input__icon</code></td><td><code>DateInput</code> calendar icon</td><td>Class for the <code>DateInput</code>&#39;s calendar icon</td></tr>
+    <tr><td><code>fe_c_date-input-text-input</code></td><td><code>DateInput</code> input element</td><td>Class for the <code>DateInput</code>&#39;s actual input element</td></tr>
+    <tr><td><code>fe_c_date-input-calendar</code></td><td><code>DateInput</code> calendar container</td><td>Class for the <code>DateInput</code>&#39;s pop-up calendar container</td></tr>
+    <tr><td><code>fe_c_date-input-calendar__select</code></td><td><code>DateInput</code> calendar month and year selects</td><td>Class for the <code>DateInput</code>&#39;s calendar month and year selects</td></tr>
+    <tr><td><code>fe_is-expose-message</code></td><td><code>DateInput</code> root</td><td>Accounts for the space needed to display the <code>DateInput</code>&#39;s <code>messageText</code> when the calendar popup is open</td></tr>
+  </tbody>
+</table>
+Note that there are many additional classes applied to the internals of <code>fe_c_date-input-calendar</code> by <a href="http://react-day-picker.js.org/docs/styling">react-day-picker</a>.</p>
+
+      
+
+    
+  </div>
+
+  <script>
+document.addEventListener("DOMContentLoaded", function(event) {
+    if (window.amplitude) {
+        amplitude.getInstance().init('d426be2bbef81471eeac4bca0c061243');
+
+        amplitude.getInstance().logEvent('viewed page', {
+          pageName: 'DateInput',
+          pageCategory: 'components'.length > 0
+            ? 'components'
+            : null,
+          forgeVersion: '2.0.0-beta.7',
+          forgeGeneralVersion: /^\d*(?=\.)/.exec('2.0.0-beta.7')
+            ? /^\d*(?=\.)/.exec('2.0.0-beta.7').toString()
+            : null
+        });
+      }
+      else {
+        console.warn("amplitude is not logging events");
+      }
+});
+</script>
+
+
+
+    </div>
+    <!--div class="debug"><pre><code class="language-json">{"id":"14f6072997ed2314f76850bdc1e0ca5e","name":"date-input","handle":"date-input","label":"Date Input","title":"DateInput","order":1000000,"isHidden":false,"alias":null,"isEntity":true,"isDoc":true,"isIndex":false,"path":"components/date-input","status":null,"content":"<p class=\"p--lead\">DateInput lets users enter a date by typing or by selecting in a popup calendar.</p>\r\n\r\n## Demos\r\n{{demo '@date-input'}}\r\n\r\n## Usage\r\nUse `DateInput` when users need to provide date information, such as date of birth. It can handle either manual entry or selection from a calendar interface.\r\n\r\n### Keyboard Shortcuts\r\nThe `DateInput` component supports a variety of shortcuts and relative formatting functionality:\r\n\r\n* Typing `t` will display today's date\r\n* Typing `t+[# of days]` to display a future date\r\n* Typing `t-[# of days]` to display a past date\r\n\r\nFeedback appears below the `DateInput` when a user begins to type a shortcut if `DateInput` is within a [`FormField`]({{ path '/docs/components/form-field' }}) or [`ReduxFormField`]({{ path '/docs/components/redux-form-field' }}). To hook into these messages outside of a `FormField`, use the `onShortcutChange` prop or the `onHintTextChange` prop.\r\n\r\n## Design\r\nBy default, the popup calendar opens when focus is given to the `DateInput` field. This is helpful when users are selecting dates close to the present time.\r\n\r\nWhen a required date entry is distant from the present time, popping the calendar on focus can be disabled by setting the `showCalendar` prop to `false`. Users can still access the popup calendar by clicking on the calendar icon if they prefer date selection from the calendar.\r\n\r\nLabel text should use sentence case (e.g., \"Date of birth\").\r\n\r\nFind more guidance on the [Form Design]({{ path '/docs/foundations/form-design' }}) Foundations page.\r\n\r\n## Implementation\r\n`DateInput` is rendered as an `input[type=\"text\"]` to avoid the browser's default date input UI.\r\n\r\n## API Tables\r\n### Import DateInput Only\r\n{{> componentImportMessage}}\r\n`import DateInput from '@athena/forge/lib/date-input';`\r\n\r\n### DateInput Props\r\n<table class=\"api-table api-table--react\">\r\n  <thead>\r\n    <tr>\r\n      <th>Prop</th>\r\n      <th>Type</th>\r\n      <th>Default</th>\r\n      <th>Description</th>\r\n    </tr>\r\n  </thead>\r\n  <tbody>\r\n    <tr>\r\n      <td>`className`</td>\r\n      <td>\r\n        string\r\n      </td>\r\n      <td></td>\r\n      <td>Adds classes to the root of `DateInput`.</td>\r\n    </tr>\r\n    <tr>\r\n      <td>`dayModifiers`</td>\r\n      <td>\r\n        object\r\n      </td>\r\n      <td></td>\r\n      <td>Applies modifier classes to sets of days. All dates should be created with [moment.utc](https://momentjs.com/docs/#/parsing/utc/).\r\nSee [DayPicker API](http://react-day-picker.js.org/api/DayPicker#modifiers) for more details.</td>\r\n    </tr>\r\n    <tr>\r\n      <td>`dayPickerProps`</td>\r\n      <td>\r\n        object\r\n      </td>\r\n      <td></td>\r\n      <td>Passes through to [DayPickerInput](http://react-day-picker.js.org/api/DayPickerInput). The following dayPickerProps are\r\ndefined and cannot be overridden: captionElement, navbarElement. Use at your own risk and note that DayPicker\r\nassumes dates are midnight local time, not UTC.</td>\r\n    </tr>\r\n    <tr>\r\n      <td>`disabled`</td>\r\n      <td>\r\n        bool\r\n      </td>\r\n      <td>false</td>\r\n      <td>Applies styles to the input in addition to preventing changes</td>\r\n    </tr>\r\n    <tr>\r\n      <td>`disabledDays`</td>\r\n      <td>\r\n        object\r\n      </td>\r\n      <td></td>\r\n      <td>Disables specified days in the calendar. All dates should be created with [moment.utc](https://momentjs.com/docs/#/parsing/utc/).\r\nSee [DayPicker API](http://react-day-picker.js.org/api/DayPicker#disabledDays) for more details.\r\nNote that the calendar doesn&#x27;t prevent viewing months whose days are all disabled.</td>\r\n    </tr>\r\n    <tr>\r\n      <td>`error`</td>\r\n      <td>\r\n        string\r\n      </td>\r\n      <td></td>\r\n      <td>Highlights the input when defined (specific string doesn&#x27;t matter)</td>\r\n    </tr>\r\n    <tr>\r\n      <td>`hintText`</td>\r\n      <td>\r\n        string\r\n      </td>\r\n      <td></td>\r\n      <td>Adjusts calendar position to expose hint text when defined (specific string doesn&#x27;t matter)</td>\r\n    </tr>\r\n    <tr>\r\n      <td>`htmlRef`</td>\r\n      <td>\r\n        func\r\n      </td>\r\n      <td></td>\r\n      <td>ref function for getting a reference to the underlying input</td>\r\n    </tr>\r\n    <tr>\r\n      <td>`onBlur`</td>\r\n      <td>\r\n        func\r\n      </td>\r\n      <td></td>\r\n      <td>Triggered when the DateInput component loses focus.\r\nNot triggered when focus shifts between the input and the calendar.</td>\r\n    </tr>\r\n    <tr>\r\n      <td>`onCalendarMonthChange`</td>\r\n      <td>\r\n        func\r\n      </td>\r\n      <td></td>\r\n      <td>Triggered when the user changes which month (or year) is visible in the calendar.\r\nIntended for cases where calendar data like `disabledDays` is loaded incrementally.</td>\r\n    </tr>\r\n    <tr>\r\n      <td>`onChange`</td>\r\n      <td>\r\n        func\r\n      </td>\r\n      <td></td>\r\n      <td>Triggered when the value changes from the user typing, using a shortcut, or choosing a day in the calendar. Provides the formatted value\r\n    as `event.target.value` and the unformatted value as `event.target.rawValue`.</td>\r\n    </tr>\r\n    <tr>\r\n      <td>`onDateChange`</td>\r\n      <td>\r\n        func\r\n      </td>\r\n      <td></td>\r\n      <td>Triggered after change or blur when current value is a valid date.\r\nAdds `parsedDate` property of type moment to `event.target`.</td>\r\n    </tr>\r\n    <tr>\r\n      <td>`onErrorChange`</td>\r\n      <td>\r\n        func\r\n      </td>\r\n      <td></td>\r\n      <td>Handles the input reporting a change in its error status or message</td>\r\n    </tr>\r\n    <tr>\r\n      <td>`onHintTextChange`</td>\r\n      <td>\r\n        func\r\n      </td>\r\n      <td></td>\r\n      <td>Handles the input reporting a change in its hint text message</td>\r\n    </tr>\r\n    <tr>\r\n      <td>`onShortcutChange`</td>\r\n      <td>\r\n        func\r\n      </td>\r\n      <td></td>\r\n      <td>Triggered after keypress while inputting a shortcut. The shortcut status is available as `event.target.shortcutState`. </td>\r\n    </tr>\r\n    <tr>\r\n      <td>`selectYearEnd`</td>\r\n      <td>\r\n        number\r\n      </td>\r\n      <td>date().year() + 3</td>\r\n      <td>The upper bound of a range used to customize the calendar picker&#x27;s year selection.\r\nDoes not impact prev/next month navigation.</td>\r\n    </tr>\r\n    <tr>\r\n      <td>`selectYearStart`</td>\r\n      <td>\r\n        number\r\n      </td>\r\n      <td>date().year() - 3</td>\r\n      <td>The lower bound of a range used to customize the calendar picker&#x27;s year selection.\r\nDoes not impact prev/next month navigation.</td>\r\n    </tr>\r\n    <tr>\r\n      <td>`showCalendar`</td>\r\n      <td>\r\n        bool\r\n      </td>\r\n      <td>true</td>\r\n      <td>When true calendar picker is shown automatically on input focus</td>\r\n    </tr>\r\n    <tr>\r\n      <td>`theme`</td>\r\n      <td>\r\n        custom: ThemeConsumer.themePropType\r\n      </td>\r\n      <td></td>\r\n      <td>Theme variables for configuring an instance of Forge. See Root component for more details.</td>\r\n    </tr>\r\n    <tr>\r\n      <td>`...rest`</td>\r\n      <td></td>\r\n      <td></td>\r\n      <td>Passthrough props to `DayPickerInput`'s [inputProps](http://react-day-picker.js.org/api/DayPickerInput#inputProps).</td>\r\n    </tr>\r\n  </tbody>\r\n</table>\r\n\r\n### Date parsing/formatting API\r\n<table class=\"api-table api-table--class-info\">\r\n  <thead>\r\n    <tr>\r\n      <th>Class Field/Method</th>\r\n      <th>Type</th>\r\n      <th>Description</th>\r\n    </tr>\r\n  </thead>\r\n  <tbody>\r\n    <tr>\r\n      <td>`DateInput.DATE_FORMAT`</td>\r\n      <td>string</td>\r\n      <td>Constant that represents the date format: 'MM-DD-YYYY'</td>\r\n    </tr>\r\n    <tr>\r\n      <td>`DateInput.DATE_FORMAT_CONSTRAINT`</td>\r\n      <td>object</td>\r\n      <td>Constraint object containing the regex 'pattern' and 'message' used by `DateInput`</td>\r\n    </tr>\r\n    <tr>\r\n      <td>`DateInput.formatDate(Date)`</td>\r\n      <td>func</td>\r\n      <td>Returns a formatted string representing the date.</td>\r\n    </tr>\r\n    <tr>\r\n      <td>`DateInput.parseDate(string)`</td>\r\n      <td>func</td>\r\n      <td>Takes a well-formatted string and returns a Date object. If the string isn't in DATE_FORMAT, it returns an invalid date object.</td>\r\n    </tr>\r\n  </tbody>\r\n</table>\r\n\r\n### HTML API\r\n<table class=\"api-table api-table--html\">\r\n  <thead>\r\n    <tr>\r\n      <th>Class</th>\r\n      <th>Applies To</th>\r\n      <th>Description</th>\r\n    </tr>\r\n  </thead>\r\n  <tbody>\r\n    <tr><td>`fe_c_date-input`</td><td>`DateInput` root</td><td>Indicates that this is a date input</td></tr>\r\n    <tr><td>`fe_c_date-input__input`</td><td>`DateInput` input container</td><td>Class for the `DateInput`'s container for the text input part</td></tr>\r\n    <tr><td>`fe_c_date-input__icon`</td><td>`DateInput` calendar icon</td><td>Class for the `DateInput`'s calendar icon</td></tr>\r\n    <tr><td>`fe_c_date-input-text-input`</td><td>`DateInput` input element</td><td>Class for the `DateInput`'s actual input element</td></tr>\r\n    <tr><td>`fe_c_date-input-calendar`</td><td>`DateInput` calendar container</td><td>Class for the `DateInput`'s pop-up calendar container</td></tr>\r\n    <tr><td>`fe_c_date-input-calendar__select`</td><td>`DateInput` calendar month and year selects</td><td>Class for the `DateInput`'s calendar month and year selects</td></tr>\r\n    <tr><td>`fe_is-expose-message`</td><td>`DateInput` root</td><td>Accounts for the space needed to display the `DateInput`'s `messageText` when the calendar popup is open</td></tr>\r\n  </tbody>\r\n</table>\r\nNote that there are many additional classes applied to the internals of `fe_c_date-input-calendar` by [react-day-picker](http://react-day-picker.js.org/docs/styling).\r\n","lang":{"name":"Markdown","mode":"markdown","scope":"source.gfm","color":"#083FA1"},"file":{"root":"C:\\","dir":"C:\\Users\\ctsui\\code\\forge-guide\\docs\\04-components","base":"date-input.md","ext":".md","name":"date-input","relPath":"04-components\\date-input.md","fsName":"date-input","path":"C:\\Users\\ctsui\\code\\forge-guide\\docs\\04-components\\date-input.md","dirs":["C:\\Users\\ctsui\\code\\forge-guide\\docs\\04-components"],"isHidden":false,"order":1000000,"isFile":true,"isDirectory":false,"stat":{"dev":4102694615,"mode":33206,"nlink":1,"uid":0,"gid":0,"rdev":0,"ino":4503599627656359,"size":9585,"atimeMs":1542641056845.935,"mtimeMs":1542641056846.937,"ctimeMs":1542821273671.4436,"birthtimeMs":1528896974624.8516,"atime":"2018-11-19T15:24:16.846Z","mtime":"2018-11-19T15:24:16.847Z","ctime":"2018-11-21T17:27:53.671Z","birthtime":"2018-06-13T13:36:14.625Z"},"lang":{"name":"Markdown","mode":"markdown","scope":"source.gfm","color":"#083FA1"},"isBinary":false},"context":{"extensions":{"core":{"forge-toast":{"name":"Toast","version":"0.2.2","description":"Toast component for Forge"},"forge-toggle-switch":{"name":"ToggleSwitch","version":"0.1.1","description":"ToggleSwitch component for Forge"}},"community":{"clinicals-forge-extension":{"name":"Clinicals Forge Extension","owner":"Nursing Flowsheets","url":"https://bitbucket.athenahealth.com/projects/CLIFS/repos/clinicals-forge-extension/browse","version":"2.1.1","description":"A forge-extension containing components used by inpatient clinicals"}}},"isComponent":true,"amplitudeCategory":"components"}}</code></pre></div-->
+  </div>
+</div>
+
+
+
+</div>
+
+
+
+
+<script src="../../assets/clipboard.min.js?cachebust=1.2.0"></script>
+
+<script src="../../assets/main.js?cachebust=1.2.0"></script>
+
+<script src="../../assets/amplitude.js?cachebust=1.2.0"></script>
+
+
+
+</body>
+</html>

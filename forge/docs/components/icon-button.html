@@ -1,0 +1,1184 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+    window.frctl = {
+        env: 'static'
+    };
+    </script>
+    <script>var cl = document.querySelector('html').classList; cl.remove('no-js'); cl.add('has-js');</script>
+    <link rel="shortcut icon" href="../../favicon_blue.ico" type="image/ico">
+
+<link rel="stylesheet" href="../../assets/css/styles.css?cachebust=1.2.0" type="text/css">
+
+<link rel="stylesheet" href="../../assets/css/prism-atom-dark.css?cachebust=1.2.0" type="text/css">
+
+<link rel="stylesheet" href="../../assets/css/ascetic.css?cachebust=1.2.0" type="text/css">
+
+<link rel="stylesheet" href="../../css/forge.css?cachebust=1.2.0" type="text/css">
+
+
+<title>IconButton | athenahealth</title>
+
+</head>
+<body>
+
+
+
+<div class="fg_app">
+  <header class="fg_l_header fg_l_header--alpha">
+  <a class="fg_c_branding" href="../../index.html">
+    <img src="../../assets/images/logo.svg" />
+  </a>
+  <nav class="fg_c_nav-top">
+  <ul class="fg_c_nav-top__list">
+    
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link "
+            href="../guidelines/principles.html"
+            title="Guidelines"
+          >
+            Guidelines
+          </a>
+        </li>
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link "
+            href="../foundations/color.html"
+            title="Foundations"
+          >
+            Foundations
+          </a>
+        </li>
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link  fg_is-active"
+            href="accordion.html"
+            title="Components"
+          >
+            Components
+          </a>
+        </li>
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link "
+            href="../extensions/forge-extensions.html"
+            title="Extensions"
+          >
+            Extensions
+          </a>
+        </li>
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link "
+            href="../resources/release-notes.html"
+            title="Resources"
+          >
+            Resources
+          </a>
+        </li>
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link "
+            href="../resources/downloads.html"
+            title="Resources"
+          >
+            Resources
+          </a>
+        </li>
+      
+    
+  </ul>
+</nav>
+
+
+  <div class="fg_c_nav-version">
+    v2.0.0-beta.7
+  </div>
+</header>
+
+
+  
+
+<div class="fg_l_sidebar" data-role="sidebar">
+  <nav class="fg_c_nav-left">
+  <ul class="fg_c_nav-left__list">
+  
+    
+  
+    
+  
+    
+  
+    
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="accordion.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Accordion</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="banner.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Banner</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="button.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Button</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="card.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Card</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="checkbox.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Checkbox</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="date-input.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>DateInput</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="form.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Form</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="form-field.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>FormField</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="grid.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Grid</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="heading.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Heading</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="icon.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Icon</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href=""
+            
+            class="fg_c_nav-left__link  fg_is-active"
+          >
+            <span>IconButton</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="input.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Input</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="lightbox.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Lightbox</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="list.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>List</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="loader.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Loader</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="modal.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Modal</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="multi-field.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>MultiField</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="multiselect.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Multiselect</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="paginator.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Paginator</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="radio-group.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>RadioGroup</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="read-only-input.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>ReadOnlyInput</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="redux-form.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>ReduxForm</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="redux-form-field.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>ReduxFormField</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="redux-multi-field.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>ReduxMultiField</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="removable-tag.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>RemovableTag</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="root.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Root</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="select.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Select</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="selection-list.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>SelectionList</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="status-tag.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>StatusTag</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="stepper.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Stepper</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="table.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Table</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="tabs.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Tabs</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="textarea.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Textarea</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="toast.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Toast</span>
+            
+              
+                <span class="fe_f_all"><span class="fe_c_status-tag">EXT</span></span>
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="toggle-switch.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>ToggleSwitch</span>
+            
+              
+            
+              
+                <span class="fe_f_all"><span class="fe_c_status-tag">EXT</span></span>
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="tooltip.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Tooltip</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="typeahead.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Typeahead</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+    
+  
+    
+  
+    
+  
+    
+  
+  </ul>
+</nav>
+
+</div>
+
+<div class="fg_l_main" data-role="main">
+  <div class="fg_doc">
+
+    
+      <nav class="fg_c_nav-page"></nav>
+
+    
+
+    <div class="fg_doc__header">
+      
+        <h1 class="fg_doc__title">IconButton</h1>
+      
+    </div>
+    <div class="fg_doc__content">
+      
+
+  <div class="fg_markdown">
+    
+
+      
+      
+
+      
+        <p class="p--lead">IconButton makes icons interactive by putting them within a button element.</p>
+
+<h2 id="demos">Demos</h2>
+<div class="fg_c_demos"><select class="fg_c_demos__select js-selector-demos"><option value="0a40eeba5ba1df39bded2e74cda018de">IconButton</option><option value="ad1bb974401d3b09a15666e4fb125526">IconButton - Standalone</option><option value="8755906fe5616434faa2286ecedca43b">Disabled IconButton</option></select><div class="fg_c_demos__demo js-demo-0a40eeba5ba1df39bded2e74cda018de ">
+    <div class="fg_c_preview js-resize-preview" style="height: 80px">
+      <iframe height="80" src="../../components/preview/icon-button-default.html" class="fg_c_preview__iframe"></iframe>
+    </div>
+    <div class="fg_c_accordian js-accordian">
+      <button class="fg_c_accordian__button" role="heading">
+        <span class="fg_c_accordian__icon js-icon"></span>
+        <span class="fg_c_accordian__closed-text">Show Code</span>
+        <span class="fg_c_accordian__open-text">Hide Code</span>
+      </button>
+      <div class="fg_c_code-tabs fg_is-hidden js-tabs">
+        <ul class="fg_c_code-tabs__list" role="tablist">
+          <li class="fg_c_code-tabs__tab" role="tab">
+            <a href="#tab-jsx-0a40eeba5ba1df39bded2e74cda018de">JSX</a>
+          </li>
+          <li class="fg_c_code-tabs__tab" role="tab">
+            <a href="#tab-html-0a40eeba5ba1df39bded2e74cda018de">HTML</a>
+          </li>
+        </ul>
+        <div class="fg_c_code-tabs__panel" id="tab-jsx-0a40eeba5ba1df39bded2e74cda018de" role="tabpanel">
+          <button type="button" class="fg_c_button--inverted fg_c_button--copy js-copy-code" data-clipboard-target="#tab-jsx-0a40eeba5ba1df39bded2e74cda018de pre">Copy Code</button>
+          <pre class="fg_c_code-block"><code class="language-jsx"><span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">&#39;react&#39;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> IconButton <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&#39;@athena/forge&#39;</span><span class="token punctuation">;</span>
+<span style='display:none'>empty line</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">function</span> <span class="token function">IconButtonWithText</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">className</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;u&#95;padding--large<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>IconButton</span> <span class="token attr-name">text</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>Add Note<span class="token punctuation">&quot;</span></span> <span class="token attr-name">icon</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>AddNote<span class="token punctuation">&quot;</span></span> <span class="token attr-name">className</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;u&#95;margin--right-large<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>IconButton</span> <span class="token attr-name">text</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>Edit<span class="token punctuation">&quot;</span></span> <span class="token attr-name">icon</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>Edit<span class="token punctuation">&quot;</span></span> <span class="token attr-name">className</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;u&#95;margin--right-large<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>IconButton</span> <span class="token attr-name">text</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>Delete<span class="token punctuation">&quot;</span></span> <span class="token attr-name">icon</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>Delete<span class="token punctuation">&quot;</span></span> <span class="token attr-name">className</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;u&#95;margin--right-large<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>IconButton</span> <span class="token attr-name">text</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>Export<span class="token punctuation">&quot;</span></span> <span class="token attr-name">icon</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>Export<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+        </div>
+        <div class="fg_c_code-tabs__panel" id="tab-html-0a40eeba5ba1df39bded2e74cda018de" role="tabpanel">
+          <button type="button" class="fg_c_button--inverted fg_c_button--copy js-copy-code" data-clipboard-target="#tab-html-0a40eeba5ba1df39bded2e74cda018de pre">Copy Code</button>
+          <pre class="fg_c_code-block"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;u&#95;padding--large<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;icon-button fe&#95;c&#95;icon-button--with-text fe&#95;u&#95;margin--right-large<span class="token punctuation">&quot;</span></span> <span class="token attr-name">aria-disabled</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>false<span class="token punctuation">&quot;</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>button<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span> <span class="token attr-name">xmlns</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span><a href="http://www.w3.org/2000/svg">http://www.w3.org/2000/svg</a><span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;icon fe&#95;c&#95;icon-button&#95;&#95;icon<span class="token punctuation">&quot;</span></span> <span class="token attr-name">viewBox</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>0 0 25 25<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>g</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>g</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;icon&#95;&#95;background<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>rect</span> <span class="token attr-name">x</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>-0.2<span class="token punctuation">&quot;</span></span> <span class="token attr-name">y</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>-0.2<span class="token punctuation">&quot;</span></span> <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>25<span class="token punctuation">&quot;</span></span> <span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>25<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>rect</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>rect</span> <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>25<span class="token punctuation">&quot;</span></span> <span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>25<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>rect</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>g</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>g</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;icon&#95;&#95;icon fe&#95;c&#95;icon&#95;&#95;icon--primary<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>g</span><span class="token punctuation">&gt;</span></span>
+                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>polygon</span> <span class="token attr-name">points</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>5.8 14.8 4.3 14.8 4.3 18.1 1 18.1 1 19.6 4.3 19.6 4.3 22.9 5.8 22.9 5.8 19.6 9.1 19.6 9.1 18.1 5.8 18.1 5.8 14.8<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>polygon</span><span class="token punctuation">&gt;</span></span>
+                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>path</span> <span class="token attr-name">d</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>M14.7,1.8H4.3V12.3H5.8v-9h7.5V6.8a2.3,2.3,0,0,0,2.3,2.3H19v6.4a2.6,2.6,0,0,1-2.6,2.6H11.5v1.5h4.9a4.1,4.1,0,0,0,4.1-4.1V8.1Zm.1,5V4.1L18,7.6H15.6A.8.8,0,0,1,14.8,6.8Z<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>path</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>g</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>g</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>g</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;icon-button&#95;&#95;text<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Add Note<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;icon-button fe&#95;c&#95;icon-button--with-text fe&#95;u&#95;margin--right-large<span class="token punctuation">&quot;</span></span> <span class="token attr-name">aria-disabled</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>false<span class="token punctuation">&quot;</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>button<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span> <span class="token attr-name">xmlns</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span><a href="http://www.w3.org/2000/svg">http://www.w3.org/2000/svg</a><span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;icon fe&#95;c&#95;icon-button&#95;&#95;icon<span class="token punctuation">&quot;</span></span> <span class="token attr-name">viewBox</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>0 0 25 25<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>g</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>g</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;icon&#95;&#95;background<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>rect</span> <span class="token attr-name">x</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>-0.2<span class="token punctuation">&quot;</span></span> <span class="token attr-name">y</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>-0.2<span class="token punctuation">&quot;</span></span> <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>25<span class="token punctuation">&quot;</span></span> <span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>25<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>rect</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>g</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>g</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;icon&#95;&#95;icon fe&#95;c&#95;icon&#95;&#95;icon--primary<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>path</span> <span class="token attr-name">d</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>M21.1,4.8,16.9.7,4.1,13.4,2.6,21.5l8-1.6L21.1,9.5A3.3,3.3,0,0,0,21.1,4.8ZM5.2,15.6l3.3,3.2-4,.8Zm4.9,2.8L5.7,13.9l8-8,4.5,4.4ZM20,8.5l-.8.8L14.8,4.9l2.1-2.1L20,5.9A1.9,1.9,0,0,1,20,8.5Z<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>path</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>g</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>g</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;icon-button&#95;&#95;text<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Edit<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;icon-button fe&#95;c&#95;icon-button--with-text fe&#95;u&#95;margin--right-large<span class="token punctuation">&quot;</span></span> <span class="token attr-name">aria-disabled</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>false<span class="token punctuation">&quot;</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>button<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span> <span class="token attr-name">xmlns</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span><a href="http://www.w3.org/2000/svg">http://www.w3.org/2000/svg</a><span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;icon fe&#95;c&#95;icon-button&#95;&#95;icon<span class="token punctuation">&quot;</span></span> <span class="token attr-name">viewBox</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>0 0 25 25<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>g</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>g</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;icon&#95;&#95;background<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>rect</span> <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>25<span class="token punctuation">&quot;</span></span> <span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>25<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>rect</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>g</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>g</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;icon&#95;&#95;icon fe&#95;c&#95;icon&#95;&#95;icon--primary<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>g</span><span class="token punctuation">&gt;</span></span>
+                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>path</span> <span class="token attr-name">d</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>M22.2,4.4H16.9V3.8A1.9,1.9,0,0,0,15,2H10A1.9,1.9,0,0,0,8.1,3.8v.6H2.8V5.9H4.4V23H17.2a3.4,3.4,0,0,0,3.4-3.3V5.9h1.6ZM19.1,19.7a1.9,1.9,0,0,1-1.9,1.8H5.9V5.9H19.1ZM9.6,3.8c0-.2.2-.3.4-.3h5c.2,0,.4.1.4.3v.6H9.6Z<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>path</span><span class="token punctuation">&gt;</span></span>
+                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>rect</span> <span class="token attr-name">x</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>7.9<span class="token punctuation">&quot;</span></span> <span class="token attr-name">y</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>8.6<span class="token punctuation">&quot;</span></span> <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>1.5<span class="token punctuation">&quot;</span></span> <span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>10.76<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>rect</span><span class="token punctuation">&gt;</span></span>
+                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>rect</span> <span class="token attr-name">x</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>11.8<span class="token punctuation">&quot;</span></span> <span class="token attr-name">y</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>8.6<span class="token punctuation">&quot;</span></span> <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>1.5<span class="token punctuation">&quot;</span></span> <span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>10.76<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>rect</span><span class="token punctuation">&gt;</span></span>
+                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>rect</span> <span class="token attr-name">x</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>15.6<span class="token punctuation">&quot;</span></span> <span class="token attr-name">y</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>8.6<span class="token punctuation">&quot;</span></span> <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>1.5<span class="token punctuation">&quot;</span></span> <span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>10.76<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>rect</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>g</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>g</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>g</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;icon-button&#95;&#95;text<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Delete<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;icon-button fe&#95;c&#95;icon-button--with-text<span class="token punctuation">&quot;</span></span> <span class="token attr-name">aria-disabled</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>false<span class="token punctuation">&quot;</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>button<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span> <span class="token attr-name">xmlns</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span><a href="http://www.w3.org/2000/svg">http://www.w3.org/2000/svg</a><span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;icon fe&#95;c&#95;icon-button&#95;&#95;icon<span class="token punctuation">&quot;</span></span> <span class="token attr-name">viewBox</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>0 0 25 25<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>g</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>g</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;icon&#95;&#95;background<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>rect</span> <span class="token attr-name">x</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>-0.3<span class="token punctuation">&quot;</span></span> <span class="token attr-name">y</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>-0.2<span class="token punctuation">&quot;</span></span> <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>25<span class="token punctuation">&quot;</span></span> <span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>25<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>rect</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>g</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>g</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;icon&#95;&#95;icon fe&#95;c&#95;icon&#95;&#95;icon--primary<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>g</span><span class="token punctuation">&gt;</span></span>
+                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>path</span> <span class="token attr-name">d</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>M17.9,15.8a2.3,2.3,0,0,1-2.3,2.3H4.9V5.2h6.5V3.7h-8V19.6H15.6a3.8,3.8,0,0,0,3.8-3.8V11.6H17.9Z<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>path</span><span class="token punctuation">&gt;</span></span>
+                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>polygon</span> <span class="token attr-name">points</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>13.6 2 13.6 3.5 18.5 3.5 10.9 11.1 11.9 12.2 19.6 4.6 19.6 9.4 21.1 9.4 21.1 2 13.6 2<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>polygon</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>g</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>g</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>g</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;icon-button&#95;&#95;text<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Export<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+        </div>
+      </div>
+    </div>
+  </div><div class="fg_c_demos__demo js-demo-ad1bb974401d3b09a15666e4fb125526 fg_is-hidden">
+    <div class="fg_c_preview js-resize-preview" style="height: 80px">
+      <iframe height="80" src="../../components/preview/icon-button-standalone.html" class="fg_c_preview__iframe"></iframe>
+    </div>
+    <div class="fg_c_accordian js-accordian">
+      <button class="fg_c_accordian__button" role="heading">
+        <span class="fg_c_accordian__icon js-icon"></span>
+        <span class="fg_c_accordian__closed-text">Show Code</span>
+        <span class="fg_c_accordian__open-text">Hide Code</span>
+      </button>
+      <div class="fg_c_code-tabs fg_is-hidden js-tabs">
+        <ul class="fg_c_code-tabs__list" role="tablist">
+          <li class="fg_c_code-tabs__tab" role="tab">
+            <a href="#tab-jsx-ad1bb974401d3b09a15666e4fb125526">JSX</a>
+          </li>
+          <li class="fg_c_code-tabs__tab" role="tab">
+            <a href="#tab-html-ad1bb974401d3b09a15666e4fb125526">HTML</a>
+          </li>
+        </ul>
+        <div class="fg_c_code-tabs__panel" id="tab-jsx-ad1bb974401d3b09a15666e4fb125526" role="tabpanel">
+          <button type="button" class="fg_c_button--inverted fg_c_button--copy js-copy-code" data-clipboard-target="#tab-jsx-ad1bb974401d3b09a15666e4fb125526 pre">Copy Code</button>
+          <pre class="fg_c_code-block"><code class="language-jsx"><span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">&#39;react&#39;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> IconButton <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&#39;@athena/forge&#39;</span><span class="token punctuation">;</span>
+<span style='display:none'>empty line</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">function</span> <span class="token function">IconButtonStandalone</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">className</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;u&#95;padding--large<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>IconButton</span> <span class="token attr-name">icon</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>Add<span class="token punctuation">&quot;</span></span> <span class="token attr-name">className</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;u&#95;margin--right-medium<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>IconButton</span> <span class="token attr-name">icon</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>Edit<span class="token punctuation">&quot;</span></span> <span class="token attr-name">className</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;u&#95;margin--right-medium<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>IconButton</span> <span class="token attr-name">icon</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>Delete<span class="token punctuation">&quot;</span></span> <span class="token attr-name">className</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;u&#95;margin--right-medium<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>IconButton</span> <span class="token attr-name">icon</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>Close<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+        </div>
+        <div class="fg_c_code-tabs__panel" id="tab-html-ad1bb974401d3b09a15666e4fb125526" role="tabpanel">
+          <button type="button" class="fg_c_button--inverted fg_c_button--copy js-copy-code" data-clipboard-target="#tab-html-ad1bb974401d3b09a15666e4fb125526 pre">Copy Code</button>
+          <pre class="fg_c_code-block"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;u&#95;padding--large<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;icon-button fe&#95;c&#95;icon-button--controller fe&#95;u&#95;margin--right-medium<span class="token punctuation">&quot;</span></span> <span class="token attr-name">aria-label</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>Add<span class="token punctuation">&quot;</span></span> <span class="token attr-name">aria-disabled</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>false<span class="token punctuation">&quot;</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>button<span class="token punctuation">&quot;</span></span> <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>Add<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span> <span class="token attr-name">xmlns</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span><a href="http://www.w3.org/2000/svg">http://www.w3.org/2000/svg</a><span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;icon fe&#95;c&#95;icon-button&#95;&#95;icon<span class="token punctuation">&quot;</span></span> <span class="token attr-name">viewBox</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>0 0 25 25<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>g</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>g</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;icon&#95;&#95;background<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>rect</span> <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>25<span class="token punctuation">&quot;</span></span> <span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>25<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>rect</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>g</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>g</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;icon&#95;&#95;icon fe&#95;c&#95;icon&#95;&#95;icon--primary<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>g</span><span class="token punctuation">&gt;</span></span>
+                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>polygon</span> <span class="token attr-name">points</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>13.3 7.8 11.8 7.8 11.8 11.8 7.8 11.8 7.8 13.3 11.8 13.3 11.8 17.2 13.3 17.2 13.3 13.3 17.2 13.3 17.2 11.8 13.3 11.8 13.3 7.8<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>polygon</span><span class="token punctuation">&gt;</span></span>
+                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>path</span> <span class="token attr-name">d</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>M20,5a11,11,0,0,0-7.5-3.1A11,11,0,0,0,5,5,10.7,10.7,0,0,0,5,20a11,11,0,0,0,7.5,3.1A11,11,0,0,0,20,20,10.7,10.7,0,0,0,20,5ZM18.9,18.9a9.1,9.1,0,0,1-6.4,2.7,9.1,9.1,0,0,1,0-18.2,9.1,9.1,0,0,1,6.4,15.5Z<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>path</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>g</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>g</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>g</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;icon-button fe&#95;c&#95;icon-button--controller fe&#95;u&#95;margin--right-medium<span class="token punctuation">&quot;</span></span> <span class="token attr-name">aria-label</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>Edit<span class="token punctuation">&quot;</span></span> <span class="token attr-name">aria-disabled</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>false<span class="token punctuation">&quot;</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>button<span class="token punctuation">&quot;</span></span> <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>Edit<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span> <span class="token attr-name">xmlns</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span><a href="http://www.w3.org/2000/svg">http://www.w3.org/2000/svg</a><span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;icon fe&#95;c&#95;icon-button&#95;&#95;icon<span class="token punctuation">&quot;</span></span> <span class="token attr-name">viewBox</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>0 0 25 25<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>g</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>g</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;icon&#95;&#95;background<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>rect</span> <span class="token attr-name">x</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>-0.2<span class="token punctuation">&quot;</span></span> <span class="token attr-name">y</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>-0.2<span class="token punctuation">&quot;</span></span> <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>25<span class="token punctuation">&quot;</span></span> <span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>25<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>rect</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>g</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>g</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;icon&#95;&#95;icon fe&#95;c&#95;icon&#95;&#95;icon--primary<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>path</span> <span class="token attr-name">d</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>M21.1,4.8,16.9.7,4.1,13.4,2.6,21.5l8-1.6L21.1,9.5A3.3,3.3,0,0,0,21.1,4.8ZM5.2,15.6l3.3,3.2-4,.8Zm4.9,2.8L5.7,13.9l8-8,4.5,4.4ZM20,8.5l-.8.8L14.8,4.9l2.1-2.1L20,5.9A1.9,1.9,0,0,1,20,8.5Z<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>path</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>g</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>g</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;icon-button fe&#95;c&#95;icon-button--controller fe&#95;u&#95;margin--right-medium<span class="token punctuation">&quot;</span></span> <span class="token attr-name">aria-label</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>Delete<span class="token punctuation">&quot;</span></span> <span class="token attr-name">aria-disabled</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>false<span class="token punctuation">&quot;</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>button<span class="token punctuation">&quot;</span></span> <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>Delete<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span> <span class="token attr-name">xmlns</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span><a href="http://www.w3.org/2000/svg">http://www.w3.org/2000/svg</a><span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;icon fe&#95;c&#95;icon-button&#95;&#95;icon<span class="token punctuation">&quot;</span></span> <span class="token attr-name">viewBox</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>0 0 25 25<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>g</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>g</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;icon&#95;&#95;background<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>rect</span> <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>25<span class="token punctuation">&quot;</span></span> <span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>25<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>rect</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>g</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>g</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;icon&#95;&#95;icon fe&#95;c&#95;icon&#95;&#95;icon--primary<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>g</span><span class="token punctuation">&gt;</span></span>
+                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>path</span> <span class="token attr-name">d</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>M22.2,4.4H16.9V3.8A1.9,1.9,0,0,0,15,2H10A1.9,1.9,0,0,0,8.1,3.8v.6H2.8V5.9H4.4V23H17.2a3.4,3.4,0,0,0,3.4-3.3V5.9h1.6ZM19.1,19.7a1.9,1.9,0,0,1-1.9,1.8H5.9V5.9H19.1ZM9.6,3.8c0-.2.2-.3.4-.3h5c.2,0,.4.1.4.3v.6H9.6Z<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>path</span><span class="token punctuation">&gt;</span></span>
+                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>rect</span> <span class="token attr-name">x</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>7.9<span class="token punctuation">&quot;</span></span> <span class="token attr-name">y</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>8.6<span class="token punctuation">&quot;</span></span> <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>1.5<span class="token punctuation">&quot;</span></span> <span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>10.76<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>rect</span><span class="token punctuation">&gt;</span></span>
+                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>rect</span> <span class="token attr-name">x</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>11.8<span class="token punctuation">&quot;</span></span> <span class="token attr-name">y</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>8.6<span class="token punctuation">&quot;</span></span> <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>1.5<span class="token punctuation">&quot;</span></span> <span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>10.76<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>rect</span><span class="token punctuation">&gt;</span></span>
+                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>rect</span> <span class="token attr-name">x</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>15.6<span class="token punctuation">&quot;</span></span> <span class="token attr-name">y</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>8.6<span class="token punctuation">&quot;</span></span> <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>1.5<span class="token punctuation">&quot;</span></span> <span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>10.76<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>rect</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>g</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>g</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>g</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;icon-button fe&#95;c&#95;icon-button--controller<span class="token punctuation">&quot;</span></span> <span class="token attr-name">aria-label</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>Close<span class="token punctuation">&quot;</span></span> <span class="token attr-name">aria-disabled</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>false<span class="token punctuation">&quot;</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>button<span class="token punctuation">&quot;</span></span> <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>Close<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span> <span class="token attr-name">xmlns</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span><a href="http://www.w3.org/2000/svg">http://www.w3.org/2000/svg</a><span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;icon fe&#95;c&#95;icon-button&#95;&#95;icon fe&#95;c&#95;icon--close<span class="token punctuation">&quot;</span></span> <span class="token attr-name">viewBox</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>0 0 25 25<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>g</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>g</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;icon&#95;&#95;background<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>rect</span> <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>25<span class="token punctuation">&quot;</span></span> <span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>25<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>rect</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>g</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>g</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;icon&#95;&#95;icon fe&#95;c&#95;icon&#95;&#95;icon--primary<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>rect</span> <span class="token attr-name">x</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>4<span class="token punctuation">&quot;</span></span> <span class="token attr-name">y</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>11.8<span class="token punctuation">&quot;</span></span> <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>17<span class="token punctuation">&quot;</span></span> <span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>1.5<span class="token punctuation">&quot;</span></span> <span class="token attr-name">transform</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>translate(-5.2 12.5) rotate(-45)<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>rect</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>rect</span> <span class="token attr-name">x</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>11.8<span class="token punctuation">&quot;</span></span> <span class="token attr-name">y</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>4<span class="token punctuation">&quot;</span></span> <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>1.5<span class="token punctuation">&quot;</span></span> <span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>16.97<span class="token punctuation">&quot;</span></span> <span class="token attr-name">transform</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>translate(-5.2 12.5) rotate(-45)<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>rect</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>g</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>g</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+        </div>
+      </div>
+    </div>
+  </div><div class="fg_c_demos__demo js-demo-8755906fe5616434faa2286ecedca43b fg_is-hidden">
+    <div class="fg_c_preview js-resize-preview" style="height: 115px">
+      <iframe height="115" src="../../components/preview/icon-button-disabled.html" class="fg_c_preview__iframe"></iframe>
+    </div>
+    <div class="fg_c_accordian js-accordian">
+      <button class="fg_c_accordian__button" role="heading">
+        <span class="fg_c_accordian__icon js-icon"></span>
+        <span class="fg_c_accordian__closed-text">Show Code</span>
+        <span class="fg_c_accordian__open-text">Hide Code</span>
+      </button>
+      <div class="fg_c_code-tabs fg_is-hidden js-tabs">
+        <ul class="fg_c_code-tabs__list" role="tablist">
+          <li class="fg_c_code-tabs__tab" role="tab">
+            <a href="#tab-jsx-8755906fe5616434faa2286ecedca43b">JSX</a>
+          </li>
+          <li class="fg_c_code-tabs__tab" role="tab">
+            <a href="#tab-html-8755906fe5616434faa2286ecedca43b">HTML</a>
+          </li>
+        </ul>
+        <div class="fg_c_code-tabs__panel" id="tab-jsx-8755906fe5616434faa2286ecedca43b" role="tabpanel">
+          <button type="button" class="fg_c_button--inverted fg_c_button--copy js-copy-code" data-clipboard-target="#tab-jsx-8755906fe5616434faa2286ecedca43b pre">Copy Code</button>
+          <pre class="fg_c_code-block"><code class="language-jsx"><span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">&#39;react&#39;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> IconButton <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&#39;@athena/forge&#39;</span><span class="token punctuation">;</span>
+<span style='display:none'>empty line</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">function</span> <span class="token function">IconButtonDisabled</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">className</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;u&#95;padding--large<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>IconButton</span> <span class="token attr-name">icon</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>Add<span class="token punctuation">&quot;</span></span> <span class="token attr-name">disabled</span> <span class="token attr-name">className</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;u&#95;margin--right-medium<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>IconButton</span> <span class="token attr-name">text</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>Export<span class="token punctuation">&quot;</span></span> <span class="token attr-name">icon</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>Export<span class="token punctuation">&quot;</span></span> <span class="token attr-name">disabled</span> <span class="token punctuation">/&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+        </div>
+        <div class="fg_c_code-tabs__panel" id="tab-html-8755906fe5616434faa2286ecedca43b" role="tabpanel">
+          <button type="button" class="fg_c_button--inverted fg_c_button--copy js-copy-code" data-clipboard-target="#tab-html-8755906fe5616434faa2286ecedca43b pre">Copy Code</button>
+          <pre class="fg_c_code-block"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;u&#95;padding--large<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;icon-button fe&#95;c&#95;icon-button--controller fe&#95;is-disabled fe&#95;u&#95;margin--right-medium<span class="token punctuation">&quot;</span></span> <span class="token attr-name">aria-label</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>Add<span class="token punctuation">&quot;</span></span> <span class="token attr-name">aria-disabled</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>true<span class="token punctuation">&quot;</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>button<span class="token punctuation">&quot;</span></span> <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>Add<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span> <span class="token attr-name">xmlns</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span><a href="http://www.w3.org/2000/svg">http://www.w3.org/2000/svg</a><span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;icon fe&#95;c&#95;icon-button&#95;&#95;icon fe&#95;is-disabled<span class="token punctuation">&quot;</span></span> <span class="token attr-name">viewBox</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>0 0 25 25<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>g</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>g</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;icon&#95;&#95;background<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>rect</span> <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>25<span class="token punctuation">&quot;</span></span> <span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>25<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>rect</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>g</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>g</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;icon&#95;&#95;icon fe&#95;c&#95;icon&#95;&#95;icon--primary<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>g</span><span class="token punctuation">&gt;</span></span>
+                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>polygon</span> <span class="token attr-name">points</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>13.3 7.8 11.8 7.8 11.8 11.8 7.8 11.8 7.8 13.3 11.8 13.3 11.8 17.2 13.3 17.2 13.3 13.3 17.2 13.3 17.2 11.8 13.3 11.8 13.3 7.8<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>polygon</span><span class="token punctuation">&gt;</span></span>
+                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>path</span> <span class="token attr-name">d</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>M20,5a11,11,0,0,0-7.5-3.1A11,11,0,0,0,5,5,10.7,10.7,0,0,0,5,20a11,11,0,0,0,7.5,3.1A11,11,0,0,0,20,20,10.7,10.7,0,0,0,20,5ZM18.9,18.9a9.1,9.1,0,0,1-6.4,2.7,9.1,9.1,0,0,1,0-18.2,9.1,9.1,0,0,1,6.4,15.5Z<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>path</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>g</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>g</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>g</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;icon-button fe&#95;c&#95;icon-button--with-text fe&#95;is-disabled<span class="token punctuation">&quot;</span></span> <span class="token attr-name">aria-disabled</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>true<span class="token punctuation">&quot;</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>button<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span> <span class="token attr-name">xmlns</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span><a href="http://www.w3.org/2000/svg">http://www.w3.org/2000/svg</a><span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;icon fe&#95;c&#95;icon-button&#95;&#95;icon fe&#95;is-disabled<span class="token punctuation">&quot;</span></span> <span class="token attr-name">viewBox</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>0 0 25 25<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>g</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>g</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;icon&#95;&#95;background<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>rect</span> <span class="token attr-name">x</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>-0.3<span class="token punctuation">&quot;</span></span> <span class="token attr-name">y</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>-0.2<span class="token punctuation">&quot;</span></span> <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>25<span class="token punctuation">&quot;</span></span> <span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>25<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>rect</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>g</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>g</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;icon&#95;&#95;icon fe&#95;c&#95;icon&#95;&#95;icon--primary<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>g</span><span class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>path</span> <span class="token attr-name">d</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>M17.9,15.8a2.3,2.3,0,0,1-2.3,2.3H4.9V5.2h6.5V3.7h-8V19.6H15.6a3.8,3.8,0,0,0,3.8-3.8V11.6H17.9Z<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>path</span><span class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>polygon</span> <span class="token attr-name">points</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>13.6 2 13.6 3.5 18.5 3.5 10.9 11.1 11.9 12.2 19.6 4.6 19.6 9.4 21.1 9.4 21.1 2 13.6 2<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>polygon</span><span class="token punctuation">&gt;</span></span>
+                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>g</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>g</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>g</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;icon-button&#95;&#95;text<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Export<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+        </div>
+      </div>
+    </div>
+  </div></div>
+
+<h2 id="usage">Usage</h2>
+<p>An <code>IconButton</code> might be used in the same cases as <a href="button.html"><code>Button</code></a>, but where additional visual emphasis needs to be provided by an icon. Follow the <a href="button.html#usage">usage guidance</a> for <code>Button</code>.</p>
+<h2 id="design">Design</h2>
+<p>For guidance on how and when to use icons, follow the design guidance for the use of <a href="icon.html"><code>Icon</code></a>. In general, making an icon into an <code>IconButton</code> should be limited to cases where extra visual emphasis is necessary and not merely decorative.</p>
+<p>Button text should use title case (e.g., &quot;Add Diagnosis&quot;, not &quot;Add diagnosis&quot;).</p>
+<p>If you are using <code>IconButton</code> as part of a form, you can find more guidance on the <a href="../foundations/form-design.html">Form Design</a> Foundations page.</p>
+<h3 id="alerting-icons-and-iconbutton">Alerting Icons and IconButton</h3>
+<p>Do not use the special information icons within <code>IconButton</code> (i.e., <code>Attention</code>, <code>Info</code>, <code>Success</code>, <code>Critical</code>). These icons are meant to emphasize key information and should not be combined into a single, call-to-action element.</p>
+<h2 id="implementation">Implementation</h2>
+<p>In some cases (e.g., using React Router&#39;s <code>Link</code> component), it may be necessary to style a link directly with an icon. To do this, use <code>IconButton</code> classes with a link element via <code>className</code> and pass in the <code>Icon</code> directly to the link:</p>
+<code><pre><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">className</span>=<span class="hljs-string">"fe_c_icon-button"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">Icon</span> <span class="hljs-attr">icon</span>=<span class="hljs-string">"Add"</span> /&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">className</span>=<span class="hljs-string">"fe_c_icon-button__text"</span>&gt;</span>Add<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></pre></code><h2 id="api-tables">API Tables</h2>
+<h3 id="import-iconbutton-only">Import IconButton Only</h3>
+<p><p>Importing individual components can reduce bundle size. <a href="https://athenaconfluence.athenahealth.com/display/UXDS/Forge+Import+for+Better+Tree+Shaking">Learn more</a></p><code>import IconButton from &#39;@athena/forge/lib/icon-button&#39;;</code></p>
+<h3 id="iconbutton-props">IconButton Props</h3>
+<table class="api-table api-table--react">
+  <thead>
+    <tr>
+      <th>Prop</th>
+      <th>Type</th>
+      <th>Default</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="api-table__required"><code>icon</code> (required)</td>
+      <td>
+        string
+      </td>
+      <td></td>
+      <td>The icon to display inside the button. Note it is not recommended to use the solid, special icons
+(Attention, Critical, Info, and Success) within <code>IconButton</code></td>
+    </tr>
+    <tr>
+      <td><code>iconSet</code></td>
+      <td>
+        objectOf
+          <ul>
+              <li><a href="https://bitbucket.athenahealth.com/projects/UXDS/repos/forge/browse/components/icon/_icon-base.jsx">IconBase components</a></li>
+          </ul>
+      </td>
+      <td><code>ForgeIcons</code></td>
+      <td>Specify a custom icon set defined as a dictionary of <code>IconBase</code> components. Icon sets can be generated using the <a href="https://bitbucket.athenahealth.com/projects/UXDS/repos/app-fabric-generator-forge-extension/browse">App Fabric Forge Extension Generator</a>.</td>
+    </tr>
+    <tr>
+      <td><code>aria-label</code></td>
+      <td>
+        string
+      </td>
+      <td></td>
+      <td>Description of the button&#39;s action for accessibility; defaults to icon&#39;s title if the button has no text</td>
+    </tr>
+    <tr>
+      <td><code>className</code></td>
+      <td>
+        string
+      </td>
+      <td></td>
+      <td>Adds a class to the root element of the component</td>
+    </tr>
+    <tr>
+      <td><code>disabled</code></td>
+      <td>
+        bool
+      </td>
+      <td>false</td>
+      <td>Applies the disabled state class and adds <code>disabled</code> attribute to the button element</td>
+    </tr>
+    <tr>
+      <td><code>onClick</code></td>
+      <td>
+        func
+      </td>
+      <td></td>
+      <td>Handles click event on the button</td>
+    </tr>
+    <tr>
+      <td><code>text</code></td>
+      <td>
+        string
+      </td>
+      <td></td>
+      <td>Button text</td>
+    </tr>
+    <tr>
+      <td><code>title</code></td>
+      <td>
+        string
+      </td>
+      <td></td>
+      <td>Sets the <code>title</code> prop on the <code>&lt;button&gt;</code> element and the inline content of the<code>&lt;title&gt;</code> element in the svg;
+defaults to the icon&#x27;s name</td>
+    </tr>
+    <tr>
+      <td><code>type</code></td>
+      <td>
+        string
+      </td>
+      <td><code>button</code></td>
+      <td>Sets the <code>type</code> attribute on the button element (e.g., <code>button</code>, <code>submit</code>, or <code>reset</code>)</td>
+    </tr>
+    <tr>
+      <td><code>...rest</code></td>
+      <td></td>
+      <td></td>
+      <td>Passthrough props to <code>&lt;button&gt;</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="html-api">HTML API</h3>
+<p><table class="api-table api-table--html">
+  <thead>
+    <tr>
+    <th>Class</th>
+    <th>Applies To</th>
+    <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td><code>fe_c_icon-button</code></td><td>root element (button)</td><td>base class required for <code>IconButton</code></td></tr>
+    <tr><td><code>fe_c_icon-button__icon</code></td><td>icon</td><td>base class required for <code>IconButton</code>&#39;s icon</td></tr>
+    <tr><td><code>fe_c_icon-button__text</code></td><td>text inside the button</td><td>base class required for <code>IconButton</code>&#39;s text</td></tr>
+    <tr><td><code>fe_c_icon-button--controller</code></td><td>button</td><td>variant class for generating the standalone <code>IconButton</code></td></tr>
+    <tr><td><code>fe_is-disabled</code></td><td>button</td><td>set <code>IconButton</code> to the <code>disabled</code> style</td></tr>
+  </tbody>
+</table>
+Note that <code>IconButton</code> also makes use of <a href="icon.html#html-api">the classes</a> in <code>Icon</code>.</p>
+
+      
+
+    
+  </div>
+
+  <script>
+document.addEventListener("DOMContentLoaded", function(event) {
+    if (window.amplitude) {
+        amplitude.getInstance().init('d426be2bbef81471eeac4bca0c061243');
+
+        amplitude.getInstance().logEvent('viewed page', {
+          pageName: 'IconButton',
+          pageCategory: 'components'.length > 0
+            ? 'components'
+            : null,
+          forgeVersion: '2.0.0-beta.7',
+          forgeGeneralVersion: /^\d*(?=\.)/.exec('2.0.0-beta.7')
+            ? /^\d*(?=\.)/.exec('2.0.0-beta.7').toString()
+            : null
+        });
+      }
+      else {
+        console.warn("amplitude is not logging events");
+      }
+});
+</script>
+
+
+
+    </div>
+    <!--div class="debug"><pre><code class="language-json">{"id":"8f050737d1b9ee013e20dc294422b1f8","name":"icon-button","handle":"icon-button","label":"Icon Button","title":"IconButton","order":1000000,"isHidden":false,"alias":null,"isEntity":true,"isDoc":true,"isIndex":false,"path":"components/icon-button","status":null,"content":"<p class=\"p--lead\">IconButton makes icons interactive by putting them within a button element.</p>\r\n\r\n## Demos\r\n{{demo '@icon-button'}}\r\n\r\n## Usage\r\nAn `IconButton` might be used in the same cases as [`Button`]({{ path '/docs/components/button' }}), but where additional visual emphasis needs to be provided by an icon. Follow the [usage guidance]({{ path '/docs/components/button' }}#usage) for `Button`.\r\n\r\n## Design\r\nFor guidance on how and when to use icons, follow the design guidance for the use of [`Icon`]({{ path '/docs/components/icon' }}). In general, making an icon into an `IconButton` should be limited to cases where extra visual emphasis is necessary and not merely decorative.\r\n\r\nButton text should use title case (e.g., \"Add Diagnosis\", not \"Add diagnosis\").\r\n\r\nIf you are using `IconButton` as part of a form, you can find more guidance on the [Form Design]({{ path '/docs/foundations/form-design' }}) Foundations page.\r\n\r\n\r\n### Alerting Icons and IconButton\r\nDo not use the special information icons within `IconButton` (i.e., `Attention`, `Info`, `Success`, `Critical`). These icons are meant to emphasize key information and should not be combined into a single, call-to-action element.\r\n\r\n## Implementation\r\nIn some cases (e.g., using React Router's `Link` component), it may be necessary to style a link directly with an icon. To do this, use `IconButton` classes with a link element via `className` and pass in the `Icon` directly to the link:\r\n\r\n```\r\n<a className=\"fe_c_icon-button\">\r\n  <Icon icon=\"Add\" />\r\n  <span className=\"fe_c_icon-button__text\">Add</span>\r\n</a>\r\n```\r\n\r\n## API Tables\r\n### Import IconButton Only\r\n{{> componentImportMessage}}\r\n`import IconButton from '@athena/forge/lib/icon-button';`\r\n\r\n### IconButton Props\r\n<table class=\"api-table api-table--react\">\r\n  <thead>\r\n    <tr>\r\n      <th>Prop</th>\r\n      <th>Type</th>\r\n      <th>Default</th>\r\n      <th>Description</th>\r\n    </tr>\r\n  </thead>\r\n  <tbody>\r\n    <tr>\r\n      <td class=\"api-table__required\">`icon` (required)</td>\r\n      <td>\r\n        string\r\n      </td>\r\n      <td></td>\r\n      <td>The icon to display inside the button. Note it is not recommended to use the solid, special icons\r\n(Attention, Critical, Info, and Success) within `IconButton`</td>\r\n    </tr>\r\n    <tr>\r\n      <td>`iconSet`</td>\r\n      <td>\r\n        objectOf\r\n          <ul>\r\n              <li>[IconBase components](https://bitbucket.athenahealth.com/projects/UXDS/repos/forge/browse/components/icon/_icon-base.jsx)</li>\r\n          </ul>\r\n      </td>\r\n      <td>`ForgeIcons`</td>\r\n      <td>Specify a custom icon set defined as a dictionary of `IconBase` components. Icon sets can be generated using the [App Fabric Forge Extension Generator](https://bitbucket.athenahealth.com/projects/UXDS/repos/app-fabric-generator-forge-extension/browse).</td>\r\n    </tr>\r\n    <tr>\r\n      <td>`aria-label`</td>\r\n      <td>\r\n        string\r\n      </td>\r\n      <td></td>\r\n      <td>Description of the button's action for accessibility; defaults to icon's title if the button has no text</td>\r\n    </tr>\r\n    <tr>\r\n      <td>`className`</td>\r\n      <td>\r\n        string\r\n      </td>\r\n      <td></td>\r\n      <td>Adds a class to the root element of the component</td>\r\n    </tr>\r\n    <tr>\r\n      <td>`disabled`</td>\r\n      <td>\r\n        bool\r\n      </td>\r\n      <td>false</td>\r\n      <td>Applies the disabled state class and adds `disabled` attribute to the button element</td>\r\n    </tr>\r\n    <tr>\r\n      <td>`onClick`</td>\r\n      <td>\r\n        func\r\n      </td>\r\n      <td></td>\r\n      <td>Handles click event on the button</td>\r\n    </tr>\r\n    <tr>\r\n      <td>`text`</td>\r\n      <td>\r\n        string\r\n      </td>\r\n      <td></td>\r\n      <td>Button text</td>\r\n    </tr>\r\n    <tr>\r\n      <td>`title`</td>\r\n      <td>\r\n        string\r\n      </td>\r\n      <td></td>\r\n      <td>Sets the `title` prop on the `<button>` element and the inline content of the`<title>` element in the svg;\r\ndefaults to the icon&#x27;s name</td>\r\n    </tr>\r\n    <tr>\r\n      <td>`type`</td>\r\n      <td>\r\n        string\r\n      </td>\r\n      <td>`button`</td>\r\n      <td>Sets the `type` attribute on the button element (e.g., `button`, `submit`, or `reset`)</td>\r\n    </tr>\r\n    <tr>\r\n      <td>`...rest`</td>\r\n      <td></td>\r\n      <td></td>\r\n      <td>Passthrough props to `<button>`</td>\r\n    </tr>\r\n  </tbody>\r\n</table>\r\n\r\n### HTML API\r\n<table class=\"api-table api-table--html\">\r\n  <thead>\r\n    <tr>\r\n    <th>Class</th>\r\n    <th>Applies To</th>\r\n    <th>Description</th>\r\n    </tr>\r\n  </thead>\r\n  <tbody>\r\n    <tr><td>`fe_c_icon-button`</td><td>root element (button)</td><td>base class required for `IconButton`</td></tr>\r\n    <tr><td>`fe_c_icon-button__icon`</td><td>icon</td><td>base class required for `IconButton`'s icon</td></tr>\r\n    <tr><td>`fe_c_icon-button__text`</td><td>text inside the button</td><td>base class required for `IconButton`'s text</td></tr>\r\n    <tr><td>`fe_c_icon-button--controller`</td><td>button</td><td>variant class for generating the standalone `IconButton`</td></tr>\r\n    <tr><td>`fe_is-disabled`</td><td>button</td><td>set `IconButton` to the `disabled` style</td></tr>\r\n  </tbody>\r\n</table>\r\nNote that `IconButton` also makes use of [the classes]({{ path '/docs/components/icon' }}#html-api) in `Icon`.\r\n","lang":{"name":"Markdown","mode":"markdown","scope":"source.gfm","color":"#083FA1"},"file":{"root":"C:\\","dir":"C:\\Users\\ctsui\\code\\forge-guide\\docs\\04-components","base":"icon-button.md","ext":".md","name":"icon-button","relPath":"04-components\\icon-button.md","fsName":"icon-button","path":"C:\\Users\\ctsui\\code\\forge-guide\\docs\\04-components\\icon-button.md","dirs":["C:\\Users\\ctsui\\code\\forge-guide\\docs\\04-components"],"isHidden":false,"order":1000000,"isFile":true,"isDirectory":false,"stat":{"dev":4102694615,"mode":33206,"nlink":1,"uid":0,"gid":0,"rdev":0,"ino":3659174697524398,"size":5301,"atimeMs":1542641056849.9448,"mtimeMs":1542641056849.9448,"ctimeMs":1542821273814.7246,"birthtimeMs":1528896974626.8567,"atime":"2018-11-19T15:24:16.850Z","mtime":"2018-11-19T15:24:16.850Z","ctime":"2018-11-21T17:27:53.815Z","birthtime":"2018-06-13T13:36:14.627Z"},"lang":{"name":"Markdown","mode":"markdown","scope":"source.gfm","color":"#083FA1"},"isBinary":false},"context":{"extensions":{"core":{"forge-toast":{"name":"Toast","version":"0.2.2","description":"Toast component for Forge"},"forge-toggle-switch":{"name":"ToggleSwitch","version":"0.1.1","description":"ToggleSwitch component for Forge"}},"community":{"clinicals-forge-extension":{"name":"Clinicals Forge Extension","owner":"Nursing Flowsheets","url":"https://bitbucket.athenahealth.com/projects/CLIFS/repos/clinicals-forge-extension/browse","version":"2.1.1","description":"A forge-extension containing components used by inpatient clinicals"}}},"isComponent":true,"amplitudeCategory":"components"}}</code></pre></div-->
+  </div>
+</div>
+
+
+
+</div>
+
+
+
+
+<script src="../../assets/clipboard.min.js?cachebust=1.2.0"></script>
+
+<script src="../../assets/main.js?cachebust=1.2.0"></script>
+
+<script src="../../assets/amplitude.js?cachebust=1.2.0"></script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+    window.frctl = {
+        env: 'static'
+    };
+    </script>
+    <script>var cl = document.querySelector('html').classList; cl.remove('no-js'); cl.add('has-js');</script>
+    <link rel="shortcut icon" href="../../favicon_blue.ico" type="image/ico">
+
+<link rel="stylesheet" href="../../assets/css/styles.css?cachebust=1.2.0" type="text/css">
+
+<link rel="stylesheet" href="../../assets/css/prism-atom-dark.css?cachebust=1.2.0" type="text/css">
+
+<link rel="stylesheet" href="../../assets/css/ascetic.css?cachebust=1.2.0" type="text/css">
+
+<link rel="stylesheet" href="../../css/forge.css?cachebust=1.2.0" type="text/css">
+
+
+<title>Custom Sorting and Templates | athenahealth</title>
+
+</head>
+<body>
+
+
+
+<div class="fg_app">
+  <header class="fg_l_header fg_l_header--alpha">
+  <a class="fg_c_branding" href="../../index.html">
+    <img src="../../assets/images/logo.svg" />
+  </a>
+  <nav class="fg_c_nav-top">
+  <ul class="fg_c_nav-top__list">
+    
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link "
+            href="../../docs/guidelines/principles.html"
+            title="Guidelines"
+          >
+            Guidelines
+          </a>
+        </li>
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link "
+            href="../../docs/foundations/color.html"
+            title="Foundations"
+          >
+            Foundations
+          </a>
+        </li>
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link "
+            href="../../docs/components/accordion.html"
+            title="Components"
+          >
+            Components
+          </a>
+        </li>
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link "
+            href="../../docs/extensions/forge-extensions.html"
+            title="Extensions"
+          >
+            Extensions
+          </a>
+        </li>
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link "
+            href="../../docs/resources/release-notes.html"
+            title="Resources"
+          >
+            Resources
+          </a>
+        </li>
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link "
+            href="../../docs/resources/downloads.html"
+            title="Resources"
+          >
+            Resources
+          </a>
+        </li>
+      
+    
+  </ul>
+</nav>
+
+
+  <div class="fg_c_nav-version">
+    v2.0.0-beta.7
+  </div>
+</header>
+
+
+  
+
+
+    
+    
+
+<div class="Pen" data-behaviour="pen" id="pen-c77a1502c961bdec5e4b19709a694941">
+
+    
+
+    <div class="Pen-panel Pen-header">
+    <h1 class="Pen-title">
+        <a class="Pen-previewLink" href="../preview/custom-sort.html" title="Component preview">
+            Custom Sorting and Templates
+            <svg fill="#000000" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6l-4 4h3v6h2v-6h3l-4-4z"/>
+</svg>
+
+        </a>
+    </h1>
+    
+
+<div class="Status Status--tag">
+
+<label class="Status-label" style="background-color: #29CC29; border-color: #29CC29;">Ready</label>
+
+</div>
+
+
+</div>
+
+
+    <div class="Pen-panel Pen-preview Preview" data-behaviour="preview" id="preview-c77a1502c961bdec5e4b19709a694941">
+    <div class="Preview-wrapper" data-role="resizer">
+        <div class="Preview-resizer">
+            
+             <iframe
+                class="Preview-iframe"
+                data-role="window"
+                src="../preview/custom-sort.html"
+                sandbox="allow-same-origin allow-scripts allow-forms"
+                 style=""
+                marginwidth="0" marginheight="0" frameborder="0" vspace="0" hspace="0" scrolling="yes">
+            </iframe>
+        </div>
+        <div class="Preview-handle" data-role="resize-handle"></div>
+        <div class="Preview-overlay"></div>
+    </div>
+</div>
+
+
+    <div class="Pen-handle Pen-handle--browser" data-role="resize-handle"></div>
+
+    <div class="Pen-panel Pen-info" data-role="info">
+    <div class="Browser" data-behaviour="browser" id="browser-c77a1502c961bdec5e4b19709a694941">
+
+    
+
+<div class="Browser-controls">
+    <ul class="Browser-tabs">
+        
+        
+        <li class="Browser-tab Browser-tab--html is-active " data-role="tab">
+            <a href="#browser-c77a1502c961bdec5e4b19709a694941-panel-html">HTML</a>
+        </li>
+        
+        
+        
+        <li class="Browser-tab Browser-tab--view" data-role="tab">
+            <a href="#browser-c77a1502c961bdec5e4b19709a694941-panel-view">View</a>
+        </li>
+        
+        
+        
+        <li class="Browser-tab Browser-tab--context" data-role="tab">
+            <a href="#browser-c77a1502c961bdec5e4b19709a694941-panel-context">Context</a>
+        </li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <li class="Browser-tab Browser-tab--info" data-role="tab">
+            <a href="#browser-c77a1502c961bdec5e4b19709a694941-panel-info">Info</a>
+        </li>
+        
+        
+        
+        <li class="Browser-tab Browser-tab--notes" data-role="tab">
+            <a href="#browser-c77a1502c961bdec5e4b19709a694941-panel-notes">Notes</a>
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+    
+    
+<div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-c77a1502c961bdec5e4b19709a694941-panel-html">
+    <code class="Code Code--lang-html">
+        
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_u_margin--large"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">table</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_table fe_c_table--show-hover fe_c_table--default"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">thead</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">data-column</span>=<span class="hljs-string">"name"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_table__header fe_c_table__header--sortable"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_table__header-text"</span>&gt;</span>Name<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_table__sort-control"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">data-column</span>=<span class="hljs-string">"height"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_table__header fe_c_table__header--sortable"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_table__header-text"</span>&gt;</span>Height<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_table__sort-control"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">thead</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">tbody</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">data-column</span>=<span class="hljs-string">"name"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_table__cell"</span>&gt;</span>Richard Grayson<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">data-column</span>=<span class="hljs-string">"height"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_table__cell fe_c_table__cell--numeric"</span>&gt;</span>5&amp;#x27; 4&amp;quot;<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">data-column</span>=<span class="hljs-string">"name"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_table__cell"</span>&gt;</span>Rachel Roth<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">data-column</span>=<span class="hljs-string">"height"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_table__cell fe_c_table__cell--numeric"</span>&gt;</span>5&amp;#x27; 4&amp;quot;<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">data-column</span>=<span class="hljs-string">"name"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_table__cell"</span>&gt;</span>Victor Stone<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">data-column</span>=<span class="hljs-string">"height"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_table__cell fe_c_table__cell--numeric"</span>&gt;</span>6&amp;#x27; 0&amp;quot;<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">data-column</span>=<span class="hljs-string">"name"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_table__cell"</span>&gt;</span>Garfield Logan<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">data-column</span>=<span class="hljs-string">"height"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_table__cell fe_c_table__cell--numeric"</span>&gt;</span>5&amp;#x27; 0&amp;quot;<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">data-column</span>=<span class="hljs-string">"name"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_table__cell"</span>&gt;</span>Koriand&amp;#x27;r <span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">data-column</span>=<span class="hljs-string">"height"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_table__cell fe_c_table__cell--numeric"</span>&gt;</span>5&amp;#x27; 6&amp;quot;<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">tbody</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></pre>
+        
+    </code>
+</div>
+
+    
+    <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-c77a1502c961bdec5e4b19709a694941-panel-view">
+    <code class="Code Code--lang-javascript">
+        <pre><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>;
+<span class="hljs-keyword">import</span> { Table } <span class="hljs-keyword">from</span> <span class="hljs-string">'@athena/forge'</span>;
+
+<span class="hljs-keyword">const</span> columns = [
+  {
+    <span class="hljs-attr">key</span>: <span class="hljs-string">'name'</span>,
+    <span class="hljs-attr">displayName</span>: <span class="hljs-string">'Name'</span>,
+    <span class="hljs-attr">sortable</span>: { <span class="hljs-attr">reducer</span>: <span class="hljs-function"><span class="hljs-params">name</span> =&gt;</span> name.last },
+    <span class="hljs-attr">template</span>: <span class="hljs-function"><span class="hljs-params">name</span> =&gt;</span> name.first + <span class="hljs-string">' '</span> + name.last,
+  },
+  {
+    <span class="hljs-attr">key</span>: <span class="hljs-string">'height'</span>,
+    <span class="hljs-attr">displayName</span>: <span class="hljs-string">'Height'</span>,
+    <span class="hljs-attr">numeric</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">sortable</span>: { <span class="hljs-attr">reducer</span>: <span class="hljs-function"><span class="hljs-params">height</span> =&gt;</span> height.feet * <span class="hljs-number">12</span> + height.inches },
+    <span class="hljs-attr">template</span>: <span class="hljs-function"><span class="hljs-params">height</span> =&gt;</span> height.feet + <span class="hljs-string">'\' '</span> + height.inches + <span class="hljs-string">'"'</span>,
+  },
+];
+
+<span class="hljs-keyword">const</span> rows = [
+  {
+    <span class="hljs-attr">id</span>: <span class="hljs-number">1</span>,
+    <span class="hljs-attr">name</span>: { <span class="hljs-attr">first</span>: <span class="hljs-string">'Richard'</span>, <span class="hljs-attr">last</span>: <span class="hljs-string">'Grayson'</span> },
+    <span class="hljs-attr">height</span>: { <span class="hljs-attr">feet</span>: <span class="hljs-number">5</span>, <span class="hljs-attr">inches</span>: <span class="hljs-number">4</span> },
+  },
+  {
+    <span class="hljs-attr">id</span>: <span class="hljs-number">2</span>,
+    <span class="hljs-attr">name</span>: { <span class="hljs-attr">first</span>: <span class="hljs-string">'Rachel'</span>, <span class="hljs-attr">last</span>: <span class="hljs-string">'Roth'</span> },
+    <span class="hljs-attr">height</span>: { <span class="hljs-attr">feet</span>: <span class="hljs-number">5</span>, <span class="hljs-attr">inches</span>: <span class="hljs-number">4</span> },
+  },
+  {
+    <span class="hljs-attr">id</span>: <span class="hljs-number">3</span>,
+    <span class="hljs-attr">name</span>: { <span class="hljs-attr">first</span>: <span class="hljs-string">'Victor'</span>, <span class="hljs-attr">last</span>: <span class="hljs-string">'Stone'</span> },
+    <span class="hljs-attr">height</span>: { <span class="hljs-attr">feet</span>: <span class="hljs-number">6</span>, <span class="hljs-attr">inches</span>: <span class="hljs-number">0</span> },
+  },
+  {
+    <span class="hljs-attr">id</span>: <span class="hljs-number">4</span>,
+    <span class="hljs-attr">name</span>: { <span class="hljs-attr">first</span>: <span class="hljs-string">'Garfield'</span>, <span class="hljs-attr">last</span>: <span class="hljs-string">'Logan'</span> },
+    <span class="hljs-attr">height</span>: { <span class="hljs-attr">feet</span>: <span class="hljs-number">5</span>, <span class="hljs-attr">inches</span>: <span class="hljs-number">0</span> },
+  },
+  {
+    <span class="hljs-attr">id</span>: <span class="hljs-number">5</span>,
+    <span class="hljs-attr">name</span>: { <span class="hljs-attr">first</span>: <span class="hljs-string">'Koriand\'r'</span>, <span class="hljs-attr">last</span>: <span class="hljs-string">''</span> },
+    <span class="hljs-attr">height</span>: { <span class="hljs-attr">feet</span>: <span class="hljs-number">5</span>, <span class="hljs-attr">inches</span>: <span class="hljs-number">6</span> },
+  },
+];
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">TableCustomSortDemo</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">className</span>=<span class="hljs-string">"fe_u_margin--large"</span> &gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">Table</span>
+        <span class="hljs-attr">layout</span>=<span class="hljs-string">"default"</span>
+        <span class="hljs-attr">rows</span>=<span class="hljs-string">{rows}</span>
+        <span class="hljs-attr">columns</span>=<span class="hljs-string">{columns}</span>
+      /&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  );
+}</span></pre>
+    </code>
+</div>
+
+    
+    <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-c77a1502c961bdec5e4b19709a694941-panel-context">
+    <code class="Code Code--lang-json">
+        
+            
+            <pre>{
+  <span class="hljs-attr">"height"</span>: <span class="hljs-number">370</span>
+}</pre>
+            
+        
+    </code>
+</div>
+
+    
+    
+
+
+
+
+    
+    <div class="Browser-panel" data-role="tab-panel" id="browser-c77a1502c961bdec5e4b19709a694941-panel-info">
+    <ul class="Meta">
+        <li class="Meta-item">
+            <strong class="Meta-key">Handle:</strong>
+            <span class="Meta-value">@custom-sort</span>
+        </li>
+        
+        
+        
+        
+        
+        <li class="Meta-item">
+            <strong class="Meta-key">Preview:</strong>
+            <span class="Meta-value">
+                <ul>
+                    <li><a data-no-pjax href="../preview/custom-sort.html"><span>With layout</span> <svg fill="#000000" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6l-4 4h3v6h2v-6h3l-4-4z"/>
+</svg>
+</a></li>
+                    <li><a data-no-pjax href="../render/custom-sort.html"><span>Component only</span> <svg fill="#000000" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6l-4 4h3v6h2v-6h3l-4-4z"/>
+</svg>
+</a></li>
+                </ul>
+            </span>
+        </li>
+        <li class="Meta-item">
+            <strong class="Meta-key">Filesystem Path:</strong>
+            <span class="Meta-value">demos\table\custom-sort.jsx</span>
+        </li>
+        
+        
+    </ul>
+</div>
+
+    
+    <div class="Browser-panel Browser-notes" data-role="tab-panel" id="browser-c77a1502c961bdec5e4b19709a694941-panel-notes">
+    <div class="Prose Prose--condensed">
+        
+        <p class="Browser-isEmptyNote">There are no notes for this item.</p>
+        
+    </div>
+</div>
+
+    
+
+</div>
+
+</div>
+
+
+    
+
+</div>
+
+
+
+</div>
+
+
+
+
+<script src="../../assets/clipboard.min.js?cachebust=1.2.0"></script>
+
+<script src="../../assets/main.js?cachebust=1.2.0"></script>
+
+<script src="../../assets/amplitude.js?cachebust=1.2.0"></script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+    window.frctl = {
+        env: 'static'
+    };
+    </script>
+    <script>var cl = document.querySelector('html').classList; cl.remove('no-js'); cl.add('has-js');</script>
+    <link rel="shortcut icon" href="../../favicon_blue.ico" type="image/ico">
+
+<link rel="stylesheet" href="../../assets/css/styles.css?cachebust=1.2.0" type="text/css">
+
+<link rel="stylesheet" href="../../assets/css/prism-atom-dark.css?cachebust=1.2.0" type="text/css">
+
+<link rel="stylesheet" href="../../assets/css/ascetic.css?cachebust=1.2.0" type="text/css">
+
+<link rel="stylesheet" href="../../css/forge.css?cachebust=1.2.0" type="text/css">
+
+
+<title>Tooltip | athenahealth</title>
+
+</head>
+<body>
+
+
+
+<div class="fg_app">
+  <header class="fg_l_header fg_l_header--alpha">
+  <a class="fg_c_branding" href="../../index.html">
+    <img src="../../assets/images/logo.svg" />
+  </a>
+  <nav class="fg_c_nav-top">
+  <ul class="fg_c_nav-top__list">
+    
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link "
+            href="../guidelines/principles.html"
+            title="Guidelines"
+          >
+            Guidelines
+          </a>
+        </li>
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link "
+            href="../foundations/color.html"
+            title="Foundations"
+          >
+            Foundations
+          </a>
+        </li>
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link  fg_is-active"
+            href="accordion.html"
+            title="Components"
+          >
+            Components
+          </a>
+        </li>
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link "
+            href="../extensions/forge-extensions.html"
+            title="Extensions"
+          >
+            Extensions
+          </a>
+        </li>
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link "
+            href="../resources/release-notes.html"
+            title="Resources"
+          >
+            Resources
+          </a>
+        </li>
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link "
+            href="../resources/downloads.html"
+            title="Resources"
+          >
+            Resources
+          </a>
+        </li>
+      
+    
+  </ul>
+</nav>
+
+
+  <div class="fg_c_nav-version">
+    v2.0.0-beta.7
+  </div>
+</header>
+
+
+  
+
+<div class="fg_l_sidebar" data-role="sidebar">
+  <nav class="fg_c_nav-left">
+  <ul class="fg_c_nav-left__list">
+  
+    
+  
+    
+  
+    
+  
+    
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="accordion.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Accordion</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="banner.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Banner</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="button.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Button</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="card.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Card</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="checkbox.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Checkbox</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="date-input.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>DateInput</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="form.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Form</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="form-field.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>FormField</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="grid.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Grid</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="heading.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Heading</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="icon.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Icon</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="icon-button.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>IconButton</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="input.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Input</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="lightbox.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Lightbox</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="list.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>List</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="loader.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Loader</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="modal.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Modal</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="multi-field.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>MultiField</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="multiselect.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Multiselect</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="paginator.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Paginator</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="radio-group.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>RadioGroup</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="read-only-input.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>ReadOnlyInput</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="redux-form.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>ReduxForm</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="redux-form-field.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>ReduxFormField</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="redux-multi-field.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>ReduxMultiField</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="removable-tag.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>RemovableTag</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="root.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Root</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="select.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Select</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="selection-list.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>SelectionList</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="status-tag.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>StatusTag</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="stepper.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Stepper</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="table.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Table</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="tabs.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Tabs</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="textarea.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Textarea</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="toast.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Toast</span>
+            
+              
+                <span class="fe_f_all"><span class="fe_c_status-tag">EXT</span></span>
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="toggle-switch.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>ToggleSwitch</span>
+            
+              
+            
+              
+                <span class="fe_f_all"><span class="fe_c_status-tag">EXT</span></span>
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href=""
+            
+            class="fg_c_nav-left__link  fg_is-active"
+          >
+            <span>Tooltip</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="typeahead.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Typeahead</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+    
+  
+    
+  
+    
+  
+    
+  
+  </ul>
+</nav>
+
+</div>
+
+<div class="fg_l_main" data-role="main">
+  <div class="fg_doc">
+
+    
+      <nav class="fg_c_nav-page"></nav>
+
+    
+
+    <div class="fg_doc__header">
+      
+        <h1 class="fg_doc__title">Tooltip</h1>
+      
+    </div>
+    <div class="fg_doc__content">
+      
+
+  <div class="fg_markdown">
+    
+
+      
+      
+
+      
+        <p class="p--lead">Tooltip provides contextual information on hover.</p>
+
+<h2 id="demos">Demos</h2>
+<div class="fg_c_demos"><select class="fg_c_demos__select js-selector-demos"><option value="e03c57e65bd00870e06a8b9404d49ade">Info Icon</option><option value="b9ef849634255c71c66eb5e5d2978396">Link</option><option value="967acaf330b477a11b3450aa2c39cd40">Button</option></select><div class="fg_c_demos__demo js-demo-e03c57e65bd00870e06a8b9404d49ade ">
+    <div class="fg_c_preview js-resize-preview" style="height: 130px">
+      <iframe height="130" src="../../components/preview/tooltip-info-icon.html" class="fg_c_preview__iframe"></iframe>
+    </div>
+    <div class="fg_c_accordian js-accordian">
+      <button class="fg_c_accordian__button" role="heading">
+        <span class="fg_c_accordian__icon js-icon"></span>
+        <span class="fg_c_accordian__closed-text">Show Code</span>
+        <span class="fg_c_accordian__open-text">Hide Code</span>
+      </button>
+      <div class="fg_c_code-tabs fg_is-hidden js-tabs">
+        <ul class="fg_c_code-tabs__list" role="tablist">
+          <li class="fg_c_code-tabs__tab" role="tab">
+            <a href="#tab-jsx-e03c57e65bd00870e06a8b9404d49ade">JSX</a>
+          </li>
+          <li class="fg_c_code-tabs__tab" role="tab">
+            <a href="#tab-html-e03c57e65bd00870e06a8b9404d49ade">HTML</a>
+          </li>
+        </ul>
+        <div class="fg_c_code-tabs__panel" id="tab-jsx-e03c57e65bd00870e06a8b9404d49ade" role="tabpanel">
+          <button type="button" class="fg_c_button--inverted fg_c_button--copy js-copy-code" data-clipboard-target="#tab-jsx-e03c57e65bd00870e06a8b9404d49ade pre">Copy Code</button>
+          <pre class="fg_c_code-block"><code class="language-jsx"><span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">&#39;react&#39;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> Icon<span class="token punctuation">,</span> Tooltip <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&#39;@athena/forge&#39;</span><span class="token punctuation">;</span>
+<span style='display:none'>empty line</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">function</span> <span class="token function">TooltipInfoIcon</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">className</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;u&#95;padding--top-xlarge<span class="token punctuation">&quot;</span></span> <span class="token attr-name">style</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span> textAlign<span class="token punctuation">:</span> <span class="token string">&#39;center&#39;</span> <span class="token punctuation">}</span><span class="token punctuation">}</span></span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Tooltip</span> <span class="token attr-name">text</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>Information text<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Icon</span> <span class="token attr-name">icon</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>Info<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>Tooltip</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+        </div>
+        <div class="fg_c_code-tabs__panel" id="tab-html-e03c57e65bd00870e06a8b9404d49ade" role="tabpanel">
+          <button type="button" class="fg_c_button--inverted fg_c_button--copy js-copy-code" data-clipboard-target="#tab-html-e03c57e65bd00870e06a8b9404d49ade pre">Copy Code</button>
+          <pre class="fg_c_code-block"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;u&#95;padding--top-xlarge<span class="token punctuation">&quot;</span></span><span class="token style-attr language-css"><span class="token attr-name"> <span class="token attr-name">style</span></span><span class="token punctuation">=&quot;</span><span class="token attr-value"><span class="token property">text-align</span><span class="token punctuation">:</span>center</span><span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span><span class="token style-attr language-css"><span class="token attr-name"> <span class="token attr-name">style</span></span><span class="token punctuation">=&quot;</span><span class="token attr-value"><span class="token property">display</span><span class="token punctuation">:</span>inline-block</span><span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span> <span class="token attr-name">xmlns</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span><a href="http://www.w3.org/2000/svg">http://www.w3.org/2000/svg</a><span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;icon fe&#95;c&#95;icon--info-solid<span class="token punctuation">&quot;</span></span> <span class="token attr-name">viewBox</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>0 0 25 25<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span>Info<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>g</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>g</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;icon&#95;&#95;background<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>rect</span> <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>25<span class="token punctuation">&quot;</span></span> <span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>25<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>rect</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>g</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>g</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>circle</span> <span class="token attr-name">cx</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>12.5<span class="token punctuation">&quot;</span></span> <span class="token attr-name">cy</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>12.5<span class="token punctuation">&quot;</span></span> <span class="token attr-name">r</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>10.6<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;icon&#95;&#95;icon fe&#95;c&#95;icon&#95;&#95;icon--secondary<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>circle</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>g</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;icon&#95;&#95;icon fe&#95;c&#95;icon&#95;&#95;icon--invert<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>circle</span> <span class="token attr-name">cx</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>12.375<span class="token punctuation">&quot;</span></span> <span class="token attr-name">cy</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>7.375<span class="token punctuation">&quot;</span></span> <span class="token attr-name">r</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>1.35<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>circle</span><span class="token punctuation">&gt;</span></span>
+                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>polygon</span> <span class="token attr-name">points</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>14.49 17.28 10.51 17.28 10.51 16.31 11.67 16.31 11.67 11.63 10.51 11.63 10.51 10.6 13.33 10.6 13.33 16.31 14.49 16.31 14.49 17.28<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>polygon</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>g</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>g</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>g</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+        </div>
+      </div>
+    </div>
+  </div><div class="fg_c_demos__demo js-demo-b9ef849634255c71c66eb5e5d2978396 fg_is-hidden">
+    <div class="fg_c_preview js-resize-preview" style="height: 130px">
+      <iframe height="130" src="../../components/preview/tooltip-link.html" class="fg_c_preview__iframe"></iframe>
+    </div>
+    <div class="fg_c_accordian js-accordian">
+      <button class="fg_c_accordian__button" role="heading">
+        <span class="fg_c_accordian__icon js-icon"></span>
+        <span class="fg_c_accordian__closed-text">Show Code</span>
+        <span class="fg_c_accordian__open-text">Hide Code</span>
+      </button>
+      <div class="fg_c_code-tabs fg_is-hidden js-tabs">
+        <ul class="fg_c_code-tabs__list" role="tablist">
+          <li class="fg_c_code-tabs__tab" role="tab">
+            <a href="#tab-jsx-b9ef849634255c71c66eb5e5d2978396">JSX</a>
+          </li>
+          <li class="fg_c_code-tabs__tab" role="tab">
+            <a href="#tab-html-b9ef849634255c71c66eb5e5d2978396">HTML</a>
+          </li>
+        </ul>
+        <div class="fg_c_code-tabs__panel" id="tab-jsx-b9ef849634255c71c66eb5e5d2978396" role="tabpanel">
+          <button type="button" class="fg_c_button--inverted fg_c_button--copy js-copy-code" data-clipboard-target="#tab-jsx-b9ef849634255c71c66eb5e5d2978396 pre">Copy Code</button>
+          <pre class="fg_c_code-block"><code class="language-jsx"><span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">&#39;react&#39;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> Tooltip <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&#39;@athena/forge&#39;</span><span class="token punctuation">;</span>
+<span style='display:none'>empty line</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">function</span> <span class="token function">TooltipLink</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">className</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;u&#95;padding--top-xlarge<span class="token punctuation">&quot;</span></span> <span class="token attr-name">style</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span> textAlign<span class="token punctuation">:</span> <span class="token string">&#39;center&#39;</span> <span class="token punctuation">}</span><span class="token punctuation">}</span></span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Tooltip</span> <span class="token attr-name">text</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>Link tooltip<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>demo-link.html<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Link<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>Tooltip</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+        </div>
+        <div class="fg_c_code-tabs__panel" id="tab-html-b9ef849634255c71c66eb5e5d2978396" role="tabpanel">
+          <button type="button" class="fg_c_button--inverted fg_c_button--copy js-copy-code" data-clipboard-target="#tab-html-b9ef849634255c71c66eb5e5d2978396 pre">Copy Code</button>
+          <pre class="fg_c_code-block"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;u&#95;padding--top-xlarge<span class="token punctuation">&quot;</span></span><span class="token style-attr language-css"><span class="token attr-name"> <span class="token attr-name">style</span></span><span class="token punctuation">=&quot;</span><span class="token attr-value"><span class="token property">text-align</span><span class="token punctuation">:</span>center</span><span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span><span class="token style-attr language-css"><span class="token attr-name"> <span class="token attr-name">style</span></span><span class="token punctuation">=&quot;</span><span class="token attr-value"><span class="token property">display</span><span class="token punctuation">:</span>inline-block</span><span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>demo-link.html<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Link<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+        </div>
+      </div>
+    </div>
+  </div><div class="fg_c_demos__demo js-demo-967acaf330b477a11b3450aa2c39cd40 fg_is-hidden">
+    <div class="fg_c_preview js-resize-preview" style="height: 130px">
+      <iframe height="130" src="../../components/preview/tooltip-button.html" class="fg_c_preview__iframe"></iframe>
+    </div>
+    <div class="fg_c_accordian js-accordian">
+      <button class="fg_c_accordian__button" role="heading">
+        <span class="fg_c_accordian__icon js-icon"></span>
+        <span class="fg_c_accordian__closed-text">Show Code</span>
+        <span class="fg_c_accordian__open-text">Hide Code</span>
+      </button>
+      <div class="fg_c_code-tabs fg_is-hidden js-tabs">
+        <ul class="fg_c_code-tabs__list" role="tablist">
+          <li class="fg_c_code-tabs__tab" role="tab">
+            <a href="#tab-jsx-967acaf330b477a11b3450aa2c39cd40">JSX</a>
+          </li>
+          <li class="fg_c_code-tabs__tab" role="tab">
+            <a href="#tab-html-967acaf330b477a11b3450aa2c39cd40">HTML</a>
+          </li>
+        </ul>
+        <div class="fg_c_code-tabs__panel" id="tab-jsx-967acaf330b477a11b3450aa2c39cd40" role="tabpanel">
+          <button type="button" class="fg_c_button--inverted fg_c_button--copy js-copy-code" data-clipboard-target="#tab-jsx-967acaf330b477a11b3450aa2c39cd40 pre">Copy Code</button>
+          <pre class="fg_c_code-block"><code class="language-jsx"><span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">&#39;react&#39;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> Button<span class="token punctuation">,</span> Tooltip <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&#39;@athena/forge&#39;</span><span class="token punctuation">;</span>
+<span style='display:none'>empty line</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">function</span> <span class="token function">TooltipButton</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">className</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;u&#95;padding--top-xlarge<span class="token punctuation">&quot;</span></span> <span class="token attr-name">style</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span> textAlign<span class="token punctuation">:</span> <span class="token string">&#39;center&#39;</span> <span class="token punctuation">}</span><span class="token punctuation">}</span></span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Tooltip</span> <span class="token attr-name">text</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>Button tip<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Button</span> <span class="token attr-name">text</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>Hover for Tooltip<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>Tooltip</span><span class="token punctuation">&gt;</span></span>
+      <span class="token entity" title="&nbsp;">&amp;nbsp;</span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Tooltip</span> <span class="token attr-name">text</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>Disabled button tip<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Button</span> <span class="token attr-name">text</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>Hover for Tooltip<span class="token punctuation">&quot;</span></span> <span class="token attr-name">disabled</span> <span class="token attr-name">style</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span> pointerEvents<span class="token punctuation">:</span> <span class="token string">&#39;none&#39;</span> <span class="token punctuation">}</span><span class="token punctuation">}</span></span> <span class="token punctuation">/&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>Tooltip</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+        </div>
+        <div class="fg_c_code-tabs__panel" id="tab-html-967acaf330b477a11b3450aa2c39cd40" role="tabpanel">
+          <button type="button" class="fg_c_button--inverted fg_c_button--copy js-copy-code" data-clipboard-target="#tab-html-967acaf330b477a11b3450aa2c39cd40 pre">Copy Code</button>
+          <pre class="fg_c_code-block"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;u&#95;padding--top-xlarge<span class="token punctuation">&quot;</span></span><span class="token style-attr language-css"><span class="token attr-name"> <span class="token attr-name">style</span></span><span class="token punctuation">=&quot;</span><span class="token attr-value"><span class="token property">text-align</span><span class="token punctuation">:</span>center</span><span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span><span class="token style-attr language-css"><span class="token attr-name"> <span class="token attr-name">style</span></span><span class="token punctuation">=&quot;</span><span class="token attr-value"><span class="token property">display</span><span class="token punctuation">:</span>inline-block</span><span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;button fe&#95;c&#95;button--primary<span class="token punctuation">&quot;</span></span> <span class="token attr-name">aria-disabled</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>false<span class="token punctuation">&quot;</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>button<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Hover for Tooltip<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span><span class="token style-attr language-css"><span class="token attr-name"> <span class="token attr-name">style</span></span><span class="token punctuation">=&quot;</span><span class="token attr-value"><span class="token property">display</span><span class="token punctuation">:</span>inline-block</span><span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span><span class="token style-attr language-css"><span class="token attr-name"> <span class="token attr-name">style</span></span><span class="token punctuation">=&quot;</span><span class="token attr-value"><span class="token property">pointer-events</span><span class="token punctuation">:</span>none</span><span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;button fe&#95;c&#95;button--primary fe&#95;is-disabled<span class="token punctuation">&quot;</span></span> <span class="token attr-name">aria-disabled</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>true<span class="token punctuation">&quot;</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>button<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Hover for Tooltip<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+        </div>
+      </div>
+    </div>
+  </div></div>
+
+<h2 id="usage">Usage</h2>
+<p>Tooltips provide additional help for an item. They may offer a definition or give a hint of the functionality associated with the element being hovered over.</p>
+<p>Do not use the <code>Tooltip</code> component to display critical information. Depending on its placement option, <code>Tooltip</code> may appear clipped or outside of the viewport (e.g., a top placement for <code>Tooltip</code> on an input that is already at the top of the viewport would open outside the visible area).</p>
+<h2 id="design">Design</h2>
+<p>Tooltips contain read-only text and should be as short as possible. Text should use sentence case.</p>
+<p>The <code>Tooltip</code> component is strictly for information display and does not support having interactive elements within it.</p>
+<p>For a placement of top and bottom, the tip is horizontally centered against the width of the widest child of <code>Tooltip</code>. For a placement of left and right, the tip is vertically centered against the total height of all children of <code>Tooltip</code>.</p>
+<h2 id="implementation">Implementation</h2>
+<p><code>Tooltip</code> can have any number of children. Hovering over any of the children in this element will trigger <code>Tooltip</code>. All <code>Tooltip</code> children are currently wrapped in an inline-block element for the purpose of determining <code>Tooltip</code> placement. Be aware that this can cause some unintended positioning issues when used within <code>display: flex</code> elements.</p>
+<p>To control when <code>Tooltip</code> is triggered instead of relying on hover, set <code>showTip</code>. Never set <code>showTip={true}</code> on initial render because the placement will be wrong if layout hasn&#39;t completed yet.</p>
+<h2 id="api-tables">API Tables</h2>
+<h3 id="import-tooltip-only">Import Tooltip Only</h3>
+<p><p>Importing individual components can reduce bundle size. <a href="https://athenaconfluence.athenahealth.com/display/UXDS/Forge+Import+for+Better+Tree+Shaking">Learn more</a></p><code>import Tooltip from &#39;@athena/forge/lib/tooltip&#39;;</code></p>
+<h3 id="tooltip-props">Tooltip Props</h3>
+<table class="api-table api-table--react">
+  <thead>
+    <tr>
+      <th>Prop</th>
+      <th>Type</th>
+      <th>Default</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="api-table__required"><code>text</code> (required)</td>
+      <td>
+        string
+      </td>
+      <td></td>
+      <td>The text displayed in the tooltip</td>
+    </tr>
+    <tr>
+      <td><code>children</code></td>
+      <td>
+        node
+      </td>
+      <td></td>
+      <td>The target component, element, or text that will have the tooltip applied to it</td>
+    </tr>
+    <tr>
+      <td><code>className</code></td>
+      <td>
+        string
+      </td>
+      <td></td>
+      <td>Adds a class to the root element of the component</td>
+    </tr>
+    <tr>
+      <td><code>placement</code></td>
+      <td>
+        enum
+          <ul>
+              <li>&#x27;top&#x27;</li>
+              <li>&#x27;bottom&#x27;</li>
+              <li>&#x27;left&#x27;</li>
+              <li>&#x27;right&#x27;</li>
+          </ul>
+      </td>
+      <td>&#x27;top&#x27;</td>
+      <td>The placement of the tooltip around its target</td>
+    </tr>
+    <tr>
+      <td><code>showTip</code></td>
+      <td>
+        bool
+      </td>
+      <td></td>
+      <td>Controls whether the tooltip is visible. When <code>undefined</code> tooltip is visible on hover.
+<strong>Do not</strong> set to <code>true</code> on initial render.</td>
+    </tr>
+    <tr>
+      <td><code>theme</code></td>
+      <td>
+        custom: ThemeConsumer.themePropType
+      </td>
+      <td></td>
+      <td>Theme variables for configuring an instance of Forge. See Root component for more details.</td>
+    </tr>
+    <tr>
+      <td><code>...rest</code></td>
+      <td></td>
+      <td></td>
+      <td>Passthrough props to <a href="https://react-bootstrap.github.io/react-overlays/#overlay"><code>React Overlay</code></a>, a third party component used to position the tooltip</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="html-api">HTML API</h3>
+<table class="api-table api-table--html">
+  <thead>
+    <tr>
+      <th>Class</th>
+      <th>Applies To</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td><code>fe_c_tooltip</code></td><td><code>Tooltip</code></td><td>Base class for <code>Tooltip</code></td></tr>
+    <tr><td><code>fe_c_tooltip__body</code></td><td><code>Tooltip</code></td><td>Base class for the body of the tooltip and its text</td></tr>
+    <tr><td><code>fe_c_heading__arrow</code></td><td><code>Tooltip</code></td><td>Base class for the container for the arrow</td></tr>
+    <tr><td><code>fe_c_heading__arrow-clip</code></td><td>Arrow</td><td>An element used to create and clip the arrow so it can have a shadow applied</td></tr>
+    <tr><td><code>fe_is-top</code></td><td><code>Tooltip</code></td><td>Positions the arrow below the tooltip and sets margin to accommodate it</td></tr>
+    <tr><td><code>fe_is-bottom</code></td><td><code>Tooltip</code></td><td>Positions the arrow above the tooltip and sets margin to accommodate it</td></tr>
+    <tr><td><code>fe_is-left</code></td><td><code>Tooltip</code></td><td>Positions the arrow to the right of the tooltip and sets margin to accommodate it</td></tr>
+    <tr><td><code>fe_is-right</code></td><td><code>Tooltip</code></td><td>Positions the arrow to the left of the tooltip and sets margin to accommodate it</td></tr>
+  </tbody>
+</table>
+
+      
+
+    
+  </div>
+
+  <script>
+document.addEventListener("DOMContentLoaded", function(event) {
+    if (window.amplitude) {
+        amplitude.getInstance().init('d426be2bbef81471eeac4bca0c061243');
+
+        amplitude.getInstance().logEvent('viewed page', {
+          pageName: 'Tooltip',
+          pageCategory: 'components'.length > 0
+            ? 'components'
+            : null,
+          forgeVersion: '2.0.0-beta.7',
+          forgeGeneralVersion: /^\d*(?=\.)/.exec('2.0.0-beta.7')
+            ? /^\d*(?=\.)/.exec('2.0.0-beta.7').toString()
+            : null
+        });
+      }
+      else {
+        console.warn("amplitude is not logging events");
+      }
+});
+</script>
+
+
+
+    </div>
+    <!--div class="debug"><pre><code class="language-json">{"id":"b5835431a75711ef5a75d234f06713d4","name":"tooltip","handle":"tooltip","label":"Tooltip","title":"Tooltip","order":1000000,"isHidden":false,"alias":null,"isEntity":true,"isDoc":true,"isIndex":false,"path":"components/tooltip","status":null,"content":"<p class=\"p--lead\">Tooltip provides contextual information on hover.</p>\r\n\r\n## Demos\r\n{{demo '@tooltip'}}\r\n\r\n## Usage\r\nTooltips provide additional help for an item. They may offer a definition or give a hint of the functionality associated with the element being hovered over.\r\n\r\nDo not use the `Tooltip` component to display critical information. Depending on its placement option, `Tooltip` may appear clipped or outside of the viewport (e.g., a top placement for `Tooltip` on an input that is already at the top of the viewport would open outside the visible area).\r\n\r\n## Design\r\nTooltips contain read-only text and should be as short as possible. Text should use sentence case.\r\n\r\nThe `Tooltip` component is strictly for information display and does not support having interactive elements within it.\r\n\r\nFor a placement of top and bottom, the tip is horizontally centered against the width of the widest child of `Tooltip`. For a placement of left and right, the tip is vertically centered against the total height of all children of `Tooltip`.\r\n\r\n## Implementation\r\n`Tooltip` can have any number of children. Hovering over any of the children in this element will trigger `Tooltip`. All `Tooltip` children are currently wrapped in an inline-block element for the purpose of determining `Tooltip` placement. Be aware that this can cause some unintended positioning issues when used within `display: flex` elements.\r\n\r\nTo control when `Tooltip` is triggered instead of relying on hover, set `showTip`. Never set `showTip={true}` on initial render because the placement will be wrong if layout hasn't completed yet.\r\n\r\n## API Tables\r\n### Import Tooltip Only\r\n{{> componentImportMessage}}\r\n`import Tooltip from '@athena/forge/lib/tooltip';`\r\n\r\n### Tooltip Props\r\n<table class=\"api-table api-table--react\">\r\n  <thead>\r\n    <tr>\r\n      <th>Prop</th>\r\n      <th>Type</th>\r\n      <th>Default</th>\r\n      <th>Description</th>\r\n    </tr>\r\n  </thead>\r\n  <tbody>\r\n    <tr>\r\n      <td class=\"api-table__required\">`text` (required)</td>\r\n      <td>\r\n        string\r\n      </td>\r\n      <td></td>\r\n      <td>The text displayed in the tooltip</td>\r\n    </tr>\r\n    <tr>\r\n      <td>`children`</td>\r\n      <td>\r\n        node\r\n      </td>\r\n      <td></td>\r\n      <td>The target component, element, or text that will have the tooltip applied to it</td>\r\n    </tr>\r\n    <tr>\r\n      <td>`className`</td>\r\n      <td>\r\n        string\r\n      </td>\r\n      <td></td>\r\n      <td>Adds a class to the root element of the component</td>\r\n    </tr>\r\n    <tr>\r\n      <td>`placement`</td>\r\n      <td>\r\n        enum\r\n          <ul>\r\n              <li>&#x27;top&#x27;</li>\r\n              <li>&#x27;bottom&#x27;</li>\r\n              <li>&#x27;left&#x27;</li>\r\n              <li>&#x27;right&#x27;</li>\r\n          </ul>\r\n      </td>\r\n      <td>&#x27;top&#x27;</td>\r\n      <td>The placement of the tooltip around its target</td>\r\n    </tr>\r\n    <tr>\r\n      <td>`showTip`</td>\r\n      <td>\r\n        bool\r\n      </td>\r\n      <td></td>\r\n      <td>Controls whether the tooltip is visible. When `undefined` tooltip is visible on hover.\r\n**Do not** set to `true` on initial render.</td>\r\n    </tr>\r\n    <tr>\r\n      <td>`theme`</td>\r\n      <td>\r\n        custom: ThemeConsumer.themePropType\r\n      </td>\r\n      <td></td>\r\n      <td>Theme variables for configuring an instance of Forge. See Root component for more details.</td>\r\n    </tr>\r\n    <tr>\r\n      <td>`...rest`</td>\r\n      <td></td>\r\n      <td></td>\r\n      <td>Passthrough props to [`React Overlay`]({{ path 'https://react-bootstrap.github.io/react-overlays/' }}#overlay), a third party component used to position the tooltip</td>\r\n    </tr>\r\n  </tbody>\r\n</table>\r\n\r\n### HTML API\r\n<table class=\"api-table api-table--html\">\r\n  <thead>\r\n    <tr>\r\n      <th>Class</th>\r\n      <th>Applies To</th>\r\n      <th>Description</th>\r\n    </tr>\r\n  </thead>\r\n  <tbody>\r\n    <tr><td>`fe_c_tooltip`</td><td>`Tooltip`</td><td>Base class for `Tooltip`</td></tr>\r\n    <tr><td>`fe_c_tooltip__body`</td><td>`Tooltip`</td><td>Base class for the body of the tooltip and its text</td></tr>\r\n    <tr><td>`fe_c_heading__arrow`</td><td>`Tooltip`</td><td>Base class for the container for the arrow</td></tr>\r\n    <tr><td>`fe_c_heading__arrow-clip`</td><td>Arrow</td><td>An element used to create and clip the arrow so it can have a shadow applied</td></tr>\r\n    <tr><td>`fe_is-top`</td><td>`Tooltip`</td><td>Positions the arrow below the tooltip and sets margin to accommodate it</td></tr>\r\n    <tr><td>`fe_is-bottom`</td><td>`Tooltip`</td><td>Positions the arrow above the tooltip and sets margin to accommodate it</td></tr>\r\n    <tr><td>`fe_is-left`</td><td>`Tooltip`</td><td>Positions the arrow to the right of the tooltip and sets margin to accommodate it</td></tr>\r\n    <tr><td>`fe_is-right`</td><td>`Tooltip`</td><td>Positions the arrow to the left of the tooltip and sets margin to accommodate it</td></tr>\r\n  </tbody>\r\n</table>\r\n","lang":{"name":"Markdown","mode":"markdown","scope":"source.gfm","color":"#083FA1"},"file":{"root":"C:\\","dir":"C:\\Users\\ctsui\\code\\forge-guide\\docs\\04-components","base":"tooltip.md","ext":".md","name":"tooltip","relPath":"04-components\\tooltip.md","fsName":"tooltip","path":"C:\\Users\\ctsui\\code\\forge-guide\\docs\\04-components\\tooltip.md","dirs":["C:\\Users\\ctsui\\code\\forge-guide\\docs\\04-components"],"isHidden":false,"order":1000000,"isFile":true,"isDirectory":false,"stat":{"dev":4102694615,"mode":33206,"nlink":1,"uid":0,"gid":0,"rdev":0,"ino":3377699720813758,"size":4947,"atimeMs":1542641056866.9895,"mtimeMs":1542641056866.9895,"ctimeMs":1542821274359.905,"birthtimeMs":1528896974629.8655,"atime":"2018-11-19T15:24:16.867Z","mtime":"2018-11-19T15:24:16.867Z","ctime":"2018-11-21T17:27:54.360Z","birthtime":"2018-06-13T13:36:14.630Z"},"lang":{"name":"Markdown","mode":"markdown","scope":"source.gfm","color":"#083FA1"},"isBinary":false},"context":{"extensions":{"core":{"forge-toast":{"name":"Toast","version":"0.2.2","description":"Toast component for Forge"},"forge-toggle-switch":{"name":"ToggleSwitch","version":"0.1.1","description":"ToggleSwitch component for Forge"}},"community":{"clinicals-forge-extension":{"name":"Clinicals Forge Extension","owner":"Nursing Flowsheets","url":"https://bitbucket.athenahealth.com/projects/CLIFS/repos/clinicals-forge-extension/browse","version":"2.1.1","description":"A forge-extension containing components used by inpatient clinicals"}}},"isComponent":true,"amplitudeCategory":"components"}}</code></pre></div-->
+  </div>
+</div>
+
+
+
+</div>
+
+
+
+
+<script src="../../assets/clipboard.min.js?cachebust=1.2.0"></script>
+
+<script src="../../assets/main.js?cachebust=1.2.0"></script>
+
+<script src="../../assets/amplitude.js?cachebust=1.2.0"></script>
+
+
+
+</body>
+</html>

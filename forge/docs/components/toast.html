@@ -1,0 +1,1648 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+    window.frctl = {
+        env: 'static'
+    };
+    </script>
+    <script>var cl = document.querySelector('html').classList; cl.remove('no-js'); cl.add('has-js');</script>
+    <link rel="shortcut icon" href="../../favicon_blue.ico" type="image/ico">
+
+<link rel="stylesheet" href="../../assets/css/styles.css?cachebust=1.2.0" type="text/css">
+
+<link rel="stylesheet" href="../../assets/css/prism-atom-dark.css?cachebust=1.2.0" type="text/css">
+
+<link rel="stylesheet" href="../../assets/css/ascetic.css?cachebust=1.2.0" type="text/css">
+
+<link rel="stylesheet" href="../../css/forge.css?cachebust=1.2.0" type="text/css">
+
+
+<title>Toast | athenahealth</title>
+
+</head>
+<body>
+
+
+
+<div class="fg_app">
+  <header class="fg_l_header fg_l_header--alpha">
+  <a class="fg_c_branding" href="../../index.html">
+    <img src="../../assets/images/logo.svg" />
+  </a>
+  <nav class="fg_c_nav-top">
+  <ul class="fg_c_nav-top__list">
+    
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link "
+            href="../guidelines/principles.html"
+            title="Guidelines"
+          >
+            Guidelines
+          </a>
+        </li>
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link "
+            href="../foundations/color.html"
+            title="Foundations"
+          >
+            Foundations
+          </a>
+        </li>
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link  fg_is-active"
+            href="accordion.html"
+            title="Components"
+          >
+            Components
+          </a>
+        </li>
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link "
+            href="../extensions/forge-extensions.html"
+            title="Extensions"
+          >
+            Extensions
+          </a>
+        </li>
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link "
+            href="../resources/release-notes.html"
+            title="Resources"
+          >
+            Resources
+          </a>
+        </li>
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link "
+            href="../resources/downloads.html"
+            title="Resources"
+          >
+            Resources
+          </a>
+        </li>
+      
+    
+  </ul>
+</nav>
+
+
+  <div class="fg_c_nav-version">
+    v2.0.0-beta.7
+  </div>
+</header>
+
+
+  
+
+<div class="fg_l_sidebar" data-role="sidebar">
+  <nav class="fg_c_nav-left">
+  <ul class="fg_c_nav-left__list">
+  
+    
+  
+    
+  
+    
+  
+    
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="accordion.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Accordion</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="banner.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Banner</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="button.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Button</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="card.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Card</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="checkbox.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Checkbox</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="date-input.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>DateInput</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="form.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Form</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="form-field.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>FormField</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="grid.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Grid</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="heading.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Heading</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="icon.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Icon</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="icon-button.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>IconButton</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="input.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Input</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="lightbox.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Lightbox</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="list.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>List</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="loader.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Loader</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="modal.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Modal</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="multi-field.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>MultiField</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="multiselect.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Multiselect</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="paginator.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Paginator</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="radio-group.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>RadioGroup</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="read-only-input.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>ReadOnlyInput</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="redux-form.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>ReduxForm</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="redux-form-field.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>ReduxFormField</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="redux-multi-field.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>ReduxMultiField</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="removable-tag.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>RemovableTag</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="root.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Root</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="select.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Select</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="selection-list.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>SelectionList</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="status-tag.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>StatusTag</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="stepper.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Stepper</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="table.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Table</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="tabs.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Tabs</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="textarea.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Textarea</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href=""
+            
+            class="fg_c_nav-left__link  fg_is-active"
+          >
+            <span>Toast</span>
+            
+              
+                <span class="fe_f_all"><span class="fe_c_status-tag">EXT</span></span>
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="toggle-switch.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>ToggleSwitch</span>
+            
+              
+            
+              
+                <span class="fe_f_all"><span class="fe_c_status-tag">EXT</span></span>
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="tooltip.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Tooltip</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="typeahead.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Typeahead</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+    
+  
+    
+  
+    
+  
+    
+  
+  </ul>
+</nav>
+
+</div>
+
+<div class="fg_l_main" data-role="main">
+  <div class="fg_doc">
+
+    
+      <nav class="fg_c_nav-page"></nav>
+
+    
+
+    <div class="fg_doc__header">
+      
+        <h1 class="fg_doc__title">Toast</h1>
+      
+    </div>
+    <div class="fg_doc__content">
+      
+
+  <div class="fg_markdown">
+    
+
+      
+      
+
+      
+        <p class="p--lead">Toast floats over page content and displays low-priority messages in a minimally disruptive way. It is self-dismissing and does not require action.</p>
+
+<div class="fe_f_all fe_u_margin--bottom-large">  <div class="fe_c_banner fe_c_banner--info">    <div class="fe_c_banner__icon">      <svg xmlns="http://www.w3.org/2000/svg" class="fe_c_icon fe_c_icon--info-solid" viewBox="0 0 25 25">        <title>Info</title>        <g><g class="fe_c_icon__background"><rect width="25" height="25"></rect></g><g><circle cx="12.5" cy="12.5" r="10.6" class="fe_c_icon__icon fe_c_icon__icon--secondary"></circle><g class="fe_c_icon__icon fe_c_icon__icon--invert"><circle cx="12.375" cy="7.375" r="1.35"></circle><polygon points="14.49 17.28 10.51 17.28 10.51 16.31 11.67 16.31 11.67 11.63 10.51 11.63 10.51 10.6 13.33 10.6 13.33 16.31 14.49 16.31 14.49 17.28"></polygon></g></g></g>      </svg>    </div>    <div class="fe_c_banner__items">      <div class="fe_c_banner-item">                  <h2 class="fe_c_banner-item__header">            Forge Extension          </h2>                <div class="fe_c_banner-item__contents">            <strong>You must import this component separately.</strong><br>
+  It is not part of Forge Core yet. It may undergo further design/API changes. See the <a href="../extensions/forge-extensions.html">Extensions page</a> for more info.
+        </div>      </div>    </div>  </div></div>
+
+<h2 id="demos">Demos</h2>
+<div class="fg_c_demos"><select class="fg_c_demos__select js-selector-demos"><option value="04baf64599f58d154ec7259d0367bba2">Success</option><option value="7a0aec73bffa74d09960e54688db7011">Info</option><option value="aee52424181c6d7db916b08536414959">Attention</option><option value="c77ffc8b1afa6beed6d434c41369e159">Lab Results</option><option value="68703c94a275d7c49f065a71b1184a24">Multiple Sources</option></select><div class="fg_c_demos__demo js-demo-04baf64599f58d154ec7259d0367bba2 ">
+    <div class="fg_c_preview js-resize-preview" style="height: 150px">
+      <iframe height="150" src="../../components/preview/toast-success.html" class="fg_c_preview__iframe"></iframe>
+    </div>
+    <div class="fg_c_accordian js-accordian">
+      <button class="fg_c_accordian__button" role="heading">
+        <span class="fg_c_accordian__icon js-icon"></span>
+        <span class="fg_c_accordian__closed-text">Show Code</span>
+        <span class="fg_c_accordian__open-text">Hide Code</span>
+      </button>
+      <div class="fg_c_code-tabs fg_is-hidden js-tabs">
+        <ul class="fg_c_code-tabs__list" role="tablist">
+          <li class="fg_c_code-tabs__tab" role="tab">
+            <a href="#tab-jsx-04baf64599f58d154ec7259d0367bba2">JSX</a>
+          </li>
+          <li class="fg_c_code-tabs__tab" role="tab">
+            <a href="#tab-html-04baf64599f58d154ec7259d0367bba2">HTML</a>
+          </li>
+        </ul>
+        <div class="fg_c_code-tabs__panel" id="tab-jsx-04baf64599f58d154ec7259d0367bba2" role="tabpanel">
+          <button type="button" class="fg_c_button--inverted fg_c_button--copy js-copy-code" data-clipboard-target="#tab-jsx-04baf64599f58d154ec7259d0367bba2 pre">Copy Code</button>
+          <pre class="fg_c_code-block"><code class="language-jsx"><span class="token keyword">import</span> React<span class="token punctuation">,</span> <span class="token punctuation">{</span> Component <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&#39;react&#39;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> Toast <span class="token keyword">from</span> <span class="token string">&#39;@athena/forge-toast/build/components/toast/toast&#39;</span><span class="token punctuation">;</span>
+<span style='display:none'>empty line</span>
+<span class="token keyword">class</span> <span class="token class-name">ToastSuccess</span> <span class="token keyword">extends</span> <span class="token class-name">Component</span> <span class="token punctuation">{</span>
+<span style='display:none'>empty line</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">super</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>state <span class="token operator">=</span> <span class="token punctuation">{</span> toastId<span class="token punctuation">:</span> <span class="token number">1</span> <span class="token punctuation">}</span><span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>handleDismiss <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>handleDismiss<span class="token punctuation">.</span><span class="token function">bind</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span style='display:none'>empty line</span>
+  <span class="token function">handleDismiss</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState</span><span class="token punctuation">(</span><span class="token punctuation">{</span> toastId<span class="token punctuation">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>toastId <span class="token operator">+</span> <span class="token number">1</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span style='display:none'>empty line</span>
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+<span style='display:none'>empty line</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Toast</span>
+        <span class="token attr-name">id</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>toastId<span class="token punctuation">}</span></span>
+        <span class="token attr-name">headerText</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>Charge Deleted<span class="token punctuation">&quot;</span></span>
+        <span class="token attr-name">alertType</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>success<span class="token punctuation">&quot;</span></span>
+        <span class="token attr-name">onDismiss</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>handleDismiss<span class="token punctuation">}</span></span>
+      <span class="token punctuation">&gt;</span></span>
+        You have successfully deleted a charge <span class="token keyword">for</span> <span class="token constant">CHAPMAN</span><span class="token punctuation">,</span> Jane<span class="token punctuation">.</span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>Toast</span><span class="token punctuation">&gt;</span></span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span style='display:none'>empty line</span>
+<span class="token punctuation">}</span>
+<span style='display:none'>empty line</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> ToastSuccess<span class="token punctuation">;</span>
+</code></pre>
+        </div>
+        <div class="fg_c_code-tabs__panel" id="tab-html-04baf64599f58d154ec7259d0367bba2" role="tabpanel">
+          <button type="button" class="fg_c_button--inverted fg_c_button--copy js-copy-code" data-clipboard-target="#tab-html-04baf64599f58d154ec7259d0367bba2 pre">Copy Code</button>
+          <pre class="fg_c_code-block"><code class="language-html"></code></pre>
+        </div>
+      </div>
+    </div>
+  </div><div class="fg_c_demos__demo js-demo-7a0aec73bffa74d09960e54688db7011 fg_is-hidden">
+    <div class="fg_c_preview js-resize-preview" style="height: 150px">
+      <iframe height="150" src="../../components/preview/toast-info.html" class="fg_c_preview__iframe"></iframe>
+    </div>
+    <div class="fg_c_accordian js-accordian">
+      <button class="fg_c_accordian__button" role="heading">
+        <span class="fg_c_accordian__icon js-icon"></span>
+        <span class="fg_c_accordian__closed-text">Show Code</span>
+        <span class="fg_c_accordian__open-text">Hide Code</span>
+      </button>
+      <div class="fg_c_code-tabs fg_is-hidden js-tabs">
+        <ul class="fg_c_code-tabs__list" role="tablist">
+          <li class="fg_c_code-tabs__tab" role="tab">
+            <a href="#tab-jsx-7a0aec73bffa74d09960e54688db7011">JSX</a>
+          </li>
+          <li class="fg_c_code-tabs__tab" role="tab">
+            <a href="#tab-html-7a0aec73bffa74d09960e54688db7011">HTML</a>
+          </li>
+        </ul>
+        <div class="fg_c_code-tabs__panel" id="tab-jsx-7a0aec73bffa74d09960e54688db7011" role="tabpanel">
+          <button type="button" class="fg_c_button--inverted fg_c_button--copy js-copy-code" data-clipboard-target="#tab-jsx-7a0aec73bffa74d09960e54688db7011 pre">Copy Code</button>
+          <pre class="fg_c_code-block"><code class="language-jsx"><span class="token keyword">import</span> React<span class="token punctuation">,</span> <span class="token punctuation">{</span> Component <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&#39;react&#39;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> Toast <span class="token keyword">from</span> <span class="token string">&#39;@athena/forge-toast/build/components/toast/toast&#39;</span><span class="token punctuation">;</span>
+<span style='display:none'>empty line</span>
+<span class="token keyword">class</span> <span class="token class-name">ToastSuccess</span> <span class="token keyword">extends</span> <span class="token class-name">Component</span> <span class="token punctuation">{</span>
+<span style='display:none'>empty line</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">super</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>state <span class="token operator">=</span> <span class="token punctuation">{</span> toastId<span class="token punctuation">:</span> <span class="token number">1</span> <span class="token punctuation">}</span><span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>handleDismiss <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>handleDismiss<span class="token punctuation">.</span><span class="token function">bind</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span style='display:none'>empty line</span>
+  <span class="token function">handleDismiss</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState</span><span class="token punctuation">(</span><span class="token punctuation">{</span> toastId<span class="token punctuation">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>toastId <span class="token operator">+</span> <span class="token number">1</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span style='display:none'>empty line</span>
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+<span style='display:none'>empty line</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Toast</span>
+        <span class="token attr-name">id</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>toastId<span class="token punctuation">}</span></span>
+        <span class="token attr-name">headerText</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>Lab Result<span class="token punctuation">&quot;</span></span>
+        <span class="token attr-name">alertType</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>info<span class="token punctuation">&quot;</span></span>
+        <span class="token attr-name">onDismiss</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>handleDismiss<span class="token punctuation">}</span></span>
+        <span class="token attr-name">action</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span> label<span class="token punctuation">:</span> <span class="token string">&#39;View&#39;</span><span class="token punctuation">,</span> onAction<span class="token punctuation">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span><span class="token punctuation">}</span> <span class="token punctuation">}</span><span class="token punctuation">}</span></span>
+      <span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>strong</span> <span class="token attr-name">style</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span> display<span class="token punctuation">:</span> <span class="token string">&#39;block&#39;</span> <span class="token punctuation">}</span><span class="token punctuation">}</span></span><span class="token punctuation">&gt;</span></span>Nora Williamson<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>strong</span><span class="token punctuation">&gt;</span></span>
+        <span class="token number">17</span>yo <span class="token constant">F</span> <span class="token operator">|</span> <span class="token number">04</span><span class="token operator">-</span><span class="token number">08</span><span class="token operator">-</span><span class="token number">2001</span> <span class="token operator">|</span> <span class="token number">9205</span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>Toast</span><span class="token punctuation">&gt;</span></span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span style='display:none'>empty line</span>
+<span class="token punctuation">}</span>
+<span style='display:none'>empty line</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> ToastSuccess<span class="token punctuation">;</span>
+</code></pre>
+        </div>
+        <div class="fg_c_code-tabs__panel" id="tab-html-7a0aec73bffa74d09960e54688db7011" role="tabpanel">
+          <button type="button" class="fg_c_button--inverted fg_c_button--copy js-copy-code" data-clipboard-target="#tab-html-7a0aec73bffa74d09960e54688db7011 pre">Copy Code</button>
+          <pre class="fg_c_code-block"><code class="language-html"></code></pre>
+        </div>
+      </div>
+    </div>
+  </div><div class="fg_c_demos__demo js-demo-aee52424181c6d7db916b08536414959 fg_is-hidden">
+    <div class="fg_c_preview js-resize-preview" style="height: 150px">
+      <iframe height="150" src="../../components/preview/toast-attention.html" class="fg_c_preview__iframe"></iframe>
+    </div>
+    <div class="fg_c_accordian js-accordian">
+      <button class="fg_c_accordian__button" role="heading">
+        <span class="fg_c_accordian__icon js-icon"></span>
+        <span class="fg_c_accordian__closed-text">Show Code</span>
+        <span class="fg_c_accordian__open-text">Hide Code</span>
+      </button>
+      <div class="fg_c_code-tabs fg_is-hidden js-tabs">
+        <ul class="fg_c_code-tabs__list" role="tablist">
+          <li class="fg_c_code-tabs__tab" role="tab">
+            <a href="#tab-jsx-aee52424181c6d7db916b08536414959">JSX</a>
+          </li>
+          <li class="fg_c_code-tabs__tab" role="tab">
+            <a href="#tab-html-aee52424181c6d7db916b08536414959">HTML</a>
+          </li>
+        </ul>
+        <div class="fg_c_code-tabs__panel" id="tab-jsx-aee52424181c6d7db916b08536414959" role="tabpanel">
+          <button type="button" class="fg_c_button--inverted fg_c_button--copy js-copy-code" data-clipboard-target="#tab-jsx-aee52424181c6d7db916b08536414959 pre">Copy Code</button>
+          <pre class="fg_c_code-block"><code class="language-jsx"><span class="token keyword">import</span> React<span class="token punctuation">,</span> <span class="token punctuation">{</span> Component <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&#39;react&#39;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> Toast <span class="token keyword">from</span> <span class="token string">&#39;@athena/forge-toast/build/components/toast/toast&#39;</span><span class="token punctuation">;</span>
+<span style='display:none'>empty line</span>
+<span class="token keyword">class</span> <span class="token class-name">ToastSuccess</span> <span class="token keyword">extends</span> <span class="token class-name">Component</span> <span class="token punctuation">{</span>
+<span style='display:none'>empty line</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">super</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>state <span class="token operator">=</span> <span class="token punctuation">{</span> toastId<span class="token punctuation">:</span> <span class="token number">1</span> <span class="token punctuation">}</span><span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>handleDismiss <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>handleDismiss<span class="token punctuation">.</span><span class="token function">bind</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span style='display:none'>empty line</span>
+  <span class="token function">handleDismiss</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState</span><span class="token punctuation">(</span><span class="token punctuation">{</span> toastId<span class="token punctuation">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>toastId <span class="token operator">+</span> <span class="token number">1</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span style='display:none'>empty line</span>
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+<span style='display:none'>empty line</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Toast</span>
+        <span class="token attr-name">id</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>toastId<span class="token punctuation">}</span></span>
+        <span class="token attr-name">headerText</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>Charge Not Created<span class="token punctuation">&quot;</span></span>
+        <span class="token attr-name">alertType</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>attention<span class="token punctuation">&quot;</span></span>
+        <span class="token attr-name">onDismiss</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>handleDismiss<span class="token punctuation">}</span></span>
+        <span class="token attr-name">action</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span> label<span class="token punctuation">:</span> <span class="token string">&#39;View&#39;</span><span class="token punctuation">,</span> onAction<span class="token punctuation">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span><span class="token punctuation">}</span> <span class="token punctuation">}</span><span class="token punctuation">}</span></span>
+      <span class="token punctuation">&gt;</span></span>
+        There was an issue creating the charge <span class="token keyword">for</span> <span class="token constant">COX</span><span class="token punctuation">,</span> Faith<span class="token punctuation">.</span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>Toast</span><span class="token punctuation">&gt;</span></span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span style='display:none'>empty line</span>
+<span class="token punctuation">}</span>
+<span style='display:none'>empty line</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> ToastSuccess<span class="token punctuation">;</span>
+</code></pre>
+        </div>
+        <div class="fg_c_code-tabs__panel" id="tab-html-aee52424181c6d7db916b08536414959" role="tabpanel">
+          <button type="button" class="fg_c_button--inverted fg_c_button--copy js-copy-code" data-clipboard-target="#tab-html-aee52424181c6d7db916b08536414959 pre">Copy Code</button>
+          <pre class="fg_c_code-block"><code class="language-html"></code></pre>
+        </div>
+      </div>
+    </div>
+  </div><div class="fg_c_demos__demo js-demo-c77ffc8b1afa6beed6d434c41369e159 fg_is-hidden">
+    <div class="fg_c_preview js-resize-preview" style="height: 300px">
+      <iframe height="300" src="../../components/preview/toast-lab-results.html" class="fg_c_preview__iframe"></iframe>
+    </div>
+    <div class="fg_c_accordian js-accordian">
+      <button class="fg_c_accordian__button" role="heading">
+        <span class="fg_c_accordian__icon js-icon"></span>
+        <span class="fg_c_accordian__closed-text">Show Code</span>
+        <span class="fg_c_accordian__open-text">Hide Code</span>
+      </button>
+      <div class="fg_c_code-tabs fg_is-hidden js-tabs">
+        <ul class="fg_c_code-tabs__list" role="tablist">
+          <li class="fg_c_code-tabs__tab" role="tab">
+            <a href="#tab-jsx-c77ffc8b1afa6beed6d434c41369e159">JSX</a>
+          </li>
+          <li class="fg_c_code-tabs__tab" role="tab">
+            <a href="#tab-html-c77ffc8b1afa6beed6d434c41369e159">HTML</a>
+          </li>
+        </ul>
+        <div class="fg_c_code-tabs__panel" id="tab-jsx-c77ffc8b1afa6beed6d434c41369e159" role="tabpanel">
+          <button type="button" class="fg_c_button--inverted fg_c_button--copy js-copy-code" data-clipboard-target="#tab-jsx-c77ffc8b1afa6beed6d434c41369e159 pre">Copy Code</button>
+          <pre class="fg_c_code-block"><code class="language-jsx"><span class="token keyword">import</span> React<span class="token punctuation">,</span> <span class="token punctuation">{</span> Component <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&#39;react&#39;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> Toast <span class="token keyword">from</span> <span class="token string">&#39;@athena/forge-toast/build/components/toast/toast&#39;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> faker <span class="token keyword">from</span> <span class="token string">&#39;faker&#39;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> moment <span class="token keyword">from</span> <span class="token string">&#39;moment&#39;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> omit <span class="token keyword">from</span> <span class="token string">&#39;lodash/omit&#39;</span><span class="token punctuation">;</span>
+<span style='display:none'>empty line</span>
+<span class="token keyword">class</span> <span class="token class-name">LabResults</span> <span class="token keyword">extends</span> <span class="token class-name">Component</span> <span class="token punctuation">{</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">super</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span style='display:none'>empty line</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>state <span class="token operator">=</span> <span class="token punctuation">{</span> results<span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span> <span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span style='display:none'>empty line</span>
+  <span class="token function">componentDidMount</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">generateLab</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Add the first lab immediately</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">generateLabs</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span style='display:none'>empty line</span>
+  <span class="token function">componentWillUnmount</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">clearTimeout</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>generationTimeout<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span style='display:none'>empty line</span>
+  <span class="token function">generateLab</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> gender <span class="token operator">=</span> Math<span class="token punctuation">.</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&gt;</span> <span class="token number">0.5</span><span class="token punctuation">;</span>
+    <span class="token keyword">const</span> dob <span class="token operator">=</span> faker<span class="token punctuation">.</span>date<span class="token punctuation">.</span><span class="token function">past</span><span class="token punctuation">(</span><span class="token number">80</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">const</span> info <span class="token operator">=</span> <span class="token punctuation">{</span>
+      name<span class="token punctuation">:</span> <span class="token template-string"><span class="token string"><code>&lt;/span&gt;&lt;span class=&quot;token interpolation&quot;&gt;&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;${&lt;/span&gt;faker&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;name&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;firstName&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;gender &lt;span class=&quot;token operator&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt; &lt;/span&gt;&lt;span class=&quot;token interpolation&quot;&gt;&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;${&lt;/span&gt;faker&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;name&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;lastName&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;</code></span></span><span class="token punctuation">,</span>
+      dob<span class="token punctuation">:</span> dob<span class="token punctuation">,</span>
+      id<span class="token punctuation">:</span> faker<span class="token punctuation">.</span>random<span class="token punctuation">.</span><span class="token function">number</span><span class="token punctuation">(</span><span class="token number">8999</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token number">1000</span><span class="token punctuation">,</span> <span class="token comment">// 4 digit number</span>
+      gender<span class="token punctuation">:</span> gender <span class="token operator">?</span> <span class="token string">&#39;M&#39;</span> <span class="token punctuation">:</span> <span class="token string">&#39;F&#39;</span><span class="token punctuation">,</span>
+      age<span class="token punctuation">:</span> <span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getFullYear</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">-</span> dob<span class="token punctuation">.</span><span class="token function">getFullYear</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span style='display:none'>empty line</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState</span><span class="token punctuation">(</span>prevState <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      <span class="token keyword">const</span> newResults <span class="token operator">=</span> prevState<span class="token punctuation">;</span>
+      newResults<span class="token punctuation">[</span>info<span class="token punctuation">.</span>id<span class="token punctuation">]</span> <span class="token operator">=</span> info<span class="token punctuation">;</span>
+      <span class="token keyword">return</span> <span class="token punctuation">(</span><span class="token punctuation">{</span> results<span class="token punctuation">:</span> newResults <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span style='display:none'>empty line</span>
+  <span class="token function">generateLabs</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>generationTimeout <span class="token operator">=</span> <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">generateLab</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span style='display:none'>empty line</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">generateLabs</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Recursion will be stopped by clearTimeout</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">2000</span> <span class="token operator">+</span> <span class="token punctuation">(</span>Math<span class="token punctuation">.</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token number">18000</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 2 - 20 seconds</span>
+  <span class="token punctuation">}</span>
+<span style='display:none'>empty line</span>
+  <span class="token function">handleDismiss</span><span class="token punctuation">(</span>id<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState</span><span class="token punctuation">(</span>prevState <span class="token operator">=&gt;</span> <span class="token punctuation">(</span><span class="token punctuation">{</span> results<span class="token punctuation">:</span> <span class="token function">omit</span><span class="token punctuation">(</span>prevState<span class="token punctuation">.</span>results<span class="token punctuation">,</span> id<span class="token punctuation">)</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span style='display:none'>empty line</span>
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">style</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span>
+        background<span class="token punctuation">:</span> <span class="token string">&#39;url(&quot;/images/forge-toast/schedule-testPractice.png&quot;)&#39;</span><span class="token punctuation">,</span>
+        backgroundPosition<span class="token punctuation">:</span> <span class="token string">&#39;bottom left&#39;</span><span class="token punctuation">,</span>
+        height<span class="token punctuation">:</span> <span class="token string">&#39;300px&#39;</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">}</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token punctuation">{</span> Object<span class="token punctuation">.</span><span class="token function">entries</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>results<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">[</span> id<span class="token punctuation">,</span> info <span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">(</span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Toast</span>
+            <span class="token attr-name">id</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>id<span class="token punctuation">}</span></span>
+            <span class="token attr-name">key</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>id<span class="token punctuation">}</span></span>
+            <span class="token attr-name">headerText</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>Lab Result<span class="token punctuation">&quot;</span></span>
+            <span class="token attr-name">action</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span> label<span class="token punctuation">:</span> <span class="token string">&#39;View&#39;</span><span class="token punctuation">,</span> onAction<span class="token punctuation">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span><span class="token punctuation">}</span> <span class="token punctuation">}</span><span class="token punctuation">}</span></span>
+            <span class="token attr-name">alertType</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>info<span class="token punctuation">&quot;</span></span>
+            <span class="token attr-name">onDismiss</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">handleDismiss</span><span class="token punctuation">(</span>id<span class="token punctuation">)</span><span class="token punctuation">}</span></span>
+            <span class="token attr-name">onNeverShown</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">handleDismiss</span><span class="token punctuation">(</span>id<span class="token punctuation">)</span><span class="token punctuation">}</span></span>
+          <span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>strong</span> <span class="token attr-name">style</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span> display<span class="token punctuation">:</span> <span class="token string">&#39;block&#39;</span> <span class="token punctuation">}</span><span class="token punctuation">}</span></span><span class="token punctuation">&gt;</span></span><span class="token punctuation">{</span>info<span class="token punctuation">.</span>name<span class="token punctuation">}</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>strong</span><span class="token punctuation">&gt;</span></span>
+            <span class="token punctuation">{</span><span class="token template-string"><span class="token string"><code>&lt;/span&gt;&lt;span class=&quot;token interpolation&quot;&gt;&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;${&lt;/span&gt;info&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;age&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;yo &lt;/span&gt;&lt;span class=&quot;token interpolation&quot;&gt;&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;${&lt;/span&gt;info&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;gender&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt; | &lt;/span&gt;&lt;span class=&quot;token interpolation&quot;&gt;&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;moment&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;info&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;dob&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&#39;MM-DD-YYYY&#39;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt; | &lt;/span&gt;&lt;span class=&quot;token interpolation&quot;&gt;&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;${&lt;/span&gt;info&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;id&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;</code></span></span><span class="token punctuation">}</span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>Toast</span><span class="token punctuation">&gt;</span></span>
+        <span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">}</span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span style='display:none'>empty line</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> LabResults<span class="token punctuation">;</span>
+</code></pre>
+        </div>
+        <div class="fg_c_code-tabs__panel" id="tab-html-c77ffc8b1afa6beed6d434c41369e159" role="tabpanel">
+          <button type="button" class="fg_c_button--inverted fg_c_button--copy js-copy-code" data-clipboard-target="#tab-html-c77ffc8b1afa6beed6d434c41369e159 pre">Copy Code</button>
+          <pre class="fg_c_code-block"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token style-attr language-css"><span class="token attr-name"> <span class="token attr-name">style</span></span><span class="token punctuation">=&quot;</span><span class="token attr-value"><span class="token property">background</span><span class="token punctuation">:</span><span class="token url">url(&amp;quot;/images/forge-toast/schedule-testPractice.png&amp;quot;)</span><span class="token punctuation">;</span><span class="token property">background-position</span><span class="token punctuation">:</span>bottom left<span class="token punctuation">;</span><span class="token property">height</span><span class="token punctuation">:</span>300px</span><span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+        </div>
+      </div>
+    </div>
+  </div><div class="fg_c_demos__demo js-demo-68703c94a275d7c49f065a71b1184a24 fg_is-hidden">
+    <div class="fg_c_preview js-resize-preview" style="height: 350px">
+      <iframe height="350" src="../../components/preview/toast-multiple-sources.html" class="fg_c_preview__iframe"></iframe>
+    </div>
+    <div class="fg_c_accordian js-accordian">
+      <button class="fg_c_accordian__button" role="heading">
+        <span class="fg_c_accordian__icon js-icon"></span>
+        <span class="fg_c_accordian__closed-text">Show Code</span>
+        <span class="fg_c_accordian__open-text">Hide Code</span>
+      </button>
+      <div class="fg_c_code-tabs fg_is-hidden js-tabs">
+        <ul class="fg_c_code-tabs__list" role="tablist">
+          <li class="fg_c_code-tabs__tab" role="tab">
+            <a href="#tab-jsx-68703c94a275d7c49f065a71b1184a24">JSX</a>
+          </li>
+          <li class="fg_c_code-tabs__tab" role="tab">
+            <a href="#tab-html-68703c94a275d7c49f065a71b1184a24">HTML</a>
+          </li>
+        </ul>
+        <div class="fg_c_code-tabs__panel" id="tab-jsx-68703c94a275d7c49f065a71b1184a24" role="tabpanel">
+          <button type="button" class="fg_c_button--inverted fg_c_button--copy js-copy-code" data-clipboard-target="#tab-jsx-68703c94a275d7c49f065a71b1184a24 pre">Copy Code</button>
+          <pre class="fg_c_code-block"><code class="language-jsx"><span class="token keyword">import</span> React<span class="token punctuation">,</span> <span class="token punctuation">{</span> Component <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&#39;react&#39;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> Heading<span class="token punctuation">,</span> Form<span class="token punctuation">,</span> FormField<span class="token punctuation">,</span> GridCol<span class="token punctuation">,</span> GridRow <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&#39;@athena/forge&#39;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> Toast <span class="token keyword">from</span> <span class="token string">&#39;@athena/forge-toast/build/components/toast/toast&#39;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> uniqueId <span class="token keyword">from</span> <span class="token string">&#39;lodash/uniqueId&#39;</span><span class="token punctuation">;</span>
+<span style='display:none'>empty line</span>
+<span class="token keyword">class</span> <span class="token class-name">ToastSource</span> <span class="token keyword">extends</span> <span class="token class-name">Component</span> <span class="token punctuation">{</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">super</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span style='display:none'>empty line</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>state <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span style='display:none'>empty line</span>
+  <span class="token function">componentWillUnmount</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">clearTimeout</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>generationTimeout<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span style='display:none'>empty line</span>
+  <span class="token function">handleDismiss</span><span class="token punctuation">(</span>id<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState</span><span class="token punctuation">(</span>prevState <span class="token operator">=&gt;</span> <span class="token punctuation">(</span>prevState<span class="token punctuation">.</span>id <span class="token operator">===</span> id
+      <span class="token operator">?</span> <span class="token punctuation">{</span> firstName<span class="token punctuation">:</span> undefined<span class="token punctuation">,</span> lastName<span class="token punctuation">:</span> undefined<span class="token punctuation">,</span> id<span class="token punctuation">:</span> undefined <span class="token punctuation">}</span>
+      <span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+    <span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span style='display:none'>empty line</span>
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> isCreate <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>props<span class="token punctuation">.</span>type <span class="token operator">===</span> <span class="token string">&#39;create&#39;</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Heading</span>
+          <span class="token attr-name">headingTag</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>h2<span class="token punctuation">&quot;</span></span>
+          <span class="token attr-name">variant</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>section<span class="token punctuation">&quot;</span></span>
+          <span class="token attr-name">text</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token template-string"><span class="token string"><code>&lt;/span&gt;&lt;span class=&quot;token interpolation&quot;&gt;&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;${&lt;/span&gt;isCreate &lt;span class=&quot;token operator&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&#39;Create&#39;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&#39;Delete&#39;&lt;/span&gt;&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt; a Charge</code></span></span><span class="token punctuation">}</span></span>
+          <span class="token attr-name">subheading</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>isCreate <span class="token operator">?</span> <span class="token template-string"><span class="token string"><code>but it will fail</code></span></span> <span class="token punctuation">:</span> <span class="token template-string"><span class="token string"><code>and it will succeed</code></span></span><span class="token punctuation">}</span></span>
+        <span class="token punctuation">/&gt;</span></span>
+        <span class="token operator">&lt;</span>Form
+          onSubmit<span class="token operator">=</span><span class="token punctuation">{</span>event <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>event<span class="token punctuation">.</span>target<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>value <span class="token operator">&amp;&amp;</span> event<span class="token punctuation">.</span>target<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">.</span>value<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+              <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+                firstName<span class="token punctuation">:</span> event<span class="token punctuation">.</span>target<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>value<span class="token punctuation">,</span>
+                lastName<span class="token punctuation">:</span> event<span class="token punctuation">.</span>target<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">.</span>value<span class="token punctuation">,</span>
+                id<span class="token punctuation">:</span> <span class="token function">uniqueId</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+              <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+            event<span class="token punctuation">.</span><span class="token function">preventDefault</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+          <span class="token punctuation">}</span><span class="token punctuation">}</span>
+          buttonText<span class="token operator">=</span><span class="token punctuation">{</span>isCreate <span class="token operator">?</span> <span class="token string">&#39;Create&#39;</span> <span class="token punctuation">:</span> <span class="token string">&#39;Delete&#39;</span><span class="token punctuation">}</span>
+        <span class="token operator">&gt;</span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>FormField</span>
+            <span class="token attr-name">labelAlwaysAbove</span>
+            <span class="token attr-name">labelText</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>First name<span class="token punctuation">&quot;</span></span>
+            <span class="token attr-name">required</span>
+          <span class="token punctuation">/&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>FormField</span>
+            <span class="token attr-name">labelAlwaysAbove</span>
+            <span class="token attr-name">labelText</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>Last name<span class="token punctuation">&quot;</span></span>
+            <span class="token attr-name">required</span>
+          <span class="token punctuation">/&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>Form</span><span class="token punctuation">&gt;</span></span>
+        <span class="token punctuation">{</span> <span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>id <span class="token operator">&amp;&amp;</span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Toast</span>
+            <span class="token attr-name">id</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>id<span class="token punctuation">}</span></span>
+            <span class="token attr-name">alertType</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>isCreate <span class="token operator">?</span> <span class="token string">&#39;attention&#39;</span> <span class="token punctuation">:</span> <span class="token string">&#39;success&#39;</span><span class="token punctuation">}</span></span>
+            <span class="token attr-name">headerText</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>isCreate <span class="token operator">?</span> <span class="token string">&#39;Charge Not Created&#39;</span> <span class="token punctuation">:</span> <span class="token string">&#39;Charge Deleted&#39;</span><span class="token punctuation">}</span></span>
+            <span class="token attr-name">action</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>isCreate
+              <span class="token operator">?</span> <span class="token punctuation">{</span> label<span class="token punctuation">:</span> <span class="token string">&#39;View&#39;</span><span class="token punctuation">,</span> onAction<span class="token punctuation">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span><span class="token punctuation">}</span> <span class="token punctuation">}</span>
+              <span class="token punctuation">:</span> undefined
+            <span class="token punctuation">}</span></span>
+          <span class="token punctuation">&gt;</span></span>
+            <span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>props<span class="token punctuation">.</span>type <span class="token operator">===</span> <span class="token string">&#39;create&#39;</span>
+              <span class="token operator">?</span> <span class="token template-string"><span class="token string"><code>There was an issue creating the charge for &lt;/span&gt;&lt;span class=&quot;token interpolation&quot;&gt;&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;state&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;lastName&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;toUpperCase&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;, &lt;/span&gt;&lt;span class=&quot;token interpolation&quot;&gt;&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;state&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;firstName&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;.</code></span></span>
+              <span class="token punctuation">:</span> <span class="token template-string"><span class="token string"><code>You have successfully deleted a charge for &lt;/span&gt;&lt;span class=&quot;token interpolation&quot;&gt;&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;state&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;lastName&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;toUpperCase&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;, &lt;/span&gt;&lt;span class=&quot;token interpolation&quot;&gt;&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;state&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;firstName&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;.</code></span></span>
+            <span class="token punctuation">}</span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>Toast</span><span class="token punctuation">&gt;</span></span>
+        <span class="token punctuation">}</span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span style='display:none'>empty line</span>
+<span class="token keyword">const</span> <span class="token function-variable function">MultipleSources</span> <span class="token operator">=</span> <span class="token punctuation">(</span>props<span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">(</span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">className</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;u&#95;padding--large<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>GridRow</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>GridCol</span> <span class="token attr-name">width</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span> small<span class="token punctuation">:</span> <span class="token number">6</span> <span class="token punctuation">}</span><span class="token punctuation">}</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ToastSource</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>create<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>GridCol</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>GridCol</span> <span class="token attr-name">width</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span> small<span class="token punctuation">:</span> <span class="token number">6</span> <span class="token punctuation">}</span><span class="token punctuation">}</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ToastSource</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>delete<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>GridCol</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>GridRow</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span style='display:none'>empty line</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> MultipleSources<span class="token punctuation">;</span>
+</code></pre>
+        </div>
+        <div class="fg_c_code-tabs__panel" id="tab-html-68703c94a275d7c49f065a71b1184a24" role="tabpanel">
+          <button type="button" class="fg_c_button--inverted fg_c_button--copy js-copy-code" data-clipboard-target="#tab-html-68703c94a275d7c49f065a71b1184a24 pre">Copy Code</button>
+          <pre class="fg_c_code-block"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;u&#95;padding--large<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row&#95;&#95;col fe&#95;l&#95;grid-row&#95;&#95;col--small-6<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;heading fe&#95;c&#95;heading--section<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Create a Charge<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;heading--section&#95;&#95;subheading<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>but it will fail<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>form</span> <span class="token attr-name">novalidate</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span><span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;form-field<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row fe&#95;l&#95;grid-row--nested<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row&#95;&#95;col fe&#95;l&#95;grid-row&#95;&#95;col--small-12 fe&#95;l&#95;grid-row&#95;&#95;col--medium-12 fe&#95;c&#95;form-field&#95;&#95;label fe&#95;c&#95;form-field&#95;&#95;label--forced-above<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe-form-field-gen-484<span class="token punctuation">&quot;</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe-form-field-gen-484-label<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;label<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>First name<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;label&#95;&#95;required<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span> - Required<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row&#95;&#95;col fe&#95;l&#95;grid-row&#95;&#95;col--small-12 fe&#95;l&#95;grid-row&#95;&#95;col--medium-9 fe&#95;c&#95;form-field&#95;&#95;right<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;form-field&#95;&#95;input-slot<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;input fe&#95;c&#95;form-field&#95;&#95;input<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>text<span class="token punctuation">&quot;</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe-form-field-gen-484<span class="token punctuation">&quot;</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe-form-field-gen-484<span class="token punctuation">&quot;</span></span> <span class="token attr-name">required</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span><span class="token punctuation">&quot;</span></span> <span class="token attr-name">aria-labelledby</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe-form-field-gen-484-label<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;input&#95;&#95;input<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;form-field&#95;&#95;message<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;form-field&#95;&#95;status<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;form-field<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row fe&#95;l&#95;grid-row--nested<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row&#95;&#95;col fe&#95;l&#95;grid-row&#95;&#95;col--small-12 fe&#95;l&#95;grid-row&#95;&#95;col--medium-12 fe&#95;c&#95;form-field&#95;&#95;label fe&#95;c&#95;form-field&#95;&#95;label--forced-above<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe-form-field-gen-485<span class="token punctuation">&quot;</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe-form-field-gen-485-label<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;label<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Last name<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;label&#95;&#95;required<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span> - Required<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row&#95;&#95;col fe&#95;l&#95;grid-row&#95;&#95;col--small-12 fe&#95;l&#95;grid-row&#95;&#95;col--medium-9 fe&#95;c&#95;form-field&#95;&#95;right<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;form-field&#95;&#95;input-slot<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;input fe&#95;c&#95;form-field&#95;&#95;input<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>text<span class="token punctuation">&quot;</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe-form-field-gen-485<span class="token punctuation">&quot;</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe-form-field-gen-485<span class="token punctuation">&quot;</span></span> <span class="token attr-name">required</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span><span class="token punctuation">&quot;</span></span> <span class="token attr-name">aria-labelledby</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe-form-field-gen-485-label<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;input&#95;&#95;input<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;form-field&#95;&#95;message<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;form-field&#95;&#95;status<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;form-field<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row fe&#95;l&#95;grid-row--nested<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row&#95;&#95;col fe&#95;l&#95;grid-row&#95;&#95;col--small-12 fe&#95;l&#95;grid-row&#95;&#95;col--medium-3 fe&#95;c&#95;form-field&#95;&#95;label<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row&#95;&#95;col fe&#95;l&#95;grid-row&#95;&#95;col--small-12 fe&#95;l&#95;grid-row&#95;&#95;col--medium-9 fe&#95;c&#95;form-field&#95;&#95;right<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;form-field&#95;&#95;input-slot<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;button fe&#95;c&#95;button--primary<span class="token punctuation">&quot;</span></span> <span class="token attr-name">aria-disabled</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>false<span class="token punctuation">&quot;</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>submit<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Create<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;form-field&#95;&#95;message<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;form-field&#95;&#95;status<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>form</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row&#95;&#95;col fe&#95;l&#95;grid-row&#95;&#95;col--small-6<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;heading fe&#95;c&#95;heading--section<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Delete a Charge<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;heading--section&#95;&#95;subheading<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>and it will succeed<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>form</span> <span class="token attr-name">novalidate</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span><span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;form-field<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row fe&#95;l&#95;grid-row--nested<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row&#95;&#95;col fe&#95;l&#95;grid-row&#95;&#95;col--small-12 fe&#95;l&#95;grid-row&#95;&#95;col--medium-12 fe&#95;c&#95;form-field&#95;&#95;label fe&#95;c&#95;form-field&#95;&#95;label--forced-above<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe-form-field-gen-486<span class="token punctuation">&quot;</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe-form-field-gen-486-label<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;label<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>First name<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;label&#95;&#95;required<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span> - Required<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row&#95;&#95;col fe&#95;l&#95;grid-row&#95;&#95;col--small-12 fe&#95;l&#95;grid-row&#95;&#95;col--medium-9 fe&#95;c&#95;form-field&#95;&#95;right<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;form-field&#95;&#95;input-slot<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;input fe&#95;c&#95;form-field&#95;&#95;input<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>text<span class="token punctuation">&quot;</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe-form-field-gen-486<span class="token punctuation">&quot;</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe-form-field-gen-486<span class="token punctuation">&quot;</span></span> <span class="token attr-name">required</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span><span class="token punctuation">&quot;</span></span> <span class="token attr-name">aria-labelledby</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe-form-field-gen-486-label<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;input&#95;&#95;input<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;form-field&#95;&#95;message<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;form-field&#95;&#95;status<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;form-field<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row fe&#95;l&#95;grid-row--nested<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row&#95;&#95;col fe&#95;l&#95;grid-row&#95;&#95;col--small-12 fe&#95;l&#95;grid-row&#95;&#95;col--medium-12 fe&#95;c&#95;form-field&#95;&#95;label fe&#95;c&#95;form-field&#95;&#95;label--forced-above<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe-form-field-gen-487<span class="token punctuation">&quot;</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe-form-field-gen-487-label<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;label<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Last name<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;label&#95;&#95;required<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span> - Required<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row&#95;&#95;col fe&#95;l&#95;grid-row&#95;&#95;col--small-12 fe&#95;l&#95;grid-row&#95;&#95;col--medium-9 fe&#95;c&#95;form-field&#95;&#95;right<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;form-field&#95;&#95;input-slot<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;input fe&#95;c&#95;form-field&#95;&#95;input<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>text<span class="token punctuation">&quot;</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe-form-field-gen-487<span class="token punctuation">&quot;</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe-form-field-gen-487<span class="token punctuation">&quot;</span></span> <span class="token attr-name">required</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span><span class="token punctuation">&quot;</span></span> <span class="token attr-name">aria-labelledby</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe-form-field-gen-487-label<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;input&#95;&#95;input<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;form-field&#95;&#95;message<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;form-field&#95;&#95;status<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;form-field<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row fe&#95;l&#95;grid-row--nested<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row&#95;&#95;col fe&#95;l&#95;grid-row&#95;&#95;col--small-12 fe&#95;l&#95;grid-row&#95;&#95;col--medium-3 fe&#95;c&#95;form-field&#95;&#95;label<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row&#95;&#95;col fe&#95;l&#95;grid-row&#95;&#95;col--small-12 fe&#95;l&#95;grid-row&#95;&#95;col--medium-9 fe&#95;c&#95;form-field&#95;&#95;right<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;form-field&#95;&#95;input-slot<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;button fe&#95;c&#95;button--primary<span class="token punctuation">&quot;</span></span> <span class="token attr-name">aria-disabled</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>false<span class="token punctuation">&quot;</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>submit<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Delete<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;form-field&#95;&#95;message<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;form-field&#95;&#95;status<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>form</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+        </div>
+      </div>
+    </div>
+  </div></div>
+
+<h2 id="usage">Usage</h2>
+<p><code>Toast</code> appears for several seconds, displays a short message, and then disappears. It’s designed to catch attention without interrupting. It can also include a button for taking action. Users can manually dismiss a toast instantly, and they can hover to keep it visible (a helpful accessibility feature if someone needs more time for reading or uses assistive technology).</p>
+<p><code>Toast</code> is used to inform the user of low-priority events, such as:</p>
+<ul>
+<li>Events outside the user’s current workflow (lab results, system updates)</li>
+<li>Non-interruptive confirmations for actions in the current workflow (successful saves)</li>
+</ul>
+<p>Do not use <code>Toast</code> for information that requires immediate action or attention. <code>Toast</code> is for low-priority messages where it&#39;s OK if the user misses them in that moment.</p>
+<p>Use this scale to help decide your notification&#39;s level of interruption:</p>
+<div>
+<img src="../../assets/images/priority_spectrum.png" alt="Scale showing spectrum of low-to-high priority interruptions. Toast is low, Banner is medium, and Dialog is high">
+</div>
+
+<p><code>Toast</code> uses <a href="../foundations/color.html#alert">Forge color semantics</a> for its colors and icons.</p>
+<p>Due to the design of <code>Toast</code> (visible for a short time and deliberately low on disruption), users might not read all of its content or may miss it completely. Therefore, do not put information in a toast that can&#39;t be accessed somewhere else. Consider building a repository for past toast messages if you&#39;re concerned about users needing to refer back them.</p>
+<h2 id="design">Design</h2>
+<h3 id="structure">Structure</h3>
+<table class="api-table api-table--toast-structure">
+  <thead>
+    <tr>
+      <th>Element</th>
+      <th>Required</th>
+      <th>Purpose</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>Indicator Bar</td><td>Yes</td><td>Communicates the type of notification: information, confirmation, or alert</td></tr>
+    <tr><td>Icon</td><td>Yes</td><td>Communicates the type of notification: information, confirmation, or alert</td></tr>
+    <tr><td>Header</td><td>No</td><td>A word or phrase that summarizes the message</td></tr>
+    <tr><td>Message</td><td>Yes</td><td>One or two sentences or pieces of information that describe an event</td></tr>
+    <tr><td>Dismiss</td><td>Yes</td><td>Enables manual dismissal</td></tr>
+    <tr><td>Action</td><td>No</td><td>Offers an action related to the event</td></tr>
+  </tbody>
+</table>
+
+<h3 id="visual-language-and-design">Visual Language and Design</h3>
+<p><code>Toast</code> offers 3 message styles (using <a href="../foundations/color.html#alert">Forge color semantics</a> and icons):</p>
+<ul>
+<li>Error or warning (Attention icon)</li>
+<li>Information (Information icon)</li>
+<li>Success or Confirmation (Success icon)</li>
+</ul>
+<p>These colors and icons communicate (at a general level) the message type in a way that users can quickly and easily understand. These icons were designed to provide a specific level of visual weight and emphasis. They cannot be replaced with other icons.</p>
+<p><code>Toast</code> includes a drop shadow and border to help separate it from the background.</p>
+<h3 id="size">Size</h3>
+<ul>
+<li>Fixed width: 375px</li>
+<li>Height depends on the length of toast content; maximum is 105px</li>
+<li>Width of the action button depends on its label text; maximum is 125px</li>
+</ul>
+<h3 id="behavior">Behavior</h3>
+<p>Animation and timing is built into <code>Toast</code>.</p>
+<p>A toast remains fully visible for 7 seconds before self-dismissal happens. After that, the toast will fade in place over 3 seconds. Users can hover to make the toast fully visible again, giving them more time to read and respond.</p>
+<p>The Dismiss button or icon is always displayed, allowing users to readily dismiss the toast.
+When the Dismiss icon/button is clicked, the toast instantly closes and disappears.</p>
+<p>One action button can be included in the toast. Clicking the button closes the toast and carries out the action. When deciding what actions to offer, make sure that the toast message will display sufficient information for users. Allowing users to take actions without enough information could lead to errors and patient safety issues.</p>
+<h4 id="position">Position</h4>
+<p>Toasts are displayed on the bottom left-hand corner to minimize disruption and blocking of call-to-action buttons or critical information. This position also has close proximity to the Status bar on the bottom of the viewport.</p>
+<h3 id="content">Content</h3>
+<p>The content of toasts should be minimal and short. The recommended amounts are:</p>
+<ul>
+<li>Header: 1-3 words, one row</li>
+<li>Message body: 1-2 sentences or rows of information</li>
+<li>Button: 1 word, one row</li>
+</ul>
+<p>Design your content so that users can quickly scan it. Refer to the <a href="../guidelines/content-style-guide.html">content style guide</a> for advice on writing concisely and using plain language.</p>
+<p>Consider the purpose of your content, what it needs to communicate to users, and what you want them to do after reading it. For example, a toast could:</p>
+<ul>
+<li>Provide a very short, self-explanatory message that needs no action (e.g., the message &quot;Your file was successfully uploaded&quot;)</li>
+<li>Provide just enough information about an event that the user can decide whether to engage further now or leave it until later (e.g., a patient&#39;s name/date of birth/ID number and the words &quot;Radiology report&quot;)</li>
+</ul>
+<h4 id="character-truncation">Character Truncation</h4>
+<p>Text in the message of the toast can be truncated if viewing the whole message is not necessary (for example, if the message is a preview of lab result data). In this case, the toast&#39;s action button should provide a way for the user to view the full message. However, consider whether it would be more helpful and clear to show a complete, deliberately written message instead.</p>
+<p>Avoid truncating the header and button labels, for maximum clarity.</p>
+<p>This truncation does <strong>not</strong> automatically add an ellipsis at the end of the truncated content. See the <a href="#implementation">Implementation</a> section for guidance on adding an indicator for truncated content.</p>
+<h4 id="privacy-and-protected-health-information">Privacy and Protected Health Information</h4>
+<p>If your toast message displays Protected Health Information (PHI) or other sensitive information, consider whether it may be seen by someone who shouldn&#39;t have access to that information.</p>
+<p>For example, in some clinical settings, providers and patients review the patient&#39;s chart together on the doctor&#39;s monitor during a visit. If a toast appeared during that time, the patient could accidentally see another patient&#39;s name, birthdate, results, or other private information in the toast message.</p>
+<h3 id="multiple-toasts">Multiple Toasts</h3>
+<p>Toasts are displayed one at a time.</p>
+<p>A displayed toast will <strong>immediately</strong> self-dismiss and disappear if there is another toast following.</p>
+<p>If multiple toasts are triggered at the same time or very close to one another, the most recently triggered toast will be displayed.</p>
+<h2 id="accessibility">Accessibility</h2>
+<p><code>Toast</code> includes several built-in features that support accessibility, including:</p>
+<ul>
+<li>Keyboard shortcut (hotkey)<ul>
+<li>If the toast includes an action, users can enter the key combo Ctrl-Shift-1 to fire the action (without needing to use a mouse).</li>
+</ul>
+</li>
+<li>Screen reader support<ul>
+<li>Screen readers will announce the toast&#39;s title and message. If the toast includes an action, the screen reader will also announce &quot;Press Ctrl-Shift-1 to (action label).&quot; Use the <code>labelForScreenReader</code> prop if needed to provide an alternative action label for screen readers. For example, if the label is &quot;Details&quot;, then a screen reader would announce &quot;Press Ctrl-Shift-1 to Details&quot;, which is confusing. Here, <code>labelForScreenReader</code> could be set to &quot;View Details&quot;, and the screen reader would announce &quot;Press Ctrl-Shift-1 to View Details&quot; instead.</li>
+<li><a href="https://www.w3.org/WAI/standards-guidelines/aria/">ARIA</a> attributes for screen reader support: <a href="https://www.w3.org/TR/wai-aria-1.1/#aria-live"><code>aria-live</code></a>: <code>polite</code>; <a href="https://www.w3.org/TR/wai-aria-1.1/#aria-relevant"><code>aria-relevant</code></a>: <code>additions</code></li>
+</ul>
+</li>
+<li>Hover to maintain visibility<ul>
+<li>User can hover over a toast to keep it visible for as long as necessary. This is helpful for people who use assistive technology or who need more time for reading (e.g., due to dyslexia, cognitive issues, English as a second language).</li>
+</ul>
+</li>
+</ul>
+<h2 id="implementation">Implementation</h2>
+<h3 id="one-toast-at-a-time">One Toast at a Time</h3>
+<p><code>Toast</code> is displayed for just a short time and only one can display at a time, regardless of how many <code>Toast</code> instances are in the React render tree and for how long. This leads to several special considerations when using <code>Toast</code>:</p>
+<ul>
+<li><code>id</code> is required and should be unique for every new message. If you use the same id for different messages, you risk a new message not being displayed because it’s mistaken for a previously displayed message.</li>
+<li>Rendering a new <code>Toast</code> will force the currently displayed <code>Toast</code> to dismiss immediately.</li>
+<li>If several <code>Toast</code> instances are rendered in quick succession, some of them may not be displayed at all. This is acceptable because <code>Toast</code> shouldn’t be used for critical information and it&#39;s OK if the user doesn&#39;t see it. You can use the <code>onNeverShown</code> callback to detect when this has happened.</li>
+</ul>
+<h3 id="message">Message</h3>
+<p>Whatever is passed in as <code>children</code> will be rendered as the toast message, under the heading. This is only to support stylized and structured text. Do not insert images, other non-textual content, or interactive content into toasts.</p>
+<p><code>Toast</code> has intentionally limited space as described <a href="#size">above</a> so that it’s less disruptive to the workflow. If a message isn&#39;t fully visible, however, <code>Toast</code> does <strong>not</strong> show an ellipsis to indicate this. Teams can add this themselves if necessary (one of the uses of structured children). Keep in mind that <a href="https://css-tricks.com/line-clampin/">truncating multi-line text</a> is harder than <a href="https://css-tricks.com/snippets/css/truncate-string-with-ellipsis/">truncating single-line text</a>.</p>
+<h2 id="api-tables">API Tables</h2>
+<h3 id="import-from-toast-extension">Import From Toast Extension</h3>
+<p><p>Importing individual components can reduce bundle size. <a href="https://athenaconfluence.athenahealth.com/display/UXDS/Forge+Import+for+Better+Tree+Shaking">Learn more</a></p>
+<span class="code--small-text"></p>
+<code><pre><span class="hljs-keyword">import</span> Toast <span class="hljs-keyword">from</span> <span class="hljs-string">'@athena/forge-toast/build/components/toast/toast'</span>;
+<span class="hljs-keyword">import</span> ToastTemplate <span class="hljs-keyword">from</span> <span class="hljs-string">'@athena/forge-toast/build/components/toast-template/toast-template'</span>;
+<span class="hljs-keyword">import</span> ToastPortal <span class="hljs-keyword">from</span> <span class="hljs-string">'@athena/forge-toast/build/components/toast-portal/toast-portal'</span>;</pre></code><p></span></p>
+<h3 id="toast-props">Toast Props</h3>
+<table class="api-table api-table--react">
+  <thead>
+    <tr>
+      <th>Prop</th>
+      <th>Type</th>
+      <th>Default</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="api-table__required"><code>id</code> (required)</td>
+      <td>
+        string
+      </td>
+      <td></td>
+      <td>Identifies individual toasts and differentiates them.
+If two toasts reuse the same id, the second one might not get displayed.</td>
+    </tr>
+    <tr>
+      <td><code>action</code></td>
+      <td>
+        shape
+          <ul>
+              <li>onAction - func (required)</li>
+              <li>label - string (required)</li>
+          </ul>
+      </td>
+      <td></td>
+      <td>Adds an action button to the toast</td>
+    </tr>
+    <tr>
+      <td><code>alertType</code></td>
+      <td>
+        enum
+          <ul>
+              <li>&#x27;attention&#x27;</li>
+              <li>&#x27;info&#x27;</li>
+              <li>&#x27;success&#x27;</li>
+          </ul>
+      </td>
+      <td>&#x27;info&#x27;</td>
+      <td>Gives a default left border and header with icon that corresponds to status level</td>
+    </tr>
+    <tr>
+      <td><code>headerText</code></td>
+      <td>
+        string
+      </td>
+      <td></td>
+      <td>Title text displayed at the top of the modal</td>
+    </tr>
+    <tr>
+      <td><code>manager</code></td>
+      <td>
+        shape
+          <ul>
+              <li>register - func</li>
+              <li>unregister - func</li>
+          </ul>
+      </td>
+      <td>ToastManager</td>
+      <td>Manages which toast is shown at a given time</td>
+    </tr>
+    <tr>
+      <td><code>onDismiss</code></td>
+      <td>
+        func
+      </td>
+      <td></td>
+      <td>Called when a toast is dismissed either manually or automatically</td>
+    </tr>
+    <tr>
+      <td><code>onNeverShown</code></td>
+      <td>
+        func
+      </td>
+      <td></td>
+      <td>Called when a toast is &quot;dismissed&quot; without ever being shown</td>
+    </tr>
+    <tr>
+      <td><code>...rest</code></td>
+      <td></td>
+      <td></td>
+      <td>Passthrough props are assigned to the current <code>ToastTemplate</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="toasttemplate-props">ToastTemplate Props</h3>
+<table class="api-table api-table--react">
+  <thead>
+    <tr>
+      <th>Prop</th>
+      <th>Type</th>
+      <th>Default</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="api-table__required"><code>alertType</code> (required)</td>
+      <td>
+        enum
+          <ul>
+              <li>&#x27;attention&#x27;</li>
+              <li>&#x27;info&#x27;</li>
+              <li>&#x27;success&#x27;</li>
+          </ul>
+      </td>
+      <td></td>
+      <td>Sets the icon and border color</td>
+    </tr>
+    <tr>
+      <td><code>action</code></td>
+      <td>
+        shape
+          <ul>
+              <li>onAction - func (required)</li>
+              <li>label - string (required)</li>
+              <li>labelForScreenReader - string</li>
+          </ul>
+      </td>
+      <td></td>
+      <td>Custom action to be displayed under &#x27;Dismiss&#x27;</td>
+    </tr>
+    <tr>
+      <td><code>headerText</code></td>
+      <td>
+        string
+      </td>
+      <td></td>
+      <td>Summarizes the message in the toast</td>
+    </tr>
+    <tr>
+      <td><code>onDismiss</code></td>
+      <td>
+        func
+      </td>
+      <td></td>
+      <td>Callback for toast dismissed</td>
+    </tr>
+    <tr>
+      <td><code>...rest</code></td>
+      <td></td>
+      <td></td>
+      <td>Passthrough props to the root <code>div</code> element that wraps the <code>ToastTemplate</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="toastportal-props">ToastPortal Props</h3>
+<table class="api-table api-table--react">
+  <thead>
+    <tr>
+      <th>Prop</th>
+      <th>Type</th>
+      <th>Default</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>container</code></td>
+      <td>
+        <code>Element</code>
+      </td>
+      <td>document.body</td>
+      <td>Containing element</td>
+    </tr>
+    <tr>
+      <td><code>...rest</code></td>
+      <td></td>
+      <td></td>
+      <td>additional properties are not used</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="html-api">HTML API</h3>
+<table class="api-table api-table--html">
+  <thead>
+      <tr>
+      <th>Class</th>
+      <th>Applies To</th>
+      <th>Description</th>
+      </tr>
+  </thead>
+  <tbody>
+    <tr><td><code>fe_c_toast</code></td><td><code>Toast</code></td><td>Base class required for toast</td></tr>
+    <tr><td><code>fe_c_toast__icon</code></td><td><code>Toast</code> child</td><td>Alert type icon container element</td></tr>
+    <tr><td><code>fe_c_toast__content</code></td><td><code>Toast</code> child</td><td>Container for heading and content</td></tr>
+    <tr><td><code>fe_c_toast__header</code></td><td><code>Toast</code> h1</td><td>Toast heading</td></tr>
+    <tr><td><code>fe_c_toast__actions</code></td><td><code>Toast</code> child</td><td>Container for close and action buttons</td></tr>
+    <tr><td><code>fe_c_toast__dismiss-button</code></td><td><code>Toast</code> button</td><td>Button to trigger dismiss</td></tr>
+    <tr><td><code>fe_c_toast__dismiss-icon</code></td><td><code>Toast</code> <code>IconButton</code></td><td>Close button</td></tr>
+    <tr><td><code>fe_c_toast__action-button</code></td><td><code>Toast</code> button</td><td>Button to trigger action</td></tr>
+    <tr>
+      <td>
+        <ul>
+          <li><code>fe_c_toast--attention</code></li>
+          <li><code>fe_c_toast--info</code></li>
+          <li><code>fe_c_toast--success</code></li>
+        </ul>
+      </td>
+      <td><code>Toast</code></td>
+      <td>Sets the banner to the specified alert type</td>
+    </tr>
+    <tr><td><code>fe_c_toast-portal</code></td><td><code>Toast</code> <code>ToastPortal</code></td><td>Portal containing element</td></tr>
+    <tr><td><code>fe_c_toast-appear</code><td><code>Toast</code></td><td>Applied while animating</td></tr>
+    <tr><td><code>fe_is-fading-slow</code></td><td><code>Toast</code></td><td>Applied while animating</td></tr>
+    <tr><td><code>fe_is-fading-fast</code></td><td><code>Toast</code></td><td>Applied while animating</td></tr>
+  </tbody>
+</table>
+
+      
+
+    
+  </div>
+
+  <script>
+document.addEventListener("DOMContentLoaded", function(event) {
+    if (window.amplitude) {
+        amplitude.getInstance().init('d426be2bbef81471eeac4bca0c061243');
+
+        amplitude.getInstance().logEvent('viewed page', {
+          pageName: 'Toast',
+          pageCategory: 'components'.length > 0
+            ? 'components'
+            : null,
+          forgeVersion: '2.0.0-beta.7',
+          forgeGeneralVersion: /^\d*(?=\.)/.exec('2.0.0-beta.7')
+            ? /^\d*(?=\.)/.exec('2.0.0-beta.7').toString()
+            : null
+        });
+      }
+      else {
+        console.warn("amplitude is not logging events");
+      }
+});
+</script>
+
+
+
+    </div>
+    <!--div class="debug"><pre><code class="language-json">{"id":"9200d6106da8157f76ce7e05b3160418","name":"toast","handle":"toast","label":"Toast","title":"Toast","order":1000000,"isHidden":false,"alias":null,"isEntity":true,"isDoc":true,"isIndex":false,"path":"components/toast","status":null,"content":"<p class=\"p--lead\">Toast floats over page content and displays low-priority messages in a minimally disruptive way. It is self-dismissing and does not require action.</p>\r\n\r\n{{#*inline \"content\"}}\r\n  <strong>You must import this component separately.</strong><br>\r\n  It is not part of Forge Core yet. It may undergo further design/API changes. See the [Extensions page]({{ path '/docs/extensions/forge-extensions'}}) for more info.\r\n{{/inline}}\r\n{{> bannerInfo heading='Forge Extension' }}\r\n\r\n\r\n## Demos\r\n{{demo '@toast'}}\r\n\r\n## Usage\r\n`Toast` appears for several seconds, displays a short message, and then disappears. It’s designed to catch attention without interrupting. It can also include a button for taking action. Users can manually dismiss a toast instantly, and they can hover to keep it visible (a helpful accessibility feature if someone needs more time for reading or uses assistive technology).\r\n\r\n`Toast` is used to inform the user of low-priority events, such as:\r\n * Events outside the user’s current workflow (lab results, system updates)\r\n * Non-interruptive confirmations for actions in the current workflow (successful saves)\r\n\r\nDo not use `Toast` for information that requires immediate action or attention. `Toast` is for low-priority messages where it's OK if the user misses them in that moment.\r\n\r\nUse this scale to help decide your notification's level of interruption:\r\n<div>\r\n![Scale showing spectrum of low-to-high priority interruptions. Toast is low, Banner is medium, and Dialog is high]({{ path '/assets/images/priority_spectrum.png'}})\r\n</div>\r\n\r\n`Toast` uses [Forge color semantics]({{ path '/docs/foundations/color' }}#alert) for its colors and icons.\r\n\r\nDue to the design of `Toast` (visible for a short time and deliberately low on disruption), users might not read all of its content or may miss it completely. Therefore, do not put information in a toast that can't be accessed somewhere else. Consider building a repository for past toast messages if you're concerned about users needing to refer back them.\r\n\r\n## Design\r\n\r\n### Structure\r\n<table class=\"api-table api-table--toast-structure\">\r\n  <thead>\r\n    <tr>\r\n      <th>Element</th>\r\n      <th>Required</th>\r\n      <th>Purpose</th>\r\n    </tr>\r\n  </thead>\r\n  <tbody>\r\n    <tr><td>Indicator Bar</td><td>Yes</td><td>Communicates the type of notification: information, confirmation, or alert</td></tr>\r\n    <tr><td>Icon</td><td>Yes</td><td>Communicates the type of notification: information, confirmation, or alert</td></tr>\r\n    <tr><td>Header</td><td>No</td><td>A word or phrase that summarizes the message</td></tr>\r\n    <tr><td>Message</td><td>Yes</td><td>One or two sentences or pieces of information that describe an event</td></tr>\r\n    <tr><td>Dismiss</td><td>Yes</td><td>Enables manual dismissal</td></tr>\r\n    <tr><td>Action</td><td>No</td><td>Offers an action related to the event</td></tr>\r\n  </tbody>\r\n</table>\r\n\r\n### Visual Language and Design\r\n`Toast` offers 3 message styles (using [Forge color semantics]({{ path '/docs/foundations/color' }}#alert) and icons):\r\n * Error or warning (Attention icon)\r\n * Information (Information icon)\r\n * Success or Confirmation (Success icon)\r\n\r\nThese colors and icons communicate (at a general level) the message type in a way that users can quickly and easily understand. These icons were designed to provide a specific level of visual weight and emphasis. They cannot be replaced with other icons.\r\n\r\n`Toast` includes a drop shadow and border to help separate it from the background.\r\n\r\n### Size\r\n * Fixed width: 375px\r\n * Height depends on the length of toast content; maximum is 105px\r\n * Width of the action button depends on its label text; maximum is 125px\r\n\r\n### Behavior\r\nAnimation and timing is built into `Toast`.\r\n\r\nA toast remains fully visible for 7 seconds before self-dismissal happens. After that, the toast will fade in place over 3 seconds. Users can hover to make the toast fully visible again, giving them more time to read and respond.\r\n\r\nThe Dismiss button or icon is always displayed, allowing users to readily dismiss the toast.\r\nWhen the Dismiss icon/button is clicked, the toast instantly closes and disappears.\r\n\r\nOne action button can be included in the toast. Clicking the button closes the toast and carries out the action. When deciding what actions to offer, make sure that the toast message will display sufficient information for users. Allowing users to take actions without enough information could lead to errors and patient safety issues.\r\n\r\n#### Position\r\nToasts are displayed on the bottom left-hand corner to minimize disruption and blocking of call-to-action buttons or critical information. This position also has close proximity to the Status bar on the bottom of the viewport.\r\n\r\n### Content\r\nThe content of toasts should be minimal and short. The recommended amounts are:\r\n\r\n * Header: 1-3 words, one row\r\n * Message body: 1-2 sentences or rows of information\r\n * Button: 1 word, one row\r\n\r\nDesign your content so that users can quickly scan it. Refer to the [content style guide]({{ path '/docs/guidelines/content-style-guide' }}) for advice on writing concisely and using plain language.\r\n\r\nConsider the purpose of your content, what it needs to communicate to users, and what you want them to do after reading it. For example, a toast could:\r\n * Provide a very short, self-explanatory message that needs no action (e.g., the message \"Your file was successfully uploaded\")\r\n * Provide just enough information about an event that the user can decide whether to engage further now or leave it until later (e.g., a patient's name/date of birth/ID number and the words \"Radiology report\")\r\n\r\n#### Character Truncation\r\nText in the message of the toast can be truncated if viewing the whole message is not necessary (for example, if the message is a preview of lab result data). In this case, the toast's action button should provide a way for the user to view the full message. However, consider whether it would be more helpful and clear to show a complete, deliberately written message instead.\r\n\r\nAvoid truncating the header and button labels, for maximum clarity.\r\n\r\nThis truncation does __not__ automatically add an ellipsis at the end of the truncated content. See the [Implementation](#implementation) section for guidance on adding an indicator for truncated content.\r\n\r\n#### Privacy and Protected Health Information\r\nIf your toast message displays Protected Health Information (PHI) or other sensitive information, consider whether it may be seen by someone who shouldn't have access to that information.\r\n\r\nFor example, in some clinical settings, providers and patients review the patient's chart together on the doctor's monitor during a visit. If a toast appeared during that time, the patient could accidentally see another patient's name, birthdate, results, or other private information in the toast message.\r\n\r\n### Multiple Toasts\r\nToasts are displayed one at a time.\r\n\r\nA displayed toast will __immediately__ self-dismiss and disappear if there is another toast following.\r\n\r\nIf multiple toasts are triggered at the same time or very close to one another, the most recently triggered toast will be displayed.\r\n\r\n## Accessibility\r\n`Toast` includes several built-in features that support accessibility, including:\r\n * Keyboard shortcut (hotkey)\r\n    * If the toast includes an action, users can enter the key combo Ctrl-Shift-1 to fire the action (without needing to use a mouse).\r\n * Screen reader support\r\n    * Screen readers will announce the toast's title and message. If the toast includes an action, the screen reader will also announce \"Press Ctrl-Shift-1 to (action label).\" Use the `labelForScreenReader` prop if needed to provide an alternative action label for screen readers. For example, if the label is \"Details\", then a screen reader would announce \"Press Ctrl-Shift-1 to Details\", which is confusing. Here, `labelForScreenReader` could be set to \"View Details\", and the screen reader would announce \"Press Ctrl-Shift-1 to View Details\" instead.\r\n    * [ARIA](https://www.w3.org/WAI/standards-guidelines/aria/) attributes for screen reader support: [`aria-live`](https://www.w3.org/TR/wai-aria-1.1/#aria-live): `polite`; [`aria-relevant`](https://www.w3.org/TR/wai-aria-1.1/#aria-relevant): `additions`\r\n * Hover to maintain visibility\r\n    * User can hover over a toast to keep it visible for as long as necessary. This is helpful for people who use assistive technology or who need more time for reading (e.g., due to dyslexia, cognitive issues, English as a second language).\r\n\r\n## Implementation\r\n\r\n### One Toast at a Time\r\n`Toast` is displayed for just a short time and only one can display at a time, regardless of how many `Toast` instances are in the React render tree and for how long. This leads to several special considerations when using `Toast`:\r\n * `id` is required and should be unique for every new message. If you use the same id for different messages, you risk a new message not being displayed because it’s mistaken for a previously displayed message.\r\n * Rendering a new `Toast` will force the currently displayed `Toast` to dismiss immediately.\r\n * If several `Toast` instances are rendered in quick succession, some of them may not be displayed at all. This is acceptable because `Toast` shouldn’t be used for critical information and it's OK if the user doesn't see it. You can use the `onNeverShown` callback to detect when this has happened.\r\n\r\n### Message\r\nWhatever is passed in as `children` will be rendered as the toast message, under the heading. This is only to support stylized and structured text. Do not insert images, other non-textual content, or interactive content into toasts.\r\n\r\n`Toast` has intentionally limited space as described [above](#size) so that it’s less disruptive to the workflow. If a message isn't fully visible, however, `Toast` does __not__ show an ellipsis to indicate this. Teams can add this themselves if necessary (one of the uses of structured children). Keep in mind that [truncating multi-line text](https://css-tricks.com/line-clampin/) is harder than [truncating single-line text](https://css-tricks.com/snippets/css/truncate-string-with-ellipsis/).\r\n\r\n## API Tables\r\n### Import From Toast Extension\r\n{{> componentImportMessage}}\r\n\r\n<span class=\"code--small-text\">\r\n```\r\nimport Toast from '@athena/forge-toast/build/components/toast/toast';\r\nimport ToastTemplate from '@athena/forge-toast/build/components/toast-template/toast-template';\r\nimport ToastPortal from '@athena/forge-toast/build/components/toast-portal/toast-portal';\r\n```\r\n</span>\r\n\r\n### Toast Props\r\n<table class=\"api-table api-table--react\">\r\n  <thead>\r\n    <tr>\r\n      <th>Prop</th>\r\n      <th>Type</th>\r\n      <th>Default</th>\r\n      <th>Description</th>\r\n    </tr>\r\n  </thead>\r\n  <tbody>\r\n    <tr>\r\n      <td class=\"api-table__required\">`id` (required)</td>\r\n      <td>\r\n        string\r\n      </td>\r\n      <td></td>\r\n      <td>Identifies individual toasts and differentiates them.\r\nIf two toasts reuse the same id, the second one might not get displayed.</td>\r\n    </tr>\r\n    <tr>\r\n      <td>`action`</td>\r\n      <td>\r\n        shape\r\n          <ul>\r\n              <li>onAction - func (required)</li>\r\n              <li>label - string (required)</li>\r\n          </ul>\r\n      </td>\r\n      <td></td>\r\n      <td>Adds an action button to the toast</td>\r\n    </tr>\r\n    <tr>\r\n      <td>`alertType`</td>\r\n      <td>\r\n        enum\r\n          <ul>\r\n              <li>&#x27;attention&#x27;</li>\r\n              <li>&#x27;info&#x27;</li>\r\n              <li>&#x27;success&#x27;</li>\r\n          </ul>\r\n      </td>\r\n      <td>&#x27;info&#x27;</td>\r\n      <td>Gives a default left border and header with icon that corresponds to status level</td>\r\n    </tr>\r\n    <tr>\r\n      <td>`headerText`</td>\r\n      <td>\r\n        string\r\n      </td>\r\n      <td></td>\r\n      <td>Title text displayed at the top of the modal</td>\r\n    </tr>\r\n    <tr>\r\n      <td>`manager`</td>\r\n      <td>\r\n        shape\r\n          <ul>\r\n              <li>register - func</li>\r\n              <li>unregister - func</li>\r\n          </ul>\r\n      </td>\r\n      <td>ToastManager</td>\r\n      <td>Manages which toast is shown at a given time</td>\r\n    </tr>\r\n    <tr>\r\n      <td>`onDismiss`</td>\r\n      <td>\r\n        func\r\n      </td>\r\n      <td></td>\r\n      <td>Called when a toast is dismissed either manually or automatically</td>\r\n    </tr>\r\n    <tr>\r\n      <td>`onNeverShown`</td>\r\n      <td>\r\n        func\r\n      </td>\r\n      <td></td>\r\n      <td>Called when a toast is &quot;dismissed&quot; without ever being shown</td>\r\n    </tr>\r\n    <tr>\r\n      <td>`...rest`</td>\r\n      <td></td>\r\n      <td></td>\r\n      <td>Passthrough props are assigned to the current `ToastTemplate`</td>\r\n    </tr>\r\n  </tbody>\r\n</table>\r\n\r\n### ToastTemplate Props\r\n<table class=\"api-table api-table--react\">\r\n  <thead>\r\n    <tr>\r\n      <th>Prop</th>\r\n      <th>Type</th>\r\n      <th>Default</th>\r\n      <th>Description</th>\r\n    </tr>\r\n  </thead>\r\n  <tbody>\r\n    <tr>\r\n      <td class=\"api-table__required\">`alertType` (required)</td>\r\n      <td>\r\n        enum\r\n          <ul>\r\n              <li>&#x27;attention&#x27;</li>\r\n              <li>&#x27;info&#x27;</li>\r\n              <li>&#x27;success&#x27;</li>\r\n          </ul>\r\n      </td>\r\n      <td></td>\r\n      <td>Sets the icon and border color</td>\r\n    </tr>\r\n    <tr>\r\n      <td>`action`</td>\r\n      <td>\r\n        shape\r\n          <ul>\r\n              <li>onAction - func (required)</li>\r\n              <li>label - string (required)</li>\r\n              <li>labelForScreenReader - string</li>\r\n          </ul>\r\n      </td>\r\n      <td></td>\r\n      <td>Custom action to be displayed under &#x27;Dismiss&#x27;</td>\r\n    </tr>\r\n    <tr>\r\n      <td>`headerText`</td>\r\n      <td>\r\n        string\r\n      </td>\r\n      <td></td>\r\n      <td>Summarizes the message in the toast</td>\r\n    </tr>\r\n    <tr>\r\n      <td>`onDismiss`</td>\r\n      <td>\r\n        func\r\n      </td>\r\n      <td></td>\r\n      <td>Callback for toast dismissed</td>\r\n    </tr>\r\n    <tr>\r\n      <td>`...rest`</td>\r\n      <td></td>\r\n      <td></td>\r\n      <td>Passthrough props to the root `div` element that wraps the `ToastTemplate`</td>\r\n    </tr>\r\n  </tbody>\r\n</table>\r\n\r\n### ToastPortal Props\r\n<table class=\"api-table api-table--react\">\r\n  <thead>\r\n    <tr>\r\n      <th>Prop</th>\r\n      <th>Type</th>\r\n      <th>Default</th>\r\n      <th>Description</th>\r\n    </tr>\r\n  </thead>\r\n  <tbody>\r\n    <tr>\r\n      <td>`container`</td>\r\n      <td>\r\n        `Element`\r\n      </td>\r\n      <td>document.body</td>\r\n      <td>Containing element</td>\r\n    </tr>\r\n    <tr>\r\n      <td>`...rest`</td>\r\n      <td></td>\r\n      <td></td>\r\n      <td>additional properties are not used</td>\r\n    </tr>\r\n  </tbody>\r\n</table>\r\n\r\n### HTML API\r\n<table class=\"api-table api-table--html\">\r\n  <thead>\r\n      <tr>\r\n      <th>Class</th>\r\n      <th>Applies To</th>\r\n      <th>Description</th>\r\n      </tr>\r\n  </thead>\r\n  <tbody>\r\n    <tr><td>`fe_c_toast`</td><td>`Toast`</td><td>Base class required for toast</td></tr>\r\n    <tr><td>`fe_c_toast__icon`</td><td>`Toast` child</td><td>Alert type icon container element</td></tr>\r\n    <tr><td>`fe_c_toast__content`</td><td>`Toast` child</td><td>Container for heading and content</td></tr>\r\n    <tr><td>`fe_c_toast__header`</td><td>`Toast` h1</td><td>Toast heading</td></tr>\r\n    <tr><td>`fe_c_toast__actions`</td><td>`Toast` child</td><td>Container for close and action buttons</td></tr>\r\n    <tr><td>`fe_c_toast__dismiss-button`</td><td>`Toast` button</td><td>Button to trigger dismiss</td></tr>\r\n    <tr><td>`fe_c_toast__dismiss-icon`</td><td>`Toast` `IconButton`</td><td>Close button</td></tr>\r\n    <tr><td>`fe_c_toast__action-button`</td><td>`Toast` button</td><td>Button to trigger action</td></tr>\r\n    <tr>\r\n      <td>\r\n        <ul>\r\n          <li>`fe_c_toast--attention`</li>\r\n          <li>`fe_c_toast--info`</li>\r\n          <li>`fe_c_toast--success`</li>\r\n        </ul>\r\n      </td>\r\n      <td>`Toast`</td>\r\n      <td>Sets the banner to the specified alert type</td>\r\n    </tr>\r\n    <tr><td>`fe_c_toast-portal`</td><td>`Toast` `ToastPortal`</td><td>Portal containing element</td></tr>\r\n    <tr><td>`fe_c_toast-appear`<td>`Toast`</td><td>Applied while animating</td></tr>\r\n    <tr><td>`fe_is-fading-slow`</td><td>`Toast`</td><td>Applied while animating</td></tr>\r\n    <tr><td>`fe_is-fading-fast`</td><td>`Toast`</td><td>Applied while animating</td></tr>\r\n  </tbody>\r\n</table>\r\n","lang":{"name":"Markdown","mode":"markdown","scope":"source.gfm","color":"#083FA1"},"file":{"root":"C:\\","dir":"C:\\Users\\ctsui\\code\\forge-guide\\docs\\04-components","base":"toast.md","ext":".md","name":"toast","relPath":"04-components\\toast.md","fsName":"toast","path":"C:\\Users\\ctsui\\code\\forge-guide\\docs\\04-components\\toast.md","dirs":["C:\\Users\\ctsui\\code\\forge-guide\\docs\\04-components"],"isHidden":false,"order":1000000,"isFile":true,"isDirectory":false,"stat":{"dev":4102694615,"mode":33206,"nlink":1,"uid":0,"gid":0,"rdev":0,"ino":5348024557871777,"size":16524,"atimeMs":1542641056864.985,"mtimeMs":1542641056866.9895,"ctimeMs":1542821274332.9192,"birthtimeMs":1542641056864.985,"atime":"2018-11-19T15:24:16.865Z","mtime":"2018-11-19T15:24:16.867Z","ctime":"2018-11-21T17:27:54.333Z","birthtime":"2018-11-19T15:24:16.865Z"},"lang":{"name":"Markdown","mode":"markdown","scope":"source.gfm","color":"#083FA1"},"isBinary":false},"context":{"extensions":{"core":{"forge-toast":{"name":"Toast","version":"0.2.2","description":"Toast component for Forge"},"forge-toggle-switch":{"name":"ToggleSwitch","version":"0.1.1","description":"ToggleSwitch component for Forge"}},"community":{"clinicals-forge-extension":{"name":"Clinicals Forge Extension","owner":"Nursing Flowsheets","url":"https://bitbucket.athenahealth.com/projects/CLIFS/repos/clinicals-forge-extension/browse","version":"2.1.1","description":"A forge-extension containing components used by inpatient clinicals"}}},"isComponent":true,"amplitudeCategory":"components"}}</code></pre></div-->
+  </div>
+</div>
+
+
+
+</div>
+
+
+
+
+<script src="../../assets/clipboard.min.js?cachebust=1.2.0"></script>
+
+<script src="../../assets/main.js?cachebust=1.2.0"></script>
+
+<script src="../../assets/amplitude.js?cachebust=1.2.0"></script>
+
+
+
+</body>
+</html>

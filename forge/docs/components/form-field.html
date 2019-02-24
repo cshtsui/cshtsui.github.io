@@ -1,0 +1,1186 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+    window.frctl = {
+        env: 'static'
+    };
+    </script>
+    <script>var cl = document.querySelector('html').classList; cl.remove('no-js'); cl.add('has-js');</script>
+    <link rel="shortcut icon" href="../../favicon_blue.ico" type="image/ico">
+
+<link rel="stylesheet" href="../../assets/css/styles.css?cachebust=1.2.0" type="text/css">
+
+<link rel="stylesheet" href="../../assets/css/prism-atom-dark.css?cachebust=1.2.0" type="text/css">
+
+<link rel="stylesheet" href="../../assets/css/ascetic.css?cachebust=1.2.0" type="text/css">
+
+<link rel="stylesheet" href="../../css/forge.css?cachebust=1.2.0" type="text/css">
+
+
+<title>FormField | athenahealth</title>
+
+</head>
+<body>
+
+
+
+<div class="fg_app">
+  <header class="fg_l_header fg_l_header--alpha">
+  <a class="fg_c_branding" href="../../index.html">
+    <img src="../../assets/images/logo.svg" />
+  </a>
+  <nav class="fg_c_nav-top">
+  <ul class="fg_c_nav-top__list">
+    
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link "
+            href="../guidelines/principles.html"
+            title="Guidelines"
+          >
+            Guidelines
+          </a>
+        </li>
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link "
+            href="../foundations/color.html"
+            title="Foundations"
+          >
+            Foundations
+          </a>
+        </li>
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link  fg_is-active"
+            href="accordion.html"
+            title="Components"
+          >
+            Components
+          </a>
+        </li>
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link "
+            href="../extensions/forge-extensions.html"
+            title="Extensions"
+          >
+            Extensions
+          </a>
+        </li>
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link "
+            href="../resources/release-notes.html"
+            title="Resources"
+          >
+            Resources
+          </a>
+        </li>
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link "
+            href="../resources/downloads.html"
+            title="Resources"
+          >
+            Resources
+          </a>
+        </li>
+      
+    
+  </ul>
+</nav>
+
+
+  <div class="fg_c_nav-version">
+    v2.0.0-beta.7
+  </div>
+</header>
+
+
+  
+
+<div class="fg_l_sidebar" data-role="sidebar">
+  <nav class="fg_c_nav-left">
+  <ul class="fg_c_nav-left__list">
+  
+    
+  
+    
+  
+    
+  
+    
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="accordion.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Accordion</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="banner.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Banner</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="button.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Button</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="card.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Card</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="checkbox.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Checkbox</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="date-input.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>DateInput</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="form.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Form</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href=""
+            
+            class="fg_c_nav-left__link  fg_is-active"
+          >
+            <span>FormField</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="grid.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Grid</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="heading.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Heading</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="icon.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Icon</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="icon-button.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>IconButton</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="input.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Input</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="lightbox.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Lightbox</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="list.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>List</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="loader.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Loader</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="modal.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Modal</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="multi-field.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>MultiField</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="multiselect.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Multiselect</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="paginator.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Paginator</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="radio-group.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>RadioGroup</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="read-only-input.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>ReadOnlyInput</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="redux-form.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>ReduxForm</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="redux-form-field.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>ReduxFormField</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="redux-multi-field.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>ReduxMultiField</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="removable-tag.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>RemovableTag</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="root.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Root</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="select.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Select</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="selection-list.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>SelectionList</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="status-tag.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>StatusTag</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="stepper.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Stepper</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="table.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Table</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="tabs.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Tabs</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="textarea.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Textarea</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="toast.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Toast</span>
+            
+              
+                <span class="fe_f_all"><span class="fe_c_status-tag">EXT</span></span>
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="toggle-switch.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>ToggleSwitch</span>
+            
+              
+            
+              
+                <span class="fe_f_all"><span class="fe_c_status-tag">EXT</span></span>
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="tooltip.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Tooltip</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="typeahead.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Typeahead</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+    
+  
+    
+  
+    
+  
+    
+  
+  </ul>
+</nav>
+
+</div>
+
+<div class="fg_l_main" data-role="main">
+  <div class="fg_doc">
+
+    
+      <nav class="fg_c_nav-page"></nav>
+
+    
+
+    <div class="fg_doc__header">
+      
+        <h1 class="fg_doc__title">FormField</h1>
+      
+    </div>
+    <div class="fg_doc__content">
+      
+
+  <div class="fg_markdown">
+    
+
+      
+      
+
+      
+        <p class="p--lead">FormField wraps a form input in a responsive layout that includes a label, hint text, and space for error messaging.</p>
+
+<h2 id="demos">Demos</h2>
+<div class="fg_c_demos"><div class="fg_c_demos__demo js-demo-9ace0fe00cb74d6cfe5be77aaf665335 ">
+    <div class="fg_c_preview js-resize-preview" style="height: 380px">
+      <iframe height="380" src="../../components/preview/form-login.html" class="fg_c_preview__iframe"></iframe>
+    </div>
+    <div class="fg_c_accordian js-accordian">
+      <button class="fg_c_accordian__button" role="heading">
+        <span class="fg_c_accordian__icon js-icon"></span>
+        <span class="fg_c_accordian__closed-text">Show Code</span>
+        <span class="fg_c_accordian__open-text">Hide Code</span>
+      </button>
+      <div class="fg_c_code-tabs fg_is-hidden js-tabs">
+        <ul class="fg_c_code-tabs__list" role="tablist">
+          <li class="fg_c_code-tabs__tab" role="tab">
+            <a href="#tab-jsx-9ace0fe00cb74d6cfe5be77aaf665335">JSX</a>
+          </li>
+          <li class="fg_c_code-tabs__tab" role="tab">
+            <a href="#tab-html-9ace0fe00cb74d6cfe5be77aaf665335">HTML</a>
+          </li>
+        </ul>
+        <div class="fg_c_code-tabs__panel" id="tab-jsx-9ace0fe00cb74d6cfe5be77aaf665335" role="tabpanel">
+          <button type="button" class="fg_c_button--inverted fg_c_button--copy js-copy-code" data-clipboard-target="#tab-jsx-9ace0fe00cb74d6cfe5be77aaf665335 pre">Copy Code</button>
+          <pre class="fg_c_code-block"><code class="language-jsx"><span class="token keyword">import</span> React<span class="token punctuation">,</span> <span class="token punctuation">{</span> Component <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&#39;react&#39;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span>
+  Form<span class="token punctuation">,</span>
+  FormField
+<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&#39;@athena/forge&#39;</span><span class="token punctuation">;</span>
+<span style='display:none'>empty line</span>
+<span class="token keyword">class</span> <span class="token class-name">FormLogin</span> <span class="token keyword">extends</span> <span class="token class-name">Component</span> <span class="token punctuation">{</span>
+<span style='display:none'>empty line</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">super</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>state <span class="token operator">=</span> <span class="token punctuation">{</span> formValues<span class="token punctuation">:</span> <span class="token string">&#39;&#39;</span> <span class="token punctuation">}</span><span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>handleSubmit <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>handleSubmit<span class="token punctuation">.</span><span class="token function">bind</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span style='display:none'>empty line</span>
+  <span class="token function">handleSubmit</span><span class="token punctuation">(</span>event<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    event<span class="token punctuation">.</span><span class="token function">preventDefault</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">const</span> values <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+    Array<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>forEach<span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span>event<span class="token punctuation">.</span>target<span class="token punctuation">.</span>elements<span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span>el<span class="token punctuation">)</span><span class="token punctuation">{</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>el<span class="token punctuation">.</span>value<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        values<span class="token punctuation">[</span>el<span class="token punctuation">.</span>name<span class="token punctuation">]</span> <span class="token operator">=</span> el<span class="token punctuation">.</span>value<span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState</span><span class="token punctuation">(</span><span class="token punctuation">{</span> formValues<span class="token punctuation">:</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span>values<span class="token punctuation">,</span> <span class="token keyword">null</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span style='display:none'>empty line</span>
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">className</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;u&#95;padding--large<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Form</span> <span class="token attr-name">onSubmit</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>handleSubmit<span class="token punctuation">}</span></span><span class="token punctuation">&gt;</span></span>
+<span style='display:none'>empty line</span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>FormField</span>
+            <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>firstname<span class="token punctuation">&quot;</span></span>
+            <span class="token attr-name">labelText</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>First name<span class="token punctuation">&quot;</span></span>
+          <span class="token punctuation">/&gt;</span></span>
+<span style='display:none'>empty line</span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>FormField</span>
+            <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>lastname<span class="token punctuation">&quot;</span></span>
+            <span class="token attr-name">labelText</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>Last name<span class="token punctuation">&quot;</span></span>
+          <span class="token punctuation">/&gt;</span></span>
+<span style='display:none'>empty line</span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>Form</span><span class="token punctuation">&gt;</span></span>
+<span style='display:none'>empty line</span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">style</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span>
+          boxSizing<span class="token punctuation">:</span> <span class="token string">&#39;border-box&#39;</span><span class="token punctuation">,</span>
+          fontFamily<span class="token punctuation">:</span> <span class="token string">&#39;monospace&#39;</span><span class="token punctuation">,</span>
+          color<span class="token punctuation">:</span> <span class="token string">&#39;dimgray&#39;</span><span class="token punctuation">,</span>
+          border<span class="token punctuation">:</span> <span class="token string">&#39;1px solid gainsboro&#39;</span><span class="token punctuation">,</span>
+          background<span class="token punctuation">:</span> <span class="token string">&#39;whitesmoke&#39;</span><span class="token punctuation">,</span>
+          padding<span class="token punctuation">:</span> <span class="token string">&#39;1rem&#39;</span><span class="token punctuation">,</span>
+          borderRadius<span class="token punctuation">:</span> <span class="token string">&#39;3px&#39;</span><span class="token punctuation">,</span>
+          width<span class="token punctuation">:</span> <span class="token string">&#39;300px&#39;</span><span class="token punctuation">,</span>
+          minHeight<span class="token punctuation">:</span> <span class="token string">&#39;62px&#39;</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">}</span></span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>strong</span><span class="token punctuation">&gt;</span></span><span class="token constant">FORM</span> <span class="token constant">DATA</span><span class="token punctuation">:</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>strong</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span> <span class="token punctuation">/&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>code</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>pre</span><span class="token punctuation">&gt;</span></span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>formValues<span class="token punctuation">}</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>pre</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>code</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span style='display:none'>empty line</span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span style='display:none'>empty line</span>
+<span class="token punctuation">}</span>
+<span style='display:none'>empty line</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> FormLogin<span class="token punctuation">;</span>
+</code></pre>
+        </div>
+        <div class="fg_c_code-tabs__panel" id="tab-html-9ace0fe00cb74d6cfe5be77aaf665335" role="tabpanel">
+          <button type="button" class="fg_c_button--inverted fg_c_button--copy js-copy-code" data-clipboard-target="#tab-html-9ace0fe00cb74d6cfe5be77aaf665335 pre">Copy Code</button>
+          <pre class="fg_c_code-block"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;u&#95;padding--large<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>form</span> <span class="token attr-name">novalidate</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span><span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;form-field<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row fe&#95;l&#95;grid-row--nested<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row&#95;&#95;col fe&#95;l&#95;grid-row&#95;&#95;col--small-12 fe&#95;l&#95;grid-row&#95;&#95;col--medium-3 fe&#95;c&#95;form-field&#95;&#95;label<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>firstname<span class="token punctuation">&quot;</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>firstname-label<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;label<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>First name<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row&#95;&#95;col fe&#95;l&#95;grid-row&#95;&#95;col--small-12 fe&#95;l&#95;grid-row&#95;&#95;col--medium-9 fe&#95;c&#95;form-field&#95;&#95;right<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;form-field&#95;&#95;input-slot<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;input fe&#95;c&#95;form-field&#95;&#95;input<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>text<span class="token punctuation">&quot;</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>firstname<span class="token punctuation">&quot;</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>firstname<span class="token punctuation">&quot;</span></span> <span class="token attr-name">aria-labelledby</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>firstname-label<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;input&#95;&#95;input<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;form-field&#95;&#95;message<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;form-field&#95;&#95;status<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;form-field<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row fe&#95;l&#95;grid-row--nested<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row&#95;&#95;col fe&#95;l&#95;grid-row&#95;&#95;col--small-12 fe&#95;l&#95;grid-row&#95;&#95;col--medium-3 fe&#95;c&#95;form-field&#95;&#95;label<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>lastname<span class="token punctuation">&quot;</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>lastname-label<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;label<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Last name<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row&#95;&#95;col fe&#95;l&#95;grid-row&#95;&#95;col--small-12 fe&#95;l&#95;grid-row&#95;&#95;col--medium-9 fe&#95;c&#95;form-field&#95;&#95;right<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;form-field&#95;&#95;input-slot<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;input fe&#95;c&#95;form-field&#95;&#95;input<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>text<span class="token punctuation">&quot;</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>lastname<span class="token punctuation">&quot;</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>lastname<span class="token punctuation">&quot;</span></span> <span class="token attr-name">aria-labelledby</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>lastname-label<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;input&#95;&#95;input<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;form-field&#95;&#95;message<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;form-field&#95;&#95;status<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;form-field<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row fe&#95;l&#95;grid-row--nested<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row&#95;&#95;col fe&#95;l&#95;grid-row&#95;&#95;col--small-12 fe&#95;l&#95;grid-row&#95;&#95;col--medium-3 fe&#95;c&#95;form-field&#95;&#95;label<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row&#95;&#95;col fe&#95;l&#95;grid-row&#95;&#95;col--small-12 fe&#95;l&#95;grid-row&#95;&#95;col--medium-9 fe&#95;c&#95;form-field&#95;&#95;right<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;form-field&#95;&#95;input-slot<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;button fe&#95;c&#95;button--primary<span class="token punctuation">&quot;</span></span> <span class="token attr-name">aria-disabled</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>false<span class="token punctuation">&quot;</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>submit<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Submit<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;form-field&#95;&#95;message<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;form-field&#95;&#95;status<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>form</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token style-attr language-css"><span class="token attr-name"> <span class="token attr-name">style</span></span><span class="token punctuation">=&quot;</span><span class="token attr-value"><span class="token property">box-sizing</span><span class="token punctuation">:</span>border-box<span class="token punctuation">;</span><span class="token property">font-family</span><span class="token punctuation">:</span>monospace<span class="token punctuation">;</span><span class="token property">color</span><span class="token punctuation">:</span>dimgray<span class="token punctuation">;</span><span class="token property">border</span><span class="token punctuation">:</span>1px solid gainsboro<span class="token punctuation">;</span><span class="token property">background</span><span class="token punctuation">:</span>whitesmoke<span class="token punctuation">;</span><span class="token property">padding</span><span class="token punctuation">:</span>1rem<span class="token punctuation">;</span><span class="token property">border-radius</span><span class="token punctuation">:</span>3px<span class="token punctuation">;</span><span class="token property">width</span><span class="token punctuation">:</span>300px<span class="token punctuation">;</span><span class="token property">min-height</span><span class="token punctuation">:</span>62px</span><span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>strong</span><span class="token punctuation">&gt;</span></span>FORM DATA:<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>strong</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span> <span class="token punctuation">/&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>code</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>pre</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>pre</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>code</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+        </div>
+      </div>
+    </div>
+  </div></div>
+
+<h2 id="usage">Usage</h2>
+<p><div class="fe_f_all fe_u_margin--bottom-large">  <div class="fe_c_banner fe_c_banner--attention notify">    <div class="fe_c_banner__icon">      <svg xmlns="http://www.w3.org/2000/svg" class="fe_c_icon fe_c_icon--attention-solid" viewBox="0 0 25 25">        <title>Attention</title>        <g><g class="fe_c_icon__background"><rect width="25" height="25"></rect></g><g><g><circle cx="12.5" cy="12.5" r="10.6" class="fe_c_icon__icon fe_c_icon__icon--secondary"></circle><g class="fe_c_icon__icon fe_c_icon__icon--invert"><polygon points="13.1 13.6 13.5 7.8 11.5 7.8 11.9 13.6 13.1 13.6"></polygon><path d="M12.5,15a1.1,1.1,0,1,0,1.1,1.1A1.1,1.1,0,0,0,12.5,15Z"></path></g></g></g></g>      </svg>    </div>    <div class="fe_c_banner__items">      <div class="fe_c_banner-item">                <div class="fe_c_banner-item__contents">            <p><a href="redux-form-field.html"><code>ReduxFormField</code></a> provides greater built-in functionality than <code>FormField</code>, including features like validation and state management. If you do not have strong implementation reasons for using <code>FormField</code>, <code>ReduxFormField</code> is recommended instead.</p>
+        </div>      </div>    </div>  </div></div>
+<code>FormField</code> is meant to be used as a child of <a href="form.html"><code>Form</code></a>.</p>
+<p><code>FormField</code> provides a responsive layout for inputs being used in forms. Additionally, <code>FormField</code> bundles a given input with a label, a component for error messages, and a component for informational (hint) text. <code>FormField</code> also provides styling for common cases such as indicating a field is required. Be sure to review these provided conveniences before deciding to construct a form manually.</p>
+<h2 id="design">Design</h2>
+<p>The advantage of <code>FormField</code> is it provides a recommended, out-of-the-box responsive layout. However, the following design points still need attention:</p>
+<h4 id="group-related-form-items">Group related form items</h4>
+<p>If a form asks about two different topics, split the form into separate sets of fields.</p>
+<h4 id="use-labels-that-are-descriptive-concise-and-not-repetitive">Use labels that are descriptive, concise, and not repetitive</h4>
+<p>Labels should describe the information required, without relying on context or memory. They should be short enough to fit without wrapping. For cleanliness, omit punctuation or any words that would appear in all labels. Move repetitive information out of labels and into a heading (e.g., Patient name, Patient address, and Patient phone can become Name, Address, and Phone in a section called &quot;Patient Contact Information&quot;).</p>
+<p>Label text should use sentence case (&quot;Patient name&quot;, not &quot;Patient Name&quot;).</p>
+<p>Do not use an input&#39;s placeholder text instead of a label. This affects accessibility. Labels provide context. When users click into an input field, placeholder text disappears. This is not helpful for users with reading or memory issues who may need a persistent reminder of what the input field is for.</p>
+<h4 id="present-fields-in-a-single-column-layout">Present fields in a single-column layout</h4>
+<p>Multiple columns interrupt the vertical momentum of moving down a form. Rather than requiring users to reorient themselves, keep them in the flow with a single column and a separate row for each field.</p>
+<h4 id="use-logical-sequencing">Use logical sequencing</h4>
+<p>Stick to standard sequences for fields (such as City, State, ZIP Code) and arrange value choices in ascending or descending order for clarity. Also consider usage frequency, and list the most common values first. This guidance can supersede the single column guidance.</p>
+<h4 id="explain-any-input-or-formatting-requirements">Explain any input or formatting requirements</h4>
+<p>If a field requires a specific format, type of input, or syntax, help the user understand what is needed. To avoid invalid entries, try setting the exact instructions as part of the <code>FormField</code>&#39;s hint text or show correctly-formatted placeholder examples in the input. Components that enforce format by default (e.g., <a href="date-input.html"><code>DateInput</code></a>) should be used for those data types whenever possible.</p>
+<h4 id="provide-specific-error-messages">Provide specific error messages</h4>
+<p>Be as specific as possible about error messages. Relate what happened and suggest how to correct the problem.</p>
+<h4 id="validation-behavior">Validation behavior</h4>
+<p>An application often has expectations about what information a user must enter and in what format. Validation tests those expectations, notifies the user of any errors, and blocks form submission until they are resolved. Inputs with an error are called invalid.</p>
+<p>Required fields are the most common type of validation. Required inputs are invalid when empty. However, the error is not highlighted to the user until they interact with the field or try to submit the form, which helps to avoid error fatigue.</p>
+<p>Find more guidance on the <a href="../foundations/form-design.html">Form Design</a> Foundations page.</p>
+<h2 id="implementation">Implementation</h2>
+<p>A <code>FormField</code> is a composition of a number of internal components:</p>
+<ul>
+<li>An <a href="input.html"><code>Input</code></a>. <code>FormField</code> defaults to showing an <code>Input</code> if no component is specified with the <code>inputAs</code> prop.</li>
+<li>A <code>Label</code> for the input.</li>
+<li>An element to contain hint text.</li>
+<li>An element to contain error messages.</li>
+</ul>
+<h3 id="field-widths">Input Field Widths</h3>
+
+<p>Ideally, inputs in a form are only as wide as needed for the content being entered. This cannot be determined for all inputs, so use a mix of the following sizing strategies.</p>
+<h4 id="default-width">Default Width</h4>
+<p>The following input types are sized accordingly by default:</p>
+<table class="api-table api-table--input-widths fg_same-width-as-p-tag">
+  <thead>
+    <tr>
+      <th>Input Type</th>
+      <th>Default Input Width (Medium+ Breakpoint)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="input.html"><code>Input</code></a></td>
+      <td>350px</td>
+    </tr>
+    <tr>
+      <td><a href="textarea.html"><code>Textarea</code></a></td>
+      <td>500px</td>
+    </tr>
+    <tr>
+      <td><a href="select.html"><code>Select</code></a></td>
+      <td>Content-sized (width necessary to accommodate longest option)</td>
+    </tr>
+    <tr>
+      <td><a href="radio-group.html"><code>RadioGroup</code></a></td>
+      <td>350px (in a <code>RadioGroup</code> this translates to the max-width of the radio descriptions)</td>
+    </tr>
+    <tr>
+      <td><a href="checkbox.html"><code>Checkbox</code></a></td>
+      <td>350px (in a <code>Checkbox</code>, this translates to the max-width of the checkbox descriptions)</td>
+    </tr>
+    <tr>
+      <td><a href="date-input.html"><code>DateInput</code></a></td>
+      <td>The exact fixed-size required for a date entry of format &#39;MM-DD-YYYY&#39; and the calendar icon - this width should never be altered</td>
+    </tr>
+    <tr>
+      <td><a href="read-only-input.html"><code>ReadOnlyInput</code></a></td>
+      <td>Full-width of the form</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>On the small breakpoint, inputs will be full-width with labels shifted above the input and error messages always displayed below. The exceptions to this are content-dependent inputs (e.g., <code>Select</code>) or inputs where a size has been set explicitly.</p>
+<h4 id="setting-input-widths-generally">Setting Input Widths Generally</h4>
+<p>When the exact character count of a piece of data is known, inputs should only be as large as needed to enter or display that data. For example, an input that takes two-character U.S. state abbreviations or zip codes should be sized accordingly. All input types can be given an exact width by using <code>Input</code>&#39;s&#39; <code>inputWidth</code> prop which can be set from <code>FormField</code> in the following way:</p>
+<code><pre>&lt;FormField
+  <span class="hljs-attribute">labelText</span>=<span class="hljs-string">"I am an Input component with an inputWidth"</span>
+  <span class="hljs-attribute">inputWidth</span>=<span class="hljs-string">"200px"</span>
+/&gt;</pre></code><p>However, if the field is set wider than the container will allow, the input width is reduced to fit within its <code>FormField</code> (i.e., max-width is 100% of its parent).</p>
+<h3 id="error-messages">Error Messages</h3>
+<p><code>Form</code> error messages are typically the result of validation. Use <a href="redux-form-field.html"><code>ReduxFormField</code></a> instead of <code>FormField</code> to take advantage of Forge’s built-in form validation. <code>FormField</code> allows explicitly set error messages with the <code>error</code> prop. Note that some inputs generate their own error messages based on user interaction (e.g., <a href="date-input.html"><code>DateInput</code></a> will generate an error if the date format is entered incorrectly). <code>FormField</code> will automatically display error messages generated by its input field if the <code>error</code> prop has not been set manually. Use the <code>onErrorChange</code> prop to handle the input’s error message change events.</p>
+<h3 id="hint-text">Hint Text</h3>
+<p>Additional instruction for the <code>FormField</code> can be presented by using the <code>hintText</code> prop. Note that some inputs generate their own hint text based on user interaction (e.g., <code>DateInput</code> displays t-shortcut messages in <code>hintText</code> as they are entered). <code>FormField</code> will automatically display hint text generated by its input field if the <code>hintText</code> prop has not been set manually. Use the <code>onHintTextChange</code> to handle the input&#39;s hint text change events.</p>
+<h3 id="passing-props-to-formfield-children">Passing Props to FormField Children</h3>
+<p>Any props not part of the <code>FormField</code> API are passed through to the wrapped input with the exception of <code>className</code> (see <a href="#styling">Styling FormField and its Children</a>). This allows for setting props of the underlying input from the <code>FormField</code> level, and is also a convenience for those introducing custom components into their forms. It is up to the underlying input component to implement the usage of the passed through prop(s).</p>
+<p><h3 id="styling">Styling FormField and its Children</h3>
+Input widths can be set using dedicated props described in the <a href="#field-widths">Input Field Widths</a> section.</p>
+<p>Other localized styling of Forge forms in this manner is discouraged as a general practice. Doing so defeats the maintainability of user interface patterns and undermines the overall goal of providing consistency to athenaNet user interfaces. However, there may be instances (e.g., legacy integrations or prototyping) where it’s necessary to make some tweaks to the default Forge visuals.</p>
+<p>Passing a class reference to the <code>className</code> prop in <code>FormField</code> applies styles to the root element of the entire field (i.e., the <code>FormFieldLayout</code>). To target a specific child of the <code>FormField</code>, use the class as a part of a CSS selector along with the <code>FormField</code> HTML API to help target the child needing adjustment. Make sure you have the appropriate level of specificity for targeting your chosen element. Forge components have at least two class selectors of specificity.</p>
+<p>For example, the following makes the label of the field uppercase.</p>
+<p>In your styles:</p>
+<code><pre><span class="hljs-selector-class">.fe_f_all</span> <span class="hljs-selector-class">.uppercase</span> <span class="hljs-selector-class">.fe_c_label</span> {
+    <span class="hljs-attribute">text-transform</span>: uppercase;
+}</pre></code><p>In your component render code:</p>
+<code><pre>&lt;FormField <span class="hljs-attribute">className</span>=<span class="hljs-string">"uppercase"</span> <span class="hljs-attribute">labelText</span>=<span class="hljs-string">"Age"</span> /&gt;</pre></code><p>Again, these types of approaches are generally discouraged. Instead, consider working with user experience and/or the Forge team to arrive at consistent, reusable solutions.</p>
+<h2 id="api-tables">API Tables</h2>
+<h3 id="import-formfield-only">Import FormField Only</h3>
+<p><p>Importing individual components can reduce bundle size. <a href="https://athenaconfluence.athenahealth.com/display/UXDS/Forge+Import+for+Better+Tree+Shaking">Learn more</a></p><code>import FormField from &#39;@athena/forge/lib/form-field&#39;;</code></p>
+<h3 id="formfield-props">FormField Props</h3>
+<table class="api-table api-table--react">
+  <thead>
+    <tr>
+      <th>Prop</th>
+      <th>Type</th>
+      <th>Default</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="api-table__required"><code>labelText</code> (required)</td>
+      <td>
+        string
+      </td>
+      <td></td>
+      <td>Text of the label.</td>
+    </tr>
+    <tr>
+      <td><code>className</code></td>
+      <td>
+        string
+      </td>
+      <td></td>
+      <td>Sets the classes on the root element (not the input).</td>
+    </tr>
+    <tr>
+      <td><code>disabled</code></td>
+      <td>
+        bool
+      </td>
+      <td></td>
+      <td>Adds the relevant Forge state class and passes the prop down to the input</td>
+    </tr>
+    <tr>
+      <td><code>error</code></td>
+      <td>
+        string
+      </td>
+      <td></td>
+      <td>Highlights the input when defined (specific string doesn&#x27;t matter)</td>
+    </tr>
+    <tr>
+      <td><code>errorAlwaysBelow</code></td>
+      <td>
+        bool
+      </td>
+      <td></td>
+      <td>Tells the error to always render below the input area instead of based on content-size and breakpoint</td>
+    </tr>
+    <tr>
+      <td><code>hintText</code></td>
+      <td>
+        string
+      </td>
+      <td></td>
+      <td>Inline message displayed adjacent to the input.</td>
+    </tr>
+    <tr>
+      <td><code>id</code></td>
+      <td>
+        string
+      </td>
+      <td></td>
+      <td>Sets the id attribute on the input and htmlFor on the label. Defaults to generated unique value.</td>
+    </tr>
+    <tr>
+      <td><code>inputAs</code></td>
+      <td>
+        oneOfType
+          <ul>
+              <li>func</li>
+              <li>object w/ render func</li>
+          </ul>
+      </td>
+      <td>Input</td>
+      <td>The element type of the input. A React component class or function. Defaults to Input.</td>
+    </tr>
+    <tr>
+      <td><code>inputWidth</code></td>
+      <td>
+        string
+      </td>
+      <td></td>
+      <td>Styling to be applied to input&#39;s width css property. Specifying this will override all other behavior that affects input width.</td>
+    </tr>
+    <tr>
+      <td><code>name</code></td>
+      <td>
+        string
+      </td>
+      <td></td>
+      <td>Sets the name attribute on to the input. Defaults to id.</td>
+    </tr>
+    <tr>
+      <td><code>onErrorChange</code></td>
+      <td>
+        func
+      </td>
+      <td></td>
+      <td>Handles the input reporting a change in its error status or message</td>
+    </tr>
+    <tr>
+      <td><code>onHintTextChange</code></td>
+      <td>
+        func
+      </td>
+      <td></td>
+      <td>Handles the input reporting a change in its hint text message</td>
+    </tr>
+    <tr>
+      <td><code>...rest</code></td>
+      <td></td>
+      <td></td>
+      <td>Passthrough props to the form input element (e.g., <code>&lt;input&gt;</code>, <code>&lt;textarea&gt;</code>, etc.)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="html-api">HTML API</h3>
+<table class="api-table api-table--html">
+  <thead>
+    <tr>
+      <th>Class</th>
+      <th>Applies To</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td><code>fe_c_form-field</code></td><td>Form field</td><td>Base class required for form field</td></tr>
+    <tr><td><code>fe_c_form-field__label</code></td><td>Container for field label</td><td>Base class required for label container</td></tr>
+    <tr><td><code>fe_c_form-field__right</code></td><td>Container for right-side contents</td><td>Base class required for right-side contents</td></tr>
+    <tr><td><code>fe_c_form-field__input-slot</code></td><td>Input slot </td><td>Base class for container for input</td></tr>
+    <tr><td><code>fe_c_form-field__input</code></td><td>Input field&#39;s root element</td><td>Base class applied to the root element of the passed in input</td></tr>
+    <tr><td><code>fe_c_form-field__status</code></td><td>Form field status </td><td>Base class for status indicator</td></tr>
+    <tr><td><code>fe_c_form-field__message</code></td><td>Form field error message</td><td>Base class required for error message</td></tr>
+    <tr><td><code>fe_is-error</code></td><td>Container for input field</td><td>Indicates that the input value is invalid</td></tr>
+    <tr><td><code>[disabled]</code> (attr)</td><td>Input field</td><td>Indicates that the input value can&#39;t currently be edited</td></tr>
+    <tr><td><code>fe_c_form-field__input--large</code></td><td>Input field&#39;s root element</td><td>Sets the input to the large t-shirt size</td></tr>
+  </tbody>
+</table>
+
+      
+
+    
+  </div>
+
+  <script>
+document.addEventListener("DOMContentLoaded", function(event) {
+    if (window.amplitude) {
+        amplitude.getInstance().init('d426be2bbef81471eeac4bca0c061243');
+
+        amplitude.getInstance().logEvent('viewed page', {
+          pageName: 'FormField',
+          pageCategory: 'components'.length > 0
+            ? 'components'
+            : null,
+          forgeVersion: '2.0.0-beta.7',
+          forgeGeneralVersion: /^\d*(?=\.)/.exec('2.0.0-beta.7')
+            ? /^\d*(?=\.)/.exec('2.0.0-beta.7').toString()
+            : null
+        });
+      }
+      else {
+        console.warn("amplitude is not logging events");
+      }
+});
+</script>
+
+
+
+    </div>
+    <!--div class="debug"><pre><code class="language-json">{"id":"714d84c1c6f8518da682e1ede95c125e","name":"form-field","handle":"form-field","label":"Form Field","title":"FormField","order":1000000,"isHidden":false,"alias":null,"isEntity":true,"isDoc":true,"isIndex":false,"path":"components/form-field","status":null,"content":"<p class=\"p--lead\">FormField wraps a form input in a responsive layout that includes a label, hint text, and space for error messaging.</p>\n\n## Demos\n{{demo '@form'}}\n\n## Usage\n{{#> notify}}\n  {{#*inline \"content\"}}\n  <p>[`ReduxFormField`]({{ path '/docs/components/redux-form-field' }}) provides greater built-in functionality than `FormField`, including features like validation and state management. If you do not have strong implementation reasons for using `FormField`, `ReduxFormField` is recommended instead.</p>\n  {{/inline}}\n{{/notify}}\n\n`FormField` is meant to be used as a child of [`Form`]({{ path '/docs/components/form' }}).\n\n`FormField` provides a responsive layout for inputs being used in forms. Additionally, `FormField` bundles a given input with a label, a component for error messages, and a component for informational (hint) text. `FormField` also provides styling for common cases such as indicating a field is required. Be sure to review these provided conveniences before deciding to construct a form manually.\n\n## Design\nThe advantage of `FormField` is it provides a recommended, out-of-the-box responsive layout. However, the following design points still need attention:\n\n#### Group related form items\nIf a form asks about two different topics, split the form into separate sets of fields.\n\n#### Use labels that are descriptive, concise, and not repetitive\nLabels should describe the information required, without relying on context or memory. They should be short enough to fit without wrapping. For cleanliness, omit punctuation or any words that would appear in all labels. Move repetitive information out of labels and into a heading (e.g., Patient name, Patient address, and Patient phone can become Name, Address, and Phone in a section called \"Patient Contact Information\").\n\nLabel text should use sentence case (\"Patient name\", not \"Patient Name\").\n\nDo not use an input's placeholder text instead of a label. This affects accessibility. Labels provide context. When users click into an input field, placeholder text disappears. This is not helpful for users with reading or memory issues who may need a persistent reminder of what the input field is for.\n\n#### Present fields in a single-column layout\nMultiple columns interrupt the vertical momentum of moving down a form. Rather than requiring users to reorient themselves, keep them in the flow with a single column and a separate row for each field.\n\n#### Use logical sequencing\nStick to standard sequences for fields (such as City, State, ZIP Code) and arrange value choices in ascending or descending order for clarity. Also consider usage frequency, and list the most common values first. This guidance can supersede the single column guidance.\n\n#### Explain any input or formatting requirements\nIf a field requires a specific format, type of input, or syntax, help the user understand what is needed. To avoid invalid entries, try setting the exact instructions as part of the `FormField`'s hint text or show correctly-formatted placeholder examples in the input. Components that enforce format by default (e.g., [`DateInput`]({{ path '/docs/components/date-input' }})) should be used for those data types whenever possible.\n\n#### Provide specific error messages\nBe as specific as possible about error messages. Relate what happened and suggest how to correct the problem.\n\n#### Validation behavior\nAn application often has expectations about what information a user must enter and in what format. Validation tests those expectations, notifies the user of any errors, and blocks form submission until they are resolved. Inputs with an error are called invalid.\n\nRequired fields are the most common type of validation. Required inputs are invalid when empty. However, the error is not highlighted to the user until they interact with the field or try to submit the form, which helps to avoid error fatigue.\n\nFind more guidance on the [Form Design]({{ path '/docs/foundations/form-design' }}) Foundations page.\n\n\n## Implementation\nA `FormField` is a composition of a number of internal components:\n* An [`Input`]({{ path '/docs/components/input' }}). `FormField` defaults to showing an `Input` if no component is specified with the `inputAs` prop.\n* A `Label` for the input.\n* An element to contain hint text.\n* An element to contain error messages.\n\n<h3 id=\"field-widths\">Input Field Widths</h3>\n\nIdeally, inputs in a form are only as wide as needed for the content being entered. This cannot be determined for all inputs, so use a mix of the following sizing strategies.\n\n#### Default Width\nThe following input types are sized accordingly by default:\n\n<table class=\"api-table api-table--input-widths fg_same-width-as-p-tag\">\n  <thead>\n    <tr>\n      <th>Input Type</th>\n      <th>Default Input Width (Medium+ Breakpoint)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>[`Input`]({{ path '/docs/components/input' }})</td>\n      <td>350px</td>\n    </tr>\n    <tr>\n      <td>[`Textarea`]({{ path '/docs/components/textarea' }})</td>\n      <td>500px</td>\n    </tr>\n    <tr>\n      <td>[`Select`]({{ path '/docs/components/select' }})</td>\n      <td>Content-sized (width necessary to accommodate longest option)</td>\n    </tr>\n    <tr>\n      <td>[`RadioGroup`]({{ path '/docs/components/radio-group' }})</td>\n      <td>350px (in a `RadioGroup` this translates to the max-width of the radio descriptions)</td>\n    </tr>\n    <tr>\n      <td>[`Checkbox`]({{ path '/docs/components/checkbox' }})</td>\n      <td>350px (in a `Checkbox`, this translates to the max-width of the checkbox descriptions)</td>\n    </tr>\n    <tr>\n      <td>[`DateInput`]({{ path '/docs/components/date-input' }})</td>\n      <td>The exact fixed-size required for a date entry of format 'MM-DD-YYYY' and the calendar icon - this width should never be altered</td>\n    </tr>\n    <tr>\n      <td>[`ReadOnlyInput`]({{ path '/docs/components/read-only-input' }})</td>\n      <td>Full-width of the form</td>\n    </tr>\n  </tbody>\n</table>\n\nOn the small breakpoint, inputs will be full-width with labels shifted above the input and error messages always displayed below. The exceptions to this are content-dependent inputs (e.g., `Select`) or inputs where a size has been set explicitly.\n\n#### Setting Input Widths Generally\nWhen the exact character count of a piece of data is known, inputs should only be as large as needed to enter or display that data. For example, an input that takes two-character U.S. state abbreviations or zip codes should be sized accordingly. All input types can be given an exact width by using `Input`'s' `inputWidth` prop which can be set from `FormField` in the following way:\n\n```\n<FormField\n  labelText=\"I am an Input component with an inputWidth\"\n  inputWidth=\"200px\"\n/>\n```\n\nHowever, if the field is set wider than the container will allow, the input width is reduced to fit within its `FormField` (i.e., max-width is 100% of its parent).\n\n### Error Messages\n`Form` error messages are typically the result of validation. Use [`ReduxFormField`]({{ path '/docs/components/redux-form-field' }}) instead of `FormField` to take advantage of Forge’s built-in form validation. `FormField` allows explicitly set error messages with the `error` prop. Note that some inputs generate their own error messages based on user interaction (e.g., [`DateInput`]({{ path '/docs/components/date-input' }}) will generate an error if the date format is entered incorrectly). `FormField` will automatically display error messages generated by its input field if the `error` prop has not been set manually. Use the `onErrorChange` prop to handle the input’s error message change events.\n\n### Hint Text\nAdditional instruction for the `FormField` can be presented by using the `hintText` prop. Note that some inputs generate their own hint text based on user interaction (e.g., `DateInput` displays t-shortcut messages in `hintText` as they are entered). `FormField` will automatically display hint text generated by its input field if the `hintText` prop has not been set manually. Use the `onHintTextChange` to handle the input's hint text change events.\n\n### Passing Props to FormField Children\nAny props not part of the `FormField` API are passed through to the wrapped input with the exception of `className` (see [Styling FormField and its Children]({{ path '/docs/components/form-field' }}#styling)). This allows for setting props of the underlying input from the `FormField` level, and is also a convenience for those introducing custom components into their forms. It is up to the underlying input component to implement the usage of the passed through prop(s).\n\n<h3 id=\"styling\">Styling FormField and its Children</h3>\nInput widths can be set using dedicated props described in the [Input Field Widths]({{ path '/docs/components/form-field' }}#field-widths) section.\n\nOther localized styling of Forge forms in this manner is discouraged as a general practice. Doing so defeats the maintainability of user interface patterns and undermines the overall goal of providing consistency to athenaNet user interfaces. However, there may be instances (e.g., legacy integrations or prototyping) where it’s necessary to make some tweaks to the default Forge visuals.\n\nPassing a class reference to the `className` prop in `FormField` applies styles to the root element of the entire field (i.e., the `FormFieldLayout`). To target a specific child of the `FormField`, use the class as a part of a CSS selector along with the `FormField` HTML API to help target the child needing adjustment. Make sure you have the appropriate level of specificity for targeting your chosen element. Forge components have at least two class selectors of specificity.\n\nFor example, the following makes the label of the field uppercase.\n\nIn your styles:\n\n```\n.fe_f_all .uppercase .fe_c_label {\n\ttext-transform: uppercase;\n}\n```\n\nIn your component render code:\n```\n<FormField className=\"uppercase\" labelText=\"Age\" />\n```\n\nAgain, these types of approaches are generally discouraged. Instead, consider working with user experience and/or the Forge team to arrive at consistent, reusable solutions.\n\n## API Tables\n### Import FormField Only\n{{> componentImportMessage}}\n`import FormField from '@athena/forge/lib/form-field';`\n\n### FormField Props\n<table class=\"api-table api-table--react\">\n  <thead>\n    <tr>\n      <th>Prop</th>\n      <th>Type</th>\n      <th>Default</th>\n      <th>Description</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td class=\"api-table__required\">`labelText` (required)</td>\n      <td>\n        string\n      </td>\n      <td></td>\n      <td>Text of the label.</td>\n    </tr>\n    <tr>\n      <td>`className`</td>\n      <td>\n        string\n      </td>\n      <td></td>\n      <td>Sets the classes on the root element (not the input).</td>\n    </tr>\n    <tr>\n      <td>`disabled`</td>\n      <td>\n        bool\n      </td>\n      <td></td>\n      <td>Adds the relevant Forge state class and passes the prop down to the input</td>\n    </tr>\n    <tr>\n      <td>`error`</td>\n      <td>\n        string\n      </td>\n      <td></td>\n      <td>Highlights the input when defined (specific string doesn&#x27;t matter)</td>\n    </tr>\n    <tr>\n      <td>`errorAlwaysBelow`</td>\n      <td>\n        bool\n      </td>\n      <td></td>\n      <td>Tells the error to always render below the input area instead of based on content-size and breakpoint</td>\n    </tr>\n    <tr>\n      <td>`hintText`</td>\n      <td>\n        string\n      </td>\n      <td></td>\n      <td>Inline message displayed adjacent to the input.</td>\n    </tr>\n    <tr>\n      <td>`id`</td>\n      <td>\n        string\n      </td>\n      <td></td>\n      <td>Sets the id attribute on the input and htmlFor on the label. Defaults to generated unique value.</td>\n    </tr>\n    <tr>\n      <td>`inputAs`</td>\n      <td>\n        oneOfType\n          <ul>\n              <li>func</li>\n              <li>object w/ render func</li>\n          </ul>\n      </td>\n      <td>Input</td>\n      <td>The element type of the input. A React component class or function. Defaults to Input.</td>\n    </tr>\n    <tr>\n      <td>`inputWidth`</td>\n      <td>\n        string\n      </td>\n      <td></td>\n      <td>Styling to be applied to input's width css property. Specifying this will override all other behavior that affects input width.</td>\n    </tr>\n    <tr>\n      <td>`name`</td>\n      <td>\n        string\n      </td>\n      <td></td>\n      <td>Sets the name attribute on to the input. Defaults to id.</td>\n    </tr>\n    <tr>\n      <td>`onErrorChange`</td>\n      <td>\n        func\n      </td>\n      <td></td>\n      <td>Handles the input reporting a change in its error status or message</td>\n    </tr>\n    <tr>\n      <td>`onHintTextChange`</td>\n      <td>\n        func\n      </td>\n      <td></td>\n      <td>Handles the input reporting a change in its hint text message</td>\n    </tr>\n    <tr>\n      <td>`...rest`</td>\n      <td></td>\n      <td></td>\n      <td>Passthrough props to the form input element (e.g., `<input>`, `<textarea>`, etc.)</td>\n    </tr>\n  </tbody>\n</table>\n\n### HTML API\n<table class=\"api-table api-table--html\">\n  <thead>\n    <tr>\n      <th>Class</th>\n      <th>Applies To</th>\n      <th>Description</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr><td>`fe_c_form-field`</td><td>Form field</td><td>Base class required for form field</td></tr>\n    <tr><td>`fe_c_form-field__label`</td><td>Container for field label</td><td>Base class required for label container</td></tr>\n    <tr><td>`fe_c_form-field__right`</td><td>Container for right-side contents</td><td>Base class required for right-side contents</td></tr>\n    <tr><td>`fe_c_form-field__input-slot`</td><td>Input slot </td><td>Base class for container for input</td></tr>\n    <tr><td>`fe_c_form-field__input`</td><td>Input field's root element</td><td>Base class applied to the root element of the passed in input</td></tr>\n    <tr><td>`fe_c_form-field__status`</td><td>Form field status </td><td>Base class for status indicator</td></tr>\n    <tr><td>`fe_c_form-field__message`</td><td>Form field error message</td><td>Base class required for error message</td></tr>\n    <tr><td>`fe_is-error`</td><td>Container for input field</td><td>Indicates that the input value is invalid</td></tr>\n    <tr><td>`[disabled]` (attr)</td><td>Input field</td><td>Indicates that the input value can't currently be edited</td></tr>\n    <tr><td>`fe_c_form-field__input--large`</td><td>Input field's root element</td><td>Sets the input to the large t-shirt size</td></tr>\n  </tbody>\n</table>\n","lang":{"name":"Markdown","mode":"markdown","scope":"source.gfm","color":"#083FA1"},"file":{"root":"C:\\","dir":"C:\\Users\\ctsui\\code\\forge-guide\\docs\\04-components","base":"form-field.md","ext":".md","name":"form-field","relPath":"04-components\\form-field.md","fsName":"form-field","path":"C:\\Users\\ctsui\\code\\forge-guide\\docs\\04-components\\form-field.md","dirs":["C:\\Users\\ctsui\\code\\forge-guide\\docs\\04-components"],"isHidden":false,"order":1000000,"isFile":true,"isDirectory":false,"stat":{"dev":4102694615,"mode":33206,"nlink":1,"uid":0,"gid":0,"rdev":0,"ino":3659174697524394,"size":14549,"atimeMs":1547561625242.6558,"mtimeMs":1547561625242.6558,"ctimeMs":1547561625242.6558,"birthtimeMs":1528896974625.8545,"atime":"2019-01-15T14:13:45.243Z","mtime":"2019-01-15T14:13:45.243Z","ctime":"2019-01-15T14:13:45.243Z","birthtime":"2018-06-13T13:36:14.626Z"},"lang":{"name":"Markdown","mode":"markdown","scope":"source.gfm","color":"#083FA1"},"isBinary":false},"context":{"extensions":{"core":{"forge-toast":{"name":"Toast","version":"0.2.2","description":"Toast component for Forge"},"forge-toggle-switch":{"name":"ToggleSwitch","version":"0.1.1","description":"ToggleSwitch component for Forge"}},"community":{"clinicals-forge-extension":{"name":"Clinicals Forge Extension","owner":"Nursing Flowsheets","url":"https://bitbucket.athenahealth.com/projects/CLIFS/repos/clinicals-forge-extension/browse","version":"2.1.1","description":"A forge-extension containing components used by inpatient clinicals"}}},"isComponent":true,"amplitudeCategory":"components"}}</code></pre></div-->
+  </div>
+</div>
+
+
+
+</div>
+
+
+
+
+<script src="../../assets/clipboard.min.js?cachebust=1.2.0"></script>
+
+<script src="../../assets/main.js?cachebust=1.2.0"></script>
+
+<script src="../../assets/amplitude.js?cachebust=1.2.0"></script>
+
+
+
+</body>
+</html>

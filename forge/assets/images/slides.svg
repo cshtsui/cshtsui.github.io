@@ -1,0 +1,26 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 36 36" style="enable-background:new 0 0 36 36;" xml:space="preserve">
+<title>Slide deck</title>
+<g>
+	<g >
+		<path style="fill:#F4B400;" d="M7.5,0H22l9,9v24.5c0,1.4-1.1,2.5-2.5,2.5h-21C6.1,36,5,34.9,5,33.5v-31C5,1.1,6.1,0,7.5,0z"/>
+		<path style="fill:#BF360C;fill-opacity:0.2;" d="M5,33c0,1.4,1.1,2.5,2.5,2.5h21c1.4,0,2.5-1.1,2.5-2.5v0.5c0,1.4-1.1,2.5-2.5,2.5h-21C6.1,36,5,34.9,5,33.5
+			V33z"/>
+		<path style="fill:#FFFFFF;fill-opacity:0.2;" d="M7.5,0H22v0.5H7.5C6.1,0.5,5,1.6,5,3V2.5C5,1.1,6.1,0,7.5,0z"/>
+			<linearGradient gradientUnits="userSpaceOnUse" x1="-530.7353" y1="362.14" x2="-530.7353" y2="363.06" gradientTransform="matrix(8.5 0 0 8.5 4538 -3069.5)">
+			<stop offset="0" style="stop-color:#1A237E;stop-opacity:0.2"/>
+			<stop offset="1" style="stop-color:#1A237E;stop-opacity:2.000000e-02"/>
+		</linearGradient>
+		<path style="fill:url(#SVGID_1_);" d="M22.5,8l8.5,8.5V9"/>
+		<path style="fill:#FADA80;" d="M22,0l9,9h-6.5C23.1,9,22,7.9,22,6.5V0z"/>
+		<path style="fill:#F1F1F1;" d="M12.5,16h11c0.8,0,1.5,0.7,1.5,1.5v11c0,0.8-0.7,1.5-1.5,1.5h-11c-0.8,0-1.5-0.7-1.5-1.5v-11
+			C11,16.7,11.7,16,12.5,16z M13,20v6h10v-6H13z"/>
+
+			<radialGradient cx="-575.4661" cy="390.99" r="1.61" gradientTransform="matrix(26 0 0 26 14968 -10164.7002)" gradientUnits="userSpaceOnUse">
+			<stop  offset="0" style="stop-color:#FFFFFF"/>
+			<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0"/>
+		</radialGradient>
+		<path style="fill:url(#SVGID_2_);fill-opacity:0.1;" d="M7.5,0H22l9,9v24.5c0,1.4-1.1,2.5-2.5,2.5h-21C6.1,36,5,34.9,5,33.5v-31C5,1.1,6.1,0,7.5,0z"/>
+	</g>
+</g>
+</svg>

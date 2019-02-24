@@ -1,0 +1,51 @@
+/*
+ * Styling for Forge Guide Specific Demos
+ */
+
+.fg_breakpoint-demo {
+  display: none;
+}
+
+@media print, screen and (min-width: 0) {
+  .fg_breakpoint-demo--small {
+    display: block;
+  }
+}
+
+@media print, screen and (min-width: 640px) {
+  .fg_breakpoint-demo--medium {
+    display: block;
+  }
+}
+
+@media print, screen and (min-width: 1024px) {
+  .fg_breakpoint-demo--large {
+    display: block;
+  }
+}
+
+@media print, screen and (min-width: 1200px) {
+  .fg_breakpoint-demo--xlarge {
+    display: block;
+  }
+}
+
+@media print, screen and (min-width: 1440px) {
+  .fg_breakpoint-demo--xxlarge {
+    display: block;
+  }
+}
+
+.fg_root-demo {
+  display: flex;
+  margin: 16px;
+}
+
+.fg_root-demo__divider {
+  flex: none;
+  align-self: stretch;
+  width: 1px;
+  background: rgb(59, 59, 59);
+  margin: 0 16px;
+}
+

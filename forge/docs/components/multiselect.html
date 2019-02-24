@@ -1,0 +1,1209 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+    window.frctl = {
+        env: 'static'
+    };
+    </script>
+    <script>var cl = document.querySelector('html').classList; cl.remove('no-js'); cl.add('has-js');</script>
+    <link rel="shortcut icon" href="../../favicon_blue.ico" type="image/ico">
+
+<link rel="stylesheet" href="../../assets/css/styles.css?cachebust=1.2.0" type="text/css">
+
+<link rel="stylesheet" href="../../assets/css/prism-atom-dark.css?cachebust=1.2.0" type="text/css">
+
+<link rel="stylesheet" href="../../assets/css/ascetic.css?cachebust=1.2.0" type="text/css">
+
+<link rel="stylesheet" href="../../css/forge.css?cachebust=1.2.0" type="text/css">
+
+
+<title>Multiselect | athenahealth</title>
+
+</head>
+<body>
+
+
+
+<div class="fg_app">
+  <header class="fg_l_header fg_l_header--alpha">
+  <a class="fg_c_branding" href="../../index.html">
+    <img src="../../assets/images/logo.svg" />
+  </a>
+  <nav class="fg_c_nav-top">
+  <ul class="fg_c_nav-top__list">
+    
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link "
+            href="../guidelines/principles.html"
+            title="Guidelines"
+          >
+            Guidelines
+          </a>
+        </li>
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link "
+            href="../foundations/color.html"
+            title="Foundations"
+          >
+            Foundations
+          </a>
+        </li>
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link  fg_is-active"
+            href="accordion.html"
+            title="Components"
+          >
+            Components
+          </a>
+        </li>
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link "
+            href="../extensions/forge-extensions.html"
+            title="Extensions"
+          >
+            Extensions
+          </a>
+        </li>
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link "
+            href="../resources/release-notes.html"
+            title="Resources"
+          >
+            Resources
+          </a>
+        </li>
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link "
+            href="../resources/downloads.html"
+            title="Resources"
+          >
+            Resources
+          </a>
+        </li>
+      
+    
+  </ul>
+</nav>
+
+
+  <div class="fg_c_nav-version">
+    v2.0.0-beta.7
+  </div>
+</header>
+
+
+  
+
+<div class="fg_l_sidebar" data-role="sidebar">
+  <nav class="fg_c_nav-left">
+  <ul class="fg_c_nav-left__list">
+  
+    
+  
+    
+  
+    
+  
+    
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="accordion.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Accordion</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="banner.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Banner</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="button.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Button</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="card.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Card</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="checkbox.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Checkbox</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="date-input.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>DateInput</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="form.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Form</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="form-field.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>FormField</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="grid.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Grid</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="heading.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Heading</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="icon.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Icon</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="icon-button.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>IconButton</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="input.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Input</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="lightbox.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Lightbox</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="list.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>List</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="loader.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Loader</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="modal.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Modal</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="multi-field.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>MultiField</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href=""
+            
+            class="fg_c_nav-left__link  fg_is-active"
+          >
+            <span>Multiselect</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="paginator.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Paginator</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="radio-group.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>RadioGroup</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="read-only-input.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>ReadOnlyInput</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="redux-form.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>ReduxForm</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="redux-form-field.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>ReduxFormField</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="redux-multi-field.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>ReduxMultiField</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="removable-tag.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>RemovableTag</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="root.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Root</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="select.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Select</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="selection-list.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>SelectionList</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="status-tag.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>StatusTag</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="stepper.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Stepper</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="table.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Table</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="tabs.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Tabs</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="textarea.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Textarea</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="toast.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Toast</span>
+            
+              
+                <span class="fe_f_all"><span class="fe_c_status-tag">EXT</span></span>
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="toggle-switch.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>ToggleSwitch</span>
+            
+              
+            
+              
+                <span class="fe_f_all"><span class="fe_c_status-tag">EXT</span></span>
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="tooltip.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Tooltip</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="typeahead.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Typeahead</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+    
+  
+    
+  
+    
+  
+    
+  
+  </ul>
+</nav>
+
+</div>
+
+<div class="fg_l_main" data-role="main">
+  <div class="fg_doc">
+
+    
+      <nav class="fg_c_nav-page"></nav>
+
+    
+
+    <div class="fg_doc__header">
+      
+        <h1 class="fg_doc__title">Multiselect</h1>
+      
+    </div>
+    <div class="fg_doc__content">
+      
+
+  <div class="fg_markdown">
+    
+
+      
+      
+
+      
+        <p class="p--lead">Multiselect allows users to choose one or more options from a dropdown list. Users can type or check off the options.</p>
+
+<h2 id="demos">Demos</h2>
+<div class="fg_c_demos"><div class="fg_c_demos__demo js-demo-50a38ed2568642f31b9cdd5b017d4c43 ">
+    <div class="fg_c_preview js-resize-preview" style="height: 460px">
+      <iframe height="460" src="../../components/preview/multiselect.html" class="fg_c_preview__iframe"></iframe>
+    </div>
+    <div class="fg_c_accordian js-accordian">
+      <button class="fg_c_accordian__button" role="heading">
+        <span class="fg_c_accordian__icon js-icon"></span>
+        <span class="fg_c_accordian__closed-text">Show Code</span>
+        <span class="fg_c_accordian__open-text">Hide Code</span>
+      </button>
+      <div class="fg_c_code-tabs fg_is-hidden js-tabs">
+        <ul class="fg_c_code-tabs__list" role="tablist">
+          <li class="fg_c_code-tabs__tab" role="tab">
+            <a href="#tab-jsx-50a38ed2568642f31b9cdd5b017d4c43">JSX</a>
+          </li>
+          <li class="fg_c_code-tabs__tab" role="tab">
+            <a href="#tab-html-50a38ed2568642f31b9cdd5b017d4c43">HTML</a>
+          </li>
+        </ul>
+        <div class="fg_c_code-tabs__panel" id="tab-jsx-50a38ed2568642f31b9cdd5b017d4c43" role="tabpanel">
+          <button type="button" class="fg_c_button--inverted fg_c_button--copy js-copy-code" data-clipboard-target="#tab-jsx-50a38ed2568642f31b9cdd5b017d4c43 pre">Copy Code</button>
+          <pre class="fg_c_code-block"><code class="language-jsx"><span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">&#39;react&#39;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> createStore<span class="token punctuation">,</span> combineReducers <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&#39;redux&#39;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> reducer <span class="token keyword">as</span> formReducer <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&#39;redux-form&#39;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> Provider <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&#39;react-redux&#39;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> Heading<span class="token punctuation">,</span> Multiselect<span class="token punctuation">,</span> ReduxForm<span class="token punctuation">,</span> ReduxFormField <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&#39;@athena/forge&#39;</span><span class="token punctuation">;</span>
+<span style='display:none'>empty line</span>
+<span class="token keyword">const</span> rootReducer <span class="token operator">=</span> <span class="token function">combineReducers</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  form<span class="token punctuation">:</span> formReducer<span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span style='display:none'>empty line</span>
+<span class="token keyword">const</span> store <span class="token operator">=</span> <span class="token function">createStore</span><span class="token punctuation">(</span>
+  rootReducer
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span style='display:none'>empty line</span>
+<span class="token comment">// List of national payers</span>
+<span class="token comment">// url: <a href="http://share.athenahealth.com/tweety/knowledge%20management/o-helpcurrentint/content/features/eligibility&#95;verification&#95;list&#95;of&#95;payers&#95;a.htm">http://share.athenahealth.com/tweety/knowledge%20management/o-helpcurrentint/content/features/eligibility&#95;verification&#95;list&#95;of&#95;payers&#95;a.htm</a></span>
+<span class="token keyword">const</span> options <span class="token operator">=</span> <span class="token punctuation">[</span> <span class="token string">&#39;1199 National Benefit Fund&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;AARP&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;ACS Benefit Services&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Advantra Freedom&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Aetna&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Aetna Better Health-TX Medicaid&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Aetna Senior Supplemental Insurance&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;AFLAC&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;All Savers Health Plans&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Allegiance Health&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Allied Benefit Systems&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Alternative Insurance Resources&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Ameriben Solutions&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;American Family Insurance&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;American National Insurance Company&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;American Postal Workers Union&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;American Republic&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;American Retirement&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Amerigroup - Americaid&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;AmeriHealth&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;AmeriHealth Administrators&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Assurant Health&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Automated Benefit Solutions&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Auxiant&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Bankers Life&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Benefit Management Incorporation&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Boon Administrative Services&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Boon Chapman&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Capital Administrators&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Caremore Health Plan&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Central States Health and Wellness Funds&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Cepatico Behavioral Health&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Cerner Health Plan&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Champus Tricare For Life&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Champva&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Christian Brothers&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Christian Care&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Cigna&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Colonial Penn&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Constitution Life&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Cooperative Benefit Administrators&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Corporate Benefits Service Inc&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Coventry Healthcare&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Definity Health&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Diversified Administrators&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Employee Benefit Management Services&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Everence&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Farmers Bureau&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;FCE Benefit Administrators&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Federated Mutual Insurance&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;First Health Network&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;FMH Benefit Services&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;GEHA&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Gilsbar&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Globe Life Insurance&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;GMP Employee Trust&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Great-West Healthcare&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Group &amp; Pension Administrators&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;HealthCost&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;HealthPartners&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Healthscope Benefits Inc&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;HealthSmart Benefit Solutions&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Healthspring&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Humana&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Individual Assurance Company&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Key Benefit Administrators&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Lifetime Benefit Solutions&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Lonestar TPA&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Loyal American Medicare Supplement&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Magellan Behavioral&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Mail Handlers Benefit Plan&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Managed Care of America&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Mayo Clinic Management Services Inc.&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;MedBen&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Medicare&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Medico Insurance Company&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Mega Life &amp; Health&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Meritain Health&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;MHNet&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Mutual Health Services&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Mutual of Omaha&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;NALC Health Benefit Plan&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;New Era Life&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Nippon Life Ins Co of America&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Pan American Health Organization&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Passport Health Plan&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Physicians Mutual Insurance&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Premier Health Plan&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Principal Financial Group&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Professional Benefits Admin&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;QuikTrip Health Insurance&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Reserve National Insurance&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;SAMBA&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Secure Health Plans of Georgia&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;SISCO&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Standard Life Insurance&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Star Administrative Services&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;State Farm Insurance&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Stonebridge Life Insurance&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Summit America Insurance&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;The Loomis Company&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;TransactRx&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;TRICARE&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Tufts&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Unicare&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;United American Insurance&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;United Healthcare&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;United Healthcare Student Resources&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;United Medical Resources&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;United Mine Workers of America&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;UnitedHealthOne&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Universal Healthcare&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;USAA Life Insurance Company&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Washington Nationals&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Web TPA&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Wellcare&#39;</span> <span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span style='display:none'>empty line</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">function</span> <span class="token function">PayersDemo</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">className</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;u&#95;padding--large<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Heading</span> <span class="token attr-name">text</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>Add Payers<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Provider</span> <span class="token attr-name">store</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>store<span class="token punctuation">}</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ReduxForm</span> <span class="token attr-name">form</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>redux-form-demo<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ReduxFormField</span>
+            <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>payers<span class="token punctuation">&quot;</span></span>
+            <span class="token attr-name">labelText</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>Payers<span class="token punctuation">&quot;</span></span>
+            <span class="token attr-name">inputAs</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>Multiselect<span class="token punctuation">}</span></span>
+            <span class="token attr-name">options</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>options<span class="token punctuation">}</span></span>
+            <span class="token attr-name">required</span>
+          <span class="token punctuation">/&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ReduxForm</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>Provider</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+        </div>
+        <div class="fg_c_code-tabs__panel" id="tab-html-50a38ed2568642f31b9cdd5b017d4c43" role="tabpanel">
+          <button type="button" class="fg_c_button--inverted fg_c_button--copy js-copy-code" data-clipboard-target="#tab-html-50a38ed2568642f31b9cdd5b017d4c43 pre">Copy Code</button>
+          <pre class="fg_c_code-block"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;u&#95;padding--large<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;heading fe&#95;c&#95;heading--page<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Add Payers<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>form</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>redux-form-demo<span class="token punctuation">&quot;</span></span> <span class="token attr-name">novalidate</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span><span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;form-field<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row fe&#95;l&#95;grid-row--nested<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row&#95;&#95;col fe&#95;l&#95;grid-row&#95;&#95;col--small-12 fe&#95;l&#95;grid-row&#95;&#95;col--medium-3 fe&#95;c&#95;form-field&#95;&#95;label<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>payers<span class="token punctuation">&quot;</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>payers-label<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;label<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Payers<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;label&#95;&#95;required<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span> - Required<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row&#95;&#95;col fe&#95;l&#95;grid-row&#95;&#95;col--small-12 fe&#95;l&#95;grid-row&#95;&#95;col--medium-9 fe&#95;c&#95;form-field&#95;&#95;right<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;form-field&#95;&#95;input-slot<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>css-1q41zez fe&#95;c&#95;multiselect fe&#95;is-required fe&#95;c&#95;form-field&#95;&#95;input<span class="token punctuation">&quot;</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>payers<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>css-0 fe&#95;c&#95;multiselect&#95;&#95;control<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>css-0 fe&#95;c&#95;multiselect&#95;&#95;value-container fe&#95;c&#95;multiselect&#95;&#95;value-container--is-multi<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>css-0 fe&#95;c&#95;multiselect&#95;&#95;placeholder<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>- Type or Select -<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>css-0<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;multiselect&#95;&#95;input<span class="token punctuation">&quot;</span></span><span class="token style-attr language-css"><span class="token attr-name"> <span class="token attr-name">style</span></span><span class="token punctuation">=&quot;</span><span class="token attr-value"><span class="token property">display</span><span class="token punctuation">:</span>inline-block</span><span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>text<span class="token punctuation">&quot;</span></span> <span class="token attr-name">autoCapitalize</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>none<span class="token punctuation">&quot;</span></span> <span class="token attr-name">autoComplete</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>off<span class="token punctuation">&quot;</span></span> <span class="token attr-name">autoCorrect</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>off<span class="token punctuation">&quot;</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>react-select-10-input<span class="token punctuation">&quot;</span></span> <span class="token attr-name">spellcheck</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>false<span class="token punctuation">&quot;</span></span> <span class="token attr-name">tabindex</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>0<span class="token punctuation">&quot;</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span><span class="token punctuation">&quot;</span></span> <span class="token attr-name">aria-autocomplete</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>list<span class="token punctuation">&quot;</span></span> <span class="token attr-name">aria-labelledby</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>payers-label<span class="token punctuation">&quot;</span></span><span class="token style-attr language-css"><span class="token attr-name"> <span class="token attr-name">style</span></span><span class="token punctuation">=&quot;</span><span class="token attr-value"><span class="token property">box-sizing</span><span class="token punctuation">:</span>content-box<span class="token punctuation">;</span><span class="token property">width</span><span class="token punctuation">:</span>1px<span class="token punctuation">;</span><span class="token property">background</span><span class="token punctuation">:</span>0<span class="token punctuation">;</span><span class="token property">border</span><span class="token punctuation">:</span>0<span class="token punctuation">;</span><span class="token property">font-size</span><span class="token punctuation">:</span>inherit<span class="token punctuation">;</span><span class="token property">opacity</span><span class="token punctuation">:</span>1<span class="token punctuation">;</span><span class="token property">outline</span><span class="token punctuation">:</span>0<span class="token punctuation">;</span><span class="token property">padding</span><span class="token punctuation">:</span>0<span class="token punctuation">;</span><span class="token property">color</span><span class="token punctuation">:</span>inherit</span><span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+                                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token style-attr language-css"><span class="token attr-name"> <span class="token attr-name">style</span></span><span class="token punctuation">=&quot;</span><span class="token attr-value"><span class="token property">position</span><span class="token punctuation">:</span>absolute<span class="token punctuation">;</span><span class="token property">top</span><span class="token punctuation">:</span>0<span class="token punctuation">;</span><span class="token property">left</span><span class="token punctuation">:</span>0<span class="token punctuation">;</span><span class="token property">visibility</span><span class="token punctuation">:</span>hidden<span class="token punctuation">;</span><span class="token property">height</span><span class="token punctuation">:</span>0<span class="token punctuation">;</span><span class="token property">overflow</span><span class="token punctuation">:</span>scroll<span class="token punctuation">;</span><span class="token property">white-space</span><span class="token punctuation">:</span>pre</span><span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>css-0 fe&#95;c&#95;multiselect&#95;&#95;indicators<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span> <span class="token attr-name">xmlns</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span><a href="http://www.w3.org/2000/svg">http://www.w3.org/2000/svg</a><span class="token punctuation">&quot;</span></span> <span class="token attr-name">aria-hidden</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>true<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;icon<span class="token punctuation">&quot;</span></span> <span class="token attr-name">viewBox</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>0 0 25 25<span class="token punctuation">&quot;</span></span><span class="token style-attr language-css"><span class="token attr-name"> <span class="token attr-name">style</span></span><span class="token punctuation">=&quot;</span><span class="token attr-value"><span class="token property">height</span><span class="token punctuation">:</span>20<span class="token punctuation">;</span><span class="token property">width</span><span class="token punctuation">:</span>20</span><span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span>Expand<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>
+                                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>g</span><span class="token punctuation">&gt;</span></span>
+                                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>g</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;icon&#95;&#95;background<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                                                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>rect</span> <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>25<span class="token punctuation">&quot;</span></span> <span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>25<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>rect</span><span class="token punctuation">&gt;</span></span>
+                                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>g</span><span class="token punctuation">&gt;</span></span>
+                                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>g</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;icon&#95;&#95;icon fe&#95;c&#95;icon&#95;&#95;icon--primary<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                                                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>polygon</span> <span class="token attr-name">points</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>12.5 16.6 6 10 7 9 12.5 14.4 18 9 19 10 12.5 16.6<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>polygon</span><span class="token punctuation">&gt;</span></span>
+                                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>g</span><span class="token punctuation">&gt;</span></span>
+                                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>g</span><span class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>hidden<span class="token punctuation">&quot;</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>payers<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;form-field&#95;&#95;message<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;form-field&#95;&#95;status<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;form-field<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row fe&#95;l&#95;grid-row--nested<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row&#95;&#95;col fe&#95;l&#95;grid-row&#95;&#95;col--small-12 fe&#95;l&#95;grid-row&#95;&#95;col--medium-3 fe&#95;c&#95;form-field&#95;&#95;label<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row&#95;&#95;col fe&#95;l&#95;grid-row&#95;&#95;col--small-12 fe&#95;l&#95;grid-row&#95;&#95;col--medium-9 fe&#95;c&#95;form-field&#95;&#95;right<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;form-field&#95;&#95;input-slot<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;button fe&#95;c&#95;button--primary<span class="token punctuation">&quot;</span></span> <span class="token attr-name">aria-disabled</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>false<span class="token punctuation">&quot;</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>submit<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Submit<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;form-field&#95;&#95;message<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;form-field&#95;&#95;status<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>form</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+        </div>
+      </div>
+    </div>
+  </div></div>
+
+<h2 id="usage">Usage</h2>
+<p><code>Multiselect</code> is useful when presenting a list of five or more options. It&#39;s similar to <a href="selection-list.html"><code>SelectionList</code></a>, but the option list is hidden by default. This can allow a huge list of options without taking up lots of space on the page.</p>
+<h3 id="selecting-and-deselecting-options">Selecting and deselecting options</h3>
+<p>Users can select options by checking them off or by typing in the selection field. Selected options are appended to a list inside the selection field. To deselect options, users can uncheck them from the option list, click the &quot;x&quot; next to them in the selection field, or delete/backspace in the selection field like deleting text.</p>
+<h3 id="filtering-the-option-list">Filtering the option list</h3>
+<p>Typing in the selection field automatically filters the option list, matching options with the input string anywhere in their text. This is useful for finding specific options in lists (e.g., typing &quot;hyper&quot; to narrow down a large list of diagnoses).</p>
+<p>If the string doesn&#39;t match any options, the option list displays &quot;No results found&quot;.</p>
+<h2 id="design">Design</h2>
+<h3 id="selection-field-height">Selection field height</h3>
+<p>The selection field&#39;s height will expand if the list of selected options runs past one line. This may affect your layout. The height stops expanding at a max of four lines of text. When that is exceeded, a scroll bar will automatically display on the selection field for viewing all of the selected options.</p>
+<h3 id="options">Options</h3>
+<p>User can click anywhere on an option to select or deselect it: checkbox, option text, and any whitespace on the same line. Make your options text only. Do not put clickable elements inside options.</p>
+<p>There is no max length for option text. When selected and added to the selection list, a long text option is automatically truncated to one line of text.</p>
+<h3 id="custom-text">Custom text</h3>
+<p>The selection field&#39;s default placeholder text, &quot;Type or select item(s)&quot;, should be customized to reflect the context. For example, &quot;Type or select patient(s)&quot;, &quot;Type or select medication(s)&quot;.</p>
+<p>The filtering message &quot;No options found&quot; can be customized with the <code>noOptionsMessage</code> prop.</p>
+<p>Form field label text should use sentence case (&quot;Patient name&quot;, not &quot;Patient Name&quot;). Do not use the placeholder text instead of a label.</p>
+<p>Find more guidance on the <a href="../foundations/form-design.html">Form Design</a> Foundations page.</p>
+<h2 id="implementation">Implementation</h2>
+<p><code>Multiselect</code> can be used on its own or as an input in <a href="form-field.html"><code>FormField</code></a> or <a href="redux-form-field.html"><code>ReduxFormField</code></a>.</p>
+<h3 id="value-structure">Value structure</h3>
+<p><code>Multiselect</code> takes as its value an object mapping of option values to boolean values.  If there are three items A, B, and C and you want only B checked, set <code>value</code> (or <code>defaultValue</code> if you are using <code>Multiselect</code> as an <a href="https://reactjs.org/docs/uncontrolled-components.html">uncontrolled component</a>) to</p>
+<code><pre><span class="hljs-string">{</span>
+<span class="hljs-attr">  'A':</span> <span class="hljs-literal">false</span><span class="hljs-string">,</span>
+<span class="hljs-attr">  'B':</span> <span class="hljs-literal">true</span><span class="hljs-string">,</span>
+<span class="hljs-attr">  'C':</span> <span class="hljs-literal">false</span><span class="hljs-string">,</span>
+<span class="hljs-string">}</span></pre></code><p>Alternatively, only selected values are required. You can represent the same value structure with</p>
+<code><pre><span class="hljs-string">{</span>
+<span class="hljs-attr">  'B':</span> <span class="hljs-literal">true</span><span class="hljs-string">,</span>
+<span class="hljs-string">}</span></pre></code><h2 id="api-tables">API Tables</h2>
+<h3 id="import-multiselect-only">Import Multiselect Only</h3>
+<p><p>Importing individual components can reduce bundle size. <a href="https://athenaconfluence.athenahealth.com/display/UXDS/Forge+Import+for+Better+Tree+Shaking">Learn more</a></p><code>import Multiselect from &#39;@athena/forge/lib/multiselect&#39;;</code></p>
+<h3 id="multiselect-props">Multiselect Props</h3>
+<table class="api-table api-table--react">
+  <thead>
+    <tr>
+      <th>Prop</th>
+      <th>Type</th>
+      <th>Default</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="api-table__required"><code>id</code> (required)</td>
+      <td>
+        string
+      </td>
+      <td></td>
+      <td>ID attribute for the input of the multiselect element</td>
+    </tr>
+    <tr>
+      <td><code>aria-describedby</code></td>
+      <td>
+        string
+      </td>
+      <td></td>
+      <td>HTML ID(s) of element(s) that should be used to describe this input (for assistive tech)</td>
+    </tr>
+    <tr>
+      <td><code>aria-label</code></td>
+      <td>
+        string
+      </td>
+      <td></td>
+      <td>Aria label (for assistive tech)</td>
+    </tr>
+    <tr>
+      <td><code>aria-labelledby</code></td>
+      <td>
+        string
+      </td>
+      <td></td>
+      <td>HTML ID of an element that should be used as the label (for assistive tech)</td>
+    </tr>
+    <tr>
+      <td><code>className</code></td>
+      <td>
+        string
+      </td>
+      <td></td>
+      <td>Adds a class to the root element of the component</td>
+    </tr>
+    <tr>
+      <td><code>defaultValue</code></td>
+      <td>
+        objectOf - bool
+      </td>
+      <td></td>
+      <td>Determines the initial set of selected items, but allows them to be updated internally (uncontrolled).</td>
+    </tr>
+    <tr>
+      <td><code>disabled</code></td>
+      <td>
+        bool
+      </td>
+      <td>false</td>
+      <td>Impacts the styling of the multiselect in addition to preventing selection</td>
+    </tr>
+    <tr>
+      <td><code>error</code></td>
+      <td>
+        string
+      </td>
+      <td></td>
+      <td>Highlights the input when defined (specific string doesn&#x27;t matter)</td>
+    </tr>
+    <tr>
+      <td><code>inputWidth</code></td>
+      <td>
+        string
+      </td>
+      <td></td>
+      <td>Styling to be applied to width css property.
+        Specifying this will override all other behavior that affects input width.
+      </td>
+    </tr>
+    <tr>
+      <td><code>ignoreCase</code></td>
+      <td>
+        bool
+      </td>
+      <td>true</td>
+      <td>Whether to perform case-insensitive filtering</td>
+    </tr>
+    <tr>
+      <td><code>matchPos</code></td>
+      <td>
+        enum
+        <ul>
+          <li>&#x27;any&#x27;</li>
+          <li>&#x27;start&#x27;</li>
+        </ul>
+      </td>
+      <td>&#x27;any&#x27;</td>
+      <td>Match the start or entire string when filtering</td>
+    </tr>
+    <tr>
+      <td><code>name</code></td>
+      <td>
+        string
+      </td>
+      <td></td>
+      <td>Name attribute. Defaults to &#x60;id&#x60;</td>
+    </tr>
+    <tr>
+      <td><code>noOptionsMessage</code></td>
+      <td>
+        string
+      </td>
+      <td>&#39;No options found&#39;</td>
+      <td>Text to show when no options are available</td>
+    </tr>
+    <tr>
+      <td><code>onBlur</code></td>
+      <td>
+        func
+      </td>
+      <td></td>
+      <td>Handler function to trigger on blur</td>
+    </tr>
+    <tr>
+      <td><code>onChange</code></td>
+      <td>
+        func
+      </td>
+      <td></td>
+      <td>Handler function to call when value changes</td>
+    </tr>
+    <tr>
+      <td><code>onClose</code></td>
+      <td>
+        func
+      </td>
+      <td></td>
+      <td>Handler function to trigger when menu closes</td>
+    </tr>
+    <tr>
+      <td><code>onFocus</code></td>
+      <td>
+        func
+      </td>
+      <td></td>
+      <td>Handler function to trigger on focus</td>
+    </tr>
+    <tr>
+      <td><code>onInputKeyDown</code></td>
+      <td>
+        func
+      </td>
+      <td></td>
+      <td>Handler function to trigger on key down when typing in input</td>
+    </tr>
+    <tr>
+      <td><code>onOpen</code></td>
+      <td>
+        func
+      </td>
+      <td></td>
+      <td>Handler function to trigger when menu opens</td>
+    </tr>
+    <tr>
+      <td><code>openOnClick</code></td>
+      <td>
+        bool
+      </td>
+      <td>true</td>
+      <td>Open the options menu when the control is clicked</td>
+    </tr>
+    <tr>
+      <td><code>openOnFocus</code></td>
+      <td>
+        bool
+      </td>
+      <td>false</td>
+      <td>Open the options menu when the control gets focus</td>
+    </tr>
+    <tr>
+      <td><code>options</code></td>
+      <td>
+        arrayOf - oneOfType:
+        <ul>
+          <li>string</li>
+          <li>shape:
+            <ul>
+              <li>disabled - bool</li>
+              <li>text - string</li>
+              <li>value - string (required)</li>
+            </ul>
+          </li>
+        </ul>
+      </td>
+      <td></td>
+      <td>Consistent with other selection components, but only string values are supported. If an option is supplied as a string, it&#39;s both the value and the text of the option.</td>
+    </tr>
+    <tr>
+      <td><code>placeholder</code></td>
+      <td>
+        string
+      </td>
+      <td>&#x27;- Type or Select -&#x27;</td>
+      <td>Text shown for the null option. Read the UX Content Guidelines before changing</td>
+    </tr>
+    <tr>
+      <td><code>required</code></td>
+      <td>
+        bool
+      </td>
+      <td></td>
+      <td>Indicates whether multiselect is required</td>
+    </tr>
+    <tr>
+      <td><code>value</code></td>
+      <td>
+        objectOf - bool
+      </td>
+      <td></td>
+      <td>Value attribute of the multiselect element.
+        An object that maps the values of selected options to true
+      </td>
+    </tr>
+    <tr>
+      <td><code>...rest</code></td>
+      <td></td>
+      <td></td>
+      <td>Any additional props are ignored.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="html-api">HTML API</h3>
+<p><table class="api-table api-table--html">
+  <thead>
+      <tr>
+      <th>Class</th>
+      <th>Applies To</th>
+      <th>Description</th>
+      </tr>
+  </thead>
+  <tbody>
+    <tr><td><code>fe_c_multiselect</code></td><td>Multiselect root</td><td>Base class required for multiselect&#39;</td></tr>
+   <tr><td><code>fe_is-error</code></td><td>Multiselect root</td><td>Adds error styling to multiselect</td></tr>
+       <tr><td><code>fe_is-required</code></td><td>Multiselect root</td><td>Adds required styling to multiselect when inside a <code>FormField</code></td></tr>
+  </tbody>
+</table>
+Note that there are many additional classes applied to the internals of <code>fe_c_multiselect</code> by <a href="https://github.com/JedWatson/react-select">react-select</a>.</p>
+
+      
+
+    
+  </div>
+
+  <script>
+document.addEventListener("DOMContentLoaded", function(event) {
+    if (window.amplitude) {
+        amplitude.getInstance().init('d426be2bbef81471eeac4bca0c061243');
+
+        amplitude.getInstance().logEvent('viewed page', {
+          pageName: 'Multiselect',
+          pageCategory: 'components'.length > 0
+            ? 'components'
+            : null,
+          forgeVersion: '2.0.0-beta.7',
+          forgeGeneralVersion: /^\d*(?=\.)/.exec('2.0.0-beta.7')
+            ? /^\d*(?=\.)/.exec('2.0.0-beta.7').toString()
+            : null
+        });
+      }
+      else {
+        console.warn("amplitude is not logging events");
+      }
+});
+</script>
+
+
+
+    </div>
+    <!--div class="debug"><pre><code class="language-json">{"id":"d9021f0a5ca147fddd6a14ddf3f9e159","name":"multiselect","handle":"multiselect","label":"Multiselect","title":"Multiselect","order":1000000,"isHidden":false,"alias":null,"isEntity":true,"isDoc":true,"isIndex":false,"path":"components/multiselect","status":null,"content":"<p class=\"p--lead\">Multiselect allows users to choose one or more options from a dropdown list. Users can type or check off the options.</p>\n\n## Demos\n{{demo '@multiselect'}}\n\n## Usage\n`Multiselect` is useful when presenting a list of five or more options. It's similar to [`SelectionList`]({{path '/docs/components/selection-list'}}), but the option list is hidden by default. This can allow a huge list of options without taking up lots of space on the page.\n\n### Selecting and deselecting options\nUsers can select options by checking them off or by typing in the selection field. Selected options are appended to a list inside the selection field. To deselect options, users can uncheck them from the option list, click the \"x\" next to them in the selection field, or delete/backspace in the selection field like deleting text.\n\n### Filtering the option list\nTyping in the selection field automatically filters the option list, matching options with the input string anywhere in their text. This is useful for finding specific options in lists (e.g., typing \"hyper\" to narrow down a large list of diagnoses).\n\nIf the string doesn't match any options, the option list displays \"No results found\".\n\n## Design\n\n### Selection field height\nThe selection field's height will expand if the list of selected options runs past one line. This may affect your layout. The height stops expanding at a max of four lines of text. When that is exceeded, a scroll bar will automatically display on the selection field for viewing all of the selected options.\n\n### Options\nUser can click anywhere on an option to select or deselect it: checkbox, option text, and any whitespace on the same line. Make your options text only. Do not put clickable elements inside options.\n\nThere is no max length for option text. When selected and added to the selection list, a long text option is automatically truncated to one line of text.\n\n### Custom text\nThe selection field's default placeholder text, \"Type or select item(s)\", should be customized to reflect the context. For example, \"Type or select patient(s)\", \"Type or select medication(s)\".\n\nThe filtering message \"No options found\" can be customized with the `noOptionsMessage` prop.\n\nForm field label text should use sentence case (\"Patient name\", not \"Patient Name\"). Do not use the placeholder text instead of a label.\n\nFind more guidance on the [Form Design]({{ path '/docs/foundations/form-design' }}) Foundations page.\n\n## Implementation\n`Multiselect` can be used on its own or as an input in [`FormField`]({{path '/docs/components/form-field'}}) or [`ReduxFormField`]({{path '/docs/components/redux-form-field'}}).\n\n### Value structure\n`Multiselect` takes as its value an object mapping of option values to boolean values.  If there are three items A, B, and C and you want only B checked, set `value` (or `defaultValue` if you are using `Multiselect` as an [uncontrolled component](https://reactjs.org/docs/uncontrolled-components.html)) to\n```\n{\n  'A': false,\n  'B': true,\n  'C': false,\n}\n```\nAlternatively, only selected values are required. You can represent the same value structure with\n```\n{\n  'B': true,\n}\n```\n\n## API Tables\n### Import Multiselect Only\n{{> componentImportMessage}}\n`import Multiselect from '@athena/forge/lib/multiselect';`\n\n### Multiselect Props\n<table class=\"api-table api-table--react\">\n  <thead>\n    <tr>\n      <th>Prop</th>\n      <th>Type</th>\n      <th>Default</th>\n      <th>Description</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td class=\"api-table__required\">`id` (required)</td>\n      <td>\n        string\n      </td>\n      <td></td>\n      <td>ID attribute for the input of the multiselect element</td>\n    </tr>\n    <tr>\n      <td>`aria-describedby`</td>\n      <td>\n        string\n      </td>\n      <td></td>\n      <td>HTML ID(s) of element(s) that should be used to describe this input (for assistive tech)</td>\n    </tr>\n    <tr>\n      <td>`aria-label`</td>\n      <td>\n        string\n      </td>\n      <td></td>\n      <td>Aria label (for assistive tech)</td>\n    </tr>\n    <tr>\n      <td>`aria-labelledby`</td>\n      <td>\n        string\n      </td>\n      <td></td>\n      <td>HTML ID of an element that should be used as the label (for assistive tech)</td>\n    </tr>\n    <tr>\n      <td>`className`</td>\n      <td>\n        string\n      </td>\n      <td></td>\n      <td>Adds a class to the root element of the component</td>\n    </tr>\n    <tr>\n      <td>`defaultValue`</td>\n      <td>\n        objectOf - bool\n      </td>\n      <td></td>\n      <td>Determines the initial set of selected items, but allows them to be updated internally (uncontrolled).</td>\n    </tr>\n    <tr>\n      <td>`disabled`</td>\n      <td>\n        bool\n      </td>\n      <td>false</td>\n      <td>Impacts the styling of the multiselect in addition to preventing selection</td>\n    </tr>\n    <tr>\n      <td>`error`</td>\n      <td>\n        string\n      </td>\n      <td></td>\n      <td>Highlights the input when defined (specific string doesn&#x27;t matter)</td>\n    </tr>\n    <tr>\n      <td>`inputWidth`</td>\n      <td>\n        string\n      </td>\n      <td></td>\n      <td>Styling to be applied to width css property.\n        Specifying this will override all other behavior that affects input width.\n      </td>\n    </tr>\n    <tr>\n      <td>`ignoreCase`</td>\n      <td>\n        bool\n      </td>\n      <td>true</td>\n      <td>Whether to perform case-insensitive filtering</td>\n    </tr>\n    <tr>\n      <td>`matchPos`</td>\n      <td>\n        enum\n        <ul>\n          <li>&#x27;any&#x27;</li>\n          <li>&#x27;start&#x27;</li>\n        </ul>\n      </td>\n      <td>&#x27;any&#x27;</td>\n      <td>Match the start or entire string when filtering</td>\n    </tr>\n    <tr>\n      <td>`name`</td>\n      <td>\n        string\n      </td>\n      <td></td>\n      <td>Name attribute. Defaults to &#x60;id&#x60;</td>\n    </tr>\n    <tr>\n      <td>`noOptionsMessage`</td>\n      <td>\n        string\n      </td>\n      <td>'No options found'</td>\n      <td>Text to show when no options are available</td>\n    </tr>\n    <tr>\n      <td>`onBlur`</td>\n      <td>\n        func\n      </td>\n      <td></td>\n      <td>Handler function to trigger on blur</td>\n    </tr>\n    <tr>\n      <td>`onChange`</td>\n      <td>\n        func\n      </td>\n      <td></td>\n      <td>Handler function to call when value changes</td>\n    </tr>\n    <tr>\n      <td>`onClose`</td>\n      <td>\n        func\n      </td>\n      <td></td>\n      <td>Handler function to trigger when menu closes</td>\n    </tr>\n    <tr>\n      <td>`onFocus`</td>\n      <td>\n        func\n      </td>\n      <td></td>\n      <td>Handler function to trigger on focus</td>\n    </tr>\n    <tr>\n      <td>`onInputKeyDown`</td>\n      <td>\n        func\n      </td>\n      <td></td>\n      <td>Handler function to trigger on key down when typing in input</td>\n    </tr>\n    <tr>\n      <td>`onOpen`</td>\n      <td>\n        func\n      </td>\n      <td></td>\n      <td>Handler function to trigger when menu opens</td>\n    </tr>\n    <tr>\n      <td>`openOnClick`</td>\n      <td>\n        bool\n      </td>\n      <td>true</td>\n      <td>Open the options menu when the control is clicked</td>\n    </tr>\n    <tr>\n      <td>`openOnFocus`</td>\n      <td>\n        bool\n      </td>\n      <td>false</td>\n      <td>Open the options menu when the control gets focus</td>\n    </tr>\n    <tr>\n      <td>`options`</td>\n      <td>\n        arrayOf - oneOfType:\n        <ul>\n          <li>string</li>\n          <li>shape:\n            <ul>\n              <li>disabled - bool</li>\n              <li>text - string</li>\n              <li>value - string (required)</li>\n            </ul>\n          </li>\n        </ul>\n      </td>\n      <td></td>\n      <td>Consistent with other selection components, but only string values are supported. If an option is supplied as a string, it's both the value and the text of the option.</td>\n    </tr>\n    <tr>\n      <td>`placeholder`</td>\n      <td>\n        string\n      </td>\n      <td>&#x27;- Type or Select -&#x27;</td>\n      <td>Text shown for the null option. Read the UX Content Guidelines before changing</td>\n    </tr>\n    <tr>\n      <td>`required`</td>\n      <td>\n        bool\n      </td>\n      <td></td>\n      <td>Indicates whether multiselect is required</td>\n    </tr>\n    <tr>\n      <td>`value`</td>\n      <td>\n        objectOf - bool\n      </td>\n      <td></td>\n      <td>Value attribute of the multiselect element.\n        An object that maps the values of selected options to true\n      </td>\n    </tr>\n    <tr>\n      <td>`...rest`</td>\n      <td></td>\n      <td></td>\n      <td>Any additional props are ignored.</td>\n    </tr>\n  </tbody>\n</table>\n\n### HTML API\n<table class=\"api-table api-table--html\">\n  <thead>\n      <tr>\n      <th>Class</th>\n      <th>Applies To</th>\n      <th>Description</th>\n      </tr>\n  </thead>\n  <tbody>\n    <tr><td>`fe_c_multiselect`</td><td>Multiselect root</td><td>Base class required for multiselect'</td></tr>\n   <tr><td>`fe_is-error`</td><td>Multiselect root</td><td>Adds error styling to multiselect</td></tr>\n       <tr><td>`fe_is-required`</td><td>Multiselect root</td><td>Adds required styling to multiselect when inside a `FormField`</td></tr>\n  </tbody>\n</table>\nNote that there are many additional classes applied to the internals of `fe_c_multiselect` by [react-select](https://github.com/JedWatson/react-select).\n","lang":{"name":"Markdown","mode":"markdown","scope":"source.gfm","color":"#083FA1"},"file":{"root":"C:\\","dir":"C:\\Users\\ctsui\\code\\forge-guide\\docs\\04-components","base":"multiselect.md","ext":".md","name":"multiselect","relPath":"04-components\\multiselect.md","fsName":"multiselect","path":"C:\\Users\\ctsui\\code\\forge-guide\\docs\\04-components\\multiselect.md","dirs":["C:\\Users\\ctsui\\code\\forge-guide\\docs\\04-components"],"isHidden":false,"order":1000000,"isFile":true,"isDirectory":false,"stat":{"dev":4102694615,"mode":33206,"nlink":1,"uid":0,"gid":0,"rdev":0,"ino":1970324837310020,"size":9367,"atimeMs":1547561625244.6619,"mtimeMs":1547561625244.6619,"ctimeMs":1547561625244.6619,"birthtimeMs":1541785521233.8167,"atime":"2019-01-15T14:13:45.245Z","mtime":"2019-01-15T14:13:45.245Z","ctime":"2019-01-15T14:13:45.245Z","birthtime":"2018-11-09T17:45:21.234Z"},"lang":{"name":"Markdown","mode":"markdown","scope":"source.gfm","color":"#083FA1"},"isBinary":false},"context":{"extensions":{"core":{"forge-toast":{"name":"Toast","version":"0.2.2","description":"Toast component for Forge"},"forge-toggle-switch":{"name":"ToggleSwitch","version":"0.1.1","description":"ToggleSwitch component for Forge"}},"community":{"clinicals-forge-extension":{"name":"Clinicals Forge Extension","owner":"Nursing Flowsheets","url":"https://bitbucket.athenahealth.com/projects/CLIFS/repos/clinicals-forge-extension/browse","version":"2.1.1","description":"A forge-extension containing components used by inpatient clinicals"}}},"isComponent":true,"amplitudeCategory":"components"}}</code></pre></div-->
+  </div>
+</div>
+
+
+
+</div>
+
+
+
+
+<script src="../../assets/clipboard.min.js?cachebust=1.2.0"></script>
+
+<script src="../../assets/main.js?cachebust=1.2.0"></script>
+
+<script src="../../assets/amplitude.js?cachebust=1.2.0"></script>
+
+
+
+</body>
+</html>

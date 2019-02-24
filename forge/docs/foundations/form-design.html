@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+    window.frctl = {
+        env: 'static'
+    };
+    </script>
+    <script>var cl = document.querySelector('html').classList; cl.remove('no-js'); cl.add('has-js');</script>
+    <link rel="shortcut icon" href="../../favicon_blue.ico" type="image/ico">
+
+<link rel="stylesheet" href="../../assets/css/styles.css?cachebust=1.2.0" type="text/css">
+
+<link rel="stylesheet" href="../../assets/css/prism-atom-dark.css?cachebust=1.2.0" type="text/css">
+
+<link rel="stylesheet" href="../../assets/css/ascetic.css?cachebust=1.2.0" type="text/css">
+
+<link rel="stylesheet" href="../../css/forge.css?cachebust=1.2.0" type="text/css">
+
+
+<title>Form Design | athenahealth</title>
+
+</head>
+<body>
+
+
+
+<div class="fg_app">
+  <header class="fg_l_header fg_l_header--alpha">
+  <a class="fg_c_branding" href="../../index.html">
+    <img src="../../assets/images/logo.svg" />
+  </a>
+  <nav class="fg_c_nav-top">
+  <ul class="fg_c_nav-top__list">
+    
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link "
+            href="../guidelines/principles.html"
+            title="Guidelines"
+          >
+            Guidelines
+          </a>
+        </li>
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link  fg_is-active"
+            href="color.html"
+            title="Foundations"
+          >
+            Foundations
+          </a>
+        </li>
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link "
+            href="../components/accordion.html"
+            title="Components"
+          >
+            Components
+          </a>
+        </li>
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link "
+            href="../extensions/forge-extensions.html"
+            title="Extensions"
+          >
+            Extensions
+          </a>
+        </li>
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link "
+            href="../resources/release-notes.html"
+            title="Resources"
+          >
+            Resources
+          </a>
+        </li>
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link "
+            href="../resources/downloads.html"
+            title="Resources"
+          >
+            Resources
+          </a>
+        </li>
+      
+    
+  </ul>
+</nav>
+
+
+  <div class="fg_c_nav-version">
+    v2.0.0-beta.7
+  </div>
+</header>
+
+
+  
+
+<div class="fg_l_sidebar" data-role="sidebar">
+  <nav class="fg_c_nav-left">
+  <ul class="fg_c_nav-left__list">
+  
+    
+  
+    
+  
+    
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="color.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Color</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="typography.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Typography</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="grid.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Grid Foundation</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href=""
+            
+            class="fg_c_nav-left__link  fg_is-active"
+          >
+            <span>Form Design</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="typography-utilities.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Typography Utilities</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="layout-utilities.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Layout Utilities</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  </ul>
+</nav>
+
+</div>
+
+<div class="fg_l_main" data-role="main">
+  <div class="fg_doc">
+
+    
+      <nav class="fg_c_nav-page"></nav>
+
+    
+
+    <div class="fg_doc__header">
+      
+        <h1 class="fg_doc__title">Form Design</h1>
+      
+    </div>
+    <div class="fg_doc__content">
+      
+
+  <div class="fg_markdown">
+    
+
+      
+      
+
+      
+        <p class="p--lead">Forge form design seeks to balance usability, aesthetics, and information display density for enterprise software users.</p>
+
+<p>This page documents the general Forge design direction for forms. Where practical, Forge form components have implemented this guidance for convenience of design and development. The Forge form components are solid starting points and are recommended for most projects involving basic CRUD (create, read, update, delete) functionality (e.g., system administration screens, forms powering report generation, short data entry forms).</p>
+<p>For cases involving exceptionally large numbers of form fields, highly optimized data entry needs, or legacy compatibility requirements, it may be necessary to vary from the implemented components. In these cases, carefully considering the following design, interaction, and usability decisions will help create a user experience compatible with the overall Forge design system.</p>
+<h2 id="general-design-guidelines">General Design Guidelines</h2>
+<p>A form displays a set of related user input fields in a structured way. When designing a form, keep these general guidelines in mind:</p>
+<ul>
+<li>Minimize the size of forms and make sure the inputs are really needed.</li>
+<li>Minimize effort for data entry. For example, build in auto capitalization and auto
+formatting for dates and phone numbers.</li>
+<li>Provide clear labels and instructions to minimize input error.</li>
+<li>Group related inputs into sections and distinguish them visually using typography
+or graphics.</li>
+</ul>
+<p>In general, long forms should be avoided. One exception is data entry workflows where the user simply types in lots of information. A single long form is appropriate for this and makes input easier. A long form is not a good fit for workflows involving complex information or questions, multiple steps, or logic branches where inputs can change depending on what the user entered earlier in the form.</p>
+<p>Introductory text can be included at the top of the form to set context and provide general instruction. However, it doesn’t need to describe what is obvious from looking at the form (e.g., “Complete all required fields and click <strong>Continue</strong>”). See the <a href="../guidelines/content-style-guide.html">Content Style Guide</a> for more information about writing UI copy.</p>
+<h3 id="input-fields">Input Fields</h3>
+<p>A standard form has one user input field per row.</p>
+<div class="fg_image-container">
+  <div style="max-width: 428.66px">
+    <img src="../../assets/images/form-foundation/input-fields-standard-example.png" alt="Screenshot of label and input containing &quot;Content goes here.&quot;">
+  </div>
+</div>
+
+<p>Single input layouts can be customized to have multiple dependent inputs under a single label. These are inputs that are parts of a whole and don’t make sense when separate. Examples of this are:</p>
+<ul>
+<li>Social Security number, broken into three inputs</li>
+<li>Height, broken into two inputs: feet and inches</li>
+<li>Phone number, broken into multiple inputs for area code and number</li>
+</ul>
+<div class="fg_image-container">
+  <div style="max-width: 364.38px">
+    <img src="../../assets/images/form-foundation/input-fields-social-example.png" alt="Screenshot of three inputs with a single label of &quot;Social Security number&quot;">
+  </div>
+</div>
+
+<p>A group of inputs that are independent but closely related can be displayed in a single row with labels on top to make them visually connected. Examples of this include:</p>
+<ul>
+<li>First name, Middle name, Last name</li>
+<li>Date ranges</li>
+<li>City, State, ZIP code</li>
+</ul>
+<div class="fg_image-container">
+  <div style="max-width: 481.59px">
+    <img src="../../assets/images/form-foundation/input-fields-multiple-example.png" alt="Screenshot of three inputs with the following labels in a single row: First name, Middle name, Last name.">
+  </div>
+</div>
+
+<p>A form can contain both single input and multiple input fields. When possible, align left edges of all input fields to establish visual order.</p>
+<p>Labels should be nouns (“First name”) rather than instructions (“Enter first name”). Use sentence case capitalization (“Patient first name”, not “Patient First Name”). Do not put a colon (:) at the end of the label.</p>
+<p>For accessibility reasons, do not use placeholder text instead of a label. Labels are necessary for screen readers. They also provide consistent context. Placeholder text deliberately disappears, which removes that context.</p>
+<h3 id="label-placement">Label Placement</h3>
+<p>Forge supports both top label and side label for form.</p>
+<h4 id="top-label">Top Label</h4>
+<p>Top label is the default design for forms with multiple inputs in a row (see exceptions in “Side Label”). Research shows &quot;Top label&quot; enables quick label/form field pairing and reduces time to complete form. It has added benefits of allowing for long labels, localization, and mobile compatibility.</p>
+<div class="fg_image-container">
+  <div style="max-width: 550px">
+    <img src="../../assets/images/form-foundation/label-placement-top-example.png" alt="Screenshot of various inputs with labels above the input in a single row.">
+  </div>
+</div>
+
+<h4 id="side-label">Side Label</h4>
+<p>Side label is the default design for forms with a single input per row.</p>
+<p>Side label is also used for cases where multiple related inputs are in a string or sentence format.</p>
+<p>The form field designs are responsive. A side label on a single input layout form will change to as top label at small breakpoints, including mobile scenarios.</p>
+<p>Side labels should be left aligned and wrap when the string is too long. Minimize the gap between the label and the input. Use the <code>labelWidth</code> prop in <a href="../components/form-field.html"><code>FormField</code></a> to adjust the amount of space allotted to the label.</p>
+<div class="fg_image-container">
+  <div style="max-width: 486.06px">
+    <img src="../../assets/images/form-foundation/label-placement-side-example.png" alt="Screenshot of various inputs with labels to their left.">
+  </div>
+</div>
+
+<p>Do not mix top and side label input fields in a form.</p>
+<h3 id="action-button">Action Button</h3>
+<p>Action buttons (e.g., Submit, Confirm, Next, Cancel) should be placed at the bottom of the form. Single or multiple action buttons can be used. When multiple buttons are used, the primary action button should be placed on the right. Action buttons should be aligned with the left edge of input fields.
+When there are errors in the form, clicking the action buttons will take users to the first input field with an error.
+Use title case for button text (e.g., “Save Form”, “Submit Data”).</p>
+<div class="fg_image-container">
+  <div style="max-width: 491.91px">
+    <img src="../../assets/images/form-foundation/action-button-example.png" alt="Screenshot of a form with a button that reads &quot;Action Button&quot;.">
+  </div>
+</div>
+
+<h2 id="layout">Layout</h2>
+<h3 id="basic-structure">Basic Structure</h3>
+<p>A basic form should use single column layout by default.</p>
+<p>Research shows that a linear single column form is easier to visually traverse and faster to complete. It is best suited for an interface that requires heavy data entry. The single column structure is also the most usable form structure for mobile interfaces so aligning on this layout has the advantage of reducing effort to create interfaces that simultaneously address desktop and mobile users.</p>
+<p>Single column form can have multiple related fields displayed in a row (see Input fields).</p>
+<h3 id="two-column-forms">Two Column Forms</h3>
+<p>In a desktop application, a two-column layout can be used in exceptional cases, such as:</p>
+<ul>
+<li>Many input fields (&gt;25) all need to be on one screen</li>
+<li>Completion or review of the form requires comparing or referring back to information</li>
+<li>Input fields can be grouped under a header, and sequential order of the groups is not critical</li>
+</ul>
+<p>Overall, use single column layout for forms whenever possible with single or multiple fields per row.</p>
+<h3 id="spacing">Spacing</h3>
+<p>Forge supports two vertical spacing designs for forms to cover the needs of both client- and consumer-facing products.</p>
+<h4 id="default">Default</h4>
+<p>Spacing between <code>FormField</code> rows is 20 pixels. Use default spacing for forms when possible.</p>
+<div class="fg_image-container">
+  <div style="max-width: 499.47px">
+    <img src="../../assets/images/form-foundation/layout-spacing-default.png" alt="Screenshot of text inputs with 20 pixels of vertical and 8 pixels of horizontal space between them.">
+  </div>
+</div>
+
+<h4 id="compact">Compact</h4>
+<p>Spacing between <code>FormField</code> rows is 16 pixels. Use compact spacing only when it is important to display a large quantity of form fields on one screen (for example, in a data entry workflow).</p>
+<div class="fg_image-container">
+  <div style="max-width: 500.15px">
+    <img src="../../assets/images/form-foundation/layout-spacing-compact.png" alt="Screenshot of text inputs with 16 pixels of vertical and 8 pixels of horizontal space between them.">
+  </div>
+</div>
+
+<p>For multiple inputs in a single row, vertical spacing between input fields is 8 pixels.</p>
+<h3 id="input-field-width">Input Field Width</h3>
+<p>In general, making the input fields width match the expected input is important to the usability
+of the form.</p>
+<p>When the character count is unknown, let the inputs use their default widths. For most inputs,
+this is 350px, but there are some exceptions. A <a href="../components/textarea.html"><code>Textarea</code></a> is wider at 500px and select widths
+are determined by the longest piece of content. If the form itself is narrow, the width of the
+form constrains the width of its inputs.</p>
+<p>For multiple inputs in a row with labels on top, the input field should be equal to or wider than
+the form label. The recommended minimum width of an input field is 48 pixels. When setting
+specific widths for inputs, consider how it will look on different screen sizes. Avoid letting the
+inputs wrap on any supported screen size.</p>
+<div class="fg_image-container">
+  <div style="max-width: 520px">
+    <img src="../../assets/images/form-foundation/input-width-do-this-example.png" alt="Screenshot titled &quot;Do this&quot;. There are three inputs each with 8px pixels of space between them.">
+  </div>
+</div>
+
+<div class="fg_image-container">
+  <div style="max-width: 520px">
+    <img src="../../assets/images/form-foundation/input-width-not-this-example.png" alt="Screenshot titled &quot;Not this&quot;. There are three inputs but two of them have extra space between them due to a label being longer than its input.">
+  </div>
+</div>
+
+<h2 id="validation">Validation</h2>
+<h3 id="required-field">Required Field</h3>
+<p>Required input fields are indicated with a vertical blue bar and the text “ - Required” in the
+corresponding label.</p>
+<div class="fg_image-container">
+  <div style="max-width: 485.03px">
+    <img src="../../assets/images/form-foundation/validation-required-example.png" alt="Screenshot of an input with label that reads &quot;Form label - Required&quot;. The input has a blue bar on its left border.">
+  </div>
+</div>
+
+<h3 id="inline-alert">Inline Alert</h3>
+<p>Forge supports alert placement for both top label and side label forms. This guidance applies
+to both top and side label forms.</p>
+<ul>
+<li>Form with a single input field per row: Alert will be placed either under the form field or
+to the right of it, depending on available space.</li>
+<li>Form with multiple inputs in a row: Alert will be placed underneath the fields. When
+multiple alerts are triggered, they should be stacked by their order within the row
+(left to right).</li>
+</ul>
+<div class="fg_image-container">
+  <div style="max-width: 544.5px">
+    <img src="../../assets/images/form-foundation/validation-inline-alert-example.png" alt="Screenshot of three inputs all on the same row. Two inputs have validation erros and their alert message of &quot;Oops! You got somethign wrong.&quot; appears below all inputs.">
+  </div>
+</div>
+
+<h2 id="references">References</h2>
+<p>While writing this guideline, the Forge team referred to the following articles and resources.
+You can also use them to learn more about form design and best practices.</p>
+<p><a href="https://blog.hubspot.com/marketing/one-vs-two-column-form-conversion-test">Disproving Best Practices: The One- vs. Two-Column Form Test</a><br>(Pamela Vaughan, 2018)</p>
+<p><a href="https://www.nngroup.com/articles/web-form-design/">Website Forms Usability: Top 10 Recommendations</a><br>(Nielsen Norman Group, 2016)</p>
+<p><a href="https://www.lukew.com/ff/entry.asp?1502">Web Application Form Design</a><br>(Luke Wroblewski, 2005)</p>
+<p><a href="https://conversionxl.com/research-study/form-field-usability/">Form Field Usability: Should You Use Single or Multi-Column Forms? [Original Research]</a><br>(CXL Institute, 2018)</p>
+<p><a href="https://baymard.com/blog/avoid-multi-column-forms">Form Field Usability: Avoid Multi-Column Layouts</a><br>(Baymard Institute, 2018)</p>
+<p><a href="https://uxplanet.org/designing-more-efficient-forms-structure-inputs-labels-and-actions-e3a47007114f">Designing More Efficient Forms: Structure, Inputs, Labels and Actions</a><br>(Nick Babich of UX Planet, 2016)</p>
+<p><a href="https://blog.prototypr.io/designing-for-a-data-heavy-platform-33cbcc0dbe7a">Designing for a Data-Heavy Platform</a><br>(Tejas Bhatt of Prototypr.IO, 2017)</p>
+<p><a href="https://www.uxmatters.com/mt/archives/2006/07/label-placement-in-forms.php">Label Placement in Forms</a><br>(Matteo Penzo of UXmatters, 2006)</p>
+<p><a href="https://www.formulate.com.au/blog/alignment/">Alignment</a><br>(Formulate Information Design Blog, 2008)</p>
+<p><a href="https://uxdesign.cc/design-better-forms-96fadca0f49c">Design Better Forms</a><br>(Andrew Coyle, 2016)</p>
+<p><a href="https://www.nngroup.com/articles/forms-vs-applications/">Forms vs. Applications</a><br>(Nielsen Norman Group, 2005)</p>
+
+      
+
+    
+  </div>
+
+  <script>
+document.addEventListener("DOMContentLoaded", function(event) {
+    if (window.amplitude) {
+        amplitude.getInstance().init('d426be2bbef81471eeac4bca0c061243');
+
+        amplitude.getInstance().logEvent('viewed page', {
+          pageName: 'Form Design',
+          pageCategory: 'foundations'.length > 0
+            ? 'foundations'
+            : null,
+          forgeVersion: '2.0.0-beta.7',
+          forgeGeneralVersion: /^\d*(?=\.)/.exec('2.0.0-beta.7')
+            ? /^\d*(?=\.)/.exec('2.0.0-beta.7').toString()
+            : null
+        });
+      }
+      else {
+        console.warn("amplitude is not logging events");
+      }
+});
+</script>
+
+
+
+    </div>
+    <!--div class="debug"><pre><code class="language-json">{"id":"b83d7e1f22028c53c60370685c21ac44","name":"form-design","handle":"form-design","label":"Form Design","title":"Form Design","order":4,"isHidden":false,"alias":null,"isEntity":true,"isDoc":true,"isIndex":false,"path":"foundations/form-design","status":null,"content":"\r\n<p class=\"p--lead\">Forge form design seeks to balance usability, aesthetics, and information display density for enterprise software users.</p>\r\n\r\nThis page documents the general Forge design direction for forms. Where practical, Forge form components have implemented this guidance for convenience of design and development. The Forge form components are solid starting points and are recommended for most projects involving basic CRUD (create, read, update, delete) functionality (e.g., system administration screens, forms powering report generation, short data entry forms).\r\n\r\nFor cases involving exceptionally large numbers of form fields, highly optimized data entry needs, or legacy compatibility requirements, it may be necessary to vary from the implemented components. In these cases, carefully considering the following design, interaction, and usability decisions will help create a user experience compatible with the overall Forge design system.\r\n\r\n## General Design Guidelines\r\nA form displays a set of related user input fields in a structured way. When designing a form, keep these general guidelines in mind:\r\n- Minimize the size of forms and make sure the inputs are really needed.\r\n- Minimize effort for data entry. For example, build in auto capitalization and auto\r\nformatting for dates and phone numbers.\r\n- Provide clear labels and instructions to minimize input error.\r\n- Group related inputs into sections and distinguish them visually using typography\r\nor graphics.\r\n\r\nIn general, long forms should be avoided. One exception is data entry workflows where the user simply types in lots of information. A single long form is appropriate for this and makes input easier. A long form is not a good fit for workflows involving complex information or questions, multiple steps, or logic branches where inputs can change depending on what the user entered earlier in the form.\r\n\r\nIntroductory text can be included at the top of the form to set context and provide general instruction. However, it doesn’t need to describe what is obvious from looking at the form (e.g., “Complete all required fields and click __Continue__”). See the [Content Style Guide]({{ path '/docs/guidelines/content-style-guide' }}) for more information about writing UI copy.\r\n\r\n### Input Fields\r\nA standard form has one user input field per row.\r\n\r\n<div class=\"fg_image-container\">\r\n  <div style=\"max-width: 428.66px\">\r\n    ![Screenshot of label and input containing \"Content goes here.\"]({{ path '/assets/images/form-foundation/input-fields-standard-example.png' }})\r\n  </div>\r\n</div>\r\n\r\nSingle input layouts can be customized to have multiple dependent inputs under a single label. These are inputs that are parts of a whole and don’t make sense when separate. Examples of this are:\r\n\r\n- Social Security number, broken into three inputs\r\n- Height, broken into two inputs: feet and inches\r\n- Phone number, broken into multiple inputs for area code and number\r\n\r\n<div class=\"fg_image-container\">\r\n  <div style=\"max-width: 364.38px\">\r\n    ![Screenshot of three inputs with a single label of \"Social Security number\"]({{ path '/assets/images/form-foundation/input-fields-social-example.png' }})\r\n  </div>\r\n</div>\r\n\r\nA group of inputs that are independent but closely related can be displayed in a single row with labels on top to make them visually connected. Examples of this include:\r\n\r\n- First name, Middle name, Last name\r\n- Date ranges\r\n- City, State, ZIP code\r\n\r\n<div class=\"fg_image-container\">\r\n  <div style=\"max-width: 481.59px\">\r\n    ![Screenshot of three inputs with the following labels in a single row: First name, Middle name, Last name.]({{ path '/assets/images/form-foundation/input-fields-multiple-example.png' }})\r\n  </div>\r\n</div>\r\n\r\nA form can contain both single input and multiple input fields. When possible, align left edges of all input fields to establish visual order.\r\n\r\nLabels should be nouns (“First name”) rather than instructions (“Enter first name”). Use sentence case capitalization (“Patient first name”, not “Patient First Name”). Do not put a colon (:) at the end of the label.\r\n\r\nFor accessibility reasons, do not use placeholder text instead of a label. Labels are necessary for screen readers. They also provide consistent context. Placeholder text deliberately disappears, which removes that context.\r\n\r\n### Label Placement\r\n\r\nForge supports both top label and side label for form.\r\n\r\n#### Top Label\r\n\r\nTop label is the default design for forms with multiple inputs in a row (see exceptions in “Side Label”). Research shows \"Top label\" enables quick label/form field pairing and reduces time to complete form. It has added benefits of allowing for long labels, localization, and mobile compatibility.\r\n\r\n<div class=\"fg_image-container\">\r\n  <div style=\"max-width: 550px\">\r\n    ![Screenshot of various inputs with labels above the input in a single row.]({{ path '/assets/images/form-foundation/label-placement-top-example.png' }})\r\n  </div>\r\n</div>\r\n\r\n#### Side Label\r\n\r\nSide label is the default design for forms with a single input per row.\r\n\r\nSide label is also used for cases where multiple related inputs are in a string or sentence format.\r\n\r\nThe form field designs are responsive. A side label on a single input layout form will change to as top label at small breakpoints, including mobile scenarios.\r\n\r\nSide labels should be left aligned and wrap when the string is too long. Minimize the gap between the label and the input. Use the `labelWidth` prop in [`FormField`]({{ path '/docs/components/form-field' }}) to adjust the amount of space allotted to the label.\r\n\r\n<div class=\"fg_image-container\">\r\n  <div style=\"max-width: 486.06px\">\r\n    ![Screenshot of various inputs with labels to their left.]({{ path '/assets/images/form-foundation/label-placement-side-example.png' }})\r\n  </div>\r\n</div>\r\n\r\nDo not mix top and side label input fields in a form.\r\n\r\n### Action Button\r\n\r\nAction buttons (e.g., Submit, Confirm, Next, Cancel) should be placed at the bottom of the form. Single or multiple action buttons can be used. When multiple buttons are used, the primary action button should be placed on the right. Action buttons should be aligned with the left edge of input fields.\r\nWhen there are errors in the form, clicking the action buttons will take users to the first input field with an error.\r\nUse title case for button text (e.g., “Save Form”, “Submit Data”).\r\n\r\n<div class=\"fg_image-container\">\r\n  <div style=\"max-width: 491.91px\">\r\n    ![Screenshot of a form with a button that reads \"Action Button\".]({{ path '/assets/images/form-foundation/action-button-example.png' }})\r\n  </div>\r\n</div>\r\n\r\n## Layout\r\n\r\n### Basic Structure\r\nA basic form should use single column layout by default.\r\n\r\nResearch shows that a linear single column form is easier to visually traverse and faster to complete. It is best suited for an interface that requires heavy data entry. The single column structure is also the most usable form structure for mobile interfaces so aligning on this layout has the advantage of reducing effort to create interfaces that simultaneously address desktop and mobile users.\r\n\r\nSingle column form can have multiple related fields displayed in a row (see Input fields).\r\n\r\n### Two Column Forms\r\nIn a desktop application, a two-column layout can be used in exceptional cases, such as:\r\n\r\n- Many input fields (>25) all need to be on one screen\r\n- Completion or review of the form requires comparing or referring back to information\r\n- Input fields can be grouped under a header, and sequential order of the groups is not critical\r\n\r\nOverall, use single column layout for forms whenever possible with single or multiple fields per row.\r\n\r\n### Spacing\r\nForge supports two vertical spacing designs for forms to cover the needs of both client- and consumer-facing products.\r\n\r\n#### Default\r\nSpacing between `FormField` rows is 20 pixels. Use default spacing for forms when possible.\r\n\r\n<div class=\"fg_image-container\">\r\n  <div style=\"max-width: 499.47px\">\r\n    ![Screenshot of text inputs with 20 pixels of vertical and 8 pixels of horizontal space between them.]({{ path '/assets/images/form-foundation/layout-spacing-default.png' }})\r\n  </div>\r\n</div>\r\n\r\n#### Compact\r\nSpacing between `FormField` rows is 16 pixels. Use compact spacing only when it is important to display a large quantity of form fields on one screen (for example, in a data entry workflow).\r\n\r\n<div class=\"fg_image-container\">\r\n  <div style=\"max-width: 500.15px\">\r\n    ![Screenshot of text inputs with 16 pixels of vertical and 8 pixels of horizontal space between them.]({{ path '/assets/images/form-foundation/layout-spacing-compact.png' }})\r\n  </div>\r\n</div>\r\n\r\nFor multiple inputs in a single row, vertical spacing between input fields is 8 pixels.\r\n\r\n### Input Field Width\r\nIn general, making the input fields width match the expected input is important to the usability\r\nof the form.\r\n\r\nWhen the character count is unknown, let the inputs use their default widths. For most inputs,\r\nthis is 350px, but there are some exceptions. A [`Textarea`]({{ path '/docs/components/textarea' }}) is wider at 500px and select widths\r\nare determined by the longest piece of content. If the form itself is narrow, the width of the\r\nform constrains the width of its inputs.\r\n\r\nFor multiple inputs in a row with labels on top, the input field should be equal to or wider than\r\nthe form label. The recommended minimum width of an input field is 48 pixels. When setting\r\nspecific widths for inputs, consider how it will look on different screen sizes. Avoid letting the\r\ninputs wrap on any supported screen size.\r\n\r\n<div class=\"fg_image-container\">\r\n  <div style=\"max-width: 520px\">\r\n    ![Screenshot titled \"Do this\". There are three inputs each with 8px pixels of space between them.]({{ path '/assets/images/form-foundation/input-width-do-this-example.png' }})\r\n  </div>\r\n</div>\r\n\r\n<div class=\"fg_image-container\">\r\n  <div style=\"max-width: 520px\">\r\n    ![Screenshot titled \"Not this\". There are three inputs but two of them have extra space between them due to a label being longer than its input.]({{ path '/assets/images/form-foundation/input-width-not-this-example.png' }})\r\n  </div>\r\n</div>\r\n\r\n## Validation\r\n### Required Field\r\nRequired input fields are indicated with a vertical blue bar and the text “ - Required” in the\r\ncorresponding label.\r\n\r\n<div class=\"fg_image-container\">\r\n  <div style=\"max-width: 485.03px\">\r\n    ![Screenshot of an input with label that reads \"Form label - Required\". The input has a blue bar on its left border.]({{ path '/assets/images/form-foundation/validation-required-example.png' }})\r\n  </div>\r\n</div>\r\n\r\n### Inline Alert\r\nForge supports alert placement for both top label and side label forms. This guidance applies\r\nto both top and side label forms.\r\n\r\n- Form with a single input field per row: Alert will be placed either under the form field or\r\n to the right of it, depending on available space.\r\n- Form with multiple inputs in a row: Alert will be placed underneath the fields. When\r\n multiple alerts are triggered, they should be stacked by their order within the row\r\n (left to right).\r\n\r\n<div class=\"fg_image-container\">\r\n  <div style=\"max-width: 544.5px\">\r\n    ![Screenshot of three inputs all on the same row. Two inputs have validation erros and their alert message of \"Oops! You got somethign wrong.\" appears below all inputs.]({{ path '/assets/images/form-foundation/validation-inline-alert-example.png' }})\r\n  </div>\r\n</div>\r\n\r\n## References\r\nWhile writing this guideline, the Forge team referred to the following articles and resources.\r\nYou can also use them to learn more about form design and best practices.\r\n\r\n[Disproving Best Practices: The One- vs. Two-Column Form Test](https://blog.hubspot.com/marketing/one-vs-two-column-form-conversion-test)  \r\n(Pamela Vaughan, 2018)\r\n\r\n[Website Forms Usability: Top 10 Recommendations](https://www.nngroup.com/articles/web-form-design/)  \r\n(Nielsen Norman Group, 2016)\r\n\r\n[Web Application Form Design](https://www.lukew.com/ff/entry.asp?1502)  \r\n(Luke Wroblewski, 2005)\r\n\r\n[Form Field Usability: Should You Use Single or Multi-Column Forms? [Original Research]](https://conversionxl.com/research-study/form-field-usability/)  \r\n(CXL Institute, 2018)\r\n\r\n[Form Field Usability: Avoid Multi-Column Layouts](https://baymard.com/blog/avoid-multi-column-forms)  \r\n(Baymard Institute, 2018)\r\n\r\n[Designing More Efficient Forms: Structure, Inputs, Labels and Actions](https://uxplanet.org/designing-more-efficient-forms-structure-inputs-labels-and-actions-e3a47007114f)  \r\n(Nick Babich of UX Planet, 2016)\r\n\r\n[Designing for a Data-Heavy Platform](https://blog.prototypr.io/designing-for-a-data-heavy-platform-33cbcc0dbe7a)  \r\n(Tejas Bhatt of Prototypr.IO, 2017)\r\n\r\n[Label Placement in Forms](https://www.uxmatters.com/mt/archives/2006/07/label-placement-in-forms.php)  \r\n(Matteo Penzo of UXmatters, 2006)\r\n\r\n[Alignment](https://www.formulate.com.au/blog/alignment/)  \r\n(Formulate Information Design Blog, 2008)\r\n\r\n[Design Better Forms](https://uxdesign.cc/design-better-forms-96fadca0f49c)  \r\n(Andrew Coyle, 2016)\r\n\r\n[Forms vs. Applications](https://www.nngroup.com/articles/forms-vs-applications/)  \r\n(Nielsen Norman Group, 2005)\r\n","lang":{"name":"Markdown","mode":"markdown","scope":"source.gfm","color":"#083FA1"},"file":{"root":"C:\\","dir":"C:\\Users\\ctsui\\code\\forge-guide\\docs\\03-foundations","base":"04-form-design.md","ext":".md","name":"form-design","relPath":"03-foundations\\04-form-design.md","fsName":"04-form-design","path":"C:\\Users\\ctsui\\code\\forge-guide\\docs\\03-foundations\\04-form-design.md","dirs":["C:\\Users\\ctsui\\code\\forge-guide\\docs\\03-foundations"],"isHidden":false,"order":4,"isFile":true,"isDirectory":false,"stat":{"dev":4102694615,"mode":33206,"nlink":1,"uid":0,"gid":0,"rdev":0,"ino":12103423998927512,"size":13316,"atimeMs":1542641056841.9243,"mtimeMs":1542641056842.9265,"ctimeMs":1542821273512.337,"birthtimeMs":1541785521221.753,"atime":"2018-11-19T15:24:16.842Z","mtime":"2018-11-19T15:24:16.843Z","ctime":"2018-11-21T17:27:53.512Z","birthtime":"2018-11-09T17:45:21.222Z"},"lang":{"name":"Markdown","mode":"markdown","scope":"source.gfm","color":"#083FA1"},"isBinary":false},"context":{"extensions":{"core":{"forge-toast":{"name":"Toast","version":"0.2.2","description":"Toast component for Forge"},"forge-toggle-switch":{"name":"ToggleSwitch","version":"0.1.1","description":"ToggleSwitch component for Forge"}},"community":{"clinicals-forge-extension":{"name":"Clinicals Forge Extension","owner":"Nursing Flowsheets","url":"https://bitbucket.athenahealth.com/projects/CLIFS/repos/clinicals-forge-extension/browse","version":"2.1.1","description":"A forge-extension containing components used by inpatient clinicals"}}},"amplitudeCategory":"foundations"}}</code></pre></div-->
+  </div>
+</div>
+
+
+
+</div>
+
+
+
+
+<script src="../../assets/clipboard.min.js?cachebust=1.2.0"></script>
+
+<script src="../../assets/main.js?cachebust=1.2.0"></script>
+
+<script src="../../assets/amplitude.js?cachebust=1.2.0"></script>
+
+
+
+</body>
+</html>

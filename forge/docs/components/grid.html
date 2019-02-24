@@ -1,0 +1,1638 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+    window.frctl = {
+        env: 'static'
+    };
+    </script>
+    <script>var cl = document.querySelector('html').classList; cl.remove('no-js'); cl.add('has-js');</script>
+    <link rel="shortcut icon" href="../../favicon_blue.ico" type="image/ico">
+
+<link rel="stylesheet" href="../../assets/css/styles.css?cachebust=1.2.0" type="text/css">
+
+<link rel="stylesheet" href="../../assets/css/prism-atom-dark.css?cachebust=1.2.0" type="text/css">
+
+<link rel="stylesheet" href="../../assets/css/ascetic.css?cachebust=1.2.0" type="text/css">
+
+<link rel="stylesheet" href="../../css/forge.css?cachebust=1.2.0" type="text/css">
+
+
+<title>Grid | athenahealth</title>
+
+</head>
+<body>
+
+
+
+<div class="fg_app">
+  <header class="fg_l_header fg_l_header--alpha">
+  <a class="fg_c_branding" href="../../index.html">
+    <img src="../../assets/images/logo.svg" />
+  </a>
+  <nav class="fg_c_nav-top">
+  <ul class="fg_c_nav-top__list">
+    
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link "
+            href="../guidelines/principles.html"
+            title="Guidelines"
+          >
+            Guidelines
+          </a>
+        </li>
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link "
+            href="../foundations/color.html"
+            title="Foundations"
+          >
+            Foundations
+          </a>
+        </li>
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link  fg_is-active"
+            href="accordion.html"
+            title="Components"
+          >
+            Components
+          </a>
+        </li>
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link "
+            href="../extensions/forge-extensions.html"
+            title="Extensions"
+          >
+            Extensions
+          </a>
+        </li>
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link "
+            href="../resources/release-notes.html"
+            title="Resources"
+          >
+            Resources
+          </a>
+        </li>
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link "
+            href="../resources/downloads.html"
+            title="Resources"
+          >
+            Resources
+          </a>
+        </li>
+      
+    
+  </ul>
+</nav>
+
+
+  <div class="fg_c_nav-version">
+    v2.0.0-beta.7
+  </div>
+</header>
+
+
+  
+
+<div class="fg_l_sidebar" data-role="sidebar">
+  <nav class="fg_c_nav-left">
+  <ul class="fg_c_nav-left__list">
+  
+    
+  
+    
+  
+    
+  
+    
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="accordion.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Accordion</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="banner.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Banner</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="button.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Button</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="card.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Card</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="checkbox.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Checkbox</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="date-input.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>DateInput</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="form.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Form</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="form-field.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>FormField</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href=""
+            
+            class="fg_c_nav-left__link  fg_is-active"
+          >
+            <span>Grid</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="heading.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Heading</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="icon.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Icon</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="icon-button.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>IconButton</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="input.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Input</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="lightbox.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Lightbox</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="list.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>List</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="loader.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Loader</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="modal.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Modal</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="multi-field.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>MultiField</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="multiselect.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Multiselect</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="paginator.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Paginator</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="radio-group.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>RadioGroup</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="read-only-input.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>ReadOnlyInput</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="redux-form.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>ReduxForm</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="redux-form-field.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>ReduxFormField</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="redux-multi-field.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>ReduxMultiField</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="removable-tag.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>RemovableTag</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="root.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Root</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="select.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Select</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="selection-list.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>SelectionList</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="status-tag.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>StatusTag</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="stepper.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Stepper</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="table.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Table</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="tabs.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Tabs</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="textarea.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Textarea</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="toast.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Toast</span>
+            
+              
+                <span class="fe_f_all"><span class="fe_c_status-tag">EXT</span></span>
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="toggle-switch.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>ToggleSwitch</span>
+            
+              
+            
+              
+                <span class="fe_f_all"><span class="fe_c_status-tag">EXT</span></span>
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="tooltip.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Tooltip</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="typeahead.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Typeahead</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+    
+  
+    
+  
+    
+  
+    
+  
+  </ul>
+</nav>
+
+</div>
+
+<div class="fg_l_main" data-role="main">
+  <div class="fg_doc">
+
+    
+      <nav class="fg_c_nav-page"></nav>
+
+    
+
+    <div class="fg_doc__header">
+      
+        <h1 class="fg_doc__title">Grid</h1>
+      
+    </div>
+    <div class="fg_doc__content">
+      
+
+  <div class="fg_markdown">
+    
+
+      
+      
+
+      
+        <p class="p--lead">The <code>GridCol</code> and <code>GridRow</code> components are for creating responsive layouts.</p>
+
+<h2 id="demos">Demos</h2>
+<div class="fg_c_demos"><select class="fg_c_demos__select js-selector-demos"><option value="a80e2a089c553e8d87fed92146112135">Simple Responsive Example</option><option value="bac0e619510c5a90ea309cdf8f18df24">Default Sizing</option><option value="adec1bb5a0d3fc17c766603208823260">Offsets</option><option value="7435763e0eab85df07ed4dfca3000072">Ordering</option><option value="74907fd31279011a320359a336a87a97">Gutters</option><option value="3b1e51cd521ddd788f7e608d5a44000a">Nesting</option><option value="bc74b4257a3153c189c8746958b0ccbf">Row Shorthands</option><option value="1ea324e30e01e123ea48430dad422f46">Vertical Alignment</option></select><div class="fg_c_demos__demo js-demo-a80e2a089c553e8d87fed92146112135 ">
+    <div class="fg_c_preview js-resize-preview" style="height: 200px">
+      <iframe height="200" src="../../components/preview/grid-example.html" class="fg_c_preview__iframe"></iframe>
+    </div>
+    <div class="fg_c_accordian js-accordian">
+      <button class="fg_c_accordian__button" role="heading">
+        <span class="fg_c_accordian__icon js-icon"></span>
+        <span class="fg_c_accordian__closed-text">Show Code</span>
+        <span class="fg_c_accordian__open-text">Hide Code</span>
+      </button>
+      <div class="fg_c_code-tabs fg_is-hidden js-tabs">
+        <ul class="fg_c_code-tabs__list" role="tablist">
+          <li class="fg_c_code-tabs__tab" role="tab">
+            <a href="#tab-jsx-a80e2a089c553e8d87fed92146112135">JSX</a>
+          </li>
+          <li class="fg_c_code-tabs__tab" role="tab">
+            <a href="#tab-html-a80e2a089c553e8d87fed92146112135">HTML</a>
+          </li>
+        </ul>
+        <div class="fg_c_code-tabs__panel" id="tab-jsx-a80e2a089c553e8d87fed92146112135" role="tabpanel">
+          <button type="button" class="fg_c_button--inverted fg_c_button--copy js-copy-code" data-clipboard-target="#tab-jsx-a80e2a089c553e8d87fed92146112135 pre">Copy Code</button>
+          <pre class="fg_c_code-block"><code class="language-jsx"><span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">&#39;react&#39;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> GridRow<span class="token punctuation">,</span> GridCol <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&#39;@athena/forge&#39;</span><span class="token punctuation">;</span>
+<span style='display:none'>empty line</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">function</span> <span class="token function">GridExample</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">className</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;f&#95;all grid-demo fe&#95;u&#95;padding--large<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>GridRow</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>GridCol</span> <span class="token attr-name">width</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span> small<span class="token punctuation">:</span> <span class="token number">12</span><span class="token punctuation">,</span> medium<span class="token punctuation">:</span> <span class="token number">6</span><span class="token punctuation">,</span> large<span class="token punctuation">:</span> <span class="token number">4</span> <span class="token punctuation">}</span><span class="token punctuation">}</span></span> <span class="token punctuation">&gt;</span></span>
+          Large <span class="token number">4</span> wide<span class="token punctuation">,</span> medium <span class="token number">6</span> wide<span class="token punctuation">,</span> small <span class="token number">12</span> wide
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>GridCol</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>GridCol</span> <span class="token attr-name">width</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span> small<span class="token punctuation">:</span> <span class="token number">12</span><span class="token punctuation">,</span> medium<span class="token punctuation">:</span> <span class="token number">6</span><span class="token punctuation">,</span> large<span class="token punctuation">:</span> <span class="token number">4</span> <span class="token punctuation">}</span><span class="token punctuation">}</span></span> <span class="token punctuation">&gt;</span></span>
+          Large <span class="token number">4</span> wide<span class="token punctuation">,</span> medium <span class="token number">6</span> wide<span class="token punctuation">,</span> small <span class="token number">12</span> wide
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>GridCol</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>GridCol</span> <span class="token attr-name">width</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span> small<span class="token punctuation">:</span> <span class="token number">12</span><span class="token punctuation">,</span> medium<span class="token punctuation">:</span> <span class="token number">6</span><span class="token punctuation">,</span> large<span class="token punctuation">:</span> <span class="token number">4</span> <span class="token punctuation">}</span><span class="token punctuation">}</span></span> <span class="token punctuation">&gt;</span></span>
+          Large <span class="token number">4</span> wide<span class="token punctuation">,</span> medium <span class="token number">6</span> wide<span class="token punctuation">,</span> small <span class="token number">12</span> wide
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>GridCol</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>GridRow</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+        </div>
+        <div class="fg_c_code-tabs__panel" id="tab-html-a80e2a089c553e8d87fed92146112135" role="tabpanel">
+          <button type="button" class="fg_c_button--inverted fg_c_button--copy js-copy-code" data-clipboard-target="#tab-html-a80e2a089c553e8d87fed92146112135 pre">Copy Code</button>
+          <pre class="fg_c_code-block"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;f&#95;all grid-demo fe&#95;u&#95;padding--large<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row&#95;&#95;col fe&#95;l&#95;grid-row&#95;&#95;col--small-12 fe&#95;l&#95;grid-row&#95;&#95;col--medium-6 fe&#95;l&#95;grid-row&#95;&#95;col--large-4<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Large 4 wide, medium 6 wide, small 12 wide<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row&#95;&#95;col fe&#95;l&#95;grid-row&#95;&#95;col--small-12 fe&#95;l&#95;grid-row&#95;&#95;col--medium-6 fe&#95;l&#95;grid-row&#95;&#95;col--large-4<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Large 4 wide, medium 6 wide, small 12 wide<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row&#95;&#95;col fe&#95;l&#95;grid-row&#95;&#95;col--small-12 fe&#95;l&#95;grid-row&#95;&#95;col--medium-6 fe&#95;l&#95;grid-row&#95;&#95;col--large-4<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Large 4 wide, medium 6 wide, small 12 wide<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+        </div>
+      </div>
+    </div>
+  </div><div class="fg_c_demos__demo js-demo-bac0e619510c5a90ea309cdf8f18df24 fg_is-hidden">
+    <div class="fg_c_preview js-resize-preview" style="height: 500px">
+      <iframe height="500" src="../../components/preview/grid-default.html" class="fg_c_preview__iframe"></iframe>
+    </div>
+    <div class="fg_c_accordian js-accordian">
+      <button class="fg_c_accordian__button" role="heading">
+        <span class="fg_c_accordian__icon js-icon"></span>
+        <span class="fg_c_accordian__closed-text">Show Code</span>
+        <span class="fg_c_accordian__open-text">Hide Code</span>
+      </button>
+      <div class="fg_c_code-tabs fg_is-hidden js-tabs">
+        <ul class="fg_c_code-tabs__list" role="tablist">
+          <li class="fg_c_code-tabs__tab" role="tab">
+            <a href="#tab-jsx-bac0e619510c5a90ea309cdf8f18df24">JSX</a>
+          </li>
+          <li class="fg_c_code-tabs__tab" role="tab">
+            <a href="#tab-html-bac0e619510c5a90ea309cdf8f18df24">HTML</a>
+          </li>
+        </ul>
+        <div class="fg_c_code-tabs__panel" id="tab-jsx-bac0e619510c5a90ea309cdf8f18df24" role="tabpanel">
+          <button type="button" class="fg_c_button--inverted fg_c_button--copy js-copy-code" data-clipboard-target="#tab-jsx-bac0e619510c5a90ea309cdf8f18df24 pre">Copy Code</button>
+          <pre class="fg_c_code-block"><code class="language-jsx"><span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">&#39;react&#39;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> GridRow<span class="token punctuation">,</span> GridCol<span class="token punctuation">,</span> Heading <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&#39;@athena/forge&#39;</span><span class="token punctuation">;</span>
+<span style='display:none'>empty line</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">function</span> <span class="token function">GridDefault</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">className</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;f&#95;all grid-demo fe&#95;u&#95;padding--large<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Heading</span> <span class="token attr-name">text</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>Default Automatic sizing<span class="token punctuation">&quot;</span></span> <span class="token attr-name">variant</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>section<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>GridRow</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>GridCol</span><span class="token punctuation">&gt;</span></span>Col <span class="token number">1</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>GridCol</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>GridCol</span><span class="token punctuation">&gt;</span></span>Col <span class="token number">2</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>GridCol</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>GridCol</span><span class="token punctuation">&gt;</span></span>Col <span class="token number">3</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>GridCol</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>GridCol</span><span class="token punctuation">&gt;</span></span>Col <span class="token number">4</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>GridCol</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>GridRow</span><span class="token punctuation">&gt;</span></span>
+<span style='display:none'>empty line</span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Heading</span> <span class="token attr-name">text</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>Return to Default Sizing<span class="token punctuation">&quot;</span></span> <span class="token attr-name">variant</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>section<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>GridRow</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>GridCol</span> <span class="token attr-name">width</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span> small<span class="token punctuation">:</span> <span class="token number">12</span><span class="token punctuation">,</span> large<span class="token punctuation">:</span> <span class="token string">&#39;default&#39;</span> <span class="token punctuation">}</span><span class="token punctuation">}</span></span><span class="token punctuation">&gt;</span></span>
+          Col <span class="token number">1</span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>GridCol</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>GridCol</span> <span class="token attr-name">width</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span> small<span class="token punctuation">:</span> <span class="token number">12</span><span class="token punctuation">,</span> large<span class="token punctuation">:</span> <span class="token string">&#39;default&#39;</span> <span class="token punctuation">}</span><span class="token punctuation">}</span></span><span class="token punctuation">&gt;</span></span>
+          Col <span class="token number">2</span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>GridCol</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>GridCol</span> <span class="token attr-name">width</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span> small<span class="token punctuation">:</span> <span class="token number">12</span><span class="token punctuation">,</span> large<span class="token punctuation">:</span> <span class="token string">&#39;default&#39;</span> <span class="token punctuation">}</span><span class="token punctuation">}</span></span><span class="token punctuation">&gt;</span></span>
+          Col <span class="token number">3</span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>GridCol</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>GridCol</span> <span class="token attr-name">width</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span> small<span class="token punctuation">:</span> <span class="token number">12</span><span class="token punctuation">,</span> large<span class="token punctuation">:</span> <span class="token string">&#39;default&#39;</span> <span class="token punctuation">}</span><span class="token punctuation">}</span></span><span class="token punctuation">&gt;</span></span>
+          Col <span class="token number">4</span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>GridCol</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>GridCol</span> <span class="token attr-name">width</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span> small<span class="token punctuation">:</span> <span class="token number">12</span><span class="token punctuation">,</span> large<span class="token punctuation">:</span> <span class="token string">&#39;default&#39;</span> <span class="token punctuation">}</span><span class="token punctuation">}</span></span><span class="token punctuation">&gt;</span></span>
+          Col <span class="token number">4</span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>GridCol</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>GridCol</span> <span class="token attr-name">width</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span> small<span class="token punctuation">:</span> <span class="token number">12</span><span class="token punctuation">,</span> large<span class="token punctuation">:</span> <span class="token string">&#39;default&#39;</span> <span class="token punctuation">}</span><span class="token punctuation">}</span></span><span class="token punctuation">&gt;</span></span>
+          Col <span class="token number">6</span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>GridCol</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>GridRow</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+        </div>
+        <div class="fg_c_code-tabs__panel" id="tab-html-bac0e619510c5a90ea309cdf8f18df24" role="tabpanel">
+          <button type="button" class="fg_c_button--inverted fg_c_button--copy js-copy-code" data-clipboard-target="#tab-html-bac0e619510c5a90ea309cdf8f18df24 pre">Copy Code</button>
+          <pre class="fg_c_code-block"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;f&#95;all grid-demo fe&#95;u&#95;padding--large<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;heading fe&#95;c&#95;heading--section<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Default Automatic sizing<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row&#95;&#95;col<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Col 1<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row&#95;&#95;col<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Col 2<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row&#95;&#95;col<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Col 3<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row&#95;&#95;col<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Col 4<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;heading fe&#95;c&#95;heading--section<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Return to Default Sizing<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row&#95;&#95;col fe&#95;l&#95;grid-row&#95;&#95;col--small-12 fe&#95;l&#95;grid-row&#95;&#95;col--large-default<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Col 1<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row&#95;&#95;col fe&#95;l&#95;grid-row&#95;&#95;col--small-12 fe&#95;l&#95;grid-row&#95;&#95;col--large-default<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Col 2<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row&#95;&#95;col fe&#95;l&#95;grid-row&#95;&#95;col--small-12 fe&#95;l&#95;grid-row&#95;&#95;col--large-default<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Col 3<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row&#95;&#95;col fe&#95;l&#95;grid-row&#95;&#95;col--small-12 fe&#95;l&#95;grid-row&#95;&#95;col--large-default<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Col 4<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row&#95;&#95;col fe&#95;l&#95;grid-row&#95;&#95;col--small-12 fe&#95;l&#95;grid-row&#95;&#95;col--large-default<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Col 4<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row&#95;&#95;col fe&#95;l&#95;grid-row&#95;&#95;col--small-12 fe&#95;l&#95;grid-row&#95;&#95;col--large-default<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Col 6<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+        </div>
+      </div>
+    </div>
+  </div><div class="fg_c_demos__demo js-demo-adec1bb5a0d3fc17c766603208823260 fg_is-hidden">
+    <div class="fg_c_preview js-resize-preview" style="height: 200px">
+      <iframe height="200" src="../../components/preview/grid-offsets.html" class="fg_c_preview__iframe"></iframe>
+    </div>
+    <div class="fg_c_accordian js-accordian">
+      <button class="fg_c_accordian__button" role="heading">
+        <span class="fg_c_accordian__icon js-icon"></span>
+        <span class="fg_c_accordian__closed-text">Show Code</span>
+        <span class="fg_c_accordian__open-text">Hide Code</span>
+      </button>
+      <div class="fg_c_code-tabs fg_is-hidden js-tabs">
+        <ul class="fg_c_code-tabs__list" role="tablist">
+          <li class="fg_c_code-tabs__tab" role="tab">
+            <a href="#tab-jsx-adec1bb5a0d3fc17c766603208823260">JSX</a>
+          </li>
+          <li class="fg_c_code-tabs__tab" role="tab">
+            <a href="#tab-html-adec1bb5a0d3fc17c766603208823260">HTML</a>
+          </li>
+        </ul>
+        <div class="fg_c_code-tabs__panel" id="tab-jsx-adec1bb5a0d3fc17c766603208823260" role="tabpanel">
+          <button type="button" class="fg_c_button--inverted fg_c_button--copy js-copy-code" data-clipboard-target="#tab-jsx-adec1bb5a0d3fc17c766603208823260 pre">Copy Code</button>
+          <pre class="fg_c_code-block"><code class="language-jsx"><span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">&#39;react&#39;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> GridRow<span class="token punctuation">,</span> GridCol <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&#39;@athena/forge&#39;</span><span class="token punctuation">;</span>
+<span style='display:none'>empty line</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">function</span> <span class="token function">GridOffsets</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">className</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;f&#95;all grid-demo fe&#95;u&#95;padding--large<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>GridRow</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>GridCol</span> <span class="token attr-name">width</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span> small<span class="token punctuation">:</span> <span class="token number">4</span> <span class="token punctuation">}</span><span class="token punctuation">}</span></span><span class="token punctuation">&gt;</span></span>
+          <span class="token number">4</span> wide<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">/&gt;</span></span>No offset
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>GridCol</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>GridCol</span>
+          <span class="token attr-name">width</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span> small<span class="token punctuation">:</span> <span class="token number">4</span> <span class="token punctuation">}</span><span class="token punctuation">}</span></span>
+          <span class="token attr-name">offset</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span> small<span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">,</span> medium<span class="token punctuation">:</span> <span class="token number">3</span><span class="token punctuation">,</span> large<span class="token punctuation">:</span> <span class="token number">4</span> <span class="token punctuation">}</span><span class="token punctuation">}</span></span>
+        <span class="token punctuation">&gt;</span></span>
+          <span class="token number">4</span> wide<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">/&gt;</span></span>Large offset <span class="token number">4</span><span class="token punctuation">,</span> medium offset <span class="token number">3</span><span class="token punctuation">,</span> small offset <span class="token number">1</span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>GridCol</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>GridRow</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+        </div>
+        <div class="fg_c_code-tabs__panel" id="tab-html-adec1bb5a0d3fc17c766603208823260" role="tabpanel">
+          <button type="button" class="fg_c_button--inverted fg_c_button--copy js-copy-code" data-clipboard-target="#tab-html-adec1bb5a0d3fc17c766603208823260 pre">Copy Code</button>
+          <pre class="fg_c_code-block"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;f&#95;all grid-demo fe&#95;u&#95;padding--large<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row&#95;&#95;col fe&#95;l&#95;grid-row&#95;&#95;col--small-4<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>4 wide<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span> <span class="token punctuation">/&gt;</span></span>No offset<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row&#95;&#95;col fe&#95;l&#95;grid-row&#95;&#95;col--offset-small-1 fe&#95;l&#95;grid-row&#95;&#95;col--offset-medium-3 fe&#95;l&#95;grid-row&#95;&#95;col--offset-large-4 fe&#95;l&#95;grid-row&#95;&#95;col--small-4<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>4 wide<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span> <span class="token punctuation">/&gt;</span></span>Large offset 4, medium offset 3, small offset 1<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+        </div>
+      </div>
+    </div>
+  </div><div class="fg_c_demos__demo js-demo-7435763e0eab85df07ed4dfca3000072 fg_is-hidden">
+    <div class="fg_c_preview js-resize-preview" style="height: 200px">
+      <iframe height="200" src="../../components/preview/grid-ordering.html" class="fg_c_preview__iframe"></iframe>
+    </div>
+    <div class="fg_c_accordian js-accordian">
+      <button class="fg_c_accordian__button" role="heading">
+        <span class="fg_c_accordian__icon js-icon"></span>
+        <span class="fg_c_accordian__closed-text">Show Code</span>
+        <span class="fg_c_accordian__open-text">Hide Code</span>
+      </button>
+      <div class="fg_c_code-tabs fg_is-hidden js-tabs">
+        <ul class="fg_c_code-tabs__list" role="tablist">
+          <li class="fg_c_code-tabs__tab" role="tab">
+            <a href="#tab-jsx-7435763e0eab85df07ed4dfca3000072">JSX</a>
+          </li>
+          <li class="fg_c_code-tabs__tab" role="tab">
+            <a href="#tab-html-7435763e0eab85df07ed4dfca3000072">HTML</a>
+          </li>
+        </ul>
+        <div class="fg_c_code-tabs__panel" id="tab-jsx-7435763e0eab85df07ed4dfca3000072" role="tabpanel">
+          <button type="button" class="fg_c_button--inverted fg_c_button--copy js-copy-code" data-clipboard-target="#tab-jsx-7435763e0eab85df07ed4dfca3000072 pre">Copy Code</button>
+          <pre class="fg_c_code-block"><code class="language-jsx"><span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">&#39;react&#39;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> GridRow<span class="token punctuation">,</span> GridCol <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&#39;@athena/forge&#39;</span><span class="token punctuation">;</span>
+<span style='display:none'>empty line</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">function</span> <span class="token function">GridOrdering</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">className</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;f&#95;all grid-demo fe&#95;u&#95;padding--large<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>GridRow</span> <span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>GridCol</span>
+          <span class="token attr-name">width</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span> small<span class="token punctuation">:</span> <span class="token number">4</span> <span class="token punctuation">}</span><span class="token punctuation">}</span></span>
+          <span class="token attr-name">order</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span> large<span class="token punctuation">:</span> <span class="token number">3</span> <span class="token punctuation">}</span><span class="token punctuation">}</span></span>
+        <span class="token punctuation">&gt;</span></span>
+          Col <span class="token number">1</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span> <span class="token punctuation">/&gt;</span></span>Large last<span class="token punctuation">,</span> otherwise first
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>GridCol</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>GridCol</span>
+          <span class="token attr-name">width</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span> small<span class="token punctuation">:</span> <span class="token number">4</span> <span class="token punctuation">}</span><span class="token punctuation">}</span></span>
+          <span class="token attr-name">order</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span> large<span class="token punctuation">:</span> <span class="token number">2</span> <span class="token punctuation">}</span><span class="token punctuation">}</span></span>
+        <span class="token punctuation">&gt;</span></span>
+          Col <span class="token number">2</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span> <span class="token punctuation">/&gt;</span></span>Middle always
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>GridCol</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>GridCol</span>
+          <span class="token attr-name">width</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span> small<span class="token punctuation">:</span> <span class="token number">4</span> <span class="token punctuation">}</span><span class="token punctuation">}</span></span>
+          <span class="token attr-name">order</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span> large<span class="token punctuation">:</span> <span class="token number">1</span> <span class="token punctuation">}</span><span class="token punctuation">}</span></span>
+        <span class="token punctuation">&gt;</span></span>
+          Col <span class="token number">3</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span> <span class="token punctuation">/&gt;</span></span>Large first<span class="token punctuation">,</span> otherwise last
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>GridCol</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>GridRow</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+        </div>
+        <div class="fg_c_code-tabs__panel" id="tab-html-7435763e0eab85df07ed4dfca3000072" role="tabpanel">
+          <button type="button" class="fg_c_button--inverted fg_c_button--copy js-copy-code" data-clipboard-target="#tab-html-7435763e0eab85df07ed4dfca3000072 pre">Copy Code</button>
+          <pre class="fg_c_code-block"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;f&#95;all grid-demo fe&#95;u&#95;padding--large<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row&#95;&#95;col fe&#95;l&#95;grid-row&#95;&#95;col--order-large-3 fe&#95;l&#95;grid-row&#95;&#95;col--small-4<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Col 1<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span> <span class="token punctuation">/&gt;</span></span>Large last, otherwise first<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row&#95;&#95;col fe&#95;l&#95;grid-row&#95;&#95;col--order-large-2 fe&#95;l&#95;grid-row&#95;&#95;col--small-4<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Col 2<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span> <span class="token punctuation">/&gt;</span></span>Middle always<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row&#95;&#95;col fe&#95;l&#95;grid-row&#95;&#95;col--order-large-1 fe&#95;l&#95;grid-row&#95;&#95;col--small-4<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Col 3<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span> <span class="token punctuation">/&gt;</span></span>Large first, otherwise last<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+        </div>
+      </div>
+    </div>
+  </div><div class="fg_c_demos__demo js-demo-74907fd31279011a320359a336a87a97 fg_is-hidden">
+    <div class="fg_c_preview js-resize-preview" style="height: 500px">
+      <iframe height="500" src="../../components/preview/grid-gutters.html" class="fg_c_preview__iframe"></iframe>
+    </div>
+    <div class="fg_c_accordian js-accordian">
+      <button class="fg_c_accordian__button" role="heading">
+        <span class="fg_c_accordian__icon js-icon"></span>
+        <span class="fg_c_accordian__closed-text">Show Code</span>
+        <span class="fg_c_accordian__open-text">Hide Code</span>
+      </button>
+      <div class="fg_c_code-tabs fg_is-hidden js-tabs">
+        <ul class="fg_c_code-tabs__list" role="tablist">
+          <li class="fg_c_code-tabs__tab" role="tab">
+            <a href="#tab-jsx-74907fd31279011a320359a336a87a97">JSX</a>
+          </li>
+          <li class="fg_c_code-tabs__tab" role="tab">
+            <a href="#tab-html-74907fd31279011a320359a336a87a97">HTML</a>
+          </li>
+        </ul>
+        <div class="fg_c_code-tabs__panel" id="tab-jsx-74907fd31279011a320359a336a87a97" role="tabpanel">
+          <button type="button" class="fg_c_button--inverted fg_c_button--copy js-copy-code" data-clipboard-target="#tab-jsx-74907fd31279011a320359a336a87a97 pre">Copy Code</button>
+          <pre class="fg_c_code-block"><code class="language-jsx"><span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">&#39;react&#39;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> GridRow<span class="token punctuation">,</span> GridCol<span class="token punctuation">,</span> Heading <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&#39;@athena/forge&#39;</span><span class="token punctuation">;</span>
+<span style='display:none'>empty line</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">function</span> <span class="token function">GridGutters</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">className</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;f&#95;all grid-demo fe&#95;u&#95;padding--large<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Heading</span> <span class="token attr-name">text</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>Collapsing Gutters<span class="token punctuation">&quot;</span></span> <span class="token attr-name">variant</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>section<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>GridRow</span> <span class="token attr-name">removeGuttersSmall</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>GridCol</span> <span class="token attr-name">width</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span> small<span class="token punctuation">:</span> <span class="token number">4</span> <span class="token punctuation">}</span><span class="token punctuation">}</span></span><span class="token punctuation">&gt;</span></span>
+          We have no gutters
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>GridCol</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>GridCol</span> <span class="token attr-name">width</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span> small<span class="token punctuation">:</span> <span class="token number">4</span> <span class="token punctuation">}</span><span class="token punctuation">}</span></span><span class="token punctuation">&gt;</span></span>
+          We have no gutters
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>GridCol</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>GridCol</span> <span class="token attr-name">width</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span> small<span class="token punctuation">:</span> <span class="token number">4</span> <span class="token punctuation">}</span><span class="token punctuation">}</span></span><span class="token punctuation">&gt;</span></span>
+          We have no gutters
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>GridCol</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>GridRow</span><span class="token punctuation">&gt;</span></span>
+<span style='display:none'>empty line</span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Heading</span> <span class="token attr-name">text</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>Responsive Removing Gutters<span class="token punctuation">&quot;</span></span> <span class="token attr-name">variant</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>section<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>GridRow</span> <span class="token attr-name">removeGuttersMedium</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>GridCol</span> <span class="token attr-name">width</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span> small<span class="token punctuation">:</span> <span class="token number">4</span> <span class="token punctuation">}</span><span class="token punctuation">}</span></span><span class="token punctuation">&gt;</span></span>
+          We have no gutters on medium and larger<span class="token operator">!</span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>GridCol</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>GridCol</span> <span class="token attr-name">width</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span> small<span class="token punctuation">:</span> <span class="token number">4</span> <span class="token punctuation">}</span><span class="token punctuation">}</span></span><span class="token punctuation">&gt;</span></span>
+          We have no gutters on medium and larger<span class="token operator">!</span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>GridCol</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>GridCol</span> <span class="token attr-name">width</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span> small<span class="token punctuation">:</span> <span class="token number">4</span> <span class="token punctuation">}</span><span class="token punctuation">}</span></span><span class="token punctuation">&gt;</span></span>
+          We have no gutters on medium and larger<span class="token operator">!</span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>GridCol</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>GridRow</span><span class="token punctuation">&gt;</span></span>
+<span style='display:none'>empty line</span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Heading</span> <span class="token attr-name">text</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>Responsive Restoring Gutters<span class="token punctuation">&quot;</span></span> <span class="token attr-name">variant</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>section<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>GridRow</span> <span class="token attr-name">removeGuttersMedium</span> <span class="token attr-name">restoreGuttersLarge</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>GridCol</span> <span class="token attr-name">width</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span> small<span class="token punctuation">:</span> <span class="token number">4</span> <span class="token punctuation">}</span><span class="token punctuation">}</span></span><span class="token punctuation">&gt;</span></span>
+          We have no gutters only on medium<span class="token operator">!</span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>GridCol</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>GridCol</span> <span class="token attr-name">width</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span> small<span class="token punctuation">:</span> <span class="token number">4</span> <span class="token punctuation">}</span><span class="token punctuation">}</span></span><span class="token punctuation">&gt;</span></span>
+          We have no gutters only on medium<span class="token operator">!</span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>GridCol</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>GridCol</span> <span class="token attr-name">width</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span> small<span class="token punctuation">:</span> <span class="token number">4</span> <span class="token punctuation">}</span><span class="token punctuation">}</span></span><span class="token punctuation">&gt;</span></span>
+          We have no gutters only on medium<span class="token operator">!</span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>GridCol</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>GridRow</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+        </div>
+        <div class="fg_c_code-tabs__panel" id="tab-html-74907fd31279011a320359a336a87a97" role="tabpanel">
+          <button type="button" class="fg_c_button--inverted fg_c_button--copy js-copy-code" data-clipboard-target="#tab-html-74907fd31279011a320359a336a87a97 pre">Copy Code</button>
+          <pre class="fg_c_code-block"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;f&#95;all grid-demo fe&#95;u&#95;padding--large<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;heading fe&#95;c&#95;heading--section<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Collapsing Gutters<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row fe&#95;l&#95;grid-row--no-gutters-small<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row&#95;&#95;col fe&#95;l&#95;grid-row&#95;&#95;col--small-4<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>We have no gutters<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row&#95;&#95;col fe&#95;l&#95;grid-row&#95;&#95;col--small-4<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>We have no gutters<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row&#95;&#95;col fe&#95;l&#95;grid-row&#95;&#95;col--small-4<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>We have no gutters<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;heading fe&#95;c&#95;heading--section<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Responsive Removing Gutters<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row fe&#95;l&#95;grid-row--no-gutters-medium<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row&#95;&#95;col fe&#95;l&#95;grid-row&#95;&#95;col--small-4<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>We have no gutters on medium and larger!<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row&#95;&#95;col fe&#95;l&#95;grid-row&#95;&#95;col--small-4<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>We have no gutters on medium and larger!<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row&#95;&#95;col fe&#95;l&#95;grid-row&#95;&#95;col--small-4<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>We have no gutters on medium and larger!<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;heading fe&#95;c&#95;heading--section<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Responsive Restoring Gutters<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row fe&#95;l&#95;grid-row--no-gutters-medium fe&#95;l&#95;grid-row--gutters-large<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row&#95;&#95;col fe&#95;l&#95;grid-row&#95;&#95;col--small-4<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>We have no gutters only on medium!<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row&#95;&#95;col fe&#95;l&#95;grid-row&#95;&#95;col--small-4<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>We have no gutters only on medium!<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row&#95;&#95;col fe&#95;l&#95;grid-row&#95;&#95;col--small-4<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>We have no gutters only on medium!<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+        </div>
+      </div>
+    </div>
+  </div><div class="fg_c_demos__demo js-demo-3b1e51cd521ddd788f7e608d5a44000a fg_is-hidden">
+    <div class="fg_c_preview js-resize-preview" style="height: 250px">
+      <iframe height="250" src="../../components/preview/grid-nesting.html" class="fg_c_preview__iframe"></iframe>
+    </div>
+    <div class="fg_c_accordian js-accordian">
+      <button class="fg_c_accordian__button" role="heading">
+        <span class="fg_c_accordian__icon js-icon"></span>
+        <span class="fg_c_accordian__closed-text">Show Code</span>
+        <span class="fg_c_accordian__open-text">Hide Code</span>
+      </button>
+      <div class="fg_c_code-tabs fg_is-hidden js-tabs">
+        <ul class="fg_c_code-tabs__list" role="tablist">
+          <li class="fg_c_code-tabs__tab" role="tab">
+            <a href="#tab-jsx-3b1e51cd521ddd788f7e608d5a44000a">JSX</a>
+          </li>
+          <li class="fg_c_code-tabs__tab" role="tab">
+            <a href="#tab-html-3b1e51cd521ddd788f7e608d5a44000a">HTML</a>
+          </li>
+        </ul>
+        <div class="fg_c_code-tabs__panel" id="tab-jsx-3b1e51cd521ddd788f7e608d5a44000a" role="tabpanel">
+          <button type="button" class="fg_c_button--inverted fg_c_button--copy js-copy-code" data-clipboard-target="#tab-jsx-3b1e51cd521ddd788f7e608d5a44000a pre">Copy Code</button>
+          <pre class="fg_c_code-block"><code class="language-jsx"><span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">&#39;react&#39;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> GridRow<span class="token punctuation">,</span> GridCol <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&#39;@athena/forge&#39;</span><span class="token punctuation">;</span>
+<span style='display:none'>empty line</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">function</span> <span class="token function">GridNesting</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">className</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;f&#95;all grid-demo fe&#95;u&#95;padding--large<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>GridRow</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>GridCol</span> <span class="token attr-name">width</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span> small<span class="token punctuation">:</span> <span class="token number">3</span> <span class="token punctuation">}</span><span class="token punctuation">}</span></span><span class="token punctuation">&gt;</span></span>
+          Side Col
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>GridCol</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>GridCol</span> <span class="token attr-name">width</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span> small<span class="token punctuation">:</span> <span class="token number">9</span> <span class="token punctuation">}</span><span class="token punctuation">}</span></span><span class="token punctuation">&gt;</span></span>
+          Main Col
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>GridRow</span> <span class="token attr-name">nested</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>GridCol</span> <span class="token attr-name">width</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span> small<span class="token punctuation">:</span> <span class="token number">4</span> <span class="token punctuation">}</span><span class="token punctuation">}</span></span><span class="token punctuation">&gt;</span></span>
+              Nested Col <span class="token number">1</span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>GridCol</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>GridCol</span> <span class="token attr-name">width</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span> small<span class="token punctuation">:</span> <span class="token number">4</span> <span class="token punctuation">}</span><span class="token punctuation">}</span></span><span class="token punctuation">&gt;</span></span>
+              Nested Col <span class="token number">2</span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>GridCol</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>GridCol</span> <span class="token attr-name">width</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span> small<span class="token punctuation">:</span> <span class="token number">4</span> <span class="token punctuation">}</span><span class="token punctuation">}</span></span><span class="token punctuation">&gt;</span></span>
+              Nested Col <span class="token number">3</span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>GridCol</span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>GridRow</span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>GridRow</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>GridCol</span> <span class="token attr-name">width</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span> small<span class="token punctuation">:</span> <span class="token number">4</span> <span class="token punctuation">}</span><span class="token punctuation">}</span></span><span class="token punctuation">&gt;</span></span>
+              Without Nested Col <span class="token number">1</span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>GridCol</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>GridCol</span> <span class="token attr-name">width</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span> small<span class="token punctuation">:</span> <span class="token number">4</span> <span class="token punctuation">}</span><span class="token punctuation">}</span></span><span class="token punctuation">&gt;</span></span>
+              Without Nested Col <span class="token number">2</span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>GridCol</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>GridCol</span> <span class="token attr-name">width</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span> small<span class="token punctuation">:</span> <span class="token number">4</span> <span class="token punctuation">}</span><span class="token punctuation">}</span></span><span class="token punctuation">&gt;</span></span>
+              Without Nested Col <span class="token number">3</span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>GridCol</span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>GridRow</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>GridCol</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>GridRow</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+        </div>
+        <div class="fg_c_code-tabs__panel" id="tab-html-3b1e51cd521ddd788f7e608d5a44000a" role="tabpanel">
+          <button type="button" class="fg_c_button--inverted fg_c_button--copy js-copy-code" data-clipboard-target="#tab-html-3b1e51cd521ddd788f7e608d5a44000a pre">Copy Code</button>
+          <pre class="fg_c_code-block"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;f&#95;all grid-demo fe&#95;u&#95;padding--large<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row&#95;&#95;col fe&#95;l&#95;grid-row&#95;&#95;col--small-3<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Side Col<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row&#95;&#95;col fe&#95;l&#95;grid-row&#95;&#95;col--small-9<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Main Col<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row fe&#95;l&#95;grid-row--nested<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row&#95;&#95;col fe&#95;l&#95;grid-row&#95;&#95;col--small-4<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Nested Col 1<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row&#95;&#95;col fe&#95;l&#95;grid-row&#95;&#95;col--small-4<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Nested Col 2<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row&#95;&#95;col fe&#95;l&#95;grid-row&#95;&#95;col--small-4<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Nested Col 3<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row&#95;&#95;col fe&#95;l&#95;grid-row&#95;&#95;col--small-4<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Without Nested Col 1<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row&#95;&#95;col fe&#95;l&#95;grid-row&#95;&#95;col--small-4<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Without Nested Col 2<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row&#95;&#95;col fe&#95;l&#95;grid-row&#95;&#95;col--small-4<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Without Nested Col 3<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+        </div>
+      </div>
+    </div>
+  </div><div class="fg_c_demos__demo js-demo-bc74b4257a3153c189c8746958b0ccbf fg_is-hidden">
+    <div class="fg_c_preview js-resize-preview" style="height: 500px">
+      <iframe height="500" src="../../components/preview/grid-row-shorthands.html" class="fg_c_preview__iframe"></iframe>
+    </div>
+    <div class="fg_c_accordian js-accordian">
+      <button class="fg_c_accordian__button" role="heading">
+        <span class="fg_c_accordian__icon js-icon"></span>
+        <span class="fg_c_accordian__closed-text">Show Code</span>
+        <span class="fg_c_accordian__open-text">Hide Code</span>
+      </button>
+      <div class="fg_c_code-tabs fg_is-hidden js-tabs">
+        <ul class="fg_c_code-tabs__list" role="tablist">
+          <li class="fg_c_code-tabs__tab" role="tab">
+            <a href="#tab-jsx-bc74b4257a3153c189c8746958b0ccbf">JSX</a>
+          </li>
+          <li class="fg_c_code-tabs__tab" role="tab">
+            <a href="#tab-html-bc74b4257a3153c189c8746958b0ccbf">HTML</a>
+          </li>
+        </ul>
+        <div class="fg_c_code-tabs__panel" id="tab-jsx-bc74b4257a3153c189c8746958b0ccbf" role="tabpanel">
+          <button type="button" class="fg_c_button--inverted fg_c_button--copy js-copy-code" data-clipboard-target="#tab-jsx-bc74b4257a3153c189c8746958b0ccbf pre">Copy Code</button>
+          <pre class="fg_c_code-block"><code class="language-jsx"><span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">&#39;react&#39;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> GridRow<span class="token punctuation">,</span> GridCol<span class="token punctuation">,</span> Heading <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&#39;@athena/forge&#39;</span><span class="token punctuation">;</span>
+<span style='display:none'>empty line</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">function</span> <span class="token function">GridRowShorthands</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">className</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;f&#95;all grid-demo fe&#95;u&#95;padding--large<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Heading</span>
+        <span class="token attr-name">text</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>Row Defines Its Total Number of Columns<span class="token punctuation">&quot;</span></span>
+        <span class="token attr-name">subheading</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>Columns are auto sized. Set widths are ignored.<span class="token punctuation">&quot;</span></span>
+        <span class="token attr-name">variant</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>section<span class="token punctuation">&quot;</span></span>
+      <span class="token punctuation">/&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>GridRow</span> <span class="token attr-name">columns</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span> small<span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">,</span> medium<span class="token punctuation">:</span> <span class="token number">2</span><span class="token punctuation">,</span> large<span class="token punctuation">:</span> <span class="token number">3</span> <span class="token punctuation">}</span><span class="token punctuation">}</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>GridCol</span> <span class="token attr-name">width</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span> large<span class="token punctuation">:</span> <span class="token number">1</span> <span class="token punctuation">}</span><span class="token punctuation">}</span></span><span class="token punctuation">&gt;</span></span>
+          <span class="token number">1</span> column per row on small
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>GridCol</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>GridCol</span> <span class="token attr-name">width</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span> large<span class="token punctuation">:</span> <span class="token number">2</span> <span class="token punctuation">}</span><span class="token punctuation">}</span></span><span class="token punctuation">&gt;</span></span>
+          <span class="token number">2</span> columns per row on medium
+<span style='display:none'>empty line</span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>GridCol</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>GridCol</span> <span class="token attr-name">width</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span> large<span class="token punctuation">:</span> <span class="token number">1</span> <span class="token punctuation">}</span><span class="token punctuation">}</span></span><span class="token punctuation">&gt;</span></span>
+          <span class="token number">3</span> columns per row on large
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>GridCol</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>GridRow</span><span class="token punctuation">&gt;</span></span>
+<span style='display:none'>empty line</span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Heading</span> <span class="token attr-name">text</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>Row Defines Column Stacking, at Breakpoint Return to Default Auto Sizing<span class="token punctuation">&quot;</span></span> <span class="token attr-name">variant</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>section<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>GridRow</span> <span class="token attr-name">stackUntilMedium</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>GridCol</span><span class="token punctuation">&gt;</span></span>
+          Full<span class="token operator">-</span>width on small
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>GridCol</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>GridCol</span><span class="token punctuation">&gt;</span></span>
+          Auto<span class="token operator">-</span>size on medium
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>GridCol</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>GridCol</span><span class="token punctuation">&gt;</span></span>
+          and large
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>GridCol</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>GridRow</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+        </div>
+        <div class="fg_c_code-tabs__panel" id="tab-html-bc74b4257a3153c189c8746958b0ccbf" role="tabpanel">
+          <button type="button" class="fg_c_button--inverted fg_c_button--copy js-copy-code" data-clipboard-target="#tab-html-bc74b4257a3153c189c8746958b0ccbf pre">Copy Code</button>
+          <pre class="fg_c_code-block"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;f&#95;all grid-demo fe&#95;u&#95;padding--large<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;heading fe&#95;c&#95;heading--section<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Row Defines Its Total Number of Columns<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;heading--section&#95;&#95;subheading<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Columns are auto sized. Set widths are ignored.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row fe&#95;l&#95;grid-row--columns-small-1 fe&#95;l&#95;grid-row--columns-medium-2 fe&#95;l&#95;grid-row--columns-large-3<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row&#95;&#95;col fe&#95;l&#95;grid-row&#95;&#95;col--large-1<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>1 column per row on small<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row&#95;&#95;col fe&#95;l&#95;grid-row&#95;&#95;col--large-2<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>2 columns per row on medium<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row&#95;&#95;col fe&#95;l&#95;grid-row&#95;&#95;col--large-1<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>3 columns per row on large<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;heading fe&#95;c&#95;heading--section<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Row Defines Column Stacking, at Breakpoint Return to Default Auto Sizing<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row fe&#95;l&#95;grid-row--stack-until-medium<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row&#95;&#95;col<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Full-width on small<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row&#95;&#95;col<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Auto-size on medium<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row&#95;&#95;col<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>and large<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+        </div>
+      </div>
+    </div>
+  </div><div class="fg_c_demos__demo js-demo-1ea324e30e01e123ea48430dad422f46 fg_is-hidden">
+    <div class="fg_c_preview js-resize-preview" style="height: 250px">
+      <iframe height="250" src="../../components/preview/grid-vertical-align.html" class="fg_c_preview__iframe"></iframe>
+    </div>
+    <div class="fg_c_accordian js-accordian">
+      <button class="fg_c_accordian__button" role="heading">
+        <span class="fg_c_accordian__icon js-icon"></span>
+        <span class="fg_c_accordian__closed-text">Show Code</span>
+        <span class="fg_c_accordian__open-text">Hide Code</span>
+      </button>
+      <div class="fg_c_code-tabs fg_is-hidden js-tabs">
+        <ul class="fg_c_code-tabs__list" role="tablist">
+          <li class="fg_c_code-tabs__tab" role="tab">
+            <a href="#tab-jsx-1ea324e30e01e123ea48430dad422f46">JSX</a>
+          </li>
+          <li class="fg_c_code-tabs__tab" role="tab">
+            <a href="#tab-html-1ea324e30e01e123ea48430dad422f46">HTML</a>
+          </li>
+        </ul>
+        <div class="fg_c_code-tabs__panel" id="tab-jsx-1ea324e30e01e123ea48430dad422f46" role="tabpanel">
+          <button type="button" class="fg_c_button--inverted fg_c_button--copy js-copy-code" data-clipboard-target="#tab-jsx-1ea324e30e01e123ea48430dad422f46 pre">Copy Code</button>
+          <pre class="fg_c_code-block"><code class="language-jsx"><span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">&#39;react&#39;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> GridRow<span class="token punctuation">,</span> GridCol <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&#39;@athena/forge&#39;</span><span class="token punctuation">;</span>
+<span style='display:none'>empty line</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">function</span> <span class="token function">GridVerticalAlign</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">className</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;f&#95;all grid-demo fe&#95;u&#95;padding--large<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>GridRow</span> <span class="token attr-name">align</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>middle<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>GridCol</span><span class="token punctuation">&gt;</span></span>
+          Col <span class="token number">1</span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>GridCol</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>GridCol</span><span class="token punctuation">&gt;</span></span>
+          Col <span class="token number">2</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span> <span class="token punctuation">/&gt;</span></span><span class="token operator">-</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span> <span class="token punctuation">/&gt;</span></span><span class="token operator">-</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span> <span class="token punctuation">/&gt;</span></span><span class="token operator">-</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span> <span class="token punctuation">/&gt;</span></span><span class="token operator">-</span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>GridCol</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>GridCol</span> <span class="token attr-name">align</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>bottom<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+          Col <span class="token number">3</span> <span class="token operator">-</span> align bottom
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>GridCol</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>GridRow</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+        </div>
+        <div class="fg_c_code-tabs__panel" id="tab-html-1ea324e30e01e123ea48430dad422f46" role="tabpanel">
+          <button type="button" class="fg_c_button--inverted fg_c_button--copy js-copy-code" data-clipboard-target="#tab-html-1ea324e30e01e123ea48430dad422f46 pre">Copy Code</button>
+          <pre class="fg_c_code-block"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;f&#95;all grid-demo fe&#95;u&#95;padding--large<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row fe&#95;l&#95;grid-row--align-middle<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row&#95;&#95;col<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Col 1<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row&#95;&#95;col<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Col 2<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span> <span class="token punctuation">/&gt;</span></span>-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span> <span class="token punctuation">/&gt;</span></span>-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span> <span class="token punctuation">/&gt;</span></span>-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span> <span class="token punctuation">/&gt;</span></span>-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row&#95;&#95;col fe&#95;l&#95;grid-row&#95;&#95;col--align-bottom<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Col 3 - align bottom<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+        </div>
+      </div>
+    </div>
+  </div></div>
+
+<h2 id="usage">Usage</h2>
+<p>The grid in this guide actually refers to the use of <code>GridCol</code> and <code>GridRow</code> components. The basic description of what a flexible grid does and its structure overall is covered in the <a href="../foundations/grid.html">grid foundation topic</a>.</p>
+<h3 id="vertical-alignment">Vertical Alignment</h3>
+<p>Content should be top-aligned within a column. However, in the case where content of different heights creates a displeasing layout, the content within a column can be center-aligned vertically.</p>
+<h3 id="nesting">Nesting</h3>
+<p>Users can nest grids within another <code>GridCol</code> or <code>GridRow</code>. The gutters of nested grids hold the same width as gutters in the parent grid; a doubled edge gutter can be avoided by using the <code>nested</code> prop. Use nesting with care, as deeply nested grids (i.e. &gt; 2 levels) can yield some undesirable results and be difficult to troubleshoot across breakpoints.</p>
+<h3 id="stacking">Stacking</h3>
+<p>Users can order <code>GridCol</code> components within a <code>GridRow</code> vertically according to their order of appearance in <code>GridRow</code> by default. The most common case for this is on a small breakpoint for mobile devices. However, this stacking behavior can be extended to the medium and large breakpoints via the <code>stackUntilMedium</code> and <code>stackUntilLarge</code> properties.</p>
+<h3 id="ordering">Ordering</h3>
+<p>The <code>GridCol</code> components within a <code>GridRow</code> are ordered according to their order of appearance in <code>GridRow</code> by default. Users can change this using the <code>order</code> prop in <code>GridCol</code>. Changes to order can help tweak the positioning of elements when designing highly fluid user interfaces, and can be useful in conjunction with stacking.</p>
+<h2 id="design">Design</h2>
+<p>The best practice is to first design for the smallest screen size your application supports and then plan how the layout can adapt to better utilize the extra space on larger screens.</p>
+<p>The grid takes getting used to for those with no prior experience with responsive layouts or those who have to-date relied on manual percentage declarations and custom alignment of elements. Here are some key things to remember:</p>
+<ul>
+<li>Grid is intimately tied to breakpoints and, hence, the CSS media query system. Always think in terms of how the layout should appear at different breakpoints.</li>
+<li>Trying to achieve pixel-perfect designs with the grid leads to frustration. Think fluidly. Plan for the range of viewport widths within each breakpoint, as well as between.</li>
+<li>If the user interface using grid will be displayed in a container that has a width significantly smaller than the browser viewport (e.g. a dashboard widget), the breakpoint system may not be useful. Grid can still be used, but be aware that the breakpoint system is keyed to the browser viewport.</li>
+<li>Use as few breakpoint declarations in columns as possible. The more breakpoints, the more adjustments that need to be tweaked. In many cases, just defining small and medium layout policies are enough.</li>
+<li>Grids can be nested, but in practice use cases involving more than 2 levels of grids is rare. The deeper the nesting, the more difficult it becomes to debug problems.</li>
+</ul>
+<h3 id="use-in-forms">Use in Forms</h3>
+<p>The grid is the best way to quickly achieve responsive forms. The <a href="form-field.html"><code>FormField</code></a> component uses grid to achieve its responsive layout and represents the method of creating a canonical Forge form.</p>
+<p>Most form content should be laid out using the grid. The grid is very capable and offers significant savings in development time versus coding with raw CSS flexbox rules for any kind of user interface that needs to be viable at multiple viewport widths.</p>
+<h3 id="overall-structure-vs-fine-positioning">Overall Structure vs. Fine Positioning</h3>
+<p>The grid is most useful for achieving fluid, medium- to coarse-grain layout policies that can be clumsy to handle consistently using traditional CSS methods. Conversely, fine positioning at the small scale might better be handled using regular browser flow, flexbox, explicit positioning, floats, spacer elements, padding/margin offsets, etc.</p>
+<h3 id="go-with-the-normal-flow">Go with the [Normal] Flow</h3>
+<p>A good rule of thumb is that if the content can be presented using the normal rendering flow of the browser, it should be fine to use with the grid. This should cover the majority of cases, because designs should be maximizing the use of the normal flow.</p>
+<p>Elements requiring relative, absolute, or fixed positioning -- rules that take layout control away from <code>GridCol</code> or <code>GridRow</code> -- will likely yield unsatisfactory results.</p>
+<h2 id="implementation">Implementation</h2>
+<p>The grid is made up of <code>GridRow</code> components whose children are <code>GridCol</code> components. These React components are convenience wrappers that generate elements with the appropriate CSS classes. The CSS does all the work and is based on Foundation&#39;s <a href="https://foundation.zurb.com/sites/docs/flex-grid.html">Flex Grid</a>.</p>
+<p>Column widths and offsets are specified in units. Each unit is 1/12 the width of the row, minus the gutters at the edges of the column.</p>
+<p>As described above, the layout can be customized for each breakpoint of: small, medium, and large. When a prop is set or class added for a certain breakpoint, it also applies to  all larger breakpoints until another is explicitly set.</p>
+<p>For example, if a <code>GridCol</code> has <code>width={ { small: 12, large: 6 } }</code>, it gets a width of 12 units (full row) on small and medium screens and a width of 6 units (half row) on large screens.</p>
+<p>Vertical alignment is determined using the align props of the <code>GridRow</code> (for all columns) or the <code>GridCol</code> (for a single column). The possible alignments are &#39;top&#39;, &#39;bottom&#39;, &#39;middle&#39;, and &#39;stretch&#39;. These are based on <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/#article-header-id-7">flexbox align-items</a> (or align-self) and correspond to &#39;flex-start&#39;, &#39;flex-end&#39;, &#39;center&#39;, and &#39;stretch&#39;, respectively.</p>
+<h2 id="api-tables">API Tables</h2>
+<h3 id="import-gridcol-and-gridrow-only">Import GridCol and GridRow Only</h3>
+<p><p>Importing individual components can reduce bundle size. <a href="https://athenaconfluence.athenahealth.com/display/UXDS/Forge+Import+for+Better+Tree+Shaking">Learn more</a></p></p>
+<code><pre><span class="hljs-keyword">import</span> GridCol <span class="hljs-keyword">from</span> <span class="hljs-string">'@athena/forge/lib/grid-col'</span>;
+<span class="hljs-keyword">import</span> GridRow <span class="hljs-keyword">from</span> <span class="hljs-string">'@athena/forge/lib/grid-row'</span>;</pre></code><h3 id="gridcol-props">GridCol Props</h3>
+<table class="api-table api-table--react">
+  <thead>
+    <tr>
+      <th>Prop</th>
+      <th>Type</th>
+      <th>Default</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>align</code></td>
+      <td>
+        enum
+          <ul>
+              <li>&#x27;top&#x27;</li>
+              <li>&#x27;bottom&#x27;</li>
+              <li>&#x27;middle&#x27;</li>
+              <li>&#x27;stretch&#x27;</li>
+          </ul>
+      </td>
+      <td></td>
+      <td>Verical alignment of GridCols; stretch is the default behavior</td>
+    </tr>
+    <tr>
+      <td><code>className</code></td>
+      <td>
+        string
+      </td>
+      <td></td>
+      <td>Adds a class to the root element of the component</td>
+    </tr>
+    <tr>
+      <td><code>offset</code></td>
+      <td>
+        shape
+          <ul>
+            <li>small - number</li>
+            <li>medium - number</li>
+            <li>large - number</li>
+          </ul>
+      </td>
+      <td></td>
+      <td>Number of units a GridCol should be offset from the previous GridCol at each breakpoint;
+same value used at larger breakpoints unless specified</td>
+    </tr>
+    <tr>
+      <td><code>order</code></td>
+      <td>
+        shape
+          <ul>
+            <li>small - number</li>
+            <li>medium - number</li>
+            <li>large - number</li>
+          </ul>
+      </td>
+      <td></td>
+      <td>Order that a GridCol appears at each breakpoint; same value used at larger breakpoints unless specified</td>
+    </tr>
+    <tr>
+      <td><code>width</code></td>
+      <td>
+        shape
+          <ul>
+            <li>small - number</li>
+            <li>medium - number or &#39;default&#39;</li>
+            <li>large - number or &#39;default&#39;</li>
+          </ul>
+      </td>
+      <td></td>
+      <td>Width of the GridCol in units at each breakpoint; same value used at larger breakpoints unless specified.
+Accepts &#x27;default&#x27; as a value to set the width to auto size</td>
+    </tr>
+    <tr>
+      <td><code>...rest</code></td>
+      <td></td>
+      <td></td>
+      <td>Passthrough props are added to the <code>div</code> element</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="gridrow-props">GridRow Props</h3>
+<table class="api-table api-table--react">
+  <thead>
+    <tr>
+      <th>Prop</th>
+      <th>Type</th>
+      <th>Default</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>align</code></td>
+      <td>
+        custom: GridCol.ALIGNMENTS_PROP_TYPE
+      </td>
+      <td></td>
+      <td>Vertical alignment of all GridCols in GridRow; stretch is the default behavior</td>
+    </tr>
+    <tr>
+      <td><code>className</code></td>
+      <td>
+        string
+      </td>
+      <td></td>
+      <td>Adds a class to the root element of the component</td>
+    </tr>
+    <tr>
+      <td><code>columns</code></td>
+      <td>
+        shape
+          <ul>
+            <li>small - number</li>
+            <li>medium - number</li>
+            <li>large - number</li>
+          </ul>
+      </td>
+      <td></td>
+      <td>Number of columns in the GridRow by breakpoint; overrides width set by child GridCol and uses auto sizing</td>
+    </tr>
+    <tr>
+      <td><code>nested</code></td>
+      <td>
+        bool
+      </td>
+      <td></td>
+      <td>Whether the GridRow is nested in a GridCol; sets negative margins to overlap parent gutter padding</td>
+    </tr>
+    <tr>
+      <td><code>removeGuttersLarge</code></td>
+      <td>
+        bool
+      </td>
+      <td></td>
+      <td>Remove gutter padding from the large breakpoint width for all GridCols in the GridRow</td>
+    </tr>
+    <tr>
+      <td><code>removeGuttersMedium</code></td>
+      <td>
+        bool
+      </td>
+      <td></td>
+      <td>Remove gutter padding from the medium breakpoint width and larger for all GridCols in the GridRow</td>
+    </tr>
+    <tr>
+      <td><code>removeGuttersSmall</code></td>
+      <td>
+        bool
+      </td>
+      <td></td>
+      <td>Remove gutter padding from the small breakpoint width and larger for all GridCols in the GridRow</td>
+    </tr>
+    <tr>
+      <td><code>restoreGuttersLarge</code></td>
+      <td>
+        bool
+      </td>
+      <td></td>
+      <td>Restore removed gutter padding from large breakpoint width for all GridCols in the GridRow</td>
+    </tr>
+    <tr>
+      <td><code>restoreGuttersMedium</code></td>
+      <td>
+        bool
+      </td>
+      <td></td>
+      <td>Restore removed gutter padding from medium breakpoint width and larger for all GridCols in the GridRow</td>
+    </tr>
+    <tr>
+      <td><code>stackUntilLarge</code></td>
+      <td>
+        bool
+      </td>
+      <td></td>
+      <td>Stack all GridCols in the GridRow until the large breakpoint; then restore default auto sizing</td>
+    </tr>
+    <tr>
+      <td><code>stackUntilMedium</code></td>
+      <td>
+        bool
+      </td>
+      <td></td>
+      <td>Stack all GridCols in the GridRow until the medium breakpoint; then restore default auto sizing</td>
+    </tr>
+    <tr>
+      <td><code>...rest</code></td>
+      <td></td>
+      <td></td>
+      <td>Passthrough props are added to the <code>div</code> element</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="html-api">HTML API</h3>
+<table class="api-table api-table--html">
+  <thead>
+    <tr>
+      <th>Class</th>
+      <th>Applies To</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td><code>fe_l_grid-row</code></td><td>Grid row</td><td>Base class for grid row</td></tr>
+    <tr><td><code>fe_l_grid-row--nested</code></td><td>Grid row</td><td>Removes outer gutters for better alignment in a nested grid row</td></tr>
+    <tr><td><code>fe_l_grid-row--no-gutters-[bp]</code></td><td>Grid row</td><td>Removes all gutters at breakpoint bp (and above)</td></tr>
+    <tr><td><code>fe_l_grid-row--gutters-[bp]</code></td><td>Grid row</td><td>Restores gutters at breakpoint bp (and above) after they were removed at a smaller breakpoint</td></tr>
+    <tr><td><code>fe_l_grid-row--stack-until-[bp]</code></td><td>Grid row</td><td>Makes all columns in the row full width for breakpoints smaller than bp</td></tr>
+    <tr><td><code>fe_l_grid-row--columns-[bp]-[count]</code></td><td>Grid row</td><td>Divides the row evenly for the stated number of columns at breakpoint bp (and above).</td></tr>
+    <tr><td><code>fe_l_grid-row--align-[alignment]</code></td><td>Grid row</td><td>Determines the vertical alignment of columns in the row to be one of <code>top</code>, <code>bottom</code>, <code>middle</code>, or <code>stretch</code></td></tr>
+    <tr><td><code>fe_l_grid-row__col</code></td><td>Grid column</td><td>Grid column</td></tr>
+    <tr><td><code>fe_l_grid-row__col--[bp]-[units]</code></td><td>Grid column</td><td>Specifies the column&#39;s width in units at breakpoint bp (and above) as 1-12 or <code>default</code> to divide space evenly</td></tr>
+    <tr><td><code>fe_l_grid-row__col--align-[alignment]</code></td><td>Grid column</td><td>Determines the vertical alignment of a single column to be one of <code>top</code>, <code>bottom</code>, <code>middle</code>, or <code>stretch</code></td></tr>
+    <tr><td><code>fe_l_grid-row__col--offset-[bp]-[units]</code></td><td>Grid column</td><td>Specifies the number of units to leave empty before this column at breakpoint bp (and above)</td></tr>
+    <tr><td><code>fe_l_grid-row__col--order-[bp]-[units]</code></td><td>Grid column</td><td>Specifies the order of the column relative to other columns in the row at breakpoint bp (and above)</td></tr>
+  </tbody>
+</table>
+
+      
+
+    
+  </div>
+
+  <script>
+document.addEventListener("DOMContentLoaded", function(event) {
+    if (window.amplitude) {
+        amplitude.getInstance().init('d426be2bbef81471eeac4bca0c061243');
+
+        amplitude.getInstance().logEvent('viewed page', {
+          pageName: 'Grid',
+          pageCategory: 'components'.length > 0
+            ? 'components'
+            : null,
+          forgeVersion: '2.0.0-beta.7',
+          forgeGeneralVersion: /^\d*(?=\.)/.exec('2.0.0-beta.7')
+            ? /^\d*(?=\.)/.exec('2.0.0-beta.7').toString()
+            : null
+        });
+      }
+      else {
+        console.warn("amplitude is not logging events");
+      }
+});
+</script>
+
+
+
+    </div>
+    <!--div class="debug"><pre><code class="language-json">{"id":"25ee5c854307703e3c0dd7ae8e797463","name":"grid","handle":"grid","label":"Grid","title":"Grid","order":1000000,"isHidden":false,"alias":null,"isEntity":true,"isDoc":true,"isIndex":false,"path":"components/grid","status":null,"content":"<p class=\"p--lead\">The `GridCol` and `GridRow` components are for creating responsive layouts.</p>\r\n\r\n## Demos\r\n{{demo '@grid'}}\r\n\r\n## Usage\r\nThe grid in this guide actually refers to the use of `GridCol` and `GridRow` components. The basic description of what a flexible grid does and its structure overall is covered in the [grid foundation topic]({{ path '/docs/foundations/grid' }}).\r\n\r\n### Vertical Alignment\r\nContent should be top-aligned within a column. However, in the case where content of different heights creates a displeasing layout, the content within a column can be center-aligned vertically.\r\n\r\n### Nesting\r\nUsers can nest grids within another `GridCol` or `GridRow`. The gutters of nested grids hold the same width as gutters in the parent grid; a doubled edge gutter can be avoided by using the `nested` prop. Use nesting with care, as deeply nested grids (i.e. > 2 levels) can yield some undesirable results and be difficult to troubleshoot across breakpoints.\r\n\r\n### Stacking\r\nUsers can order `GridCol` components within a `GridRow` vertically according to their order of appearance in `GridRow` by default. The most common case for this is on a small breakpoint for mobile devices. However, this stacking behavior can be extended to the medium and large breakpoints via the `stackUntilMedium` and `stackUntilLarge` properties.\r\n\r\n### Ordering\r\nThe `GridCol` components within a `GridRow` are ordered according to their order of appearance in `GridRow` by default. Users can change this using the `order` prop in `GridCol`. Changes to order can help tweak the positioning of elements when designing highly fluid user interfaces, and can be useful in conjunction with stacking.\r\n\r\n## Design\r\nThe best practice is to first design for the smallest screen size your application supports and then plan how the layout can adapt to better utilize the extra space on larger screens.\r\n\r\nThe grid takes getting used to for those with no prior experience with responsive layouts or those who have to-date relied on manual percentage declarations and custom alignment of elements. Here are some key things to remember:\r\n* Grid is intimately tied to breakpoints and, hence, the CSS media query system. Always think in terms of how the layout should appear at different breakpoints.\r\n* Trying to achieve pixel-perfect designs with the grid leads to frustration. Think fluidly. Plan for the range of viewport widths within each breakpoint, as well as between.\r\n* If the user interface using grid will be displayed in a container that has a width significantly smaller than the browser viewport (e.g. a dashboard widget), the breakpoint system may not be useful. Grid can still be used, but be aware that the breakpoint system is keyed to the browser viewport.\r\n* Use as few breakpoint declarations in columns as possible. The more breakpoints, the more adjustments that need to be tweaked. In many cases, just defining small and medium layout policies are enough.\r\n* Grids can be nested, but in practice use cases involving more than 2 levels of grids is rare. The deeper the nesting, the more difficult it becomes to debug problems.\r\n\r\n### Use in Forms\r\nThe grid is the best way to quickly achieve responsive forms. The [`FormField`]({{ path '/docs/components/form-field' }}) component uses grid to achieve its responsive layout and represents the method of creating a canonical Forge form.\r\n\r\nMost form content should be laid out using the grid. The grid is very capable and offers significant savings in development time versus coding with raw CSS flexbox rules for any kind of user interface that needs to be viable at multiple viewport widths.\r\n\r\n### Overall Structure vs. Fine Positioning\r\nThe grid is most useful for achieving fluid, medium- to coarse-grain layout policies that can be clumsy to handle consistently using traditional CSS methods. Conversely, fine positioning at the small scale might better be handled using regular browser flow, flexbox, explicit positioning, floats, spacer elements, padding/margin offsets, etc.\r\n\r\n### Go with the [Normal] Flow\r\nA good rule of thumb is that if the content can be presented using the normal rendering flow of the browser, it should be fine to use with the grid. This should cover the majority of cases, because designs should be maximizing the use of the normal flow.\r\n\r\nElements requiring relative, absolute, or fixed positioning -- rules that take layout control away from `GridCol` or `GridRow` -- will likely yield unsatisfactory results.\r\n\r\n## Implementation\r\nThe grid is made up of `GridRow` components whose children are `GridCol` components. These React components are convenience wrappers that generate elements with the appropriate CSS classes. The CSS does all the work and is based on Foundation's [Flex Grid]({{ path 'https://foundation.zurb.com/sites/docs/flex-grid.html' }}).\r\n\r\nColumn widths and offsets are specified in units. Each unit is 1/12 the width of the row, minus the gutters at the edges of the column.\r\n\r\nAs described above, the layout can be customized for each breakpoint of: small, medium, and large. When a prop is set or class added for a certain breakpoint, it also applies to  all larger breakpoints until another is explicitly set.\r\n\r\nFor example, if a `GridCol` has `width={ { small: 12, large: 6 } }`, it gets a width of 12 units (full row) on small and medium screens and a width of 6 units (half row) on large screens.\r\n\r\nVertical alignment is determined using the align props of the `GridRow` (for all columns) or the `GridCol` (for a single column). The possible alignments are 'top', 'bottom', 'middle', and 'stretch'. These are based on [flexbox align-items](https://css-tricks.com/snippets/css/a-guide-to-flexbox/#article-header-id-7) (or align-self) and correspond to 'flex-start', 'flex-end', 'center', and 'stretch', respectively.\r\n\r\n## API Tables\r\n### Import GridCol and GridRow Only\r\n{{> componentImportMessage}}\r\n\r\n```\r\nimport GridCol from '@athena/forge/lib/grid-col';\r\nimport GridRow from '@athena/forge/lib/grid-row';\r\n```\r\n\r\n### GridCol Props\r\n<table class=\"api-table api-table--react\">\r\n  <thead>\r\n    <tr>\r\n      <th>Prop</th>\r\n      <th>Type</th>\r\n      <th>Default</th>\r\n      <th>Description</th>\r\n    </tr>\r\n  </thead>\r\n  <tbody>\r\n    <tr>\r\n      <td>`align`</td>\r\n      <td>\r\n        enum\r\n          <ul>\r\n              <li>&#x27;top&#x27;</li>\r\n              <li>&#x27;bottom&#x27;</li>\r\n              <li>&#x27;middle&#x27;</li>\r\n              <li>&#x27;stretch&#x27;</li>\r\n          </ul>\r\n      </td>\r\n      <td></td>\r\n      <td>Verical alignment of GridCols; stretch is the default behavior</td>\r\n    </tr>\r\n    <tr>\r\n      <td>`className`</td>\r\n      <td>\r\n        string\r\n      </td>\r\n      <td></td>\r\n      <td>Adds a class to the root element of the component</td>\r\n    </tr>\r\n    <tr>\r\n      <td>`offset`</td>\r\n      <td>\r\n        shape\r\n          <ul>\r\n            <li>small - number</li>\r\n            <li>medium - number</li>\r\n            <li>large - number</li>\r\n          </ul>\r\n      </td>\r\n      <td></td>\r\n      <td>Number of units a GridCol should be offset from the previous GridCol at each breakpoint;\r\nsame value used at larger breakpoints unless specified</td>\r\n    </tr>\r\n    <tr>\r\n      <td>`order`</td>\r\n      <td>\r\n        shape\r\n          <ul>\r\n            <li>small - number</li>\r\n            <li>medium - number</li>\r\n            <li>large - number</li>\r\n          </ul>\r\n      </td>\r\n      <td></td>\r\n      <td>Order that a GridCol appears at each breakpoint; same value used at larger breakpoints unless specified</td>\r\n    </tr>\r\n    <tr>\r\n      <td>`width`</td>\r\n      <td>\r\n        shape\r\n          <ul>\r\n            <li>small - number</li>\r\n            <li>medium - number or 'default'</li>\r\n            <li>large - number or 'default'</li>\r\n          </ul>\r\n      </td>\r\n      <td></td>\r\n      <td>Width of the GridCol in units at each breakpoint; same value used at larger breakpoints unless specified.\r\nAccepts &#x27;default&#x27; as a value to set the width to auto size</td>\r\n    </tr>\r\n    <tr>\r\n      <td>`...rest`</td>\r\n      <td></td>\r\n      <td></td>\r\n      <td>Passthrough props are added to the `div` element</td>\r\n    </tr>\r\n  </tbody>\r\n</table>\r\n\r\n### GridRow Props\r\n<table class=\"api-table api-table--react\">\r\n  <thead>\r\n    <tr>\r\n      <th>Prop</th>\r\n      <th>Type</th>\r\n      <th>Default</th>\r\n      <th>Description</th>\r\n    </tr>\r\n  </thead>\r\n  <tbody>\r\n    <tr>\r\n      <td>`align`</td>\r\n      <td>\r\n        custom: GridCol.ALIGNMENTS_PROP_TYPE\r\n      </td>\r\n      <td></td>\r\n      <td>Vertical alignment of all GridCols in GridRow; stretch is the default behavior</td>\r\n    </tr>\r\n    <tr>\r\n      <td>`className`</td>\r\n      <td>\r\n        string\r\n      </td>\r\n      <td></td>\r\n      <td>Adds a class to the root element of the component</td>\r\n    </tr>\r\n    <tr>\r\n      <td>`columns`</td>\r\n      <td>\r\n        shape\r\n          <ul>\r\n            <li>small - number</li>\r\n            <li>medium - number</li>\r\n            <li>large - number</li>\r\n          </ul>\r\n      </td>\r\n      <td></td>\r\n      <td>Number of columns in the GridRow by breakpoint; overrides width set by child GridCol and uses auto sizing</td>\r\n    </tr>\r\n    <tr>\r\n      <td>`nested`</td>\r\n      <td>\r\n        bool\r\n      </td>\r\n      <td></td>\r\n      <td>Whether the GridRow is nested in a GridCol; sets negative margins to overlap parent gutter padding</td>\r\n    </tr>\r\n    <tr>\r\n      <td>`removeGuttersLarge`</td>\r\n      <td>\r\n        bool\r\n      </td>\r\n      <td></td>\r\n      <td>Remove gutter padding from the large breakpoint width for all GridCols in the GridRow</td>\r\n    </tr>\r\n    <tr>\r\n      <td>`removeGuttersMedium`</td>\r\n      <td>\r\n        bool\r\n      </td>\r\n      <td></td>\r\n      <td>Remove gutter padding from the medium breakpoint width and larger for all GridCols in the GridRow</td>\r\n    </tr>\r\n    <tr>\r\n      <td>`removeGuttersSmall`</td>\r\n      <td>\r\n        bool\r\n      </td>\r\n      <td></td>\r\n      <td>Remove gutter padding from the small breakpoint width and larger for all GridCols in the GridRow</td>\r\n    </tr>\r\n    <tr>\r\n      <td>`restoreGuttersLarge`</td>\r\n      <td>\r\n        bool\r\n      </td>\r\n      <td></td>\r\n      <td>Restore removed gutter padding from large breakpoint width for all GridCols in the GridRow</td>\r\n    </tr>\r\n    <tr>\r\n      <td>`restoreGuttersMedium`</td>\r\n      <td>\r\n        bool\r\n      </td>\r\n      <td></td>\r\n      <td>Restore removed gutter padding from medium breakpoint width and larger for all GridCols in the GridRow</td>\r\n    </tr>\r\n    <tr>\r\n      <td>`stackUntilLarge`</td>\r\n      <td>\r\n        bool\r\n      </td>\r\n      <td></td>\r\n      <td>Stack all GridCols in the GridRow until the large breakpoint; then restore default auto sizing</td>\r\n    </tr>\r\n    <tr>\r\n      <td>`stackUntilMedium`</td>\r\n      <td>\r\n        bool\r\n      </td>\r\n      <td></td>\r\n      <td>Stack all GridCols in the GridRow until the medium breakpoint; then restore default auto sizing</td>\r\n    </tr>\r\n    <tr>\r\n      <td>`...rest`</td>\r\n      <td></td>\r\n      <td></td>\r\n      <td>Passthrough props are added to the `div` element</td>\r\n    </tr>\r\n  </tbody>\r\n</table>\r\n\r\n### HTML API\r\n<table class=\"api-table api-table--html\">\r\n  <thead>\r\n    <tr>\r\n      <th>Class</th>\r\n      <th>Applies To</th>\r\n      <th>Description</th>\r\n    </tr>\r\n  </thead>\r\n  <tbody>\r\n    <tr><td>`fe_l_grid-row`</td><td>Grid row</td><td>Base class for grid row</td></tr>\r\n    <tr><td>`fe_l_grid-row--nested`</td><td>Grid row</td><td>Removes outer gutters for better alignment in a nested grid row</td></tr>\r\n    <tr><td>`fe_l_grid-row--no-gutters-[bp]`</td><td>Grid row</td><td>Removes all gutters at breakpoint bp (and above)</td></tr>\r\n    <tr><td>`fe_l_grid-row--gutters-[bp]`</td><td>Grid row</td><td>Restores gutters at breakpoint bp (and above) after they were removed at a smaller breakpoint</td></tr>\r\n    <tr><td>`fe_l_grid-row--stack-until-[bp]`</td><td>Grid row</td><td>Makes all columns in the row full width for breakpoints smaller than bp</td></tr>\r\n    <tr><td>`fe_l_grid-row--columns-[bp]-[count]`</td><td>Grid row</td><td>Divides the row evenly for the stated number of columns at breakpoint bp (and above).</td></tr>\r\n    <tr><td>`fe_l_grid-row--align-[alignment]`</td><td>Grid row</td><td>Determines the vertical alignment of columns in the row to be one of `top`, `bottom`, `middle`, or `stretch`</td></tr>\r\n    <tr><td>`fe_l_grid-row__col`</td><td>Grid column</td><td>Grid column</td></tr>\r\n    <tr><td>`fe_l_grid-row__col--[bp]-[units]`</td><td>Grid column</td><td>Specifies the column's width in units at breakpoint bp (and above) as 1-12 or `default` to divide space evenly</td></tr>\r\n    <tr><td>`fe_l_grid-row__col--align-[alignment]`</td><td>Grid column</td><td>Determines the vertical alignment of a single column to be one of `top`, `bottom`, `middle`, or `stretch`</td></tr>\r\n    <tr><td>`fe_l_grid-row__col--offset-[bp]-[units]`</td><td>Grid column</td><td>Specifies the number of units to leave empty before this column at breakpoint bp (and above)</td></tr>\r\n    <tr><td>`fe_l_grid-row__col--order-[bp]-[units]`</td><td>Grid column</td><td>Specifies the order of the column relative to other columns in the row at breakpoint bp (and above)</td></tr>\r\n  </tbody>\r\n</table>\r\n","lang":{"name":"Markdown","mode":"markdown","scope":"source.gfm","color":"#083FA1"},"file":{"root":"C:\\","dir":"C:\\Users\\ctsui\\code\\forge-guide\\docs\\04-components","base":"grid.md","ext":".md","name":"grid","relPath":"04-components\\grid.md","fsName":"grid","path":"C:\\Users\\ctsui\\code\\forge-guide\\docs\\04-components\\grid.md","dirs":["C:\\Users\\ctsui\\code\\forge-guide\\docs\\04-components"],"isHidden":false,"order":1000000,"isFile":true,"isDirectory":false,"stat":{"dev":4102694615,"mode":33206,"nlink":1,"uid":0,"gid":0,"rdev":0,"ino":3377699720813740,"size":13306,"atimeMs":1542641056848.9438,"mtimeMs":1542641056848.9438,"ctimeMs":1542821273765.9858,"birthtimeMs":1528896974625.8545,"atime":"2018-11-19T15:24:16.849Z","mtime":"2018-11-19T15:24:16.849Z","ctime":"2018-11-21T17:27:53.766Z","birthtime":"2018-06-13T13:36:14.626Z"},"lang":{"name":"Markdown","mode":"markdown","scope":"source.gfm","color":"#083FA1"},"isBinary":false},"context":{"extensions":{"core":{"forge-toast":{"name":"Toast","version":"0.2.2","description":"Toast component for Forge"},"forge-toggle-switch":{"name":"ToggleSwitch","version":"0.1.1","description":"ToggleSwitch component for Forge"}},"community":{"clinicals-forge-extension":{"name":"Clinicals Forge Extension","owner":"Nursing Flowsheets","url":"https://bitbucket.athenahealth.com/projects/CLIFS/repos/clinicals-forge-extension/browse","version":"2.1.1","description":"A forge-extension containing components used by inpatient clinicals"}}},"isComponent":true,"amplitudeCategory":"components"}}</code></pre></div-->
+  </div>
+</div>
+
+
+
+</div>
+
+
+
+
+<script src="../../assets/clipboard.min.js?cachebust=1.2.0"></script>
+
+<script src="../../assets/main.js?cachebust=1.2.0"></script>
+
+<script src="../../assets/amplitude.js?cachebust=1.2.0"></script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+    window.frctl = {
+        env: 'static'
+    };
+    </script>
+    <script>var cl = document.querySelector('html').classList; cl.remove('no-js'); cl.add('has-js');</script>
+    <link rel="shortcut icon" href="../../favicon_blue.ico" type="image/ico">
+
+<link rel="stylesheet" href="../../assets/css/styles.css?cachebust=1.2.0" type="text/css">
+
+<link rel="stylesheet" href="../../assets/css/prism-atom-dark.css?cachebust=1.2.0" type="text/css">
+
+<link rel="stylesheet" href="../../assets/css/ascetic.css?cachebust=1.2.0" type="text/css">
+
+<link rel="stylesheet" href="../../css/forge.css?cachebust=1.2.0" type="text/css">
+
+
+<title>Layout Utilities | athenahealth</title>
+
+</head>
+<body>
+
+
+
+<div class="fg_app">
+  <header class="fg_l_header fg_l_header--alpha">
+  <a class="fg_c_branding" href="../../index.html">
+    <img src="../../assets/images/logo.svg" />
+  </a>
+  <nav class="fg_c_nav-top">
+  <ul class="fg_c_nav-top__list">
+    
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link "
+            href="../guidelines/principles.html"
+            title="Guidelines"
+          >
+            Guidelines
+          </a>
+        </li>
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link  fg_is-active"
+            href="color.html"
+            title="Foundations"
+          >
+            Foundations
+          </a>
+        </li>
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link "
+            href="../components/accordion.html"
+            title="Components"
+          >
+            Components
+          </a>
+        </li>
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link "
+            href="../extensions/forge-extensions.html"
+            title="Extensions"
+          >
+            Extensions
+          </a>
+        </li>
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link "
+            href="../resources/release-notes.html"
+            title="Resources"
+          >
+            Resources
+          </a>
+        </li>
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link "
+            href="../resources/downloads.html"
+            title="Resources"
+          >
+            Resources
+          </a>
+        </li>
+      
+    
+  </ul>
+</nav>
+
+
+  <div class="fg_c_nav-version">
+    v2.0.0-beta.7
+  </div>
+</header>
+
+
+  
+
+<div class="fg_l_sidebar" data-role="sidebar">
+  <nav class="fg_c_nav-left">
+  <ul class="fg_c_nav-left__list">
+  
+    
+  
+    
+  
+    
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="color.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Color</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="typography.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Typography</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="grid.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Grid Foundation</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="form-design.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Form Design</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="typography-utilities.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Typography Utilities</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href=""
+            
+            class="fg_c_nav-left__link  fg_is-active"
+          >
+            <span>Layout Utilities</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  </ul>
+</nav>
+
+</div>
+
+<div class="fg_l_main" data-role="main">
+  <div class="fg_doc">
+
+    
+
+    <div class="fg_doc__header">
+      
+        <h1 class="fg_doc__title">Layout Utilities</h1>
+      
+    </div>
+    <div class="fg_doc__content">
+      
+
+  <div class="fg_markdown">
+    
+
+      
+      
+
+      
+        <p class="p--lead">The utility classes map to certain CSS properties and are applied with the highest level of specificity. They can be used as a shorthand way to override default component styling without resorting to custom CSS or inline styles.</p>
+
+<h2 id="utilities">Utilities</h2>
+<h3 id="padding-margin-and-height-width">Padding, Margin, and Height/Width</h3>
+<table class="api-table api-table--utilities">
+  <thead>
+    <tr>
+      <th>Class</th>
+      <th>Sass</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <ul>
+          <li><code>fe_u_padding--none</code></li>
+          <li><code>fe_u_padding--top-none</code></li>
+          <li><code>fe_u_padding--bottom-none</code></li>
+          <li><code>fe_u_padding--left-none</code></li>
+          <li><code>fe_u_padding--right-none</code></li>
+        </ul>
+      </td>
+      <td><code>map-get($global-padding, none)</code></td>
+      <td>Sets the specified padding to <code>none</code></td>
+    </tr>
+    <tr>
+      <td>
+        <ul>
+          <li><code>fe_u_padding--xsmall</code></li>
+          <li><code>fe_u_padding--top-xsmall</code></li>
+          <li><code>fe_u_padding--bottom-xsmall</code></li>
+          <li><code>fe_u_padding--left-xsmall</code></li>
+          <li><code>fe_u_padding--right-xsmall</code></li>
+        </ul>
+      </td>
+      <td><code>map-get($global-padding, xsmall)</code></td>
+      <td>Sets the specified padding to <code>xsmall</code></td>
+    </tr>
+    <tr>
+      <td>
+        <ul>
+          <li><code>fe_u_padding--small</code></li>
+          <li><code>fe_u_padding--top-small</code></li>
+          <li><code>fe_u_padding--bottom-small</code></li>
+          <li><code>fe_u_padding--left-small</code></li>
+          <li><code>fe_u_padding--right-small</code></li>
+        </td>
+      <td><code>map-get($global-padding, small)</code></td>
+      <td>Sets the specified padding to the <code>small</code> value</td>
+    </tr>
+    <tr>
+      <td>
+        <ul>
+          <li><code>fe_u_padding--medium</code></li>
+          <li><code>fe_u_padding--top-medium</code></li>
+          <li><code>fe_u_padding--bottom-medium</code></li>
+          <li><code>fe_u_padding--left-medium</code></li>
+          <li><code>fe_u_padding--right-medium</code></li>
+        <ul>
+      </td>
+      <td><code>map-get($global-padding, medium)</code></td>
+      <td>Sets the specified padding to the <code>medium</code> value</td>
+    </tr>
+    <tr>
+      <td>
+        <ul>
+          <li><code>fe_u_padding--large</code></li>
+          <li><code>fe_u_padding--top-large</code></li>
+          <li><code>fe_u_padding--bottom-large</code></li>
+          <li><code>fe_u_padding--left-large</code><li>
+        </ul>
+      </td>
+      <td><code>map-get($global-padding, large)</code></td>
+      <td>Sets the specified padding to the <code>large</code> value</td>
+    </tr>
+    <tr>
+      <td>
+        <ul>
+          <li><code>fe_u_padding--xlarge</code></li>
+          <li><code>fe_u_padding--top-xlarge</code></li>
+          <li><code>fe_u_padding--bottom-xlarge</code></li>
+          <li><code>fe_u_padding--left-xlarge</code></li>
+          <li><code>fe_u_padding--right-xlarge</code></li>
+        </ul>
+      </td>
+      <td><code>map-get($global-padding, xlarge)</code></td>
+      <td>Sets the specified padding to <code>xlarge</code></td>
+    </tr>
+    <tr>
+      <td>
+        <ul>
+          <li><code>fe_u_padding--xxlarge</code></li>
+          <li><code>fe_u_padding--top-xxlarge</code></li>
+          <li><code>fe_u_padding--bottom-xxlarge</code></li>
+          <li><code>fe_u_padding--left-xxlarge</code></li>
+          <li><code>fe_u_padding--right-xxlarge</code></li>
+        </ul>
+      </td>
+      <td><code>map-get($global-padding, xxlarge)</code></td>
+      <td>Sets the specified padding to <code>xxlarge</code></td>
+    </tr>
+    <tr>
+      <td>
+        <ul>
+          <li><code>fe_u_margin--none</code></li>
+          <li><code>fe_u_margin--top-none</code></li>
+          <li><code>fe_u_margin--bottom-none</code></li>
+          <li><code>fe_u_margin--left-none</code></li>
+          <li><code>fe_u_margin--right-none</code></li>
+        </ul>
+      </td>
+      <td><code>map-get($global-margin, none)</code></td>
+      <td>Sets the specified margin to <code>none</code></td>
+    </tr>
+    <tr>
+      <td>
+        <ul>
+          <li><code>fe_u_margin--xsmall</code></li>
+          <li><code>fe_u_margin--top-xsmall</code></li>
+          <li><code>fe_u_margin--bottom-xsmall</code></li>
+          <li><code>fe_u_margin--left-xsmall</code></li>
+          <li><code>fe_u_margin--right-xsmall</code></li>
+        </ul>
+      </td>
+      <td><code>map-get($global-margin, xsmall)</code></td>
+      <td>Sets the specified margin to <code>xsmall</code></td>
+    </tr>
+    <tr>
+      <td>
+        <ul>
+          <li><code>fe_u_margin--small</code></li>
+          <li><code>fe_u_margin--top-small</code></li>
+          <li><code>fe_u_margin--bottom-small</code></li>
+          <li><code>fe_u_margin--left-small</code></li>
+          <li><code>fe_u_margin--right-small</code></li>
+        </ul>
+      </td>
+      <td><code>map-get($global-margin, small)</code></td>
+      <td>Sets the specified margin to the <code>small</code> value</td></tr>
+    <tr>
+      <td>
+        <ul>
+          <li><code>fe_u_margin--medium</code></li>
+          <li><code>fe_u_margin--top-medium</code></li>
+          <li><code>fe_u_margin--bottom-medium</code></li>
+          <li><code>fe_u_margin--left-medium</code></li>
+          <li><code>fe_u_margin--right-medium</code></li>
+        </ul>
+      </td>
+      <td><code>map-get($global-margin, medium)</code></td>
+      <td>Sets the specified margin to the <code>medium</code> value</td>
+    </tr>
+    <tr>
+      <td>
+        <ul>
+          <li><code>fe_u_margin--large</code></li>
+          <li><code>fe_u_margin--top-large</code></li>
+          <li><code>fe_u_margin--bottom-large</code></li>
+          <li><code>fe_u_margin--left-large</code></li>
+          <li><code>fe_u_margin--right-large</code></li>
+        </ul>
+      </td>
+      <td><code>map-get($global-margin, large)</code></td>
+      <td>Sets the specified margin to the <code>large</code> value</td>
+    </tr>
+    <tr>
+      <td>
+        <ul>
+          <li><code>fe_u_margin--xlarge</code></li>
+          <li><code>fe_u_margin--top-xlarge</code></li>
+          <li><code>fe_u_margin--bottom-xlarge</code></li>
+          <li><code>fe_u_margin--left-xlarge</code></li>
+          <li><code>fe_u_margin--right-xlarge</code></li>
+        </ul>
+      </td>
+      <td><code>map-get($global-margin, xlarge)</code></td>
+      <td>Sets the specified margin to <code>xlarge</code></td>
+    </tr>
+    <tr>
+      <td>
+        <ul>
+          <li><code>fe_u_margin--xxlarge</code></li>
+          <li><code>fe_u_margin--top-xxlarge</code></li>
+          <li><code>fe_u_margin--bottom-xxlarge</code></li>
+          <li><code>fe_u_margin--left-xxlarge</code></li>
+          <li><code>fe_u_margin--right-xxlarge</code><li>
+        </ul>
+      </td>
+      <td><code>map-get($global-margin, xxlarge)</code></td>
+      <td>Sets the specified margin to <code>xxlarge</code></td>
+    </tr>
+    <tr>
+      <td><code>fe_u_fill--width</code></td>
+      <td>n/a</td>
+      <td>Sets the width to 100% of the parent element</td>
+    </tr>
+    <tr>
+      <td><code>fe_u_fill--height</code></td>
+      <td>n/a</td>
+      <td>Sets the height to 100% of the parent element</td>
+    </tr>
+    <tr>
+      <td><code>fe_u_fill--parent</code></td>
+      <td>n/a</td>
+      <td>Sets the height and width to 100% of the parent element</td></tr>
+  </tbody>
+</table>
+
+<h3 id="flexbox">Flexbox</h3>
+<table class="api-table api-table--html">
+  <thead>
+    <tr>
+      <th>Class</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>fe_u_flex-container</code></td>
+      <td>Sets the element to <code>display: flex</code></td>
+    </tr>
+    <tr>
+      <td>
+        <ul>
+          <li><code>fe_u_flex-justify-content--flex-start</code></li>
+          <li><code>fe_u_flex-justify-content--flex-end</code></li>
+          <li><code>fe_u_flex-justify-content--center</code></li>
+          <li><code>fe_u_flex-justify-content--space-between</code></li>
+          <li><code>fe_u_flex-justify-content--space-around</code></li>
+        </ul>
+      </td>
+      <td>Sets <code>justify-content</code> to the respective value when applied to any flex element</td>
+    </tr>
+    <tr>
+      <td>
+        <ul>
+          <li><code>fe_u_flex-align-items--flex-start</code></li>
+          <li><code>fe_u_flex-align-items--flex-end</code></li>
+          <li><code>fe_u_flex-align-items--center</code></li>
+          <li><code>fe_u_flex-align-items--stretch</code></li>
+        </ul>
+      </td>
+      <td>Sets <code>align-items</code> to the respective value when applied to any flex element</td>
+    </tr>
+    <tr>
+      <td>
+        <ul>
+          <li><code>fe_u_flex-align-self--flex-start</code></li>
+          <li><code>fe_u_flex-align-self--flex-end</code></li>
+          <li><code>fe_u_flex-align-self--center</code></li>
+          <li><code>fe_u_flex-align-self--stretch</code></li>
+        </ul>
+      </td>
+      <td>Sets <code>align-self</code> to the respective value when applied to any flex element child</td>
+    </tr>
+    <tr>
+      <td><code>fe_u_flex--shrink</code></td>
+      <td>Flex item will only take up the space of its content when applied to any flex element child</td>
+    </tr>
+    <tr>
+      <td><code>fe_u_flex--grow</code></td>
+      <td>Flex item will take up the maximum space it can when applied to any flex element child</td>
+    </tr>
+  </tbody>
+</table>
+
+      
+
+    
+  </div>
+
+  <script>
+document.addEventListener("DOMContentLoaded", function(event) {
+    if (window.amplitude) {
+        amplitude.getInstance().init('d426be2bbef81471eeac4bca0c061243');
+
+        amplitude.getInstance().logEvent('viewed page', {
+          pageName: 'Layout Utilities',
+          pageCategory: 'foundations'.length > 0
+            ? 'foundations'
+            : null,
+          forgeVersion: '2.0.0-beta.7',
+          forgeGeneralVersion: /^\d*(?=\.)/.exec('2.0.0-beta.7')
+            ? /^\d*(?=\.)/.exec('2.0.0-beta.7').toString()
+            : null
+        });
+      }
+      else {
+        console.warn("amplitude is not logging events");
+      }
+});
+</script>
+
+
+
+    </div>
+    <!--div class="debug"><pre><code class="language-json">{"id":"f3c7a74832651396baf1d5ff2f96f125","name":"layout-utilities","handle":"layout-utilities","label":"Layout Utilities","title":"Layout Utilities","order":1000000,"isHidden":false,"alias":null,"isEntity":true,"isDoc":true,"isIndex":false,"path":"foundations/layout-utilities","status":null,"content":"<p class=\"p--lead\">The utility classes map to certain CSS properties and are applied with the highest level of specificity. They can be used as a shorthand way to override default component styling without resorting to custom CSS or inline styles.</p>\r\n\r\n## Utilities\r\n### Padding, Margin, and Height/Width\r\n<table class=\"api-table api-table--utilities\">\r\n  <thead>\r\n    <tr>\r\n      <th>Class</th>\r\n      <th>Sass</th>\r\n      <th>Description</th>\r\n    </tr>\r\n  </thead>\r\n  <tbody>\r\n    <tr>\r\n      <td>\r\n        <ul>\r\n          <li>`fe_u_padding--none`</li>\r\n          <li>`fe_u_padding--top-none`</li>\r\n          <li>`fe_u_padding--bottom-none`</li>\r\n          <li>`fe_u_padding--left-none`</li>\r\n          <li>`fe_u_padding--right-none`</li>\r\n        </ul>\r\n      </td>\r\n      <td>`map-get($global-padding, none)`</td>\r\n      <td>Sets the specified padding to `none`</td>\r\n    </tr>\r\n    <tr>\r\n      <td>\r\n        <ul>\r\n          <li>`fe_u_padding--xsmall`</li>\r\n          <li>`fe_u_padding--top-xsmall`</li>\r\n          <li>`fe_u_padding--bottom-xsmall`</li>\r\n          <li>`fe_u_padding--left-xsmall`</li>\r\n          <li>`fe_u_padding--right-xsmall`</li>\r\n        </ul>\r\n      </td>\r\n      <td>`map-get($global-padding, xsmall)`</td>\r\n      <td>Sets the specified padding to `xsmall`</td>\r\n    </tr>\r\n    <tr>\r\n      <td>\r\n        <ul>\r\n          <li>`fe_u_padding--small`</li>\r\n          <li>`fe_u_padding--top-small`</li>\r\n          <li>`fe_u_padding--bottom-small`</li>\r\n          <li>`fe_u_padding--left-small`</li>\r\n          <li>`fe_u_padding--right-small`</li>\r\n        </td>\r\n      <td>`map-get($global-padding, small)`</td>\r\n      <td>Sets the specified padding to the `small` value</td>\r\n    </tr>\r\n    <tr>\r\n      <td>\r\n        <ul>\r\n          <li>`fe_u_padding--medium`</li>\r\n          <li>`fe_u_padding--top-medium`</li>\r\n          <li>`fe_u_padding--bottom-medium`</li>\r\n          <li>`fe_u_padding--left-medium`</li>\r\n          <li>`fe_u_padding--right-medium`</li>\r\n        <ul>\r\n      </td>\r\n      <td>`map-get($global-padding, medium)`</td>\r\n      <td>Sets the specified padding to the `medium` value</td>\r\n    </tr>\r\n    <tr>\r\n      <td>\r\n        <ul>\r\n          <li>`fe_u_padding--large`</li>\r\n          <li>`fe_u_padding--top-large`</li>\r\n          <li>`fe_u_padding--bottom-large`</li>\r\n          <li>`fe_u_padding--left-large`<li>\r\n        </ul>\r\n      </td>\r\n      <td>`map-get($global-padding, large)`</td>\r\n      <td>Sets the specified padding to the `large` value</td>\r\n    </tr>\r\n    <tr>\r\n      <td>\r\n        <ul>\r\n          <li>`fe_u_padding--xlarge`</li>\r\n          <li>`fe_u_padding--top-xlarge`</li>\r\n          <li>`fe_u_padding--bottom-xlarge`</li>\r\n          <li>`fe_u_padding--left-xlarge`</li>\r\n          <li>`fe_u_padding--right-xlarge`</li>\r\n        </ul>\r\n      </td>\r\n      <td>`map-get($global-padding, xlarge)`</td>\r\n      <td>Sets the specified padding to `xlarge`</td>\r\n    </tr>\r\n    <tr>\r\n      <td>\r\n        <ul>\r\n          <li>`fe_u_padding--xxlarge`</li>\r\n          <li>`fe_u_padding--top-xxlarge`</li>\r\n          <li>`fe_u_padding--bottom-xxlarge`</li>\r\n          <li>`fe_u_padding--left-xxlarge`</li>\r\n          <li>`fe_u_padding--right-xxlarge`</li>\r\n        </ul>\r\n      </td>\r\n      <td>`map-get($global-padding, xxlarge)`</td>\r\n      <td>Sets the specified padding to `xxlarge`</td>\r\n    </tr>\r\n    <tr>\r\n      <td>\r\n        <ul>\r\n          <li>`fe_u_margin--none`</li>\r\n          <li>`fe_u_margin--top-none`</li>\r\n          <li>`fe_u_margin--bottom-none`</li>\r\n          <li>`fe_u_margin--left-none`</li>\r\n          <li>`fe_u_margin--right-none`</li>\r\n        </ul>\r\n      </td>\r\n      <td>`map-get($global-margin, none)`</td>\r\n      <td>Sets the specified margin to `none`</td>\r\n    </tr>\r\n    <tr>\r\n      <td>\r\n        <ul>\r\n          <li>`fe_u_margin--xsmall`</li>\r\n          <li>`fe_u_margin--top-xsmall`</li>\r\n          <li>`fe_u_margin--bottom-xsmall`</li>\r\n          <li>`fe_u_margin--left-xsmall`</li>\r\n          <li>`fe_u_margin--right-xsmall`</li>\r\n        </ul>\r\n      </td>\r\n      <td>`map-get($global-margin, xsmall)`</td>\r\n      <td>Sets the specified margin to `xsmall`</td>\r\n    </tr>\r\n    <tr>\r\n      <td>\r\n        <ul>\r\n          <li>`fe_u_margin--small`</li>\r\n          <li>`fe_u_margin--top-small`</li>\r\n          <li>`fe_u_margin--bottom-small`</li>\r\n          <li>`fe_u_margin--left-small`</li>\r\n          <li>`fe_u_margin--right-small`</li>\r\n        </ul>\r\n      </td>\r\n      <td>`map-get($global-margin, small)`</td>\r\n      <td>Sets the specified margin to the `small` value</td></tr>\r\n    <tr>\r\n      <td>\r\n        <ul>\r\n          <li>`fe_u_margin--medium`</li>\r\n          <li>`fe_u_margin--top-medium`</li>\r\n          <li>`fe_u_margin--bottom-medium`</li>\r\n          <li>`fe_u_margin--left-medium`</li>\r\n          <li>`fe_u_margin--right-medium`</li>\r\n        </ul>\r\n      </td>\r\n      <td>`map-get($global-margin, medium)`</td>\r\n      <td>Sets the specified margin to the `medium` value</td>\r\n    </tr>\r\n    <tr>\r\n      <td>\r\n        <ul>\r\n          <li>`fe_u_margin--large`</li>\r\n          <li>`fe_u_margin--top-large`</li>\r\n          <li>`fe_u_margin--bottom-large`</li>\r\n          <li>`fe_u_margin--left-large`</li>\r\n          <li>`fe_u_margin--right-large`</li>\r\n        </ul>\r\n      </td>\r\n      <td>`map-get($global-margin, large)`</td>\r\n      <td>Sets the specified margin to the `large` value</td>\r\n    </tr>\r\n    <tr>\r\n      <td>\r\n        <ul>\r\n          <li>`fe_u_margin--xlarge`</li>\r\n          <li>`fe_u_margin--top-xlarge`</li>\r\n          <li>`fe_u_margin--bottom-xlarge`</li>\r\n          <li>`fe_u_margin--left-xlarge`</li>\r\n          <li>`fe_u_margin--right-xlarge`</li>\r\n        </ul>\r\n      </td>\r\n      <td>`map-get($global-margin, xlarge)`</td>\r\n      <td>Sets the specified margin to `xlarge`</td>\r\n    </tr>\r\n    <tr>\r\n      <td>\r\n        <ul>\r\n          <li>`fe_u_margin--xxlarge`</li>\r\n          <li>`fe_u_margin--top-xxlarge`</li>\r\n          <li>`fe_u_margin--bottom-xxlarge`</li>\r\n          <li>`fe_u_margin--left-xxlarge`</li>\r\n          <li>`fe_u_margin--right-xxlarge`<li>\r\n        </ul>\r\n      </td>\r\n      <td>`map-get($global-margin, xxlarge)`</td>\r\n      <td>Sets the specified margin to `xxlarge`</td>\r\n    </tr>\r\n    <tr>\r\n      <td>`fe_u_fill--width`</td>\r\n      <td>n/a</td>\r\n      <td>Sets the width to 100% of the parent element</td>\r\n    </tr>\r\n    <tr>\r\n      <td>`fe_u_fill--height`</td>\r\n      <td>n/a</td>\r\n      <td>Sets the height to 100% of the parent element</td>\r\n    </tr>\r\n    <tr>\r\n      <td>`fe_u_fill--parent`</td>\r\n      <td>n/a</td>\r\n      <td>Sets the height and width to 100% of the parent element</td></tr>\r\n  </tbody>\r\n</table>\r\n\r\n### Flexbox\r\n<table class=\"api-table api-table--html\">\r\n  <thead>\r\n    <tr>\r\n      <th>Class</th>\r\n      <th>Description</th>\r\n    </tr>\r\n  </thead>\r\n  <tbody>\r\n    <tr>\r\n      <td>`fe_u_flex-container`</td>\r\n      <td>Sets the element to `display: flex`</td>\r\n    </tr>\r\n    <tr>\r\n      <td>\r\n        <ul>\r\n          <li>`fe_u_flex-justify-content--flex-start`</li>\r\n          <li>`fe_u_flex-justify-content--flex-end`</li>\r\n          <li>`fe_u_flex-justify-content--center`</li>\r\n          <li>`fe_u_flex-justify-content--space-between`</li>\r\n          <li>`fe_u_flex-justify-content--space-around`</li>\r\n        </ul>\r\n      </td>\r\n      <td>Sets `justify-content` to the respective value when applied to any flex element</td>\r\n    </tr>\r\n    <tr>\r\n      <td>\r\n        <ul>\r\n          <li>`fe_u_flex-align-items--flex-start`</li>\r\n          <li>`fe_u_flex-align-items--flex-end`</li>\r\n          <li>`fe_u_flex-align-items--center`</li>\r\n          <li>`fe_u_flex-align-items--stretch`</li>\r\n        </ul>\r\n      </td>\r\n      <td>Sets `align-items` to the respective value when applied to any flex element</td>\r\n    </tr>\r\n    <tr>\r\n      <td>\r\n        <ul>\r\n          <li>`fe_u_flex-align-self--flex-start`</li>\r\n          <li>`fe_u_flex-align-self--flex-end`</li>\r\n          <li>`fe_u_flex-align-self--center`</li>\r\n          <li>`fe_u_flex-align-self--stretch`</li>\r\n        </ul>\r\n      </td>\r\n      <td>Sets `align-self` to the respective value when applied to any flex element child</td>\r\n    </tr>\r\n    <tr>\r\n      <td>`fe_u_flex--shrink`</td>\r\n      <td>Flex item will only take up the space of its content when applied to any flex element child</td>\r\n    </tr>\r\n    <tr>\r\n      <td>`fe_u_flex--grow`</td>\r\n      <td>Flex item will take up the maximum space it can when applied to any flex element child</td>\r\n    </tr>\r\n  </tbody>\r\n</table>\r\n","lang":{"name":"Markdown","mode":"markdown","scope":"source.gfm","color":"#083FA1"},"file":{"root":"C:\\","dir":"C:\\Users\\ctsui\\code\\forge-guide\\docs\\03-foundations","base":"layout-utilities.md","ext":".md","name":"layout-utilities","relPath":"03-foundations\\layout-utilities.md","fsName":"layout-utilities","path":"C:\\Users\\ctsui\\code\\forge-guide\\docs\\03-foundations\\layout-utilities.md","dirs":["C:\\Users\\ctsui\\code\\forge-guide\\docs\\03-foundations"],"isHidden":false,"order":1000000,"isFile":true,"isDirectory":false,"stat":{"dev":4102694615,"mode":33206,"nlink":1,"uid":0,"gid":0,"rdev":0,"ino":3377699720813722,"size":8563,"atimeMs":1528896974621.8438,"mtimeMs":1528896974622.8462,"ctimeMs":1528912365117.4158,"birthtimeMs":1528896974621.8438,"atime":"2018-06-13T13:36:14.622Z","mtime":"2018-06-13T13:36:14.623Z","ctime":"2018-06-13T17:52:45.117Z","birthtime":"2018-06-13T13:36:14.622Z"},"lang":{"name":"Markdown","mode":"markdown","scope":"source.gfm","color":"#083FA1"},"isBinary":false},"context":{"extensions":{"core":{"forge-toast":{"name":"Toast","version":"0.2.2","description":"Toast component for Forge"},"forge-toggle-switch":{"name":"ToggleSwitch","version":"0.1.1","description":"ToggleSwitch component for Forge"}},"community":{"clinicals-forge-extension":{"name":"Clinicals Forge Extension","owner":"Nursing Flowsheets","url":"https://bitbucket.athenahealth.com/projects/CLIFS/repos/clinicals-forge-extension/browse","version":"2.1.1","description":"A forge-extension containing components used by inpatient clinicals"}}},"amplitudeCategory":"foundations"}}</code></pre></div-->
+  </div>
+</div>
+
+
+
+</div>
+
+
+
+
+<script src="../../assets/clipboard.min.js?cachebust=1.2.0"></script>
+
+<script src="../../assets/main.js?cachebust=1.2.0"></script>
+
+<script src="../../assets/amplitude.js?cachebust=1.2.0"></script>
+
+
+
+</body>
+</html>

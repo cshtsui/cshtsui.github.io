@@ -1,0 +1,1260 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+    window.frctl = {
+        env: 'static'
+    };
+    </script>
+    <script>var cl = document.querySelector('html').classList; cl.remove('no-js'); cl.add('has-js');</script>
+    <link rel="shortcut icon" href="../../favicon_blue.ico" type="image/ico">
+
+<link rel="stylesheet" href="../../assets/css/styles.css?cachebust=1.2.0" type="text/css">
+
+<link rel="stylesheet" href="../../assets/css/prism-atom-dark.css?cachebust=1.2.0" type="text/css">
+
+<link rel="stylesheet" href="../../assets/css/ascetic.css?cachebust=1.2.0" type="text/css">
+
+<link rel="stylesheet" href="../../css/forge.css?cachebust=1.2.0" type="text/css">
+
+
+<title>Typeahead | athenahealth</title>
+
+</head>
+<body>
+
+
+
+<div class="fg_app">
+  <header class="fg_l_header fg_l_header--alpha">
+  <a class="fg_c_branding" href="../../index.html">
+    <img src="../../assets/images/logo.svg" />
+  </a>
+  <nav class="fg_c_nav-top">
+  <ul class="fg_c_nav-top__list">
+    
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link "
+            href="../guidelines/principles.html"
+            title="Guidelines"
+          >
+            Guidelines
+          </a>
+        </li>
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link "
+            href="../foundations/color.html"
+            title="Foundations"
+          >
+            Foundations
+          </a>
+        </li>
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link  fg_is-active"
+            href="accordion.html"
+            title="Components"
+          >
+            Components
+          </a>
+        </li>
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link "
+            href="../extensions/forge-extensions.html"
+            title="Extensions"
+          >
+            Extensions
+          </a>
+        </li>
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link "
+            href="../resources/release-notes.html"
+            title="Resources"
+          >
+            Resources
+          </a>
+        </li>
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link "
+            href="../resources/downloads.html"
+            title="Resources"
+          >
+            Resources
+          </a>
+        </li>
+      
+    
+  </ul>
+</nav>
+
+
+  <div class="fg_c_nav-version">
+    v2.0.0-beta.7
+  </div>
+</header>
+
+
+  
+
+<div class="fg_l_sidebar" data-role="sidebar">
+  <nav class="fg_c_nav-left">
+  <ul class="fg_c_nav-left__list">
+  
+    
+  
+    
+  
+    
+  
+    
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="accordion.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Accordion</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="banner.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Banner</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="button.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Button</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="card.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Card</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="checkbox.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Checkbox</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="date-input.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>DateInput</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="form.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Form</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="form-field.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>FormField</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="grid.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Grid</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="heading.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Heading</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="icon.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Icon</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="icon-button.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>IconButton</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="input.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Input</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="lightbox.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Lightbox</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="list.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>List</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="loader.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Loader</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="modal.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Modal</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="multi-field.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>MultiField</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="multiselect.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Multiselect</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="paginator.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Paginator</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="radio-group.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>RadioGroup</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="read-only-input.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>ReadOnlyInput</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="redux-form.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>ReduxForm</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="redux-form-field.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>ReduxFormField</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="redux-multi-field.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>ReduxMultiField</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="removable-tag.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>RemovableTag</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="root.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Root</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="select.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Select</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="selection-list.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>SelectionList</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="status-tag.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>StatusTag</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="stepper.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Stepper</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="table.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Table</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="tabs.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Tabs</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="textarea.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Textarea</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="toast.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Toast</span>
+            
+              
+                <span class="fe_f_all"><span class="fe_c_status-tag">EXT</span></span>
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="toggle-switch.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>ToggleSwitch</span>
+            
+              
+            
+              
+                <span class="fe_f_all"><span class="fe_c_status-tag">EXT</span></span>
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="tooltip.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Tooltip</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href=""
+            
+            class="fg_c_nav-left__link  fg_is-active"
+          >
+            <span>Typeahead</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+    
+  
+    
+  
+    
+  
+    
+  
+  </ul>
+</nav>
+
+</div>
+
+<div class="fg_l_main" data-role="main">
+  <div class="fg_doc">
+
+    
+      <nav class="fg_c_nav-page"></nav>
+
+    
+
+    <div class="fg_doc__header">
+      
+        <h1 class="fg_doc__title">Typeahead</h1>
+      
+    </div>
+    <div class="fg_doc__content">
+      
+
+  <div class="fg_markdown">
+    
+
+      
+      
+
+      
+        <p class="p--lead">Typeahead is a text input that shows autocomplete-style suggestions as the user types, accelerating the user&#39;s input process.</p>
+
+<h2 id="demos">Demos</h2>
+<div class="fg_c_demos"><div class="fg_c_demos__demo js-demo-d21a6544f1af2fab30130cc0ce14dfd6 ">
+    <div class="fg_c_preview js-resize-preview" style="height: 475px">
+      <iframe height="475" src="../../components/preview/typeahead.html" class="fg_c_preview__iframe"></iframe>
+    </div>
+    <div class="fg_c_accordian js-accordian">
+      <button class="fg_c_accordian__button" role="heading">
+        <span class="fg_c_accordian__icon js-icon"></span>
+        <span class="fg_c_accordian__closed-text">Show Code</span>
+        <span class="fg_c_accordian__open-text">Hide Code</span>
+      </button>
+      <div class="fg_c_code-tabs fg_is-hidden js-tabs">
+        <ul class="fg_c_code-tabs__list" role="tablist">
+          <li class="fg_c_code-tabs__tab" role="tab">
+            <a href="#tab-jsx-d21a6544f1af2fab30130cc0ce14dfd6">JSX</a>
+          </li>
+          <li class="fg_c_code-tabs__tab" role="tab">
+            <a href="#tab-html-d21a6544f1af2fab30130cc0ce14dfd6">HTML</a>
+          </li>
+        </ul>
+        <div class="fg_c_code-tabs__panel" id="tab-jsx-d21a6544f1af2fab30130cc0ce14dfd6" role="tabpanel">
+          <button type="button" class="fg_c_button--inverted fg_c_button--copy js-copy-code" data-clipboard-target="#tab-jsx-d21a6544f1af2fab30130cc0ce14dfd6 pre">Copy Code</button>
+          <pre class="fg_c_code-block"><code class="language-jsx"><span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">&#39;react&#39;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> Provider <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&#39;react-redux&#39;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> createStore<span class="token punctuation">,</span> combineReducers <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&#39;redux&#39;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> reducer <span class="token keyword">as</span> formReducer <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&#39;redux-form&#39;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> Heading<span class="token punctuation">,</span> ReduxForm<span class="token punctuation">,</span> ReduxFormField<span class="token punctuation">,</span> Typeahead <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&#39;@athena/forge&#39;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> faker <span class="token keyword">from</span> <span class="token string">&#39;faker&#39;</span><span class="token punctuation">;</span>
+<span style='display:none'>empty line</span>
+<span class="token keyword">const</span> store <span class="token operator">=</span> <span class="token function">createStore</span><span class="token punctuation">(</span>
+  <span class="token function">combineReducers</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    form<span class="token punctuation">:</span> formReducer<span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span style='display:none'>empty line</span>
+<span class="token keyword">const</span> nameList <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">200</span><span class="token punctuation">;</span>
+<span class="token keyword">while</span> <span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">{</span>
+  nameList<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span> faker<span class="token punctuation">.</span>name<span class="token punctuation">.</span><span class="token function">lastName</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">&#39;,&#39;</span> <span class="token operator">+</span> faker<span class="token punctuation">.</span>name<span class="token punctuation">.</span><span class="token function">firstName</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  i<span class="token operator">--</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span style='display:none'>empty line</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">function</span> <span class="token function">TooltipButton</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Provider</span> <span class="token attr-name">store</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>store<span class="token punctuation">}</span></span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">className</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;u&#95;padding--large<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ReduxForm</span> <span class="token attr-name">form</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>redux-form-demo<span class="token punctuation">&quot;</span></span> <span class="token attr-name">buttonText</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>Update<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Heading</span> <span class="token attr-name">headingTag</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>h2<span class="token punctuation">&quot;</span></span> <span class="token attr-name">variant</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>section<span class="token punctuation">&quot;</span></span> <span class="token attr-name">text</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>Staff<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ReduxFormField</span>
+            <span class="token attr-name">labelText</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&#39;</span>Surgeon<span class="token punctuation">&#39;</span></span>
+            <span class="token attr-name">inputAs</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>Typeahead<span class="token punctuation">}</span></span>
+            <span class="token attr-name">options</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>nameList<span class="token punctuation">}</span></span>
+          <span class="token punctuation">/&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ReduxFormField</span>
+            <span class="token attr-name">labelText</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&#39;</span>Anesthesiologist<span class="token punctuation">&#39;</span></span>
+            <span class="token attr-name">inputAs</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>Typeahead<span class="token punctuation">}</span></span>
+            <span class="token attr-name">options</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>nameList<span class="token punctuation">}</span></span>
+          <span class="token punctuation">/&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ReduxFormField</span>
+            <span class="token attr-name">labelText</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&#39;</span>Scrub<span class="token punctuation">&#39;</span></span>
+            <span class="token attr-name">inputAs</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>Typeahead<span class="token punctuation">}</span></span>
+            <span class="token attr-name">options</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>nameList<span class="token punctuation">}</span></span>
+          <span class="token punctuation">/&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ReduxFormField</span>
+            <span class="token attr-name">labelText</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&#39;</span>Circulator<span class="token punctuation">&#39;</span></span>
+            <span class="token attr-name">inputAs</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>Typeahead<span class="token punctuation">}</span></span>
+            <span class="token attr-name">options</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>nameList<span class="token punctuation">}</span></span>
+          <span class="token punctuation">/&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Heading</span> <span class="token attr-name">headingTag</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>h2<span class="token punctuation">&quot;</span></span> <span class="token attr-name">variant</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>section<span class="token punctuation">&quot;</span></span> <span class="token attr-name">text</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>Procedure<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ReduxFormField</span>
+            <span class="token attr-name">labelText</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&#39;</span>Patient in pre-op<span class="token punctuation">&#39;</span></span>
+          <span class="token punctuation">/&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ReduxForm</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>Provider</span><span class="token punctuation">&gt;</span></span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+        </div>
+        <div class="fg_c_code-tabs__panel" id="tab-html-d21a6544f1af2fab30130cc0ce14dfd6" role="tabpanel">
+          <button type="button" class="fg_c_button--inverted fg_c_button--copy js-copy-code" data-clipboard-target="#tab-html-d21a6544f1af2fab30130cc0ce14dfd6 pre">Copy Code</button>
+          <pre class="fg_c_code-block"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;u&#95;padding--large<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>form</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>redux-form-demo<span class="token punctuation">&quot;</span></span> <span class="token attr-name">novalidate</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span><span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;heading fe&#95;c&#95;heading--section<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Staff<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;form-field<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row fe&#95;l&#95;grid-row--nested<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row&#95;&#95;col fe&#95;l&#95;grid-row&#95;&#95;col--small-12 fe&#95;l&#95;grid-row&#95;&#95;col--medium-3 fe&#95;c&#95;form-field&#95;&#95;label<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe-form-field-gen-499<span class="token punctuation">&quot;</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe-form-field-gen-499-label<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;label<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Surgeon<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row&#95;&#95;col fe&#95;l&#95;grid-row&#95;&#95;col--small-12 fe&#95;l&#95;grid-row&#95;&#95;col--medium-9 fe&#95;c&#95;form-field&#95;&#95;right<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;form-field&#95;&#95;input-slot<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">role</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>combobox<span class="token punctuation">&quot;</span></span> <span class="token attr-name">aria-haspopup</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>listbox<span class="token punctuation">&quot;</span></span> <span class="token attr-name">aria-owns</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>react-autowhatever-fe-form-field-gen-499<span class="token punctuation">&quot;</span></span> <span class="token attr-name">aria-expanded</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>false<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;typeahead fe&#95;c&#95;form-field&#95;&#95;input<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;input fe&#95;c&#95;typeahead&#95;&#95;input<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>text<span class="token punctuation">&quot;</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span><span class="token punctuation">&quot;</span></span> <span class="token attr-name">autoComplete</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>off<span class="token punctuation">&quot;</span></span> <span class="token attr-name">aria-autocomplete</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>list<span class="token punctuation">&quot;</span></span> <span class="token attr-name">aria-controls</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>react-autowhatever-fe-form-field-gen-499<span class="token punctuation">&quot;</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe-form-field-gen-499<span class="token punctuation">&quot;</span></span> <span class="token attr-name">aria-labelledby</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe-form-field-gen-499-label<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;input&#95;&#95;input<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>react-autowhatever-fe-form-field-gen-499<span class="token punctuation">&quot;</span></span> <span class="token attr-name">role</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>listbox<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;typeahead&#95;&#95;suggestions-container<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;form-field&#95;&#95;message<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;form-field&#95;&#95;status<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;form-field<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row fe&#95;l&#95;grid-row--nested<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row&#95;&#95;col fe&#95;l&#95;grid-row&#95;&#95;col--small-12 fe&#95;l&#95;grid-row&#95;&#95;col--medium-3 fe&#95;c&#95;form-field&#95;&#95;label<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe-form-field-gen-500<span class="token punctuation">&quot;</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe-form-field-gen-500-label<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;label<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Anesthesiologist<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row&#95;&#95;col fe&#95;l&#95;grid-row&#95;&#95;col--small-12 fe&#95;l&#95;grid-row&#95;&#95;col--medium-9 fe&#95;c&#95;form-field&#95;&#95;right<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;form-field&#95;&#95;input-slot<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">role</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>combobox<span class="token punctuation">&quot;</span></span> <span class="token attr-name">aria-haspopup</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>listbox<span class="token punctuation">&quot;</span></span> <span class="token attr-name">aria-owns</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>react-autowhatever-fe-form-field-gen-500<span class="token punctuation">&quot;</span></span> <span class="token attr-name">aria-expanded</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>false<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;typeahead fe&#95;c&#95;form-field&#95;&#95;input<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;input fe&#95;c&#95;typeahead&#95;&#95;input<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>text<span class="token punctuation">&quot;</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span><span class="token punctuation">&quot;</span></span> <span class="token attr-name">autoComplete</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>off<span class="token punctuation">&quot;</span></span> <span class="token attr-name">aria-autocomplete</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>list<span class="token punctuation">&quot;</span></span> <span class="token attr-name">aria-controls</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>react-autowhatever-fe-form-field-gen-500<span class="token punctuation">&quot;</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe-form-field-gen-500<span class="token punctuation">&quot;</span></span> <span class="token attr-name">aria-labelledby</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe-form-field-gen-500-label<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;input&#95;&#95;input<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>react-autowhatever-fe-form-field-gen-500<span class="token punctuation">&quot;</span></span> <span class="token attr-name">role</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>listbox<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;typeahead&#95;&#95;suggestions-container<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;form-field&#95;&#95;message<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;form-field&#95;&#95;status<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;form-field<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row fe&#95;l&#95;grid-row--nested<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row&#95;&#95;col fe&#95;l&#95;grid-row&#95;&#95;col--small-12 fe&#95;l&#95;grid-row&#95;&#95;col--medium-3 fe&#95;c&#95;form-field&#95;&#95;label<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe-form-field-gen-501<span class="token punctuation">&quot;</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe-form-field-gen-501-label<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;label<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Scrub<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row&#95;&#95;col fe&#95;l&#95;grid-row&#95;&#95;col--small-12 fe&#95;l&#95;grid-row&#95;&#95;col--medium-9 fe&#95;c&#95;form-field&#95;&#95;right<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;form-field&#95;&#95;input-slot<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">role</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>combobox<span class="token punctuation">&quot;</span></span> <span class="token attr-name">aria-haspopup</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>listbox<span class="token punctuation">&quot;</span></span> <span class="token attr-name">aria-owns</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>react-autowhatever-fe-form-field-gen-501<span class="token punctuation">&quot;</span></span> <span class="token attr-name">aria-expanded</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>false<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;typeahead fe&#95;c&#95;form-field&#95;&#95;input<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;input fe&#95;c&#95;typeahead&#95;&#95;input<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>text<span class="token punctuation">&quot;</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span><span class="token punctuation">&quot;</span></span> <span class="token attr-name">autoComplete</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>off<span class="token punctuation">&quot;</span></span> <span class="token attr-name">aria-autocomplete</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>list<span class="token punctuation">&quot;</span></span> <span class="token attr-name">aria-controls</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>react-autowhatever-fe-form-field-gen-501<span class="token punctuation">&quot;</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe-form-field-gen-501<span class="token punctuation">&quot;</span></span> <span class="token attr-name">aria-labelledby</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe-form-field-gen-501-label<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;input&#95;&#95;input<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>react-autowhatever-fe-form-field-gen-501<span class="token punctuation">&quot;</span></span> <span class="token attr-name">role</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>listbox<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;typeahead&#95;&#95;suggestions-container<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;form-field&#95;&#95;message<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;form-field&#95;&#95;status<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;form-field<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row fe&#95;l&#95;grid-row--nested<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row&#95;&#95;col fe&#95;l&#95;grid-row&#95;&#95;col--small-12 fe&#95;l&#95;grid-row&#95;&#95;col--medium-3 fe&#95;c&#95;form-field&#95;&#95;label<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe-form-field-gen-502<span class="token punctuation">&quot;</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe-form-field-gen-502-label<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;label<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Circulator<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row&#95;&#95;col fe&#95;l&#95;grid-row&#95;&#95;col--small-12 fe&#95;l&#95;grid-row&#95;&#95;col--medium-9 fe&#95;c&#95;form-field&#95;&#95;right<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;form-field&#95;&#95;input-slot<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">role</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>combobox<span class="token punctuation">&quot;</span></span> <span class="token attr-name">aria-haspopup</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>listbox<span class="token punctuation">&quot;</span></span> <span class="token attr-name">aria-owns</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>react-autowhatever-fe-form-field-gen-502<span class="token punctuation">&quot;</span></span> <span class="token attr-name">aria-expanded</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>false<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;typeahead fe&#95;c&#95;form-field&#95;&#95;input<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;input fe&#95;c&#95;typeahead&#95;&#95;input<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>text<span class="token punctuation">&quot;</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span><span class="token punctuation">&quot;</span></span> <span class="token attr-name">autoComplete</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>off<span class="token punctuation">&quot;</span></span> <span class="token attr-name">aria-autocomplete</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>list<span class="token punctuation">&quot;</span></span> <span class="token attr-name">aria-controls</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>react-autowhatever-fe-form-field-gen-502<span class="token punctuation">&quot;</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe-form-field-gen-502<span class="token punctuation">&quot;</span></span> <span class="token attr-name">aria-labelledby</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe-form-field-gen-502-label<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;input&#95;&#95;input<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>react-autowhatever-fe-form-field-gen-502<span class="token punctuation">&quot;</span></span> <span class="token attr-name">role</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>listbox<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;typeahead&#95;&#95;suggestions-container<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;form-field&#95;&#95;message<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;form-field&#95;&#95;status<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;heading fe&#95;c&#95;heading--section<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Procedure<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;form-field<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row fe&#95;l&#95;grid-row--nested<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row&#95;&#95;col fe&#95;l&#95;grid-row&#95;&#95;col--small-12 fe&#95;l&#95;grid-row&#95;&#95;col--medium-3 fe&#95;c&#95;form-field&#95;&#95;label<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe-form-field-gen-503<span class="token punctuation">&quot;</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe-form-field-gen-503-label<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;label<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Patient in pre-op<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row&#95;&#95;col fe&#95;l&#95;grid-row&#95;&#95;col--small-12 fe&#95;l&#95;grid-row&#95;&#95;col--medium-9 fe&#95;c&#95;form-field&#95;&#95;right<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;form-field&#95;&#95;input-slot<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;input fe&#95;c&#95;form-field&#95;&#95;input<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>text<span class="token punctuation">&quot;</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe-form-field-gen-503<span class="token punctuation">&quot;</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span><span class="token punctuation">&quot;</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe-form-field-gen-503<span class="token punctuation">&quot;</span></span> <span class="token attr-name">aria-labelledby</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe-form-field-gen-503-label<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;input&#95;&#95;input<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;form-field&#95;&#95;message<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;form-field&#95;&#95;status<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;form-field<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row fe&#95;l&#95;grid-row--nested<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row&#95;&#95;col fe&#95;l&#95;grid-row&#95;&#95;col--small-12 fe&#95;l&#95;grid-row&#95;&#95;col--medium-3 fe&#95;c&#95;form-field&#95;&#95;label<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row&#95;&#95;col fe&#95;l&#95;grid-row&#95;&#95;col--small-12 fe&#95;l&#95;grid-row&#95;&#95;col--medium-9 fe&#95;c&#95;form-field&#95;&#95;right<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;form-field&#95;&#95;input-slot<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;button fe&#95;c&#95;button--primary<span class="token punctuation">&quot;</span></span> <span class="token attr-name">aria-disabled</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>false<span class="token punctuation">&quot;</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>submit<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Update<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;form-field&#95;&#95;message<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;form-field&#95;&#95;status<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>form</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+        </div>
+      </div>
+    </div>
+  </div></div>
+
+<h2 id="usage">Usage</h2>
+<p><code>Typeahead</code> is a text input field with autocomplete behavior. When users begin typing, it shows a dropdown list of suggested values. Users can then click or arrow down to a value instead of having to type the entire string. This helps speed up the user&#39;s input process.</p>
+<p><code>Typeahead</code> is useful when users are likely to enter a value from a known list, such as diagnoses or medications.</p>
+<p><code>Typeahead</code> gets its suggestions by string matching the user&#39;s input against a reference list. See Design for default logic and ways to customize this.</p>
+<p>Users can also enter a free text value that is not on the reference list. If you want to force users to choose from a predefined list, use <a href="select.html"><code>Select</code></a> or <a href="multiselect.html"><code>Multiselect</code></a> instead.</p>
+<h2 id="design">Design</h2>
+<h3 id="string-matching-settings">String matching settings</h3>
+<p>Typeahead&#39;s string matching behavior has settings that can be customized:</p>
+<ul>
+<li><p>Matching string location in list items</p>
+<ul>
+<li>Default: Match list items that contain the input string anywhere in the text</li>
+<li>Customize it: Change this to match only items that begin with the input string by setting the <code>matchPos</code> prop to <code>start</code></li>
+</ul>
+</li>
+<li><p>Case/capitalization</p>
+<ul>
+<li>Default: Case insensitive (for example, the string &quot;Alzheimer&#39;s&quot; will also match &quot;alzheimer&#39;s&quot;)</li>
+<li>Customize it: Change this to case sensitive by setting the <code>ignoreCase</code> prop to <code>false</code></li>
+</ul>
+</li>
+<li><p>Length of text users must type before suggestions appear</p>
+<ul>
+<li>Default: One character</li>
+<li>Customize it: Change this by setting the <code>minQueryLength</code> prop</li>
+</ul>
+</li>
+</ul>
+<h3 id="text-input-field">Text input field</h3>
+<p>The input field may optionally display an <a href="icon.html"><code>Icon</code></a> within the left side of the field. This icon should visually reinforce the action of the field (e.g., use the <code>Filter</code> icon when entries in the input filter a nearby list). Use the <code>icon</code> prop to customize this.</p>
+<p>The input field&#39;s default placeholder text should be customized to reflect the context (e.g., &quot;Enter a diagnosis&quot;). Use the <code>placeholder</code> prop to set this.</p>
+<p>Find more guidance on the <a href="../foundations/form-design.html">Form Design</a> Foundations page.</p>
+<h2 id="implementation">Implementation</h2>
+<p>The <code>Typeahead</code> component is based on <a href="http://react-autosuggest.js.org/">React Autosuggest</a>. Forge leverages third-party libraries when possible, but they must still achieve Forge design standards and present a unified API. Only the functionality described in the Forge documentation is officially supported for this component, even if an underlying third-party API currently remains usable.</p>
+<h3 id="options-and-suggestions">Options and Suggestions</h3>
+<p><code>Typeahead</code> expects <code>options</code> or <code>suggestions</code> to be passed as an array of either strings or objects with a <code>value</code> property. <code>options</code> is the set of all possible values to display in the dropdown and leaves the filtering to internal logic. <code>suggestions</code> is the set of values to display currently and should already have been filtered. Set one or the other, not both.</p>
+<h3 id="list-display">List Display</h3>
+<p>Both the <code>options</code> and <code>suggestions</code> properties populate the list below the input. For uncontrolled components use <code>options</code> and for controlled components use <code>suggestions</code>.</p>
+<p>If the <code>suggestions</code> property is used, the list will be displayed immediately unless the <code>alwaysRenderSuggestions</code> is set to <code>false</code>.</p>
+<p>Use the <code>minQueryLength</code> property in conjunction with <code>options</code> to display the list only after a certain number of characters has been entered.</p>
+<p>Updating <code>suggestions</code> will update the dropdown while open, but updating <code>options</code> will not.</p>
+<h3 id="filtering">Filtering</h3>
+<p>By default in uncontrolled mode <code>Typeahead</code> does a string match between the entered text and the options. If a different method of filtering is desired, a custom function can be passed to the <code>filterOptions</code> prop that will allow for different modes of filtering.</p>
+<h3 id="excluded-props">Excluded Props</h3>
+<p><code>Typeahead</code> does not make use of some of the properties from React Autosuggest mostly related to having sections within the suggestions list: multiSection, renderSectionTitle, getSectionSuggestions, getSuggestionValue.</p>
+<h3 id="async-suggestions">Async suggestions</h3>
+<p><code>Typeahead</code> expects <code>suggestions</code> to be set synchronously when <code>onSuggestionsFetchRequested</code> or <code>onSuggestionsClearRequested</code> is called. There is no option for loading it asynchronously, at the moment. This is on the Forge team&#39;s list for possible future implementation.</p>
+<h2 id="api-tables">API Tables</h2>
+<h3 id="import-typeahead-only">Import Typeahead Only</h3>
+<p><p>Importing individual components can reduce bundle size. <a href="https://athenaconfluence.athenahealth.com/display/UXDS/Forge+Import+for+Better+Tree+Shaking">Learn more</a></p><code>import Typeahead from &#39;@athena/forge/lib/typeahead&#39;;</code></p>
+<h3 id="typeahead-props">Typeahead Props</h3>
+  <table class="api-table api-table--react">
+    <thead>
+      <tr>
+        <th>Prop</th>
+        <th>Type</th>
+        <th>Default</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><code>alwaysRenderSuggestions</code></td>
+        <td>
+          bool
+        </td>
+        <td></td>
+        <td>When this is &#x60;true&#x60;, &#x60;suggestions&#x60; or &#x60;options&#x60; provided to the component will always be displayed - this defaults
+to &#x60;false&#x60; when &#x60;options&#x60; are provided and &#x60;true&#x60; when &#x60;suggestions&#x60; are provided but can be overridden</td>
+      </tr>
+      <tr>
+        <td><code>className</code></td>
+        <td>
+          string
+        </td>
+        <td></td>
+        <td>Adds a class to the root element of the component</td>
+      </tr>
+      <tr>
+        <td><code>disabled</code></td>
+        <td>
+          bool
+        </td>
+        <td></td>
+        <td>Adds the relevant Forge state class to the input and passes prop to native react &#x60;&lt;input /&gt;&#x60;</td>
+      </tr>
+      <tr>
+        <td><code>error</code></td>
+        <td>
+          string
+        </td>
+        <td></td>
+        <td>Highlights the input when defined (specific string doesn&#x27;t matter)</td>
+      </tr>
+      <tr>
+        <td><code>filterOptions</code></td>
+        <td>
+          func
+        </td>
+        <td>String match function</td>
+        <td>
+          Entirely replaces &#x60;options&#x60; filtering logic.
+          Receives the following params:
+          <ul>
+            <li><strong>value</strong> (String): The input value</li>
+            <li><strong>props</strong>  (Object): The props passed into your decorated component.</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td><code>inputWidth</code></td>
+        <td>
+          string
+        </td>
+        <td></td>
+        <td>Styling to be applied to &#x60;width&#x60; css property. Specifying this will override all other behavior that affects input
+width.</td>
+      </tr>
+      <tr>
+        <td><code>getSuggestionText</code></td>
+        <td>
+          func
+        </td>
+        <td>Function to return string or value property from object</td>
+        <td>Replaces default function for determining what text gets displayed for a suggestion - should return a string.
+        Receives the following params:
+          <ul>
+            <li><strong>suggestion</strong> (Object): One of the user defined objects passed to the options property</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td><code>icon</code></td>
+        <td>
+          string
+        </td>
+        <td></td>
+        <td>Which icon to display inside the field</td>
+      </tr>
+      <tr>
+        <td><code>iconSet</code></td>
+        <td>
+          objectOf
+            <ul>
+                <li><a href="https://bitbucket.athenahealth.com/projects/UXDS/repos/forge/browse/components/icon/_icon-base.jsx">IconBase components</a></li>
+            </ul>
+        </td>
+        <td><a href="icon.html"><code>ForgeIcons</code></a></td>
+        <td>Specify a custom icon set defined as a dictionary of <code>IconBase</code> components. Icon sets can be generated using the <a href="https://bitbucket.athenahealth.com/projects/UXDS/repos/app-fabric-generator-forge-extension/browse">App Fabric Forge Extension Generator</a>.</td>
+      </tr>
+      <tr>
+        <td><code>ignoreCase</code></td>
+        <td>
+          bool
+        </td>
+        <td>true</td>
+        <td>Whether to perform case-insensitive filtering &#x60;options&#x60;</td>
+      </tr>
+      <tr>
+        <td><code>matchPos</code></td>
+        <td>
+          enum
+            <ul>
+                <li>&#x27;any&#x27;</li>
+                <li>&#x27;start&#x27;</li>
+            </ul>
+        </td>
+        <td>&#x27;any&#x27;</td>
+        <td>Match the start or entire string when filtering &#x60;options&#x60;</td>
+      </tr>
+      <tr>
+        <td><code>minQueryLength</code></td>
+        <td>
+          number
+        </td>
+        <td>1</td>
+        <td>For use with &#x60;options&#x60; prop, this defines how many characters need to be typed by the user before showing
+suggestions</td>
+      </tr>
+      <tr>
+        <td><code>onChange</code></td>
+        <td>
+          func
+        </td>
+        <td></td>
+        <td>Called when the text inside the input changes — passes the event and the value of the input</td>
+      </tr>
+      <tr>
+        <td><code>onSuggestionClearRequested</code></td>
+        <td>
+          func
+        </td>
+        <td></td>
+        <td>Will be called every time you need to set &#x60;suggestions&#x60; to &#x60;[]&#x60; (if not using &#x60;options&#x60;).</td>
+      </tr>
+      <tr>
+        <td><code>onSuggestionFetchRequested</code></td>
+        <td>
+          func
+        </td>
+        <td></td>
+        <td>Will be called every time you need to recalculate &#x60;suggestions&#x60; (if not using &#x60;options&#x60;).</td>
+      </tr>      <tr>
+        <td><code>onSuggestionSelected</code></td>
+        <td>
+          func
+        </td>
+        <td></td>
+        <td>Called when a suggestion is selected - this function gets passed directly to the &#x60;Autosuggest&#x60; plugin</td>
+      </tr>
+      <tr>
+        <td><code>options</code></td>
+        <td>arrayOf - oneOfType:
+          <ul>
+            <li>
+              string
+            </li>
+            <li>shape:
+              <ul>
+                <li>value: string</li>
+              </ul>
+            </li>
+          </ul>
+        </td>
+        <td></td>
+        <td>Array of string or object suggestion options that will automatically be filtered and provided to the &#x60;Autosuggest&#x60;
+plugin - when using objects, by default, &#x60;value&#x60; will be displayed in the suggestion dropdown</td>
+      </tr>
+      <tr>
+        <td><code>placeholder</code></td>
+        <td>
+          string
+        </td>
+        <td></td>
+        <td>Text shown before typing in the text input</td>
+      </tr>
+      <tr>
+        <td><code>suggestions</code></td>
+        <td>arrayOf - oneOfType:
+          <ul>
+            <li>
+              string
+            </li>
+            <li>shape:
+              <ul>
+                <li>value: string</li>
+              </ul>
+            </li>
+          </ul>
+        </td>
+        <td></td>
+        <td>Array of string or object suggestions that will get passed to the &#x60;Autosuggest&#x60; plugin — by default, these will be
+rendered immediately unless &#x60;alwaysRenderSuggestions&#x60; is set to &#x60;false&#x60;</td>
+      </tr>
+      <tr>
+        <td><code>...rest</code></td>
+        <td></td>
+        <td></td>
+        <td>Passthrough props to <a href="https://github.com/moroshko/react-autosuggest#inputPropsProp">React Autosuggest&#39;s</a> inputProps.</td>
+      </tr>
+    </tbody>
+  </table>
+
+<h3 id="html-api">HTML API</h3>
+<table class="api-table api-table--html">
+  <thead>
+      <tr>
+      <th>Class</th>
+      <th>Applies To</th>
+      <th>Description</th>
+      </tr>
+  </thead>
+  <tbody>
+    <tr><td><code>fe_c_typeahead</code></td><td><code>Typeahead</code> root</td><td>Base class required for <code>Typeahead</code></td></tr>
+    <tr><td><code>fe_c_typeahead__input</code></td><td><code>Typeahead</code> input container element</td><td>Wraps <code>Typeahead</code> input</td></tr>
+    <tr><td><code>fe_c_typeahead__suggestions-container</code></td><td><code>Typeahead</code> suggestions container element</td><td>Wraps suggestions menu</td></tr>
+    <tr><td><code>fe_c_typeahead__suggestions-list</code></td><td><code>Typeahead</code> suggestions list element</td><td>Suggestions menu</td></tr>
+    <tr><td><code>fe_c_typeahead__suggestion</code></td><td><code>Typeahead</code> suggestion list item element</td><td>Suggestions menu item</td></tr>
+  </tbody>
+</table>
+
+      
+
+    
+  </div>
+
+  <script>
+document.addEventListener("DOMContentLoaded", function(event) {
+    if (window.amplitude) {
+        amplitude.getInstance().init('d426be2bbef81471eeac4bca0c061243');
+
+        amplitude.getInstance().logEvent('viewed page', {
+          pageName: 'Typeahead',
+          pageCategory: 'components'.length > 0
+            ? 'components'
+            : null,
+          forgeVersion: '2.0.0-beta.7',
+          forgeGeneralVersion: /^\d*(?=\.)/.exec('2.0.0-beta.7')
+            ? /^\d*(?=\.)/.exec('2.0.0-beta.7').toString()
+            : null
+        });
+      }
+      else {
+        console.warn("amplitude is not logging events");
+      }
+});
+</script>
+
+
+
+    </div>
+    <!--div class="debug"><pre><code class="language-json">{"id":"e2c3c4a8062081e63c85bbd1ef7d51e7","name":"typeahead","handle":"typeahead","label":"Typeahead","title":"Typeahead","order":1000000,"isHidden":false,"alias":null,"isEntity":true,"isDoc":true,"isIndex":false,"path":"components/typeahead","status":null,"content":"<p class=\"p--lead\">Typeahead is a text input that shows autocomplete-style suggestions as the user types, accelerating the user's input process.</p>\r\n\r\n## Demos\r\n{{demo '@typeahead'}}\r\n\r\n## Usage\r\n`Typeahead` is a text input field with autocomplete behavior. When users begin typing, it shows a dropdown list of suggested values. Users can then click or arrow down to a value instead of having to type the entire string. This helps speed up the user's input process.\r\n\r\n`Typeahead` is useful when users are likely to enter a value from a known list, such as diagnoses or medications.\r\n\r\n`Typeahead` gets its suggestions by string matching the user's input against a reference list. See Design for default logic and ways to customize this.\r\n\r\nUsers can also enter a free text value that is not on the reference list. If you want to force users to choose from a predefined list, use [`Select`]({{path '/docs/components/select'}}) or [`Multiselect`]({{path '/docs/components/multiselect'}}) instead.\r\n\r\n## Design\r\n### String matching settings\r\nTypeahead's string matching behavior has settings that can be customized:\r\n\r\n* Matching string location in list items\r\n  * Default: Match list items that contain the input string anywhere in the text\r\n  * Customize it: Change this to match only items that begin with the input string by setting the `matchPos` prop to `start`\r\n\r\n* Case/capitalization\r\n  * Default: Case insensitive (for example, the string \"Alzheimer's\" will also match \"alzheimer's\")\r\n  * Customize it: Change this to case sensitive by setting the `ignoreCase` prop to `false`\r\n\r\n* Length of text users must type before suggestions appear\r\n  * Default: One character\r\n  * Customize it: Change this by setting the `minQueryLength` prop\r\n\r\n### Text input field\r\nThe input field may optionally display an [`Icon`]({{path '/docs/components/icon'}}) within the left side of the field. This icon should visually reinforce the action of the field (e.g., use the `Filter` icon when entries in the input filter a nearby list). Use the `icon` prop to customize this.\r\n\r\nThe input field's default placeholder text should be customized to reflect the context (e.g., \"Enter a diagnosis\"). Use the `placeholder` prop to set this.\r\n\r\nFind more guidance on the [Form Design]({{ path '/docs/foundations/form-design' }}) Foundations page.\r\n\r\n\r\n## Implementation\r\nThe `Typeahead` component is based on [React Autosuggest](http://react-autosuggest.js.org/). Forge leverages third-party libraries when possible, but they must still achieve Forge design standards and present a unified API. Only the functionality described in the Forge documentation is officially supported for this component, even if an underlying third-party API currently remains usable.\r\n\r\n### Options and Suggestions\r\n`Typeahead` expects `options` or `suggestions` to be passed as an array of either strings or objects with a `value` property. `options` is the set of all possible values to display in the dropdown and leaves the filtering to internal logic. `suggestions` is the set of values to display currently and should already have been filtered. Set one or the other, not both.\r\n\r\n### List Display\r\nBoth the `options` and `suggestions` properties populate the list below the input. For uncontrolled components use `options` and for controlled components use `suggestions`.\r\n\r\nIf the `suggestions` property is used, the list will be displayed immediately unless the `alwaysRenderSuggestions` is set to `false`.\r\n\r\nUse the `minQueryLength` property in conjunction with `options` to display the list only after a certain number of characters has been entered.\r\n\r\nUpdating `suggestions` will update the dropdown while open, but updating `options` will not.\r\n\r\n### Filtering\r\nBy default in uncontrolled mode `Typeahead` does a string match between the entered text and the options. If a different method of filtering is desired, a custom function can be passed to the `filterOptions` prop that will allow for different modes of filtering.\r\n\r\n### Excluded Props\r\n`Typeahead` does not make use of some of the properties from React Autosuggest mostly related to having sections within the suggestions list: multiSection, renderSectionTitle, getSectionSuggestions, getSuggestionValue.\r\n\r\n### Async suggestions\r\n`Typeahead` expects `suggestions` to be set synchronously when `onSuggestionsFetchRequested` or `onSuggestionsClearRequested` is called. There is no option for loading it asynchronously, at the moment. This is on the Forge team's list for possible future implementation.\r\n\r\n## API Tables\r\n### Import Typeahead Only\r\n{{> componentImportMessage}}\r\n`import Typeahead from '@athena/forge/lib/typeahead';`\r\n\r\n### Typeahead Props\r\n  <table class=\"api-table api-table--react\">\r\n    <thead>\r\n      <tr>\r\n        <th>Prop</th>\r\n        <th>Type</th>\r\n        <th>Default</th>\r\n        <th>Description</th>\r\n      </tr>\r\n    </thead>\r\n    <tbody>\r\n      <tr>\r\n        <td>`alwaysRenderSuggestions`</td>\r\n        <td>\r\n          bool\r\n        </td>\r\n        <td></td>\r\n        <td>When this is &#x60;true&#x60;, &#x60;suggestions&#x60; or &#x60;options&#x60; provided to the component will always be displayed - this defaults\r\nto &#x60;false&#x60; when &#x60;options&#x60; are provided and &#x60;true&#x60; when &#x60;suggestions&#x60; are provided but can be overridden</td>\r\n      </tr>\r\n      <tr>\r\n        <td>`className`</td>\r\n        <td>\r\n          string\r\n        </td>\r\n        <td></td>\r\n        <td>Adds a class to the root element of the component</td>\r\n      </tr>\r\n      <tr>\r\n        <td>`disabled`</td>\r\n        <td>\r\n          bool\r\n        </td>\r\n        <td></td>\r\n        <td>Adds the relevant Forge state class to the input and passes prop to native react &#x60;&lt;input /&gt;&#x60;</td>\r\n      </tr>\r\n      <tr>\r\n        <td>`error`</td>\r\n        <td>\r\n          string\r\n        </td>\r\n        <td></td>\r\n        <td>Highlights the input when defined (specific string doesn&#x27;t matter)</td>\r\n      </tr>\r\n      <tr>\r\n        <td>`filterOptions`</td>\r\n        <td>\r\n          func\r\n        </td>\r\n        <td>String match function</td>\r\n        <td>\r\n          Entirely replaces &#x60;options&#x60; filtering logic.\r\n          Receives the following params:\r\n          <ul>\r\n            <li><strong>value</strong> (String): The input value</li>\r\n            <li><strong>props</strong>  (Object): The props passed into your decorated component.</li>\r\n          </ul>\r\n        </td>\r\n      </tr>\r\n      <tr>\r\n        <td>`inputWidth`</td>\r\n        <td>\r\n          string\r\n        </td>\r\n        <td></td>\r\n        <td>Styling to be applied to &#x60;width&#x60; css property. Specifying this will override all other behavior that affects input\r\nwidth.</td>\r\n      </tr>\r\n      <tr>\r\n        <td>`getSuggestionText`</td>\r\n        <td>\r\n          func\r\n        </td>\r\n        <td>Function to return string or value property from object</td>\r\n        <td>Replaces default function for determining what text gets displayed for a suggestion - should return a string.\r\n        Receives the following params:\r\n          <ul>\r\n            <li><strong>suggestion</strong> (Object): One of the user defined objects passed to the options property</li>\r\n          </ul>\r\n        </td>\r\n      </tr>\r\n      <tr>\r\n        <td>`icon`</td>\r\n        <td>\r\n          string\r\n        </td>\r\n        <td></td>\r\n        <td>Which icon to display inside the field</td>\r\n      </tr>\r\n      <tr>\r\n        <td>`iconSet`</td>\r\n        <td>\r\n          objectOf\r\n            <ul>\r\n                <li>[IconBase components](https://bitbucket.athenahealth.com/projects/UXDS/repos/forge/browse/components/icon/_icon-base.jsx)</li>\r\n            </ul>\r\n        </td>\r\n        <td>[`ForgeIcons`]({{ path '/docs/components/icon' }})</td>\r\n        <td>Specify a custom icon set defined as a dictionary of `IconBase` components. Icon sets can be generated using the [App Fabric Forge Extension Generator](https://bitbucket.athenahealth.com/projects/UXDS/repos/app-fabric-generator-forge-extension/browse).</td>\r\n      </tr>\r\n      <tr>\r\n        <td>`ignoreCase`</td>\r\n        <td>\r\n          bool\r\n        </td>\r\n        <td>true</td>\r\n        <td>Whether to perform case-insensitive filtering &#x60;options&#x60;</td>\r\n      </tr>\r\n      <tr>\r\n        <td>`matchPos`</td>\r\n        <td>\r\n          enum\r\n            <ul>\r\n                <li>&#x27;any&#x27;</li>\r\n                <li>&#x27;start&#x27;</li>\r\n            </ul>\r\n        </td>\r\n        <td>&#x27;any&#x27;</td>\r\n        <td>Match the start or entire string when filtering &#x60;options&#x60;</td>\r\n      </tr>\r\n      <tr>\r\n        <td>`minQueryLength`</td>\r\n        <td>\r\n          number\r\n        </td>\r\n        <td>1</td>\r\n        <td>For use with &#x60;options&#x60; prop, this defines how many characters need to be typed by the user before showing\r\nsuggestions</td>\r\n      </tr>\r\n      <tr>\r\n        <td>`onChange`</td>\r\n        <td>\r\n          func\r\n        </td>\r\n        <td></td>\r\n        <td>Called when the text inside the input changes — passes the event and the value of the input</td>\r\n      </tr>\r\n      <tr>\r\n        <td>`onSuggestionClearRequested`</td>\r\n        <td>\r\n          func\r\n        </td>\r\n        <td></td>\r\n        <td>Will be called every time you need to set &#x60;suggestions&#x60; to &#x60;[]&#x60; (if not using &#x60;options&#x60;).</td>\r\n      </tr>\r\n      <tr>\r\n        <td>`onSuggestionFetchRequested`</td>\r\n        <td>\r\n          func\r\n        </td>\r\n        <td></td>\r\n        <td>Will be called every time you need to recalculate &#x60;suggestions&#x60; (if not using &#x60;options&#x60;).</td>\r\n      </tr>      <tr>\r\n        <td>`onSuggestionSelected`</td>\r\n        <td>\r\n          func\r\n        </td>\r\n        <td></td>\r\n        <td>Called when a suggestion is selected - this function gets passed directly to the &#x60;Autosuggest&#x60; plugin</td>\r\n      </tr>\r\n      <tr>\r\n        <td>`options`</td>\r\n        <td>arrayOf - oneOfType:\r\n          <ul>\r\n            <li>\r\n              string\r\n            </li>\r\n            <li>shape:\r\n              <ul>\r\n                <li>value: string</li>\r\n              </ul>\r\n            </li>\r\n          </ul>\r\n        </td>\r\n        <td></td>\r\n        <td>Array of string or object suggestion options that will automatically be filtered and provided to the &#x60;Autosuggest&#x60;\r\nplugin - when using objects, by default, &#x60;value&#x60; will be displayed in the suggestion dropdown</td>\r\n      </tr>\r\n      <tr>\r\n        <td>`placeholder`</td>\r\n        <td>\r\n          string\r\n        </td>\r\n        <td></td>\r\n        <td>Text shown before typing in the text input</td>\r\n      </tr>\r\n      <tr>\r\n        <td>`suggestions`</td>\r\n        <td>arrayOf - oneOfType:\r\n          <ul>\r\n            <li>\r\n              string\r\n            </li>\r\n            <li>shape:\r\n              <ul>\r\n                <li>value: string</li>\r\n              </ul>\r\n            </li>\r\n          </ul>\r\n        </td>\r\n        <td></td>\r\n        <td>Array of string or object suggestions that will get passed to the &#x60;Autosuggest&#x60; plugin — by default, these will be\r\nrendered immediately unless &#x60;alwaysRenderSuggestions&#x60; is set to &#x60;false&#x60;</td>\r\n      </tr>\r\n      <tr>\r\n        <td>`...rest`</td>\r\n        <td></td>\r\n        <td></td>\r\n        <td>Passthrough props to [React Autosuggest's](https://github.com/moroshko/react-autosuggest#inputPropsProp) inputProps.</td>\r\n      </tr>\r\n    </tbody>\r\n  </table>\r\n\r\n### HTML API\r\n<table class=\"api-table api-table--html\">\r\n  <thead>\r\n      <tr>\r\n      <th>Class</th>\r\n      <th>Applies To</th>\r\n      <th>Description</th>\r\n      </tr>\r\n  </thead>\r\n  <tbody>\r\n    <tr><td>`fe_c_typeahead`</td><td>`Typeahead` root</td><td>Base class required for `Typeahead`</td></tr>\r\n    <tr><td>`fe_c_typeahead__input`</td><td>`Typeahead` input container element</td><td>Wraps `Typeahead` input</td></tr>\r\n    <tr><td>`fe_c_typeahead__suggestions-container`</td><td>`Typeahead` suggestions container element</td><td>Wraps suggestions menu</td></tr>\r\n    <tr><td>`fe_c_typeahead__suggestions-list`</td><td>`Typeahead` suggestions list element</td><td>Suggestions menu</td></tr>\r\n    <tr><td>`fe_c_typeahead__suggestion`</td><td>`Typeahead` suggestion list item element</td><td>Suggestions menu item</td></tr>\r\n  </tbody>\r\n</table>\r\n","lang":{"name":"Markdown","mode":"markdown","scope":"source.gfm","color":"#083FA1"},"file":{"root":"C:\\","dir":"C:\\Users\\ctsui\\code\\forge-guide\\docs\\04-components","base":"typeahead.md","ext":".md","name":"typeahead","relPath":"04-components\\typeahead.md","fsName":"typeahead","path":"C:\\Users\\ctsui\\code\\forge-guide\\docs\\04-components\\typeahead.md","dirs":["C:\\Users\\ctsui\\code\\forge-guide\\docs\\04-components"],"isHidden":false,"order":1000000,"isFile":true,"isDirectory":false,"stat":{"dev":4102694615,"mode":33206,"nlink":1,"uid":0,"gid":0,"rdev":0,"ino":1688849860599385,"size":12398,"atimeMs":1542641056867.9934,"mtimeMs":1542641056867.9934,"ctimeMs":1542821274386.4941,"birthtimeMs":1541785521241.8042,"atime":"2018-11-19T15:24:16.868Z","mtime":"2018-11-19T15:24:16.868Z","ctime":"2018-11-21T17:27:54.386Z","birthtime":"2018-11-09T17:45:21.242Z"},"lang":{"name":"Markdown","mode":"markdown","scope":"source.gfm","color":"#083FA1"},"isBinary":false},"context":{"extensions":{"core":{"forge-toast":{"name":"Toast","version":"0.2.2","description":"Toast component for Forge"},"forge-toggle-switch":{"name":"ToggleSwitch","version":"0.1.1","description":"ToggleSwitch component for Forge"}},"community":{"clinicals-forge-extension":{"name":"Clinicals Forge Extension","owner":"Nursing Flowsheets","url":"https://bitbucket.athenahealth.com/projects/CLIFS/repos/clinicals-forge-extension/browse","version":"2.1.1","description":"A forge-extension containing components used by inpatient clinicals"}}},"isComponent":true,"amplitudeCategory":"components"}}</code></pre></div-->
+  </div>
+</div>
+
+
+
+</div>
+
+
+
+
+<script src="../../assets/clipboard.min.js?cachebust=1.2.0"></script>
+
+<script src="../../assets/main.js?cachebust=1.2.0"></script>
+
+<script src="../../assets/amplitude.js?cachebust=1.2.0"></script>
+
+
+
+</body>
+</html>

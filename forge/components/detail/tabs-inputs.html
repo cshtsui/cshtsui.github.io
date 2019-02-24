@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+    window.frctl = {
+        env: 'static'
+    };
+    </script>
+    <script>var cl = document.querySelector('html').classList; cl.remove('no-js'); cl.add('has-js');</script>
+    <link rel="shortcut icon" href="../../favicon_blue.ico" type="image/ico">
+
+<link rel="stylesheet" href="../../assets/css/styles.css?cachebust=1.2.0" type="text/css">
+
+<link rel="stylesheet" href="../../assets/css/prism-atom-dark.css?cachebust=1.2.0" type="text/css">
+
+<link rel="stylesheet" href="../../assets/css/ascetic.css?cachebust=1.2.0" type="text/css">
+
+<link rel="stylesheet" href="../../css/forge.css?cachebust=1.2.0" type="text/css">
+
+
+<title>Multiple Inputs | athenahealth</title>
+
+</head>
+<body>
+
+
+
+<div class="fg_app">
+  <header class="fg_l_header fg_l_header--alpha">
+  <a class="fg_c_branding" href="../../index.html">
+    <img src="../../assets/images/logo.svg" />
+  </a>
+  <nav class="fg_c_nav-top">
+  <ul class="fg_c_nav-top__list">
+    
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link "
+            href="../../docs/guidelines/principles.html"
+            title="Guidelines"
+          >
+            Guidelines
+          </a>
+        </li>
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link "
+            href="../../docs/foundations/color.html"
+            title="Foundations"
+          >
+            Foundations
+          </a>
+        </li>
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link "
+            href="../../docs/components/accordion.html"
+            title="Components"
+          >
+            Components
+          </a>
+        </li>
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link "
+            href="../../docs/extensions/forge-extensions.html"
+            title="Extensions"
+          >
+            Extensions
+          </a>
+        </li>
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link "
+            href="../../docs/resources/release-notes.html"
+            title="Resources"
+          >
+            Resources
+          </a>
+        </li>
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link "
+            href="../../docs/resources/downloads.html"
+            title="Resources"
+          >
+            Resources
+          </a>
+        </li>
+      
+    
+  </ul>
+</nav>
+
+
+  <div class="fg_c_nav-version">
+    v2.0.0-beta.7
+  </div>
+</header>
+
+
+  
+
+
+    
+    
+
+<div class="Pen" data-behaviour="pen" id="pen-9bc23da7db11c2d8e13e7ba6ba30e7de">
+
+    
+
+    <div class="Pen-panel Pen-header">
+    <h1 class="Pen-title">
+        <a class="Pen-previewLink" href="../preview/tabs-inputs.html" title="Component preview">
+            Multiple Inputs
+            <svg fill="#000000" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6l-4 4h3v6h2v-6h3l-4-4z"/>
+</svg>
+
+        </a>
+    </h1>
+    
+
+<div class="Status Status--tag">
+
+<label class="Status-label" style="background-color: #29CC29; border-color: #29CC29;">Ready</label>
+
+</div>
+
+
+</div>
+
+
+    <div class="Pen-panel Pen-preview Preview" data-behaviour="preview" id="preview-9bc23da7db11c2d8e13e7ba6ba30e7de">
+    <div class="Preview-wrapper" data-role="resizer">
+        <div class="Preview-resizer">
+            
+             <iframe
+                class="Preview-iframe"
+                data-role="window"
+                src="../preview/tabs-inputs.html"
+                sandbox="allow-same-origin allow-scripts allow-forms"
+                 style=""
+                marginwidth="0" marginheight="0" frameborder="0" vspace="0" hspace="0" scrolling="yes">
+            </iframe>
+        </div>
+        <div class="Preview-handle" data-role="resize-handle"></div>
+        <div class="Preview-overlay"></div>
+    </div>
+</div>
+
+
+    <div class="Pen-handle Pen-handle--browser" data-role="resize-handle"></div>
+
+    <div class="Pen-panel Pen-info" data-role="info">
+    <div class="Browser" data-behaviour="browser" id="browser-9bc23da7db11c2d8e13e7ba6ba30e7de">
+
+    
+
+<div class="Browser-controls">
+    <ul class="Browser-tabs">
+        
+        
+        <li class="Browser-tab Browser-tab--html is-active " data-role="tab">
+            <a href="#browser-9bc23da7db11c2d8e13e7ba6ba30e7de-panel-html">HTML</a>
+        </li>
+        
+        
+        
+        <li class="Browser-tab Browser-tab--view" data-role="tab">
+            <a href="#browser-9bc23da7db11c2d8e13e7ba6ba30e7de-panel-view">View</a>
+        </li>
+        
+        
+        
+        <li class="Browser-tab Browser-tab--context" data-role="tab">
+            <a href="#browser-9bc23da7db11c2d8e13e7ba6ba30e7de-panel-context">Context</a>
+        </li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <li class="Browser-tab Browser-tab--info" data-role="tab">
+            <a href="#browser-9bc23da7db11c2d8e13e7ba6ba30e7de-panel-info">Info</a>
+        </li>
+        
+        
+        
+        <li class="Browser-tab Browser-tab--notes" data-role="tab">
+            <a href="#browser-9bc23da7db11c2d8e13e7ba6ba30e7de-panel-notes">Notes</a>
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+    
+    
+<div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-9bc23da7db11c2d8e13e7ba6ba30e7de-panel-html">
+    <code class="Code Code--lang-html">
+        
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_u_padding--xlarge"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_heading fe_c_heading--page"</span>&gt;</span>Settings<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_tabs"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_tabs__labels"</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"tablist"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_tabs__label-wrapper"</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"presentation"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"visibility:visible"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"tab"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"0"</span> <span class="hljs-attr">aria-selected</span>=<span class="hljs-string">"true"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_tabs__label fe_is-selected"</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">"false"</span> <span class="hljs-attr">data-content</span>=<span class="hljs-string">"Settings 1"</span> <span class="hljs-attr">tabindex</span>=<span class="hljs-string">"0"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_tabs__label-text"</span>&gt;</span>Settings 1<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_tabs__label-wrapper"</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"presentation"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"visibility:visible"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"tab"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"1"</span> <span class="hljs-attr">aria-selected</span>=<span class="hljs-string">"false"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_tabs__label"</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">"false"</span> <span class="hljs-attr">data-content</span>=<span class="hljs-string">"Settings 2"</span> <span class="hljs-attr">tabindex</span>=<span class="hljs-string">"-1"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_tabs__label-text"</span>&gt;</span>Settings 2<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_tabs__label-wrapper"</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"presentation"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"visibility:visible"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"tab"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"2"</span> <span class="hljs-attr">aria-selected</span>=<span class="hljs-string">"false"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_tabs__label"</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">"false"</span> <span class="hljs-attr">data-content</span>=<span class="hljs-string">"Settings 3"</span> <span class="hljs-attr">tabindex</span>=<span class="hljs-string">"-1"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_tabs__label-text"</span>&gt;</span>Settings 3<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_tabs__shadow"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_tabs__pane-wrapper"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">label</span>=<span class="hljs-string">"Settings 1"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_tab-pane fe_c_tab-pane--padded"</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"tabpanel"</span> <span class="hljs-attr">tabindex</span>=<span class="hljs-string">"0"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_heading fe_c_heading--section"</span>&gt;</span>Redux Form<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"redux-form-tab"</span> <span class="hljs-attr">novalidate</span>=<span class="hljs-string">""</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_form-field"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_l_grid-row fe_l_grid-row--nested"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_l_grid-row__col fe_l_grid-row__col--small-12 fe_l_grid-row__col--medium-3 fe_c_form-field__label"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"fe-form-field-gen-359"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"fe-form-field-gen-359-label"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_label"</span>&gt;</span>Description<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_l_grid-row__col fe_l_grid-row__col--small-12 fe_l_grid-row__col--medium-9 fe_c_form-field__right"</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_form-field__input-slot"</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_read-only-input fe_c_form-field__input"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">""</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"fe-form-field-gen-359"</span> <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string">"fe-form-field-gen-359-label"</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_read-only-input__text"</span>&gt;</span>This form&amp;#x27;s state is saved in redux will keep its values when it is hidden<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_form-field__message"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_form-field__status"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_form-field"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_l_grid-row fe_l_grid-row--nested"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_l_grid-row__col fe_l_grid-row__col--small-12 fe_l_grid-row__col--medium-3 fe_c_form-field__label"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"text0"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"text0-label"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_label"</span>&gt;</span>Text Input<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_l_grid-row__col fe_l_grid-row__col--small-12 fe_l_grid-row__col--medium-9 fe_c_form-field__right"</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_form-field__input-slot"</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_input fe_c_form-field__input"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"text0"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">""</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"text0"</span> <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string">"text0-label"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_input__input"</span> /&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_form-field__message"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_form-field__status"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_form-field"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_l_grid-row fe_l_grid-row--nested"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_l_grid-row__col fe_l_grid-row__col--small-12 fe_l_grid-row__col--medium-3 fe_c_form-field__label"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"select0"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"select0-label"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_label"</span>&gt;</span>Select<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_l_grid-row__col fe_l_grid-row__col--small-12 fe_l_grid-row__col--medium-9 fe_c_form-field__right"</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_form-field__input-slot"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">select</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"select0"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_form-field__input"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"select0"</span> <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string">"select0-label"</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">selected</span>=<span class="hljs-string">""</span> <span class="hljs-attr">value</span>=<span class="hljs-string">""</span>&gt;</span>- Select -<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"opt0"</span>&gt;</span>Option 1<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"opt1"</span>&gt;</span>Option 2<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"opt2"</span>&gt;</span>Option 3<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"opt3"</span>&gt;</span>Option 4<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"opt4"</span>&gt;</span>Option 5<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;/<span class="hljs-name">select</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_form-field__message"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_form-field__status"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_form-field"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_l_grid-row fe_l_grid-row--nested"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_l_grid-row__col fe_l_grid-row__col--small-12 fe_l_grid-row__col--medium-3 fe_c_form-field__label"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"textarea0"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"textarea0-label"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_label"</span>&gt;</span>Text Area<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_l_grid-row__col fe_l_grid-row__col--small-12 fe_l_grid-row__col--medium-9 fe_c_form-field__right"</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_form-field__input-slot"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">textarea</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"textarea0"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"textarea0"</span> <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string">"textarea0-label"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_textarea fe_c_textarea--auto-size fe_c_form-field__input"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">textarea</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_form-field__message"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_form-field__status"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_form-field"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_l_grid-row fe_l_grid-row--nested"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_l_grid-row__col fe_l_grid-row__col--small-12 fe_l_grid-row__col--medium-3 fe_c_form-field__label"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_l_grid-row__col fe_l_grid-row__col--small-12 fe_l_grid-row__col--medium-9 fe_c_form-field__right"</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_form-field__input-slot"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_button fe_c_button--primary"</span> <span class="hljs-attr">aria-disabled</span>=<span class="hljs-string">"false"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"submit"</span>&gt;</span>Submit<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_form-field__message"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_form-field__status"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">label</span>=<span class="hljs-string">"Settings 2"</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">"true"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"display:none"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_tab-pane fe_c_tab-pane--padded"</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"tabpanel"</span> <span class="hljs-attr">tabindex</span>=<span class="hljs-string">"-1"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_heading fe_c_heading--section"</span>&gt;</span>Mounted While Hidden<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">novalidate</span>=<span class="hljs-string">""</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_form-field"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_l_grid-row fe_l_grid-row--nested"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_l_grid-row__col fe_l_grid-row__col--small-12 fe_l_grid-row__col--medium-3 fe_c_form-field__label"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"fe-form-field-gen-360"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"fe-form-field-gen-360-label"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_label"</span>&gt;</span>Description<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_l_grid-row__col fe_l_grid-row__col--small-12 fe_l_grid-row__col--medium-9 fe_c_form-field__right"</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_form-field__input-slot"</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_read-only-input fe_c_form-field__input"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"fe-form-field-gen-360"</span> <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string">"fe-form-field-gen-360-label"</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_read-only-input__text"</span>&gt;</span>This uncontrolled form will keep its values and stays in the dom when it is hidden<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_form-field__message"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_form-field__status"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_form-field"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_l_grid-row fe_l_grid-row--nested"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_l_grid-row__col fe_l_grid-row__col--small-12 fe_l_grid-row__col--medium-3 fe_c_form-field__label"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"radio1-label"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_label"</span>&gt;</span>Radio Group<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_l_grid-row__col fe_l_grid-row__col--small-12 fe_l_grid-row__col--medium-9 fe_c_form-field__right"</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_form-field__input-slot"</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"radiogroup"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_radiogroup fe_c_form-field__input"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"radio1"</span> <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string">"radio1-label"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"radio1"</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_radio"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"radio"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"radio1-option-0"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_radio__input"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"radio1"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"One"</span> /&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_radio__description"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"radio1-option-0"</span>&gt;</span>One<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_radio"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"radio"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"radio1-option-1"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_radio__input"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"radio1"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"Two"</span> /&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_radio__description"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"radio1-option-1"</span>&gt;</span>Two<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_radio"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"radio"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"radio1-option-2"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_radio__input"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"radio1"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"Three"</span> /&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_radio__description"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"radio1-option-2"</span>&gt;</span>Three<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_form-field__message"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_form-field__status"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_form-field"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_l_grid-row fe_l_grid-row--nested"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_l_grid-row__col fe_l_grid-row__col--small-12 fe_l_grid-row__col--medium-3 fe_c_form-field__label"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"text1"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"text1-label"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_label"</span>&gt;</span>Text Input<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_l_grid-row__col fe_l_grid-row__col--small-12 fe_l_grid-row__col--medium-9 fe_c_form-field__right"</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_form-field__input-slot"</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_input fe_c_form-field__input"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"text1"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"text1"</span> <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string">"text1-label"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_input__input"</span> /&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_form-field__message"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_form-field__status"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_form-field"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_l_grid-row fe_l_grid-row--nested"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_l_grid-row__col fe_l_grid-row__col--small-12 fe_l_grid-row__col--medium-3 fe_c_form-field__label"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_l_grid-row__col fe_l_grid-row__col--small-12 fe_l_grid-row__col--medium-9 fe_c_form-field__right"</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_form-field__input-slot"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_button fe_c_button--primary"</span> <span class="hljs-attr">aria-disabled</span>=<span class="hljs-string">"false"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"submit"</span>&gt;</span>Submit<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_form-field__message"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_form-field__status"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></pre>
+        
+    </code>
+</div>
+
+    
+    <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-9bc23da7db11c2d8e13e7ba6ba30e7de-panel-view">
+    <code class="Code Code--lang-javascript">
+        <pre><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>;
+<span class="hljs-keyword">import</span> { createStore, combineReducers } <span class="hljs-keyword">from</span> <span class="hljs-string">'redux'</span>;
+<span class="hljs-keyword">import</span> { reducer <span class="hljs-keyword">as</span> formReducer } <span class="hljs-keyword">from</span> <span class="hljs-string">'redux-form'</span>;
+<span class="hljs-keyword">import</span> { Provider } <span class="hljs-keyword">from</span> <span class="hljs-string">'react-redux'</span>;
+<span class="hljs-keyword">import</span> {
+  Checkbox,
+  Form,
+  FormField,
+  Heading,
+  RadioGroup,
+  ReadOnlyInput,
+  ReduxForm,
+  ReduxFormField,
+  Select,
+  Tabs,
+  TabPane,
+  Textarea
+} <span class="hljs-keyword">from</span> <span class="hljs-string">'@athena/forge'</span>;
+
+<span class="hljs-keyword">const</span> rootReducer = combineReducers({
+  <span class="hljs-attr">form</span>: formReducer,
+});
+
+<span class="hljs-keyword">const</span> store = createStore(rootReducer);
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TabsInputs</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+  <span class="hljs-keyword">constructor</span>(props) {
+    <span class="hljs-keyword">super</span>(props);
+    <span class="hljs-keyword">this</span>.handleSubmit = <span class="hljs-keyword">this</span>.handleSubmit.bind(<span class="hljs-keyword">this</span>);
+  }
+
+  handleSubmit(values){
+
+  }
+
+  render(){
+    <span class="hljs-keyword">return</span> (
+      &lt;Provider store={store}&gt;
+        &lt;div className="fe_u_padding--xlarge"&gt;
+          &lt;Heading text="Settings" /&gt;
+          &lt;Tabs&gt;
+            &lt;TabPane label="Settings 1" padded mountedWhileHidden={true}&gt;
+              &lt;Heading text="Redux Form" variant="section" headingTag="h2" /&gt;
+              &lt;ReduxForm form="redux-form-tab" onSubmit={this.handleSubmit}&gt;
+                &lt;ReduxFormField
+                  inputAs={ReadOnlyInput}
+                  labelText="Description"
+                  text="This form's state is saved in redux will keep its values when it is hidden"
+                /&gt;
+                &lt;ReduxFormField
+                  id="text0"
+                  labelText="Text Input"
+                /&gt;
+                &lt;ReduxFormField
+                  id="select0"
+                  labelText="Select"
+                  inputAs={Select}
+                &gt;
+                  &lt;option value="opt0"&gt;Option 1&lt;/option&gt;
+                  &lt;option value="opt1"&gt;Option 2&lt;/option&gt;
+                  &lt;option value="opt2"&gt;Option 3&lt;/option&gt;
+                  &lt;option value="opt3"&gt;Option 4&lt;/option&gt;
+                  &lt;option value="opt4"&gt;Option 5&lt;/option&gt;
+                &lt;/ReduxFormField&gt;
+
+                &lt;ReduxFormField
+                  id="textarea0"
+                  inputAs={Textarea}
+                  labelText="Text Area"
+                /&gt;
+              &lt;/ReduxForm&gt;
+            &lt;/TabPane&gt;
+            &lt;TabPane label="Settings 2" padded mountedWhileHidden={true}&gt;
+              &lt;Heading text="Mounted While Hidden" variant="section" headingTag="h2" /&gt;
+              &lt;Form buttonText="Submit" onSubmit={this.handleSubmit}&gt;
+                &lt;FormField
+                  inputAs={ReadOnlyInput}
+                  labelText="Description"
+                  text="This uncontrolled form will keep its values and stays in the dom when it is hidden"
+                /&gt;
+                &lt;FormField
+                  id="radio1"
+                  inputAs={RadioGroup}
+                  labelText="Radio Group"
+                  options={[ 'One', 'Two', 'Three' ]}
+                /&gt;
+                &lt;FormField
+                  id="text1"
+                  labelText="Text Input"
+                /&gt;
+              &lt;/Form&gt;
+            &lt;/TabPane&gt;
+            &lt;TabPane label="Settings 3" padded&gt;
+              &lt;Heading text="Form" variant="section" headingTag="h2" /&gt;
+              &lt;Form buttonText="Submit" onSubmit={this.handleSubmit}&gt;
+                &lt;FormField
+                  inputAs={ReadOnlyInput}
+                  labelText="Description"
+                  text="This uncontrolled form will lose its values when it is hidden and unmounted"
+                /&gt;
+                &lt;FormField
+                  id="checkbox2-0"
+                  inputAs={Checkbox}
+                  labelText="Checkbox 1"
+                  description="Setting 1"
+                /&gt;
+                &lt;FormField
+                  id="checkbox2-1"
+                  inputAs={Checkbox}
+                  labelText="Checkbox 2"
+                  description="Setting 2"
+                /&gt;
+              &lt;/Form&gt;
+            &lt;/TabPane&gt;
+          &lt;/Tabs&gt;
+        &lt;/div&gt;
+      &lt;/Provider&gt;
+    );
+  }
+}</pre>
+    </code>
+</div>
+
+    
+    <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-9bc23da7db11c2d8e13e7ba6ba30e7de-panel-context">
+    <code class="Code Code--lang-json">
+        
+            
+            <pre>{
+  <span class="hljs-attr">"height"</span>: <span class="hljs-number">630</span>
+}</pre>
+            
+        
+    </code>
+</div>
+
+    
+    
+
+
+
+
+    
+    <div class="Browser-panel" data-role="tab-panel" id="browser-9bc23da7db11c2d8e13e7ba6ba30e7de-panel-info">
+    <ul class="Meta">
+        <li class="Meta-item">
+            <strong class="Meta-key">Handle:</strong>
+            <span class="Meta-value">@tabs-inputs</span>
+        </li>
+        
+        
+        
+        
+        
+        <li class="Meta-item">
+            <strong class="Meta-key">Preview:</strong>
+            <span class="Meta-value">
+                <ul>
+                    <li><a data-no-pjax href="../preview/tabs-inputs.html"><span>With layout</span> <svg fill="#000000" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6l-4 4h3v6h2v-6h3l-4-4z"/>
+</svg>
+</a></li>
+                    <li><a data-no-pjax href="../render/tabs-inputs.html"><span>Component only</span> <svg fill="#000000" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6l-4 4h3v6h2v-6h3l-4-4z"/>
+</svg>
+</a></li>
+                </ul>
+            </span>
+        </li>
+        <li class="Meta-item">
+            <strong class="Meta-key">Filesystem Path:</strong>
+            <span class="Meta-value">demos\tabs\tabs-inputs.jsx</span>
+        </li>
+        
+        
+    </ul>
+</div>
+
+    
+    <div class="Browser-panel Browser-notes" data-role="tab-panel" id="browser-9bc23da7db11c2d8e13e7ba6ba30e7de-panel-notes">
+    <div class="Prose Prose--condensed">
+        
+        <p class="Browser-isEmptyNote">There are no notes for this item.</p>
+        
+    </div>
+</div>
+
+    
+
+</div>
+
+</div>
+
+
+    
+
+</div>
+
+
+
+</div>
+
+
+
+
+<script src="../../assets/clipboard.min.js?cachebust=1.2.0"></script>
+
+<script src="../../assets/main.js?cachebust=1.2.0"></script>
+
+<script src="../../assets/amplitude.js?cachebust=1.2.0"></script>
+
+
+
+</body>
+</html>

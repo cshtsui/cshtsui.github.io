@@ -1,0 +1,1536 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+    window.frctl = {
+        env: 'static'
+    };
+    </script>
+    <script>var cl = document.querySelector('html').classList; cl.remove('no-js'); cl.add('has-js');</script>
+    <link rel="shortcut icon" href="../../favicon_blue.ico" type="image/ico">
+
+<link rel="stylesheet" href="../../assets/css/styles.css?cachebust=1.2.0" type="text/css">
+
+<link rel="stylesheet" href="../../assets/css/prism-atom-dark.css?cachebust=1.2.0" type="text/css">
+
+<link rel="stylesheet" href="../../assets/css/ascetic.css?cachebust=1.2.0" type="text/css">
+
+<link rel="stylesheet" href="../../css/forge.css?cachebust=1.2.0" type="text/css">
+
+
+<title>Table | athenahealth</title>
+
+</head>
+<body>
+
+
+
+<div class="fg_app">
+  <header class="fg_l_header fg_l_header--alpha">
+  <a class="fg_c_branding" href="../../index.html">
+    <img src="../../assets/images/logo.svg" />
+  </a>
+  <nav class="fg_c_nav-top">
+  <ul class="fg_c_nav-top__list">
+    
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link "
+            href="../guidelines/principles.html"
+            title="Guidelines"
+          >
+            Guidelines
+          </a>
+        </li>
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link "
+            href="../foundations/color.html"
+            title="Foundations"
+          >
+            Foundations
+          </a>
+        </li>
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link  fg_is-active"
+            href="accordion.html"
+            title="Components"
+          >
+            Components
+          </a>
+        </li>
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link "
+            href="../extensions/forge-extensions.html"
+            title="Extensions"
+          >
+            Extensions
+          </a>
+        </li>
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link "
+            href="../resources/release-notes.html"
+            title="Resources"
+          >
+            Resources
+          </a>
+        </li>
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link "
+            href="../resources/downloads.html"
+            title="Resources"
+          >
+            Resources
+          </a>
+        </li>
+      
+    
+  </ul>
+</nav>
+
+
+  <div class="fg_c_nav-version">
+    v2.0.0-beta.7
+  </div>
+</header>
+
+
+  
+
+<div class="fg_l_sidebar" data-role="sidebar">
+  <nav class="fg_c_nav-left">
+  <ul class="fg_c_nav-left__list">
+  
+    
+  
+    
+  
+    
+  
+    
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="accordion.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Accordion</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="banner.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Banner</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="button.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Button</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="card.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Card</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="checkbox.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Checkbox</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="date-input.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>DateInput</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="form.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Form</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="form-field.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>FormField</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="grid.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Grid</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="heading.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Heading</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="icon.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Icon</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="icon-button.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>IconButton</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="input.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Input</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="lightbox.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Lightbox</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="list.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>List</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="loader.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Loader</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="modal.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Modal</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="multi-field.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>MultiField</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="multiselect.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Multiselect</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="paginator.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Paginator</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="radio-group.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>RadioGroup</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="read-only-input.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>ReadOnlyInput</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="redux-form.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>ReduxForm</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="redux-form-field.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>ReduxFormField</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="redux-multi-field.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>ReduxMultiField</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="removable-tag.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>RemovableTag</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="root.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Root</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="select.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Select</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="selection-list.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>SelectionList</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="status-tag.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>StatusTag</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="stepper.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Stepper</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href=""
+            
+            class="fg_c_nav-left__link  fg_is-active"
+          >
+            <span>Table</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="tabs.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Tabs</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="textarea.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Textarea</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="toast.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Toast</span>
+            
+              
+                <span class="fe_f_all"><span class="fe_c_status-tag">EXT</span></span>
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="toggle-switch.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>ToggleSwitch</span>
+            
+              
+            
+              
+                <span class="fe_f_all"><span class="fe_c_status-tag">EXT</span></span>
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="tooltip.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Tooltip</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="typeahead.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Typeahead</span>
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+    
+  
+    
+  
+    
+  
+    
+  
+  </ul>
+</nav>
+
+</div>
+
+<div class="fg_l_main" data-role="main">
+  <div class="fg_doc">
+
+    
+      <nav class="fg_c_nav-page"></nav>
+
+    
+
+    <div class="fg_doc__header">
+      
+        <h1 class="fg_doc__title">Table</h1>
+      
+    </div>
+    <div class="fg_doc__content">
+      
+
+  <div class="fg_markdown">
+    
+
+      
+      
+
+      
+        <p class="p--lead">Tables display related information in the form of rows and columns. They allow users to quickly compare, sort, and visualize large amounts of related data.</p>
+
+<h2 id="demos">Demos</h2>
+<div class="fg_c_demos"><select class="fg_c_demos__select js-selector-demos"><option value="21526db8decc22f9abb5e7275d1b8d15">Basic Table</option><option value="863e0c25f0c0ef2e5e09fe5d676f8a1a">Compact Table</option><option value="8e8179a7ea6ec870a9608d2dde806a38">Simple Sort</option><option value="c77a1502c961bdec5e4b19709a694941">Custom Sorting and Templates</option></select><div class="fg_c_demos__demo js-demo-21526db8decc22f9abb5e7275d1b8d15 ">
+    <div class="fg_c_preview js-resize-preview" style="height: 380px">
+      <iframe height="380" src="../../components/preview/table-basic.html" class="fg_c_preview__iframe"></iframe>
+    </div>
+    <div class="fg_c_accordian js-accordian">
+      <button class="fg_c_accordian__button" role="heading">
+        <span class="fg_c_accordian__icon js-icon"></span>
+        <span class="fg_c_accordian__closed-text">Show Code</span>
+        <span class="fg_c_accordian__open-text">Hide Code</span>
+      </button>
+      <div class="fg_c_code-tabs fg_is-hidden js-tabs">
+        <ul class="fg_c_code-tabs__list" role="tablist">
+          <li class="fg_c_code-tabs__tab" role="tab">
+            <a href="#tab-jsx-21526db8decc22f9abb5e7275d1b8d15">JSX</a>
+          </li>
+          <li class="fg_c_code-tabs__tab" role="tab">
+            <a href="#tab-html-21526db8decc22f9abb5e7275d1b8d15">HTML</a>
+          </li>
+        </ul>
+        <div class="fg_c_code-tabs__panel" id="tab-jsx-21526db8decc22f9abb5e7275d1b8d15" role="tabpanel">
+          <button type="button" class="fg_c_button--inverted fg_c_button--copy js-copy-code" data-clipboard-target="#tab-jsx-21526db8decc22f9abb5e7275d1b8d15 pre">Copy Code</button>
+          <pre class="fg_c_code-block"><code class="language-jsx"><span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">&#39;react&#39;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> Table<span class="token punctuation">,</span> Heading <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&#39;@athena/forge&#39;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> faker <span class="token keyword">from</span> <span class="token string">&#39;faker&#39;</span><span class="token punctuation">;</span>
+<span style='display:none'>empty line</span>
+<span class="token keyword">const</span> procedures <span class="token operator">=</span> <span class="token punctuation">[</span>
+  <span class="token string">&#39;Allergy shots&#39;</span><span class="token punctuation">,</span>
+  <span class="token string">&#39;Electrocardiogram&#39;</span><span class="token punctuation">,</span>
+  <span class="token string">&#39;Joint aspiration&#39;</span><span class="token punctuation">,</span>
+  <span class="token string">&#39;Pneumococcal vaccination&#39;</span><span class="token punctuation">,</span>
+  <span class="token string">&#39;Tattoo removal&#39;</span><span class="token punctuation">,</span>
+  <span class="token string">&#39;Complete blood count&#39;</span><span class="token punctuation">,</span>
+<span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> data <span class="token operator">=</span> procedures<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token punctuation">(</span>procedure<span class="token punctuation">,</span> index<span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">{</span>
+    id<span class="token punctuation">:</span> index<span class="token punctuation">,</span>
+    procedure<span class="token punctuation">:</span> procedure<span class="token punctuation">,</span>
+    lastname<span class="token punctuation">:</span> faker<span class="token punctuation">.</span>name<span class="token punctuation">.</span><span class="token function">lastName</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    firstname<span class="token punctuation">:</span> faker<span class="token punctuation">.</span>name<span class="token punctuation">.</span><span class="token function">firstName</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    cost<span class="token punctuation">:</span> <span class="token function">Number</span><span class="token punctuation">(</span>faker<span class="token punctuation">.</span>finance<span class="token punctuation">.</span><span class="token function">amount</span><span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">,</span> <span class="token number">150</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span style='display:none'>empty line</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">function</span> <span class="token function">TableDemo</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">className</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;u&#95;margin--large<span class="token punctuation">&quot;</span></span> <span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Heading</span> <span class="token attr-name">variant</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>section<span class="token punctuation">&quot;</span></span> <span class="token attr-name">text</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>Billable Procedures<span class="token punctuation">&quot;</span></span><span class="token punctuation">/&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Table</span>
+        <span class="token attr-name">layout</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>default<span class="token punctuation">&quot;</span></span>
+        <span class="token attr-name">rows</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>data<span class="token punctuation">}</span></span>
+        <span class="token attr-name">columns</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">[</span>
+          <span class="token punctuation">{</span>
+            key<span class="token punctuation">:</span> <span class="token string">&#39;procedure&#39;</span><span class="token punctuation">,</span>
+            displayName<span class="token punctuation">:</span> <span class="token string">&#39;Procedure&#39;</span><span class="token punctuation">,</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            key<span class="token punctuation">:</span> <span class="token string">&#39;lastname&#39;</span><span class="token punctuation">,</span>
+            displayName<span class="token punctuation">:</span> <span class="token string">&#39;Last Name&#39;</span><span class="token punctuation">,</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            key<span class="token punctuation">:</span> <span class="token string">&#39;firstname&#39;</span><span class="token punctuation">,</span>
+            displayName<span class="token punctuation">:</span> <span class="token string">&#39;First Name&#39;</span><span class="token punctuation">,</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            key<span class="token punctuation">:</span> <span class="token string">&#39;cost&#39;</span><span class="token punctuation">,</span>
+            displayName<span class="token punctuation">:</span> <span class="token string">&#39;Cost (USD)&#39;</span><span class="token punctuation">,</span>
+            numeric<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+            template<span class="token punctuation">:</span> <span class="token punctuation">(</span>num<span class="token punctuation">)</span> <span class="token operator">=&gt;</span>
+              num<span class="token punctuation">.</span><span class="token function">toLocaleString</span><span class="token punctuation">(</span><span class="token string">&#39;en-US&#39;</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> style<span class="token punctuation">:</span> <span class="token string">&#39;currency&#39;</span><span class="token punctuation">,</span> currency<span class="token punctuation">:</span> <span class="token string">&#39;USD&#39;</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">]</span><span class="token punctuation">}</span></span>
+      <span class="token punctuation">/&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+        </div>
+        <div class="fg_c_code-tabs__panel" id="tab-html-21526db8decc22f9abb5e7275d1b8d15" role="tabpanel">
+          <button type="button" class="fg_c_button--inverted fg_c_button--copy js-copy-code" data-clipboard-target="#tab-html-21526db8decc22f9abb5e7275d1b8d15 pre">Copy Code</button>
+          <pre class="fg_c_code-block"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;u&#95;margin--large<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;heading fe&#95;c&#95;heading--section<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Billable Procedures<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>table</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;table fe&#95;c&#95;table--show-hover fe&#95;c&#95;table--default<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>thead</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span> <span class="token attr-name">data-column</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>procedure<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Procedure<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span> <span class="token attr-name">data-column</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>lastname<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Last Name<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span> <span class="token attr-name">data-column</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>firstname<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>First Name<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span> <span class="token attr-name">data-column</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>cost<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Cost (USD)<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>thead</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tbody</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">data-column</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>procedure<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;table&#95;&#95;cell<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Allergy shots<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">data-column</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>lastname<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;table&#95;&#95;cell<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Paucek<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">data-column</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>firstname<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;table&#95;&#95;cell<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Prudence<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">data-column</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>cost<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;table&#95;&#95;cell fe&#95;c&#95;table&#95;&#95;cell--numeric<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>$112.85<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">data-column</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>procedure<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;table&#95;&#95;cell<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Electrocardiogram<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">data-column</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>lastname<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;table&#95;&#95;cell<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Bogan<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">data-column</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>firstname<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;table&#95;&#95;cell<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Abraham<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">data-column</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>cost<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;table&#95;&#95;cell fe&#95;c&#95;table&#95;&#95;cell--numeric<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>$145.45<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">data-column</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>procedure<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;table&#95;&#95;cell<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Joint aspiration<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">data-column</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>lastname<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;table&#95;&#95;cell<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Konopelski<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">data-column</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>firstname<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;table&#95;&#95;cell<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Sincere<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">data-column</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>cost<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;table&#95;&#95;cell fe&#95;c&#95;table&#95;&#95;cell--numeric<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>$116.24<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">data-column</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>procedure<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;table&#95;&#95;cell<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Pneumococcal vaccination<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">data-column</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>lastname<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;table&#95;&#95;cell<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Harris<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">data-column</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>firstname<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;table&#95;&#95;cell<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Brennon<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">data-column</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>cost<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;table&#95;&#95;cell fe&#95;c&#95;table&#95;&#95;cell--numeric<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>$63.36<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">data-column</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>procedure<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;table&#95;&#95;cell<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Tattoo removal<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">data-column</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>lastname<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;table&#95;&#95;cell<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Batz<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">data-column</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>firstname<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;table&#95;&#95;cell<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Prince<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">data-column</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>cost<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;table&#95;&#95;cell fe&#95;c&#95;table&#95;&#95;cell--numeric<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>$80.44<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">data-column</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>procedure<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;table&#95;&#95;cell<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Complete blood count<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">data-column</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>lastname<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;table&#95;&#95;cell<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Leuschke<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">data-column</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>firstname<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;table&#95;&#95;cell<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Lessie<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">data-column</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>cost<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;table&#95;&#95;cell fe&#95;c&#95;table&#95;&#95;cell--numeric<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>$99.60<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tbody</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>table</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+        </div>
+      </div>
+    </div>
+  </div><div class="fg_c_demos__demo js-demo-863e0c25f0c0ef2e5e09fe5d676f8a1a fg_is-hidden">
+    <div class="fg_c_preview js-resize-preview" style="height: 400px">
+      <iframe height="400" src="../../components/preview/table-basic-compact.html" class="fg_c_preview__iframe"></iframe>
+    </div>
+    <div class="fg_c_accordian js-accordian">
+      <button class="fg_c_accordian__button" role="heading">
+        <span class="fg_c_accordian__icon js-icon"></span>
+        <span class="fg_c_accordian__closed-text">Show Code</span>
+        <span class="fg_c_accordian__open-text">Hide Code</span>
+      </button>
+      <div class="fg_c_code-tabs fg_is-hidden js-tabs">
+        <ul class="fg_c_code-tabs__list" role="tablist">
+          <li class="fg_c_code-tabs__tab" role="tab">
+            <a href="#tab-jsx-863e0c25f0c0ef2e5e09fe5d676f8a1a">JSX</a>
+          </li>
+          <li class="fg_c_code-tabs__tab" role="tab">
+            <a href="#tab-html-863e0c25f0c0ef2e5e09fe5d676f8a1a">HTML</a>
+          </li>
+        </ul>
+        <div class="fg_c_code-tabs__panel" id="tab-jsx-863e0c25f0c0ef2e5e09fe5d676f8a1a" role="tabpanel">
+          <button type="button" class="fg_c_button--inverted fg_c_button--copy js-copy-code" data-clipboard-target="#tab-jsx-863e0c25f0c0ef2e5e09fe5d676f8a1a pre">Copy Code</button>
+          <pre class="fg_c_code-block"><code class="language-jsx"><span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">&#39;react&#39;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> Table<span class="token punctuation">,</span> Heading <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&#39;@athena/forge&#39;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> faker <span class="token keyword">from</span> <span class="token string">&#39;faker&#39;</span><span class="token punctuation">;</span>
+<span style='display:none'>empty line</span>
+<span class="token keyword">const</span> departments <span class="token operator">=</span> <span class="token punctuation">[</span>
+  <span class="token string">&#39;Avon Main Office&#39;</span><span class="token punctuation">,</span>
+  <span class="token string">&#39;Avon OBGYN&#39;</span><span class="token punctuation">,</span>
+  <span class="token string">&#39;Beaver Creek Cardiology&#39;</span><span class="token punctuation">,</span>
+  <span class="token string">&#39;Cedarville Chronic Care Management&#39;</span><span class="token punctuation">,</span>
+  <span class="token string">&#39;Findlay OBGYN&#39;</span><span class="token punctuation">,</span>
+  <span class="token string">&#39;Greater Columbus Cardiology&#39;</span><span class="token punctuation">,</span>
+  <span class="token string">&#39;Home Road Primary Care&#39;</span><span class="token punctuation">,</span>
+  <span class="token string">&#39;Lima Main Office&#39;</span><span class="token punctuation">,</span>
+  <span class="token string">&#39;Parma Main Office&#39;</span><span class="token punctuation">,</span>
+  <span class="token string">&#39;Vermillion Cardiology&#39;</span><span class="token punctuation">,</span>
+<span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span style='display:none'>empty line</span>
+<span class="token keyword">const</span> data <span class="token operator">=</span> departments<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token punctuation">(</span>department<span class="token punctuation">,</span> index<span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">{</span>
+    id<span class="token punctuation">:</span> index<span class="token punctuation">,</span>
+    department<span class="token punctuation">:</span> department<span class="token punctuation">,</span>
+    hold<span class="token punctuation">:</span> faker<span class="token punctuation">.</span>finance<span class="token punctuation">.</span><span class="token function">amount</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">1000</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    mgrHold<span class="token punctuation">:</span> faker<span class="token punctuation">.</span>finance<span class="token punctuation">.</span><span class="token function">amount</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">1000</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    cboHold<span class="token punctuation">:</span> faker<span class="token punctuation">.</span>finance<span class="token punctuation">.</span><span class="token function">amount</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">1000</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span style='display:none'>empty line</span>
+<span class="token keyword">const</span> <span class="token function-variable function">currencyTemplate</span> <span class="token operator">=</span> <span class="token punctuation">(</span>num<span class="token punctuation">)</span> <span class="token operator">=&gt;</span>
+  <span class="token string">&#39;$&#39;</span> <span class="token operator">+</span> num<span class="token punctuation">.</span><span class="token function">toLocaleString</span><span class="token punctuation">(</span><span class="token string">&#39;en-US&#39;</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> style<span class="token punctuation">:</span> <span class="token string">&#39;currency&#39;</span><span class="token punctuation">,</span> currency<span class="token punctuation">:</span> <span class="token string">&#39;USD&#39;</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span style='display:none'>empty line</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">function</span> <span class="token function">TableDemo</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">className</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;u&#95;margin--large<span class="token punctuation">&quot;</span></span> <span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Heading</span> <span class="token attr-name">variant</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>section<span class="token punctuation">&quot;</span></span> <span class="token attr-name">text</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>Hold Summary<span class="token punctuation">&quot;</span></span><span class="token punctuation">/&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Table</span>
+        <span class="token attr-name">layout</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>compact<span class="token punctuation">&quot;</span></span>
+        <span class="token attr-name">rows</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>data<span class="token punctuation">}</span></span>
+        <span class="token attr-name">columns</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">[</span>
+          <span class="token punctuation">{</span>
+            key<span class="token punctuation">:</span> <span class="token string">&#39;department&#39;</span><span class="token punctuation">,</span>
+            displayName<span class="token punctuation">:</span> <span class="token string">&#39;Department&#39;</span><span class="token punctuation">,</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            key<span class="token punctuation">:</span> <span class="token string">&#39;hold&#39;</span><span class="token punctuation">,</span>
+            displayName<span class="token punctuation">:</span> <span class="token string">&#39;Hold&#39;</span><span class="token punctuation">,</span>
+            numeric<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+            template<span class="token punctuation">:</span> currencyTemplate<span class="token punctuation">,</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            key<span class="token punctuation">:</span> <span class="token string">&#39;mgrHold&#39;</span><span class="token punctuation">,</span>
+            displayName<span class="token punctuation">:</span> <span class="token string">&#39;Mgr Hold&#39;</span><span class="token punctuation">,</span>
+            numeric<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+            template<span class="token punctuation">:</span> currencyTemplate<span class="token punctuation">,</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            key<span class="token punctuation">:</span> <span class="token string">&#39;cboHold&#39;</span><span class="token punctuation">,</span>
+            displayName<span class="token punctuation">:</span> <span class="token string">&#39;CBO Hold&#39;</span><span class="token punctuation">,</span>
+            numeric<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+            template<span class="token punctuation">:</span> currencyTemplate<span class="token punctuation">,</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">]</span><span class="token punctuation">}</span></span>
+      <span class="token punctuation">/&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+        </div>
+        <div class="fg_c_code-tabs__panel" id="tab-html-863e0c25f0c0ef2e5e09fe5d676f8a1a" role="tabpanel">
+          <button type="button" class="fg_c_button--inverted fg_c_button--copy js-copy-code" data-clipboard-target="#tab-html-863e0c25f0c0ef2e5e09fe5d676f8a1a pre">Copy Code</button>
+          <pre class="fg_c_code-block"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;u&#95;margin--large<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;heading fe&#95;c&#95;heading--section<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Hold Summary<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>table</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;table fe&#95;c&#95;table--show-hover fe&#95;c&#95;table--compact<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>thead</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span> <span class="token attr-name">data-column</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>department<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Department<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span> <span class="token attr-name">data-column</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>hold<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Hold<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span> <span class="token attr-name">data-column</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>mgrHold<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Mgr Hold<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span> <span class="token attr-name">data-column</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>cboHold<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>CBO Hold<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>thead</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tbody</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">data-column</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>department<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;table&#95;&#95;cell<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Avon Main Office<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">data-column</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>hold<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;table&#95;&#95;cell fe&#95;c&#95;table&#95;&#95;cell--numeric<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>$587.68<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">data-column</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>mgrHold<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;table&#95;&#95;cell fe&#95;c&#95;table&#95;&#95;cell--numeric<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>$439.13<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">data-column</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>cboHold<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;table&#95;&#95;cell fe&#95;c&#95;table&#95;&#95;cell--numeric<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>$499.50<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">data-column</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>department<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;table&#95;&#95;cell<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Avon OBGYN<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">data-column</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>hold<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;table&#95;&#95;cell fe&#95;c&#95;table&#95;&#95;cell--numeric<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>$384.56<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">data-column</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>mgrHold<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;table&#95;&#95;cell fe&#95;c&#95;table&#95;&#95;cell--numeric<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>$178.30<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">data-column</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>cboHold<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;table&#95;&#95;cell fe&#95;c&#95;table&#95;&#95;cell--numeric<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>$359.01<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">data-column</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>department<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;table&#95;&#95;cell<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Beaver Creek Cardiology<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">data-column</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>hold<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;table&#95;&#95;cell fe&#95;c&#95;table&#95;&#95;cell--numeric<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>$332.20<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">data-column</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>mgrHold<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;table&#95;&#95;cell fe&#95;c&#95;table&#95;&#95;cell--numeric<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>$355.13<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">data-column</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>cboHold<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;table&#95;&#95;cell fe&#95;c&#95;table&#95;&#95;cell--numeric<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>$421.31<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">data-column</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>department<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;table&#95;&#95;cell<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Cedarville Chronic Care Management<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">data-column</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>hold<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;table&#95;&#95;cell fe&#95;c&#95;table&#95;&#95;cell--numeric<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>$228.42<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">data-column</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>mgrHold<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;table&#95;&#95;cell fe&#95;c&#95;table&#95;&#95;cell--numeric<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>$300.46<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">data-column</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>cboHold<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;table&#95;&#95;cell fe&#95;c&#95;table&#95;&#95;cell--numeric<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>$754.44<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">data-column</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>department<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;table&#95;&#95;cell<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Findlay OBGYN<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">data-column</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>hold<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;table&#95;&#95;cell fe&#95;c&#95;table&#95;&#95;cell--numeric<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>$200.38<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">data-column</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>mgrHold<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;table&#95;&#95;cell fe&#95;c&#95;table&#95;&#95;cell--numeric<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>$316.94<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">data-column</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>cboHold<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;table&#95;&#95;cell fe&#95;c&#95;table&#95;&#95;cell--numeric<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>$321.73<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">data-column</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>department<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;table&#95;&#95;cell<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Greater Columbus Cardiology<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">data-column</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>hold<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;table&#95;&#95;cell fe&#95;c&#95;table&#95;&#95;cell--numeric<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>$203.84<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">data-column</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>mgrHold<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;table&#95;&#95;cell fe&#95;c&#95;table&#95;&#95;cell--numeric<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>$911.98<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">data-column</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>cboHold<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;table&#95;&#95;cell fe&#95;c&#95;table&#95;&#95;cell--numeric<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>$669.20<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">data-column</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>department<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;table&#95;&#95;cell<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Home Road Primary Care<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">data-column</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>hold<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;table&#95;&#95;cell fe&#95;c&#95;table&#95;&#95;cell--numeric<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>$293.16<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">data-column</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>mgrHold<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;table&#95;&#95;cell fe&#95;c&#95;table&#95;&#95;cell--numeric<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>$73.53<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">data-column</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>cboHold<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;table&#95;&#95;cell fe&#95;c&#95;table&#95;&#95;cell--numeric<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>$48.76<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">data-column</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>department<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;table&#95;&#95;cell<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Lima Main Office<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">data-column</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>hold<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;table&#95;&#95;cell fe&#95;c&#95;table&#95;&#95;cell--numeric<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>$705.05<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">data-column</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>mgrHold<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;table&#95;&#95;cell fe&#95;c&#95;table&#95;&#95;cell--numeric<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>$835.03<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">data-column</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>cboHold<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;table&#95;&#95;cell fe&#95;c&#95;table&#95;&#95;cell--numeric<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>$389.18<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">data-column</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>department<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;table&#95;&#95;cell<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Parma Main Office<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">data-column</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>hold<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;table&#95;&#95;cell fe&#95;c&#95;table&#95;&#95;cell--numeric<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>$251.18<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">data-column</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>mgrHold<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;table&#95;&#95;cell fe&#95;c&#95;table&#95;&#95;cell--numeric<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>$418.19<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">data-column</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>cboHold<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;table&#95;&#95;cell fe&#95;c&#95;table&#95;&#95;cell--numeric<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>$875.26<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">data-column</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>department<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;table&#95;&#95;cell<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Vermillion Cardiology<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">data-column</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>hold<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;table&#95;&#95;cell fe&#95;c&#95;table&#95;&#95;cell--numeric<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>$5.40<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">data-column</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>mgrHold<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;table&#95;&#95;cell fe&#95;c&#95;table&#95;&#95;cell--numeric<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>$818.29<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">data-column</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>cboHold<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;table&#95;&#95;cell fe&#95;c&#95;table&#95;&#95;cell--numeric<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>$273.53<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tbody</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>table</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+        </div>
+      </div>
+    </div>
+  </div><div class="fg_c_demos__demo js-demo-8e8179a7ea6ec870a9608d2dde806a38 fg_is-hidden">
+    <div class="fg_c_preview js-resize-preview" style="height: 265px">
+      <iframe height="265" src="../../components/preview/simple-sort.html" class="fg_c_preview__iframe"></iframe>
+    </div>
+    <div class="fg_c_accordian js-accordian">
+      <button class="fg_c_accordian__button" role="heading">
+        <span class="fg_c_accordian__icon js-icon"></span>
+        <span class="fg_c_accordian__closed-text">Show Code</span>
+        <span class="fg_c_accordian__open-text">Hide Code</span>
+      </button>
+      <div class="fg_c_code-tabs fg_is-hidden js-tabs">
+        <ul class="fg_c_code-tabs__list" role="tablist">
+          <li class="fg_c_code-tabs__tab" role="tab">
+            <a href="#tab-jsx-8e8179a7ea6ec870a9608d2dde806a38">JSX</a>
+          </li>
+          <li class="fg_c_code-tabs__tab" role="tab">
+            <a href="#tab-html-8e8179a7ea6ec870a9608d2dde806a38">HTML</a>
+          </li>
+        </ul>
+        <div class="fg_c_code-tabs__panel" id="tab-jsx-8e8179a7ea6ec870a9608d2dde806a38" role="tabpanel">
+          <button type="button" class="fg_c_button--inverted fg_c_button--copy js-copy-code" data-clipboard-target="#tab-jsx-8e8179a7ea6ec870a9608d2dde806a38 pre">Copy Code</button>
+          <pre class="fg_c_code-block"><code class="language-jsx"><span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">&#39;react&#39;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> Table <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&#39;@athena/forge&#39;</span><span class="token punctuation">;</span>
+<span style='display:none'>empty line</span>
+<span class="token keyword">const</span> columns <span class="token operator">=</span> <span class="token punctuation">[</span>
+  <span class="token punctuation">{</span>
+    key<span class="token punctuation">:</span> <span class="token string">&#39;col1&#39;</span><span class="token punctuation">,</span>
+    displayName<span class="token punctuation">:</span> <span class="token string">&#39;Textual&#39;</span><span class="token punctuation">,</span>
+    sortable<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    key<span class="token punctuation">:</span> <span class="token string">&#39;col2&#39;</span><span class="token punctuation">,</span>
+    displayName<span class="token punctuation">:</span> <span class="token string">&#39;Numeric&#39;</span><span class="token punctuation">,</span>
+    numeric<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    sortable<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span style='display:none'>empty line</span>
+<span class="token keyword">const</span> rows <span class="token operator">=</span> <span class="token punctuation">[</span>
+  <span class="token punctuation">{</span>
+    id<span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+    col1<span class="token punctuation">:</span> <span class="token string">&#39;A&#39;</span><span class="token punctuation">,</span>
+    col2<span class="token punctuation">:</span> <span class="token string">&#39;19&#39;</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    id<span class="token punctuation">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+    col1<span class="token punctuation">:</span> <span class="token string">&#39;ABC&#39;</span><span class="token punctuation">,</span>
+    col2<span class="token punctuation">:</span> <span class="token string">&#39;123&#39;</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    id<span class="token punctuation">:</span> <span class="token number">3</span><span class="token punctuation">,</span>
+    col1<span class="token punctuation">:</span> <span class="token string">&#39;ABCDEF&#39;</span><span class="token punctuation">,</span>
+    col2<span class="token punctuation">:</span> <span class="token string">&#39;12345&#39;</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span style='display:none'>empty line</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">function</span> <span class="token function">TableSimpleSortDemo</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">className</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;u&#95;margin--large<span class="token punctuation">&quot;</span></span> <span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Table</span>
+        <span class="token attr-name">layout</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>default<span class="token punctuation">&quot;</span></span>
+        <span class="token attr-name">rows</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>rows<span class="token punctuation">}</span></span>
+        <span class="token attr-name">columns</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>columns<span class="token punctuation">}</span></span>
+      <span class="token punctuation">/&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+        </div>
+        <div class="fg_c_code-tabs__panel" id="tab-html-8e8179a7ea6ec870a9608d2dde806a38" role="tabpanel">
+          <button type="button" class="fg_c_button--inverted fg_c_button--copy js-copy-code" data-clipboard-target="#tab-html-8e8179a7ea6ec870a9608d2dde806a38 pre">Copy Code</button>
+          <pre class="fg_c_code-block"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;u&#95;margin--large<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>table</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;table fe&#95;c&#95;table--show-hover fe&#95;c&#95;table--default<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>thead</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span> <span class="token attr-name">data-column</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>col1<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;table&#95;&#95;header fe&#95;c&#95;table&#95;&#95;header--sortable<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;table&#95;&#95;header-text<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Textual<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;table&#95;&#95;sort-control<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span> <span class="token attr-name">data-column</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>col2<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;table&#95;&#95;header fe&#95;c&#95;table&#95;&#95;header--sortable<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;table&#95;&#95;header-text<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Numeric<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;table&#95;&#95;sort-control<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>thead</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tbody</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">data-column</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>col1<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;table&#95;&#95;cell<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>A<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">data-column</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>col2<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;table&#95;&#95;cell fe&#95;c&#95;table&#95;&#95;cell--numeric<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>19<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">data-column</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>col1<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;table&#95;&#95;cell<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>ABC<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">data-column</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>col2<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;table&#95;&#95;cell fe&#95;c&#95;table&#95;&#95;cell--numeric<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>123<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">data-column</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>col1<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;table&#95;&#95;cell<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>ABCDEF<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">data-column</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>col2<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;table&#95;&#95;cell fe&#95;c&#95;table&#95;&#95;cell--numeric<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>12345<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tbody</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>table</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+        </div>
+      </div>
+    </div>
+  </div><div class="fg_c_demos__demo js-demo-c77a1502c961bdec5e4b19709a694941 fg_is-hidden">
+    <div class="fg_c_preview js-resize-preview" style="height: 370px">
+      <iframe height="370" src="../../components/preview/custom-sort.html" class="fg_c_preview__iframe"></iframe>
+    </div>
+    <div class="fg_c_accordian js-accordian">
+      <button class="fg_c_accordian__button" role="heading">
+        <span class="fg_c_accordian__icon js-icon"></span>
+        <span class="fg_c_accordian__closed-text">Show Code</span>
+        <span class="fg_c_accordian__open-text">Hide Code</span>
+      </button>
+      <div class="fg_c_code-tabs fg_is-hidden js-tabs">
+        <ul class="fg_c_code-tabs__list" role="tablist">
+          <li class="fg_c_code-tabs__tab" role="tab">
+            <a href="#tab-jsx-c77a1502c961bdec5e4b19709a694941">JSX</a>
+          </li>
+          <li class="fg_c_code-tabs__tab" role="tab">
+            <a href="#tab-html-c77a1502c961bdec5e4b19709a694941">HTML</a>
+          </li>
+        </ul>
+        <div class="fg_c_code-tabs__panel" id="tab-jsx-c77a1502c961bdec5e4b19709a694941" role="tabpanel">
+          <button type="button" class="fg_c_button--inverted fg_c_button--copy js-copy-code" data-clipboard-target="#tab-jsx-c77a1502c961bdec5e4b19709a694941 pre">Copy Code</button>
+          <pre class="fg_c_code-block"><code class="language-jsx"><span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">&#39;react&#39;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> Table <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&#39;@athena/forge&#39;</span><span class="token punctuation">;</span>
+<span style='display:none'>empty line</span>
+<span class="token keyword">const</span> columns <span class="token operator">=</span> <span class="token punctuation">[</span>
+  <span class="token punctuation">{</span>
+    key<span class="token punctuation">:</span> <span class="token string">&#39;name&#39;</span><span class="token punctuation">,</span>
+    displayName<span class="token punctuation">:</span> <span class="token string">&#39;Name&#39;</span><span class="token punctuation">,</span>
+    sortable<span class="token punctuation">:</span> <span class="token punctuation">{</span> reducer<span class="token punctuation">:</span> name <span class="token operator">=&gt;</span> name<span class="token punctuation">.</span>last <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    template<span class="token punctuation">:</span> name <span class="token operator">=&gt;</span> name<span class="token punctuation">.</span>first <span class="token operator">+</span> <span class="token string">&#39; &#39;</span> <span class="token operator">+</span> name<span class="token punctuation">.</span>last<span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    key<span class="token punctuation">:</span> <span class="token string">&#39;height&#39;</span><span class="token punctuation">,</span>
+    displayName<span class="token punctuation">:</span> <span class="token string">&#39;Height&#39;</span><span class="token punctuation">,</span>
+    numeric<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    sortable<span class="token punctuation">:</span> <span class="token punctuation">{</span> reducer<span class="token punctuation">:</span> height <span class="token operator">=&gt;</span> height<span class="token punctuation">.</span>feet <span class="token operator">*</span> <span class="token number">12</span> <span class="token operator">+</span> height<span class="token punctuation">.</span>inches <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    template<span class="token punctuation">:</span> height <span class="token operator">=&gt;</span> height<span class="token punctuation">.</span>feet <span class="token operator">+</span> <span class="token string">&#39;\&#39; &#39;</span> <span class="token operator">+</span> height<span class="token punctuation">.</span>inches <span class="token operator">+</span> <span class="token string">&#39;&quot;&#39;</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span style='display:none'>empty line</span>
+<span class="token keyword">const</span> rows <span class="token operator">=</span> <span class="token punctuation">[</span>
+  <span class="token punctuation">{</span>
+    id<span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+    name<span class="token punctuation">:</span> <span class="token punctuation">{</span> first<span class="token punctuation">:</span> <span class="token string">&#39;Richard&#39;</span><span class="token punctuation">,</span> last<span class="token punctuation">:</span> <span class="token string">&#39;Grayson&#39;</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    height<span class="token punctuation">:</span> <span class="token punctuation">{</span> feet<span class="token punctuation">:</span> <span class="token number">5</span><span class="token punctuation">,</span> inches<span class="token punctuation">:</span> <span class="token number">4</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    id<span class="token punctuation">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+    name<span class="token punctuation">:</span> <span class="token punctuation">{</span> first<span class="token punctuation">:</span> <span class="token string">&#39;Rachel&#39;</span><span class="token punctuation">,</span> last<span class="token punctuation">:</span> <span class="token string">&#39;Roth&#39;</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    height<span class="token punctuation">:</span> <span class="token punctuation">{</span> feet<span class="token punctuation">:</span> <span class="token number">5</span><span class="token punctuation">,</span> inches<span class="token punctuation">:</span> <span class="token number">4</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    id<span class="token punctuation">:</span> <span class="token number">3</span><span class="token punctuation">,</span>
+    name<span class="token punctuation">:</span> <span class="token punctuation">{</span> first<span class="token punctuation">:</span> <span class="token string">&#39;Victor&#39;</span><span class="token punctuation">,</span> last<span class="token punctuation">:</span> <span class="token string">&#39;Stone&#39;</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    height<span class="token punctuation">:</span> <span class="token punctuation">{</span> feet<span class="token punctuation">:</span> <span class="token number">6</span><span class="token punctuation">,</span> inches<span class="token punctuation">:</span> <span class="token number">0</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    id<span class="token punctuation">:</span> <span class="token number">4</span><span class="token punctuation">,</span>
+    name<span class="token punctuation">:</span> <span class="token punctuation">{</span> first<span class="token punctuation">:</span> <span class="token string">&#39;Garfield&#39;</span><span class="token punctuation">,</span> last<span class="token punctuation">:</span> <span class="token string">&#39;Logan&#39;</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    height<span class="token punctuation">:</span> <span class="token punctuation">{</span> feet<span class="token punctuation">:</span> <span class="token number">5</span><span class="token punctuation">,</span> inches<span class="token punctuation">:</span> <span class="token number">0</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    id<span class="token punctuation">:</span> <span class="token number">5</span><span class="token punctuation">,</span>
+    name<span class="token punctuation">:</span> <span class="token punctuation">{</span> first<span class="token punctuation">:</span> <span class="token string">&#39;Koriand\&#39;r&#39;</span><span class="token punctuation">,</span> last<span class="token punctuation">:</span> <span class="token string">&#39;&#39;</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    height<span class="token punctuation">:</span> <span class="token punctuation">{</span> feet<span class="token punctuation">:</span> <span class="token number">5</span><span class="token punctuation">,</span> inches<span class="token punctuation">:</span> <span class="token number">6</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span style='display:none'>empty line</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">function</span> <span class="token function">TableCustomSortDemo</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">className</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;u&#95;margin--large<span class="token punctuation">&quot;</span></span> <span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Table</span>
+        <span class="token attr-name">layout</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>default<span class="token punctuation">&quot;</span></span>
+        <span class="token attr-name">rows</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>rows<span class="token punctuation">}</span></span>
+        <span class="token attr-name">columns</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>columns<span class="token punctuation">}</span></span>
+      <span class="token punctuation">/&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+        </div>
+        <div class="fg_c_code-tabs__panel" id="tab-html-c77a1502c961bdec5e4b19709a694941" role="tabpanel">
+          <button type="button" class="fg_c_button--inverted fg_c_button--copy js-copy-code" data-clipboard-target="#tab-html-c77a1502c961bdec5e4b19709a694941 pre">Copy Code</button>
+          <pre class="fg_c_code-block"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;u&#95;margin--large<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>table</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;table fe&#95;c&#95;table--show-hover fe&#95;c&#95;table--default<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>thead</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span> <span class="token attr-name">data-column</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>name<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;table&#95;&#95;header fe&#95;c&#95;table&#95;&#95;header--sortable<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;table&#95;&#95;header-text<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Name<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;table&#95;&#95;sort-control<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span> <span class="token attr-name">data-column</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>height<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;table&#95;&#95;header fe&#95;c&#95;table&#95;&#95;header--sortable<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;table&#95;&#95;header-text<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Height<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;table&#95;&#95;sort-control<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>thead</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tbody</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">data-column</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>name<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;table&#95;&#95;cell<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Richard Grayson<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">data-column</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>height<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;table&#95;&#95;cell fe&#95;c&#95;table&#95;&#95;cell--numeric<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>5<span class="token entity" title="&#x27;">&amp;#x27;</span> 4<span class="token entity" title="&quot;">&amp;quot;</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">data-column</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>name<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;table&#95;&#95;cell<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Rachel Roth<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">data-column</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>height<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;table&#95;&#95;cell fe&#95;c&#95;table&#95;&#95;cell--numeric<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>5<span class="token entity" title="&#x27;">&amp;#x27;</span> 4<span class="token entity" title="&quot;">&amp;quot;</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">data-column</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>name<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;table&#95;&#95;cell<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Victor Stone<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">data-column</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>height<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;table&#95;&#95;cell fe&#95;c&#95;table&#95;&#95;cell--numeric<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>6<span class="token entity" title="&#x27;">&amp;#x27;</span> 0<span class="token entity" title="&quot;">&amp;quot;</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">data-column</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>name<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;table&#95;&#95;cell<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Garfield Logan<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">data-column</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>height<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;table&#95;&#95;cell fe&#95;c&#95;table&#95;&#95;cell--numeric<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>5<span class="token entity" title="&#x27;">&amp;#x27;</span> 0<span class="token entity" title="&quot;">&amp;quot;</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">data-column</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>name<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;table&#95;&#95;cell<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Koriand<span class="token entity" title="&#x27;">&amp;#x27;</span>r <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">data-column</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>height<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;table&#95;&#95;cell fe&#95;c&#95;table&#95;&#95;cell--numeric<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>5<span class="token entity" title="&#x27;">&amp;#x27;</span> 6<span class="token entity" title="&quot;">&amp;quot;</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tbody</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>table</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+        </div>
+      </div>
+    </div>
+  </div></div>
+
+<h2 id="usage">Usage</h2>
+<p>Use a <code>Table</code> to organize and display large amounts of structured information. <code>Table</code> is ideal for looking up or comparing individual values.</p>
+<p>A table should be accompanied by a section heading.</p>
+<h2 id="design">Design</h2>
+<h4 id="layout">Layout</h4>
+<p>The table component currently comes with three layout options &#8212; &#39;default&#39;, &#39;compact&#39;, and &#39;tall&#39;. The &#39;default&#39; layout should be used for most tables, and &#39;compact&#39; should be used for more dense sets of data, often numerical. The &#39;tall&#39; layout is deprecated and should not be used going forward.</p>
+<h4 id="column-header">Column Header</h4>
+<p>Column Headers should be organized in a left-to-right sequence that reinforces clarity of information in the table, such as by level of importance or in alphanumeric order. Specifically, a column of identifiers should be the leftmost column (e.g., &quot;Name&quot; or &quot;Id&quot; in a table of patients).</p>
+<p>Column Headers should be in title case and should be concise to avoid wrapping to a second line. Omit information that is obvious from the table&#39;s title or from the column&#39;s data. For example, a column of patient names should be called &quot;Name&quot; in a table called &quot;Patients&quot;.</p>
+<h4 id="data-column">Data Column</h4>
+<p>Data Columns run vertically in a table. A column holds data that corresponds to its Column Header.</p>
+<p>By default, text within tables are aligned to the left and numbers are aligned to the right. Right-aligned numbers help the reader make comparisons of magnitude when scanning down columns.</p>
+<h4 id="data-row">Data Row</h4>
+<p>Data Rows run horizontally and contain related data items where the value in each column corresponds to its Column Header.</p>
+<h3 id="table-aesthetics">Table Aesthetics</h3>
+<ul>
+<li><strong>Do size columns according to the data they contain.</strong> If all the columns are an even width, data becomes lost and detached from its neighbors. Some table cells will be too narrow and cramp their data uncomfortably. Let the columns fit the content rather than setting exact widths for each. This is the default behavior for <code>Table</code>.</li>
+<li><strong>Don&#39;t display too many rows or columns at once.</strong> Beyond potential performance issues, dense tables become less usable the larger they are. Tables are meant to be readable, scannable, and easily comparable. If a user loses track of information, the table is not helping to achieve their goal. Consider paginating for a large number of records or removing noncrucial columns.</li>
+<li><strong>Don&#39;t stretch a table full-width across the screen.</strong> While it might look preferable from a distance, it will be harder to read as the data will be unnecessarily separated. By default, the maximum width of <code>Table</code> is a sum of the widths of the columns.</li>
+</ul>
+<h2 id="implementation">Implementation</h2>
+<p>The <code>Table</code> component is based on <a href="https://reactabular.js.org/">Reactabular&#39;s core reactabular-table package</a>. Forge leverages third-party libraries when possible, but must still achieve Forge design standards and present a unified API. Only the functionality described in the Forge documentation is officially supported for this component even if an underlying third-party API <em>currently</em> remains usable.</p>
+<h3 id="templates">Templates</h3>
+<p>Columns can utilize a function to transform data for presentation purposes. For example, the function could turn entries into a link, add a currency symbol, or assign specific formatting.</p>
+<p>Supply a function returning a string or a React element to the <code>template</code> property in the data column definition object (see the demo for an example). This is a thin wrapper around <a href="https://reactabular.js.org/#/column-definition/formatters">Reactabular&#39;s formatter</a>.</p>
+<h3 id="sorting">Sorting</h3>
+<p>Enable simple sorting by passing <code>true</code> to the <code>sortable</code> property in the data column definition object.</p>
+<p>For more complex sorting, columns can define a reducer function to sort data in a custom order. The reducer function takes a complex row value and reduces it to a number or string for the column to sort on instead. For example, the function could combine multiple values in complex data to a single value for sorting.</p>
+<p>To use, set the <code>sortable</code> property in the data column definition to an object with a property <code>reducer</code> that takes the function (see the demo for an example).</p>
+<h3 id="layouts">Layouts</h3>
+<p>Currently, if no <code>layout</code> prop is provided, the <code>Table</code> component will automatically use <code>tall</code>. However, the <code>tall</code> layout is deprecated and will be removed in the next major release of Forge. At that point, the <code>default</code> layout will be used (as you may imagine) by default.</p>
+<p>The <code>compact</code> layout is safe to use currently and will also be available in the next major version of Forge.</p>
+<h2 id="api-tables">API Tables</h2>
+<h3 id="import-table-only">Import Table Only</h3>
+<p><p>Importing individual components can reduce bundle size. <a href="https://athenaconfluence.athenahealth.com/display/UXDS/Forge+Import+for+Better+Tree+Shaking">Learn more</a></p><code>import Table from &#39;@athena/forge/lib/table&#39;;</code></p>
+<h3 id="table-props">Table Props</h3>
+<table class="api-table api-table--react">
+  <thead>
+    <tr>
+      <th>Prop</th>
+      <th>Type</th>
+      <th>Default</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="api-table__required"><code>columns</code> (required)</td>
+      <td>
+        arrayOf - shape:
+          <ul>
+            <li>displayName: string (required)</li>
+            <li>key: string (required)</li>
+            <li>numeric: boolean</li>
+            <li>template: func</li>
+            <li>sortable: boolean or shape: reducer: func</li>
+            <li>props: object</li>
+            <li>header: object</li>
+            <li>cell: object</li>
+          </ul>
+      </td>
+      <td></td>
+      <td>Defines the columns. Must include displayName and unique key.
+Can also:
+- Specify the column as numeric to right-align content
+- Set a custom template (See <a href="https://reactabular.js.org/#/column-definition/formatters">https://reactabular.js.org/#/column-definition/formatters</a>)
+- Define a column as sortable with an optional reducer function for reducing complex values to a string or number
+- Override the <code>props</code>, <code>header</code>, or <code>cell</code> portions of the <a href="https://reactabular.js.org/#/column-definition">column definition</a></td>
+    </tr>
+    <tr>
+      <td class="api-table__required"><code>rows</code> (required)</td>
+      <td>
+        arrayOf - object
+      </td>
+      <td></td>
+      <td>Defines the rows as objects. Each key should match a column&#x27;s key to display the value in that column.</td>
+    </tr>
+    <tr>
+      <td><code>children</code></td>
+      <td>
+        node
+      </td>
+      <td></td>
+      <td>By default, this will add children to the table body - to completely replace the table header and body, set
+<code>replaceChildren</code> to true</td>
+    </tr>
+    <tr>
+      <td><code>className</code></td>
+      <td>
+        string
+      </td>
+      <td></td>
+      <td>Adds a class to the root element of the component</td>
+    </tr>
+    <tr>
+      <td><code>onRow</code></td>
+      <td>
+        func
+      </td>
+      <td><code>() =&gt; {}</code></td>
+      <td>Function that runs on each row as it is rendered – should return an object of props to be added to the row</td>
+    </tr>
+    <tr>
+      <td><code>layout</code></td>
+      <td>
+        enum
+          <ul>
+              <li>&#x27;compact&#x27;</li>
+              <li>&#x27;default&#x27;</li>
+              <li>&#x27;tall&#x27;</li>
+          </ul>
+      </td>
+      <td>&#x27;default&#x27;</td>
+      <td>Sets the table layout size
+favor of &#x27;compact&#x27; and &#x27;default&#x27; layouts</td>
+    </tr>
+    <tr>
+      <td><code>onSort</code></td>
+      <td>
+        func
+      </td>
+      <td></td>
+      <td>Called with the new sort order when sorting changes. Sort order has same shape as <code>sortOrder</code> prop or undefined for no sorting.</td>
+    </tr>
+    <tr>
+      <td><code>renderers</code></td>
+      <td>
+        object
+      </td>
+      <td></td>
+      <td>Overrides default elements in the rendered table — see the <a href="https://reactabular.js.org/#/table/overriding-default-renderers">Reactabular docs</a>
+for more info</td>
+    </tr>
+    <tr>
+      <td><code>replaceChildren</code></td>
+      <td>
+        bool
+      </td>
+      <td>false</td>
+      <td>If true, this will replace the default table header and body with whatever <code>children</code> you pass to <code>Table</code> -
+otherwise, <code>children</code> are just appended after the table body</td>
+    </tr>
+    <tr>
+      <td><code>rowKey</code></td>
+      <td>
+        string
+      </td>
+      <td>&#x27;id&#x27;</td>
+      <td>Identifies which property to use as each row&#x27;s key.</td>
+    </tr>
+    <tr>
+      <td><code>showHover</code></td>
+      <td>
+        bool
+      </td>
+      <td>true</td>
+      <td>Indicates whether to show hover states for improved reading across a single row</td>
+    </tr>
+    <tr>
+      <td><code>sortOrder</code></td>
+      <td>
+        shape:
+        <ul>
+          <li>column - string (required)</li>
+          <li>direction - &#39;asc&#39; or &#39;desc&#39;</li>
+        </ul>
+      </td>
+      <td></td>
+      <td>Sets the order of the rows including the column it&#39;s sorted on and whether it&#39;s in ascending or descending order.
+Leave <code>undefined</code> to let Table handle the sorting. Set to <code>null</code> to force the order in the <code>rows</code> prop.</td>
+    </tr>
+    <tr>
+      <td><code>...rest</code></td>
+      <td></td>
+      <td></td>
+      <td>Passthrough props to the root component <a href="https://reactabular.js.org/#/table/components?a=tableprovider"><code>ReactabularTable.Provider</code></a> that wraps the <code>Table</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="html-api">HTML API</h3>
+<table class="api-table api-table--html">
+  <thead>
+    <tr>
+      <th>Class</th>
+      <th>Applies To</th>
+      <th>Description</th>
+    </tr>
+  </thead>fe_c_table--default
+  <tbody>
+      <tr><td><code><code>fe_c_table</code></code></td><td>Table element</td><td>Base class for the <code>Table</code> component</td></tr>
+      <tr><td><code><code>fe_c_table--show-hover</code></code></td><td>Table element</td><td>Gives the table rows a hover style</td></tr>
+      <tr><td><code><code>fe_c_table--default</code></code></td><td>Table element</td><td>Applies the &#39;default&#39; layout to the table</td></tr>
+      <tr><td><code><code>fe_c_table--compact</code></code></td><td>Table element</td><td>Applies the &#39;compact&#39; layout to the table</td></tr>
+      <tr><td><code><code>fe_c_table--tall</code></code></td><td>Table element</td><td><strong>(deprecated - do not use going forward)</strong> Applies the &#39;tall&#39; layout to the table</td></tr>
+      <tr><td><code><code>fe_c_table__header</code></code></td><td>Table header child element</td><td>Wrapper for header text</td></tr>
+      <tr><td><code><code>fe_c_table__header--sortable</code></code></td><td>Table header child element</td><td>Wrapper for sortable header text and control</td></tr>
+      <tr><td><code><code>fe_c_table__header-text</code></code></td><td>Table header child element</td><td>Text for table header</td></tr>
+       <tr><td><code><code>fe_c_table__sort-control</code></code></td><td>Table header child element</td><td>Arrow controls for sortable header</td></tr>
+      <tr><td><code><code>fe_c_table__cell</code></code></td><td>Table cells (td in tbody)</td><td>Base class for a table data row cell</td></tr>
+      <tr><td><code><code>fe_c_table__cell--numeric</code></code></td><td>Table cells (td in tbody)</td><td>Styles the table cell content as numbers</td></tr>
+  </tbody>
+</table>
+
+      
+
+    
+  </div>
+
+  <script>
+document.addEventListener("DOMContentLoaded", function(event) {
+    if (window.amplitude) {
+        amplitude.getInstance().init('d426be2bbef81471eeac4bca0c061243');
+
+        amplitude.getInstance().logEvent('viewed page', {
+          pageName: 'Table',
+          pageCategory: 'components'.length > 0
+            ? 'components'
+            : null,
+          forgeVersion: '2.0.0-beta.7',
+          forgeGeneralVersion: /^\d*(?=\.)/.exec('2.0.0-beta.7')
+            ? /^\d*(?=\.)/.exec('2.0.0-beta.7').toString()
+            : null
+        });
+      }
+      else {
+        console.warn("amplitude is not logging events");
+      }
+});
+</script>
+
+
+
+    </div>
+    <!--div class="debug"><pre><code class="language-json">{"id":"9ff14b9c336361753d92bf98f8115506","name":"table","handle":"table","label":"Table","title":"Table","order":1000000,"isHidden":false,"alias":null,"isEntity":true,"isDoc":true,"isIndex":false,"path":"components/table","status":null,"content":"<p class=\"p--lead\">Tables display related information in the form of rows and columns. They allow users to quickly compare, sort, and visualize large amounts of related data.</p>\r\n\r\n## Demos\r\n{{demo '@table'}}\r\n\r\n## Usage\r\nUse a `Table` to organize and display large amounts of structured information. `Table` is ideal for looking up or comparing individual values.\r\n\r\nA table should be accompanied by a section heading.\r\n\r\n## Design\r\n\r\n#### Layout\r\nThe table component currently comes with three layout options &#8212; 'default', 'compact', and 'tall'. The 'default' layout should be used for most tables, and 'compact' should be used for more dense sets of data, often numerical. The 'tall' layout is deprecated and should not be used going forward.\r\n\r\n#### Column Header\r\nColumn Headers should be organized in a left-to-right sequence that reinforces clarity of information in the table, such as by level of importance or in alphanumeric order. Specifically, a column of identifiers should be the leftmost column (e.g., \"Name\" or \"Id\" in a table of patients).\r\n\r\nColumn Headers should be in title case and should be concise to avoid wrapping to a second line. Omit information that is obvious from the table's title or from the column's data. For example, a column of patient names should be called \"Name\" in a table called \"Patients\".\r\n\r\n#### Data Column\r\nData Columns run vertically in a table. A column holds data that corresponds to its Column Header.\r\n\r\nBy default, text within tables are aligned to the left and numbers are aligned to the right. Right-aligned numbers help the reader make comparisons of magnitude when scanning down columns.\r\n\r\n#### Data Row\r\nData Rows run horizontally and contain related data items where the value in each column corresponds to its Column Header.\r\n\r\n### Table Aesthetics\r\n* __Do size columns according to the data they contain.__ If all the columns are an even width, data becomes lost and detached from its neighbors. Some table cells will be too narrow and cramp their data uncomfortably. Let the columns fit the content rather than setting exact widths for each. This is the default behavior for `Table`.\r\n* __Don't display too many rows or columns at once.__ Beyond potential performance issues, dense tables become less usable the larger they are. Tables are meant to be readable, scannable, and easily comparable. If a user loses track of information, the table is not helping to achieve their goal. Consider paginating for a large number of records or removing noncrucial columns.\r\n* __Don't stretch a table full-width across the screen.__ While it might look preferable from a distance, it will be harder to read as the data will be unnecessarily separated. By default, the maximum width of `Table` is a sum of the widths of the columns.\r\n\r\n## Implementation\r\nThe `Table` component is based on [Reactabular's core reactabular-table package](https://reactabular.js.org/). Forge leverages third-party libraries when possible, but must still achieve Forge design standards and present a unified API. Only the functionality described in the Forge documentation is officially supported for this component even if an underlying third-party API _currently_ remains usable.\r\n\r\n### Templates\r\nColumns can utilize a function to transform data for presentation purposes. For example, the function could turn entries into a link, add a currency symbol, or assign specific formatting.\r\n\r\nSupply a function returning a string or a React element to the `template` property in the data column definition object (see the demo for an example). This is a thin wrapper around [Reactabular's formatter](https://reactabular.js.org/#/column-definition/formatters).\r\n\r\n### Sorting\r\nEnable simple sorting by passing `true` to the `sortable` property in the data column definition object.\r\n\r\nFor more complex sorting, columns can define a reducer function to sort data in a custom order. The reducer function takes a complex row value and reduces it to a number or string for the column to sort on instead. For example, the function could combine multiple values in complex data to a single value for sorting.\r\n\r\nTo use, set the `sortable` property in the data column definition to an object with a property `reducer` that takes the function (see the demo for an example).\r\n\r\n### Layouts\r\nCurrently, if no `layout` prop is provided, the `Table` component will automatically use `tall`. However, the `tall` layout is deprecated and will be removed in the next major release of Forge. At that point, the `default` layout will be used (as you may imagine) by default.\r\n\r\nThe `compact` layout is safe to use currently and will also be available in the next major version of Forge.\r\n\r\n## API Tables\r\n### Import Table Only\r\n{{> componentImportMessage}}\r\n`import Table from '@athena/forge/lib/table';`\r\n\r\n### Table Props\r\n<table class=\"api-table api-table--react\">\r\n  <thead>\r\n    <tr>\r\n      <th>Prop</th>\r\n      <th>Type</th>\r\n      <th>Default</th>\r\n      <th>Description</th>\r\n    </tr>\r\n  </thead>\r\n  <tbody>\r\n    <tr>\r\n      <td class=\"api-table__required\">`columns` (required)</td>\r\n      <td>\r\n        arrayOf - shape:\r\n          <ul>\r\n            <li>displayName: string (required)</li>\r\n            <li>key: string (required)</li>\r\n            <li>numeric: boolean</li>\r\n            <li>template: func</li>\r\n            <li>sortable: boolean or shape: reducer: func</li>\r\n            <li>props: object</li>\r\n            <li>header: object</li>\r\n            <li>cell: object</li>\r\n          </ul>\r\n      </td>\r\n      <td></td>\r\n      <td>Defines the columns. Must include displayName and unique key.\r\nCan also:\r\n- Specify the column as numeric to right-align content\r\n- Set a custom template (See https://reactabular.js.org/#/column-definition/formatters)\r\n- Define a column as sortable with an optional reducer function for reducing complex values to a string or number\r\n- Override the `props`, `header`, or `cell` portions of the [column definition](https://reactabular.js.org/#/column-definition)</td>\r\n    </tr>\r\n    <tr>\r\n      <td class=\"api-table__required\">`rows` (required)</td>\r\n      <td>\r\n        arrayOf - object\r\n      </td>\r\n      <td></td>\r\n      <td>Defines the rows as objects. Each key should match a column&#x27;s key to display the value in that column.</td>\r\n    </tr>\r\n    <tr>\r\n      <td>`children`</td>\r\n      <td>\r\n        node\r\n      </td>\r\n      <td></td>\r\n      <td>By default, this will add children to the table body - to completely replace the table header and body, set\r\n`replaceChildren` to true</td>\r\n    </tr>\r\n    <tr>\r\n      <td>`className`</td>\r\n      <td>\r\n        string\r\n      </td>\r\n      <td></td>\r\n      <td>Adds a class to the root element of the component</td>\r\n    </tr>\r\n    <tr>\r\n      <td>`onRow`</td>\r\n      <td>\r\n        func\r\n      </td>\r\n      <td>`() => {}`</td>\r\n      <td>Function that runs on each row as it is rendered – should return an object of props to be added to the row</td>\r\n    </tr>\r\n    <tr>\r\n      <td>`layout`</td>\r\n      <td>\r\n        enum\r\n          <ul>\r\n              <li>&#x27;compact&#x27;</li>\r\n              <li>&#x27;default&#x27;</li>\r\n              <li>&#x27;tall&#x27;</li>\r\n          </ul>\r\n      </td>\r\n      <td>&#x27;default&#x27;</td>\r\n      <td>Sets the table layout size\r\nfavor of &#x27;compact&#x27; and &#x27;default&#x27; layouts</td>\r\n    </tr>\r\n    <tr>\r\n      <td>`onSort`</td>\r\n      <td>\r\n        func\r\n      </td>\r\n      <td></td>\r\n      <td>Called with the new sort order when sorting changes. Sort order has same shape as `sortOrder` prop or undefined for no sorting.</td>\r\n    </tr>\r\n    <tr>\r\n      <td>`renderers`</td>\r\n      <td>\r\n        object\r\n      </td>\r\n      <td></td>\r\n      <td>Overrides default elements in the rendered table — see the [Reactabular docs](https://reactabular.js.org/#/table/overriding-default-renderers)\r\nfor more info</td>\r\n    </tr>\r\n    <tr>\r\n      <td>`replaceChildren`</td>\r\n      <td>\r\n        bool\r\n      </td>\r\n      <td>false</td>\r\n      <td>If true, this will replace the default table header and body with whatever `children` you pass to `Table` -\r\notherwise, `children` are just appended after the table body</td>\r\n    </tr>\r\n    <tr>\r\n      <td>`rowKey`</td>\r\n      <td>\r\n        string\r\n      </td>\r\n      <td>&#x27;id&#x27;</td>\r\n      <td>Identifies which property to use as each row&#x27;s key.</td>\r\n    </tr>\r\n    <tr>\r\n      <td>`showHover`</td>\r\n      <td>\r\n        bool\r\n      </td>\r\n      <td>true</td>\r\n      <td>Indicates whether to show hover states for improved reading across a single row</td>\r\n    </tr>\r\n    <tr>\r\n      <td>`sortOrder`</td>\r\n      <td>\r\n        shape:\r\n        <ul>\r\n          <li>column - string (required)</li>\r\n          <li>direction - 'asc' or 'desc'</li>\r\n        </ul>\r\n      </td>\r\n      <td></td>\r\n      <td>Sets the order of the rows including the column it's sorted on and whether it's in ascending or descending order.\r\nLeave `undefined` to let Table handle the sorting. Set to `null` to force the order in the `rows` prop.</td>\r\n    </tr>\r\n    <tr>\r\n      <td>`...rest`</td>\r\n      <td></td>\r\n      <td></td>\r\n      <td>Passthrough props to the root component [`ReactabularTable.Provider`](https://reactabular.js.org/#/table/components?a=tableprovider) that wraps the `Table`</td>\r\n    </tr>\r\n  </tbody>\r\n</table>\r\n\r\n### HTML API\r\n<table class=\"api-table api-table--html\">\r\n  <thead>\r\n    <tr>\r\n      <th>Class</th>\r\n      <th>Applies To</th>\r\n      <th>Description</th>\r\n    </tr>\r\n  </thead>fe_c_table--default\r\n  <tbody>\r\n      <tr><td><code>`fe_c_table`</code></td><td>Table element</td><td>Base class for the `Table` component</td></tr>\r\n      <tr><td><code>`fe_c_table--show-hover`</code></td><td>Table element</td><td>Gives the table rows a hover style</td></tr>\r\n      <tr><td><code>`fe_c_table--default`</code></td><td>Table element</td><td>Applies the 'default' layout to the table</td></tr>\r\n      <tr><td><code>`fe_c_table--compact`</code></td><td>Table element</td><td>Applies the 'compact' layout to the table</td></tr>\r\n      <tr><td><code>`fe_c_table--tall`</code></td><td>Table element</td><td><strong>(deprecated - do not use going forward)</strong> Applies the 'tall' layout to the table</td></tr>\r\n      <tr><td><code>`fe_c_table__header`</code></td><td>Table header child element</td><td>Wrapper for header text</td></tr>\r\n      <tr><td><code>`fe_c_table__header--sortable`</code></td><td>Table header child element</td><td>Wrapper for sortable header text and control</td></tr>\r\n      <tr><td><code>`fe_c_table__header-text`</code></td><td>Table header child element</td><td>Text for table header</td></tr>\r\n       <tr><td><code>`fe_c_table__sort-control`</code></td><td>Table header child element</td><td>Arrow controls for sortable header</td></tr>\r\n      <tr><td><code>`fe_c_table__cell`</code></td><td>Table cells (td in tbody)</td><td>Base class for a table data row cell</td></tr>\r\n      <tr><td><code>`fe_c_table__cell--numeric`</code></td><td>Table cells (td in tbody)</td><td>Styles the table cell content as numbers</td></tr>\r\n  </tbody>\r\n</table>\r\n","lang":{"name":"Markdown","mode":"markdown","scope":"source.gfm","color":"#083FA1"},"file":{"root":"C:\\","dir":"C:\\Users\\ctsui\\code\\forge-guide\\docs\\04-components","base":"table.md","ext":".md","name":"table","relPath":"04-components\\table.md","fsName":"table","path":"C:\\Users\\ctsui\\code\\forge-guide\\docs\\04-components\\table.md","dirs":["C:\\Users\\ctsui\\code\\forge-guide\\docs\\04-components"],"isHidden":false,"order":1000000,"isFile":true,"isDirectory":false,"stat":{"dev":4102694615,"mode":33206,"nlink":1,"uid":0,"gid":0,"rdev":0,"ino":7036874418052280,"size":11131,"atimeMs":1542641056862.979,"mtimeMs":1542641056863.9814,"ctimeMs":1542821274255.1328,"birthtimeMs":1528896974628.8623,"atime":"2018-11-19T15:24:16.863Z","mtime":"2018-11-19T15:24:16.864Z","ctime":"2018-11-21T17:27:54.255Z","birthtime":"2018-06-13T13:36:14.629Z"},"lang":{"name":"Markdown","mode":"markdown","scope":"source.gfm","color":"#083FA1"},"isBinary":false},"context":{"extensions":{"core":{"forge-toast":{"name":"Toast","version":"0.2.2","description":"Toast component for Forge"},"forge-toggle-switch":{"name":"ToggleSwitch","version":"0.1.1","description":"ToggleSwitch component for Forge"}},"community":{"clinicals-forge-extension":{"name":"Clinicals Forge Extension","owner":"Nursing Flowsheets","url":"https://bitbucket.athenahealth.com/projects/CLIFS/repos/clinicals-forge-extension/browse","version":"2.1.1","description":"A forge-extension containing components used by inpatient clinicals"}}},"isComponent":true,"amplitudeCategory":"components"}}</code></pre></div-->
+  </div>
+</div>
+
+
+
+</div>
+
+
+
+
+<script src="../../assets/clipboard.min.js?cachebust=1.2.0"></script>
+
+<script src="../../assets/main.js?cachebust=1.2.0"></script>
+
+<script src="../../assets/amplitude.js?cachebust=1.2.0"></script>
+
+
+
+</body>
+</html>

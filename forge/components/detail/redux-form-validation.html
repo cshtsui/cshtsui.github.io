@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+    window.frctl = {
+        env: 'static'
+    };
+    </script>
+    <script>var cl = document.querySelector('html').classList; cl.remove('no-js'); cl.add('has-js');</script>
+    <link rel="shortcut icon" href="../../favicon_blue.ico" type="image/ico">
+
+<link rel="stylesheet" href="../../assets/css/styles.css?cachebust=1.2.0" type="text/css">
+
+<link rel="stylesheet" href="../../assets/css/prism-atom-dark.css?cachebust=1.2.0" type="text/css">
+
+<link rel="stylesheet" href="../../assets/css/ascetic.css?cachebust=1.2.0" type="text/css">
+
+<link rel="stylesheet" href="../../css/forge.css?cachebust=1.2.0" type="text/css">
+
+
+<title>ReduxForm Validation | athenahealth</title>
+
+</head>
+<body>
+
+
+
+<div class="fg_app">
+  <header class="fg_l_header fg_l_header--alpha">
+  <a class="fg_c_branding" href="../../index.html">
+    <img src="../../assets/images/logo.svg" />
+  </a>
+  <nav class="fg_c_nav-top">
+  <ul class="fg_c_nav-top__list">
+    
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link "
+            href="../../docs/guidelines/principles.html"
+            title="Guidelines"
+          >
+            Guidelines
+          </a>
+        </li>
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link "
+            href="../../docs/foundations/color.html"
+            title="Foundations"
+          >
+            Foundations
+          </a>
+        </li>
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link "
+            href="../../docs/components/accordion.html"
+            title="Components"
+          >
+            Components
+          </a>
+        </li>
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link "
+            href="../../docs/extensions/forge-extensions.html"
+            title="Extensions"
+          >
+            Extensions
+          </a>
+        </li>
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link "
+            href="../../docs/resources/release-notes.html"
+            title="Resources"
+          >
+            Resources
+          </a>
+        </li>
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link "
+            href="../../docs/resources/downloads.html"
+            title="Resources"
+          >
+            Resources
+          </a>
+        </li>
+      
+    
+  </ul>
+</nav>
+
+
+  <div class="fg_c_nav-version">
+    v2.0.0-beta.7
+  </div>
+</header>
+
+
+  
+
+
+    
+    
+
+<div class="Pen" data-behaviour="pen" id="pen-9485c66d219d04b9535926b7ebe7112d">
+
+    
+
+    <div class="Pen-panel Pen-header">
+    <h1 class="Pen-title">
+        <a class="Pen-previewLink" href="../preview/redux-form-validation.html" title="Component preview">
+            ReduxForm Validation
+            <svg fill="#000000" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6l-4 4h3v6h2v-6h3l-4-4z"/>
+</svg>
+
+        </a>
+    </h1>
+    
+
+<div class="Status Status--tag">
+
+<label class="Status-label" style="background-color: #29CC29; border-color: #29CC29;">Ready</label>
+
+</div>
+
+
+</div>
+
+
+    <div class="Pen-panel Pen-preview Preview" data-behaviour="preview" id="preview-9485c66d219d04b9535926b7ebe7112d">
+    <div class="Preview-wrapper" data-role="resizer">
+        <div class="Preview-resizer">
+            
+             <iframe
+                class="Preview-iframe"
+                data-role="window"
+                src="../preview/redux-form-validation.html"
+                sandbox="allow-same-origin allow-scripts allow-forms"
+                 style=""
+                marginwidth="0" marginheight="0" frameborder="0" vspace="0" hspace="0" scrolling="yes">
+            </iframe>
+        </div>
+        <div class="Preview-handle" data-role="resize-handle"></div>
+        <div class="Preview-overlay"></div>
+    </div>
+</div>
+
+
+    <div class="Pen-handle Pen-handle--browser" data-role="resize-handle"></div>
+
+    <div class="Pen-panel Pen-info" data-role="info">
+    <div class="Browser" data-behaviour="browser" id="browser-9485c66d219d04b9535926b7ebe7112d">
+
+    
+
+<div class="Browser-controls">
+    <ul class="Browser-tabs">
+        
+        
+        <li class="Browser-tab Browser-tab--html is-active " data-role="tab">
+            <a href="#browser-9485c66d219d04b9535926b7ebe7112d-panel-html">HTML</a>
+        </li>
+        
+        
+        
+        <li class="Browser-tab Browser-tab--view" data-role="tab">
+            <a href="#browser-9485c66d219d04b9535926b7ebe7112d-panel-view">View</a>
+        </li>
+        
+        
+        
+        <li class="Browser-tab Browser-tab--context" data-role="tab">
+            <a href="#browser-9485c66d219d04b9535926b7ebe7112d-panel-context">Context</a>
+        </li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <li class="Browser-tab Browser-tab--info" data-role="tab">
+            <a href="#browser-9485c66d219d04b9535926b7ebe7112d-panel-info">Info</a>
+        </li>
+        
+        
+        
+        <li class="Browser-tab Browser-tab--notes" data-role="tab">
+            <a href="#browser-9485c66d219d04b9535926b7ebe7112d-panel-notes">Notes</a>
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+    
+    
+<div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-9485c66d219d04b9535926b7ebe7112d-panel-html">
+    <code class="Code Code--lang-html">
+        
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_u_padding--large"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"validation-demo"</span> <span class="hljs-attr">novalidate</span>=<span class="hljs-string">""</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_form-field"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_l_grid-row fe_l_grid-row--nested"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_l_grid-row__col fe_l_grid-row__col--small-12 fe_l_grid-row__col--medium-3 fe_c_form-field__label"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"fe-form-field-gen-292"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"fe-form-field-gen-292-label"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_label"</span>&gt;</span>Required field<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_label__required"</span>&gt;</span> - Required<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_l_grid-row__col fe_l_grid-row__col--small-12 fe_l_grid-row__col--medium-9 fe_c_form-field__right"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_form-field__input-slot"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_input fe_c_form-field__input"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"fe-form-field-gen-292"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">""</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"fe-form-field-gen-292"</span> <span class="hljs-attr">required</span>=<span class="hljs-string">""</span> <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string">"fe-form-field-gen-292-label"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_input__input"</span> /&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_form-field__message"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_inline-message"</span>&gt;</span>Marking a field as required is a basic form of validation.<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_form-field__status"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_form-field"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_l_grid-row fe_l_grid-row--nested"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_l_grid-row__col fe_l_grid-row__col--small-12 fe_l_grid-row__col--medium-3 fe_c_form-field__label"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"fe-form-field-gen-293"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"fe-form-field-gen-293-label"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_label"</span>&gt;</span>Email<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_l_grid-row__col fe_l_grid-row__col--small-12 fe_l_grid-row__col--medium-9 fe_c_form-field__right"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_form-field__input-slot"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_input fe_c_form-field__input"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"fe-form-field-gen-293"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">""</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"fe-form-field-gen-293"</span> <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string">"fe-form-field-gen-293-label"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_input__input"</span> /&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_form-field__message"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_form-field__status"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_form-field"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_l_grid-row fe_l_grid-row--nested"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_l_grid-row__col fe_l_grid-row__col--small-12 fe_l_grid-row__col--medium-3 fe_c_form-field__label"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"fe-form-field-gen-294"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"fe-form-field-gen-294-label"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_label"</span>&gt;</span>Date<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_l_grid-row__col fe_l_grid-row__col--small-12 fe_l_grid-row__col--medium-9 fe_c_form-field__right"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_form-field__input-slot"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_date-input fe_c_form-field__input"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_date-input__input"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">""</span> <span class="hljs-attr">autoComplete</span>=<span class="hljs-string">"off"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_date-input-text-input"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"MM-DD-YYYY"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"fe-form-field-gen-294"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"fe-form-field-gen-294"</span> <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string">"fe-form-field-gen-294-label"</span> /&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://www.w3.org/2000/svg"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_icon fe_c_date-input__icon"</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">"0 0 25 25"</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Calendar<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">g</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">g</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_icon__background"</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">rect</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"25"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"25"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">rect</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;/<span class="hljs-name">g</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">g</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_icon__icon fe_c_icon__icon--primary"</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">d</span>=<span class="hljs-string">"M17.3,4.1V1.6H15.8V4.1H9.2V1.6H7.7V4.1H2.8V21.9H18.9a3.3,3.3,0,0,0,3.3-3.3V4.1ZM7.7,5.6V7.4H9.2V5.6h6.6V7.4h1.5V5.6h3.4V9.5H4.3V5.6ZM18.9,20.4H4.3V11H20.7v7.6A1.8,1.8,0,0,1,18.9,20.4Z"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">path</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;/<span class="hljs-name">g</span>&gt;</span>
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">g</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_form-field__message"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_inline-message"</span>&gt;</span>Future dates only<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_form-field__status"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_form-field"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_l_grid-row fe_l_grid-row--nested"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_l_grid-row__col fe_l_grid-row__col--small-12 fe_l_grid-row__col--medium-3 fe_c_form-field__label"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"fe-form-field-gen-295"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"fe-form-field-gen-295-label"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_label"</span>&gt;</span>ZIP code (format)<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_l_grid-row__col fe_l_grid-row__col--small-12 fe_l_grid-row__col--medium-9 fe_c_form-field__right"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_form-field__input-slot"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_input fe_c_form-field__input"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"fe-form-field-gen-295"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">""</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"fe-form-field-gen-295"</span> <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string">"fe-form-field-gen-295-label"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_input__input"</span> /&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_form-field__message"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_form-field__status"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_form-field"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_l_grid-row fe_l_grid-row--nested"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_l_grid-row__col fe_l_grid-row__col--small-12 fe_l_grid-row__col--medium-3 fe_c_form-field__label"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"fe-form-field-gen-296"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"fe-form-field-gen-296-label"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_label"</span>&gt;</span>Length limit<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_l_grid-row__col fe_l_grid-row__col--small-12 fe_l_grid-row__col--medium-9 fe_c_form-field__right"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_form-field__input-slot"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">textarea</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"fe-form-field-gen-296"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"fe-form-field-gen-296"</span> <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string">"fe-form-field-gen-296-label"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_textarea fe_c_textarea--auto-size fe_c_form-field__input"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">textarea</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_form-field__message"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_inline-message"</span>&gt;</span>Twitter may allow more than 140 characters, but we don&amp;#x27;t.<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_form-field__status"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_form-field"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_l_grid-row fe_l_grid-row--nested"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_l_grid-row__col fe_l_grid-row__col--small-12 fe_l_grid-row__col--medium-3 fe_c_form-field__label"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"fe-form-field-gen-297"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"fe-form-field-gen-297-label"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_label"</span>&gt;</span>Numericality<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_l_grid-row__col fe_l_grid-row__col--small-12 fe_l_grid-row__col--medium-9 fe_c_form-field__right"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_form-field__input-slot"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_input fe_c_form-field__input"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"fe-form-field-gen-297"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">""</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"fe-form-field-gen-297"</span> <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string">"fe-form-field-gen-297-label"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_input__input"</span> /&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_form-field__message"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_form-field__status"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_form-field"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_l_grid-row fe_l_grid-row--nested"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_l_grid-row__col fe_l_grid-row__col--small-12 fe_l_grid-row__col--medium-3 fe_c_form-field__label"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"fe-form-field-gen-298"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"fe-form-field-gen-298-label"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_label"</span>&gt;</span>Custom<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_l_grid-row__col fe_l_grid-row__col--small-12 fe_l_grid-row__col--medium-9 fe_c_form-field__right"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_form-field__input-slot"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_input fe_c_form-field__input"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"fe-form-field-gen-298"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">""</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"fe-form-field-gen-298"</span> <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string">"fe-form-field-gen-298-label"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_input__input"</span> /&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_form-field__message"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_inline-message"</span>&gt;</span>Custom constraint prohibiting the letter E.<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_form-field__status"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_form-field"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_l_grid-row fe_l_grid-row--nested"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_l_grid-row__col fe_l_grid-row__col--small-12 fe_l_grid-row__col--medium-3 fe_c_form-field__label"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_l_grid-row__col fe_l_grid-row__col--small-12 fe_l_grid-row__col--medium-9 fe_c_form-field__right"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_form-field__input-slot"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_button fe_c_button--primary"</span> <span class="hljs-attr">aria-disabled</span>=<span class="hljs-string">"false"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"submit"</span>&gt;</span>Submit<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_form-field__message"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fe_c_form-field__status"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span></pre>
+        
+    </code>
+</div>
+
+    
+    <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-9485c66d219d04b9535926b7ebe7112d-panel-view">
+    <code class="Code Code--lang-javascript">
+        <pre><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>;
+<span class="hljs-keyword">import</span> { createStore, combineReducers } <span class="hljs-keyword">from</span> <span class="hljs-string">'redux'</span>;
+<span class="hljs-keyword">import</span> { reducer <span class="hljs-keyword">as</span> formReducer } <span class="hljs-keyword">from</span> <span class="hljs-string">'redux-form'</span>;
+<span class="hljs-keyword">import</span> { Provider } <span class="hljs-keyword">from</span> <span class="hljs-string">'react-redux'</span>;
+<span class="hljs-keyword">import</span> moment <span class="hljs-keyword">from</span> <span class="hljs-string">'moment'</span>;
+<span class="hljs-keyword">import</span> {
+  DateInput,
+  ReduxForm,
+  ReduxFormField,
+  Textarea
+} <span class="hljs-keyword">from</span> <span class="hljs-string">'@athena/forge'</span>;
+
+<span class="hljs-keyword">const</span> store = createStore(
+  combineReducers({
+    <span class="hljs-attr">form</span>: formReducer,
+  })
+);
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FormValidation</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">React</span>.<span class="hljs-title">Component</span> </span>{
+  <span class="hljs-keyword">constructor</span>(props) {
+    <span class="hljs-keyword">super</span>(props);
+    <span class="hljs-keyword">this</span>.handleSubmit = <span class="hljs-keyword">this</span>.handleSubmit.bind(<span class="hljs-keyword">this</span>);
+    <span class="hljs-keyword">this</span>.state = { <span class="hljs-attr">dateHintText</span>: <span class="hljs-literal">undefined</span> };
+  }
+
+  handleSubmit(values) {
+    <span class="hljs-comment">// do something with form submission here</span>
+  }
+
+  render() {
+    <span class="hljs-keyword">return</span> (
+      &lt;Provider store={store}&gt;
+        &lt;ReduxForm
+          form="validation-demo"
+          onSubmit={this.handleSubmit}
+          className="fe_u_padding--large"
+        &gt;
+          &lt;ReduxFormField
+            labelText="Required field"
+            hintText="Marking a field as required is a basic form of validation."
+            required
+          /&gt;
+
+          &lt;ReduxFormField
+            labelText="Email"
+            constraints={{
+              email: { message: `Emails should be in "name@company.com" format.` },
+            }}
+          /&gt;
+
+          &lt;ReduxFormField
+            labelText="Date"
+            inputAs={DateInput}
+            constraints={{
+              date: {
+                earliest: moment.utc().startOf('day'),
+                message: `This field only accepts future dates.`,
+              },
+            }}
+            onHintTextChange={
+              (hintText) =&gt; this.setState({ dateHintText: hintText })
+            }
+            hintText={ this.state.dateHintText || `Future dates only` }
+            disabledDays={{
+              before: moment.utc(),
+            }}
+            selectYearStart={moment.utc().year()}
+          /&gt;
+
+          &lt;ReduxFormField
+            labelText="ZIP code (format)"
+            constraints={{
+              format:
+                {
+                  pattern: /\d{5}(-\d{4})?/,
+                  message: `Zip codes should be in standard 5 digit or 9 digit format.`,
+                },
+            }}
+          /&gt;
+
+          &lt;ReduxFormField
+            labelText="Length limit"
+            inputAs={Textarea}
+            constraints={{ length: {
+              maximum: 140,
+              message: `This field is limited to 140 characters.`,
+            } }}
+            hintText="Twitter may allow more than 140 characters, but we don't."
+          /&gt;
+
+          &lt;ReduxFormField
+            labelText="Numericality"
+            constraints={{ numericality: {
+              onlyInteger: true,
+              message: `This field only accepts integers.`,
+            } }}
+          /&gt;
+
+          &lt;ReduxFormField
+            labelText="Custom"
+            constraints={{
+              letterE: (value) =&gt; value &amp;&amp; /e/i.test(value) ? `This field doesn't allow the letter E.` : undefined,
+            }}
+            hintText="Custom constraint prohibiting the letter E."
+          /&gt;
+        &lt;/ReduxForm&gt;
+      &lt;/Provider&gt;
+    );
+  }
+
+}
+
+export default FormValidation;</pre>
+    </code>
+</div>
+
+    
+    <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-9485c66d219d04b9535926b7ebe7112d-panel-context">
+    <code class="Code Code--lang-json">
+        
+            
+            <pre>{
+  <span class="hljs-attr">"height"</span>: <span class="hljs-number">650</span>
+}</pre>
+            
+        
+    </code>
+</div>
+
+    
+    
+
+
+
+
+    
+    <div class="Browser-panel" data-role="tab-panel" id="browser-9485c66d219d04b9535926b7ebe7112d-panel-info">
+    <ul class="Meta">
+        <li class="Meta-item">
+            <strong class="Meta-key">Handle:</strong>
+            <span class="Meta-value">@redux-form-validation</span>
+        </li>
+        
+        
+        
+        
+        
+        <li class="Meta-item">
+            <strong class="Meta-key">Preview:</strong>
+            <span class="Meta-value">
+                <ul>
+                    <li><a data-no-pjax href="../preview/redux-form-validation.html"><span>With layout</span> <svg fill="#000000" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6l-4 4h3v6h2v-6h3l-4-4z"/>
+</svg>
+</a></li>
+                    <li><a data-no-pjax href="../render/redux-form-validation.html"><span>Component only</span> <svg fill="#000000" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6l-4 4h3v6h2v-6h3l-4-4z"/>
+</svg>
+</a></li>
+                </ul>
+            </span>
+        </li>
+        <li class="Meta-item">
+            <strong class="Meta-key">Filesystem Path:</strong>
+            <span class="Meta-value">demos\redux-form\redux-form-validation.jsx</span>
+        </li>
+        
+        
+    </ul>
+</div>
+
+    
+    <div class="Browser-panel Browser-notes" data-role="tab-panel" id="browser-9485c66d219d04b9535926b7ebe7112d-panel-notes">
+    <div class="Prose Prose--condensed">
+        
+        <p class="Browser-isEmptyNote">There are no notes for this item.</p>
+        
+    </div>
+</div>
+
+    
+
+</div>
+
+</div>
+
+
+    
+
+</div>
+
+
+
+</div>
+
+
+
+
+<script src="../../assets/clipboard.min.js?cachebust=1.2.0"></script>
+
+<script src="../../assets/main.js?cachebust=1.2.0"></script>
+
+<script src="../../assets/amplitude.js?cachebust=1.2.0"></script>
+
+
+
+</body>
+</html>
