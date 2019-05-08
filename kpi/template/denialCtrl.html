@@ -1,0 +1,22 @@
+﻿<script type="text/html" id="denialsCtrl">
+    <![CDATA[
+    <div>
+        <div class="chartTableToggle">
+            <ul class="nav nav-pills">
+                <li class="active"><a href="#section/finance/" data-route="chartOn" data-kpitype="<%= this.chartType %>" data-section="<%= this.section %>">Chart</a></li>
+                <li><a href="#section/finance/" data-route="tableOn" data-kpitype="<%= this.chartType %>" data-section="<%= this.section %>">Table</a></li>
+            </ul>
+        </div>
+        <div class="specificControls">
+            <ul class="nav nav-pills">
+                <li>
+                    <a data-section="<%= this.section %>" data-route="denialSwitch" data-currentchart="<%= this.chartType %>" data-newchart="denialCharges">Charges</a>
+                </li>
+                <li>
+                    <a data-section="<%= this.section %>" data-route="denialSwitch" data-currentchart="<%= this.chartType %>" data-newchart="denialVolume">Volume</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    ]]>
+</script>

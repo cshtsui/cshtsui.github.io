@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" manifest="cache.manifest">
+<head>
+    <meta http-equiv="x-ua-compatible" content="IE=edge" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/ac_layout.css" rel="stylesheet" />
+    <link href="css/ac_components.css" rel="stylesheet" />
+    <link href="css/ac_typography.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>athenaClarity Prototype</title>
+</head>
+<body>
+    <div id="startScreen" style="display: none">
+        <img id="athenahealthLogo" src="img/athenaClarity.png" />
+        <a id="startLink">Start</a>
+    </div>
+    <div id="wrapper">
+        <header>
+            <a href="index.html">
+                <img id="branches" src="img/aclogo.png" />
+            </a>
+            <div id="headActions">
+                <p id="userName" class="headAction">Donald Blake</p>
+                <a id="settingsLink" class="headAction">Account Settings</a>
+                <a id="logOutLink" href="index.html" class="headAction">Log Out</a>
+            </div>
+            <nav id="topNav">
+                <div id="functionBar">
+                    <div id="dateTab" class="filterTab">
+                        <a id="dateLink" data-route="dateFilter"></a>
+                    </div>
+                    <div id="divisionTab" class="filterTab">
+                        <a id="hierarchyLink" data-route="hierarchyFilter"></a>
+                    </div>
+                    <div id="payerTab" class="filterTab">
+                        <a id="payerLink" data-route="payerFilter"></a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <section id="filterPanel">
+            <div id="hierarchyFilter" class="filterContainer"></div>
+            <div id="dateFilterColumns" class="filterContainer"></div>
+            <div id="payerFilterColumns" class="filterContainer"></div>
+            <div style="clear: both;"></div>
+            <div class="buttonContainer">
+                <span id="applyButton" class="applyBtn" style="float: left; margin-right: 10px;" data-route="applyHierarchyFilter">Apply</span>
+                <span id="cancelButton" class="cancelBtn" style="float: left" data-route="applyHierarchyFilter">Cancel</span>
+            </div>
+        </section>
+        <nav id="leftNav">
+            <span style="display: block; height: 9px;">&nbsp;</span>
+            <a id="menuLink" data-route="openPerformanceMenu">
+                <img src="img/viewsMenu.png" />
+            </a>
+            <div id="controls">
+                <a><img src="img/help.png" /></a>
+                <span style="display: block; height: 15px;">&nbsp;</span>
+                <a id="print" data-route="startPrintPreview">
+                    <img src="img/print.png" />
+                </a>
+            </div>
+        </nav>
+        <nav id="perfMenu">
+            <ul>
+                <li><a id="kpiLink" data-route="perfMenuSelect" href="#kpis/standard">KPIs</a></li>
+                <li><a id="finLink" data-route="perfMenuSelect" href="#section/finance/rvus">Financial Performance</a></li>
+                <li><a id="prolink" data-route="perfMenuSelect" href="#section/productivity/volume">Provider Productivity</a></li>
+            </ul>
+        </nav>
+        <section id="mainDisplay">
+            <!-- set width or max-width to center within mainDisplay -->
+            <div id="contentContainer">
+            </div>
+        </section>
+    </div>
+    <!-- This is off-screen/invisible at the start -->
+    <section id="presentationContainer">
+    </section>
+    <script src="js/jquery-1.8.2.min.js"></script>
+    <script src="js/jquery-ui-1.10.1.custom.min.js"></script>
+    <script src="js/jquery.ui.touch-punch.min.js"></script>
+    <script src="js/jquery.jqote2.min.js"></script>
+    <script src="js/underscore.js"></script>
+    <script src="js/backbone-min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/highcharts.js"></script>
+    <script src="js/acmodel.js"></script>
+    <script src="js/acfactory.js"></script>
+    <script src="js/acviews.js"></script>
+    <script src="js/acapp.js"></script>
+    <!-- Highcharts scroll fix for ipad -->
+    <script src="js/touch-tooltip-fix.js"></script>
+</body>
+</html>

@@ -1,0 +1,776 @@
+﻿input[type="checkbox"] {
+    width:24px;
+    height:24px;
+}
+
+table {
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+td, th {
+    text-align: center;
+}
+
+.acselect {
+    color: #514a79;
+    font-family: Arial,Verdana;
+    font-size: 20px;
+    vertical-align: bottom;
+    display: inline-block;
+    padding: 0px;
+}
+
+    .acselect:after {
+        content: "\25bc";
+        font-size: 10px;
+        vertical-align: middle;
+    }
+
+    .acselect:link {
+        text-decoration: none;
+    }
+
+.acselect2 {
+    color: grey;
+    font-family: Arial,Verdana;
+    font-size: 12px;
+}
+
+    .acselect2:after {
+        content: " >";
+        font-size: 10px;
+        vertical-align: middle;
+    }
+
+    .acselect2:link {
+        text-decoration: none;
+    }
+
+.calendarArea {
+    left: 280px;
+    position: absolute;
+    width: 600px;
+}
+
+.calendarTable {
+    color: #514a79;
+    margin: 0 20px 30px 0;
+    width: 280px;
+}
+
+    .calendarTable .leftArrow {
+        float: left;
+        margin-left: 10px;
+    }
+
+    .calendarTable .rightArrow {
+        float: right;
+        margin-right: 10px;
+    }
+
+    .calendarTable th {
+        border: 1px solid lightGrey;
+        padding: 5px 0 5px 0;
+    }
+
+    .calendarTable td {
+        border: 1px solid lightGrey;
+        padding: 6px 0 6px 0;
+        text-align: center;
+    }
+
+    .calendarTable .otherMonth {
+        color: lightgrey;
+    }
+
+    .calendarTable .selected {
+        background: #514a79;
+        color: white;
+        font-weight: bold;
+    }
+
+    .calendarTable .tofrom {
+        border: none;
+        font-weight: bold;
+        text-align: left;
+        margin: 0 0 5px 0;
+    }
+
+.card {
+    width: 100%;
+    height: 100%;
+    -webkit-transform-style: preserve-3d;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+}
+
+.chartSmall {
+    height: 40px;
+    margin-left: -10px;
+}
+
+.chartTableToggle {
+    display: inline;
+    float: right;
+    margin: 0 0 0 20px;
+}
+
+    .chartTableToggle .nav-pills > li {
+        margin: 0 5px 0 0;
+    }
+
+        .chartTableToggle .nav-pills > li > a {
+            border-radius: 2px;
+            padding: 3px;
+        }
+
+.chartTitle {
+    font-size: 14px;
+}
+
+.chartTileL {
+    background: white;
+    float: left;
+    height: 160px;
+    margin: 2px;
+    /* Largest we can go on a 1024px
+        screen for desktop browsers 
+        that present vertical scrollbar
+        for overflow-y. */
+    min-width: 439px;
+    width: calc(50% - 4px);
+}
+
+.chartTileS {
+    background: white;
+    float: left;
+    height: 160px;
+    margin: 2px;
+    min-width: 158px;
+}
+
+.comparisonView {
+    border: 1px solid lightGrey;
+}
+
+.dashboardSection {
+    margin: 5px 0 0px 0;
+}
+
+.filterColumn {
+    border-right: 1px dashed lightGrey;
+    float: left;
+    margin: 0px 0px 15px 0px;
+    min-height: 400px;
+    max-height: 450px;
+    min-width: 125px;
+    max-width: 215px;
+    padding: 0 10px 0px 10px;
+    overflow: hidden;
+}
+
+    .filterColumn li {
+        padding: 10px 0 10px 0;
+    }
+
+    .filterColumn .textField {
+        width: 90%;
+    }
+/* 1-text line vertical centering needs
+   the heights set to the container height. */
+.fixedVcenter {
+    height: 40px;
+    line-height: 40px;
+}
+
+.flipped {
+    transform: rotateX(-180deg);
+    -webkit-transform: rotatex(-180deg);
+}
+
+.grippy {
+    float: right;
+    height: 30px;
+    padding-top: 5px;
+    position: relative;
+    top: 0px;
+    width: 30px;
+}
+
+    .grippy hr {
+        border-bottom: 1px solid grey;
+        height: 1px;
+        margin: 0 0 2px 0;
+    }
+
+.hideLink {
+    color: #333;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    right: 10px;
+    top: 12px;
+}
+
+.kpiPanelList {
+    border-bottom: 1px dashed #eee;
+    border-top: 1px dashed grey;
+    margin: 0 50px 0 10px;
+}
+
+    .kpiPanelList input {
+        font-size: 24px;
+        position: relative;
+        bottom: 3px;
+    }
+
+    .kpiPanelList li {
+        display: block;
+        background: #ccc;
+        border-bottom: 1px dashed grey;
+        border-top: 1px dashed #eee;
+        padding: 10px 0 10px 5px;
+        vertical-align: middle;
+    }
+
+.kpiBorderDashed {
+    border-right: 1px dashed #999;
+}
+
+.kpiButton {
+    background: #f2f2f2;
+    border-radius: 3px 3px;
+    display: inline-block;
+    float: left;
+    height: 85px;
+    padding: 4px 12px 4px 12px;
+    margin: 0px 2px 5px 2px;
+    min-width: 150px;
+}
+
+.kpiButtonL {
+    border-left: 1px dashed lightGrey;
+    display: inline-block;
+    float: left;
+    height: 200px;
+    /*margin: 10px 10px 20px 10px;*/
+    min-width: 400px;
+    padding: 10px;
+    width: 45%;
+}
+
+.kpiChartL {
+    display: inline;
+    float: left;
+    height: 160px;
+    margin: 0px 5px 0 0;
+    min-width: 105px;
+    width: 70%;
+}
+
+.kpiButtonS {
+    /*border: 1px solid lightGrey;*/
+    display: inline-block;
+    float: left;
+    height: 100px;
+    /*margin: 20px 10px 10px 10px;*/
+    min-width: 100px;
+    padding: 10px;
+    width: 21.35%;
+    border-left: 1px dashed lightGrey;
+    border-top: 1px dashed lightGrey;
+}
+
+.kpiChartS {
+    display: inline;
+    float: left;
+    height: 60px;
+    margin: 0px 5px 0 0;
+    min-width: 105px;
+    width: 60%;
+}
+
+@media all and (max-width:832px) {
+    .kpiButtonL {
+        width: 95%;
+    }
+
+    .kpiButtonS {
+        width: 44%;
+    }
+
+    .kpiChartL {
+        width: 75%;
+    }
+
+    .kpiChartS {
+        width: 70%;
+    }
+}
+
+.kpiButtonSelected {
+    border: 1px solid grey;
+    box-shadow: 1px 1px 3px 1px #999;
+}
+
+.kpiChart {
+    display: inline-block;
+    /* Do not enlarge past 46 or vscroll
+        appears on ipad, but not on desktop */
+    height: 44px;
+    margin: 0 5px 0 0;
+    width: 80px;
+}
+
+.kpiArAgingChart {
+    display: inline-block;
+    height: 60px;
+    margin: 0 5px 0 0;
+    width: 130px;
+}
+
+.kpiArAgingChartS {
+    display: block;
+    height: 75px;
+    width: 100%;
+    max-width: 160px;
+}
+
+.kpiDenialOpcChart {
+    display: inline-block;
+    height: 60px;
+    width: 160px;
+}
+
+.kpiDenialOpcChartS {
+    display: inline-block;
+    height: 55px;
+    width: 155px;
+}
+
+.spacer {
+    display: inline-block;
+    position: relative;
+}
+
+.kpiControls {
+    display: inline;
+    float: right;
+    margin: 5px 0px 0 0;
+}
+
+    .kpiControls ul {
+        display: inline;
+    }
+
+.metricBlockS {
+    margin: 20px 5px 0px 0px;
+    text-align: left;
+}
+
+.printChart {
+    height:auto;
+    width:800px;
+}
+
+.printChartControls {
+    display:inline;
+    position:relative;
+    top:-30px;
+    width: 800px;
+    height: 25px;
+}
+
+    .printChartControls .nav {
+        margin-bottom:0px;
+    }
+
+.printPreviewListItem {
+    border-bottom: 1px dashed lightGrey;
+    margin:5px 0 5px 0;
+}
+
+.printPreviewCheck {
+    margin-right:10px;
+    position:relative;
+    top:-10px;
+}
+
+.specificControls {
+    display: inline;
+    float: right;
+    margin: 0 0px 0 0;
+}
+
+    .specificControls a {
+        cursor: pointer;
+    }
+
+    .specificControls .nav-pills > li {
+        margin: 0 5px 0 0;
+    }
+
+        .specificControls .nav-pills > li > a {
+            border-radius: 2px;
+            padding: 3px;
+        }
+
+.swipeDots {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    list-style-position: outside;
+    list-style-image: none;
+}
+
+    .swipeDots li {
+        background: lightGrey;
+        width: 10px;
+        height: 10px;
+        margin: 0px 4px 0px 4px;
+        display: inline-block;
+        cursor: pointer;
+        border-radius: 10px;
+        background-attachment: scroll;
+        background-repeat: repeat;
+        background-position-x: 0%;
+        background-position-y: 0%;
+        background-size: auto;
+        background-origin: padding-box;
+        background-clip: border-box;
+    }
+
+        .swipeDots li.on {
+            box-shadow: inset 0px 1px 3px -1px #28b4ea, 0px 1px 2px rgba(0,0,0,0.5);
+            background-image: -ms-linear-gradient(rgb(18, 147, 220), rgb(15, 98, 151));
+            background-color: rgb(18,147,220);
+        }
+
+.tableBody {
+    position: relative;
+    top: 0px;
+    height: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-y: auto;
+}
+
+.tableView {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+    .tableView th {
+        padding: 10px;
+        color: #666766;
+        font-family: FacitWeb-Light;
+        border-bottom: solid 1px #ccc;
+        margin: 0;
+        width: 60px;
+    }
+
+    .tableView tr td {
+        padding: 7px 10px;
+        color: #333;
+        width: 60px;
+    }
+
+    .tableView tr:nth-child(even) {
+        background: #e6e6e6;
+        padding: 5px 10px;
+    }
+
+.termContainer {
+    display:block;
+    max-height: 410px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+    .termContainer li {
+        padding: 1px;
+    }
+
+.treeItem {
+    cursor: pointer;
+    font-size: 12px;
+    padding: 3px 5px 3px 5px;
+}
+
+.treeItemArrowNormal {
+    background-image: url("../img/chevron_purple.png");
+    background-repeat: no-repeat;
+    background-position: 98% 50%;
+    background-size: 5px 5px;
+}
+
+.treeItemArrowSelected {
+    background: #514a79;
+    background-image: url("../img/chevron_white.png");
+    background-repeat: no-repeat;
+    background-position: 98% 50%;
+    background-size: 5px 5px;
+}
+
+    .treeItemArrowSelected a {
+        color: white;
+    }
+
+.treeItemSelected {
+    background: #514a79;
+    color:white;
+}
+    .treeItemSelected a {
+        color: white;
+    }
+
+.treeItemWrapper {
+    border-radius:4px;
+    display: block;
+    padding: 5px 25px 5px 5px;
+}
+
+.treeItemPastSelected {
+    background: #514a79;
+    color: white;
+}
+
+    .treeItemPastSelected a {
+        color: white;
+    }
+
+.treeItemPrevBranch {
+    background: #8B879E;
+    background-image: url("../img/chevron_white.png");
+    background-repeat: no-repeat;
+    background-position: 98% 50%;
+    background-size: 5px 5px;
+}
+    .treeItemPrevBranch a {
+        color: white;
+    }
+
+.vseparator {
+    border-left: 1px dashed #ccc;
+    border-right: 1px dashed #fff;
+    display: inline-block;
+    height: 100%;
+    position: absolute;
+}
+
+#efficiencyList {
+    display: none;
+}
+
+#cFinanceCharts {
+    margin: 0 auto 0 auto;
+}
+
+#chartContainer {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+#chartContentS {
+    margin: 15px 10px 10px 25px;
+}
+
+    #chartContentS h1 {
+        display: inline;
+    }
+
+    #chartContentS .desc {
+        color: grey;
+        margin-top: -5px;
+    }
+
+    #chartContentS .compMetric {
+        margin-top: 10px;
+        color: #c1aa21;
+    }
+
+#chartGrouper td {
+    padding: 0;
+    margin: 0;
+    vertical-align: top;
+    text-align: left;
+}
+
+#chartText {
+    margin: 20px 0px 0px 10px;
+    text-align: left;
+}
+
+    #chartText h1 {
+        display: inline;
+    }
+
+    #chartText h2 {
+        color: #c1aa21;
+        font-size: 16px;
+        font-weight: normal;
+    }
+
+#comparisonChart {
+    height: 300px;
+    display: none;
+}
+
+#comparisonTable th {
+    color: grey;
+    font-size: 12px;
+    font-weight: normal;
+    text-align: left;
+    padding-bottom: 5px;
+}
+
+#comparisonTable td {
+    color: grey;
+    font-size: 18px;
+    padding: 4px;
+    border-bottom: 7px solid #f2f2f2;
+    background: white;
+    text-align: left;
+}
+
+#dashboardFrame {
+    position: relative;
+    top: 0px;
+}
+
+#financeCompareBtn {
+    margin: 20px 0 0 10px;
+}
+
+#hierarchySelector {
+    border-right: 1px dashed lightGrey;
+    float: left;
+    margin: 0px 0px 15px 0px;
+    min-height: 400px;
+    min-width: 60px;
+    padding: 0px 10px 0px 0px;
+    overflow-y: hidden;
+}
+
+    #hierarchySelector .nav-pills > .active > a,
+    .nav-pills > .active > a:hover,
+    .nav-pills > .active > a:focus {
+        background: #8b879e;
+        color: #fff;
+    }
+
+#kpiNavigator {
+    position: relative;
+    bottom: 0px;
+    height: 90px;
+    /* Arbitrary large 
+       re-adjusted in JS */
+    padding: 0 0 0 10px;
+    width: 40000px;
+}
+
+#kpiNavigatorWrapper {
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: relative;
+    width: 100%;
+}
+
+#mainChart {
+    height: 100%;
+}
+
+#mainTable {
+    display: none;
+    height: 86%;
+    margin: 0 auto 0px auto;
+    position: relative;
+    top: 30px;
+    width: 90%;
+    transform: rotateX(-180deg);
+    -webkit-transform: rotatex(-180deg);
+}
+
+#perfMenu {
+    background: #666;
+    display: none;
+    left: 50px;
+    position: absolute;
+    top: 90px;
+    width: 200px;
+    z-index: 19;
+}
+
+    #perfMenu li {
+        border-bottom: 1px solid grey;
+    }
+
+        #perfMenu li:last-child {
+            border-bottom: none;
+        }
+
+    #perfMenu a {
+        display:block;
+        color: white;
+        padding: 15px;
+    }
+
+#primary {
+    margin-bottom: 5px;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    overflow: hidden;
+    -webkit-perspective: 800;
+}
+
+#primaryOptionsOverlay {
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    z-index: 7;
+}
+
+#secondary {
+    display: none;
+    height: 50%;
+    border-top: 1px dashed grey;
+    z-index: 20;
+}
+
+#secondChart {
+    height: 98%;
+}
+
+#secondChartTitle {
+    position: relative;
+    top: 50px;
+    z-index: 100;
+}
+
+#secondaryOptionsOverlay {
+    left: 0px;
+    position: absolute;
+    width: 100%;
+    z-index: 7;
+}
+
+#secondTable {
+    display: none;
+    height: 66%;
+    margin: 0 auto 0 auto;
+    position: relative;
+    top: 48px;
+    width: 90%;
+    transform: rotateX(-180deg);
+    -webkit-transform: rotatex(-180deg);
+}
+
+/* jquery.columnSelect styles */
+.cs-select {
+    border-radius: 3px;
+}

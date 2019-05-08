@@ -1,0 +1,19 @@
+﻿<script type="text/html" id="printPreviewItem">
+    <![CDATA[
+    <li class="printPreviewListItem">
+        <div class="printPreviewContainer">
+            <span class="printPreviewCheck">
+                <input id="checkbox_<%= this.id %>" type="checkbox" value="<%= this.id%>" data-route="togglePreview">
+            </span>
+            <a data-route="printPreviewTitleClick" data-modelId="<%= this.id %>">
+                <h3 class="printChartTitle" style="position: relative; top: -3px"><%= this.title %></h3>
+            </a>
+            <div id="chartFrame_<%= this.id %>" class="chartPreviewBox">
+                <div id="ctrl_<%= this.id %>" class="printChartControls"></div>
+                <div id="pr_<%= this.id %>" class="printChart"></div>
+            </div>
+        </div>
+    </li>
+    ]]>
+</script>
+

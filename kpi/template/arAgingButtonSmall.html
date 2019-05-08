@@ -1,0 +1,20 @@
+﻿<script type="text/html" id="vsPriorYearButton">
+    <![CDATA[
+    <div id="<%= this.navButtonId %>" class="kpiButtonS" data-choice="<%= this.chartType %>" data-route="<%= this.ref%>">
+        <h4><%= this.title %></h4>
+        <span style="display:block;margin-bottom:10px;"></span>
+        <table id="chartGrouper">
+            <tr>
+                <td>
+                    <div id="chartContainer-<%= this.id %>" class="kpiArAgingChartS"></div>
+                </td>
+                <td style="width:20%">
+                    <span class="arAgingValMedium"><%= this.cat1Val %></span>
+                    <span class="arAgingValMedium"><%= this.cat2Val %></span>
+                    <span class="arAgingValMedium"><%= this.cat3Val %></span>
+                </td>
+            </tr>
+        </table>
+    </div>
+    ]]>
+</script>

@@ -1,0 +1,323 @@
+﻿@import "facit.css";
+
+a {
+    color: #514a79;
+    cursor:pointer;
+    font-family: FacitWeb,Arial,Verdana;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+    a:hover {
+        color: lightgrey;
+        text-decoration: none;
+    }
+
+    a:active {
+        color: orange;
+        text-decoration: none;
+    }
+
+    a:visited {
+        color: #514a79
+    }
+
+    a:link {
+        color: #514a79;
+    }
+
+h1, h2, h3, h4, h5, h6 {
+    color: #514a79;
+    font-family: FacitWeb,Arial,Verdana;
+    margin: 0;
+    padding: 0;
+    font-weight:normal;
+}
+
+span {
+    color: #666;
+    font-family: FacitWeb,Arial,Verdana;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-family: FacitWeb,Arial,Verdana;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+/*.arAgingCat1 {
+    color: #0c555d;
+    font-size: 9px;
+}*/
+
+.nav-pills > .active > a, 
+.nav-pills > .active > a:hover,
+.nav-pills > .active > a:focus {
+    background:#e6e6e6;
+    color:#333;
+}
+
+.arAgingVal {
+    color: #006b72;
+    display:block;
+    font-size: 10px;
+    margin-top:-4px;
+}
+
+.arAgingValMedium {
+    color: #006b72;
+    display:block;
+    font-size: 12px;
+}
+
+/*.arAgingCat2 {
+    color: #7b2686;
+    font-size: 9px;
+}*/
+
+/*.arAgingVal2 {
+    color: #7b2686;
+    font-size: 14px;
+}*/
+
+.arAgingCat3 {
+    color: #ce9725;
+    font-size: 9px;
+}
+
+/*.arAgingVal3 {
+    color: #ce9725;
+    font-size: 14px;
+}*/
+
+.downMetric {
+    color: #e95625;
+    font-size: 27px;
+}
+
+.downMetricS {
+    color: #e95625;
+    font-size: 20px;
+}
+
+.evenLargerPriorMetric {
+    color: #576d31;
+    font-size: 18px;
+    line-height:10px;
+}
+
+.headAction {
+    color: white;
+    display: inline;
+    padding: 0 5px 0 5px;
+}
+
+.headUser {
+    font-weight: bold;
+    padding: 0 20px 0 0;
+}
+
+.kpiButton h4 {
+    color: #000;
+    font-family:FacitWeb-light;
+    font-size: 12px;
+    font-weight: normal;
+    margin: 0 0 2px 0;
+    padding: 0;
+}
+
+.kpiButton p {
+    color: #6e833f;
+    display: inline;
+    font-size: 10px;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    top: -10px;
+}
+
+.kpiButtonL h4 {
+    color: #333;
+    font-size: 14px;
+}
+
+.kpiButtonL p {
+    clear: left;
+    color: #6e833f;
+    float: right;
+    font-size: 12px;
+    margin: 5px 0 0 0;
+    position: relative;
+}
+
+.kpiButtonS h4 {
+    color: #333;
+    font-size: 12px;
+    font-weight:normal;
+}
+
+.kpiButtonS p {
+    clear: left;
+    color: #999;
+    font-size: 11px;
+    margin: 5px 0 0 0;
+    position: relative;
+}
+
+.kpiPanelItem {
+    color: #333;
+    display:inline-block;
+    font-size: 15px;
+    font-weight: normal;
+    height: 100%;
+    margin: 0 0 0 10px;
+    vertical-align: middle;
+    width:200px;
+    word-wrap:break-word;
+}
+
+.largeBenchmarkDesc {
+    color: #576d31;
+    display:inline-block;
+    font-size:10px;
+    line-height:10px;
+}
+
+.largerPriorMetric {
+    color: #999;
+    font-size: 12px;
+}
+
+.printChartTitle {
+    display:inline;
+    margin:0;
+    padding:0;
+}
+
+.slightlyLargerPriorMetric {
+    color: #999;
+    font-size: 14px;
+}
+
+.targetBackground {
+    background: #bbd57b;
+    display:inline-block;
+    padding:0 6px 1px 6px;
+}
+
+.targetFontColor {
+    color:#6e833f;
+}
+
+.targetBackgroundButton {
+    background: #bbd57b;
+    font-size:10px;
+    float:right;
+    line-height:14px;
+    padding:0 4px 0 4px;
+    margin-top:-2px;
+}
+
+.treeItemSubtext {
+    color: #aaa;
+    font-family:FacitWeb-ExtraLight;
+    font-size:small;
+}
+
+.upMetric {
+    color: #006b72;
+    font-size: 27px;
+}
+.upMetricS {
+    color: #006b72;
+    font-size: 20px;
+}
+
+.inTarget {
+    color: #006b72;
+    font-weight: normal;
+}
+
+.outTarget {
+    color: #e95625;
+    font-weight:normal;
+}
+
+#contextPanel p {
+    padding: 0 10px 0 0;
+    text-align: left;
+}
+
+#helpContents h1 {
+    display: block;
+    font-size: 16px;
+}
+
+#helpContents h2 {
+    display: inline-block;
+    font-size: 13px;
+    padding: 0;
+    margin: 0;
+}
+
+#helpContents p {
+    line-height: 18px;
+    font-size: small;
+    padding: 0;
+}
+
+#panelContents h1 {
+    color:#333;
+    font-size: large;
+    font-weight: bold;
+    margin: 5px 0 0 0px;
+}
+
+#panelContents h2 {
+    color:#333;
+    font-size: medium;
+    font-weight: bold;
+    margin: 5px 0 0 0px;
+}
+
+#printExitLink {
+    cursor:pointer;
+    font-size:small;
+    float:right;
+    position:relative;
+    right:15px;
+    top:50px;
+}
+
+#primaryOptionsOverlay h3 {
+    color: #000;
+    display: inline-block;
+    font-family:FacitWeb-Light;
+    font-size: 18px;
+    margin: 0 0 0 10px;
+}
+
+#secondaryOptionsOverlay h3 {
+    color: #000;
+    display: inline-block;
+    font-family:FacitWeb-Light;
+    font-size: 18px;
+    margin: 0 0 0 10px;
+}
+
+#settingsContent h1 {
+    padding-left: 10px;
+}
+
+#settingsContent p {
+    font-size:small;
+    padding:0 0 10px 10px;
+}

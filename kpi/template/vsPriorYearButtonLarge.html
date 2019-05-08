@@ -1,0 +1,13 @@
+﻿<script type="text/html" id="vsPriorYearButtonLarge">
+    <![CDATA[
+    <div id="<%= this.navButtonId %>" class="kpiButtonL" data-choice="<%= this.chartType %>" data-route="<%= this.ref%>">
+        <h4><%= this.title %></h4>
+        <div id="chartContainer-<%= this.id %>" class="kpiChartL"></div>
+        <div id="chartText">
+            <h3 class="upMetric"><%= this.currentMetric %></h3>
+            <span class="largeBenchmarkDesc"><%= this.benchmarkDesc %></span>
+            <span class="evenLargerPriorMetric"><%= this.priorPeriod %></span>
+        </div>
+    </div>
+    ]]>
+</script>

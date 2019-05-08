@@ -1,0 +1,18 @@
+﻿<script type="text/html" id="vsPriorYearButton">
+    <![CDATA[
+    <div id="<%= this.navButtonId %>" class="kpiButton kpiBorderDashed" data-choice="<%= this.chartType %>">
+        <h4><%= this.title %></h4>
+        <table id="chartGrouper">
+            <tr>
+                <td>
+                    <div id="chartContainer-<%= this.id %>" class="kpiChart"></div>
+                </td>
+                <td>
+                    <h3 id="metric_<%= this.id %>" class="inTarget"><%= this.currentMetric %></h3>
+                </td>
+            </tr>
+        </table>
+        <span class="targetBackgroundButton targetFontColor"><%= this.benchmarkDesc %> <span class="largerPriorMetric targetFontColor"><%= this.priorPeriod %></span></span>
+    </div>
+    ]]>
+</script>

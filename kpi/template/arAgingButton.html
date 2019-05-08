@@ -1,0 +1,20 @@
+﻿<script type="text/html" id="arAgingButton">
+    <![CDATA[
+    <div id="<%= this.navButtonId %>" class="kpiButton kpiBorderDashed" data-choice="<%= this.chartType %>">
+        <h4><%= this.title %></h4>
+        <table id="chartGrouper">
+            <tr>
+                <td>
+                    <div id="chartContainer-<%= this.id %>" class="kpiArAgingChart"></div>
+                </td>
+                <td>
+                    <span style="display:block;height:1px"></span>
+                    <span class="arAgingVal"><%= this.cat1Val %></span>
+                    <span class="arAgingVal"><%= this.cat2Val %></span>
+                    <span class="arAgingVal"><%= this.cat3Val %></span>
+                </td>
+            </tr>
+        </table>
+    </div>
+    ]]>
+</script>

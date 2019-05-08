@@ -1,0 +1,21 @@
+﻿<script type="text/html" id="denialOPCButton">
+    <![CDATA[
+    <div id="<%= this.navButtonId %>" class="kpiButtonS" data-choice="<%= this.chartType %>" data-route="<%= this.ref%>">
+        <h4><%= this.title %></h4>
+        <table id="chartGrouper">
+            <tr>
+                <td>
+                    <div id="chartContainer-<%= this.id %>" class="kpiDenialOpcChartS"></div>
+                </td>
+                <td>
+                    <span class="arAgingCat1">Medicare: </span><span class="arAgingVal1"><%= this.cat1Val %></span>
+                    <br />
+                    <span class="arAgingCat2">Commercial: </span><span class="arAgingVal2"><%= this.cat2Val %></span>
+                    <br />
+                    <span class="arAgingCat3">Medi-Cal: </span><span class="arAgingVal3"><%= this.cat3Val %></span>
+                </td>
+            </tr>
+        </table>
+    </div>
+    ]]>
+</script>
