@@ -74,13 +74,12 @@ a:hover {
  */
 
 .fg_l_header {
+  position: relative;
   background-color: rgb(236, 76, 0);
   display: flex;
   height: 50px;
-}
-
-.fg_l_header--alpha {
-  background-color: #445292;
+  overflow: visible;
+  z-index: 101; /* above hero (.fg_home) and in-page nav (.fg_c_nav-page__list) */
 }
 
 .fg_c_branding {
@@ -90,11 +89,29 @@ a:hover {
 }
 
 .fg_c_nav-version {
+  position: absolute;
+  right: 0;
+  top: 60px;
   display: block;
-  padding: 13px 26px 19px 26px;
+  padding: 10px 26px;
+  background-color: #5B1C03;
   margin-left: auto;
+  box-shadow: 0 1px 7px 2px rgba(0, 0, 0, 0.12);
   color: white;
   font-weight: 300;
+}
+
+.fg_c_nav-version a {
+  color: white;
+  font-weight: 500;
+}
+
+@media print, screen and (min-width: 1024px) {
+  .fg_c_nav-version {
+    position: static;
+    padding: 13px 26px 19px 26px;
+    box-shadow: none;
+  }
 }
 
 .fg_c_nav-top__list,
@@ -669,6 +686,7 @@ a:hover {
 
 .fg_markdown code > pre {
   margin: 24px;
+  white-space: pre-wrap;
 }
 
 .fg_markdown p code:not([class^="language-"]) {
@@ -964,6 +982,10 @@ a:hover {
   background: rgb(242, 242, 242);
 }
 
+.fg_content-table ul {
+  margin-top: 0;
+}
+
 .fg_same-width-as-p-tag {
   max-width: 550px;
 }
@@ -1020,7 +1042,9 @@ a:hover {
  */
 
 .fg_home {
+  position: relative;
   background-color: #fff;
+  z-index: 0; /* allows header to be above when version link wraps */
 }
 
 .fg_home > .fg_markdown > p:first-child {
@@ -1041,11 +1065,7 @@ a:hover {
   justify-content: center;
 }
 
-.fg_l_hero--alpha {
-  background-image: url('images/hero-alpha.png');
-}
-
-.fg_l_hero:not(.fg_l_hero--alpha)::after {
+.fg_l_hero::after {
   background-color: rgba(253, 94, 10, 0.24);
   content: "";
   position: absolute;
@@ -1103,21 +1123,10 @@ a:hover {
   transition: all 0.25s ease-out;
 }
 
-.fg_l_hero__button--alpha:link,
-.fg_l_hero__button--alpha:visited {
-  background-color: rgba(88, 102, 170, 0.75);
-}
-
 .fg_l_hero .fg_l_hero__button:hover {
   background-color: rgba(243, 93, 15, 1);
   border: 2px solid rgba(255, 255, 255, 1);
   box-shadow: 0 1px 8px 0 rgba(255, 255, 100, 0.75);
-}
-
-.fg_l_hero .fg_l_hero__button:hover {
-  background-color: rgba(88, 102, 170, 1);
-  border: 2px solid rgba(255, 255, 255, 1);
-  box-shadow: 0 1px 8px 0 rgba(129, 240, 255, 0.75);
 }
 
 .fg_l_hero__button:focus {

@@ -9,7 +9,7 @@
     };
     </script>
     <script>var cl = document.querySelector('html').classList; cl.remove('no-js'); cl.add('has-js');</script>
-    <link rel="shortcut icon" href="../../favicon_blue.ico" type="image/ico">
+    <link rel="shortcut icon" href="../../favicon.ico" type="image/ico">
 
 <link rel="stylesheet" href="../../assets/css/styles.css?cachebust=1.2.0" type="text/css">
 
@@ -28,7 +28,7 @@
 
 
 <div class="fg_app">
-  <header class="fg_l_header fg_l_header--alpha">
+  <header class="fg_l_header">
   <a class="fg_c_branding" href="../../index.html">
     <img src="../../assets/images/logo.svg" />
   </a>
@@ -94,19 +94,6 @@
           
           <a
             class="fg_c_nav-top__link  fg_is-active"
-            href="release-notes.html"
-            title="Resources"
-          >
-            Resources
-          </a>
-        </li>
-      
-    
-      
-        <li class="fg_c_nav-top__list-item">
-          
-          <a
-            class="fg_c_nav-top__link  fg_is-active"
             href=""
             title="Resources"
           >
@@ -120,7 +107,7 @@
 
 
   <div class="fg_c_nav-version">
-    v2.0.0-beta.7
+    Go to <a href="http://ah-uxds-forge-guide-release-v1.s3-website-us-east-1.amazonaws.com/">Forge 1.x</a>
   </div>
 </header>
 
@@ -145,25 +132,6 @@
       
         <li class="fg_c_nav-left__list-item">
           <a
-            href="release-notes.html"
-            
-            class="fg_c_nav-left__link "
-          >
-            <span>Release Notes</span>
-            
-              
-            
-              
-            
-          </a>
-        </li>
-      
-    
-  
-    
-      
-        <li class="fg_c_nav-left__list-item">
-          <a
             href=""
             
             class="fg_c_nav-left__link  fg_is-active"
@@ -171,19 +139,6 @@
             <span>Downloads</span>
             
               
-            
-              
-            
-          </a>
-        </li>
-      
-        <li class="fg_c_nav-left__list-item">
-          <a
-            href="community-resources.html"
-            
-            class="fg_c_nav-left__link "
-          >
-            <span>Community Resources</span>
             
               
             
@@ -204,6 +159,8 @@
             
               
             
+              
+            
           </a>
         </li>
       
@@ -214,6 +171,8 @@
             class="fg_c_nav-left__link "
           >
             <span>Sass Utilities</span>
+            
+              
             
               
             
@@ -234,6 +193,8 @@
             
               
             
+              
+            
           </a>
         </li>
       
@@ -249,6 +210,8 @@
             
               
             
+              
+            
           </a>
         </li>
       
@@ -259,6 +222,8 @@
             class="fg_c_nav-left__link "
           >
             <span>Release Notes</span>
+            
+              
             
               
             
@@ -309,7 +274,7 @@
 <p><span class="fg_downloads__link-with-icon">
   <img src="../../assets/images/zip.svg" alt="forge.zip">
   <span>
-    <a href="../../dist/forge.zip">Forge v2.0.0-beta.7 (.zip)</a> &#8212; Includes compiled versions of CSS and JavaScript; does not include documentation or source files
+    <a href="../../dist/forge.zip">Forge v2.1.0 (.zip)</a> &#8212; Includes compiled versions of CSS and JavaScript; does not include documentation or source files
   </span>
 </span></p>
 <p><span class="fg_downloads__link-with-icon">
@@ -340,9 +305,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
           pageCategory: 'resources'.length > 0
             ? 'resources'
             : null,
-          forgeVersion: '2.0.0-beta.7',
-          forgeGeneralVersion: /^\d*(?=\.)/.exec('2.0.0-beta.7')
-            ? /^\d*(?=\.)/.exec('2.0.0-beta.7').toString()
+          forgeVersion: '2.1.0',
+          forgeGeneralVersion: /^\d*(?=\.)/.exec('2.1.0')
+            ? /^\d*(?=\.)/.exec('2.1.0').toString()
             : null
         });
       }
@@ -355,7 +320,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 
     </div>
-    <!--div class="debug"><pre><code class="language-json">{"id":"9a2595e30b880f1eefc7c1e55842cbde","name":"downloads","handle":"downloads","label":"Downloads","title":"Downloads","order":1,"isHidden":false,"alias":null,"isEntity":true,"isDoc":true,"isIndex":false,"path":"resources/downloads","status":null,"content":"\r\n<h2 class=\"fe_u_margin--top-xlarge\">Forge Design Resources</h2>\r\n\r\n<span class=\"fg_downloads__link-with-icon\">\r\n  ![Sketch]({{ path '/assets/images/sketch.svg' }})[Design Sketch file (v2)]({{ path '/assets/design/Forge_2.sketch' }})\r\n</span>\r\n\r\n<span class=\"fg_downloads__link-with-icon\">\r\n  ![PDF]({{ path '/assets/images/pdf.svg' }})[Design PDF file (v2)]({{ path '/assets/design/Forge_2.pdf' }})\r\n</span>\r\n\r\n<span class=\"fg_downloads__link-with-icon\">\r\n  ![Typeface]({{ path '/assets/images/typeface.svg' }})[Source Sans Typeface](https://fonts.google.com/specimen/Source+Sans+Pro)\r\n</span>\r\n\r\n## Forge CSS and JS\r\n\r\n<span class=\"fg_downloads__link-with-icon\">\r\n  ![forge.zip]({{ path '/assets/images/zip.svg' }})\r\n  <span>\r\n    [Forge v{{> forgeVersion }} (.zip)]({{ path '/dist/forge.zip' }}) &#8212; Includes compiled versions of CSS and JavaScript; does not include documentation or source files\r\n  </span>\r\n</span>\r\n\r\n<span class=\"fg_downloads__link-with-icon\">\r\n  ![git]({{ path '/assets/images/git.svg' }})\r\n  <span>\r\n    [Forge Bitbucket Respository](https://bitbucket.athenahealth.com/projects/UXDS/repos/forge/browse) &#8212; The most current Forge source files\r\n  </span>\r\n</span>\r\n\r\n<span class=\"fg_downloads__link-with-icon\">\r\n  ![tag]({{ path '/assets/images/tag.svg' }})\r\n  <span>\r\n    [Older versions](https://bitbucket.athenahealth.com/projects/UXDS/repos/forge/browse/CHANGELOG.md) &#8212; Previous versions of Forge are tagged in the repository. [Release Notes]({{ path '/docs/resources/release-notes' }}) are also on Forge Guide.\r\n  </span>\r\n</span>\r\n","lang":{"name":"Markdown","mode":"markdown","scope":"source.gfm","color":"#083FA1"},"file":{"root":"C:\\","dir":"C:\\Users\\ctsui\\code\\forge-guide\\docs\\06-resources","base":"01-downloads.md","ext":".md","name":"downloads","relPath":"06-resources\\01-downloads.md","fsName":"01-downloads","path":"C:\\Users\\ctsui\\code\\forge-guide\\docs\\06-resources\\01-downloads.md","dirs":["C:\\Users\\ctsui\\code\\forge-guide\\docs\\06-resources"],"isHidden":false,"order":1,"isFile":true,"isDirectory":false,"stat":{"dev":4102694615,"mode":33206,"nlink":1,"uid":0,"gid":0,"rdev":0,"ino":2814749768206149,"size":1604,"atimeMs":1541785521243.8113,"mtimeMs":1541785521243.8113,"ctimeMs":1542220931978.8213,"birthtimeMs":1541785521243.8113,"atime":"2018-11-09T17:45:21.244Z","mtime":"2018-11-09T17:45:21.244Z","ctime":"2018-11-14T18:42:11.979Z","birthtime":"2018-11-09T17:45:21.244Z"},"lang":{"name":"Markdown","mode":"markdown","scope":"source.gfm","color":"#083FA1"},"isBinary":false},"context":{"extensions":{"core":{"forge-toast":{"name":"Toast","version":"0.2.2","description":"Toast component for Forge"},"forge-toggle-switch":{"name":"ToggleSwitch","version":"0.1.1","description":"ToggleSwitch component for Forge"}},"community":{"clinicals-forge-extension":{"name":"Clinicals Forge Extension","owner":"Nursing Flowsheets","url":"https://bitbucket.athenahealth.com/projects/CLIFS/repos/clinicals-forge-extension/browse","version":"2.1.1","description":"A forge-extension containing components used by inpatient clinicals"}}},"amplitudeCategory":"resources"}}</code></pre></div-->
+    <!--div class="debug"><pre><code class="language-json">{"id":"9a2595e30b880f1eefc7c1e55842cbde","name":"downloads","handle":"downloads","label":"Downloads","title":"Downloads","order":1,"isHidden":false,"alias":null,"isEntity":true,"isDoc":true,"isIndex":false,"path":"resources/downloads","status":null,"content":"\n<h2 class=\"fe_u_margin--top-xlarge\">Forge Design Resources</h2>\n\n<span class=\"fg_downloads__link-with-icon\">\n  ![Sketch]({{ path '/assets/images/sketch.svg' }})[Design Sketch file (v2)]({{ path '/assets/design/Forge_2.sketch' }})\n</span>\n\n<span class=\"fg_downloads__link-with-icon\">\n  ![PDF]({{ path '/assets/images/pdf.svg' }})[Design PDF file (v2)]({{ path '/assets/design/Forge_2.pdf' }})\n</span>\n\n<span class=\"fg_downloads__link-with-icon\">\n  ![Typeface]({{ path '/assets/images/typeface.svg' }})[Source Sans Typeface](https://fonts.google.com/specimen/Source+Sans+Pro)\n</span>\n\n## Forge CSS and JS\n\n<span class=\"fg_downloads__link-with-icon\">\n  ![forge.zip]({{ path '/assets/images/zip.svg' }})\n  <span>\n    [Forge v{{> forgeVersion }} (.zip)]({{ path '/dist/forge.zip' }}) &#8212; Includes compiled versions of CSS and JavaScript; does not include documentation or source files\n  </span>\n</span>\n\n<span class=\"fg_downloads__link-with-icon\">\n  ![git]({{ path '/assets/images/git.svg' }})\n  <span>\n    [Forge Bitbucket Respository](https://bitbucket.athenahealth.com/projects/UXDS/repos/forge/browse) &#8212; The most current Forge source files\n  </span>\n</span>\n\n<span class=\"fg_downloads__link-with-icon\">\n  ![tag]({{ path '/assets/images/tag.svg' }})\n  <span>\n    [Older versions](https://bitbucket.athenahealth.com/projects/UXDS/repos/forge/browse/CHANGELOG.md) &#8212; Previous versions of Forge are tagged in the repository. [Release Notes]({{ path '/docs/resources/release-notes' }}) are also on Forge Guide.\n  </span>\n</span>\n","lang":{"name":"Markdown","mode":"markdown","scope":"source.gfm","color":"#083FA1"},"file":{"root":"C:\\","dir":"C:\\Users\\ctsui\\code\\forge-guide\\docs\\06-resources","base":"01-downloads.md","ext":".md","name":"downloads","relPath":"06-resources\\01-downloads.md","fsName":"01-downloads","path":"C:\\Users\\ctsui\\code\\forge-guide\\docs\\06-resources\\01-downloads.md","dirs":["C:\\Users\\ctsui\\code\\forge-guide\\docs\\06-resources"],"isHidden":false,"order":1,"isFile":true,"isDirectory":false,"stat":{"dev":4102694615,"mode":33206,"nlink":1,"uid":0,"gid":0,"rdev":0,"ino":9288674231656640,"size":1564,"atimeMs":1551459688155.1865,"mtimeMs":1551459688155.1865,"ctimeMs":1551895015993.589,"birthtimeMs":1551459688155.1865,"atime":"2019-03-01T17:01:28.155Z","mtime":"2019-03-01T17:01:28.155Z","ctime":"2019-03-06T17:56:55.994Z","birthtime":"2019-03-01T17:01:28.155Z"},"lang":{"name":"Markdown","mode":"markdown","scope":"source.gfm","color":"#083FA1"},"isBinary":false},"context":{"extensions":{"core":{"forge-toast":{"name":"Toast","version":"0.3.0","description":"Toast component for Forge"},"forge-toggle-switch":{"name":"ToggleSwitch","version":"0.2.0","description":"ToggleSwitch component for Forge"},"forge-multiselect-async":{"name":"MultiselectAsync","version":"0.2.0","description":"Async version of Multiselect component"}},"community":{"clinicals-forge-extension":{"name":"Clinicals Forge Extension","owner":"Nursing Flowsheets","url":"https://bitbucket.athenahealth.com/projects/CLIFS/repos/clinicals-forge-extension/browse","version":"2.2.1","description":"A forge-extension containing components used by inpatient clinicals"},"forge-virtualized-table":{"name":"Virtualized Table","owner":"Pop Health","url":"https://bitbucket.athenahealth.com/projects/UXDS/repos/forge-virtualized-table/browse","version":"0.1.0","description":"Virtualization support for the Forge Table component."}}},"amplitudeCategory":"resources"}}</code></pre></div-->
   </div>
 </div>
 

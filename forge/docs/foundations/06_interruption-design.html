@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+    window.frctl = {
+        env: 'static'
+    };
+    </script>
+    <script>var cl = document.querySelector('html').classList; cl.remove('no-js'); cl.add('has-js');</script>
+    <link rel="shortcut icon" href="../../favicon.ico" type="image/ico">
+
+<link rel="stylesheet" href="../../assets/css/styles.css?cachebust=1.2.0" type="text/css">
+
+<link rel="stylesheet" href="../../assets/css/prism-atom-dark.css?cachebust=1.2.0" type="text/css">
+
+<link rel="stylesheet" href="../../assets/css/ascetic.css?cachebust=1.2.0" type="text/css">
+
+<link rel="stylesheet" href="../../css/forge.css?cachebust=1.2.0" type="text/css">
+
+
+<title>Interruption Design | athenahealth</title>
+
+</head>
+<body>
+
+
+
+<div class="fg_app">
+  <header class="fg_l_header">
+  <a class="fg_c_branding" href="../../index.html">
+    <img src="../../assets/images/logo.svg" />
+  </a>
+  <nav class="fg_c_nav-top">
+  <ul class="fg_c_nav-top__list">
+    
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link "
+            href="../guidelines/principles.html"
+            title="Guidelines"
+          >
+            Guidelines
+          </a>
+        </li>
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link  fg_is-active"
+            href="color.html"
+            title="Foundations"
+          >
+            Foundations
+          </a>
+        </li>
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link "
+            href="../components/accordion.html"
+            title="Components"
+          >
+            Components
+          </a>
+        </li>
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link "
+            href="../extensions/forge-extensions.html"
+            title="Extensions"
+          >
+            Extensions
+          </a>
+        </li>
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link "
+            href="../resources/downloads.html"
+            title="Resources"
+          >
+            Resources
+          </a>
+        </li>
+      
+    
+  </ul>
+</nav>
+
+
+  <div class="fg_c_nav-version">
+    Go to <a href="http://ah-uxds-forge-guide-release-v1.s3-website-us-east-1.amazonaws.com/">Forge 1.x</a>
+  </div>
+</header>
+
+
+  
+
+<div class="fg_l_sidebar" data-role="sidebar">
+  <nav class="fg_c_nav-left">
+  <ul class="fg_c_nav-left__list">
+  
+    
+  
+    
+  
+    
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="color.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Color</span>
+            
+              
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="typography.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Typography</span>
+            
+              
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="grid.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Grid Foundation</span>
+            
+              
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="form-design.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Form Design</span>
+            
+              
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="typography-utilities.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Typography Utilities</span>
+            
+              
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href=""
+            
+            class="fg_c_nav-left__link  fg_is-active"
+          >
+            <span>Interruption Design</span>
+            
+              
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="layout-utilities.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Layout Utilities</span>
+            
+              
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+    
+  
+    
+  
+    
+  
+    
+  
+  </ul>
+</nav>
+
+</div>
+
+<div class="fg_l_main" data-role="main">
+  <div class="fg_doc">
+
+    
+
+    <div class="fg_doc__header">
+      
+        <h1 class="fg_doc__title">Interruption Design</h1>
+      
+    </div>
+    <div class="fg_doc__content">
+      
+
+  <div class="fg_markdown">
+    
+
+      
+      
+
+      
+        <p class="p--lead">Interruption components provide users timely contextual awareness of important information related to their job. These components can communicate conditions, indicate an event, or show responses to user actions.</p>
+
+<p>This page documents general design guidelines for interruption components used in athenanet products.  These components draw attention to information from the applications (either as a result of user input or generated by the system itself) that needs users&#39; consideration.</p>
+<p>In the Forge design system, interruption components and patterns include <a href="../components/tooltip.html">Tooltip</a>, <a href="../components/status-tag.html">StatusTag</a>, <a href="../components/banner.html">Banner</a>, <a href="../components/toast.html">Toast</a>, <a href="../components/modal.html">Modal</a>, and form error validation.</p>
+<h2 id="general-design-guidelines">General Design Guidelines</h2>
+<p>Design using Forge interruption components should be:</p>
+<ul>
+<li><p><strong>Appropriately interruptive</strong><br>Notifications and indicators can be interruptive, but their level of interruption should align with the level of urgency. Ask how important it is for users to stop their current workflow and take action. Carefully choose the interruption level to reduce <a href="https://psnet.ahrq.gov/primers/primer/28/alert-fatigue">alert fatigue</a>.</p>
+</li>
+<li><p><strong>Informative</strong><br>Interruption components should be direct in communicating what happened. If there&#39;s a solution, explain it and provide a means to execute it (e.g., CTA button). If there&#39;s no immediate solution, give troubleshooting instructions. Use Forge <a href="color.html">alert colors</a> and/or <a href="../components/icon.html">icons</a> in the design for quick recognition.</p>
+</li>
+<li><p><strong>Efficient</strong><br>The content of the interruption message should be precise and brief. For example, use numbers, dates, and short phrases for quick reading and comprehension.</p>
+</li>
+<li><p><strong>Noticeable</strong><br>When possible, interruption components should be visually near the source of the issue. Except for Modal, placement of interruption components should not hinder users&#39; interaction with other elements on the screen. For components that dismiss themselves, such as Toast, consider providing a way for users to retrieve their messages after they are gone from screen (e.g., a sliding notification panel).</p>
+</li>
+<li><p><strong>Multidimensional</strong><br>Interruption design should consider using a combination of color, placement, timing, frequency, and component choice (Modal, Toast, Banner, etc.) to convey information effectively. Make sure it is quickly recognized and understood by the users.</p>
+</li>
+<li><p><strong>Consistent</strong><br>Apply visual and interaction patterns consistently across the products to avoid user confusion. For example, if one area calls attention to abnormal vitals by displaying them in red text with an alert icon, it would be inconsistent to call attention to them in another area by displaying them in the Banner component.</p>
+</li>
+</ul>
+<h2 id="design-process">Design Process</h2>
+<h3 id="1-determine-the-level-of-interruption">1. Determine the level of interruption</h3>
+<p>The first step of interruption design is to determine the level of interruption: the level of attention that users should give to the information being highlighted. When deciding, use the Interruption Scale (below) and consider these factors:</p>
+<ul>
+<li>Severity of consequences: Non-critical vs. critical</li>
+<li>Timeliness of reaction: No action required vs. immediate action required</li>
+<li>Duration of the message: Temporary vs. persistent</li>
+<li>Frequency of the message: High (e.g., StatusTag), medium, or low (e.g., Modal)</li>
+</ul>
+<p>Determine where your use case fits on the scale and select the type of interruption that best fits your situation.</p>
+<div class="fg_image-container">
+    <img src="../../assets/images/interruption-design/interruption_scale.png" alt="Scale of interruption levels in order from low (non-critical, non-interruptive) to high (critical, highly interruptive): Nested, Indicator, Notification, Validation, Soft Stop, Hard Stop">
+</div>
+
+<table class="fg_content-table">
+<thead>
+    <tr>
+      <th width="65%">Interruption Type</th>
+      <th>Example</th>
+    </tr>
+  </thead>
+<tbody>
+    <tr>
+        <td>
+        <strong>Nested</strong><br>        Explanatory information that helps a user understand the available choices<br>        <br />
+        The information is subtle by default (maybe even hidden), but it is available for a user who is looking for it.
+        </td>
+        <td>
+        Info icon where the user can hover or click to reveal information
+        </td>
+    </tr>
+    <tr>
+        <td>
+        <strong>Indicator</strong><br>        A new detail or change to information that the user could pay attention to, but it does not have a required action tied to it<br>        <br />
+        It&#39;s an &quot;FYI&quot; that&#39;s helpful but not necessarily intended to influence a decision.
+        </td>
+        <td>
+        StatusTag showing status of lab result
+        </td>
+    </tr>
+    <tr>
+        <td>
+        <strong>Notification</strong><br>        Informational message containing scenario-specific content relevant to users&#39; jobs<br>        <br />
+        The information may guide the user&#39;s next steps. This may or may not require an action to proceed.
+        </td>
+        <td>
+        Message for abnormal lab results falling mildly out of range
+        </td>
+    </tr>
+    <tr>
+        <td>
+        <strong>Validation</strong><br>        An error message related to something the user just did (or didn&#39;t do) that should be corrected<br>        <br />
+        A validation message brings attention to important information that needs action but is not required to be dealt with immediately.
+        </td>
+        <td>
+        Message for missing required field
+        </td>
+    </tr>
+    <tr>
+        <td>
+        <strong>Soft Stop</strong><br>        A strong interruption to the workflow that forces a specific next step or requires an intentional action to bypass<br>        <br />
+        This requires the user to stop everything and deal with the alert immediately. It may be dismissed.<br>        <br />
+    It should not be used in situations that occur frequently.
+        </td>
+        <td>
+        Message for severe drug/allergy interaction
+        </td>
+    </tr>
+    <tr>
+        <td>
+        <strong>Hard Stop</strong><br>        A very strong interruption to the workflow that forces a specific next step or requires entering a reason to bypass<br>        <br />
+        This requires the user to stop everything and deal with the alert immediately. It can&#39;t be dismissed.<br>        <br />
+        It should not be used in situations that occur frequently.
+        </td>
+        <td>
+        Message for changing or deleting department that could invalidate codes
+        </td>
+    </tr>
+</tbody>
+</table>
+
+
+<h3 id="2-choose-the-right-component">2. Choose the right component</h3>
+<p>The next step is to decide which Forge component is appropriate for the type of interruption you need. Consider the following:</p>
+<ul>
+<li><p><strong>Format and interaction behavior</strong><br>For example, Modal will stop users from interacting with other elements on the screen, Toast will be displayed briefly while users continue to work on other areas of the screen, and StatusTag will be persistently displayed and not affect user workflow.</p>
+</li>
+<li><p><strong>Amount of information to display</strong><br>For example, a label with or without an icon, a short sentence, a message with action buttons, etc.</p>
+</li>
+<li><p><strong>Context of the message</strong><br>Should the message be displayed at the page level, at the section level, or inline?</p>
+</li>
+<li><p><strong>Potential for alert fatigue</strong><br>Be very cautious when choosing a high-urgency interruption component such as Modal. It will severely disrupt users&#39; workflow and add to their mental stress. Excessive amounts of warning messages on a screen or Modals surfacing in high frequency will desensitize users (due to sensory overload) and lead to alert fatigue.</p>
+</li>
+</ul>
+<p>The diagram below maps Forge interruption components to the Interruption Scale. This is only a point of reference and is not comprehensive. Designers should determine the appropriateness of their interruption design based on the application scenarios.</p>
+<div class="fg_image-container">
+    <img src="../../assets/images/interruption-design/interruption_scale_with_components.png" alt="Scale of Forge components and patterns mapped to interruption levels in order from low (non-critical, non-interruptive) to high (critical, highly interruptive): Nested - Info icon, Tooltips; Indicator - Required field indicator, StatusTag; Notification - Toast, Banner; Validation - Form error validation; Soft Stop - Modal (dismissible); Hard Stop - Modal (non-dismissible)">
+</div>
+
+
+<p>Refer to each component&#39;s page on the <a href="../../index.html">Forge website</a> for design details and implementation guidelines.</p>
+<h3 id="3-define-the-details">3. Define the details</h3>
+<p>After an interruption component is chosen, the final step is to define details that will dial the strength of the interruption up or down. These include color and tone of voice.</p>
+<h4 id="forge-alert-color-semantics">Forge Alert Color Semantics</h4>
+<table class="fg_content-table">
+    <tr>
+        <td>
+            <div style="width: 50px; height: 50px; background-color:rgb(61, 149, 125);">&nbsp;</div>
+        </td>
+        <td>
+            <strong>Success</strong><br>The action that the user took has been executed successfully.<br><br />
+Examples: Action completed, content saved
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div style="width: 50px; height: 50px; background-color:rgb(126, 88, 155);">&nbsp;</div>
+        </td>
+        <td>
+            <strong>Information</strong><br>System- or user-generated, something that the user should know that they may or may not need to take action on; additional information provided by athena about something&#39;s function or meaning
+
+<br /><br>Examples: Arrival of lab results, an explanation for a Medicare abbreviation
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div style="width: 50px; height: 50px; background-color:rgb(255, 171, 0);">&nbsp;</div>
+        </td>
+        <td>
+            <strong>Attention</strong><br>Something that needs action that the user should be aware of; an error or something that has the potential to become an error situation; mild or moderate clinical/patient safety risk
+<br /><br>Examples: Missed required fields, mild medication warning
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div style="width: 50px; height: 50px; background-color:rgb(247, 63, 63);">&nbsp;</div>
+        </td>
+        <td>
+            <strong>Critical</strong><br>Reserved to indicate the highest risk and most severe issues
+<br /><br>Examples: Abnormal results that may cause patient harm, moderate or severe medication warnings, a financial issue that would cause a client to lose Medicare payments
+        </td>
+    </tr>
+</table>
+
+<p>Refer to the Forge <a href="color.html">colors page</a> and the <a href="../guidelines/content-style-guide.html">content style guide</a> for more details.</p>
+<h3 id="accessibility">Accessibility</h3>
+<p>When using color, remember that color by itself is <strong>not</strong> enough to show alert level. Color alone is not accessible; users who can&#39;t see or perceive color won&#39;t be able to tell how important the message is. Use colors <em>and</em> icons to express alert level.</p>
+<div class="fg_image-container">
+    <img src="../../assets/images/interruption-design/content_alert_accessible.png" alt="First caption - Do this: Use colors and icons together to show alert level (in this case, the Critical color and icon). First image shows the label &quot;Heart rate&quot; and then this content in red and bolded: 57 bpm, Critical icon, abnormal. Second caption - Not this: Do not use color alone to show alert level. Second image is the same as the first, but there is no Critical icon, just red bolded text.">
+</div>
+
+<p>Forge components have this accessibility built in. For example, Toast and Banner use both colors and icons to show alert level.</p>
+<h2 id="multiple-interruption-messages">Multiple Interruption Messages</h2>
+<p>In addition to focusing on the details of individual interruption components, designers should consider them in the context of the entire screen and workflow.</p>
+<p>When multiple notifications need to be surfaced, consider their visual hierarchy on the screen so that users can quickly identify and direct their attention to the most urgent ones.</p>
+<p>When appropriate, group interruption messages of the same type to make it easier for users to follow. For example, instead of multiple separated banners, combine multiple attention-level warning messages in a single page-level banner.</p>
+<h2 id="product-specific-interruption-needs">Product-specific Interruption Needs</h2>
+<p>Forge&#39;s interruption design guidelines are generic and aim to cover the basics for the wide array of athenaNet products, including Clinicals, Collector, Consumer Health, and more.</p>
+<p>When developing interruption messages for ambulatory and hospital applications, please refer to established design patterns as well, such as the Drug-Drug Interaction (DDI) Alert scheme and the <a href="https://www.ahrq.gov/professionals/systems/hospital/esi/index.html">Emergency Severity Index</a> guidelines (Hospital and ER settings).  Please consult athenahealth&#39;s Patient Safety Team for additional instructions and guidelines.</p>
+<h2 id="references">References</h2>
+<p>While writing this guideline, the Forge team referred to the following articles and resources. You can also use them to learn more about interruption design and best practices.</p>
+<p><a href="https://www.nngroup.com/articles/indicators-validations-notifications/">Indicators, Validations, and Notifications: Pick the Correct Communication Option</a><br>(Kim Flaherty for Nielsen Norman Group, 2015)</p>
+<p><a href="https://polaris.shopify.com/patterns-and-guides/error-messages#navigation">Error Messages</a><br>(Polaris Design System, Shopify)</p>
+<p><a href="https://developer.apple.com/design/human-interface-guidelines/ios/system-capabilities/notifications/">Notifications</a><br>(Human Interface Guidelines, Apple)</p>
+<p><a href="https://material.io/design/components/dialogs.html#">Dialogs</a><br>(Material Design, Google)</p>
+<p><a href="https://material.io/design/components/snackbars.html">Snackbars</a><br>(Material Design, Google)</p>
+<p><a href="https://medium.com/microsoft-design/how-to-design-interruptions-b93c0c667e6f">How to Design Interruptions</a><br>(Margaret P, 2018)</p>
+<p><a href="https://uxplanet.org/how-to-design-notifications-for-better-ux-6fb0711be54d">How to Design Notifications for Better UX</a><br>(CanvasFlip, 2017)</p>
+<p><a href="https://uimovement.com/tag/notifications/">Notification UI Design Inspirations</a><br>(UI Movement, 2018)</p>
+<p><a href="https://psnet.ahrq.gov/primers/primer/28/alert-fatigue">Alert Fatigue</a><br>(AHRQ, 2019)</p>
+<p><a href="https://www.ahrq.gov/professionals/systems/hospital/esi/index.html">Emergency Severity Index</a><br>(AHRQ, 2018)</p>
+
+      
+
+    
+  </div>
+
+  <script>
+document.addEventListener("DOMContentLoaded", function(event) {
+    if (window.amplitude) {
+        amplitude.getInstance().init('d426be2bbef81471eeac4bca0c061243');
+
+        amplitude.getInstance().logEvent('viewed page', {
+          pageName: 'Interruption Design',
+          pageCategory: 'foundations'.length > 0
+            ? 'foundations'
+            : null,
+          forgeVersion: '2.1.0',
+          forgeGeneralVersion: /^\d*(?=\.)/.exec('2.1.0')
+            ? /^\d*(?=\.)/.exec('2.1.0').toString()
+            : null
+        });
+      }
+      else {
+        console.warn("amplitude is not logging events");
+      }
+});
+</script>
+
+
+
+    </div>
+    <!--div class="debug"><pre><code class="language-json">{"id":"407c60f300ef78b4f2ab5c01dddd20b3","name":"06_interruption-design","handle":"06_interruption-design","label":"06 Interruption Design","title":"Interruption Design","order":1000000,"isHidden":false,"alias":null,"isEntity":true,"isDoc":true,"isIndex":false,"path":"foundations/06_interruption-design","status":null,"content":"\n<p class=\"p--lead\">Interruption components provide users timely contextual awareness of important information related to their job. These components can communicate conditions, indicate an event, or show responses to user actions.</p>\n\nThis page documents general design guidelines for interruption components used in athenanet products.  These components draw attention to information from the applications (either as a result of user input or generated by the system itself) that needs users' consideration.\n\nIn the Forge design system, interruption components and patterns include [Tooltip]({{ path '/docs/components/tooltip' }}), [StatusTag]({{ path '/docs/components/status-tag' }}), [Banner]({{ path '/docs/components/banner' }}), [Toast]({{ path '/docs/components/toast' }}), [Modal]({{ path '/docs/components/modal' }}), and form error validation.\n\n## General Design Guidelines\nDesign using Forge interruption components should be:\n\n* **Appropriately interruptive**  \nNotifications and indicators can be interruptive, but their level of interruption should align with the level of urgency. Ask how important it is for users to stop their current workflow and take action. Carefully choose the interruption level to reduce [alert fatigue](https://psnet.ahrq.gov/primers/primer/28/alert-fatigue).\n\n* **Informative**  \nInterruption components should be direct in communicating what happened. If there's a solution, explain it and provide a means to execute it (e.g., CTA button). If there's no immediate solution, give troubleshooting instructions. Use Forge [alert colors]({{ path '/docs/foundations/color' }}) and/or [icons]({{ path '/docs/components/icon' }}) in the design for quick recognition.\n\n* **Efficient**  \nThe content of the interruption message should be precise and brief. For example, use numbers, dates, and short phrases for quick reading and comprehension.\n\n* **Noticeable**  \nWhen possible, interruption components should be visually near the source of the issue. Except for Modal, placement of interruption components should not hinder users' interaction with other elements on the screen. For components that dismiss themselves, such as Toast, consider providing a way for users to retrieve their messages after they are gone from screen (e.g., a sliding notification panel).\n\n* **Multidimensional**  \nInterruption design should consider using a combination of color, placement, timing, frequency, and component choice (Modal, Toast, Banner, etc.) to convey information effectively. Make sure it is quickly recognized and understood by the users.\n\n* **Consistent**  \nApply visual and interaction patterns consistently across the products to avoid user confusion. For example, if one area calls attention to abnormal vitals by displaying them in red text with an alert icon, it would be inconsistent to call attention to them in another area by displaying them in the Banner component.\n\n\n## Design Process\n\n### 1. Determine the level of interruption\n\nThe first step of interruption design is to determine the level of interruption: the level of attention that users should give to the information being highlighted. When deciding, use the Interruption Scale (below) and consider these factors:\n\n* Severity of consequences: Non-critical vs. critical\n* Timeliness of reaction: No action required vs. immediate action required\n* Duration of the message: Temporary vs. persistent\n* Frequency of the message: High (e.g., StatusTag), medium, or low (e.g., Modal)\n\nDetermine where your use case fits on the scale and select the type of interruption that best fits your situation.\n\n<div class=\"fg_image-container\">\n    ![Scale of interruption levels in order from low (non-critical, non-interruptive) to high (critical, highly interruptive): Nested, Indicator, Notification, Validation, Soft Stop, Hard Stop]({{ path '/assets/images/interruption-design/interruption_scale.png' }})\n</div>\n\n<table class=\"fg_content-table\">\n<thead>\n    <tr>\n      <th width=\"65%\">Interruption Type</th>\n      <th>Example</th>\n    </tr>\n  </thead>\n<tbody>\n\t<tr>\n\t\t<td>\n\t\t**Nested**  \n\t\tExplanatory information that helps a user understand the available choices  \n\t\t<br />\n\t\tThe information is subtle by default (maybe even hidden), but it is available for a user who is looking for it.\n\t\t</td>\n\t\t<td>\n\t\tInfo icon where the user can hover or click to reveal information\n\t\t</td>\n\t</tr>\n\t<tr>\n\t\t<td>\n\t\t**Indicator**  \n\t\tA new detail or change to information that the user could pay attention to, but it does not have a required action tied to it  \n\t\t<br />\n\t\tIt's an \"FYI\" that's helpful but not necessarily intended to influence a decision.\n\t\t</td>\n\t\t<td>\n\t\tStatusTag showing status of lab result\n\t\t</td>\n\t</tr>\n\t<tr>\n\t\t<td>\n\t\t**Notification**  \n\t\tInformational message containing scenario-specific content relevant to users' jobs  \n\t\t<br />\n\t\tThe information may guide the user's next steps. This may or may not require an action to proceed.\n\t\t</td>\n\t\t<td>\n\t\tMessage for abnormal lab results falling mildly out of range\n\t\t</td>\n\t</tr>\n\t<tr>\n\t\t<td>\n\t\t**Validation**  \n\t\tAn error message related to something the user just did (or didn't do) that should be corrected  \n\t\t<br />\n\t\tA validation message brings attention to important information that needs action but is not required to be dealt with immediately.\n\t\t</td>\n\t\t<td>\n\t\tMessage for missing required field\n\t\t</td>\n\t</tr>\n\t<tr>\n\t\t<td>\n\t\t**Soft Stop**  \n\t\tA strong interruption to the workflow that forces a specific next step or requires an intentional action to bypass  \n\t\t<br />\n\t\tThis requires the user to stop everything and deal with the alert immediately. It may be dismissed.  \n\t\t<br />\n\tIt should not be used in situations that occur frequently.\n\t\t</td>\n\t\t<td>\n\t\tMessage for severe drug/allergy interaction\n\t\t</td>\n\t</tr>\n\t<tr>\n\t\t<td>\n\t\t**Hard Stop**  \n\t\tA very strong interruption to the workflow that forces a specific next step or requires entering a reason to bypass  \n\t\t<br />\n\t\tThis requires the user to stop everything and deal with the alert immediately. It can't be dismissed.   \n\t\t<br />\n\t\tIt should not be used in situations that occur frequently.\n\t\t</td>\n\t\t<td>\n\t\tMessage for changing or deleting department that could invalidate codes\n\t\t</td>\n\t</tr>\n</tbody>\n</table>\n\n\n### 2. Choose the right component\n\nThe next step is to decide which Forge component is appropriate for the type of interruption you need. Consider the following:\n\n* **Format and interaction behavior**  \nFor example, Modal will stop users from interacting with other elements on the screen, Toast will be displayed briefly while users continue to work on other areas of the screen, and StatusTag will be persistently displayed and not affect user workflow.\n\n* **Amount of information to display**  \nFor example, a label with or without an icon, a short sentence, a message with action buttons, etc.\n\n* **Context of the message**  \nShould the message be displayed at the page level, at the section level, or inline?\n\n* **Potential for alert fatigue**  \nBe very cautious when choosing a high-urgency interruption component such as Modal. It will severely disrupt users' workflow and add to their mental stress. Excessive amounts of warning messages on a screen or Modals surfacing in high frequency will desensitize users (due to sensory overload) and lead to alert fatigue.\n\nThe diagram below maps Forge interruption components to the Interruption Scale. This is only a point of reference and is not comprehensive. Designers should determine the appropriateness of their interruption design based on the application scenarios.\n\n<div class=\"fg_image-container\">\n    ![Scale of Forge components and patterns mapped to interruption levels in order from low (non-critical, non-interruptive) to high (critical, highly interruptive): Nested - Info icon, Tooltips; Indicator - Required field indicator, StatusTag; Notification - Toast, Banner; Validation - Form error validation; Soft Stop - Modal (dismissible); Hard Stop - Modal (non-dismissible)]({{ path '/assets/images/interruption-design/interruption_scale_with_components.png' }})\n</div>\n\n\nRefer to each component's page on the [Forge website]({{ path '/' }}) for design details and implementation guidelines.\n\n### 3. Define the details\n\nAfter an interruption component is chosen, the final step is to define details that will dial the strength of the interruption up or down. These include color and tone of voice.\n\n#### Forge Alert Color Semantics\n\n<table class=\"fg_content-table\">\n\t<tr>\n\t\t<td>\n\t\t\t<div style=\"width: 50px; height: 50px; background-color:rgb(61, 149, 125);\">&nbsp;</div>\n\t\t</td>\n\t\t<td>\n\t\t\t**Success**  \nThe action that the user took has been executed successfully.  \n<br />\nExamples: Action completed, content saved\n\t\t</td>\n\t</tr>\n\t<tr>\n\t\t<td>\n\t\t\t<div style=\"width: 50px; height: 50px; background-color:rgb(126, 88, 155);\">&nbsp;</div>\n\t\t</td>\n\t\t<td>\n\t\t\t**Information**  \nSystem- or user-generated, something that the user should know that they may or may not need to take action on; additional information provided by athena about something's function or meaning\n\n<br />  \nExamples: Arrival of lab results, an explanation for a Medicare abbreviation\n\t\t</td>\n\t</tr>\n\t<tr>\n\t\t<td>\n\t\t\t<div style=\"width: 50px; height: 50px; background-color:rgb(255, 171, 0);\">&nbsp;</div>\n\t\t</td>\n\t\t<td>\n\t\t\t**Attention**  \nSomething that needs action that the user should be aware of; an error or something that has the potential to become an error situation; mild or moderate clinical/patient safety risk\n<br />   \nExamples: Missed required fields, mild medication warning\n\t\t</td>\n\t</tr>\n\t<tr>\n\t\t<td>\n\t\t\t<div style=\"width: 50px; height: 50px; background-color:rgb(247, 63, 63);\">&nbsp;</div>\n\t\t</td>\n\t\t<td>\n\t\t\t**Critical**  \nReserved to indicate the highest risk and most severe issues\n<br />   \nExamples: Abnormal results that may cause patient harm, moderate or severe medication warnings, a financial issue that would cause a client to lose Medicare payments\n\t\t</td>\n\t</tr>\n</table>\n\nRefer to the Forge [colors page]({{ path '/docs/foundations/color' }}) and the [content style guide]({{ path '/docs/guidelines/content-style-guide' }}) for more details.\n\n### Accessibility\nWhen using color, remember that color by itself is **not** enough to show alert level. Color alone is not accessible; users who can't see or perceive color won't be able to tell how important the message is. Use colors *and* icons to express alert level.\n\n<div class=\"fg_image-container\">\n    ![First caption - Do this: Use colors and icons together to show alert level (in this case, the Critical color and icon). First image shows the label \"Heart rate\" and then this content in red and bolded: 57 bpm, Critical icon, abnormal. Second caption - Not this: Do not use color alone to show alert level. Second image is the same as the first, but there is no Critical icon, just red bolded text.]({{ path '/assets/images/interruption-design/content_alert_accessible.png' }})\n</div>\n\nForge components have this accessibility built in. For example, Toast and Banner use both colors and icons to show alert level.\n\n## Multiple Interruption Messages\n\nIn addition to focusing on the details of individual interruption components, designers should consider them in the context of the entire screen and workflow.\n\nWhen multiple notifications need to be surfaced, consider their visual hierarchy on the screen so that users can quickly identify and direct their attention to the most urgent ones.\n\nWhen appropriate, group interruption messages of the same type to make it easier for users to follow. For example, instead of multiple separated banners, combine multiple attention-level warning messages in a single page-level banner.\n\n## Product-specific Interruption Needs\n\nForge's interruption design guidelines are generic and aim to cover the basics for the wide array of athenaNet products, including Clinicals, Collector, Consumer Health, and more.\n\nWhen developing interruption messages for ambulatory and hospital applications, please refer to established design patterns as well, such as the Drug-Drug Interaction (DDI) Alert scheme and the [Emergency Severity Index](https://www.ahrq.gov/professionals/systems/hospital/esi/index.html) guidelines (Hospital and ER settings).  Please consult athenahealth's Patient Safety Team for additional instructions and guidelines.\n\n## References\n\nWhile writing this guideline, the Forge team referred to the following articles and resources. You can also use them to learn more about interruption design and best practices.\n\n[Indicators, Validations, and Notifications: Pick the Correct Communication Option](https://www.nngroup.com/articles/indicators-validations-notifications/)  \n(Kim Flaherty for Nielsen Norman Group, 2015)\n\n[Error Messages](https://polaris.shopify.com/patterns-and-guides/error-messages#navigation)  \n(Polaris Design System, Shopify)\n\n[Notifications](https://developer.apple.com/design/human-interface-guidelines/ios/system-capabilities/notifications/)  \n(Human Interface Guidelines, Apple)\n\n[Dialogs](https://material.io/design/components/dialogs.html#)  \n(Material Design, Google)\n\n[Snackbars](https://material.io/design/components/snackbars.html)  \n(Material Design, Google)\n\n[How to Design Interruptions](https://medium.com/microsoft-design/how-to-design-interruptions-b93c0c667e6f)  \n(Margaret P, 2018)\n\n[How to Design Notifications for Better UX](https://uxplanet.org/how-to-design-notifications-for-better-ux-6fb0711be54d)  \n(CanvasFlip, 2017)\n\n[Notification UI Design Inspirations](https://uimovement.com/tag/notifications/)  \n(UI Movement, 2018)\n\n[Alert Fatigue](https://psnet.ahrq.gov/primers/primer/28/alert-fatigue)  \n(AHRQ, 2019)\n\n[Emergency Severity Index](https://www.ahrq.gov/professionals/systems/hospital/esi/index.html)  \n(AHRQ, 2018)","lang":{"name":"Markdown","mode":"markdown","scope":"source.gfm","color":"#083FA1"},"file":{"root":"C:\\","dir":"C:\\Users\\ctsui\\code\\forge-guide\\docs\\03-foundations","base":"06_interruption-design.md","ext":".md","name":"06_interruption-design","relPath":"03-foundations\\06_interruption-design.md","fsName":"06_interruption-design","path":"C:\\Users\\ctsui\\code\\forge-guide\\docs\\03-foundations\\06_interruption-design.md","dirs":["C:\\Users\\ctsui\\code\\forge-guide\\docs\\03-foundations"],"isHidden":false,"order":1000000,"isFile":true,"isDirectory":false,"stat":{"dev":4102694615,"mode":33206,"nlink":1,"uid":0,"gid":0,"rdev":0,"ino":5629499535600455,"size":13814,"atimeMs":1556908164203.3499,"mtimeMs":1556908331075.6067,"ctimeMs":1556908331075.6067,"birthtimeMs":1556902887181.0745,"atime":"2019-05-03T18:29:24.203Z","mtime":"2019-05-03T18:32:11.076Z","ctime":"2019-05-03T18:32:11.076Z","birthtime":"2019-05-03T17:01:27.181Z"},"lang":{"name":"Markdown","mode":"markdown","scope":"source.gfm","color":"#083FA1"},"isBinary":false},"context":{"extensions":{"core":{"forge-toast":{"name":"Toast","version":"0.3.0","description":"Toast component for Forge"},"forge-toggle-switch":{"name":"ToggleSwitch","version":"0.2.0","description":"ToggleSwitch component for Forge"},"forge-multiselect-async":{"name":"MultiselectAsync","version":"0.2.0","description":"Async version of Multiselect component"}},"community":{"clinicals-forge-extension":{"name":"Clinicals Forge Extension","owner":"Nursing Flowsheets","url":"https://bitbucket.athenahealth.com/projects/CLIFS/repos/clinicals-forge-extension/browse","version":"2.2.1","description":"A forge-extension containing components used by inpatient clinicals"},"forge-virtualized-table":{"name":"Virtualized Table","owner":"Pop Health","url":"https://bitbucket.athenahealth.com/projects/UXDS/repos/forge-virtualized-table/browse","version":"0.1.0","description":"Virtualization support for the Forge Table component."}}},"amplitudeCategory":"foundations"}}</code></pre></div-->
+  </div>
+</div>
+
+
+
+</div>
+
+
+
+
+<script src="../../assets/clipboard.min.js?cachebust=1.2.0"></script>
+
+<script src="../../assets/main.js?cachebust=1.2.0"></script>
+
+<script src="../../assets/amplitude.js?cachebust=1.2.0"></script>
+
+
+
+</body>
+</html>

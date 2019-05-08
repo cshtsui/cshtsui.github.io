@@ -9,7 +9,7 @@
     };
     </script>
     <script>var cl = document.querySelector('html').classList; cl.remove('no-js'); cl.add('has-js');</script>
-    <link rel="shortcut icon" href="../../favicon_blue.ico" type="image/ico">
+    <link rel="shortcut icon" href="../../favicon.ico" type="image/ico">
 
 <link rel="stylesheet" href="../../assets/css/styles.css?cachebust=1.2.0" type="text/css">
 
@@ -28,7 +28,7 @@
 
 
 <div class="fg_app">
-  <header class="fg_l_header fg_l_header--alpha">
+  <header class="fg_l_header">
   <a class="fg_c_branding" href="../../index.html">
     <img src="../../assets/images/logo.svg" />
   </a>
@@ -94,19 +94,6 @@
           
           <a
             class="fg_c_nav-top__link "
-            href="../resources/release-notes.html"
-            title="Resources"
-          >
-            Resources
-          </a>
-        </li>
-      
-    
-      
-        <li class="fg_c_nav-top__list-item">
-          
-          <a
-            class="fg_c_nav-top__link "
             href="../resources/downloads.html"
             title="Resources"
           >
@@ -120,7 +107,7 @@
 
 
   <div class="fg_c_nav-version">
-    v2.0.0-beta.7
+    Go to <a href="http://ah-uxds-forge-guide-release-v1.s3-website-us-east-1.amazonaws.com/">Forge 1.x</a>
   </div>
 </header>
 
@@ -149,6 +136,8 @@
             
               
             
+              
+            
           </a>
         </li>
       
@@ -159,6 +148,8 @@
             class="fg_c_nav-left__link "
           >
             <span>Typography</span>
+            
+              
             
               
             
@@ -179,6 +170,8 @@
             
               
             
+              
+            
           </a>
         </li>
       
@@ -189,6 +182,8 @@
             class="fg_c_nav-left__link "
           >
             <span>Form Design</span>
+            
+              
             
               
             
@@ -209,6 +204,25 @@
             
               
             
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="06_interruption-design.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Interruption Design</span>
+            
+              
+            
+              
+            
+              
+            
           </a>
         </li>
       
@@ -224,11 +238,11 @@
             
               
             
+              
+            
           </a>
         </li>
       
-    
-  
     
   
     
@@ -271,29 +285,38 @@
   .color-group--content .color-swatches__sass {
     display: none;
   }
-  .color-group--content .color-swatches > li {
+  .color-group--content .color-swatches .color-swatches__swatch {
     min-height: 100px;
   }
   .primitives .color-group {
-    margin-bottom: 0;
+    margin: 16px 0;
   }
   .fg_markdown .color-swatches {
     display: flex;
     flex-flow: row wrap;
     padding-left: 0;
+    margin: 0;
     color: rgb(51, 51, 51);
     line-height: normal;
   }
-  .color-swatches > li {
+  .color-swatches__column {
+    display: inline-flex;
+    flex-flow: column;
+    padding-left: 0;
+    margin-block-start: 0;
+  }
+  .color-swatches li {
     list-style-type: none;
+  }
+  .color-swatches__swatch {
     width:  155px;
     min-height: 120px;
     padding: 12px 14px;
   }
-  .fg_markdown .color-swatches > li::before {
+  .fg_markdown .color-swatches li::before {
     content: none;
   }
-  .color-swatches > li > div {
+  .color-swatches .color-swatches__swatch > div {
     margin: 2px 0;
   }
   .color-swatches__name {
@@ -302,8 +325,18 @@
     padding: 0;
     font-weight: bold;
   }
-  .primitives .color-swatches > li {
+  .primitives .color-swatches .color-swatches__swatch {
     min-height: 100px;
+  }
+  .data-vis-examples__img-wrapper {
+    margin-top: 10px;
+    margin-bottom: 17px;
+  }
+  .data-vis-examples__img-wrapper--colors {
+    max-width: 250px;
+  }
+  .data-vis-examples__img-wrapper--vis {
+    max-width: 350px;
   }
   .color-swatches__hex {
     font-size: 14px;
@@ -331,31 +364,31 @@
 <div class="color-group">
   <h4 id="palette-color-interaction" class="color-group__title">$color-interaction</h4>
   <ul class="color-swatches">
-    <li class="text-light" style="background-color:rgb(2, 117, 212);">
+    <li class="color-swatches__swatch text-light" style="background-color:rgb(4, 102, 180);">
       <h5 class="color-swatches__name">default</h5>
-      <div class="color-swatches__hex">#0275D4</div>
-      <div class="color-swatches__rgba">rgb(2, 117, 212)</div>
+      <div class="color-swatches__hex">#0466B4</div>
+      <div class="color-swatches__rgba">rgb(4, 102, 180)</div>
       <div class="color-swatches__sass">map-get($color-interaction, default)</div>
     </li>
-    <li class="text-light" style="background-color:rgb(4, 57, 97);">
+    <li class="color-swatches__swatch text-light" style="background-color:rgb(4, 57, 97);">
       <h5 class="color-swatches__name">select</h5>
       <div class="color-swatches__hex">#043961</div>
       <div class="color-swatches__rgba">rgb(4, 57, 97)</div>
       <div class="color-swatches__sass">map-get($color-interaction, select)</div>
     </li>
-    <li class="text-light" style="background-color:rgb(0, 84, 150);">
+    <li class="color-swatches__swatch text-light" style="background-color:rgb(0, 84, 150);">
       <h5 class="color-swatches__name">hover-dark</h5>
       <div class="color-swatches__hex">#005496</div>
       <div class="color-swatches__rgba">rgb(0, 84, 150)</div>
       <div class="color-swatches__sass">map-get($color-interaction, hover-dark)</div>
     </li>
-    <li class="" style="background-color:rgb(217, 235, 250);">
+    <li class="color-swatches__swatch" style="background-color:rgb(217, 235, 250);">
       <h5 class="color-swatches__name">hover</h5>
       <div class="color-swatches__hex">#D9EBFA</div>
       <div class="color-swatches__rgba">rgb(217, 235, 250)</div>
       <div class="color-swatches__sass">map-get($color-interaction, hover)</div>
     </li>
-    <li class="text-light" style="background-color:rgb(179, 179, 179);">
+    <li class="color-swatches__swatch text-light" style="background-color:rgb(179, 179, 179);">
       <h5 class="color-swatches__name">disabled</h5>
       <div class="color-swatches__hex">#B3B3B3</div>
       <div class="color-swatches__rgba">rgb(179, 179, 179)</div>
@@ -367,19 +400,19 @@
 <div class="color-group">
   <h4 id="palette-color-background" class="color-group__title">$color-background</h4>
   <ul class="color-swatches">
-    <li class=" bordered" style="background-color:rgb(255, 255, 255);">
+    <li class="color-swatches__swatch bordered" style="background-color:rgb(255, 255, 255);">
       <h5 class="color-swatches__name">default</h5>
       <div class="color-swatches__hex">#FFFFFF</div>
       <div class="color-swatches__rgba">rgb(255, 255, 255)</div>
       <div class="color-swatches__sass">map-get($color-background, default)</div>
     </li>
-    <li class="" style="background-color:rgb(217, 217, 217);">
+    <li class="color-swatches__swatch" style="background-color:rgb(217, 217, 217);">
       <h5 class="color-swatches__name">dark</h5>
       <div class="color-swatches__hex">#D9D9D9</div>
       <div class="color-swatches__rgba">rgb(217, 217, 217)</div>
       <div class="color-swatches__sass">map-get($color-background, dark)</div>
     </li>
-    <li class="" style="background-color:rgb(225, 225, 225);">
+    <li class="color-swatches__swatch" style="background-color:rgb(225, 225, 225);">
       <h5 class="color-swatches__name">light</h5>
       <div class="color-swatches__hex">#E1E1E1</div>
       <div class="color-swatches__rgba">rgb(225, 225, 225)</div>
@@ -391,31 +424,31 @@
 <div class="color-group">
   <h4 id="palette-color-border" class="color-group__title">$color-border</h4>
   <ul class="color-swatches">
-    <li class="text-light" style="background-color:rgb(179, 179, 179);">
+    <li class="color-swatches__swatch text-light" style="background-color:rgb(179, 179, 179);">
       <h5 class="color-swatches__name">default</h5>
       <div class="color-swatches__hex">#B3B3B3</div>
       <div class="color-swatches__rgba">rgb(179, 179, 179)</div>
       <div class="color-swatches__sass">map-get($color-border, default)</div>
     </li>
-    <li class="text-light" style="background-color:rgb(95, 95, 95);">
+    <li class="color-swatches__swatch text-light" style="background-color:rgb(95, 95, 95);">
       <h5 class="color-swatches__name">dark</h5>
       <div class="color-swatches__hex">#5F5F5F</div>
       <div class="color-swatches__rgba">rgb(95, 95, 95)</div>
       <div class="color-swatches__sass">map-get($color-border, dark)</div>
     </li>
-    <li class="" style="background-color:rgb(217, 217, 217);">
+    <li class="color-swatches__swatch" style="background-color:rgb(217, 217, 217);">
       <h5 class="color-swatches__name">light</h5>
       <div class="color-swatches__hex">#D9D9D9</div>
       <div class="color-swatches__rgba">rgb(217, 217, 217)</div>
       <div class="color-swatches__sass">map-get($color-border, light)</div>
     </li>
-    <li class="text-light" style="background-color:rgb(2, 117, 212);">
+    <li class="color-swatches__swatch text-light" style="background-color:rgb(4, 102, 180);">
       <h5 class="color-swatches__name">focus</h5>
-      <div class="color-swatches__hex">#0275D4</div>
-      <div class="color-swatches__rgba">rgb(2, 117, 212)</div>
+      <div class="color-swatches__hex">#0466B4</div>
+      <div class="color-swatches__rgba">rgb(4, 102, 180)</div>
       <div class="color-swatches__sass">map-get($color-border, focus)</div>
     </li>
-    <li class="" style="background-color:rgb(217, 235, 250);">
+    <li class="color-swatches__swatch" style="background-color:rgb(217, 235, 250);">
       <h5 class="color-swatches__name">focus-invert</h5>
       <div class="color-swatches__hex">#D9EBFA</div>
       <div class="color-swatches__rgba">rgb(217, 235, 250)</div>
@@ -427,19 +460,19 @@
 <div class="color-group">
   <h4 id="palette-color-brand" class="color-group__title">$color-brand</h4>
   <ul class="color-swatches">
-    <li class="text-light" style="background-color:rgb(97, 68, 118);">
+    <li class="color-swatches__swatch text-light" style="background-color:rgb(97, 68, 118);">
       <h5 class="color-swatches__name">default</h5>
       <div class="color-swatches__hex">#614476</div>
       <div class="color-swatches__rgba">rgb(97, 68, 118)</div>
       <div class="color-swatches__sass">map-get($color-brand, default)</div>
     </li>
-    <li class="text-light" style="background-color:rgb(67, 54, 77);">
+    <li class="color-swatches__swatch text-light" style="background-color:rgb(67, 54, 77);">
       <h5 class="color-swatches__name">dark</h5>
       <div class="color-swatches__hex">#43364D</div>
       <div class="color-swatches__rgba">rgb(67, 54, 77)</div>
       <div class="color-swatches__sass">map-get($color-brand, dark)</div>
     </li>
-    <li class="text-light" style="background-color:rgb(126, 88, 155);">
+    <li class="color-swatches__swatch text-light" style="background-color:rgb(126, 88, 155);">
       <h5 class="color-swatches__name">light</h5>
       <div class="color-swatches__hex">#7E589B</div>
       <div class="color-swatches__rgba">rgb(126, 88, 155)</div>
@@ -451,28 +484,28 @@
 <div class="color-group">
   <h4 id="palette-color-alert" class="color-group__title">$color-alert</h4>
   <ul class="color-swatches">
-    <li class="text-light" style="background-color:rgb(61, 149, 125);">
+    <li class="color-swatches__swatch text-light" style="background-color:rgb(17, 134, 71);">
       <h5 class="color-swatches__name">success</h5>
-      <div class="color-swatches__hex">#3D957D</div>
-      <div class="color-swatches__rgba">rgb(61, 149, 125)</div>
+      <div class="color-swatches__hex">#118647</div>
+      <div class="color-swatches__rgba">rgb(17, 134, 71)</div>
       <div class="color-swatches__sass">map-get($color-alert, success)</div>
     </li>
-    <li class="text-light" style="background-color:rgb(126, 88, 155);">
+    <li class="color-swatches__swatch text-light" style="background-color:rgb(126, 88, 155);">
       <h5 class="color-swatches__name">info</h5>
       <div class="color-swatches__hex">#7E589B</div>
       <div class="color-swatches__rgba">rgb(126, 88, 155)</div>
       <div class="color-swatches__sass">map-get($color-alert, info)</div>
     </li>
-    <li class="" style="background-color:rgb(255, 171, 0);">
+    <li class="color-swatches__swatch" style="background-color:rgb(255, 171, 0);">
       <h5 class="color-swatches__name">attention</h5>
       <div class="color-swatches__hex">#FFAB00</div>
       <div class="color-swatches__rgba">rgb(255, 171, 0)</div>
       <div class="color-swatches__sass">map-get($color-alert, attention)</div>
     </li>
-    <li class="text-light" style="background-color:rgb(247, 63, 63);">
+    <li class="color-swatches__swatch text-light" style="background-color:rgb(202, 13, 13);">
       <h5 class="color-swatches__name">critical</h5>
-      <div class="color-swatches__hex">#F73F3F</div>
-      <div class="color-swatches__rgba">rgb(247, 63, 63)</div>
+      <div class="color-swatches__hex">#CA0D0D</div>
+      <div class="color-swatches__rgba">rgb(202, 13, 13)</div>
       <div class="color-swatches__sass">map-get($color-alert, critical)</div>
     </li>
   </ul>
@@ -481,37 +514,37 @@
 <div class="color-group">
   <h4 id="palette-color-font" class="color-group__title">$color-font</h4>
   <ul class="color-swatches">
-    <li class="text-light" style="background-color:rgb(51, 51, 51);">
+    <li class="color-swatches__swatch text-light" style="background-color:rgb(51, 51, 51);">
       <h5 class="color-swatches__name">default</h5>
       <div class="color-swatches__hex">#333333</div>
       <div class="color-swatches__rgba">rgb(51, 51, 51)</div>
       <div class="color-swatches__sass">map-get($color-font, default)</div>
     </li>
-    <li class="text-light" style="background-color:rgb(0, 0, 0);">
+    <li class="color-swatches__swatch text-light" style="background-color:rgb(0, 0, 0);">
       <h5 class="color-swatches__name">dark</h5>
       <div class="color-swatches__hex">#000000</div>
       <div class="color-swatches__rgba">rgb(0, 0, 0)</div>
       <div class="color-swatches__sass">map-get($color-font, dark)</div>
     </li>
-    <li class="text-light" style="background-color:rgb(95, 95, 95);">
+    <li class="color-swatches__swatch text-light" style="background-color:rgb(95, 95, 95);">
       <h5 class="color-swatches__name">muted</h5>
       <div class="color-swatches__hex">#5F5F5F</div>
       <div class="color-swatches__rgba">rgb(95, 95, 95)</div>
       <div class="color-swatches__sass">map-get($color-font, muted)</div>
     </li>
-    <li class="text-light" style="background-color:rgb(128, 128, 128);">
+    <li class="color-swatches__swatch text-light" style="background-color:rgb(128, 128, 128);">
       <h5 class="color-swatches__name">light</h5>
       <div class="color-swatches__hex">#808080</div>
       <div class="color-swatches__rgba">rgb(128, 128, 128)</div>
       <div class="color-swatches__sass">map-get($color-font, light)</div>
     </li>
-    <li class="" style="background-color:rgb(179, 179, 179);">
+    <li class="color-swatches__swatch" style="background-color:rgb(179, 179, 179);">
       <h5 class="color-swatches__name">disabled</h5>
       <div class="color-swatches__hex">#B3B3B3</div>
       <div class="color-swatches__rgba">rgb(179, 179, 179)</div>
       <div class="color-swatches__sass">map-get($color-font, disabled)</div>
     </li>
-    <li class=" bordered" style="background-color:rgb(255, 255, 255);">
+    <li class="color-swatches__swatch bordered" style="background-color:rgb(255, 255, 255);">
       <h5 class="color-swatches__name">invert</h5>
       <div class="color-swatches__hex">#FFFFFF</div>
       <div class="color-swatches__rgba">rgb(255, 255, 255)</div>
@@ -523,12 +556,12 @@
 <div class="color-group">
   <h4 id="palette-color-shadow" class="color-group__title">$color-shadow</h4>
   <ul class="color-swatches">
-    <li style="background-color:rgba(0, 0, 0, 0.25);">
+    <li class="color-swatches__swatch" style="background-color:rgba(0, 0, 0, 0.25);">
       <h5 class="color-swatches__name">default</h5>
       <div class="color-swatches__rgba">rgba(0, 0, 0, 0.25)</div>
       <div class="color-swatches__sass">map-get($color-shadow, default)</div>
     </li>
-    <li class="text-light" style="background-color:rgba(0, 0, 0, 0.4);">
+    <li class="color-swatches__swatch text-light" style="background-color:rgba(0, 0, 0, 0.4);">
       <h5 class="color-swatches__name">dark</h5>
       <div class="color-swatches__rgba">rgba(0, 0, 0, 0.4)</div>
       <div class="color-swatches__sass">map-get($color-shadow, dark)</div>
@@ -536,14 +569,189 @@
   </ul>
 </div>
 
+<div class="color-group">
+  <h4 id="palette-color-secondary" class="color-group__title">$color-secondary</h4>
+  <ul class="color-swatches">
+    <li>
+      <ul class="color-swatches__column">
+        <li class="color-swatches__swatch" style="background-color:rgba(209, 219, 186);">
+          <h5 class="color-swatches__name">green-100</h5>
+          <div class="color-swatches__rgba">rgb(209, 219, 186)</div>
+          <div class="color-swatches__sass">map-get($color-secondary, green-100)</div>
+        </li>
+        <li class="color-swatches__swatch" style="background-color:rgba(240, 207, 132);">
+          <h5 class="color-swatches__name">yellow-100</h5>
+          <div class="color-swatches__rgba">rgb(240, 207, 132)</div>
+          <div class="color-swatches__sass">map-get($color-secondary, yellow-100)</div>
+        </li>
+        <li class="color-swatches__swatch" style="background-color:rgba(237, 134, 100);">
+          <h5 class="color-swatches__name">orange-100</h5>
+          <div class="color-swatches__rgba">rgb(237, 134, 100)</div>
+          <div class="color-swatches__sass">map-get($color-secondary, orange-default)</div>
+        </li>
+        <li class="color-swatches__swatch" style="background-color:rgba(49, 176, 172);">
+          <h5 class="color-swatches__name">teal-100</h5>
+          <div class="color-swatches__rgba">rgb(49, 176, 172)</div>
+          <div class="color-swatches__sass">map-get($color-secondary, teal-100)</div>
+        </li>
+        <li class="color-swatches__swatch text-light" style="background-color:rgba(29, 122, 173);">
+          <h5 class="color-swatches__name">blue-100</h5>
+          <div class="color-swatches__rgba">rgb(29, 122, 173)</div>
+          <div class="color-swatches__sass">map-get($color-secondary, blue-100)</div>
+        </li>
+        <li class="color-swatches__swatch text-light" style="background-color:rgba(79, 64, 92);">
+          <h5 class="color-swatches__name">purple-100</h5>
+          <div class="color-swatches__rgba">rgb(79, 64, 92)</div>
+          <div class="color-swatches__sass">map-get($color-secondary, purple-100)</div>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <ul class="color-swatches__column">
+        <li class="color-swatches__swatch" style="background-color:rgba(221, 228, 204);">
+          <h5 class="color-swatches__name">green-75</h5>
+          <div class="color-swatches__rgba">rgb(221, 228, 204)</div>
+          <div class="color-swatches__sass">map-get($color-secondary, green-75)</div>
+        </li>
+        <li class="color-swatches__swatch" style="background-color:rgba(244, 219, 163);">
+          <h5 class="color-swatches__name">yellow-75</h5>
+          <div class="color-swatches__rgba">rgb(244, 219, 163)</div>
+          <div class="color-swatches__sass">map-get($color-secondary, yellow-75)</div>
+        </li>
+        <li class="color-swatches__swatch" style="background-color:rgba(242, 165, 139);">
+          <h5 class="color-swatches__name">orange-75</h5>
+          <div class="color-swatches__rgba">rgb(242, 165, 139)</div>
+          <div class="color-swatches__sass">map-get($color-secondary, orange-75)</div>
+        </li>
+        <li class="color-swatches__swatch" style="background-color:rgba(100, 196, 193);">
+          <h5 class="color-swatches__name">teal-75</h5>
+          <div class="color-swatches__rgba">rgb(10, 196, 193)</div>
+          <div class="color-swatches__sass">map-get($color-secondary, teal-75)</div>
+        </li>
+        <li class="color-swatches__swatch" style="background-color:rgba(86, 156, 194);">
+          <h5 class="color-swatches__name">blue-75</h5>
+          <div class="color-swatches__rgba">rgb(86, 156, 194)</div>
+          <div class="color-swatches__sass">map-get($color-secondary, blue-75)</div>
+        </li>
+        <li class="color-swatches__swatch text-light" style="background-color:rgba(123, 112, 133);">
+          <h5 class="color-swatches__name">purple-75</h5>
+          <div class="color-swatches__rgba">rgb(123, 112, 133)</div>
+          <div class="color-swatches__sass">map-get($color-secondary, purple-75)</div>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <ul class="color-swatches__column">
+        <li class="color-swatches__swatch" style="background-color:rgba(232, 237, 220);">
+          <h5 class="color-swatches__name">green-50</h5>
+          <div class="color-swatches__rgba">rgb(232, 237, 220)</div>
+          <div class="color-swatches__sass">map-get($color-secondary, green-50)</div>
+        </li>
+        <li class="color-swatches__swatch" style="background-color:rgba(247, 231, 193);">
+          <h5 class="color-swatches__name">yellow-50</h5>
+          <div class="color-swatches__rgba">rgb(247, 231, 193)</div>
+          <div class="color-swatches__sass">map-get($color-secondary, yellow-50)</div>
+        </li>
+        <li class="color-swatches__swatch" style="background-color:rgba(246, 194, 177);">
+          <h5 class="color-swatches__name">orange-50</h5>
+          <div class="color-swatches__rgba">rgb(246, 194, 177)</div>
+          <div class="color-swatches__sass">map-get($color-secondary, orange-50)</div>
+        </li>
+        <li class="color-swatches__swatch" style="background-color:rgba(152, 215, 213);">
+          <h5 class="color-swatches__name">teal-50</h5>
+          <div class="color-swatches__rgba">rgb(152, 215, 213)</div>
+          <div class="color-swatches__sass">map-get($color-secondary, teal-50)</div>
+        </li>
+        <li class="color-swatches__swatch" style="background-color:rgba(142, 188, 214);">
+          <h5 class="color-swatches__name">blue-50</h5>
+          <div class="color-swatches__rgba">rgb(142, 188, 214)</div>
+          <div class="color-swatches__sass">map-get($color-secondary, blue-50)</div>
+        </li>
+        <li class="color-swatches__swatch" style="background-color:rgba(167, 158, 173);">
+          <h5 class="color-swatches__name">purple-50</h5>
+          <div class="color-swatches__rgba">rgb(167, 158, 173)</div>
+          <div class="color-swatches__sass">map-get($color-secondary, purple-50)</div>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <ul class="color-swatches__column">
+        <li class="color-swatches__swatch" style="background-color:rgba(243, 246, 238);">
+          <h5 class="color-swatches__name">green-25</h5>
+          <div class="color-swatches__rgba">rgb(243, 246, 238)</div>
+          <div class="color-swatches__sass">map-get($color-secondary, green-25)</div>
+        </li>
+        <li class="color-swatches__swatch" style="background-color:rgba(251, 243, 224);">
+          <h5 class="color-swatches__name">yellow-25</h5>
+          <div class="color-swatches__rgba">rgb(251, 243, 224)</div>
+          <div class="color-swatches__sass">map-get($color-secondary, yellow-25)</div>
+        </li>
+        <li class="color-swatches__swatch" style="background-color:rgba(250, 225, 217);">
+          <h5 class="color-swatches__name">orange-25</h5>
+          <div class="color-swatches__rgba">rgb(250, 225, 217)</div>
+          <div class="color-swatches__sass">map-get($color-secondary, orange-25)</div>
+        </li>
+        <li class="color-swatches__swatch" style="background-color:rgba(203, 235, 234);">
+          <h5 class="color-swatches__name">teal-25</h5>
+          <div class="color-swatches__rgba">rgb(203, 235, 234)</div>
+          <div class="color-swatches__sass">map-get($color-secondary, teal-25)</div>
+        </li>
+        <li class="color-swatches__swatch" style="background-color:rgba(198, 222, 234);">
+          <h5 class="color-swatches__name">blue-25</h5>
+          <div class="color-swatches__rgba">rgb(198, 222, 234)</div>
+          <div class="color-swatches__sass">map-get($color-secondary, blue-25)</div>
+        </li>
+        <li class="color-swatches__swatch" style="background-color:rgba(211, 207, 214);">
+          <h5 class="color-swatches__name">purple-25</h5>
+          <div class="color-swatches__rgba">rgb(211, 207, 214)</div>
+          <div class="color-swatches__sass">map-get($color-secondary, purple-25)</div>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <ul class="color-swatches__column">
+        <li class="color-swatches__swatch" style="background-color:rgba(250, 251, 248);">
+          <h5 class="color-swatches__name">green-10</h5>
+          <div class="color-swatches__rgba">rgb(250, 251, 248)</div>
+          <div class="color-swatches__sass">map-get($color-secondary, green-10)</div>
+        </li>
+        <li class="color-swatches__swatch" style="background-color:rgba(253, 250, 242);">
+          <h5 class="color-swatches__name">yellow-10</h5>
+          <div class="color-swatches__rgba">rgb(253, 250, 242)</div>
+          <div class="color-swatches__sass">map-get($color-secondary, yellow-10)</div>
+        </li>
+        <li class="color-swatches__swatch" style="background-color:rgba(253, 242, 239);">
+          <h5 class="color-swatches__name">orange-10</h5>
+          <div class="color-swatches__rgba">rgb(253, 242, 239)</div>
+          <div class="color-swatches__sass">map-get($color-secondary, orange-10)</div>
+        </li>
+        <li class="color-swatches__swatch" style="background-color:rgba(234, 247, 246);">
+          <h5 class="color-swatches__name">teal-10</h5>
+          <div class="color-swatches__rgba">rgb(234, 247, 246)</div>
+          <div class="color-swatches__sass">map-get($color-secondary, teal-10)</div>
+        </li>
+        <li class="color-swatches__swatch" style="background-color:rgba(232, 241, 246);">
+          <h5 class="color-swatches__name">blue-10</h5>
+          <div class="color-swatches__rgba">rgb(232, 241, 246)</div>
+          <div class="color-swatches__sass">map-get($color-secondary, blue-10)</div>
+        </li>
+        <li class="color-swatches__swatch" style="background-color:rgba(237, 235, 238);">
+          <h5 class="color-swatches__name">purple-10</h5>
+          <div class="color-swatches__rgba">rgb(237, 235, 238)</div>
+          <div class="color-swatches__sass">map-get($color-secondary, purple-10)</div>
+        </li>
+      </ul>
+    </li>
+</div>
+
 <h2 id="how-to-read-and-use-the-color-swatches">How to Read and Use the Color Swatches</h2>
 <p>The colors on this page are categorized by specific use cases meant to provide a consistent visual aesthetic to components and pages. To facilitate discussion between design and development, design specifications should always refer to the semantic name rather than the HEX or RGB values.</p>
 <p><strong>$color-interaction</strong> ← <a href="http://sass-lang.com/documentation/file.SASS_REFERENCE.html#maps">SASS map name</a></p>
 <ul class="color-swatches color-swatches--example">
-    <li class="text-light" style="background-color:rgb(2, 117, 212);">
+    <li class="color-swatches__swatch text-light" style="background-color:rgb(4, 102, 180);">
       <h5 class="color-swatches__name">default</h5>
-      <div class="color-swatches__hex">#0275D4</div>
-      <div class="color-swatches__rgba">rgb(2, 117, 212)</div>
+      <div class="color-swatches__hex">#0466B4</div>
+      <div class="color-swatches__rgba">rgb(4, 102, 180)</div>
       <div class="color-swatches__sass">map-get($color-interaction, default)</div>
     </li>
     <li style="width:250px;">
@@ -578,31 +786,31 @@
 <div class="color-group color-group--content">
   <h4 id="palette-color-interaction" class="color-group__title">$color-interaction</h4>
   <ul class="color-swatches">
-    <li class="text-light" style="background-color:rgb(2, 117, 212);">
+    <li class="color-swatches__swatch text-light" style="background-color:rgb(4, 102, 180);">
       <h5 class="color-swatches__name">default</h5>
-      <div class="color-swatches__hex">#0275D4</div>
-      <div class="color-swatches__rgba">rgb(2, 117, 212)</div>
+      <div class="color-swatches__hex">#0466B4</div>
+      <div class="color-swatches__rgba">rgb(4, 102, 180)</div>
       <div class="color-swatches__sass">map-get($color-interaction, default)</div>
     </li>
-    <li class="text-light" style="background-color:rgb(4, 57, 97);">
+    <li class="color-swatches__swatch text-light" style="background-color:rgb(4, 57, 97);">
       <h5 class="color-swatches__name">select</h5>
       <div class="color-swatches__hex">#043961</div>
       <div class="color-swatches__rgba">rgb(4, 57, 97)</div>
       <div class="color-swatches__sass">map-get($color-interaction, select)</div>
     </li>
-    <li class="text-light" style="background-color:rgb(0, 84, 150);">
+    <li class="color-swatches__swatch text-light" style="background-color:rgb(0, 84, 150);">
       <h5 class="color-swatches__name">hover-dark</h5>
       <div class="color-swatches__hex">#005496</div>
       <div class="color-swatches__rgba">rgb(0, 84, 150)</div>
       <div class="color-swatches__sass">map-get($color-interaction, hover-dark)</div>
     </li>
-    <li class="" style="background-color:rgb(217, 235, 250);">
+    <li class="color-swatches__swatch" style="background-color:rgb(217, 235, 250);">
       <h5 class="color-swatches__name">hover</h5>
       <div class="color-swatches__hex">#D9EBFA</div>
       <div class="color-swatches__rgba">rgb(217, 235, 250)</div>
       <div class="color-swatches__sass">map-get($color-interaction, hover)</div>
     </li>
-    <li class="" style="background-color:rgb(179, 179, 179);">
+    <li class="color-swatches__swatch" style="background-color:rgb(179, 179, 179);">
       <h5 class="color-swatches__name">disabled</h5>
       <div class="color-swatches__hex">#B3B3B3</div>
       <div class="color-swatches__rgba">rgb(179, 179, 179)</div>
@@ -617,19 +825,19 @@
 <div class="color-group color-group--content">
   <h4 id="palette-color-background" class="color-group__title">$color-background</h4>
   <ul class="color-swatches">
-    <li class=" bordered" style="background-color:rgb(255, 255, 255);">
+    <li class="color-swatches__swatch bordered" style="background-color:rgb(255, 255, 255);">
       <h5 class="color-swatches__name">default</h5>
       <div class="color-swatches__hex">#FFFFFF</div>
       <div class="color-swatches__rgba">rgb(255, 255, 255)</div>
       <div class="color-swatches__sass">map-get($color-background, default)</div>
     </li>
-    <li class="" style="background-color:rgb(217, 217, 217);">
+    <li class="color-swatches__swatch" style="background-color:rgb(217, 217, 217);">
       <h5 class="color-swatches__name">dark</h5>
       <div class="color-swatches__hex">#D9D9D9</div>
       <div class="color-swatches__rgba">rgb(217, 217, 217)</div>
       <div class="color-swatches__sass">map-get($color-background, dark)</div>
     </li>
-    <li class="" style="background-color:rgb(225, 225, 225);">
+    <li class="color-swatches__swatch" style="background-color:rgb(225, 225, 225);">
       <h5 class="color-swatches__name">light</h5>
       <div class="color-swatches__hex">#E1E1E1</div>
       <div class="color-swatches__rgba">rgb(225, 225, 225)</div>
@@ -642,31 +850,31 @@
 <div class="color-group color-group--content">
   <h4 id="palette-color-border" class="color-group__title">$color-border</h4>
   <ul class="color-swatches">
-    <li class="text-light" style="background-color:rgb(179, 179, 179);">
+    <li class="color-swatches__swatch text-light" style="background-color:rgb(179, 179, 179);">
       <h5 class="color-swatches__name">default</h5>
       <div class="color-swatches__hex">#B3B3B3</div>
       <div class="color-swatches__rgba">rgb(179, 179, 179)</div>
       <div class="color-swatches__sass">map-get($color-border, default)</div>
     </li>
-    <li class="text-light" style="background-color:rgb(95, 95, 95);">
+    <li class="color-swatches__swatch text-light" style="background-color:rgb(95, 95, 95);">
       <h5 class="color-swatches__name">dark</h5>
       <div class="color-swatches__hex">#5F5F5F</div>
       <div class="color-swatches__rgba">rgb(95, 95, 95)</div>
       <div class="color-swatches__sass">map-get($color-border, dark)</div>
     </li>
-    <li class="" style="background-color:rgb(217, 217, 217);">
+    <li class="color-swatches__swatch" style="background-color:rgb(217, 217, 217);">
       <h5 class="color-swatches__name">light</h5>
       <div class="color-swatches__hex">#D9D9D9</div>
       <div class="color-swatches__rgba">rgb(217, 217, 217)</div>
       <div class="color-swatches__sass">map-get($color-border, light)</div>
     </li>
-    <li class="text-light" style="background-color:rgb(2, 117, 212);">
+    <li class="color-swatches__swatch text-light" style="background-color:rgb(4, 102, 180);">
       <h5 class="color-swatches__name">focus</h5>
-      <div class="color-swatches__hex">#0275D4</div>
-      <div class="color-swatches__rgba">rgb(2, 117, 212)</div>
+      <div class="color-swatches__hex">#0466B4</div>
+      <div class="color-swatches__rgba">rgb(4, 102, 180)</div>
       <div class="color-swatches__sass">map-get($color-border, focus)</div>
     </li>
-    <li class="" style="background-color:rgb(217, 235, 250);">
+    <li class="color-swatches__swatch" style="background-color:rgb(217, 235, 250);">
       <h5 class="color-swatches__name">focus-invert</h5>
       <div class="color-swatches__hex">#D9EBFA</div>
       <div class="color-swatches__rgba">rgb(217, 235, 250)</div>
@@ -680,19 +888,19 @@
 <div class="color-group color-group--content">
   <h4 id="palette-color-brand" class="color-group__title">$color-brand</h4>
   <ul class="color-swatches">
-    <li class="text-light" style="background-color:rgb(97, 68, 118);">
+    <li class="color-swatches__swatch text-light" style="background-color:rgb(97, 68, 118);">
       <h5 class="color-swatches__name">default</h5>
       <div class="color-swatches__hex">#614476</div>
       <div class="color-swatches__rgba">rgb(97, 68, 118)</div>
       <div class="color-swatches__sass">map-get($color-brand, default)</div>
     </li>
-    <li class="text-light" style="background-color:rgb(67, 54, 77);">
+    <li class="color-swatches__swatch text-light" style="background-color:rgb(67, 54, 77);">
       <h5 class="color-swatches__name">dark</h5>
       <div class="color-swatches__hex">#43364D</div>
       <div class="color-swatches__rgba">rgb(67, 54, 77)</div>
       <div class="color-swatches__sass">map-get($color-brand, dark)</div>
     </li>
-    <li class="text-light" style="background-color:rgb(126, 88, 155);">
+    <li class="color-swatches__swatch text-light" style="background-color:rgb(126, 88, 155);">
       <h5 class="color-swatches__name">light</h5>
       <div class="color-swatches__hex">#7E589B</div>
       <div class="color-swatches__rgba">rgb(126, 88, 155)</div>
@@ -706,28 +914,28 @@
 <div class="color-group color-group--content">
   <h4 id="palette-color-alert" class="color-group__title">$color-alert</h4>
   <ul class="color-swatches">
-    <li class="text-light" style="background-color:rgb(61, 149, 125);">
+    <li class="color-swatches__swatch text-light" style="background-color:rgb(17, 134, 71);">
       <h5 class="color-swatches__name">success</h5>
-      <div class="color-swatches__hex">#3D957D</div>
-      <div class="color-swatches__rgba">rgb(61, 149, 125)</div>
+      <div class="color-swatches__hex">#118647</div>
+      <div class="color-swatches__rgba">rgb(17, 134, 71)</div>
       <div class="color-swatches__sass">map-get($color-alert, success)</div>
     </li>
-    <li class="text-light" style="background-color:rgb(126, 88, 155);">
+    <li class="color-swatches__swatch text-light" style="background-color:rgb(126, 88, 155);">
       <h5 class="color-swatches__name">info</h5>
       <div class="color-swatches__hex">#7E589B</div>
       <div class="color-swatches__rgba">rgb(126, 88, 155)</div>
       <div class="color-swatches__sass">map-get($color-alert, info)</div>
     </li>
-    <li class="" style="background-color:rgb(255, 171, 0);">
+    <li class="color-swatches__swatch" style="background-color:rgb(255, 171, 0);">
       <h5 class="color-swatches__name">attention</h5>
       <div class="color-swatches__hex">#FFAB00</div>
       <div class="color-swatches__rgba">rgb(255, 171, 0)</div>
       <div class="color-swatches__sass">map-get($color-alert, attention)</div>
     </li>
-    <li class="text-light" style="background-color:rgb(247, 63, 63);">
+    <li class="color-swatches__swatch text-light" style="background-color:rgb(202, 13, 13);">
       <h5 class="color-swatches__name">critical</h5>
-      <div class="color-swatches__hex">#F73F3F</div>
-      <div class="color-swatches__rgba">rgb(247, 63, 63)</div>
+      <div class="color-swatches__hex">#CA0D0D</div>
+      <div class="color-swatches__rgba">rgb(202, 13, 13)</div>
       <div class="color-swatches__sass">map-get($color-alert, critical)</div>
     </li>
   </ul>
@@ -738,37 +946,37 @@
 <div class="color-group color-group--content">
   <h4 id="palette-color-font" class="color-group__title">$color-font</h4>
   <ul class="color-swatches">
-    <li class="text-light" style="background-color:rgb(51, 51, 51);">
+    <li class="color-swatches__swatch text-light" style="background-color:rgb(51, 51, 51);">
       <h5 class="color-swatches__name">default</h5>
       <div class="color-swatches__hex">#333333</div>
       <div class="color-swatches__rgba">rgb(51, 51, 51)</div>
       <div class="color-swatches__sass">map-get($color-font, default)</div>
     </li>
-    <li class="text-light" style="background-color:rgb(0, 0, 0);">
+    <li class="color-swatches__swatch text-light" style="background-color:rgb(0, 0, 0);">
       <h5 class="color-swatches__name">dark</h5>
       <div class="color-swatches__hex">#000000</div>
       <div class="color-swatches__rgba">rgb(0, 0, 0)</div>
       <div class="color-swatches__sass">map-get($color-font, dark)</div>
     </li>
-    <li class="text-light" style="background-color:rgb(95, 95, 95);">
+    <li class="color-swatches__swatch text-light" style="background-color:rgb(95, 95, 95);">
       <h5 class="color-swatches__name">muted</h5>
       <div class="color-swatches__hex">#5F5F5F</div>
       <div class="color-swatches__rgba">rgb(95, 95, 95)</div>
       <div class="color-swatches__sass">map-get($color-font, muted)</div>
     </li>
-    <li class="text-light" style="background-color:rgb(128, 128, 128);">
+    <li class="color-swatches__swatch text-light" style="background-color:rgb(128, 128, 128);">
       <h5 class="color-swatches__name">light</h5>
       <div class="color-swatches__hex">#808080</div>
       <div class="color-swatches__rgba">rgb(128, 128, 128)</div>
       <div class="color-swatches__sass">map-get($color-font, light)</div>
     </li>
-    <li class="" style="background-color:rgb(179, 179, 179);">
+    <li class="color-swatches__swatch" style="background-color:rgb(179, 179, 179);">
       <h5 class="color-swatches__name">disabled</h5>
       <div class="color-swatches__hex">#B3B3B3</div>
       <div class="color-swatches__rgba">rgb(179, 179, 179)</div>
       <div class="color-swatches__sass">map-get($color-font, disabled)</div>
     </li>
-    <li class=" bordered" style="background-color:rgb(255, 255, 255);">
+    <li class="color-swatches__swatch bordered" style="background-color:rgb(255, 255, 255);">
       <h5 class="color-swatches__name">invert</h5>
       <div class="color-swatches__hex">#FFFFFF</div>
       <div class="color-swatches__rgba">rgb(255, 255, 255)</div>
@@ -782,12 +990,12 @@
 <div class="color-group color-group--content">
   <h4 id="palette-color-shadow" class="color-group__title">$color-shadow</h4>
   <ul class="color-swatches">
-    <li style="background-color:rgba(0, 0, 0, 0.25);">
+    <li class="color-swatches__swatch" style="background-color:rgba(0, 0, 0, 0.25);">
       <h5 class="color-swatches__name">default</h5>
       <div class="color-swatches__rgba">rgba(0, 0, 0, 0.25)</div>
       <div class="color-swatches__sass">map-get($color-shadow, default)</div>
     </li>
-    <li class="text-light" style="background-color:rgba(0, 0, 0, 0.4);">
+    <li class="color-swatches__swatch text-light" style="background-color:rgba(0, 0, 0, 0.4);">
       <h5 class="color-swatches__name">dark</h5>
       <div class="color-swatches__rgba">rgba(0, 0, 0, 0.4)</div>
       <div class="color-swatches__sass">map-get($color-shadow, dark)</div>
@@ -795,47 +1003,427 @@
   </ul>
 </div>
 
+<h3 id="categorical-data">Categorical Data</h3>
+<p>Categorical Data is described as discrete chunks of data that don&#39;t have a specific order. Use the full-saturation secondary color palette to represent this type of data.</p>
+<div class="color-group">
+  <ul class="color-swatches">
+    <li class="color-swatches__swatch" style="background-color:rgba(209, 219, 186);">
+      <h5 class="color-swatches__name">$green-secondary-100</h5>
+      <div class="color-swatches__hex">#D1DBB0</div>
+      <div class="color-swatches__rgba">rgb(209, 219, 186)</div>
+    </li>
+    <li class="color-swatches__swatch" style="background-color:rgba(240, 207, 132);">
+      <h5 class="color-swatches__name">$yellow-secondary-100</h5>
+      <div class="color-swatches__hex">#F0CF84</div>
+      <div class="color-swatches__rgba">rgb(240, 207, 132)</div>
+    </li>
+    <li class="color-swatches__swatch" style="background-color:rgba(237, 134, 100);">
+      <h5 class="color-swatches__name">$orange-secondary-100</h5>
+      <div class="color-swatches__hex">#ED8664</div>
+      <div class="color-swatches__rgba">rgb(237, 134, 100)</div>
+    </li>
+    <li class="color-swatches__swatch" style="background-color:rgba(49, 176, 172);">
+      <h5 class="color-swatches__name">$teal-secondary-100</h5>
+      <div class="color-swatches__hex">#31B0AC</div>
+      <div class="color-swatches__rgba">rgb(49, 176, 172)</div>
+    </li>
+    <li class="color-swatches__swatch text-light" style="background-color:rgba(29, 122, 173);">
+      <h5 class="color-swatches__name">$blue-secondary-100</h5>
+      <div class="color-swatches__hex">#1D7AAD</div>
+      <div class="color-swatches__rgba">rgb(29, 122, 173)</div>
+    </li>
+    <li class="color-swatches__swatch text-light" style="background-color:rgba(79, 64, 92);">
+      <h5 class="color-swatches__name">$purple-secondary-100</h5>
+      <div class="color-swatches__hex">#4F405C</div>
+      <div class="color-swatches__rgba">rgb(79, 64, 92)</div>
+    </li>
+  </ul>
+</div>
+
+<h3 id="sequential-data">Sequential Data</h3>
+<p>Sequential data is single variable data with a range of values. It is best represented using a single color at varying degrees of lightness.</p>
+<div class="primitives">
+  <div class="color-group">
+    <ul class="color-swatches">
+      <li class="color-swatches__swatch" style="background-color:rgba(209, 219, 186);">
+        <h5 class="color-swatches__name">$green-secondary-100</h5>
+        <div class="color-swatches__hex">#D1DBB0</div>
+        <div class="color-swatches__rgba">rgb(209, 219, 186)</div>
+      </li>
+      <li class="color-swatches__swatch" style="background-color:rgba(221, 228, 204);">
+        <h5 class="color-swatches__name">$green-secondary-75</h5>
+        <div class="color-swatches__hex">#DDE4CC</div>
+        <div class="color-swatches__rgba">rgb(221, 228, 204)</div>
+      </li>
+      <li class="color-swatches__swatch" style="background-color:rgba(232, 237, 220);">
+        <h5 class="color-swatches__name">$green-secondary-50</h5>
+        <div class="color-swatches__hex">#E8EDDC</div>
+        <div class="color-swatches__rgba">rgb(232, 237, 220)</div>
+      </li>
+      <li class="color-swatches__swatch" style="background-color:rgba(243, 246, 238);">
+        <h5 class="color-swatches__name">$green-secondary-25</h5>
+        <div class="color-swatches__hex">#F3F6EE</div>
+        <div class="color-swatches__rgba">rgb(243, 246, 238)</div>
+      </li>
+      <li class="color-swatches__swatch" style="background-color:rgba(250, 251, 248);">
+        <h5 class="color-swatches__name">$green-secondary-10</h5>
+        <div class="color-swatches__hex">#FAFBF8</div>
+        <div class="color-swatches__rgba">rgb(250, 251, 248)</div>
+      </li>
+    </ul>
+  </div>
+  <div class="color-group">
+    <ul class="color-swatches">
+      <li class="color-swatches__swatch" style="background-color:rgba(240, 207, 132);">
+        <h5 class="color-swatches__name">$yellow-secondary-100</h5>
+        <div class="color-swatches__hex">#F0CF84</div>
+        <div class="color-swatches__rgba">rgb(240, 207, 132)</div>
+      </li>
+      <li class="color-swatches__swatch" style="background-color:rgba(244, 219, 163);">
+        <h5 class="color-swatches__name">$yellow-secondary-75</h5>
+        <div class="color-swatches__hex">#F4DBA3</div>
+        <div class="color-swatches__rgba">rgb(244, 219, 163)</div>
+      </li>
+      <li class="color-swatches__swatch" style="background-color:rgba(247, 231, 193);">
+        <h5 class="color-swatches__name">#yellow-secondary-50</h5>
+        <div class="color-swatches__hex">#F7E7C1</div>
+        <div class="color-swatches__rgba">rgb(247, 231, 193)</div>
+      </li>
+      <li class="color-swatches__swatch" style="background-color:rgba(251, 243, 224);">
+        <h5 class="color-swatches__name">$yellow-secondary-25</h5>
+        <div class="color-swatches__hex">#FBF3E0</div>
+        <div class="color-swatches__rgba">rgb(251, 243, 224)</div>
+      </li>
+      <li class="color-swatches__swatch" style="background-color:rgba(253, 250, 242);">
+        <h5 class="color-swatches__name">$yellow-secondary-10</h5>
+        <div class="color-swatches__hex">#FDFAF2</div>
+        <div class="color-swatches__rgba">rgb(253, 250, 242)</div>
+      </li>
+    </ul>
+  </div>
+  <div class="color-group">
+    <ul class="color-swatches">
+      <li class="color-swatches__swatch" style="background-color:rgba(237, 134, 100);">
+        <h5 class="color-swatches__name">$orange-secondary-100</h5>
+        <div class="color-swatches__hex">#ED8664</div>
+        <div class="color-swatches__rgba">rgb(237, 134, 100)</div>
+      </li>
+      <li class="color-swatches__swatch" style="background-color:rgba(242, 165, 139);">
+        <h5 class="color-swatches__name">$orange-secondary-75</h5>
+        <div class="color-swatches__hex">#F2A58B</div>
+        <div class="color-swatches__rgba">rgb(242, 165, 139)</div>
+      </li>
+      <li class="color-swatches__swatch" style="background-color:rgba(246, 194, 177);">
+        <h5 class="color-swatches__name">$orange-secondary-50</h5>
+        <div class="color-swatches__hex">#F6C2B1</div>
+        <div class="color-swatches__rgba">rgb(246, 194, 177)</div>
+      </li>
+      <li class="color-swatches__swatch" style="background-color:rgba(250, 225, 217);">
+        <h5 class="color-swatches__name">$orange-secondary-25</h5>
+        <div class="color-swatches__hex">#FAE1D9</div>
+        <div class="color-swatches__rgba">rgb(250, 225, 217)</div>
+      </li>
+      <li class="color-swatches__swatch" style="background-color:rgba(253, 242, 239);">
+        <h5 class="color-swatches__name">$orange-secondary-10</h5>
+        <div class="color-swatches__hex">#FDF2EF</div>
+        <div class="color-swatches__rgba">rgb(253, 242, 239)</div>
+      </li>
+    </ul>
+  </div>
+  <div class="color-group">
+    <ul class="color-swatches">
+      <li class="color-swatches__swatch" style="background-color:rgba(49, 176, 172);">
+        <h5 class="color-swatches__name">$teal-secondary-100</h5>
+        <div class="color-swatches__hex">#31B0AC</div>
+        <div class="color-swatches__rgba">rgb(49, 176, 172)</div>
+      </li>
+      <li class="color-swatches__swatch" style="background-color:rgba(100, 196, 193);">
+        <h5 class="color-swatches__name">$teal-secondary-75</h5>
+        <div class="color-swatches__hex">#64C4C1</div>
+        <div class="color-swatches__rgba">rgb(10, 196, 193)</div>
+      </li>
+      <li class="color-swatches__swatch" style="background-color:rgba(152, 215, 213);">
+        <h5 class="color-swatches__name">$teal-secondary-50</h5>
+        <div class="color-swatches__hex">#98D7D5</div>
+        <div class="color-swatches__rgba">rgb(152, 215, 213)</div>
+      </li>
+      <li class="color-swatches__swatch" style="background-color:rgba(203, 235, 234);">
+        <h5 class="color-swatches__name">$teal-secondary-25</h5>
+        <div class="color-swatches__hex">#CBEBEA</div>
+        <div class="color-swatches__rgba">rgb(203, 235, 234)</div>
+      </li>
+      <li class="color-swatches__swatch" style="background-color:rgba(234, 247, 246);">
+        <h5 class="color-swatches__name">$teal-secondary-10</h5>
+        <div class="color-swatches__hex">#EAF7F6</div>
+        <div class="color-swatches__rgba">rgb(234, 247, 246)</div>
+      </li>
+    </ul>
+  </div>
+  <div class="color-group">
+    <ul class="color-swatches">
+      <li class="color-swatches__swatch text-light" style="background-color:rgba(29, 122, 173);">
+        <h5 class="color-swatches__name">$blue-secondary-100</h5>
+        <div class="color-swatches__hex">#1D7AAD</div>
+        <div class="color-swatches__rgba">rgb(29, 122, 173)</div>
+      </li>
+      <li class="color-swatches__swatch" style="background-color:rgba(105, 163, 194);">
+        <h5 class="color-swatches__name">$blue-secondary-75</h5>
+        <div class="color-swatches__hex">#569CC2</div>
+        <div class="color-swatches__rgba">rgb(86, 156, 194)</div>
+      </li>
+      <li class="color-swatches__swatch" style="background-color:rgba(142, 188, 214);">
+        <h5 class="color-swatches__name">$blue-secondary-50</h5>
+        <div class="color-swatches__hex">#8EBCD6</div>
+        <div class="color-swatches__rgba">rgb(142, 188, 214)</div>
+      </li>
+      <li class="color-swatches__swatch" style="background-color:rgba(198, 222, 234);">
+        <h5 class="color-swatches__name">$blue-secondary-25</h5>
+        <div class="color-swatches__hex">#C6DEEA</div>
+        <div class="color-swatches__rgba">rgb(198, 222, 234)</div>
+      </li>
+      <li class="color-swatches__swatch" style="background-color:rgba(232, 241, 246);">
+        <h5 class="color-swatches__name">$blue-secondary-10</h5>
+        <div class="color-swatches__hex">#E8F1F6</div>
+        <div class="color-swatches__rgba">rgb(232, 241, 246)</div>
+      </li>
+    </ul>
+  </div>
+  <div class="color-group">
+    <ul class="color-swatches">
+      <li class="color-swatches__swatch text-light" style="background-color:rgba(79, 64, 92);">
+        <h5 class="color-swatches__name">$purple-secondary-100</h5>
+        <div class="color-swatches__hex">#4F405C</div>
+        <div class="color-swatches__rgba">rgb(79, 64, 92)</div>
+      </li>
+      <li class="color-swatches__swatch text-light" style="background-color:rgba(123, 112, 133);">
+        <h5 class="color-swatches__name">$purple-secondary-75</h5>
+        <div class="color-swatches__hex">#7B7085</div>
+        <div class="color-swatches__rgba">rgb(123, 112, 133)</div>
+      </li>
+      <li class="color-swatches__swatch" style="background-color:rgba(167, 158, 173);">
+        <h5 class="color-swatches__name">$purple-secondary-50</h5>
+        <div class="color-swatches__hex">#A79EAD</div>
+        <div class="color-swatches__rgba">rgb(167, 158, 173)</div>
+      </li>
+      <li class="color-swatches__swatch" style="background-color:rgba(211, 207, 214);">
+        <h5 class="color-swatches__name">$purple-secondary-25</h5>
+        <div class="color-swatches__hex">#D3CFD6</div>
+        <div class="color-swatches__rgba">rgb(211, 207, 214)</div>
+      </li>
+      <li class="color-swatches__swatch" style="background-color:rgba(237, 235, 238);">
+        <h5 class="color-swatches__name">$purple-secondary-10</h5>
+        <div class="color-swatches__hex">#EDEBEE</div>
+        <div class="color-swatches__rgba">rgb(237, 235, 238)</div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<h3 id="status">Status</h3>
+<p>Status colors are a subset of the categorical data palette. Use these to indicate status. <span class="fe_u_font-weight--bold">Accessibility note:</span> When showing text with these status colors as a background, use these text colors to meet WCAG 2.0 AA contrast requirements:</p><ul>
+  <li><code>$blue-secondary-100</code> or <code>$purple-secondary-100</code>: <br>font color <span class="fe_u_font-weight--bold">invert</span> (<code>#FFFFFF</code>)</li>
+  <li>All other status colors:  font color <span class="fe_u_font-weight--bold">default</span> (<code>#333333</code>)</li>
+</ul></p>
+<div class="primitives">
+  <div class="color-group">
+    <ul class="color-swatches">
+      <li class="color-swatches__swatch" style="background-color:rgba(209, 219, 186);">
+        <h5 class="color-swatches__name">$green-secondary-100</h5>
+        <div class="color-swatches__hex">#D1DBB0</div>
+        <div class="color-swatches__rgba">rgb(209, 219, 186)</div>
+      </li>
+      <li class="color-swatches__swatch" style="background-color:rgba(232, 237, 220);">
+        <h5 class="color-swatches__name">$green-secondary-50</h5>
+        <div class="color-swatches__hex">#E8EDDC</div>
+        <div class="color-swatches__rgba">rgb(232, 237, 220)</div>
+      </li>
+      <li class="color-swatches__swatch" style="background-color:rgba(243, 246, 238);">
+        <h5 class="color-swatches__name">$green-secondary-25</h5>
+        <div class="color-swatches__hex">#F3F6EE</div>
+        <div class="color-swatches__rgba">rgb(243, 246, 238)</div>
+      </li>
+    </ul>
+  </div>
+  <div class="color-group">
+    <ul class="color-swatches">
+      <li class="color-swatches__swatch" style="background-color:rgba(240, 207, 132);">
+        <h5 class="color-swatches__name">$yellow-secondary-100</h5>
+        <div class="color-swatches__hex">#F0CF84</div>
+        <div class="color-swatches__rgba">rgb(240, 207, 132)</div>
+      </li>
+      <li class="color-swatches__swatch" style="background-color:rgba(247, 231, 193);">
+        <h5 class="color-swatches__name">#yellow-secondary-50</h5>
+        <div class="color-swatches__hex">#F7E7C1</div>
+        <div class="color-swatches__rgba">rgb(247, 231, 193)</div>
+      </li>
+      <li class="color-swatches__swatch" style="background-color:rgba(251, 243, 224);">
+        <h5 class="color-swatches__name">$yellow-secondary-25</h5>
+        <div class="color-swatches__hex">#FBF3E0</div>
+        <div class="color-swatches__rgba">rgb(251, 243, 224)</div>
+      </li>
+    </ul>
+  </div>
+  <div class="color-group">
+    <ul class="color-swatches">
+      <li class="color-swatches__swatch" style="background-color:rgba(237, 134, 100);">
+        <h5 class="color-swatches__name">$orange-secondary-100</h5>
+        <div class="color-swatches__hex">#ED8664</div>
+        <div class="color-swatches__rgba">rgb(237, 134, 100)</div>
+      </li>
+      <li class="color-swatches__swatch" style="background-color:rgba(246, 194, 177);">
+        <h5 class="color-swatches__name">$orange-secondary-50</h5>
+        <div class="color-swatches__hex">#F6C2B1</div>
+        <div class="color-swatches__rgba">rgb(246, 194, 177)</div>
+      </li>
+      <li class="color-swatches__swatch" style="background-color:rgba(250, 225, 217);">
+        <h5 class="color-swatches__name">$orange-secondary-25</h5>
+        <div class="color-swatches__hex">#FAE1D9</div>
+        <div class="color-swatches__rgba">rgb(250, 225, 217)</div>
+      </li>
+    </ul>
+  </div>
+  <div class="color-group">
+    <ul class="color-swatches">
+      <li class="color-swatches__swatch" style="background-color:rgba(49, 176, 172);">
+        <h5 class="color-swatches__name">$teal-secondary-100</h5>
+        <div class="color-swatches__hex">#31B0AC</div>
+        <div class="color-swatches__rgba">rgb(49, 176, 172)</div>
+      </li>
+      <li class="color-swatches__swatch" style="background-color:rgba(152, 215, 213);">
+        <h5 class="color-swatches__name">$teal-secondary-50</h5>
+        <div class="color-swatches__hex">#98D7D5</div>
+        <div class="color-swatches__rgba">rgb(152, 215, 213)</div>
+      </li>
+      <li class="color-swatches__swatch" style="background-color:rgba(203, 235, 234);">
+        <h5 class="color-swatches__name">$teal-secondary-25</h5>
+        <div class="color-swatches__hex">#CBEBEA</div>
+        <div class="color-swatches__rgba">rgb(203, 235, 234)</div>
+      </li>
+    </ul>
+  </div>
+  <div class="color-group">
+    <ul class="color-swatches">
+      <li class="color-swatches__swatch text-light" style="background-color:rgba(29, 122, 173);">
+        <h5 class="color-swatches__name">$blue-secondary-100</h5>
+        <div class="color-swatches__hex">#1D7AAD</div>
+        <div class="color-swatches__rgba">rgb(29, 122, 173)</div>
+      </li>
+      <li class="color-swatches__swatch" style="background-color:rgba(142, 188, 214);">
+        <h5 class="color-swatches__name">$blue-secondary-50</h5>
+        <div class="color-swatches__hex">#8EBCD6</div>
+        <div class="color-swatches__rgba">rgb(142, 188, 214)</div>
+      </li>
+      <li class="color-swatches__swatch" style="background-color:rgba(198, 222, 234);">
+        <h5 class="color-swatches__name">$blue-secondary-25</h5>
+        <div class="color-swatches__hex">#C6DEEA</div>
+        <div class="color-swatches__rgba">rgb(198, 222, 234)</div>
+      </li>
+    </ul>
+  </div>
+  <div class="color-group">
+    <ul class="color-swatches">
+      <li class="color-swatches__swatch text-light" style="background-color:rgba(79, 64, 92);">
+        <h5 class="color-swatches__name">$purple-secondary-100</h5>
+        <div class="color-swatches__hex">#4F405C</div>
+        <div class="color-swatches__rgba">rgb(79, 64, 92)</div>
+      </li>
+      <li class="color-swatches__swatch" style="background-color:rgba(167, 158, 173);">
+        <h5 class="color-swatches__name">$purple-secondary-50</h5>
+        <div class="color-swatches__hex">#A79EAD</div>
+        <div class="color-swatches__rgba">rgb(167, 158, 173)</div>
+      </li>
+      <li class="color-swatches__swatch" style="background-color:rgba(211, 207, 214);">
+        <h5 class="color-swatches__name">$purple-secondary-25</h5>
+        <div class="color-swatches__hex">#D3CFD6</div>
+        <div class="color-swatches__rgba">rgb(211, 207, 214)</div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<h2 id="colors-in-data-visualization">Colors in Data Visualization</h2>
+<p>Here are some examples of how the secondary color palette can be used to represent different types of data.</p>
+<ul class="data-vis-examples">
+  <li>
+    <span class="fe_u_font-weight--bold">Stepped data:</span> Use similar colors in a logical sequence to show stages of an event
+    <br>
+    <div class="data-vis-examples__img-wrapper data-vis-examples__img-wrapper--colors" style="width: 200px;">
+      <img src="../../assets/docs/foundations/images/colors_stepped-data.png" alt="cool toned color swatches">
+    </div>
+    <div class="data-vis-examples__img-wrapper data-vis-examples__img-wrapper--vis">
+      <img src="../../assets/docs/foundations/images/colors_stepped-data-example.png" alt="stepped data shown in purple, blue, teal, green">
+    </div>
+  </li>
+  <li>
+    <span class="fe_u_font-weight--bold">Divergent data:</span> Use graduated scales of two contrasting colors to show data transitions that pass through a neutral point.
+    <br>
+    <div class="data-vis-examples__img-wrapper data-vis-examples__img-wrapper--vis">
+    <img src="../../assets/docs/foundations/images/colors_divergent-data-example.png" alt="a scale showing blue fading to white then into orange">
+    </div>
+  </li>
+  <li>
+    <span class="fe_u_font-weight--bold">Contrasted data:</span> Use pairs of colors with high contrast to show data with opposing value or character.
+    <br>
+    <div class="data-vis-examples__img-wrapper data-vis-examples__img-wrapper--colors">
+      <img src="../../assets/docs/foundations/images/colors_contrasting-data.png" alt="pairs of contrasting colors">
+    </div>
+    <div class="data-vis-examples__img-wrapper data-vis-examples__img-wrapper--vis" style="width: 250px;">
+      <img src="../../assets/docs/foundations/images/colors_contrasting-data-example.png" alt="a bar chart showing revenue gains in teal and losses in orange">
+    </div>
+  </li>
+  <li>
+    <span class="fe_u_font-weight--bold">Related data:</span> Use similar colors to show data with similar value or character.
+    <br>
+    <div class="data-vis-examples__img-wrapper data-vis-examples__img-wrapper--colors">
+      <img src="../../assets/docs/foundations/images/colors_related-data.png" alt="pairs of similar colors">
+    </div>
+    <div class="data-vis-examples__img-wrapper data-vis-examples__img-wrapper--vis">
+    <img src="../../assets/docs/foundations/images/colors_related-data-example.png" alt="a bar chart showing patients seen in purple and patients satisfied in teal">
+    </div>
+</li>
+</ul>
+
 <h2 id="all-colors">All Colors</h2>
 <p>All distinct Forge colors are presented here for reference only. Designs should reference colors by their category and semantic name.</p>
 <div class="primitives">
   <div class="color-group">
     <ul class="color-swatches">
-      <li class="text-light" style="background-color:rgb(0, 0, 0);">
+      <li class="color-swatches__swatch text-light" style="background-color:rgb(0, 0, 0);">
         <h5 class="color-swatches__name">$gray-0</h5>
         <div class="color-swatches__hex">#000000</div>
         <div class="color-swatches__rgba">rgb(0, 0, 0)</div>
       </li>
-      <li class="text-light" style="background-color:rgb(51, 51, 51);">
+      <li class="color-swatches__swatch text-light" style="background-color:rgb(51, 51, 51);">
         <h5 class="color-swatches__name">$gray-20</h5>
         <div class="color-swatches__hex">#333333</div>
         <div class="color-swatches__rgba">rgb(51, 51, 51)</div>
       </li>
-      <li class="text-light" style="background-color:rgb(95, 95, 95);">
+      <li class="color-swatches__swatch text-light" style="background-color:rgb(95, 95, 95);">
         <h5 class="color-swatches__name">$gray-37</h5>
         <div class="color-swatches__hex">#5F5F5F</div>
         <div class="color-swatches__rgba">rgb(95, 95, 95)</div>
       </li>
-      <li class="text-light" style="background-color:rgb(128, 128, 128);">
+      <li class="color-swatches__swatch text-light" style="background-color:rgb(128, 128, 128);">
         <h5 class="color-swatches__name">$gray-50</h5>
         <div class="color-swatches__hex">#808080</div>
         <div class="color-swatches__rgba">rgb(128, 128, 128)</div>
       </li>
-      <li class="" style="background-color:rgb(179, 179, 179);">
+      <li class="color-swatches__swatch" style="background-color:rgb(179, 179, 179);">
         <h5 class="color-swatches__name">$gray-70</h5>
         <div class="color-swatches__hex">#B3B3B3</div>
         <div class="color-swatches__rgba">rgb(179, 179, 179)</div>
       </li>
-      <li class="" style="background-color:rgb(217, 217, 217);">
+      <li class="color-swatches__swatch" style="background-color:rgb(217, 217, 217);">
         <h5 class="color-swatches__name">$gray-85</h5>
         <div class="color-swatches__hex">#D9D9D9</div>
         <div class="color-swatches__rgba">rgb(217, 217, 217)</div>
       </li>
-      <li class="" style="background-color:rgb(225, 225, 225);">
+      <li class="color-swatches__swatch" style="background-color:rgb(225, 225, 225);">
         <h5 class="color-swatches__name">$gray-88</h5>
         <div class="color-swatches__hex">#E1E1E1</div>
         <div class="color-swatches__rgba">rgb(225, 225, 225)</div>
       </li>
-      <li class=" bordered" style="background-color:rgb(255, 255, 255);">
+      <li class="color-swatches__swatch bordered" style="background-color:rgb(255, 255, 255);">
         <h5 class="color-swatches__name">$gray-100</h5>
         <div class="color-swatches__hex">#FFFFFF</div>
         <div class="color-swatches__rgba">rgb(255, 255, 255)</div>
@@ -844,11 +1432,11 @@
   </div>
   <div class="color-group">
     <ul class="color-swatches">
-      <li style="background-color:rgba(0, 0, 0, 0.25);">
+      <li class="color-swatches__swatch" style="background-color:rgba(0, 0, 0, 0.25);">
         <h5 class="color-swatches__name">$gray-0-alpha-light</h5>
         <div class="color-swatches__rgba">rgba(0, 0, 0, 0.25)</div>
       </li>
-      <li class="text-light" style="background-color:rgba(0, 0, 0, 0.4);">
+      <li class="color-swatches__swatch text-light" style="background-color:rgba(0, 0, 0, 0.4);">
         <h5 class="color-swatches__name">$gray-0-alpha</h5>
         <div class="color-swatches__rgba">rgba(0, 0, 0, 0.4)</div>
       </li>
@@ -856,17 +1444,17 @@
   </div>
   <div class="color-group">
     <ul class="color-swatches">
-      <li class="text-light" style="background-color:rgb(67, 54, 77);">
+      <li class="color-swatches__swatch text-light" style="background-color:rgb(67, 54, 77);">
         <h5 class="color-swatches__name">$purple-dark</h5>
         <div class="color-swatches__hex">#43364D</div>
         <div class="color-swatches__rgba">rgb(67, 54, 77)</div>
       </li>
-      <li class="text-light" style="background-color:rgb(97, 68, 118);">
+      <li class="color-swatches__swatch text-light" style="background-color:rgb(97, 68, 118);">
         <h5 class="color-swatches__name">$purple-default</h5>
         <div class="color-swatches__hex">#614476</div>
         <div class="color-swatches__rgba">rgb(97, 68, 118)</div>
       </li>
-      <li class="text-light" style="background-color:rgb(126, 88, 155);">
+      <li class="color-swatches__swatch text-light" style="background-color:rgb(126, 88, 155);">
         <h5 class="color-swatches__name">$purple-light</h5>
         <div class="color-swatches__hex">#7E589B</div>
         <div class="color-swatches__rgba">rgb(126, 88, 155)</div>
@@ -875,22 +1463,22 @@
   </div>
   <div class="color-group">
     <ul class="color-swatches">
-      <li class="text-light" style="background-color:rgb(4, 57, 97);">
+      <li class="color-swatches__swatch text-light" style="background-color:rgb(4, 57, 97);">
         <h5 class="color-swatches__name">$blue-x-dark</h5>
         <div class="color-swatches__hex">#043961</div>
         <div class="color-swatches__rgba">rgb(4, 57, 97)</div>
       </li>
-      <li class="text-light" style="background-color:rgb(0, 84, 150);">
+      <li class="color-swatches__swatch text-light" style="background-color:rgb(0, 84, 150);">
         <h5 class="color-swatches__name">$blue-dark</h5>
         <div class="color-swatches__hex">#005496</div>
         <div class="color-swatches__rgba">rgb(0, 84, 150)</div>
       </li>
-      <li class="text-light" style="background-color:rgb(2, 117, 212);">
+      <li class="color-swatches__swatch text-light" style="background-color:rgb(4, 102, 180);">
         <h5 class="color-swatches__name">$blue-default</h5>
-        <div class="color-swatches__hex">#0275D4</div>
-        <div class="color-swatches__rgba">rgb(2, 117, 212)</div>
+        <div class="color-swatches__hex">#0466B4</div>
+        <div class="color-swatches__rgba">rgb(4, 102, 180)</div>
       </li>
-      <li class="" style="background-color:rgb(217, 235, 250);">
+      <li class="color-swatches__swatch" style="background-color:rgb(217, 235, 250);">
         <h5 class="color-swatches__name">$blue-light</h5>
         <div class="color-swatches__hex">#D9EBFA</div>
         <div class="color-swatches__rgba">rgb(217, 235, 250)</div>
@@ -899,25 +1487,199 @@
   </div>
   <div class="color-group">
     <ul class="color-swatches">
-      <li class="text-light" style="background-color:rgb(61, 149, 125);">
+      <li class="color-swatches__swatch text-light" style="background-color:rgb(17, 134, 71);">
         <h5 class="color-swatches__name">$green</h5>
-        <div class="color-swatches__hex">#3D957D</div>
-        <div class="color-swatches__rgba">rgb(61, 149, 125)</div>
+        <div class="color-swatches__hex">#118647</div>
+        <div class="color-swatches__rgba">rgb(17, 134, 71)</div>
       </li>
-      <li class="" style="background-color:rgb(255, 171, 0);">
+      <li class="color-swatches__swatch" style="background-color:rgb(255, 171, 0);">
         <h5 class="color-swatches__name">$yellow</h5>
         <div class="color-swatches__hex">#FFAB00</div>
         <div class="color-swatches__rgba">rgb(255, 171, 0)</div>
       </li>
-      <li class="text-light" style="background-color:rgb(247, 63, 63);">
+      <li class="color-swatches__swatch text-light" style="background-color:rgb(202, 13, 13);">
         <h5 class="color-swatches__name">$red</h5>
-        <div class="color-swatches__hex">#F73F3F</div>
-        <div class="color-swatches__rgba">rgb(247, 63, 63)</div>
+        <div class="color-swatches__hex">#CA0D0D</div>
+        <div class="color-swatches__rgba">rgb(202, 13, 13)</div>
       </li>
     </ul>
   </div>
-</div>
+  <div class="color-group">
+    <ul class="color-swatches">
+      <li class="color-swatches__swatch" style="background-color:rgba(209, 219, 186);">
+        <h5 class="color-swatches__name">$green-secondary-100</h5>
+        <div class="color-swatches__hex">#D1DBB0</div>
+        <div class="color-swatches__rgba">rgb(209, 219, 186)</div>
+      </li>
+      <li class="color-swatches__swatch" style="background-color:rgba(221, 228, 204);">
+        <h5 class="color-swatches__name">$green-secondary-75</h5>
+        <div class="color-swatches__hex">#DDE4CC</div>
+        <div class="color-swatches__rgba">rgb(221, 228, 204)</div>
+      </li>
+      <li class="color-swatches__swatch" style="background-color:rgba(232, 237, 220);">
+        <h5 class="color-swatches__name">$green-secondary-50</h5>
+        <div class="color-swatches__hex">#E8EDDC</div>
+        <div class="color-swatches__rgba">rgb(232, 237, 220)</div>
+      </li>
+      <li class="color-swatches__swatch" style="background-color:rgba(243, 246, 238);">
+        <h5 class="color-swatches__name">$green-secondary-25</h5>
+        <div class="color-swatches__hex">#F3F6EE</div>
+        <div class="color-swatches__rgba">rgb(243, 246, 238)</div>
+      </li>
+      <li class="color-swatches__swatch" style="background-color:rgba(250, 251, 248);">
+        <h5 class="color-swatches__name">$green-secondary-10</h5>
+        <div class="color-swatches__hex">#FAFBF8</div>
+        <div class="color-swatches__rgba">rgb(250, 251, 248)</div>
+      </li>
+    </ul>
+  </div>
+  <div class="color-group">
+    <ul class="color-swatches">
+      <li class="color-swatches__swatch" style="background-color:rgba(240, 207, 132);">
+        <h5 class="color-swatches__name">$yellow-secondary-100</h5>
+        <div class="color-swatches__hex">#F0CF84</div>
+        <div class="color-swatches__rgba">rgb(240, 207, 132)</div>
+      </li>
+      <li class="color-swatches__swatch" style="background-color:rgba(244, 219, 163);">
+        <h5 class="color-swatches__name">$yellow-secondary-75</h5>
+        <div class="color-swatches__hex">#F4DBA3</div>
+        <div class="color-swatches__rgba">rgb(244, 219, 163)</div>
+      </li>
+      <li class="color-swatches__swatch" style="background-color:rgba(247, 231, 193);">
+        <h5 class="color-swatches__name">#yellow-secondary-50</h5>
+        <div class="color-swatches__hex">#F7E7C1</div>
+        <div class="color-swatches__rgba">rgb(247, 231, 193)</div>
+      </li>
+      <li class="color-swatches__swatch" style="background-color:rgba(251, 243, 224);">
+        <h5 class="color-swatches__name">$yellow-secondary-25</h5>
+        <div class="color-swatches__hex">#FBF3E0</div>
+        <div class="color-swatches__rgba">rgb(251, 243, 224)</div>
+      </li>
+      <li class="color-swatches__swatch" style="background-color:rgba(253, 250, 242);">
+        <h5 class="color-swatches__name">$yellow-secondary-10</h5>
+        <div class="color-swatches__hex">#FDFAF2</div>
+        <div class="color-swatches__rgba">rgb(253, 250, 242)</div>
+      </li>
+    </ul>
+  </div>
+  <div class="color-group">
+    <ul class="color-swatches">
+      <li class="color-swatches__swatch" style="background-color:rgba(237, 134, 100);">
+        <h5 class="color-swatches__name">$orange-secondary-100</h5>
+        <div class="color-swatches__hex">#ED8664</div>
+        <div class="color-swatches__rgba">rgb(237, 134, 100)</div>
+      </li>
+      <li class="color-swatches__swatch" style="background-color:rgba(242, 165, 139);">
+        <h5 class="color-swatches__name">$orange-secondary-75</h5>
+        <div class="color-swatches__hex">#F2A58B</div>
+        <div class="color-swatches__rgba">rgb(242, 165, 139)</div>
+      </li>
+      <li class="color-swatches__swatch" style="background-color:rgba(246, 194, 177);">
+        <h5 class="color-swatches__name">$orange-secondary-50</h5>
+        <div class="color-swatches__hex">#F6C2B1</div>
+        <div class="color-swatches__rgba">rgb(246, 194, 177)</div>
+      </li>
+      <li class="color-swatches__swatch" style="background-color:rgba(250, 225, 217);">
+        <h5 class="color-swatches__name">$orange-secondary-25</h5>
+        <div class="color-swatches__hex">#FAE1D9</div>
+        <div class="color-swatches__rgba">rgb(250, 225, 217)</div>
+      </li>
+      <li class="color-swatches__swatch" style="background-color:rgba(253, 242, 239);">
+        <h5 class="color-swatches__name">$orange-secondary-10</h5>
+        <div class="color-swatches__hex">#FDF2EF</div>
+        <div class="color-swatches__rgba">rgb(253, 242, 239)</div>
+      </li>
+    </ul>
+  </div>
+  <div class="color-group">
+    <ul class="color-swatches">
+      <li class="color-swatches__swatch" style="background-color:rgba(49, 176, 172);">
+        <h5 class="color-swatches__name">$teal-secondary-100</h5>
+        <div class="color-swatches__hex">#31B0AC</div>
+        <div class="color-swatches__rgba">rgb(49, 176, 172)</div>
+      </li>
+      <li class="color-swatches__swatch" style="background-color:rgba(100, 196, 193);">
+        <h5 class="color-swatches__name">$teal-secondary-75</h5>
+        <div class="color-swatches__hex">#64C4C1</div>
+        <div class="color-swatches__rgba">rgb(10, 196, 193)</div>
+      </li>
+      <li class="color-swatches__swatch" style="background-color:rgba(152, 215, 213);">
+        <h5 class="color-swatches__name">$teal-secondary-50</h5>
+        <div class="color-swatches__hex">#98D7D5</div>
+        <div class="color-swatches__rgba">rgb(152, 215, 213)</div>
+      </li>
+      <li class="color-swatches__swatch" style="background-color:rgba(203, 235, 234);">
+        <h5 class="color-swatches__name">$teal-secondary-25</h5>
+        <div class="color-swatches__hex">#CBEBEA</div>
+        <div class="color-swatches__rgba">rgb(203, 235, 234)</div>
+      </li>
+      <li class="color-swatches__swatch" style="background-color:rgba(234, 247, 246);">
+        <h5 class="color-swatches__name">$teal-secondary-10</h5>
+        <div class="color-swatches__hex">#EAF7F6</div>
+        <div class="color-swatches__rgba">rgb(234, 247, 246)</div>
+      </li>
+    </ul>
+  </div>
+  <div class="color-group">
+    <ul class="color-swatches">
+      <li class="color-swatches__swatch text-light" style="background-color:rgba(29, 122, 173);">
+        <h5 class="color-swatches__name">$blue-secondary-100</h5>
+        <div class="color-swatches__hex">#1D7AAD</div>
+        <div class="color-swatches__rgba">rgb(29, 122, 173)</div>
+      </li>
+      <li class="color-swatches__swatch" style="background-color:rgba(105, 163, 194);">
+        <h5 class="color-swatches__name">$blue-secondary-75</h5>
+        <div class="color-swatches__hex">#569CC2</div>
+        <div class="color-swatches__rgba">rgb(86, 156, 194)</div>
+      </li>
+      <li class="color-swatches__swatch" style="background-color:rgba(142, 188, 214);">
+        <h5 class="color-swatches__name">$blue-secondary-50</h5>
+        <div class="color-swatches__hex">#8EBCD6</div>
+        <div class="color-swatches__rgba">rgb(142, 188, 214)</div>
+      </li>
+      <li class="color-swatches__swatch" style="background-color:rgba(198, 222, 234);">
+        <h5 class="color-swatches__name">$blue-secondary-25</h5>
+        <div class="color-swatches__hex">#C6DEEA</div>
+        <div class="color-swatches__rgba">rgb(198, 222, 234)</div>
+      </li>
+      <li class="color-swatches__swatch" style="background-color:rgba(232, 241, 246);">
+        <h5 class="color-swatches__name">$blue-secondary-10</h5>
+        <div class="color-swatches__hex">#E8F1F6</div>
+        <div class="color-swatches__rgba">rgb(232, 241, 246)</div>
+      </li>
+    </ul>
+  </div>
+  <div class="color-group">
+    <ul class="color-swatches">
+      <li class="color-swatches__swatch text-light" style="background-color:rgba(79, 64, 92);">
+        <h5 class="color-swatches__name">$purple-secondary-100</h5>
+        <div class="color-swatches__hex">#4F405C</div>
+        <div class="color-swatches__rgba">rgb(79, 64, 92)</div>
+      </li>
+      <li class="color-swatches__swatch text-light" style="background-color:rgba(123, 112, 133);">
+        <h5 class="color-swatches__name">$purple-secondary-75</h5>
+        <div class="color-swatches__hex">#7B7085</div>
+        <div class="color-swatches__rgba">rgb(123, 112, 133)</div>
+      </li>
+      <li class="color-swatches__swatch" style="background-color:rgba(167, 158, 173);">
+        <h5 class="color-swatches__name">$purple-secondary-50</h5>
+        <div class="color-swatches__hex">#A79EAD</div>
+        <div class="color-swatches__rgba">rgb(167, 158, 173)</div>
+      </li>
+      <li class="color-swatches__swatch" style="background-color:rgba(211, 207, 214);">
+        <h5 class="color-swatches__name">$purple-secondary-25</h5>
+        <div class="color-swatches__hex">#D3CFD6</div>
+        <div class="color-swatches__rgba">rgb(211, 207, 214)</div>
+      </li>
+      <li class="color-swatches__swatch" style="background-color:rgba(237, 235, 238);">
+        <h5 class="color-swatches__name">$purple-secondary-10</h5>
+        <div class="color-swatches__hex">#EDEBEE</div>
+        <div class="color-swatches__rgba">rgb(237, 235, 238)</div>
+      </li>
+    </ul>
+  </div>
 
+<p></div></p>
 <h2 id="implementation">Implementation</h2>
 <p>When coding with Forge styles in SASS, all colors on this page should be referenced through the use of their respective map using the SASS <code>map-get</code> function. <a href="http://sass-lang.com/documentation/file.SASS_REFERENCE.html#maps">Learn more about SASS maps</a>.</p>
 <code><pre><span class="hljs-selector-class">.my-pill-box</span> {
@@ -939,9 +1701,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
           pageCategory: 'foundations'.length > 0
             ? 'foundations'
             : null,
-          forgeVersion: '2.0.0-beta.7',
-          forgeGeneralVersion: /^\d*(?=\.)/.exec('2.0.0-beta.7')
-            ? /^\d*(?=\.)/.exec('2.0.0-beta.7').toString()
+          forgeVersion: '2.1.0',
+          forgeGeneralVersion: /^\d*(?=\.)/.exec('2.1.0')
+            ? /^\d*(?=\.)/.exec('2.1.0').toString()
             : null
         });
       }
@@ -954,7 +1716,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 
     </div>
-    <!--div class="debug"><pre><code class="language-json">{"id":"354366061b8ff2f4d32bdef4995af0b4","name":"color","handle":"color","label":"Color","title":"Color","order":1,"isHidden":false,"alias":null,"isEntity":true,"isDoc":true,"isIndex":false,"path":"foundations/color","status":null,"content":"<style>\n  .color-group {\n    margin-bottom: 48px;\n  }\n  /* Special styling for swatches within design guidance section */\n  .color-group--content .color-group__title,\n  .color-group--content .color-swatches__sass {\n    display: none;\n  }\n  .color-group--content .color-swatches > li {\n    min-height: 100px;\n  }\n  .primitives .color-group {\n    margin-bottom: 0;\n  }\n  .fg_markdown .color-swatches {\n    display: flex;\n    flex-flow: row wrap;\n    padding-left: 0;\n    color: rgb(51, 51, 51);\n    line-height: normal;\n  }\n  .color-swatches > li {\n    list-style-type: none;\n    width:  155px;\n    min-height: 120px;\n    padding: 12px 14px;\n  }\n  .fg_markdown .color-swatches > li::before {\n    content: none;\n  }\n  .color-swatches > li > div {\n    margin: 2px 0;\n  }\n  .color-swatches__name {\n    font-size: 14px;\n    margin: 0 0 4px 0;\n    padding: 0;\n    font-weight: bold;\n  }\n  .primitives .color-swatches > li {\n    min-height: 100px;\n  }\n  .color-swatches__hex {\n    font-size: 14px;\n  }\n  .color-swatches__rgba {\n    font-size: 12px;\n  }\n  .color-swatches__sass {\n    font-size: 12px;\n  }\n  .text-light {\n    color: #ffffff;\n  }\n  .swatch-divider {\n    border-left:1px solid #777;\n  }\n  .bordered {\n    border: 1.5px solid #f2f2f2;\n  }\n</style>\n\n<p class=\"p--lead\">Forge aims to use colors in an aesthetically pleasing way with an emphasis on purposeful use of color to help communicate usage and meaning holistically across athenaNet.</p>\n\n## Semantic Palettes\n<div class=\"color-group\">\n  <h4 id=\"palette-color-interaction\" class=\"color-group__title\">$color-interaction</h4>\n  <ul class=\"color-swatches\">\n    <li class=\"text-light\" style=\"background-color:rgb(2, 117, 212);\">\n      <h5 class=\"color-swatches__name\">default</h5>\n      <div class=\"color-swatches__hex\">#0275D4</div>\n      <div class=\"color-swatches__rgba\">rgb(2, 117, 212)</div>\n      <div class=\"color-swatches__sass\">map-get($color-interaction, default)</div>\n    </li>\n    <li class=\"text-light\" style=\"background-color:rgb(4, 57, 97);\">\n      <h5 class=\"color-swatches__name\">select</h5>\n      <div class=\"color-swatches__hex\">#043961</div>\n      <div class=\"color-swatches__rgba\">rgb(4, 57, 97)</div>\n      <div class=\"color-swatches__sass\">map-get($color-interaction, select)</div>\n    </li>\n    <li class=\"text-light\" style=\"background-color:rgb(0, 84, 150);\">\n      <h5 class=\"color-swatches__name\">hover-dark</h5>\n      <div class=\"color-swatches__hex\">#005496</div>\n      <div class=\"color-swatches__rgba\">rgb(0, 84, 150)</div>\n      <div class=\"color-swatches__sass\">map-get($color-interaction, hover-dark)</div>\n    </li>\n    <li class=\"\" style=\"background-color:rgb(217, 235, 250);\">\n      <h5 class=\"color-swatches__name\">hover</h5>\n      <div class=\"color-swatches__hex\">#D9EBFA</div>\n      <div class=\"color-swatches__rgba\">rgb(217, 235, 250)</div>\n      <div class=\"color-swatches__sass\">map-get($color-interaction, hover)</div>\n    </li>\n    <li class=\"text-light\" style=\"background-color:rgb(179, 179, 179);\">\n      <h5 class=\"color-swatches__name\">disabled</h5>\n      <div class=\"color-swatches__hex\">#B3B3B3</div>\n      <div class=\"color-swatches__rgba\">rgb(179, 179, 179)</div>\n      <div class=\"color-swatches__sass\">map-get($color-interaction, disabled)</div>\n    </li>\n  </ul>\n</div>\n\n<div class=\"color-group\">\n  <h4 id=\"palette-color-background\" class=\"color-group__title\">$color-background</h4>\n  <ul class=\"color-swatches\">\n    <li class=\" bordered\" style=\"background-color:rgb(255, 255, 255);\">\n      <h5 class=\"color-swatches__name\">default</h5>\n      <div class=\"color-swatches__hex\">#FFFFFF</div>\n      <div class=\"color-swatches__rgba\">rgb(255, 255, 255)</div>\n      <div class=\"color-swatches__sass\">map-get($color-background, default)</div>\n    </li>\n    <li class=\"\" style=\"background-color:rgb(217, 217, 217);\">\n      <h5 class=\"color-swatches__name\">dark</h5>\n      <div class=\"color-swatches__hex\">#D9D9D9</div>\n      <div class=\"color-swatches__rgba\">rgb(217, 217, 217)</div>\n      <div class=\"color-swatches__sass\">map-get($color-background, dark)</div>\n    </li>\n    <li class=\"\" style=\"background-color:rgb(225, 225, 225);\">\n      <h5 class=\"color-swatches__name\">light</h5>\n      <div class=\"color-swatches__hex\">#E1E1E1</div>\n      <div class=\"color-swatches__rgba\">rgb(225, 225, 225)</div>\n      <div class=\"color-swatches__sass\">map-get($color-background, light)</div>\n    </li>\n  </ul>\n</div>\n\n<div class=\"color-group\">\n  <h4 id=\"palette-color-border\" class=\"color-group__title\">$color-border</h4>\n  <ul class=\"color-swatches\">\n    <li class=\"text-light\" style=\"background-color:rgb(179, 179, 179);\">\n      <h5 class=\"color-swatches__name\">default</h5>\n      <div class=\"color-swatches__hex\">#B3B3B3</div>\n      <div class=\"color-swatches__rgba\">rgb(179, 179, 179)</div>\n      <div class=\"color-swatches__sass\">map-get($color-border, default)</div>\n    </li>\n    <li class=\"text-light\" style=\"background-color:rgb(95, 95, 95);\">\n      <h5 class=\"color-swatches__name\">dark</h5>\n      <div class=\"color-swatches__hex\">#5F5F5F</div>\n      <div class=\"color-swatches__rgba\">rgb(95, 95, 95)</div>\n      <div class=\"color-swatches__sass\">map-get($color-border, dark)</div>\n    </li>\n    <li class=\"\" style=\"background-color:rgb(217, 217, 217);\">\n      <h5 class=\"color-swatches__name\">light</h5>\n      <div class=\"color-swatches__hex\">#D9D9D9</div>\n      <div class=\"color-swatches__rgba\">rgb(217, 217, 217)</div>\n      <div class=\"color-swatches__sass\">map-get($color-border, light)</div>\n    </li>\n    <li class=\"text-light\" style=\"background-color:rgb(2, 117, 212);\">\n      <h5 class=\"color-swatches__name\">focus</h5>\n      <div class=\"color-swatches__hex\">#0275D4</div>\n      <div class=\"color-swatches__rgba\">rgb(2, 117, 212)</div>\n      <div class=\"color-swatches__sass\">map-get($color-border, focus)</div>\n    </li>\n    <li class=\"\" style=\"background-color:rgb(217, 235, 250);\">\n      <h5 class=\"color-swatches__name\">focus-invert</h5>\n      <div class=\"color-swatches__hex\">#D9EBFA</div>\n      <div class=\"color-swatches__rgba\">rgb(217, 235, 250)</div>\n      <div class=\"color-swatches__sass\">map-get($color-border, focus-invert)</div>\n    </li>\n  </ul>\n</div>\n\n<div class=\"color-group\">\n  <h4 id=\"palette-color-brand\" class=\"color-group__title\">$color-brand</h4>\n  <ul class=\"color-swatches\">\n    <li class=\"text-light\" style=\"background-color:rgb(97, 68, 118);\">\n      <h5 class=\"color-swatches__name\">default</h5>\n      <div class=\"color-swatches__hex\">#614476</div>\n      <div class=\"color-swatches__rgba\">rgb(97, 68, 118)</div>\n      <div class=\"color-swatches__sass\">map-get($color-brand, default)</div>\n    </li>\n    <li class=\"text-light\" style=\"background-color:rgb(67, 54, 77);\">\n      <h5 class=\"color-swatches__name\">dark</h5>\n      <div class=\"color-swatches__hex\">#43364D</div>\n      <div class=\"color-swatches__rgba\">rgb(67, 54, 77)</div>\n      <div class=\"color-swatches__sass\">map-get($color-brand, dark)</div>\n    </li>\n    <li class=\"text-light\" style=\"background-color:rgb(126, 88, 155);\">\n      <h5 class=\"color-swatches__name\">light</h5>\n      <div class=\"color-swatches__hex\">#7E589B</div>\n      <div class=\"color-swatches__rgba\">rgb(126, 88, 155)</div>\n      <div class=\"color-swatches__sass\">map-get($color-brand, light)</div>\n    </li>\n  </ul>\n</div>\n\n<div class=\"color-group\">\n  <h4 id=\"palette-color-alert\" class=\"color-group__title\">$color-alert</h4>\n  <ul class=\"color-swatches\">\n    <li class=\"text-light\" style=\"background-color:rgb(61, 149, 125);\">\n      <h5 class=\"color-swatches__name\">success</h5>\n      <div class=\"color-swatches__hex\">#3D957D</div>\n      <div class=\"color-swatches__rgba\">rgb(61, 149, 125)</div>\n      <div class=\"color-swatches__sass\">map-get($color-alert, success)</div>\n    </li>\n    <li class=\"text-light\" style=\"background-color:rgb(126, 88, 155);\">\n      <h5 class=\"color-swatches__name\">info</h5>\n      <div class=\"color-swatches__hex\">#7E589B</div>\n      <div class=\"color-swatches__rgba\">rgb(126, 88, 155)</div>\n      <div class=\"color-swatches__sass\">map-get($color-alert, info)</div>\n    </li>\n    <li class=\"\" style=\"background-color:rgb(255, 171, 0);\">\n      <h5 class=\"color-swatches__name\">attention</h5>\n      <div class=\"color-swatches__hex\">#FFAB00</div>\n      <div class=\"color-swatches__rgba\">rgb(255, 171, 0)</div>\n      <div class=\"color-swatches__sass\">map-get($color-alert, attention)</div>\n    </li>\n    <li class=\"text-light\" style=\"background-color:rgb(247, 63, 63);\">\n      <h5 class=\"color-swatches__name\">critical</h5>\n      <div class=\"color-swatches__hex\">#F73F3F</div>\n      <div class=\"color-swatches__rgba\">rgb(247, 63, 63)</div>\n      <div class=\"color-swatches__sass\">map-get($color-alert, critical)</div>\n    </li>\n  </ul>\n</div>\n\n<div class=\"color-group\">\n  <h4 id=\"palette-color-font\" class=\"color-group__title\">$color-font</h4>\n  <ul class=\"color-swatches\">\n    <li class=\"text-light\" style=\"background-color:rgb(51, 51, 51);\">\n      <h5 class=\"color-swatches__name\">default</h5>\n      <div class=\"color-swatches__hex\">#333333</div>\n      <div class=\"color-swatches__rgba\">rgb(51, 51, 51)</div>\n      <div class=\"color-swatches__sass\">map-get($color-font, default)</div>\n    </li>\n    <li class=\"text-light\" style=\"background-color:rgb(0, 0, 0);\">\n      <h5 class=\"color-swatches__name\">dark</h5>\n      <div class=\"color-swatches__hex\">#000000</div>\n      <div class=\"color-swatches__rgba\">rgb(0, 0, 0)</div>\n      <div class=\"color-swatches__sass\">map-get($color-font, dark)</div>\n    </li>\n    <li class=\"text-light\" style=\"background-color:rgb(95, 95, 95);\">\n      <h5 class=\"color-swatches__name\">muted</h5>\n      <div class=\"color-swatches__hex\">#5F5F5F</div>\n      <div class=\"color-swatches__rgba\">rgb(95, 95, 95)</div>\n      <div class=\"color-swatches__sass\">map-get($color-font, muted)</div>\n    </li>\n    <li class=\"text-light\" style=\"background-color:rgb(128, 128, 128);\">\n      <h5 class=\"color-swatches__name\">light</h5>\n      <div class=\"color-swatches__hex\">#808080</div>\n      <div class=\"color-swatches__rgba\">rgb(128, 128, 128)</div>\n      <div class=\"color-swatches__sass\">map-get($color-font, light)</div>\n    </li>\n    <li class=\"\" style=\"background-color:rgb(179, 179, 179);\">\n      <h5 class=\"color-swatches__name\">disabled</h5>\n      <div class=\"color-swatches__hex\">#B3B3B3</div>\n      <div class=\"color-swatches__rgba\">rgb(179, 179, 179)</div>\n      <div class=\"color-swatches__sass\">map-get($color-font, disabled)</div>\n    </li>\n    <li class=\" bordered\" style=\"background-color:rgb(255, 255, 255);\">\n      <h5 class=\"color-swatches__name\">invert</h5>\n      <div class=\"color-swatches__hex\">#FFFFFF</div>\n      <div class=\"color-swatches__rgba\">rgb(255, 255, 255)</div>\n      <div class=\"color-swatches__sass\">map-get($color-font, invert)</div>\n    </li>\n  </ul>\n</div>\n\n<div class=\"color-group\">\n  <h4 id=\"palette-color-shadow\" class=\"color-group__title\">$color-shadow</h4>\n  <ul class=\"color-swatches\">\n    <li style=\"background-color:rgba(0, 0, 0, 0.25);\">\n      <h5 class=\"color-swatches__name\">default</h5>\n      <div class=\"color-swatches__rgba\">rgba(0, 0, 0, 0.25)</div>\n      <div class=\"color-swatches__sass\">map-get($color-shadow, default)</div>\n    </li>\n    <li class=\"text-light\" style=\"background-color:rgba(0, 0, 0, 0.4);\">\n      <h5 class=\"color-swatches__name\">dark</h5>\n      <div class=\"color-swatches__rgba\">rgba(0, 0, 0, 0.4)</div>\n      <div class=\"color-swatches__sass\">map-get($color-shadow, dark)</div>\n    </li>\n  </ul>\n</div>\n\n## How to Read and Use the Color Swatches\nThe colors on this page are categorized by specific use cases meant to provide a consistent visual aesthetic to components and pages. To facilitate discussion between design and development, design specifications should always refer to the semantic name rather than the HEX or RGB values.\n\n__$color-interaction__ ← [SASS map name](http://sass-lang.com/documentation/file.SASS_REFERENCE.html#maps)\n<ul class=\"color-swatches color-swatches--example\">\n    <li class=\"text-light\" style=\"background-color:rgb(2, 117, 212);\">\n      <h5 class=\"color-swatches__name\">default</h5>\n      <div class=\"color-swatches__hex\">#0275D4</div>\n      <div class=\"color-swatches__rgba\">rgb(2, 117, 212)</div>\n      <div class=\"color-swatches__sass\">map-get($color-interaction, default)</div>\n    </li>\n    <li style=\"width:250px;\">\n      <h5 class=\"color-swatches__name\" style=\"font-weight:normal;\">← Semantic name (SASS map key)</h5>\n      <div class=\"color-swatches__hex\">← HEX color value</div>\n      <div class=\"color-swatches__rgba\">← RGB(A) color value</div>\n      <div class=\"color-swatches__rgba\">← SASS map variable access</div>\n    </li>\n</ul>\n\nSee the [implementation section]({{ path '/docs/foundations/color' }}#implementation) for how to use the SASS maps and keys when writing application SASS styles. Using the SASS color maps greatly reduces the need to recode user interfaces if there are color changes and is always the most preferable way of referencing color values in Forge. The HEX and RGB values are only provided for setting up design tools or in cases where the use of SASS is not possible.\n\n## Color Principles\nThe color palette was carefully considered with the following in mind:\n\n### Accessibility\nathenahealth products must meet certain accessibility standards, including [contrast ratios the Web Content Accessibility Guidelines (WCAG) 2.1 specifies for text and background color combinations](https://www.w3.org/TR/WCAG21/#contrast-minimum). Forge colors are level AA compliant when used in proper combinations.\n\n### Critical Issues\nThe color red is reserved to indicate critical issues. Use this color sparingly and only for highly important areas such as:\n\n* Patient safety&mdash;anything that could lead to patient harm\n* Business issues that could severely affect the financial health of a client\n\t* Example: Missing data that endangers a hospital's Medicare payments\n\n### Meaning\nA deliberate choice was made to use color sparingly. When color is used, it is intended to have specific, holistic meaning, so that regardless of which product, widget, screen, or workflow a user moves through, the meaning stays consistent.\n\n### Brand\nAlthough Forge does not strictly adhere to the corporate color palette (primarily because of accessibility issues), that was the starting point.\n\n## Design\n### Interaction\nInteraction colors indicate interactive elements that will drive users forward through workflows and decision points (e.g. [Button]({{ path '/docs/components/button' }})).\n<div class=\"color-group color-group--content\">\n  <h4 id=\"palette-color-interaction\" class=\"color-group__title\">$color-interaction</h4>\n  <ul class=\"color-swatches\">\n    <li class=\"text-light\" style=\"background-color:rgb(2, 117, 212);\">\n      <h5 class=\"color-swatches__name\">default</h5>\n      <div class=\"color-swatches__hex\">#0275D4</div>\n      <div class=\"color-swatches__rgba\">rgb(2, 117, 212)</div>\n      <div class=\"color-swatches__sass\">map-get($color-interaction, default)</div>\n    </li>\n    <li class=\"text-light\" style=\"background-color:rgb(4, 57, 97);\">\n      <h5 class=\"color-swatches__name\">select</h5>\n      <div class=\"color-swatches__hex\">#043961</div>\n      <div class=\"color-swatches__rgba\">rgb(4, 57, 97)</div>\n      <div class=\"color-swatches__sass\">map-get($color-interaction, select)</div>\n    </li>\n    <li class=\"text-light\" style=\"background-color:rgb(0, 84, 150);\">\n      <h5 class=\"color-swatches__name\">hover-dark</h5>\n      <div class=\"color-swatches__hex\">#005496</div>\n      <div class=\"color-swatches__rgba\">rgb(0, 84, 150)</div>\n      <div class=\"color-swatches__sass\">map-get($color-interaction, hover-dark)</div>\n    </li>\n    <li class=\"\" style=\"background-color:rgb(217, 235, 250);\">\n      <h5 class=\"color-swatches__name\">hover</h5>\n      <div class=\"color-swatches__hex\">#D9EBFA</div>\n      <div class=\"color-swatches__rgba\">rgb(217, 235, 250)</div>\n      <div class=\"color-swatches__sass\">map-get($color-interaction, hover)</div>\n    </li>\n    <li class=\"\" style=\"background-color:rgb(179, 179, 179);\">\n      <h5 class=\"color-swatches__name\">disabled</h5>\n      <div class=\"color-swatches__hex\">#B3B3B3</div>\n      <div class=\"color-swatches__rgba\">rgb(179, 179, 179)</div>\n      <div class=\"color-swatches__sass\">map-get($color-interaction, disabled)</div>\n    </li>\n  </ul>\n</div>\n\n### Backgrounds & Borders\nBackground and border colors can be used to help differentiate between sections of a page (e.g. [DateInput]({{ path '/docs/components/date-input' }})).\n#### Backgrounds\n<div class=\"color-group color-group--content\">\n  <h4 id=\"palette-color-background\" class=\"color-group__title\">$color-background</h4>\n  <ul class=\"color-swatches\">\n    <li class=\" bordered\" style=\"background-color:rgb(255, 255, 255);\">\n      <h5 class=\"color-swatches__name\">default</h5>\n      <div class=\"color-swatches__hex\">#FFFFFF</div>\n      <div class=\"color-swatches__rgba\">rgb(255, 255, 255)</div>\n      <div class=\"color-swatches__sass\">map-get($color-background, default)</div>\n    </li>\n    <li class=\"\" style=\"background-color:rgb(217, 217, 217);\">\n      <h5 class=\"color-swatches__name\">dark</h5>\n      <div class=\"color-swatches__hex\">#D9D9D9</div>\n      <div class=\"color-swatches__rgba\">rgb(217, 217, 217)</div>\n      <div class=\"color-swatches__sass\">map-get($color-background, dark)</div>\n    </li>\n    <li class=\"\" style=\"background-color:rgb(225, 225, 225);\">\n      <h5 class=\"color-swatches__name\">light</h5>\n      <div class=\"color-swatches__hex\">#E1E1E1</div>\n      <div class=\"color-swatches__rgba\">rgb(225, 225, 225)</div>\n      <div class=\"color-swatches__sass\">map-get($color-background, light)</div>\n    </li>\n  </ul>\n</div>\n\n#### Borders\n<div class=\"color-group color-group--content\">\n  <h4 id=\"palette-color-border\" class=\"color-group__title\">$color-border</h4>\n  <ul class=\"color-swatches\">\n    <li class=\"text-light\" style=\"background-color:rgb(179, 179, 179);\">\n      <h5 class=\"color-swatches__name\">default</h5>\n      <div class=\"color-swatches__hex\">#B3B3B3</div>\n      <div class=\"color-swatches__rgba\">rgb(179, 179, 179)</div>\n      <div class=\"color-swatches__sass\">map-get($color-border, default)</div>\n    </li>\n    <li class=\"text-light\" style=\"background-color:rgb(95, 95, 95);\">\n      <h5 class=\"color-swatches__name\">dark</h5>\n      <div class=\"color-swatches__hex\">#5F5F5F</div>\n      <div class=\"color-swatches__rgba\">rgb(95, 95, 95)</div>\n      <div class=\"color-swatches__sass\">map-get($color-border, dark)</div>\n    </li>\n    <li class=\"\" style=\"background-color:rgb(217, 217, 217);\">\n      <h5 class=\"color-swatches__name\">light</h5>\n      <div class=\"color-swatches__hex\">#D9D9D9</div>\n      <div class=\"color-swatches__rgba\">rgb(217, 217, 217)</div>\n      <div class=\"color-swatches__sass\">map-get($color-border, light)</div>\n    </li>\n    <li class=\"text-light\" style=\"background-color:rgb(2, 117, 212);\">\n      <h5 class=\"color-swatches__name\">focus</h5>\n      <div class=\"color-swatches__hex\">#0275D4</div>\n      <div class=\"color-swatches__rgba\">rgb(2, 117, 212)</div>\n      <div class=\"color-swatches__sass\">map-get($color-border, focus)</div>\n    </li>\n    <li class=\"\" style=\"background-color:rgb(217, 235, 250);\">\n      <h5 class=\"color-swatches__name\">focus-invert</h5>\n      <div class=\"color-swatches__hex\">#D9EBFA</div>\n      <div class=\"color-swatches__rgba\">rgb(217, 235, 250)</div>\n      <div class=\"color-swatches__sass\">map-get($color-border, focus-invert)</div>\n    </li>\n  </ul>\n</div>\n\n### Brand\nBrand colors are used for global navigation or when athena is speaking directly to the user and providing information (e.g. [Tooltip]({{ path '/docs/components/tooltip' }})).\n<div class=\"color-group color-group--content\">\n  <h4 id=\"palette-color-brand\" class=\"color-group__title\">$color-brand</h4>\n  <ul class=\"color-swatches\">\n    <li class=\"text-light\" style=\"background-color:rgb(97, 68, 118);\">\n      <h5 class=\"color-swatches__name\">default</h5>\n      <div class=\"color-swatches__hex\">#614476</div>\n      <div class=\"color-swatches__rgba\">rgb(97, 68, 118)</div>\n      <div class=\"color-swatches__sass\">map-get($color-brand, default)</div>\n    </li>\n    <li class=\"text-light\" style=\"background-color:rgb(67, 54, 77);\">\n      <h5 class=\"color-swatches__name\">dark</h5>\n      <div class=\"color-swatches__hex\">#43364D</div>\n      <div class=\"color-swatches__rgba\">rgb(67, 54, 77)</div>\n      <div class=\"color-swatches__sass\">map-get($color-brand, dark)</div>\n    </li>\n    <li class=\"text-light\" style=\"background-color:rgb(126, 88, 155);\">\n      <h5 class=\"color-swatches__name\">light</h5>\n      <div class=\"color-swatches__hex\">#7E589B</div>\n      <div class=\"color-swatches__rgba\">rgb(126, 88, 155)</div>\n      <div class=\"color-swatches__sass\">map-get($color-brand, light)</div>\n    </li>\n  </ul>\n</div>\n\n### Alert\nThere are several ways in which information, alerts and messages are presented to users. Color helps reinforce type and severity (e.g. [Icon]({{ path '/docs/components/icon' }}) and [Modal]({{ path '/docs/components/modal' }})).\n<div class=\"color-group color-group--content\">\n  <h4 id=\"palette-color-alert\" class=\"color-group__title\">$color-alert</h4>\n  <ul class=\"color-swatches\">\n    <li class=\"text-light\" style=\"background-color:rgb(61, 149, 125);\">\n      <h5 class=\"color-swatches__name\">success</h5>\n      <div class=\"color-swatches__hex\">#3D957D</div>\n      <div class=\"color-swatches__rgba\">rgb(61, 149, 125)</div>\n      <div class=\"color-swatches__sass\">map-get($color-alert, success)</div>\n    </li>\n    <li class=\"text-light\" style=\"background-color:rgb(126, 88, 155);\">\n      <h5 class=\"color-swatches__name\">info</h5>\n      <div class=\"color-swatches__hex\">#7E589B</div>\n      <div class=\"color-swatches__rgba\">rgb(126, 88, 155)</div>\n      <div class=\"color-swatches__sass\">map-get($color-alert, info)</div>\n    </li>\n    <li class=\"\" style=\"background-color:rgb(255, 171, 0);\">\n      <h5 class=\"color-swatches__name\">attention</h5>\n      <div class=\"color-swatches__hex\">#FFAB00</div>\n      <div class=\"color-swatches__rgba\">rgb(255, 171, 0)</div>\n      <div class=\"color-swatches__sass\">map-get($color-alert, attention)</div>\n    </li>\n    <li class=\"text-light\" style=\"background-color:rgb(247, 63, 63);\">\n      <h5 class=\"color-swatches__name\">critical</h5>\n      <div class=\"color-swatches__hex\">#F73F3F</div>\n      <div class=\"color-swatches__rgba\">rgb(247, 63, 63)</div>\n      <div class=\"color-swatches__sass\">map-get($color-alert, critical)</div>\n    </li>\n  </ul>\n</div>\n\n### Font\nThe main concerns with using colors for text are legibility and accessibility. The following colors combined with text styling allow us to be accessibility-compliant and legible (e.g. [Typography]({{ path '/docs/foundations/typography' }}) and [FormField]({{ path '/docs/components/form-field' }})).\n<div class=\"color-group color-group--content\">\n  <h4 id=\"palette-color-font\" class=\"color-group__title\">$color-font</h4>\n  <ul class=\"color-swatches\">\n    <li class=\"text-light\" style=\"background-color:rgb(51, 51, 51);\">\n      <h5 class=\"color-swatches__name\">default</h5>\n      <div class=\"color-swatches__hex\">#333333</div>\n      <div class=\"color-swatches__rgba\">rgb(51, 51, 51)</div>\n      <div class=\"color-swatches__sass\">map-get($color-font, default)</div>\n    </li>\n    <li class=\"text-light\" style=\"background-color:rgb(0, 0, 0);\">\n      <h5 class=\"color-swatches__name\">dark</h5>\n      <div class=\"color-swatches__hex\">#000000</div>\n      <div class=\"color-swatches__rgba\">rgb(0, 0, 0)</div>\n      <div class=\"color-swatches__sass\">map-get($color-font, dark)</div>\n    </li>\n    <li class=\"text-light\" style=\"background-color:rgb(95, 95, 95);\">\n      <h5 class=\"color-swatches__name\">muted</h5>\n      <div class=\"color-swatches__hex\">#5F5F5F</div>\n      <div class=\"color-swatches__rgba\">rgb(95, 95, 95)</div>\n      <div class=\"color-swatches__sass\">map-get($color-font, muted)</div>\n    </li>\n    <li class=\"text-light\" style=\"background-color:rgb(128, 128, 128);\">\n      <h5 class=\"color-swatches__name\">light</h5>\n      <div class=\"color-swatches__hex\">#808080</div>\n      <div class=\"color-swatches__rgba\">rgb(128, 128, 128)</div>\n      <div class=\"color-swatches__sass\">map-get($color-font, light)</div>\n    </li>\n    <li class=\"\" style=\"background-color:rgb(179, 179, 179);\">\n      <h5 class=\"color-swatches__name\">disabled</h5>\n      <div class=\"color-swatches__hex\">#B3B3B3</div>\n      <div class=\"color-swatches__rgba\">rgb(179, 179, 179)</div>\n      <div class=\"color-swatches__sass\">map-get($color-font, disabled)</div>\n    </li>\n    <li class=\" bordered\" style=\"background-color:rgb(255, 255, 255);\">\n      <h5 class=\"color-swatches__name\">invert</h5>\n      <div class=\"color-swatches__hex\">#FFFFFF</div>\n      <div class=\"color-swatches__rgba\">rgb(255, 255, 255)</div>\n      <div class=\"color-swatches__sass\">map-get($color-font, invert)</div>\n    </li>\n  </ul>\n</div>\n\n### Shadow\nShadow colors help emphasize interactive elements. Note that they contain transparency (alpha channel value) to allow for partial view of other components or backgrounds beneath them (e.g. [Modal]({{ path '/docs/components/modal' }}) and [DateInput's Calendar]({{ path '/docs/components/date-input' }})).\n<div class=\"color-group color-group--content\">\n  <h4 id=\"palette-color-shadow\" class=\"color-group__title\">$color-shadow</h4>\n  <ul class=\"color-swatches\">\n    <li style=\"background-color:rgba(0, 0, 0, 0.25);\">\n      <h5 class=\"color-swatches__name\">default</h5>\n      <div class=\"color-swatches__rgba\">rgba(0, 0, 0, 0.25)</div>\n      <div class=\"color-swatches__sass\">map-get($color-shadow, default)</div>\n    </li>\n    <li class=\"text-light\" style=\"background-color:rgba(0, 0, 0, 0.4);\">\n      <h5 class=\"color-swatches__name\">dark</h5>\n      <div class=\"color-swatches__rgba\">rgba(0, 0, 0, 0.4)</div>\n      <div class=\"color-swatches__sass\">map-get($color-shadow, dark)</div>\n    </li>\n  </ul>\n</div>\n\n## All Colors\nAll distinct Forge colors are presented here for reference only. Designs should reference colors by their category and semantic name.\n<div class=\"primitives\">\n  <div class=\"color-group\">\n    <ul class=\"color-swatches\">\n      <li class=\"text-light\" style=\"background-color:rgb(0, 0, 0);\">\n        <h5 class=\"color-swatches__name\">$gray-0</h5>\n        <div class=\"color-swatches__hex\">#000000</div>\n        <div class=\"color-swatches__rgba\">rgb(0, 0, 0)</div>\n      </li>\n      <li class=\"text-light\" style=\"background-color:rgb(51, 51, 51);\">\n        <h5 class=\"color-swatches__name\">$gray-20</h5>\n        <div class=\"color-swatches__hex\">#333333</div>\n        <div class=\"color-swatches__rgba\">rgb(51, 51, 51)</div>\n      </li>\n      <li class=\"text-light\" style=\"background-color:rgb(95, 95, 95);\">\n        <h5 class=\"color-swatches__name\">$gray-37</h5>\n        <div class=\"color-swatches__hex\">#5F5F5F</div>\n        <div class=\"color-swatches__rgba\">rgb(95, 95, 95)</div>\n      </li>\n      <li class=\"text-light\" style=\"background-color:rgb(128, 128, 128);\">\n        <h5 class=\"color-swatches__name\">$gray-50</h5>\n        <div class=\"color-swatches__hex\">#808080</div>\n        <div class=\"color-swatches__rgba\">rgb(128, 128, 128)</div>\n      </li>\n      <li class=\"\" style=\"background-color:rgb(179, 179, 179);\">\n        <h5 class=\"color-swatches__name\">$gray-70</h5>\n        <div class=\"color-swatches__hex\">#B3B3B3</div>\n        <div class=\"color-swatches__rgba\">rgb(179, 179, 179)</div>\n      </li>\n      <li class=\"\" style=\"background-color:rgb(217, 217, 217);\">\n        <h5 class=\"color-swatches__name\">$gray-85</h5>\n        <div class=\"color-swatches__hex\">#D9D9D9</div>\n        <div class=\"color-swatches__rgba\">rgb(217, 217, 217)</div>\n      </li>\n      <li class=\"\" style=\"background-color:rgb(225, 225, 225);\">\n        <h5 class=\"color-swatches__name\">$gray-88</h5>\n        <div class=\"color-swatches__hex\">#E1E1E1</div>\n        <div class=\"color-swatches__rgba\">rgb(225, 225, 225)</div>\n      </li>\n      <li class=\" bordered\" style=\"background-color:rgb(255, 255, 255);\">\n        <h5 class=\"color-swatches__name\">$gray-100</h5>\n        <div class=\"color-swatches__hex\">#FFFFFF</div>\n        <div class=\"color-swatches__rgba\">rgb(255, 255, 255)</div>\n      </li>\n    </ul>\n  </div>\n  <div class=\"color-group\">\n    <ul class=\"color-swatches\">\n      <li style=\"background-color:rgba(0, 0, 0, 0.25);\">\n        <h5 class=\"color-swatches__name\">$gray-0-alpha-light</h5>\n        <div class=\"color-swatches__rgba\">rgba(0, 0, 0, 0.25)</div>\n      </li>\n      <li class=\"text-light\" style=\"background-color:rgba(0, 0, 0, 0.4);\">\n        <h5 class=\"color-swatches__name\">$gray-0-alpha</h5>\n        <div class=\"color-swatches__rgba\">rgba(0, 0, 0, 0.4)</div>\n      </li>\n    </ul>\n  </div>\n  <div class=\"color-group\">\n    <ul class=\"color-swatches\">\n      <li class=\"text-light\" style=\"background-color:rgb(67, 54, 77);\">\n        <h5 class=\"color-swatches__name\">$purple-dark</h5>\n        <div class=\"color-swatches__hex\">#43364D</div>\n        <div class=\"color-swatches__rgba\">rgb(67, 54, 77)</div>\n      </li>\n      <li class=\"text-light\" style=\"background-color:rgb(97, 68, 118);\">\n        <h5 class=\"color-swatches__name\">$purple-default</h5>\n        <div class=\"color-swatches__hex\">#614476</div>\n        <div class=\"color-swatches__rgba\">rgb(97, 68, 118)</div>\n      </li>\n      <li class=\"text-light\" style=\"background-color:rgb(126, 88, 155);\">\n        <h5 class=\"color-swatches__name\">$purple-light</h5>\n        <div class=\"color-swatches__hex\">#7E589B</div>\n        <div class=\"color-swatches__rgba\">rgb(126, 88, 155)</div>\n      </li>\n    </ul>\n  </div>\n  <div class=\"color-group\">\n    <ul class=\"color-swatches\">\n      <li class=\"text-light\" style=\"background-color:rgb(4, 57, 97);\">\n        <h5 class=\"color-swatches__name\">$blue-x-dark</h5>\n        <div class=\"color-swatches__hex\">#043961</div>\n        <div class=\"color-swatches__rgba\">rgb(4, 57, 97)</div>\n      </li>\n      <li class=\"text-light\" style=\"background-color:rgb(0, 84, 150);\">\n        <h5 class=\"color-swatches__name\">$blue-dark</h5>\n        <div class=\"color-swatches__hex\">#005496</div>\n        <div class=\"color-swatches__rgba\">rgb(0, 84, 150)</div>\n      </li>\n      <li class=\"text-light\" style=\"background-color:rgb(2, 117, 212);\">\n        <h5 class=\"color-swatches__name\">$blue-default</h5>\n        <div class=\"color-swatches__hex\">#0275D4</div>\n        <div class=\"color-swatches__rgba\">rgb(2, 117, 212)</div>\n      </li>\n      <li class=\"\" style=\"background-color:rgb(217, 235, 250);\">\n        <h5 class=\"color-swatches__name\">$blue-light</h5>\n        <div class=\"color-swatches__hex\">#D9EBFA</div>\n        <div class=\"color-swatches__rgba\">rgb(217, 235, 250)</div>\n      </li>\n    </ul>\n  </div>\n  <div class=\"color-group\">\n    <ul class=\"color-swatches\">\n      <li class=\"text-light\" style=\"background-color:rgb(61, 149, 125);\">\n        <h5 class=\"color-swatches__name\">$green</h5>\n        <div class=\"color-swatches__hex\">#3D957D</div>\n        <div class=\"color-swatches__rgba\">rgb(61, 149, 125)</div>\n      </li>\n      <li class=\"\" style=\"background-color:rgb(255, 171, 0);\">\n        <h5 class=\"color-swatches__name\">$yellow</h5>\n        <div class=\"color-swatches__hex\">#FFAB00</div>\n        <div class=\"color-swatches__rgba\">rgb(255, 171, 0)</div>\n      </li>\n      <li class=\"text-light\" style=\"background-color:rgb(247, 63, 63);\">\n        <h5 class=\"color-swatches__name\">$red</h5>\n        <div class=\"color-swatches__hex\">#F73F3F</div>\n        <div class=\"color-swatches__rgba\">rgb(247, 63, 63)</div>\n      </li>\n    </ul>\n  </div>\n</div>\n\n## Implementation\nWhen coding with Forge styles in SASS, all colors on this page should be referenced through the use of their respective map using the SASS `map-get` function. [Learn more about SASS maps](http://sass-lang.com/documentation/file.SASS_REFERENCE.html#maps).\n\n```\n.my-pill-box {\n\tborder: 1px solid map-get($color-border, default);\n}\n```\n\n__Do not directly code the hex or rgb(a) value into your style rules.__ This will result in CSS styles that are difficult to maintain.\n","lang":{"name":"Markdown","mode":"markdown","scope":"source.gfm","color":"#083FA1"},"file":{"root":"C:\\","dir":"C:\\Users\\ctsui\\code\\forge-guide\\docs\\03-foundations","base":"01-color.md","ext":".md","name":"color","relPath":"03-foundations\\01-color.md","fsName":"01-color","path":"C:\\Users\\ctsui\\code\\forge-guide\\docs\\03-foundations\\01-color.md","dirs":["C:\\Users\\ctsui\\code\\forge-guide\\docs\\03-foundations"],"isHidden":false,"order":1,"isFile":true,"isDirectory":false,"stat":{"dev":4102694615,"mode":33206,"nlink":1,"uid":0,"gid":0,"rdev":0,"ino":3659174697524372,"size":32135,"atimeMs":1547561625239.6616,"mtimeMs":1547561625240.6519,"ctimeMs":1547561625240.6519,"birthtimeMs":1528896974619.8384,"atime":"2019-01-15T14:13:45.240Z","mtime":"2019-01-15T14:13:45.241Z","ctime":"2019-01-15T14:13:45.241Z","birthtime":"2018-06-13T13:36:14.620Z"},"lang":{"name":"Markdown","mode":"markdown","scope":"source.gfm","color":"#083FA1"},"isBinary":false},"context":{"extensions":{"core":{"forge-toast":{"name":"Toast","version":"0.2.2","description":"Toast component for Forge"},"forge-toggle-switch":{"name":"ToggleSwitch","version":"0.1.1","description":"ToggleSwitch component for Forge"}},"community":{"clinicals-forge-extension":{"name":"Clinicals Forge Extension","owner":"Nursing Flowsheets","url":"https://bitbucket.athenahealth.com/projects/CLIFS/repos/clinicals-forge-extension/browse","version":"2.1.1","description":"A forge-extension containing components used by inpatient clinicals"}}},"amplitudeCategory":"foundations"}}</code></pre></div-->
+    <!--div class="debug"><pre><code class="language-json">{"id":"354366061b8ff2f4d32bdef4995af0b4","name":"color","handle":"color","label":"Color","title":"Color","order":1,"isHidden":false,"alias":null,"isEntity":true,"isDoc":true,"isIndex":false,"path":"foundations/color","status":null,"content":"<style>\n  .color-group {\n    margin-bottom: 48px;\n  }\n  /* Special styling for swatches within design guidance section */\n  .color-group--content .color-group__title,\n  .color-group--content .color-swatches__sass {\n    display: none;\n  }\n  .color-group--content .color-swatches .color-swatches__swatch {\n    min-height: 100px;\n  }\n  .primitives .color-group {\n    margin: 16px 0;\n  }\n  .fg_markdown .color-swatches {\n    display: flex;\n    flex-flow: row wrap;\n    padding-left: 0;\n    margin: 0;\n    color: rgb(51, 51, 51);\n    line-height: normal;\n  }\n  .color-swatches__column {\n    display: inline-flex;\n    flex-flow: column;\n    padding-left: 0;\n    margin-block-start: 0;\n  }\n  .color-swatches li {\n    list-style-type: none;\n  }\n  .color-swatches__swatch {\n    width:  155px;\n    min-height: 120px;\n    padding: 12px 14px;\n  }\n  .fg_markdown .color-swatches li::before {\n    content: none;\n  }\n  .color-swatches .color-swatches__swatch > div {\n    margin: 2px 0;\n  }\n  .color-swatches__name {\n    font-size: 14px;\n    margin: 0 0 4px 0;\n    padding: 0;\n    font-weight: bold;\n  }\n  .primitives .color-swatches .color-swatches__swatch {\n    min-height: 100px;\n  }\n  .data-vis-examples__img-wrapper {\n    margin-top: 10px;\n    margin-bottom: 17px;\n  }\n  .data-vis-examples__img-wrapper--colors {\n    max-width: 250px;\n  }\n  .data-vis-examples__img-wrapper--vis {\n    max-width: 350px;\n  }\n  .color-swatches__hex {\n    font-size: 14px;\n  }\n  .color-swatches__rgba {\n    font-size: 12px;\n  }\n  .color-swatches__sass {\n    font-size: 12px;\n  }\n  .text-light {\n    color: #ffffff;\n  }\n  .swatch-divider {\n    border-left:1px solid #777;\n  }\n  .bordered {\n    border: 1.5px solid #f2f2f2;\n  }\n</style>\n\n<p class=\"p--lead\">Forge aims to use colors in an aesthetically pleasing way with an emphasis on purposeful use of color to help communicate usage and meaning holistically across athenaNet.</p>\n\n## Semantic Palettes\n<div class=\"color-group\">\n  <h4 id=\"palette-color-interaction\" class=\"color-group__title\">$color-interaction</h4>\n  <ul class=\"color-swatches\">\n    <li class=\"color-swatches__swatch text-light\" style=\"background-color:rgb(4, 102, 180);\">\n      <h5 class=\"color-swatches__name\">default</h5>\n      <div class=\"color-swatches__hex\">#0466B4</div>\n      <div class=\"color-swatches__rgba\">rgb(4, 102, 180)</div>\n      <div class=\"color-swatches__sass\">map-get($color-interaction, default)</div>\n    </li>\n    <li class=\"color-swatches__swatch text-light\" style=\"background-color:rgb(4, 57, 97);\">\n      <h5 class=\"color-swatches__name\">select</h5>\n      <div class=\"color-swatches__hex\">#043961</div>\n      <div class=\"color-swatches__rgba\">rgb(4, 57, 97)</div>\n      <div class=\"color-swatches__sass\">map-get($color-interaction, select)</div>\n    </li>\n    <li class=\"color-swatches__swatch text-light\" style=\"background-color:rgb(0, 84, 150);\">\n      <h5 class=\"color-swatches__name\">hover-dark</h5>\n      <div class=\"color-swatches__hex\">#005496</div>\n      <div class=\"color-swatches__rgba\">rgb(0, 84, 150)</div>\n      <div class=\"color-swatches__sass\">map-get($color-interaction, hover-dark)</div>\n    </li>\n    <li class=\"color-swatches__swatch\" style=\"background-color:rgb(217, 235, 250);\">\n      <h5 class=\"color-swatches__name\">hover</h5>\n      <div class=\"color-swatches__hex\">#D9EBFA</div>\n      <div class=\"color-swatches__rgba\">rgb(217, 235, 250)</div>\n      <div class=\"color-swatches__sass\">map-get($color-interaction, hover)</div>\n    </li>\n    <li class=\"color-swatches__swatch text-light\" style=\"background-color:rgb(179, 179, 179);\">\n      <h5 class=\"color-swatches__name\">disabled</h5>\n      <div class=\"color-swatches__hex\">#B3B3B3</div>\n      <div class=\"color-swatches__rgba\">rgb(179, 179, 179)</div>\n      <div class=\"color-swatches__sass\">map-get($color-interaction, disabled)</div>\n    </li>\n  </ul>\n</div>\n\n<div class=\"color-group\">\n  <h4 id=\"palette-color-background\" class=\"color-group__title\">$color-background</h4>\n  <ul class=\"color-swatches\">\n    <li class=\"color-swatches__swatch bordered\" style=\"background-color:rgb(255, 255, 255);\">\n      <h5 class=\"color-swatches__name\">default</h5>\n      <div class=\"color-swatches__hex\">#FFFFFF</div>\n      <div class=\"color-swatches__rgba\">rgb(255, 255, 255)</div>\n      <div class=\"color-swatches__sass\">map-get($color-background, default)</div>\n    </li>\n    <li class=\"color-swatches__swatch\" style=\"background-color:rgb(217, 217, 217);\">\n      <h5 class=\"color-swatches__name\">dark</h5>\n      <div class=\"color-swatches__hex\">#D9D9D9</div>\n      <div class=\"color-swatches__rgba\">rgb(217, 217, 217)</div>\n      <div class=\"color-swatches__sass\">map-get($color-background, dark)</div>\n    </li>\n    <li class=\"color-swatches__swatch\" style=\"background-color:rgb(225, 225, 225);\">\n      <h5 class=\"color-swatches__name\">light</h5>\n      <div class=\"color-swatches__hex\">#E1E1E1</div>\n      <div class=\"color-swatches__rgba\">rgb(225, 225, 225)</div>\n      <div class=\"color-swatches__sass\">map-get($color-background, light)</div>\n    </li>\n  </ul>\n</div>\n\n<div class=\"color-group\">\n  <h4 id=\"palette-color-border\" class=\"color-group__title\">$color-border</h4>\n  <ul class=\"color-swatches\">\n    <li class=\"color-swatches__swatch text-light\" style=\"background-color:rgb(179, 179, 179);\">\n      <h5 class=\"color-swatches__name\">default</h5>\n      <div class=\"color-swatches__hex\">#B3B3B3</div>\n      <div class=\"color-swatches__rgba\">rgb(179, 179, 179)</div>\n      <div class=\"color-swatches__sass\">map-get($color-border, default)</div>\n    </li>\n    <li class=\"color-swatches__swatch text-light\" style=\"background-color:rgb(95, 95, 95);\">\n      <h5 class=\"color-swatches__name\">dark</h5>\n      <div class=\"color-swatches__hex\">#5F5F5F</div>\n      <div class=\"color-swatches__rgba\">rgb(95, 95, 95)</div>\n      <div class=\"color-swatches__sass\">map-get($color-border, dark)</div>\n    </li>\n    <li class=\"color-swatches__swatch\" style=\"background-color:rgb(217, 217, 217);\">\n      <h5 class=\"color-swatches__name\">light</h5>\n      <div class=\"color-swatches__hex\">#D9D9D9</div>\n      <div class=\"color-swatches__rgba\">rgb(217, 217, 217)</div>\n      <div class=\"color-swatches__sass\">map-get($color-border, light)</div>\n    </li>\n    <li class=\"color-swatches__swatch text-light\" style=\"background-color:rgb(4, 102, 180);\">\n      <h5 class=\"color-swatches__name\">focus</h5>\n      <div class=\"color-swatches__hex\">#0466B4</div>\n      <div class=\"color-swatches__rgba\">rgb(4, 102, 180)</div>\n      <div class=\"color-swatches__sass\">map-get($color-border, focus)</div>\n    </li>\n    <li class=\"color-swatches__swatch\" style=\"background-color:rgb(217, 235, 250);\">\n      <h5 class=\"color-swatches__name\">focus-invert</h5>\n      <div class=\"color-swatches__hex\">#D9EBFA</div>\n      <div class=\"color-swatches__rgba\">rgb(217, 235, 250)</div>\n      <div class=\"color-swatches__sass\">map-get($color-border, focus-invert)</div>\n    </li>\n  </ul>\n</div>\n\n<div class=\"color-group\">\n  <h4 id=\"palette-color-brand\" class=\"color-group__title\">$color-brand</h4>\n  <ul class=\"color-swatches\">\n    <li class=\"color-swatches__swatch text-light\" style=\"background-color:rgb(97, 68, 118);\">\n      <h5 class=\"color-swatches__name\">default</h5>\n      <div class=\"color-swatches__hex\">#614476</div>\n      <div class=\"color-swatches__rgba\">rgb(97, 68, 118)</div>\n      <div class=\"color-swatches__sass\">map-get($color-brand, default)</div>\n    </li>\n    <li class=\"color-swatches__swatch text-light\" style=\"background-color:rgb(67, 54, 77);\">\n      <h5 class=\"color-swatches__name\">dark</h5>\n      <div class=\"color-swatches__hex\">#43364D</div>\n      <div class=\"color-swatches__rgba\">rgb(67, 54, 77)</div>\n      <div class=\"color-swatches__sass\">map-get($color-brand, dark)</div>\n    </li>\n    <li class=\"color-swatches__swatch text-light\" style=\"background-color:rgb(126, 88, 155);\">\n      <h5 class=\"color-swatches__name\">light</h5>\n      <div class=\"color-swatches__hex\">#7E589B</div>\n      <div class=\"color-swatches__rgba\">rgb(126, 88, 155)</div>\n      <div class=\"color-swatches__sass\">map-get($color-brand, light)</div>\n    </li>\n  </ul>\n</div>\n\n<div class=\"color-group\">\n  <h4 id=\"palette-color-alert\" class=\"color-group__title\">$color-alert</h4>\n  <ul class=\"color-swatches\">\n    <li class=\"color-swatches__swatch text-light\" style=\"background-color:rgb(17, 134, 71);\">\n      <h5 class=\"color-swatches__name\">success</h5>\n      <div class=\"color-swatches__hex\">#118647</div>\n      <div class=\"color-swatches__rgba\">rgb(17, 134, 71)</div>\n      <div class=\"color-swatches__sass\">map-get($color-alert, success)</div>\n    </li>\n    <li class=\"color-swatches__swatch text-light\" style=\"background-color:rgb(126, 88, 155);\">\n      <h5 class=\"color-swatches__name\">info</h5>\n      <div class=\"color-swatches__hex\">#7E589B</div>\n      <div class=\"color-swatches__rgba\">rgb(126, 88, 155)</div>\n      <div class=\"color-swatches__sass\">map-get($color-alert, info)</div>\n    </li>\n    <li class=\"color-swatches__swatch\" style=\"background-color:rgb(255, 171, 0);\">\n      <h5 class=\"color-swatches__name\">attention</h5>\n      <div class=\"color-swatches__hex\">#FFAB00</div>\n      <div class=\"color-swatches__rgba\">rgb(255, 171, 0)</div>\n      <div class=\"color-swatches__sass\">map-get($color-alert, attention)</div>\n    </li>\n    <li class=\"color-swatches__swatch text-light\" style=\"background-color:rgb(202, 13, 13);\">\n      <h5 class=\"color-swatches__name\">critical</h5>\n      <div class=\"color-swatches__hex\">#CA0D0D</div>\n      <div class=\"color-swatches__rgba\">rgb(202, 13, 13)</div>\n      <div class=\"color-swatches__sass\">map-get($color-alert, critical)</div>\n    </li>\n  </ul>\n</div>\n\n<div class=\"color-group\">\n  <h4 id=\"palette-color-font\" class=\"color-group__title\">$color-font</h4>\n  <ul class=\"color-swatches\">\n    <li class=\"color-swatches__swatch text-light\" style=\"background-color:rgb(51, 51, 51);\">\n      <h5 class=\"color-swatches__name\">default</h5>\n      <div class=\"color-swatches__hex\">#333333</div>\n      <div class=\"color-swatches__rgba\">rgb(51, 51, 51)</div>\n      <div class=\"color-swatches__sass\">map-get($color-font, default)</div>\n    </li>\n    <li class=\"color-swatches__swatch text-light\" style=\"background-color:rgb(0, 0, 0);\">\n      <h5 class=\"color-swatches__name\">dark</h5>\n      <div class=\"color-swatches__hex\">#000000</div>\n      <div class=\"color-swatches__rgba\">rgb(0, 0, 0)</div>\n      <div class=\"color-swatches__sass\">map-get($color-font, dark)</div>\n    </li>\n    <li class=\"color-swatches__swatch text-light\" style=\"background-color:rgb(95, 95, 95);\">\n      <h5 class=\"color-swatches__name\">muted</h5>\n      <div class=\"color-swatches__hex\">#5F5F5F</div>\n      <div class=\"color-swatches__rgba\">rgb(95, 95, 95)</div>\n      <div class=\"color-swatches__sass\">map-get($color-font, muted)</div>\n    </li>\n    <li class=\"color-swatches__swatch text-light\" style=\"background-color:rgb(128, 128, 128);\">\n      <h5 class=\"color-swatches__name\">light</h5>\n      <div class=\"color-swatches__hex\">#808080</div>\n      <div class=\"color-swatches__rgba\">rgb(128, 128, 128)</div>\n      <div class=\"color-swatches__sass\">map-get($color-font, light)</div>\n    </li>\n    <li class=\"color-swatches__swatch\" style=\"background-color:rgb(179, 179, 179);\">\n      <h5 class=\"color-swatches__name\">disabled</h5>\n      <div class=\"color-swatches__hex\">#B3B3B3</div>\n      <div class=\"color-swatches__rgba\">rgb(179, 179, 179)</div>\n      <div class=\"color-swatches__sass\">map-get($color-font, disabled)</div>\n    </li>\n    <li class=\"color-swatches__swatch bordered\" style=\"background-color:rgb(255, 255, 255);\">\n      <h5 class=\"color-swatches__name\">invert</h5>\n      <div class=\"color-swatches__hex\">#FFFFFF</div>\n      <div class=\"color-swatches__rgba\">rgb(255, 255, 255)</div>\n      <div class=\"color-swatches__sass\">map-get($color-font, invert)</div>\n    </li>\n  </ul>\n</div>\n\n<div class=\"color-group\">\n  <h4 id=\"palette-color-shadow\" class=\"color-group__title\">$color-shadow</h4>\n  <ul class=\"color-swatches\">\n    <li class=\"color-swatches__swatch\" style=\"background-color:rgba(0, 0, 0, 0.25);\">\n      <h5 class=\"color-swatches__name\">default</h5>\n      <div class=\"color-swatches__rgba\">rgba(0, 0, 0, 0.25)</div>\n      <div class=\"color-swatches__sass\">map-get($color-shadow, default)</div>\n    </li>\n    <li class=\"color-swatches__swatch text-light\" style=\"background-color:rgba(0, 0, 0, 0.4);\">\n      <h5 class=\"color-swatches__name\">dark</h5>\n      <div class=\"color-swatches__rgba\">rgba(0, 0, 0, 0.4)</div>\n      <div class=\"color-swatches__sass\">map-get($color-shadow, dark)</div>\n    </li>\n  </ul>\n</div>\n\n<div class=\"color-group\">\n  <h4 id=\"palette-color-secondary\" class=\"color-group__title\">$color-secondary</h4>\n  <ul class=\"color-swatches\">\n    <li>\n      <ul class=\"color-swatches__column\">\n        <li class=\"color-swatches__swatch\" style=\"background-color:rgba(209, 219, 186);\">\n          <h5 class=\"color-swatches__name\">green-100</h5>\n          <div class=\"color-swatches__rgba\">rgb(209, 219, 186)</div>\n          <div class=\"color-swatches__sass\">map-get($color-secondary, green-100)</div>\n        </li>\n        <li class=\"color-swatches__swatch\" style=\"background-color:rgba(240, 207, 132);\">\n          <h5 class=\"color-swatches__name\">yellow-100</h5>\n          <div class=\"color-swatches__rgba\">rgb(240, 207, 132)</div>\n          <div class=\"color-swatches__sass\">map-get($color-secondary, yellow-100)</div>\n        </li>\n        <li class=\"color-swatches__swatch\" style=\"background-color:rgba(237, 134, 100);\">\n          <h5 class=\"color-swatches__name\">orange-100</h5>\n          <div class=\"color-swatches__rgba\">rgb(237, 134, 100)</div>\n          <div class=\"color-swatches__sass\">map-get($color-secondary, orange-default)</div>\n        </li>\n        <li class=\"color-swatches__swatch\" style=\"background-color:rgba(49, 176, 172);\">\n          <h5 class=\"color-swatches__name\">teal-100</h5>\n          <div class=\"color-swatches__rgba\">rgb(49, 176, 172)</div>\n          <div class=\"color-swatches__sass\">map-get($color-secondary, teal-100)</div>\n        </li>\n        <li class=\"color-swatches__swatch text-light\" style=\"background-color:rgba(29, 122, 173);\">\n          <h5 class=\"color-swatches__name\">blue-100</h5>\n          <div class=\"color-swatches__rgba\">rgb(29, 122, 173)</div>\n          <div class=\"color-swatches__sass\">map-get($color-secondary, blue-100)</div>\n        </li>\n        <li class=\"color-swatches__swatch text-light\" style=\"background-color:rgba(79, 64, 92);\">\n          <h5 class=\"color-swatches__name\">purple-100</h5>\n          <div class=\"color-swatches__rgba\">rgb(79, 64, 92)</div>\n          <div class=\"color-swatches__sass\">map-get($color-secondary, purple-100)</div>\n        </li>\n      </ul>\n    </li>\n    <li>\n      <ul class=\"color-swatches__column\">\n        <li class=\"color-swatches__swatch\" style=\"background-color:rgba(221, 228, 204);\">\n          <h5 class=\"color-swatches__name\">green-75</h5>\n          <div class=\"color-swatches__rgba\">rgb(221, 228, 204)</div>\n          <div class=\"color-swatches__sass\">map-get($color-secondary, green-75)</div>\n        </li>\n        <li class=\"color-swatches__swatch\" style=\"background-color:rgba(244, 219, 163);\">\n          <h5 class=\"color-swatches__name\">yellow-75</h5>\n          <div class=\"color-swatches__rgba\">rgb(244, 219, 163)</div>\n          <div class=\"color-swatches__sass\">map-get($color-secondary, yellow-75)</div>\n        </li>\n        <li class=\"color-swatches__swatch\" style=\"background-color:rgba(242, 165, 139);\">\n          <h5 class=\"color-swatches__name\">orange-75</h5>\n          <div class=\"color-swatches__rgba\">rgb(242, 165, 139)</div>\n          <div class=\"color-swatches__sass\">map-get($color-secondary, orange-75)</div>\n        </li>\n        <li class=\"color-swatches__swatch\" style=\"background-color:rgba(100, 196, 193);\">\n          <h5 class=\"color-swatches__name\">teal-75</h5>\n          <div class=\"color-swatches__rgba\">rgb(10, 196, 193)</div>\n          <div class=\"color-swatches__sass\">map-get($color-secondary, teal-75)</div>\n        </li>\n        <li class=\"color-swatches__swatch\" style=\"background-color:rgba(86, 156, 194);\">\n          <h5 class=\"color-swatches__name\">blue-75</h5>\n          <div class=\"color-swatches__rgba\">rgb(86, 156, 194)</div>\n          <div class=\"color-swatches__sass\">map-get($color-secondary, blue-75)</div>\n        </li>\n        <li class=\"color-swatches__swatch text-light\" style=\"background-color:rgba(123, 112, 133);\">\n          <h5 class=\"color-swatches__name\">purple-75</h5>\n          <div class=\"color-swatches__rgba\">rgb(123, 112, 133)</div>\n          <div class=\"color-swatches__sass\">map-get($color-secondary, purple-75)</div>\n        </li>\n      </ul>\n    </li>\n    <li>\n      <ul class=\"color-swatches__column\">\n        <li class=\"color-swatches__swatch\" style=\"background-color:rgba(232, 237, 220);\">\n          <h5 class=\"color-swatches__name\">green-50</h5>\n          <div class=\"color-swatches__rgba\">rgb(232, 237, 220)</div>\n          <div class=\"color-swatches__sass\">map-get($color-secondary, green-50)</div>\n        </li>\n        <li class=\"color-swatches__swatch\" style=\"background-color:rgba(247, 231, 193);\">\n          <h5 class=\"color-swatches__name\">yellow-50</h5>\n          <div class=\"color-swatches__rgba\">rgb(247, 231, 193)</div>\n          <div class=\"color-swatches__sass\">map-get($color-secondary, yellow-50)</div>\n        </li>\n        <li class=\"color-swatches__swatch\" style=\"background-color:rgba(246, 194, 177);\">\n          <h5 class=\"color-swatches__name\">orange-50</h5>\n          <div class=\"color-swatches__rgba\">rgb(246, 194, 177)</div>\n          <div class=\"color-swatches__sass\">map-get($color-secondary, orange-50)</div>\n        </li>\n        <li class=\"color-swatches__swatch\" style=\"background-color:rgba(152, 215, 213);\">\n          <h5 class=\"color-swatches__name\">teal-50</h5>\n          <div class=\"color-swatches__rgba\">rgb(152, 215, 213)</div>\n          <div class=\"color-swatches__sass\">map-get($color-secondary, teal-50)</div>\n        </li>\n        <li class=\"color-swatches__swatch\" style=\"background-color:rgba(142, 188, 214);\">\n          <h5 class=\"color-swatches__name\">blue-50</h5>\n          <div class=\"color-swatches__rgba\">rgb(142, 188, 214)</div>\n          <div class=\"color-swatches__sass\">map-get($color-secondary, blue-50)</div>\n        </li>\n        <li class=\"color-swatches__swatch\" style=\"background-color:rgba(167, 158, 173);\">\n          <h5 class=\"color-swatches__name\">purple-50</h5>\n          <div class=\"color-swatches__rgba\">rgb(167, 158, 173)</div>\n          <div class=\"color-swatches__sass\">map-get($color-secondary, purple-50)</div>\n        </li>\n      </ul>\n    </li>\n    <li>\n      <ul class=\"color-swatches__column\">\n        <li class=\"color-swatches__swatch\" style=\"background-color:rgba(243, 246, 238);\">\n          <h5 class=\"color-swatches__name\">green-25</h5>\n          <div class=\"color-swatches__rgba\">rgb(243, 246, 238)</div>\n          <div class=\"color-swatches__sass\">map-get($color-secondary, green-25)</div>\n        </li>\n        <li class=\"color-swatches__swatch\" style=\"background-color:rgba(251, 243, 224);\">\n          <h5 class=\"color-swatches__name\">yellow-25</h5>\n          <div class=\"color-swatches__rgba\">rgb(251, 243, 224)</div>\n          <div class=\"color-swatches__sass\">map-get($color-secondary, yellow-25)</div>\n        </li>\n        <li class=\"color-swatches__swatch\" style=\"background-color:rgba(250, 225, 217);\">\n          <h5 class=\"color-swatches__name\">orange-25</h5>\n          <div class=\"color-swatches__rgba\">rgb(250, 225, 217)</div>\n          <div class=\"color-swatches__sass\">map-get($color-secondary, orange-25)</div>\n        </li>\n        <li class=\"color-swatches__swatch\" style=\"background-color:rgba(203, 235, 234);\">\n          <h5 class=\"color-swatches__name\">teal-25</h5>\n          <div class=\"color-swatches__rgba\">rgb(203, 235, 234)</div>\n          <div class=\"color-swatches__sass\">map-get($color-secondary, teal-25)</div>\n        </li>\n        <li class=\"color-swatches__swatch\" style=\"background-color:rgba(198, 222, 234);\">\n          <h5 class=\"color-swatches__name\">blue-25</h5>\n          <div class=\"color-swatches__rgba\">rgb(198, 222, 234)</div>\n          <div class=\"color-swatches__sass\">map-get($color-secondary, blue-25)</div>\n        </li>\n        <li class=\"color-swatches__swatch\" style=\"background-color:rgba(211, 207, 214);\">\n          <h5 class=\"color-swatches__name\">purple-25</h5>\n          <div class=\"color-swatches__rgba\">rgb(211, 207, 214)</div>\n          <div class=\"color-swatches__sass\">map-get($color-secondary, purple-25)</div>\n        </li>\n      </ul>\n    </li>\n    <li>\n      <ul class=\"color-swatches__column\">\n        <li class=\"color-swatches__swatch\" style=\"background-color:rgba(250, 251, 248);\">\n          <h5 class=\"color-swatches__name\">green-10</h5>\n          <div class=\"color-swatches__rgba\">rgb(250, 251, 248)</div>\n          <div class=\"color-swatches__sass\">map-get($color-secondary, green-10)</div>\n        </li>\n        <li class=\"color-swatches__swatch\" style=\"background-color:rgba(253, 250, 242);\">\n          <h5 class=\"color-swatches__name\">yellow-10</h5>\n          <div class=\"color-swatches__rgba\">rgb(253, 250, 242)</div>\n          <div class=\"color-swatches__sass\">map-get($color-secondary, yellow-10)</div>\n        </li>\n        <li class=\"color-swatches__swatch\" style=\"background-color:rgba(253, 242, 239);\">\n          <h5 class=\"color-swatches__name\">orange-10</h5>\n          <div class=\"color-swatches__rgba\">rgb(253, 242, 239)</div>\n          <div class=\"color-swatches__sass\">map-get($color-secondary, orange-10)</div>\n        </li>\n        <li class=\"color-swatches__swatch\" style=\"background-color:rgba(234, 247, 246);\">\n          <h5 class=\"color-swatches__name\">teal-10</h5>\n          <div class=\"color-swatches__rgba\">rgb(234, 247, 246)</div>\n          <div class=\"color-swatches__sass\">map-get($color-secondary, teal-10)</div>\n        </li>\n        <li class=\"color-swatches__swatch\" style=\"background-color:rgba(232, 241, 246);\">\n          <h5 class=\"color-swatches__name\">blue-10</h5>\n          <div class=\"color-swatches__rgba\">rgb(232, 241, 246)</div>\n          <div class=\"color-swatches__sass\">map-get($color-secondary, blue-10)</div>\n        </li>\n        <li class=\"color-swatches__swatch\" style=\"background-color:rgba(237, 235, 238);\">\n          <h5 class=\"color-swatches__name\">purple-10</h5>\n          <div class=\"color-swatches__rgba\">rgb(237, 235, 238)</div>\n          <div class=\"color-swatches__sass\">map-get($color-secondary, purple-10)</div>\n        </li>\n      </ul>\n    </li>\n</div>\n\n## How to Read and Use the Color Swatches\nThe colors on this page are categorized by specific use cases meant to provide a consistent visual aesthetic to components and pages. To facilitate discussion between design and development, design specifications should always refer to the semantic name rather than the HEX or RGB values.\n\n__$color-interaction__ ← [SASS map name](http://sass-lang.com/documentation/file.SASS_REFERENCE.html#maps)\n<ul class=\"color-swatches color-swatches--example\">\n    <li class=\"color-swatches__swatch text-light\" style=\"background-color:rgb(4, 102, 180);\">\n      <h5 class=\"color-swatches__name\">default</h5>\n      <div class=\"color-swatches__hex\">#0466B4</div>\n      <div class=\"color-swatches__rgba\">rgb(4, 102, 180)</div>\n      <div class=\"color-swatches__sass\">map-get($color-interaction, default)</div>\n    </li>\n    <li style=\"width:250px;\">\n      <h5 class=\"color-swatches__name\" style=\"font-weight:normal;\">← Semantic name (SASS map key)</h5>\n      <div class=\"color-swatches__hex\">← HEX color value</div>\n      <div class=\"color-swatches__rgba\">← RGB(A) color value</div>\n      <div class=\"color-swatches__rgba\">← SASS map variable access</div>\n    </li>\n</ul>\n\nSee the [implementation section]({{ path '/docs/foundations/color' }}#implementation) for how to use the SASS maps and keys when writing application SASS styles. Using the SASS color maps greatly reduces the need to recode user interfaces if there are color changes and is always the most preferable way of referencing color values in Forge. The HEX and RGB values are only provided for setting up design tools or in cases where the use of SASS is not possible.\n\n## Color Principles\nThe color palette was carefully considered with the following in mind:\n\n### Accessibility\nathenahealth products must meet certain accessibility standards, including [contrast ratios the Web Content Accessibility Guidelines (WCAG) 2.1 specifies for text and background color combinations](https://www.w3.org/TR/WCAG21/#contrast-minimum). Forge colors are level AA compliant when used in proper combinations.\n\n### Critical Issues\nThe color red is reserved to indicate critical issues. Use this color sparingly and only for highly important areas such as:\n\n* Patient safety&mdash;anything that could lead to patient harm\n* Business issues that could severely affect the financial health of a client\n\t* Example: Missing data that endangers a hospital's Medicare payments\n\n### Meaning\nA deliberate choice was made to use color sparingly. When color is used, it is intended to have specific, holistic meaning, so that regardless of which product, widget, screen, or workflow a user moves through, the meaning stays consistent.\n\n### Brand\nAlthough Forge does not strictly adhere to the corporate color palette (primarily because of accessibility issues), that was the starting point.\n\n## Design\n### Interaction\nInteraction colors indicate interactive elements that will drive users forward through workflows and decision points (e.g. [Button]({{ path '/docs/components/button' }})).\n<div class=\"color-group color-group--content\">\n  <h4 id=\"palette-color-interaction\" class=\"color-group__title\">$color-interaction</h4>\n  <ul class=\"color-swatches\">\n    <li class=\"color-swatches__swatch text-light\" style=\"background-color:rgb(4, 102, 180);\">\n      <h5 class=\"color-swatches__name\">default</h5>\n      <div class=\"color-swatches__hex\">#0466B4</div>\n      <div class=\"color-swatches__rgba\">rgb(4, 102, 180)</div>\n      <div class=\"color-swatches__sass\">map-get($color-interaction, default)</div>\n    </li>\n    <li class=\"color-swatches__swatch text-light\" style=\"background-color:rgb(4, 57, 97);\">\n      <h5 class=\"color-swatches__name\">select</h5>\n      <div class=\"color-swatches__hex\">#043961</div>\n      <div class=\"color-swatches__rgba\">rgb(4, 57, 97)</div>\n      <div class=\"color-swatches__sass\">map-get($color-interaction, select)</div>\n    </li>\n    <li class=\"color-swatches__swatch text-light\" style=\"background-color:rgb(0, 84, 150);\">\n      <h5 class=\"color-swatches__name\">hover-dark</h5>\n      <div class=\"color-swatches__hex\">#005496</div>\n      <div class=\"color-swatches__rgba\">rgb(0, 84, 150)</div>\n      <div class=\"color-swatches__sass\">map-get($color-interaction, hover-dark)</div>\n    </li>\n    <li class=\"color-swatches__swatch\" style=\"background-color:rgb(217, 235, 250);\">\n      <h5 class=\"color-swatches__name\">hover</h5>\n      <div class=\"color-swatches__hex\">#D9EBFA</div>\n      <div class=\"color-swatches__rgba\">rgb(217, 235, 250)</div>\n      <div class=\"color-swatches__sass\">map-get($color-interaction, hover)</div>\n    </li>\n    <li class=\"color-swatches__swatch\" style=\"background-color:rgb(179, 179, 179);\">\n      <h5 class=\"color-swatches__name\">disabled</h5>\n      <div class=\"color-swatches__hex\">#B3B3B3</div>\n      <div class=\"color-swatches__rgba\">rgb(179, 179, 179)</div>\n      <div class=\"color-swatches__sass\">map-get($color-interaction, disabled)</div>\n    </li>\n  </ul>\n</div>\n\n### Backgrounds & Borders\nBackground and border colors can be used to help differentiate between sections of a page (e.g. [DateInput]({{ path '/docs/components/date-input' }})).\n#### Backgrounds\n<div class=\"color-group color-group--content\">\n  <h4 id=\"palette-color-background\" class=\"color-group__title\">$color-background</h4>\n  <ul class=\"color-swatches\">\n    <li class=\"color-swatches__swatch bordered\" style=\"background-color:rgb(255, 255, 255);\">\n      <h5 class=\"color-swatches__name\">default</h5>\n      <div class=\"color-swatches__hex\">#FFFFFF</div>\n      <div class=\"color-swatches__rgba\">rgb(255, 255, 255)</div>\n      <div class=\"color-swatches__sass\">map-get($color-background, default)</div>\n    </li>\n    <li class=\"color-swatches__swatch\" style=\"background-color:rgb(217, 217, 217);\">\n      <h5 class=\"color-swatches__name\">dark</h5>\n      <div class=\"color-swatches__hex\">#D9D9D9</div>\n      <div class=\"color-swatches__rgba\">rgb(217, 217, 217)</div>\n      <div class=\"color-swatches__sass\">map-get($color-background, dark)</div>\n    </li>\n    <li class=\"color-swatches__swatch\" style=\"background-color:rgb(225, 225, 225);\">\n      <h5 class=\"color-swatches__name\">light</h5>\n      <div class=\"color-swatches__hex\">#E1E1E1</div>\n      <div class=\"color-swatches__rgba\">rgb(225, 225, 225)</div>\n      <div class=\"color-swatches__sass\">map-get($color-background, light)</div>\n    </li>\n  </ul>\n</div>\n\n#### Borders\n<div class=\"color-group color-group--content\">\n  <h4 id=\"palette-color-border\" class=\"color-group__title\">$color-border</h4>\n  <ul class=\"color-swatches\">\n    <li class=\"color-swatches__swatch text-light\" style=\"background-color:rgb(179, 179, 179);\">\n      <h5 class=\"color-swatches__name\">default</h5>\n      <div class=\"color-swatches__hex\">#B3B3B3</div>\n      <div class=\"color-swatches__rgba\">rgb(179, 179, 179)</div>\n      <div class=\"color-swatches__sass\">map-get($color-border, default)</div>\n    </li>\n    <li class=\"color-swatches__swatch text-light\" style=\"background-color:rgb(95, 95, 95);\">\n      <h5 class=\"color-swatches__name\">dark</h5>\n      <div class=\"color-swatches__hex\">#5F5F5F</div>\n      <div class=\"color-swatches__rgba\">rgb(95, 95, 95)</div>\n      <div class=\"color-swatches__sass\">map-get($color-border, dark)</div>\n    </li>\n    <li class=\"color-swatches__swatch\" style=\"background-color:rgb(217, 217, 217);\">\n      <h5 class=\"color-swatches__name\">light</h5>\n      <div class=\"color-swatches__hex\">#D9D9D9</div>\n      <div class=\"color-swatches__rgba\">rgb(217, 217, 217)</div>\n      <div class=\"color-swatches__sass\">map-get($color-border, light)</div>\n    </li>\n    <li class=\"color-swatches__swatch text-light\" style=\"background-color:rgb(4, 102, 180);\">\n      <h5 class=\"color-swatches__name\">focus</h5>\n      <div class=\"color-swatches__hex\">#0466B4</div>\n      <div class=\"color-swatches__rgba\">rgb(4, 102, 180)</div>\n      <div class=\"color-swatches__sass\">map-get($color-border, focus)</div>\n    </li>\n    <li class=\"color-swatches__swatch\" style=\"background-color:rgb(217, 235, 250);\">\n      <h5 class=\"color-swatches__name\">focus-invert</h5>\n      <div class=\"color-swatches__hex\">#D9EBFA</div>\n      <div class=\"color-swatches__rgba\">rgb(217, 235, 250)</div>\n      <div class=\"color-swatches__sass\">map-get($color-border, focus-invert)</div>\n    </li>\n  </ul>\n</div>\n\n### Brand\nBrand colors are used for global navigation or when athena is speaking directly to the user and providing information (e.g. [Tooltip]({{ path '/docs/components/tooltip' }})).\n<div class=\"color-group color-group--content\">\n  <h4 id=\"palette-color-brand\" class=\"color-group__title\">$color-brand</h4>\n  <ul class=\"color-swatches\">\n    <li class=\"color-swatches__swatch text-light\" style=\"background-color:rgb(97, 68, 118);\">\n      <h5 class=\"color-swatches__name\">default</h5>\n      <div class=\"color-swatches__hex\">#614476</div>\n      <div class=\"color-swatches__rgba\">rgb(97, 68, 118)</div>\n      <div class=\"color-swatches__sass\">map-get($color-brand, default)</div>\n    </li>\n    <li class=\"color-swatches__swatch text-light\" style=\"background-color:rgb(67, 54, 77);\">\n      <h5 class=\"color-swatches__name\">dark</h5>\n      <div class=\"color-swatches__hex\">#43364D</div>\n      <div class=\"color-swatches__rgba\">rgb(67, 54, 77)</div>\n      <div class=\"color-swatches__sass\">map-get($color-brand, dark)</div>\n    </li>\n    <li class=\"color-swatches__swatch text-light\" style=\"background-color:rgb(126, 88, 155);\">\n      <h5 class=\"color-swatches__name\">light</h5>\n      <div class=\"color-swatches__hex\">#7E589B</div>\n      <div class=\"color-swatches__rgba\">rgb(126, 88, 155)</div>\n      <div class=\"color-swatches__sass\">map-get($color-brand, light)</div>\n    </li>\n  </ul>\n</div>\n\n### Alert\nThere are several ways in which information, alerts and messages are presented to users. Color helps reinforce type and severity (e.g. [Icon]({{ path '/docs/components/icon' }}) and [Modal]({{ path '/docs/components/modal' }})).\n<div class=\"color-group color-group--content\">\n  <h4 id=\"palette-color-alert\" class=\"color-group__title\">$color-alert</h4>\n  <ul class=\"color-swatches\">\n    <li class=\"color-swatches__swatch text-light\" style=\"background-color:rgb(17, 134, 71);\">\n      <h5 class=\"color-swatches__name\">success</h5>\n      <div class=\"color-swatches__hex\">#118647</div>\n      <div class=\"color-swatches__rgba\">rgb(17, 134, 71)</div>\n      <div class=\"color-swatches__sass\">map-get($color-alert, success)</div>\n    </li>\n    <li class=\"color-swatches__swatch text-light\" style=\"background-color:rgb(126, 88, 155);\">\n      <h5 class=\"color-swatches__name\">info</h5>\n      <div class=\"color-swatches__hex\">#7E589B</div>\n      <div class=\"color-swatches__rgba\">rgb(126, 88, 155)</div>\n      <div class=\"color-swatches__sass\">map-get($color-alert, info)</div>\n    </li>\n    <li class=\"color-swatches__swatch\" style=\"background-color:rgb(255, 171, 0);\">\n      <h5 class=\"color-swatches__name\">attention</h5>\n      <div class=\"color-swatches__hex\">#FFAB00</div>\n      <div class=\"color-swatches__rgba\">rgb(255, 171, 0)</div>\n      <div class=\"color-swatches__sass\">map-get($color-alert, attention)</div>\n    </li>\n    <li class=\"color-swatches__swatch text-light\" style=\"background-color:rgb(202, 13, 13);\">\n      <h5 class=\"color-swatches__name\">critical</h5>\n      <div class=\"color-swatches__hex\">#CA0D0D</div>\n      <div class=\"color-swatches__rgba\">rgb(202, 13, 13)</div>\n      <div class=\"color-swatches__sass\">map-get($color-alert, critical)</div>\n    </li>\n  </ul>\n</div>\n\n### Font\nThe main concerns with using colors for text are legibility and accessibility. The following colors combined with text styling allow us to be accessibility-compliant and legible (e.g. [Typography]({{ path '/docs/foundations/typography' }}) and [FormField]({{ path '/docs/components/form-field' }})).\n<div class=\"color-group color-group--content\">\n  <h4 id=\"palette-color-font\" class=\"color-group__title\">$color-font</h4>\n  <ul class=\"color-swatches\">\n    <li class=\"color-swatches__swatch text-light\" style=\"background-color:rgb(51, 51, 51);\">\n      <h5 class=\"color-swatches__name\">default</h5>\n      <div class=\"color-swatches__hex\">#333333</div>\n      <div class=\"color-swatches__rgba\">rgb(51, 51, 51)</div>\n      <div class=\"color-swatches__sass\">map-get($color-font, default)</div>\n    </li>\n    <li class=\"color-swatches__swatch text-light\" style=\"background-color:rgb(0, 0, 0);\">\n      <h5 class=\"color-swatches__name\">dark</h5>\n      <div class=\"color-swatches__hex\">#000000</div>\n      <div class=\"color-swatches__rgba\">rgb(0, 0, 0)</div>\n      <div class=\"color-swatches__sass\">map-get($color-font, dark)</div>\n    </li>\n    <li class=\"color-swatches__swatch text-light\" style=\"background-color:rgb(95, 95, 95);\">\n      <h5 class=\"color-swatches__name\">muted</h5>\n      <div class=\"color-swatches__hex\">#5F5F5F</div>\n      <div class=\"color-swatches__rgba\">rgb(95, 95, 95)</div>\n      <div class=\"color-swatches__sass\">map-get($color-font, muted)</div>\n    </li>\n    <li class=\"color-swatches__swatch text-light\" style=\"background-color:rgb(128, 128, 128);\">\n      <h5 class=\"color-swatches__name\">light</h5>\n      <div class=\"color-swatches__hex\">#808080</div>\n      <div class=\"color-swatches__rgba\">rgb(128, 128, 128)</div>\n      <div class=\"color-swatches__sass\">map-get($color-font, light)</div>\n    </li>\n    <li class=\"color-swatches__swatch\" style=\"background-color:rgb(179, 179, 179);\">\n      <h5 class=\"color-swatches__name\">disabled</h5>\n      <div class=\"color-swatches__hex\">#B3B3B3</div>\n      <div class=\"color-swatches__rgba\">rgb(179, 179, 179)</div>\n      <div class=\"color-swatches__sass\">map-get($color-font, disabled)</div>\n    </li>\n    <li class=\"color-swatches__swatch bordered\" style=\"background-color:rgb(255, 255, 255);\">\n      <h5 class=\"color-swatches__name\">invert</h5>\n      <div class=\"color-swatches__hex\">#FFFFFF</div>\n      <div class=\"color-swatches__rgba\">rgb(255, 255, 255)</div>\n      <div class=\"color-swatches__sass\">map-get($color-font, invert)</div>\n    </li>\n  </ul>\n</div>\n\n### Shadow\nShadow colors help emphasize interactive elements. Note that they contain transparency (alpha channel value) to allow for partial view of other components or backgrounds beneath them (e.g. [Modal]({{ path '/docs/components/modal' }}) and [DateInput's Calendar]({{ path '/docs/components/date-input' }})).\n<div class=\"color-group color-group--content\">\n  <h4 id=\"palette-color-shadow\" class=\"color-group__title\">$color-shadow</h4>\n  <ul class=\"color-swatches\">\n    <li class=\"color-swatches__swatch\" style=\"background-color:rgba(0, 0, 0, 0.25);\">\n      <h5 class=\"color-swatches__name\">default</h5>\n      <div class=\"color-swatches__rgba\">rgba(0, 0, 0, 0.25)</div>\n      <div class=\"color-swatches__sass\">map-get($color-shadow, default)</div>\n    </li>\n    <li class=\"color-swatches__swatch text-light\" style=\"background-color:rgba(0, 0, 0, 0.4);\">\n      <h5 class=\"color-swatches__name\">dark</h5>\n      <div class=\"color-swatches__rgba\">rgba(0, 0, 0, 0.4)</div>\n      <div class=\"color-swatches__sass\">map-get($color-shadow, dark)</div>\n    </li>\n  </ul>\n</div>\n\n### Categorical Data\nCategorical Data is described as discrete chunks of data that don't have a specific order. Use the full-saturation secondary color palette to represent this type of data.\n<div class=\"color-group\">\n  <ul class=\"color-swatches\">\n    <li class=\"color-swatches__swatch\" style=\"background-color:rgba(209, 219, 186);\">\n      <h5 class=\"color-swatches__name\">$green-secondary-100</h5>\n      <div class=\"color-swatches__hex\">#D1DBB0</div>\n      <div class=\"color-swatches__rgba\">rgb(209, 219, 186)</div>\n    </li>\n    <li class=\"color-swatches__swatch\" style=\"background-color:rgba(240, 207, 132);\">\n      <h5 class=\"color-swatches__name\">$yellow-secondary-100</h5>\n      <div class=\"color-swatches__hex\">#F0CF84</div>\n      <div class=\"color-swatches__rgba\">rgb(240, 207, 132)</div>\n    </li>\n    <li class=\"color-swatches__swatch\" style=\"background-color:rgba(237, 134, 100);\">\n      <h5 class=\"color-swatches__name\">$orange-secondary-100</h5>\n      <div class=\"color-swatches__hex\">#ED8664</div>\n      <div class=\"color-swatches__rgba\">rgb(237, 134, 100)</div>\n    </li>\n    <li class=\"color-swatches__swatch\" style=\"background-color:rgba(49, 176, 172);\">\n      <h5 class=\"color-swatches__name\">$teal-secondary-100</h5>\n      <div class=\"color-swatches__hex\">#31B0AC</div>\n      <div class=\"color-swatches__rgba\">rgb(49, 176, 172)</div>\n    </li>\n    <li class=\"color-swatches__swatch text-light\" style=\"background-color:rgba(29, 122, 173);\">\n      <h5 class=\"color-swatches__name\">$blue-secondary-100</h5>\n      <div class=\"color-swatches__hex\">#1D7AAD</div>\n      <div class=\"color-swatches__rgba\">rgb(29, 122, 173)</div>\n    </li>\n    <li class=\"color-swatches__swatch text-light\" style=\"background-color:rgba(79, 64, 92);\">\n      <h5 class=\"color-swatches__name\">$purple-secondary-100</h5>\n      <div class=\"color-swatches__hex\">#4F405C</div>\n      <div class=\"color-swatches__rgba\">rgb(79, 64, 92)</div>\n    </li>\n  </ul>\n</div>\n\n### Sequential Data\nSequential data is single variable data with a range of values. It is best represented using a single color at varying degrees of lightness.\n<div class=\"primitives\">\n  <div class=\"color-group\">\n    <ul class=\"color-swatches\">\n      <li class=\"color-swatches__swatch\" style=\"background-color:rgba(209, 219, 186);\">\n        <h5 class=\"color-swatches__name\">$green-secondary-100</h5>\n        <div class=\"color-swatches__hex\">#D1DBB0</div>\n        <div class=\"color-swatches__rgba\">rgb(209, 219, 186)</div>\n      </li>\n      <li class=\"color-swatches__swatch\" style=\"background-color:rgba(221, 228, 204);\">\n        <h5 class=\"color-swatches__name\">$green-secondary-75</h5>\n        <div class=\"color-swatches__hex\">#DDE4CC</div>\n        <div class=\"color-swatches__rgba\">rgb(221, 228, 204)</div>\n      </li>\n      <li class=\"color-swatches__swatch\" style=\"background-color:rgba(232, 237, 220);\">\n        <h5 class=\"color-swatches__name\">$green-secondary-50</h5>\n        <div class=\"color-swatches__hex\">#E8EDDC</div>\n        <div class=\"color-swatches__rgba\">rgb(232, 237, 220)</div>\n      </li>\n      <li class=\"color-swatches__swatch\" style=\"background-color:rgba(243, 246, 238);\">\n        <h5 class=\"color-swatches__name\">$green-secondary-25</h5>\n        <div class=\"color-swatches__hex\">#F3F6EE</div>\n        <div class=\"color-swatches__rgba\">rgb(243, 246, 238)</div>\n      </li>\n      <li class=\"color-swatches__swatch\" style=\"background-color:rgba(250, 251, 248);\">\n        <h5 class=\"color-swatches__name\">$green-secondary-10</h5>\n        <div class=\"color-swatches__hex\">#FAFBF8</div>\n        <div class=\"color-swatches__rgba\">rgb(250, 251, 248)</div>\n      </li>\n    </ul>\n  </div>\n  <div class=\"color-group\">\n    <ul class=\"color-swatches\">\n      <li class=\"color-swatches__swatch\" style=\"background-color:rgba(240, 207, 132);\">\n        <h5 class=\"color-swatches__name\">$yellow-secondary-100</h5>\n        <div class=\"color-swatches__hex\">#F0CF84</div>\n        <div class=\"color-swatches__rgba\">rgb(240, 207, 132)</div>\n      </li>\n      <li class=\"color-swatches__swatch\" style=\"background-color:rgba(244, 219, 163);\">\n        <h5 class=\"color-swatches__name\">$yellow-secondary-75</h5>\n        <div class=\"color-swatches__hex\">#F4DBA3</div>\n        <div class=\"color-swatches__rgba\">rgb(244, 219, 163)</div>\n      </li>\n      <li class=\"color-swatches__swatch\" style=\"background-color:rgba(247, 231, 193);\">\n        <h5 class=\"color-swatches__name\">#yellow-secondary-50</h5>\n        <div class=\"color-swatches__hex\">#F7E7C1</div>\n        <div class=\"color-swatches__rgba\">rgb(247, 231, 193)</div>\n      </li>\n      <li class=\"color-swatches__swatch\" style=\"background-color:rgba(251, 243, 224);\">\n        <h5 class=\"color-swatches__name\">$yellow-secondary-25</h5>\n        <div class=\"color-swatches__hex\">#FBF3E0</div>\n        <div class=\"color-swatches__rgba\">rgb(251, 243, 224)</div>\n      </li>\n      <li class=\"color-swatches__swatch\" style=\"background-color:rgba(253, 250, 242);\">\n        <h5 class=\"color-swatches__name\">$yellow-secondary-10</h5>\n        <div class=\"color-swatches__hex\">#FDFAF2</div>\n        <div class=\"color-swatches__rgba\">rgb(253, 250, 242)</div>\n      </li>\n    </ul>\n  </div>\n  <div class=\"color-group\">\n    <ul class=\"color-swatches\">\n      <li class=\"color-swatches__swatch\" style=\"background-color:rgba(237, 134, 100);\">\n        <h5 class=\"color-swatches__name\">$orange-secondary-100</h5>\n        <div class=\"color-swatches__hex\">#ED8664</div>\n        <div class=\"color-swatches__rgba\">rgb(237, 134, 100)</div>\n      </li>\n      <li class=\"color-swatches__swatch\" style=\"background-color:rgba(242, 165, 139);\">\n        <h5 class=\"color-swatches__name\">$orange-secondary-75</h5>\n        <div class=\"color-swatches__hex\">#F2A58B</div>\n        <div class=\"color-swatches__rgba\">rgb(242, 165, 139)</div>\n      </li>\n      <li class=\"color-swatches__swatch\" style=\"background-color:rgba(246, 194, 177);\">\n        <h5 class=\"color-swatches__name\">$orange-secondary-50</h5>\n        <div class=\"color-swatches__hex\">#F6C2B1</div>\n        <div class=\"color-swatches__rgba\">rgb(246, 194, 177)</div>\n      </li>\n      <li class=\"color-swatches__swatch\" style=\"background-color:rgba(250, 225, 217);\">\n        <h5 class=\"color-swatches__name\">$orange-secondary-25</h5>\n        <div class=\"color-swatches__hex\">#FAE1D9</div>\n        <div class=\"color-swatches__rgba\">rgb(250, 225, 217)</div>\n      </li>\n      <li class=\"color-swatches__swatch\" style=\"background-color:rgba(253, 242, 239);\">\n        <h5 class=\"color-swatches__name\">$orange-secondary-10</h5>\n        <div class=\"color-swatches__hex\">#FDF2EF</div>\n        <div class=\"color-swatches__rgba\">rgb(253, 242, 239)</div>\n      </li>\n    </ul>\n  </div>\n  <div class=\"color-group\">\n    <ul class=\"color-swatches\">\n      <li class=\"color-swatches__swatch\" style=\"background-color:rgba(49, 176, 172);\">\n        <h5 class=\"color-swatches__name\">$teal-secondary-100</h5>\n        <div class=\"color-swatches__hex\">#31B0AC</div>\n        <div class=\"color-swatches__rgba\">rgb(49, 176, 172)</div>\n      </li>\n      <li class=\"color-swatches__swatch\" style=\"background-color:rgba(100, 196, 193);\">\n        <h5 class=\"color-swatches__name\">$teal-secondary-75</h5>\n        <div class=\"color-swatches__hex\">#64C4C1</div>\n        <div class=\"color-swatches__rgba\">rgb(10, 196, 193)</div>\n      </li>\n      <li class=\"color-swatches__swatch\" style=\"background-color:rgba(152, 215, 213);\">\n        <h5 class=\"color-swatches__name\">$teal-secondary-50</h5>\n        <div class=\"color-swatches__hex\">#98D7D5</div>\n        <div class=\"color-swatches__rgba\">rgb(152, 215, 213)</div>\n      </li>\n      <li class=\"color-swatches__swatch\" style=\"background-color:rgba(203, 235, 234);\">\n        <h5 class=\"color-swatches__name\">$teal-secondary-25</h5>\n        <div class=\"color-swatches__hex\">#CBEBEA</div>\n        <div class=\"color-swatches__rgba\">rgb(203, 235, 234)</div>\n      </li>\n      <li class=\"color-swatches__swatch\" style=\"background-color:rgba(234, 247, 246);\">\n        <h5 class=\"color-swatches__name\">$teal-secondary-10</h5>\n        <div class=\"color-swatches__hex\">#EAF7F6</div>\n        <div class=\"color-swatches__rgba\">rgb(234, 247, 246)</div>\n      </li>\n    </ul>\n  </div>\n  <div class=\"color-group\">\n    <ul class=\"color-swatches\">\n      <li class=\"color-swatches__swatch text-light\" style=\"background-color:rgba(29, 122, 173);\">\n        <h5 class=\"color-swatches__name\">$blue-secondary-100</h5>\n        <div class=\"color-swatches__hex\">#1D7AAD</div>\n        <div class=\"color-swatches__rgba\">rgb(29, 122, 173)</div>\n      </li>\n      <li class=\"color-swatches__swatch\" style=\"background-color:rgba(105, 163, 194);\">\n        <h5 class=\"color-swatches__name\">$blue-secondary-75</h5>\n        <div class=\"color-swatches__hex\">#569CC2</div>\n        <div class=\"color-swatches__rgba\">rgb(86, 156, 194)</div>\n      </li>\n      <li class=\"color-swatches__swatch\" style=\"background-color:rgba(142, 188, 214);\">\n        <h5 class=\"color-swatches__name\">$blue-secondary-50</h5>\n        <div class=\"color-swatches__hex\">#8EBCD6</div>\n        <div class=\"color-swatches__rgba\">rgb(142, 188, 214)</div>\n      </li>\n      <li class=\"color-swatches__swatch\" style=\"background-color:rgba(198, 222, 234);\">\n        <h5 class=\"color-swatches__name\">$blue-secondary-25</h5>\n        <div class=\"color-swatches__hex\">#C6DEEA</div>\n        <div class=\"color-swatches__rgba\">rgb(198, 222, 234)</div>\n      </li>\n      <li class=\"color-swatches__swatch\" style=\"background-color:rgba(232, 241, 246);\">\n        <h5 class=\"color-swatches__name\">$blue-secondary-10</h5>\n        <div class=\"color-swatches__hex\">#E8F1F6</div>\n        <div class=\"color-swatches__rgba\">rgb(232, 241, 246)</div>\n      </li>\n    </ul>\n  </div>\n  <div class=\"color-group\">\n    <ul class=\"color-swatches\">\n      <li class=\"color-swatches__swatch text-light\" style=\"background-color:rgba(79, 64, 92);\">\n        <h5 class=\"color-swatches__name\">$purple-secondary-100</h5>\n        <div class=\"color-swatches__hex\">#4F405C</div>\n        <div class=\"color-swatches__rgba\">rgb(79, 64, 92)</div>\n      </li>\n      <li class=\"color-swatches__swatch text-light\" style=\"background-color:rgba(123, 112, 133);\">\n        <h5 class=\"color-swatches__name\">$purple-secondary-75</h5>\n        <div class=\"color-swatches__hex\">#7B7085</div>\n        <div class=\"color-swatches__rgba\">rgb(123, 112, 133)</div>\n      </li>\n      <li class=\"color-swatches__swatch\" style=\"background-color:rgba(167, 158, 173);\">\n        <h5 class=\"color-swatches__name\">$purple-secondary-50</h5>\n        <div class=\"color-swatches__hex\">#A79EAD</div>\n        <div class=\"color-swatches__rgba\">rgb(167, 158, 173)</div>\n      </li>\n      <li class=\"color-swatches__swatch\" style=\"background-color:rgba(211, 207, 214);\">\n        <h5 class=\"color-swatches__name\">$purple-secondary-25</h5>\n        <div class=\"color-swatches__hex\">#D3CFD6</div>\n        <div class=\"color-swatches__rgba\">rgb(211, 207, 214)</div>\n      </li>\n      <li class=\"color-swatches__swatch\" style=\"background-color:rgba(237, 235, 238);\">\n        <h5 class=\"color-swatches__name\">$purple-secondary-10</h5>\n        <div class=\"color-swatches__hex\">#EDEBEE</div>\n        <div class=\"color-swatches__rgba\">rgb(237, 235, 238)</div>\n      </li>\n    </ul>\n  </div>\n</div>\n\n### Status\nStatus colors are a subset of the categorical data palette. Use these to indicate status. <span class=\"fe_u_font-weight--bold\">Accessibility note:</span> When showing text with these status colors as a background, use these text colors to meet WCAG 2.0 AA contrast requirements:</p><ul>\n  <li>`$blue-secondary-100` or `$purple-secondary-100`: <br>font color <span class=\"fe_u_font-weight--bold\">invert</span> (`#FFFFFF`)</li>\n  <li>All other status colors:  font color <span class=\"fe_u_font-weight--bold\">default</span> (`#333333`)</li>\n</ul>\n<div class=\"primitives\">\n  <div class=\"color-group\">\n    <ul class=\"color-swatches\">\n      <li class=\"color-swatches__swatch\" style=\"background-color:rgba(209, 219, 186);\">\n        <h5 class=\"color-swatches__name\">$green-secondary-100</h5>\n        <div class=\"color-swatches__hex\">#D1DBB0</div>\n        <div class=\"color-swatches__rgba\">rgb(209, 219, 186)</div>\n      </li>\n      <li class=\"color-swatches__swatch\" style=\"background-color:rgba(232, 237, 220);\">\n        <h5 class=\"color-swatches__name\">$green-secondary-50</h5>\n        <div class=\"color-swatches__hex\">#E8EDDC</div>\n        <div class=\"color-swatches__rgba\">rgb(232, 237, 220)</div>\n      </li>\n      <li class=\"color-swatches__swatch\" style=\"background-color:rgba(243, 246, 238);\">\n        <h5 class=\"color-swatches__name\">$green-secondary-25</h5>\n        <div class=\"color-swatches__hex\">#F3F6EE</div>\n        <div class=\"color-swatches__rgba\">rgb(243, 246, 238)</div>\n      </li>\n    </ul>\n  </div>\n  <div class=\"color-group\">\n    <ul class=\"color-swatches\">\n      <li class=\"color-swatches__swatch\" style=\"background-color:rgba(240, 207, 132);\">\n        <h5 class=\"color-swatches__name\">$yellow-secondary-100</h5>\n        <div class=\"color-swatches__hex\">#F0CF84</div>\n        <div class=\"color-swatches__rgba\">rgb(240, 207, 132)</div>\n      </li>\n      <li class=\"color-swatches__swatch\" style=\"background-color:rgba(247, 231, 193);\">\n        <h5 class=\"color-swatches__name\">#yellow-secondary-50</h5>\n        <div class=\"color-swatches__hex\">#F7E7C1</div>\n        <div class=\"color-swatches__rgba\">rgb(247, 231, 193)</div>\n      </li>\n      <li class=\"color-swatches__swatch\" style=\"background-color:rgba(251, 243, 224);\">\n        <h5 class=\"color-swatches__name\">$yellow-secondary-25</h5>\n        <div class=\"color-swatches__hex\">#FBF3E0</div>\n        <div class=\"color-swatches__rgba\">rgb(251, 243, 224)</div>\n      </li>\n    </ul>\n  </div>\n  <div class=\"color-group\">\n    <ul class=\"color-swatches\">\n      <li class=\"color-swatches__swatch\" style=\"background-color:rgba(237, 134, 100);\">\n        <h5 class=\"color-swatches__name\">$orange-secondary-100</h5>\n        <div class=\"color-swatches__hex\">#ED8664</div>\n        <div class=\"color-swatches__rgba\">rgb(237, 134, 100)</div>\n      </li>\n      <li class=\"color-swatches__swatch\" style=\"background-color:rgba(246, 194, 177);\">\n        <h5 class=\"color-swatches__name\">$orange-secondary-50</h5>\n        <div class=\"color-swatches__hex\">#F6C2B1</div>\n        <div class=\"color-swatches__rgba\">rgb(246, 194, 177)</div>\n      </li>\n      <li class=\"color-swatches__swatch\" style=\"background-color:rgba(250, 225, 217);\">\n        <h5 class=\"color-swatches__name\">$orange-secondary-25</h5>\n        <div class=\"color-swatches__hex\">#FAE1D9</div>\n        <div class=\"color-swatches__rgba\">rgb(250, 225, 217)</div>\n      </li>\n    </ul>\n  </div>\n  <div class=\"color-group\">\n    <ul class=\"color-swatches\">\n      <li class=\"color-swatches__swatch\" style=\"background-color:rgba(49, 176, 172);\">\n        <h5 class=\"color-swatches__name\">$teal-secondary-100</h5>\n        <div class=\"color-swatches__hex\">#31B0AC</div>\n        <div class=\"color-swatches__rgba\">rgb(49, 176, 172)</div>\n      </li>\n      <li class=\"color-swatches__swatch\" style=\"background-color:rgba(152, 215, 213);\">\n        <h5 class=\"color-swatches__name\">$teal-secondary-50</h5>\n        <div class=\"color-swatches__hex\">#98D7D5</div>\n        <div class=\"color-swatches__rgba\">rgb(152, 215, 213)</div>\n      </li>\n      <li class=\"color-swatches__swatch\" style=\"background-color:rgba(203, 235, 234);\">\n        <h5 class=\"color-swatches__name\">$teal-secondary-25</h5>\n        <div class=\"color-swatches__hex\">#CBEBEA</div>\n        <div class=\"color-swatches__rgba\">rgb(203, 235, 234)</div>\n      </li>\n    </ul>\n  </div>\n  <div class=\"color-group\">\n    <ul class=\"color-swatches\">\n      <li class=\"color-swatches__swatch text-light\" style=\"background-color:rgba(29, 122, 173);\">\n        <h5 class=\"color-swatches__name\">$blue-secondary-100</h5>\n        <div class=\"color-swatches__hex\">#1D7AAD</div>\n        <div class=\"color-swatches__rgba\">rgb(29, 122, 173)</div>\n      </li>\n      <li class=\"color-swatches__swatch\" style=\"background-color:rgba(142, 188, 214);\">\n        <h5 class=\"color-swatches__name\">$blue-secondary-50</h5>\n        <div class=\"color-swatches__hex\">#8EBCD6</div>\n        <div class=\"color-swatches__rgba\">rgb(142, 188, 214)</div>\n      </li>\n      <li class=\"color-swatches__swatch\" style=\"background-color:rgba(198, 222, 234);\">\n        <h5 class=\"color-swatches__name\">$blue-secondary-25</h5>\n        <div class=\"color-swatches__hex\">#C6DEEA</div>\n        <div class=\"color-swatches__rgba\">rgb(198, 222, 234)</div>\n      </li>\n    </ul>\n  </div>\n  <div class=\"color-group\">\n    <ul class=\"color-swatches\">\n      <li class=\"color-swatches__swatch text-light\" style=\"background-color:rgba(79, 64, 92);\">\n        <h5 class=\"color-swatches__name\">$purple-secondary-100</h5>\n        <div class=\"color-swatches__hex\">#4F405C</div>\n        <div class=\"color-swatches__rgba\">rgb(79, 64, 92)</div>\n      </li>\n      <li class=\"color-swatches__swatch\" style=\"background-color:rgba(167, 158, 173);\">\n        <h5 class=\"color-swatches__name\">$purple-secondary-50</h5>\n        <div class=\"color-swatches__hex\">#A79EAD</div>\n        <div class=\"color-swatches__rgba\">rgb(167, 158, 173)</div>\n      </li>\n      <li class=\"color-swatches__swatch\" style=\"background-color:rgba(211, 207, 214);\">\n        <h5 class=\"color-swatches__name\">$purple-secondary-25</h5>\n        <div class=\"color-swatches__hex\">#D3CFD6</div>\n        <div class=\"color-swatches__rgba\">rgb(211, 207, 214)</div>\n      </li>\n    </ul>\n  </div>\n</div>\n\n## Colors in Data Visualization\nHere are some examples of how the secondary color palette can be used to represent different types of data.\n\n<ul class=\"data-vis-examples\">\n  <li>\n    <span class=\"fe_u_font-weight--bold\">Stepped data:</span> Use similar colors in a logical sequence to show stages of an event\n    <br>\n    <div class=\"data-vis-examples__img-wrapper data-vis-examples__img-wrapper--colors\" style=\"width: 200px;\">\n      ![cool toned color swatches]({{ path '/assets/docs/foundations/images/colors_stepped-data.png' }})\n    </div>\n    <div class=\"data-vis-examples__img-wrapper data-vis-examples__img-wrapper--vis\">\n      ![stepped data shown in purple, blue, teal, green]({{ path '/assets/docs/foundations/images/colors_stepped-data-example.png' }})\n    </div>\n  </li>\n  <li>\n    <span class=\"fe_u_font-weight--bold\">Divergent data:</span> Use graduated scales of two contrasting colors to show data transitions that pass through a neutral point.\n    <br>\n    <div class=\"data-vis-examples__img-wrapper data-vis-examples__img-wrapper--vis\">\n    ![a scale showing blue fading to white then into orange]({{ path '/assets/docs/foundations/images/colors_divergent-data-example.png' }})\n    </div>\n  </li>\n  <li>\n    <span class=\"fe_u_font-weight--bold\">Contrasted data:</span> Use pairs of colors with high contrast to show data with opposing value or character.\n    <br>\n    <div class=\"data-vis-examples__img-wrapper data-vis-examples__img-wrapper--colors\">\n      ![pairs of contrasting colors]({{ path '/assets/docs/foundations/images/colors_contrasting-data.png' }})\n    </div>\n    <div class=\"data-vis-examples__img-wrapper data-vis-examples__img-wrapper--vis\" style=\"width: 250px;\">\n      ![a bar chart showing revenue gains in teal and losses in orange]({{ path '/assets/docs/foundations/images/colors_contrasting-data-example.png' }})\n    </div>\n  </li>\n  <li>\n    <span class=\"fe_u_font-weight--bold\">Related data:</span> Use similar colors to show data with similar value or character.\n    <br>\n    <div class=\"data-vis-examples__img-wrapper data-vis-examples__img-wrapper--colors\">\n      ![pairs of similar colors]({{ path '/assets/docs/foundations/images/colors_related-data.png' }})\n    </div>\n    <div class=\"data-vis-examples__img-wrapper data-vis-examples__img-wrapper--vis\">\n    ![a bar chart showing patients seen in purple and patients satisfied in teal]({{ path '/assets/docs/foundations/images/colors_related-data-example.png' }})\n    </div>\n</li>\n</ul>\n\n## All Colors\nAll distinct Forge colors are presented here for reference only. Designs should reference colors by their category and semantic name.\n<div class=\"primitives\">\n  <div class=\"color-group\">\n    <ul class=\"color-swatches\">\n      <li class=\"color-swatches__swatch text-light\" style=\"background-color:rgb(0, 0, 0);\">\n        <h5 class=\"color-swatches__name\">$gray-0</h5>\n        <div class=\"color-swatches__hex\">#000000</div>\n        <div class=\"color-swatches__rgba\">rgb(0, 0, 0)</div>\n      </li>\n      <li class=\"color-swatches__swatch text-light\" style=\"background-color:rgb(51, 51, 51);\">\n        <h5 class=\"color-swatches__name\">$gray-20</h5>\n        <div class=\"color-swatches__hex\">#333333</div>\n        <div class=\"color-swatches__rgba\">rgb(51, 51, 51)</div>\n      </li>\n      <li class=\"color-swatches__swatch text-light\" style=\"background-color:rgb(95, 95, 95);\">\n        <h5 class=\"color-swatches__name\">$gray-37</h5>\n        <div class=\"color-swatches__hex\">#5F5F5F</div>\n        <div class=\"color-swatches__rgba\">rgb(95, 95, 95)</div>\n      </li>\n      <li class=\"color-swatches__swatch text-light\" style=\"background-color:rgb(128, 128, 128);\">\n        <h5 class=\"color-swatches__name\">$gray-50</h5>\n        <div class=\"color-swatches__hex\">#808080</div>\n        <div class=\"color-swatches__rgba\">rgb(128, 128, 128)</div>\n      </li>\n      <li class=\"color-swatches__swatch\" style=\"background-color:rgb(179, 179, 179);\">\n        <h5 class=\"color-swatches__name\">$gray-70</h5>\n        <div class=\"color-swatches__hex\">#B3B3B3</div>\n        <div class=\"color-swatches__rgba\">rgb(179, 179, 179)</div>\n      </li>\n      <li class=\"color-swatches__swatch\" style=\"background-color:rgb(217, 217, 217);\">\n        <h5 class=\"color-swatches__name\">$gray-85</h5>\n        <div class=\"color-swatches__hex\">#D9D9D9</div>\n        <div class=\"color-swatches__rgba\">rgb(217, 217, 217)</div>\n      </li>\n      <li class=\"color-swatches__swatch\" style=\"background-color:rgb(225, 225, 225);\">\n        <h5 class=\"color-swatches__name\">$gray-88</h5>\n        <div class=\"color-swatches__hex\">#E1E1E1</div>\n        <div class=\"color-swatches__rgba\">rgb(225, 225, 225)</div>\n      </li>\n      <li class=\"color-swatches__swatch bordered\" style=\"background-color:rgb(255, 255, 255);\">\n        <h5 class=\"color-swatches__name\">$gray-100</h5>\n        <div class=\"color-swatches__hex\">#FFFFFF</div>\n        <div class=\"color-swatches__rgba\">rgb(255, 255, 255)</div>\n      </li>\n    </ul>\n  </div>\n  <div class=\"color-group\">\n    <ul class=\"color-swatches\">\n      <li class=\"color-swatches__swatch\" style=\"background-color:rgba(0, 0, 0, 0.25);\">\n        <h5 class=\"color-swatches__name\">$gray-0-alpha-light</h5>\n        <div class=\"color-swatches__rgba\">rgba(0, 0, 0, 0.25)</div>\n      </li>\n      <li class=\"color-swatches__swatch text-light\" style=\"background-color:rgba(0, 0, 0, 0.4);\">\n        <h5 class=\"color-swatches__name\">$gray-0-alpha</h5>\n        <div class=\"color-swatches__rgba\">rgba(0, 0, 0, 0.4)</div>\n      </li>\n    </ul>\n  </div>\n  <div class=\"color-group\">\n    <ul class=\"color-swatches\">\n      <li class=\"color-swatches__swatch text-light\" style=\"background-color:rgb(67, 54, 77);\">\n        <h5 class=\"color-swatches__name\">$purple-dark</h5>\n        <div class=\"color-swatches__hex\">#43364D</div>\n        <div class=\"color-swatches__rgba\">rgb(67, 54, 77)</div>\n      </li>\n      <li class=\"color-swatches__swatch text-light\" style=\"background-color:rgb(97, 68, 118);\">\n        <h5 class=\"color-swatches__name\">$purple-default</h5>\n        <div class=\"color-swatches__hex\">#614476</div>\n        <div class=\"color-swatches__rgba\">rgb(97, 68, 118)</div>\n      </li>\n      <li class=\"color-swatches__swatch text-light\" style=\"background-color:rgb(126, 88, 155);\">\n        <h5 class=\"color-swatches__name\">$purple-light</h5>\n        <div class=\"color-swatches__hex\">#7E589B</div>\n        <div class=\"color-swatches__rgba\">rgb(126, 88, 155)</div>\n      </li>\n    </ul>\n  </div>\n  <div class=\"color-group\">\n    <ul class=\"color-swatches\">\n      <li class=\"color-swatches__swatch text-light\" style=\"background-color:rgb(4, 57, 97);\">\n        <h5 class=\"color-swatches__name\">$blue-x-dark</h5>\n        <div class=\"color-swatches__hex\">#043961</div>\n        <div class=\"color-swatches__rgba\">rgb(4, 57, 97)</div>\n      </li>\n      <li class=\"color-swatches__swatch text-light\" style=\"background-color:rgb(0, 84, 150);\">\n        <h5 class=\"color-swatches__name\">$blue-dark</h5>\n        <div class=\"color-swatches__hex\">#005496</div>\n        <div class=\"color-swatches__rgba\">rgb(0, 84, 150)</div>\n      </li>\n      <li class=\"color-swatches__swatch text-light\" style=\"background-color:rgb(4, 102, 180);\">\n        <h5 class=\"color-swatches__name\">$blue-default</h5>\n        <div class=\"color-swatches__hex\">#0466B4</div>\n        <div class=\"color-swatches__rgba\">rgb(4, 102, 180)</div>\n      </li>\n      <li class=\"color-swatches__swatch\" style=\"background-color:rgb(217, 235, 250);\">\n        <h5 class=\"color-swatches__name\">$blue-light</h5>\n        <div class=\"color-swatches__hex\">#D9EBFA</div>\n        <div class=\"color-swatches__rgba\">rgb(217, 235, 250)</div>\n      </li>\n    </ul>\n  </div>\n  <div class=\"color-group\">\n    <ul class=\"color-swatches\">\n      <li class=\"color-swatches__swatch text-light\" style=\"background-color:rgb(17, 134, 71);\">\n        <h5 class=\"color-swatches__name\">$green</h5>\n        <div class=\"color-swatches__hex\">#118647</div>\n        <div class=\"color-swatches__rgba\">rgb(17, 134, 71)</div>\n      </li>\n      <li class=\"color-swatches__swatch\" style=\"background-color:rgb(255, 171, 0);\">\n        <h5 class=\"color-swatches__name\">$yellow</h5>\n        <div class=\"color-swatches__hex\">#FFAB00</div>\n        <div class=\"color-swatches__rgba\">rgb(255, 171, 0)</div>\n      </li>\n      <li class=\"color-swatches__swatch text-light\" style=\"background-color:rgb(202, 13, 13);\">\n        <h5 class=\"color-swatches__name\">$red</h5>\n        <div class=\"color-swatches__hex\">#CA0D0D</div>\n        <div class=\"color-swatches__rgba\">rgb(202, 13, 13)</div>\n      </li>\n    </ul>\n  </div>\n  <div class=\"color-group\">\n    <ul class=\"color-swatches\">\n      <li class=\"color-swatches__swatch\" style=\"background-color:rgba(209, 219, 186);\">\n        <h5 class=\"color-swatches__name\">$green-secondary-100</h5>\n        <div class=\"color-swatches__hex\">#D1DBB0</div>\n        <div class=\"color-swatches__rgba\">rgb(209, 219, 186)</div>\n      </li>\n      <li class=\"color-swatches__swatch\" style=\"background-color:rgba(221, 228, 204);\">\n        <h5 class=\"color-swatches__name\">$green-secondary-75</h5>\n        <div class=\"color-swatches__hex\">#DDE4CC</div>\n        <div class=\"color-swatches__rgba\">rgb(221, 228, 204)</div>\n      </li>\n      <li class=\"color-swatches__swatch\" style=\"background-color:rgba(232, 237, 220);\">\n        <h5 class=\"color-swatches__name\">$green-secondary-50</h5>\n        <div class=\"color-swatches__hex\">#E8EDDC</div>\n        <div class=\"color-swatches__rgba\">rgb(232, 237, 220)</div>\n      </li>\n      <li class=\"color-swatches__swatch\" style=\"background-color:rgba(243, 246, 238);\">\n        <h5 class=\"color-swatches__name\">$green-secondary-25</h5>\n        <div class=\"color-swatches__hex\">#F3F6EE</div>\n        <div class=\"color-swatches__rgba\">rgb(243, 246, 238)</div>\n      </li>\n      <li class=\"color-swatches__swatch\" style=\"background-color:rgba(250, 251, 248);\">\n        <h5 class=\"color-swatches__name\">$green-secondary-10</h5>\n        <div class=\"color-swatches__hex\">#FAFBF8</div>\n        <div class=\"color-swatches__rgba\">rgb(250, 251, 248)</div>\n      </li>\n    </ul>\n  </div>\n  <div class=\"color-group\">\n    <ul class=\"color-swatches\">\n      <li class=\"color-swatches__swatch\" style=\"background-color:rgba(240, 207, 132);\">\n        <h5 class=\"color-swatches__name\">$yellow-secondary-100</h5>\n        <div class=\"color-swatches__hex\">#F0CF84</div>\n        <div class=\"color-swatches__rgba\">rgb(240, 207, 132)</div>\n      </li>\n      <li class=\"color-swatches__swatch\" style=\"background-color:rgba(244, 219, 163);\">\n        <h5 class=\"color-swatches__name\">$yellow-secondary-75</h5>\n        <div class=\"color-swatches__hex\">#F4DBA3</div>\n        <div class=\"color-swatches__rgba\">rgb(244, 219, 163)</div>\n      </li>\n      <li class=\"color-swatches__swatch\" style=\"background-color:rgba(247, 231, 193);\">\n        <h5 class=\"color-swatches__name\">#yellow-secondary-50</h5>\n        <div class=\"color-swatches__hex\">#F7E7C1</div>\n        <div class=\"color-swatches__rgba\">rgb(247, 231, 193)</div>\n      </li>\n      <li class=\"color-swatches__swatch\" style=\"background-color:rgba(251, 243, 224);\">\n        <h5 class=\"color-swatches__name\">$yellow-secondary-25</h5>\n        <div class=\"color-swatches__hex\">#FBF3E0</div>\n        <div class=\"color-swatches__rgba\">rgb(251, 243, 224)</div>\n      </li>\n      <li class=\"color-swatches__swatch\" style=\"background-color:rgba(253, 250, 242);\">\n        <h5 class=\"color-swatches__name\">$yellow-secondary-10</h5>\n        <div class=\"color-swatches__hex\">#FDFAF2</div>\n        <div class=\"color-swatches__rgba\">rgb(253, 250, 242)</div>\n      </li>\n    </ul>\n  </div>\n  <div class=\"color-group\">\n    <ul class=\"color-swatches\">\n      <li class=\"color-swatches__swatch\" style=\"background-color:rgba(237, 134, 100);\">\n        <h5 class=\"color-swatches__name\">$orange-secondary-100</h5>\n        <div class=\"color-swatches__hex\">#ED8664</div>\n        <div class=\"color-swatches__rgba\">rgb(237, 134, 100)</div>\n      </li>\n      <li class=\"color-swatches__swatch\" style=\"background-color:rgba(242, 165, 139);\">\n        <h5 class=\"color-swatches__name\">$orange-secondary-75</h5>\n        <div class=\"color-swatches__hex\">#F2A58B</div>\n        <div class=\"color-swatches__rgba\">rgb(242, 165, 139)</div>\n      </li>\n      <li class=\"color-swatches__swatch\" style=\"background-color:rgba(246, 194, 177);\">\n        <h5 class=\"color-swatches__name\">$orange-secondary-50</h5>\n        <div class=\"color-swatches__hex\">#F6C2B1</div>\n        <div class=\"color-swatches__rgba\">rgb(246, 194, 177)</div>\n      </li>\n      <li class=\"color-swatches__swatch\" style=\"background-color:rgba(250, 225, 217);\">\n        <h5 class=\"color-swatches__name\">$orange-secondary-25</h5>\n        <div class=\"color-swatches__hex\">#FAE1D9</div>\n        <div class=\"color-swatches__rgba\">rgb(250, 225, 217)</div>\n      </li>\n      <li class=\"color-swatches__swatch\" style=\"background-color:rgba(253, 242, 239);\">\n        <h5 class=\"color-swatches__name\">$orange-secondary-10</h5>\n        <div class=\"color-swatches__hex\">#FDF2EF</div>\n        <div class=\"color-swatches__rgba\">rgb(253, 242, 239)</div>\n      </li>\n    </ul>\n  </div>\n  <div class=\"color-group\">\n    <ul class=\"color-swatches\">\n      <li class=\"color-swatches__swatch\" style=\"background-color:rgba(49, 176, 172);\">\n        <h5 class=\"color-swatches__name\">$teal-secondary-100</h5>\n        <div class=\"color-swatches__hex\">#31B0AC</div>\n        <div class=\"color-swatches__rgba\">rgb(49, 176, 172)</div>\n      </li>\n      <li class=\"color-swatches__swatch\" style=\"background-color:rgba(100, 196, 193);\">\n        <h5 class=\"color-swatches__name\">$teal-secondary-75</h5>\n        <div class=\"color-swatches__hex\">#64C4C1</div>\n        <div class=\"color-swatches__rgba\">rgb(10, 196, 193)</div>\n      </li>\n      <li class=\"color-swatches__swatch\" style=\"background-color:rgba(152, 215, 213);\">\n        <h5 class=\"color-swatches__name\">$teal-secondary-50</h5>\n        <div class=\"color-swatches__hex\">#98D7D5</div>\n        <div class=\"color-swatches__rgba\">rgb(152, 215, 213)</div>\n      </li>\n      <li class=\"color-swatches__swatch\" style=\"background-color:rgba(203, 235, 234);\">\n        <h5 class=\"color-swatches__name\">$teal-secondary-25</h5>\n        <div class=\"color-swatches__hex\">#CBEBEA</div>\n        <div class=\"color-swatches__rgba\">rgb(203, 235, 234)</div>\n      </li>\n      <li class=\"color-swatches__swatch\" style=\"background-color:rgba(234, 247, 246);\">\n        <h5 class=\"color-swatches__name\">$teal-secondary-10</h5>\n        <div class=\"color-swatches__hex\">#EAF7F6</div>\n        <div class=\"color-swatches__rgba\">rgb(234, 247, 246)</div>\n      </li>\n    </ul>\n  </div>\n  <div class=\"color-group\">\n    <ul class=\"color-swatches\">\n      <li class=\"color-swatches__swatch text-light\" style=\"background-color:rgba(29, 122, 173);\">\n        <h5 class=\"color-swatches__name\">$blue-secondary-100</h5>\n        <div class=\"color-swatches__hex\">#1D7AAD</div>\n        <div class=\"color-swatches__rgba\">rgb(29, 122, 173)</div>\n      </li>\n      <li class=\"color-swatches__swatch\" style=\"background-color:rgba(105, 163, 194);\">\n        <h5 class=\"color-swatches__name\">$blue-secondary-75</h5>\n        <div class=\"color-swatches__hex\">#569CC2</div>\n        <div class=\"color-swatches__rgba\">rgb(86, 156, 194)</div>\n      </li>\n      <li class=\"color-swatches__swatch\" style=\"background-color:rgba(142, 188, 214);\">\n        <h5 class=\"color-swatches__name\">$blue-secondary-50</h5>\n        <div class=\"color-swatches__hex\">#8EBCD6</div>\n        <div class=\"color-swatches__rgba\">rgb(142, 188, 214)</div>\n      </li>\n      <li class=\"color-swatches__swatch\" style=\"background-color:rgba(198, 222, 234);\">\n        <h5 class=\"color-swatches__name\">$blue-secondary-25</h5>\n        <div class=\"color-swatches__hex\">#C6DEEA</div>\n        <div class=\"color-swatches__rgba\">rgb(198, 222, 234)</div>\n      </li>\n      <li class=\"color-swatches__swatch\" style=\"background-color:rgba(232, 241, 246);\">\n        <h5 class=\"color-swatches__name\">$blue-secondary-10</h5>\n        <div class=\"color-swatches__hex\">#E8F1F6</div>\n        <div class=\"color-swatches__rgba\">rgb(232, 241, 246)</div>\n      </li>\n    </ul>\n  </div>\n  <div class=\"color-group\">\n    <ul class=\"color-swatches\">\n      <li class=\"color-swatches__swatch text-light\" style=\"background-color:rgba(79, 64, 92);\">\n        <h5 class=\"color-swatches__name\">$purple-secondary-100</h5>\n        <div class=\"color-swatches__hex\">#4F405C</div>\n        <div class=\"color-swatches__rgba\">rgb(79, 64, 92)</div>\n      </li>\n      <li class=\"color-swatches__swatch text-light\" style=\"background-color:rgba(123, 112, 133);\">\n        <h5 class=\"color-swatches__name\">$purple-secondary-75</h5>\n        <div class=\"color-swatches__hex\">#7B7085</div>\n        <div class=\"color-swatches__rgba\">rgb(123, 112, 133)</div>\n      </li>\n      <li class=\"color-swatches__swatch\" style=\"background-color:rgba(167, 158, 173);\">\n        <h5 class=\"color-swatches__name\">$purple-secondary-50</h5>\n        <div class=\"color-swatches__hex\">#A79EAD</div>\n        <div class=\"color-swatches__rgba\">rgb(167, 158, 173)</div>\n      </li>\n      <li class=\"color-swatches__swatch\" style=\"background-color:rgba(211, 207, 214);\">\n        <h5 class=\"color-swatches__name\">$purple-secondary-25</h5>\n        <div class=\"color-swatches__hex\">#D3CFD6</div>\n        <div class=\"color-swatches__rgba\">rgb(211, 207, 214)</div>\n      </li>\n      <li class=\"color-swatches__swatch\" style=\"background-color:rgba(237, 235, 238);\">\n        <h5 class=\"color-swatches__name\">$purple-secondary-10</h5>\n        <div class=\"color-swatches__hex\">#EDEBEE</div>\n        <div class=\"color-swatches__rgba\">rgb(237, 235, 238)</div>\n      </li>\n    </ul>\n  </div>\n\n</div>\n\n## Implementation\nWhen coding with Forge styles in SASS, all colors on this page should be referenced through the use of their respective map using the SASS `map-get` function. [Learn more about SASS maps](http://sass-lang.com/documentation/file.SASS_REFERENCE.html#maps).\n\n```\n.my-pill-box {\n\tborder: 1px solid map-get($color-border, default);\n}\n```\n\n__Do not directly code the hex or rgb(a) value into your style rules.__ This will result in CSS styles that are difficult to maintain.\n","lang":{"name":"Markdown","mode":"markdown","scope":"source.gfm","color":"#083FA1"},"file":{"root":"C:\\","dir":"C:\\Users\\ctsui\\code\\forge-guide\\docs\\03-foundations","base":"01-color.md","ext":".md","name":"color","relPath":"03-foundations\\01-color.md","fsName":"01-color","path":"C:\\Users\\ctsui\\code\\forge-guide\\docs\\03-foundations\\01-color.md","dirs":["C:\\Users\\ctsui\\code\\forge-guide\\docs\\03-foundations"],"isHidden":false,"order":1,"isFile":true,"isDirectory":false,"stat":{"dev":4102694615,"mode":33206,"nlink":1,"uid":0,"gid":0,"rdev":0,"ino":19703248369948290,"size":73580,"atimeMs":1556902887181.0745,"mtimeMs":1556902887181.0745,"ctimeMs":1556902887181.0745,"birthtimeMs":1551459688131.1233,"atime":"2019-05-03T17:01:27.181Z","mtime":"2019-05-03T17:01:27.181Z","ctime":"2019-05-03T17:01:27.181Z","birthtime":"2019-03-01T17:01:28.131Z"},"lang":{"name":"Markdown","mode":"markdown","scope":"source.gfm","color":"#083FA1"},"isBinary":false},"context":{"extensions":{"core":{"forge-toast":{"name":"Toast","version":"0.3.0","description":"Toast component for Forge"},"forge-toggle-switch":{"name":"ToggleSwitch","version":"0.2.0","description":"ToggleSwitch component for Forge"},"forge-multiselect-async":{"name":"MultiselectAsync","version":"0.2.0","description":"Async version of Multiselect component"}},"community":{"clinicals-forge-extension":{"name":"Clinicals Forge Extension","owner":"Nursing Flowsheets","url":"https://bitbucket.athenahealth.com/projects/CLIFS/repos/clinicals-forge-extension/browse","version":"2.2.1","description":"A forge-extension containing components used by inpatient clinicals"},"forge-virtualized-table":{"name":"Virtualized Table","owner":"Pop Health","url":"https://bitbucket.athenahealth.com/projects/UXDS/repos/forge-virtualized-table/browse","version":"0.1.0","description":"Virtualization support for the Forge Table component."}}},"amplitudeCategory":"foundations"}}</code></pre></div-->
   </div>
 </div>
 

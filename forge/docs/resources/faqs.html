@@ -9,7 +9,7 @@
     };
     </script>
     <script>var cl = document.querySelector('html').classList; cl.remove('no-js'); cl.add('has-js');</script>
-    <link rel="shortcut icon" href="../../favicon_blue.ico" type="image/ico">
+    <link rel="shortcut icon" href="../../favicon.ico" type="image/ico">
 
 <link rel="stylesheet" href="../../assets/css/styles.css?cachebust=1.2.0" type="text/css">
 
@@ -28,7 +28,7 @@
 
 
 <div class="fg_app">
-  <header class="fg_l_header fg_l_header--alpha">
+  <header class="fg_l_header">
   <a class="fg_c_branding" href="../../index.html">
     <img src="../../assets/images/logo.svg" />
   </a>
@@ -94,19 +94,6 @@
           
           <a
             class="fg_c_nav-top__link  fg_is-active"
-            href="release-notes.html"
-            title="Resources"
-          >
-            Resources
-          </a>
-        </li>
-      
-    
-      
-        <li class="fg_c_nav-top__list-item">
-          
-          <a
-            class="fg_c_nav-top__link  fg_is-active"
             href="downloads.html"
             title="Resources"
           >
@@ -120,7 +107,7 @@
 
 
   <div class="fg_c_nav-version">
-    v2.0.0-beta.7
+    Go to <a href="http://ah-uxds-forge-guide-release-v1.s3-website-us-east-1.amazonaws.com/">Forge 1.x</a>
   </div>
 </header>
 
@@ -145,25 +132,6 @@
       
         <li class="fg_c_nav-left__list-item">
           <a
-            href="release-notes.html"
-            
-            class="fg_c_nav-left__link "
-          >
-            <span>Release Notes</span>
-            
-              
-            
-              
-            
-          </a>
-        </li>
-      
-    
-  
-    
-      
-        <li class="fg_c_nav-left__list-item">
-          <a
             href="downloads.html"
             
             class="fg_c_nav-left__link "
@@ -171,19 +139,6 @@
             <span>Downloads</span>
             
               
-            
-              
-            
-          </a>
-        </li>
-      
-        <li class="fg_c_nav-left__list-item">
-          <a
-            href="community-resources.html"
-            
-            class="fg_c_nav-left__link "
-          >
-            <span>Community Resources</span>
             
               
             
@@ -204,6 +159,8 @@
             
               
             
+              
+            
           </a>
         </li>
       
@@ -214,6 +171,8 @@
             class="fg_c_nav-left__link "
           >
             <span>Sass Utilities</span>
+            
+              
             
               
             
@@ -234,6 +193,8 @@
             
               
             
+              
+            
           </a>
         </li>
       
@@ -249,6 +210,8 @@
             
               
             
+              
+            
           </a>
         </li>
       
@@ -259,6 +222,8 @@
             class="fg_c_nav-left__link "
           >
             <span>Release Notes</span>
+            
+              
             
               
             
@@ -297,28 +262,25 @@
         <p class="p--lead">Find the answers to common questions about Forge.</p>
 
 <h2 id="forge-version-2-0">Forge Version 2.0</h2>
-<h3 id="when-will-forge-2-0-be-available-">When will Forge 2.0 be available?</h3>
-<p>It&#39;s available in beta now! The beta version is stable, though we are still making small changes and fixes. Forge 2.0&#39;s GA release is planned for 19.3.</p>
+<h3 id="forge-2-0-is-now-available-">Forge 2.0 is now available!</h3>
+<p>Forge 2.0 has been released to GA. It is no longer in beta.</p>
+<h3 id="how-do-i-upgrade-to-forge-2-0-">How do I upgrade to Forge 2.0?</h3>
+<p>See <a href="http://go/forge-upgrade-guide">the Confluence page on upgrading to Forge 2.0</a> for instructions.</p>
 <h3 id="what-s-different-in-2-0-">What&#39;s different in 2.0?</h3>
 <p>Highlights of Forge 2.0 include:</p>
 <ul>
 <li>Refactored and improved code</li>
 <li>Tree shaking - Components can be imported individually to reduce your bundle size</li>
-<li>Upgraded extensions - All core extensions from 1.x are now fully part of Forge Core</li>
-<li>New components - MultiField, ReduxMultiField, RemovableTag, StatusTag, and two new extensions, Toast and ToggleSwitch</li>
 <li>Accessibility improvements</li>
-<li>Design guidelines for forms</li>
+<li>Upgraded extensions - All core extensions from 1.x are now fully part of Forge Core</li>
+<li>New components - MultiField, ReduxMultiField, RemovableTag, StatusTag, and 3 new extensions (Toast, ToggleSwitch, and MultiselectAsync)</li>
+<li>New guidelines on form design and interruption design</li>
 </ul>
-<p>See <a href="https://athenaconfluence.athenahealth.com/display/UXDS/Upgrade+to+Forge+2.0.0+Beta">the 2.0 Confluence page</a> for full details and known breaking changes</p>
-<h3 id="where-is-the-forge-2-0-website-">Where is the Forge 2.0 website?</h3>
-<p>Check out the Forge 2.0 guide at <a href="http://go/forge-v2">go/forge-v2</a>.</p>
-<p>The Forge 2.0 Storybook (demo website for components) is available at <a href="http://go/forge-workspace-v2">go/forge-workspace-v2</a>.</p>
-<p>The Forge 1.x guide can be found at <a href="http://go/forge">go/forge</a>. After Forge 2.0&#39;s GA release, that link will go to the 2.0 website instead.  </p>
+<p>See <a href="http://go/forge-upgrade-guide">the 2.0 Confluence page</a> for full details and known breaking changes  </p>
 <h3 id="will-forge-1-x-still-be-supported-in-the-future-will-it-be-updated-">Will Forge 1.x still be supported in the future? Will it be updated?</h3>
-<p>We will continue to support Forge 1.x with bugfixes until further notice. No new components or extensions will be built on the 1.x branch by the Forge team.</p>
+<p>We will continue to support <a href="http://go/forge-v1">Forge 1.x</a> with bugfixes until further notice. No new components or extensions will be built on the 1.x branch by the Forge team.</p>
 <p>Also, we&#39;re no longer accepting extensions built on Forge 1.x. Please use 2.0 for extension development instead.</p>
-<h3 id="how-do-i-upgrade-to-forge-2-0-">How do I upgrade to Forge 2.0?</h3>
-<p>See <a href="https://athenaconfluence.athenahealth.com/display/UXDS/Upgrade+to+Forge+2.0.0+Beta">the Confluence page on upgrading to Forge 2.0</a> for instructions.</p>
+<p>We do not recommend using Forge 1.x and 2.0 together on the same page.</p>
 <h2 id="development">Development</h2>
 <h3 id="can-i-use-forge-on-only-part-of-a-page-">Can I use Forge on only part of a page?</h3>
 <p>See the <a href="getting-started.html#forge-on-part-of-a-page">advanced topic on using Forge on part of a page</a> on the Getting Started page.</p>
@@ -360,7 +322,7 @@
 </ul>
 <p>Additionally, the standard margin and padding constants are available in JavaScript from the <a href="https://bitbucket.athenahealth.com/projects/UXDS/repos/forge/browse/js/constants.js">JS constants file</a>.</p>
 <h3 id="what-is-the-forge-workspace-">What is the Forge Workspace?</h3>
-<p>The <a href="http://design-systems.pages.athenahealth.com/forge/">Forge workspace</a> is the development environment for Forge. It is based on <a href="https://storybook.js.org/">storybook</a> and offers certain developer-leaning features like <a href="https://github.com/storybooks/storybook/tree/master/addons/knobs">knobs</a>. It does not provide the design, usage, and implementation guidance that Forge Guide does, and should only be used in conjunction with Forge Guide.</p>
+<p>The <a href="http://go/forge-workspace-v2">Forge workspace</a> is the development environment for Forge. It is based on <a href="https://storybook.js.org/">storybook</a> and offers certain developer-leaning features like <a href="https://github.com/storybooks/storybook/tree/master/addons/knobs">knobs</a>. It does not provide the design, usage, and implementation guidance that Forge Guide does, and should only be used in conjunction with Forge Guide.</p>
 <h3 id="is-forge-tied-to-redux-do-i-have-to-use-redux-to-use-forge-">Is Forge tied to Redux? Do I have to use Redux to use Forge?</h3>
 <p>In order to provide conveniences like validation in Forge forms, there needed to be a state management architecture in place. Redux is a very popular one both within and external to athena, and Redux Form is a vetted and popular add-on to Redux that focuses on form management. (Learn more about <a href="https://athenaconfluence.athenahealth.com/display/UXDS/Evaluating+Third-party+Libraries+for+use+in+Forge">how Forge evaluates third-party libraries</a>.) However, <a href="../components/form.html"><code>Form</code></a> and <a href="../components/form-field.html"><code>FormField</code></a> (as opposed to <a href="../components/redux-form.html"><code>ReduxForm</code></a> and <a href="../components/redux-form-field.html"><code>ReduxFormField</code></a>) exist specifically to provide an opt-out option from the Redux / Redux Form architecture. These components are actually the styling / layout building blocks for their Redux counterparts, and are agnostic to the state management architecture you choose to adopt.</p>
 <h3 id="how-should-i-report-a-bug-in-forge-">How should I report a bug in Forge?</h3>
@@ -399,9 +361,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
           pageCategory: 'resources'.length > 0
             ? 'resources'
             : null,
-          forgeVersion: '2.0.0-beta.7',
-          forgeGeneralVersion: /^\d*(?=\.)/.exec('2.0.0-beta.7')
-            ? /^\d*(?=\.)/.exec('2.0.0-beta.7').toString()
+          forgeVersion: '2.1.0',
+          forgeGeneralVersion: /^\d*(?=\.)/.exec('2.1.0')
+            ? /^\d*(?=\.)/.exec('2.1.0').toString()
             : null
         });
       }
@@ -414,7 +376,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 
     </div>
-    <!--div class="debug"><pre><code class="language-json">{"id":"326d90aebfdc0de6ed08c7b86aff7012","name":"faqs","handle":"faqs","label":"FA Qs","title":"FAQs","order":10,"isHidden":false,"alias":null,"isEntity":true,"isDoc":true,"isIndex":false,"path":"resources/faqs","status":null,"content":"<p class=\"p--lead\">Find the answers to common questions about Forge.</p>\n\n## Forge Version 2.0\n### When will Forge 2.0 be available?\nIt's available in beta now! The beta version is stable, though we are still making small changes and fixes. Forge 2.0's GA release is planned for 19.3.\n\n### What's different in 2.0?\nHighlights of Forge 2.0 include:\n* Refactored and improved code\n* Tree shaking - Components can be imported individually to reduce your bundle size\n* Upgraded extensions - All core extensions from 1.x are now fully part of Forge Core\n* New components - MultiField, ReduxMultiField, RemovableTag, StatusTag, and two new extensions, Toast and ToggleSwitch\n* Accessibility improvements\n* Design guidelines for forms\n\nSee [the 2.0 Confluence page](https://athenaconfluence.athenahealth.com/display/UXDS/Upgrade+to+Forge+2.0.0+Beta) for full details and known breaking changes\n\n### Where is the Forge 2.0 website?\nCheck out the Forge 2.0 guide at [go/forge-v2](http://go/forge-v2).\n\nThe Forge 2.0 Storybook (demo website for components) is available at [go/forge-workspace-v2](http://go/forge-workspace-v2).\n\nThe Forge 1.x guide can be found at [go/forge](http://go/forge). After Forge 2.0's GA release, that link will go to the 2.0 website instead.  \n\n### Will Forge 1.x still be supported in the future? Will it be updated?\nWe will continue to support Forge 1.x with bugfixes until further notice. No new components or extensions will be built on the 1.x branch by the Forge team.\n\nAlso, we're no longer accepting extensions built on Forge 1.x. Please use 2.0 for extension development instead.\n\n### How do I upgrade to Forge 2.0?\nSee [the Confluence page on upgrading to Forge 2.0](https://athenaconfluence.athenahealth.com/display/UXDS/Upgrade+to+Forge+2.0.0+Beta) for instructions.\n\n## Development\n### Can I use Forge on only part of a page?\nSee the [advanced topic on using Forge on part of a page]({{ path '/docs/resources/getting-started'}}#forge-on-part-of-a-page) on the Getting Started page.\n\n### What is the best way to add custom styles to a Forge component?\nSee the [advanced topic on customizing CSS for Forge components]({{ path '/docs/resources/getting-started'}}#customizing-css-for-forge-components) on the Getting Started page.\n\n### Does Forge work on mobile?\nThe Forge team's current priority is building UI components for core athenaNet web pages, intended for use in our set of supported desktop browsers. We have not made specific concessions to use these components on mobile browsers, nor have we undertaken formal testing of the components on mobile browsers. However, while building components, the Forge team accounts for multiple viewport widths through a CSS media query based breakpoint system. Forge also supplies 2 components ([GridCol and GridRow]({{ path '/docs/components/grid' }}) based on the [Foundation Flex Grid](https://foundation.zurb.com/sites/docs/flex-grid.html)) that can be used to make fluid layouts suitable for mobile web use.\n\n### Why are the Forge class names so long?\nForge adopts a structured and namespaced CSS class naming strategy to handle styling at enterprise-scale and styling that may be forced to live alongside legacy styles. The Forge naming strategy is based on a well-known architecture called [BEM](https://en.bem.info/methodology/). The following rules are observed:\n* CSS namespace: all classes associated with Forge are prefixed with a global namespace: `.fe_` to reduce the likelihood that Forge class names exist in stylesheets not deriving from Forge. For example, Bootstrap uses broad names like 'row' which if also used by Forge, would create styling conflicts.\n* Class prefixes: in addition to the `.fe_` global namespace, Forge adds prefixes to each class to make it more apparent at-a-glance what job that class is doing. The categories of class prefixes are:\n * `c_` for UI components, such as `.fe_c_button`\n * `l_` for layout-related styles, such as `.fe_l_grid-row__col`\n * `u_` for utilities, such as `.fe_u_margin--top-large`\n * `is_` for specific states, such as `.fe_is-disabled`\n * `f_` for features, such as `fe_f_typography` -- more about feature classes in the [feature classes FAQ]({{ path '/docs/resources/faqs' }}#what-are-feature-classes-)\n* Forge CSS names will otherwise follow BEM standards.\n\nLearn more on the [Forge HTML / CSS Guidelines](https://athenaconfluence.athenahealth.com/pages/viewpage.action?pageId=143724287) Confluence page.\n\n### What are feature classes?\nFeature classes are accelerators for applying _certain_ Forge styles to elements in your application. Most Forge styles require specific Forge classes such as `fe_c_button`. However, putting a Forge-scoped class on every `<p>` in your application would be a lengthy process. The `fe_f_typography` class applies standard Forge styles to all the base typographical elements in your page, such as  `<p>` and `<a>`.\n\n`fe_f_all` is a catch-all feature class that incorporates the styles from all other feature classes. `fe_f_all` also __must__ live at the root of the Forge part of your application, as Forge components are expecting the base typographical styles and normalize styles to be present. Forge components also utilize the `fe_f_all` class in their CSS selectors.\n\n### Does Forge have a set of common constants like colors?\nDepending on what you need to do, you may be able to take advantage of some of Forge's [typography utility classes]({{ path '/docs/foundations/typography-utilities' }}) or [layout utility classes]({{ path '/docs/foundations/layout-utilities' }}) to get the standard styles you're looking for onto your components.\n\nIf you do need access to the Forge colors as variables (e.g. to output within your own classes for application-specific components), all of Forge's colors are represented within semantic [Sass variable maps](http://sass-lang.com/documentation/file.SASS_REFERENCE.html#maps). ([Sass](https://sass-lang.com/) is a CSS preprocessor that allows for things like variables and functions with CSS). The [color page]({{ path '/docs/foundations/color' }}) lists the syntax to access each color in that color's palette swatch, e.g. `map-get($color-interaction, default)`.\n\nFor those getters to work, you will need to import all the Forge constants first in your main `.scss` file via:\n```\nimport '@athena/forge/sass/forge-abstracts';\n```\nYou may need to add 'node_modules' to the include path for your Sass compiler, depending on your setup.\n\nIf you started from [forge-app](https://bitbucket.athenahealth.com/projects/UXDS/repos/forge-app/browse), you should already have access to the Forge constants set up in your  index.scss file.\n\nOther common constants available in Forge as Sass maps include:\n* Font sizes\n* Font weights\n* Standard margin sizes\n* Standard padding sizes\n* Breakpoints\n\nAdditionally, the standard margin and padding constants are available in JavaScript from the [JS constants file](https://bitbucket.athenahealth.com/projects/UXDS/repos/forge/browse/js/constants.js).\n\n### What is the Forge Workspace?\nThe [Forge workspace](http://design-systems.pages.athenahealth.com/forge/) is the development environment for Forge. It is based on [storybook](https://storybook.js.org/) and offers certain developer-leaning features like [knobs](https://github.com/storybooks/storybook/tree/master/addons/knobs). It does not provide the design, usage, and implementation guidance that Forge Guide does, and should only be used in conjunction with Forge Guide.\n\n### Is Forge tied to Redux? Do I have to use Redux to use Forge?\nIn order to provide conveniences like validation in Forge forms, there needed to be a state management architecture in place. Redux is a very popular one both within and external to athena, and Redux Form is a vetted and popular add-on to Redux that focuses on form management. (Learn more about [how Forge evaluates third-party libraries](https://athenaconfluence.athenahealth.com/display/UXDS/Evaluating+Third-party+Libraries+for+use+in+Forge).) However, [`Form`]({{ path '/docs/components/form' }}) and [`FormField`]({{ path '/docs/components/form-field' }}) (as opposed to [`ReduxForm`]({{ path '/docs/components/redux-form' }}) and [`ReduxFormField`]({{ path '/docs/components/redux-form-field' }})) exist specifically to provide an opt-out option from the Redux / Redux Form architecture. These components are actually the styling / layout building blocks for their Redux counterparts, and are agnostic to the state management architecture you choose to adopt.\n\n### How should I report a bug in Forge?\nFirst, thanks for helping to continuously improve Forge! You can check the [Forge JIRA backlog](https://athenajira.athenahealth.com/secure/RapidBoard.jspa?rapidView=818&projectKey=UXDS&view=planning) to see if the bug has already been reported and prioritized. If you have found something new, please join [#forge-dev on Slack](slack://channel?team=T02SKNTG5&id=C5HNL586R) and report it there.\n\n## General / Product\n### Which browsers does Forge officially support?\nForge supports the same browsers that [athenaNet officially supports](https://www.athenahealth.com/~/media/athenaweb/files/pdf/athenahealth_tech_requirements), namely:\n* Chrome (Windows 7, Windows 10, + Mac)\n* IE11 (Windows 7 + Windows 10)\n* Safari (Mac)\n\n### Can I use Forge in my product?\nForge components are built using the React JavaScript framework. Please consult with your product's technical leaders to understand readiness and architectural best practices for incorporating this new technology. The recommended practices for integrating React may differ by product.\n\n#### Existing products / workflows\nWe are not recommending that product teams go back and redesign all of their workflows in one push. However, as workflows are redesigned and as net new features are added to your existing products, you can use Forge. The transition to the look and feel will be intentionally gradual.\n\n#### New products / workflows\nUsing Forge is recommended as it should expedite your design and build process and, if applied correctly, will ensure higher usability.\n\n### How do I contact the Forge team?\nGet in touch over Slack by joining [#our-design-system](slack://channel?team=T02SKNTG5&id=C4HB0RJDN) for product / design topics and [#forge-dev](slack://channel?team=T02SKNTG5&id=C5HNL586R) for technical topics.\n\n### What are the latest updates to Forge?\nAll published releases of Forge are tagged with their version number. See the [Release Notes]({{ path '/docs/resources/release-notes' }}) page for details on the changes in each release.","lang":{"name":"Markdown","mode":"markdown","scope":"source.gfm","color":"#083FA1"},"file":{"root":"C:\\","dir":"C:\\Users\\ctsui\\code\\forge-guide\\docs\\06-resources","base":"10-FAQs.md","ext":".md","name":"FAQs","relPath":"06-resources\\10-FAQs.md","fsName":"10-FAQs","path":"C:\\Users\\ctsui\\code\\forge-guide\\docs\\06-resources\\10-FAQs.md","dirs":["C:\\Users\\ctsui\\code\\forge-guide\\docs\\06-resources"],"isHidden":false,"order":10,"isFile":true,"isDirectory":false,"stat":{"dev":4102694615,"mode":33206,"nlink":1,"uid":0,"gid":0,"rdev":0,"ino":1970324837593922,"size":10589,"atimeMs":1547561625248.672,"mtimeMs":1547561625248.672,"ctimeMs":1547561625248.672,"birthtimeMs":1541785521245.8164,"atime":"2019-01-15T14:13:45.249Z","mtime":"2019-01-15T14:13:45.249Z","ctime":"2019-01-15T14:13:45.249Z","birthtime":"2018-11-09T17:45:21.246Z"},"lang":{"name":"Markdown","mode":"markdown","scope":"source.gfm","color":"#083FA1"},"isBinary":false},"context":{"extensions":{"core":{"forge-toast":{"name":"Toast","version":"0.2.2","description":"Toast component for Forge"},"forge-toggle-switch":{"name":"ToggleSwitch","version":"0.1.1","description":"ToggleSwitch component for Forge"}},"community":{"clinicals-forge-extension":{"name":"Clinicals Forge Extension","owner":"Nursing Flowsheets","url":"https://bitbucket.athenahealth.com/projects/CLIFS/repos/clinicals-forge-extension/browse","version":"2.1.1","description":"A forge-extension containing components used by inpatient clinicals"}}},"amplitudeCategory":"resources"}}</code></pre></div-->
+    <!--div class="debug"><pre><code class="language-json">{"id":"326d90aebfdc0de6ed08c7b86aff7012","name":"faqs","handle":"faqs","label":"FA Qs","title":"FAQs","order":10,"isHidden":false,"alias":null,"isEntity":true,"isDoc":true,"isIndex":false,"path":"resources/faqs","status":null,"content":"<p class=\"p--lead\">Find the answers to common questions about Forge.</p>\n\n## Forge Version 2.0\n### Forge 2.0 is now available!\nForge 2.0 has been released to GA. It is no longer in beta.\n\n### How do I upgrade to Forge 2.0?\nSee [the Confluence page on upgrading to Forge 2.0](http://go/forge-upgrade-guide) for instructions.\n\n### What's different in 2.0?\nHighlights of Forge 2.0 include:\n\n* Refactored and improved code\n* Tree shaking - Components can be imported individually to reduce your bundle size\n* Accessibility improvements\n* Upgraded extensions - All core extensions from 1.x are now fully part of Forge Core\n* New components - MultiField, ReduxMultiField, RemovableTag, StatusTag, and 3 new extensions (Toast, ToggleSwitch, and MultiselectAsync)\n* New guidelines on form design and interruption design\n\nSee [the 2.0 Confluence page](http://go/forge-upgrade-guide) for full details and known breaking changes  \n\n### Will Forge 1.x still be supported in the future? Will it be updated?\nWe will continue to support [Forge 1.x](http://go/forge-v1) with bugfixes until further notice. No new components or extensions will be built on the 1.x branch by the Forge team.\n\nAlso, we're no longer accepting extensions built on Forge 1.x. Please use 2.0 for extension development instead.\n\nWe do not recommend using Forge 1.x and 2.0 together on the same page.\n\n## Development\n### Can I use Forge on only part of a page?\nSee the [advanced topic on using Forge on part of a page]({{ path '/docs/resources/getting-started'}}#forge-on-part-of-a-page) on the Getting Started page.\n\n### What is the best way to add custom styles to a Forge component?\nSee the [advanced topic on customizing CSS for Forge components]({{ path '/docs/resources/getting-started'}}#customizing-css-for-forge-components) on the Getting Started page.\n\n### Does Forge work on mobile?\nThe Forge team's current priority is building UI components for core athenaNet web pages, intended for use in our set of supported desktop browsers. We have not made specific concessions to use these components on mobile browsers, nor have we undertaken formal testing of the components on mobile browsers. However, while building components, the Forge team accounts for multiple viewport widths through a CSS media query based breakpoint system. Forge also supplies 2 components ([GridCol and GridRow]({{ path '/docs/components/grid' }}) based on the [Foundation Flex Grid](https://foundation.zurb.com/sites/docs/flex-grid.html)) that can be used to make fluid layouts suitable for mobile web use.\n\n### Why are the Forge class names so long?\nForge adopts a structured and namespaced CSS class naming strategy to handle styling at enterprise-scale and styling that may be forced to live alongside legacy styles. The Forge naming strategy is based on a well-known architecture called [BEM](https://en.bem.info/methodology/). The following rules are observed:\n* CSS namespace: all classes associated with Forge are prefixed with a global namespace: `.fe_` to reduce the likelihood that Forge class names exist in stylesheets not deriving from Forge. For example, Bootstrap uses broad names like 'row' which if also used by Forge, would create styling conflicts.\n* Class prefixes: in addition to the `.fe_` global namespace, Forge adds prefixes to each class to make it more apparent at-a-glance what job that class is doing. The categories of class prefixes are:\n * `c_` for UI components, such as `.fe_c_button`\n * `l_` for layout-related styles, such as `.fe_l_grid-row__col`\n * `u_` for utilities, such as `.fe_u_margin--top-large`\n * `is_` for specific states, such as `.fe_is-disabled`\n * `f_` for features, such as `fe_f_typography` -- more about feature classes in the [feature classes FAQ]({{ path '/docs/resources/faqs' }}#what-are-feature-classes-)\n* Forge CSS names will otherwise follow BEM standards.\n\nLearn more on the [Forge HTML / CSS Guidelines](https://athenaconfluence.athenahealth.com/pages/viewpage.action?pageId=143724287) Confluence page.\n\n### What are feature classes?\nFeature classes are accelerators for applying _certain_ Forge styles to elements in your application. Most Forge styles require specific Forge classes such as `fe_c_button`. However, putting a Forge-scoped class on every `<p>` in your application would be a lengthy process. The `fe_f_typography` class applies standard Forge styles to all the base typographical elements in your page, such as  `<p>` and `<a>`.\n\n`fe_f_all` is a catch-all feature class that incorporates the styles from all other feature classes. `fe_f_all` also __must__ live at the root of the Forge part of your application, as Forge components are expecting the base typographical styles and normalize styles to be present. Forge components also utilize the `fe_f_all` class in their CSS selectors.\n\n### Does Forge have a set of common constants like colors?\nDepending on what you need to do, you may be able to take advantage of some of Forge's [typography utility classes]({{ path '/docs/foundations/typography-utilities' }}) or [layout utility classes]({{ path '/docs/foundations/layout-utilities' }}) to get the standard styles you're looking for onto your components.\n\nIf you do need access to the Forge colors as variables (e.g. to output within your own classes for application-specific components), all of Forge's colors are represented within semantic [Sass variable maps](http://sass-lang.com/documentation/file.SASS_REFERENCE.html#maps). ([Sass](https://sass-lang.com/) is a CSS preprocessor that allows for things like variables and functions with CSS). The [color page]({{ path '/docs/foundations/color' }}) lists the syntax to access each color in that color's palette swatch, e.g. `map-get($color-interaction, default)`.\n\nFor those getters to work, you will need to import all the Forge constants first in your main `.scss` file via:\n```\nimport '@athena/forge/sass/forge-abstracts';\n```\nYou may need to add 'node_modules' to the include path for your Sass compiler, depending on your setup.\n\nIf you started from [forge-app](https://bitbucket.athenahealth.com/projects/UXDS/repos/forge-app/browse), you should already have access to the Forge constants set up in your  index.scss file.\n\nOther common constants available in Forge as Sass maps include:\n* Font sizes\n* Font weights\n* Standard margin sizes\n* Standard padding sizes\n* Breakpoints\n\nAdditionally, the standard margin and padding constants are available in JavaScript from the [JS constants file](https://bitbucket.athenahealth.com/projects/UXDS/repos/forge/browse/js/constants.js).\n\n### What is the Forge Workspace?\nThe [Forge workspace](http://go/forge-workspace-v2) is the development environment for Forge. It is based on [storybook](https://storybook.js.org/) and offers certain developer-leaning features like [knobs](https://github.com/storybooks/storybook/tree/master/addons/knobs). It does not provide the design, usage, and implementation guidance that Forge Guide does, and should only be used in conjunction with Forge Guide.\n\n### Is Forge tied to Redux? Do I have to use Redux to use Forge?\nIn order to provide conveniences like validation in Forge forms, there needed to be a state management architecture in place. Redux is a very popular one both within and external to athena, and Redux Form is a vetted and popular add-on to Redux that focuses on form management. (Learn more about [how Forge evaluates third-party libraries](https://athenaconfluence.athenahealth.com/display/UXDS/Evaluating+Third-party+Libraries+for+use+in+Forge).) However, [`Form`]({{ path '/docs/components/form' }}) and [`FormField`]({{ path '/docs/components/form-field' }}) (as opposed to [`ReduxForm`]({{ path '/docs/components/redux-form' }}) and [`ReduxFormField`]({{ path '/docs/components/redux-form-field' }})) exist specifically to provide an opt-out option from the Redux / Redux Form architecture. These components are actually the styling / layout building blocks for their Redux counterparts, and are agnostic to the state management architecture you choose to adopt.\n\n### How should I report a bug in Forge?\nFirst, thanks for helping to continuously improve Forge! You can check the [Forge JIRA backlog](https://athenajira.athenahealth.com/secure/RapidBoard.jspa?rapidView=818&projectKey=UXDS&view=planning) to see if the bug has already been reported and prioritized. If you have found something new, please join [#forge-dev on Slack](slack://channel?team=T02SKNTG5&id=C5HNL586R) and report it there.\n\n## General / Product\n### Which browsers does Forge officially support?\nForge supports the same browsers that [athenaNet officially supports](https://www.athenahealth.com/~/media/athenaweb/files/pdf/athenahealth_tech_requirements), namely:\n* Chrome (Windows 7, Windows 10, + Mac)\n* IE11 (Windows 7 + Windows 10)\n* Safari (Mac)\n\n### Can I use Forge in my product?\nForge components are built using the React JavaScript framework. Please consult with your product's technical leaders to understand readiness and architectural best practices for incorporating this new technology. The recommended practices for integrating React may differ by product.\n\n#### Existing products / workflows\nWe are not recommending that product teams go back and redesign all of their workflows in one push. However, as workflows are redesigned and as net new features are added to your existing products, you can use Forge. The transition to the look and feel will be intentionally gradual.\n\n#### New products / workflows\nUsing Forge is recommended as it should expedite your design and build process and, if applied correctly, will ensure higher usability.\n\n### How do I contact the Forge team?\nGet in touch over Slack by joining [#our-design-system](slack://channel?team=T02SKNTG5&id=C4HB0RJDN) for product / design topics and [#forge-dev](slack://channel?team=T02SKNTG5&id=C5HNL586R) for technical topics.\n\n### What are the latest updates to Forge?\nAll published releases of Forge are tagged with their version number. See the [Release Notes]({{ path '/docs/resources/release-notes' }}) page for details on the changes in each release.\n","lang":{"name":"Markdown","mode":"markdown","scope":"source.gfm","color":"#083FA1"},"file":{"root":"C:\\","dir":"C:\\Users\\ctsui\\code\\forge-guide\\docs\\06-resources","base":"10-FAQs.md","ext":".md","name":"FAQs","relPath":"06-resources\\10-FAQs.md","fsName":"10-FAQs","path":"C:\\Users\\ctsui\\code\\forge-guide\\docs\\06-resources\\10-FAQs.md","dirs":["C:\\Users\\ctsui\\code\\forge-guide\\docs\\06-resources"],"isHidden":false,"order":10,"isFile":true,"isDirectory":false,"stat":{"dev":4102694615,"mode":33206,"nlink":1,"uid":0,"gid":0,"rdev":0,"ino":29273397578113390,"size":10129,"atimeMs":1556902887212.1575,"mtimeMs":1556902887213.16,"ctimeMs":1556902887213.16,"birthtimeMs":1551459688158.1948,"atime":"2019-05-03T17:01:27.212Z","mtime":"2019-05-03T17:01:27.213Z","ctime":"2019-05-03T17:01:27.213Z","birthtime":"2019-03-01T17:01:28.158Z"},"lang":{"name":"Markdown","mode":"markdown","scope":"source.gfm","color":"#083FA1"},"isBinary":false},"context":{"extensions":{"core":{"forge-toast":{"name":"Toast","version":"0.3.0","description":"Toast component for Forge"},"forge-toggle-switch":{"name":"ToggleSwitch","version":"0.2.0","description":"ToggleSwitch component for Forge"},"forge-multiselect-async":{"name":"MultiselectAsync","version":"0.2.0","description":"Async version of Multiselect component"}},"community":{"clinicals-forge-extension":{"name":"Clinicals Forge Extension","owner":"Nursing Flowsheets","url":"https://bitbucket.athenahealth.com/projects/CLIFS/repos/clinicals-forge-extension/browse","version":"2.2.1","description":"A forge-extension containing components used by inpatient clinicals"},"forge-virtualized-table":{"name":"Virtualized Table","owner":"Pop Health","url":"https://bitbucket.athenahealth.com/projects/UXDS/repos/forge-virtualized-table/browse","version":"0.1.0","description":"Virtualization support for the Forge Table component."}}},"amplitudeCategory":"resources"}}</code></pre></div-->
   </div>
 </div>
 

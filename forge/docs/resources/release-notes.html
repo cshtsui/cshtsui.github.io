@@ -9,7 +9,7 @@
     };
     </script>
     <script>var cl = document.querySelector('html').classList; cl.remove('no-js'); cl.add('has-js');</script>
-    <link rel="shortcut icon" href="../../favicon_blue.ico" type="image/ico">
+    <link rel="shortcut icon" href="../../favicon.ico" type="image/ico">
 
 <link rel="stylesheet" href="../../assets/css/styles.css?cachebust=1.2.0" type="text/css">
 
@@ -28,7 +28,7 @@
 
 
 <div class="fg_app">
-  <header class="fg_l_header fg_l_header--alpha">
+  <header class="fg_l_header">
   <a class="fg_c_branding" href="../../index.html">
     <img src="../../assets/images/logo.svg" />
   </a>
@@ -94,19 +94,6 @@
           
           <a
             class="fg_c_nav-top__link  fg_is-active"
-            href=""
-            title="Resources"
-          >
-            Resources
-          </a>
-        </li>
-      
-    
-      
-        <li class="fg_c_nav-top__list-item">
-          
-          <a
-            class="fg_c_nav-top__link  fg_is-active"
             href="downloads.html"
             title="Resources"
           >
@@ -120,7 +107,7 @@
 
 
   <div class="fg_c_nav-version">
-    v2.0.0-beta.7
+    Go to <a href="http://ah-uxds-forge-guide-release-v1.s3-website-us-east-1.amazonaws.com/">Forge 1.x</a>
   </div>
 </header>
 
@@ -145,25 +132,6 @@
       
         <li class="fg_c_nav-left__list-item">
           <a
-            href=""
-            
-            class="fg_c_nav-left__link  fg_is-active"
-          >
-            <span>Release Notes</span>
-            
-              
-            
-              
-            
-          </a>
-        </li>
-      
-    
-  
-    
-      
-        <li class="fg_c_nav-left__list-item">
-          <a
             href="downloads.html"
             
             class="fg_c_nav-left__link "
@@ -171,19 +139,6 @@
             <span>Downloads</span>
             
               
-            
-              
-            
-          </a>
-        </li>
-      
-        <li class="fg_c_nav-left__list-item">
-          <a
-            href="community-resources.html"
-            
-            class="fg_c_nav-left__link "
-          >
-            <span>Community Resources</span>
             
               
             
@@ -204,6 +159,8 @@
             
               
             
+              
+            
           </a>
         </li>
       
@@ -214,6 +171,8 @@
             class="fg_c_nav-left__link "
           >
             <span>Sass Utilities</span>
+            
+              
             
               
             
@@ -234,6 +193,8 @@
             
               
             
+              
+            
           </a>
         </li>
       
@@ -249,6 +210,8 @@
             
               
             
+              
+            
           </a>
         </li>
       
@@ -259,6 +222,8 @@
             class="fg_c_nav-left__link  fg_is-active"
           >
             <span>Release Notes</span>
+            
+              
             
               
             
@@ -294,110 +259,216 @@
       
 
       
-        <h2 id="1-5-0">1.5.0</h2>
+        <h2 id="2-1-0-05-01-2019">2.1.0 - 05/01/2019</h2>
+<p>Here&#39;s what we&#39;ve changed since the last release (2.0.0):</p>
+<p>New:</p>
 <ul>
-<li>Expanded access to Reactabular API through <code>Table</code>. Added props include <code>onRow</code> and <code>columns.props</code> among many others.</li>
-<li><code>FormField</code> provides mixins for input width and required bar for use by custom input components</li>
-<li>Bug fix - <code>FormField</code> was incorrectly setting width of nested inputs</li>
-<li>Updated CI to deploy workspace to S3</li>
+<li>We&#39;ve introduced a whole new set of colors - the secondary color palette. Read more about how to use these on the Colors Foundations page.</li>
+<li>@tesmond has built a Virtualized Table component using Forge! Check it out on the Extensions page under Community Extensions.</li>
 </ul>
-<h2 id="1-4-0">1.4.0</h2>
+<p>Deprecations:</p>
 <ul>
-<li>Added <code>expanded</code> and <code>defaultExpanded</code> props to <code>AccordionItem</code></li>
-<li>Bug fix - Modal content is now visible even on very small viewports</li>
-<li>Bug fix - Restored link styles</li>
-<li>Added snapshot tests for some components</li>
+<li>The <code>$green-light</code> color variable has been deprecated. That color is a part of our new secondary color palette and is now called <code>$green-secondary-100</code>.</li>
 </ul>
-<h2 id="1-3-1">1.3.1</h2>
+<p>Improvements:</p>
 <ul>
-<li>Bug fix - Checkbox and Radio more visible on dark backgrounds</li>
-<li>Bug fix - Accordion padding is now distributed properly</li>
-<li>Bug fix - fe_f_inherit no longer changes Label cursor</li>
+<li>DateInput&#39;s <code>disabledDays</code> prop now accepts many more types, including functions, objects (containing a days of week array, a from-to range, or before-after range), multiple Moment.utc dates, or any combination of these types. See the new DateInput disabledDays demo or the props table for details. Thanks for suggesting this, @Mike DeWitt!</li>
 </ul>
-<h2 id="1-3-0">1.3.0</h2>
+<p>Maintenance:</p>
 <ul>
-<li>Added sortable columns in Table component.</li>
-<li>Accordion component - Published documentation. It’s now fully supported.</li>
-<li>SelectionList component - Published documentation. It’s now fully supported, including an API for use in ReduxForm.</li>
-<li>Tabs component - Published documentation. It’s now fully supported.</li>
-<li>Tweaked required bar alignment for Checkbox and RadioGroup in FormField</li>
-<li>Tested with React 16.3 and expanded peer dependency</li>
-<li>Added ability for custom inputs to define their own required field validator as <code>Component.validateRequired</code></li>
-<li>Added a changelog file</li>
-<li>Now fail linting on warnings in addition to errors</li>
-<li>Moved Box component to forge-extension repository</li>
-<li>Bug fix - Tooltip in Modal not visible.</li>
+<li>All stories in Storybook are now wrapped with our <code>&lt;Root&gt;</code> component.</li>
+<li>The <code>forge-app</code> repo (which is useful for spinning up a new Forge project or making a prototype) is now using Forge 2. Thanks for updating this, @dlynshue!</li>
 </ul>
-<h2 id="1-2-0">1.2.0</h2>
+<p>Bug fixes:</p>
 <ul>
-<li>Added styling for typographic list elements (ul, ol) and fe_u_list-style--no-bullet utility class.</li>
-<li>List component - Published documentation. It’s now fully supported.</li>
-<li>Banner component - Published documentation. It’s now fully supported.</li>
-<li>Accordion component - Added, not yet documented or fully supported. <em>Thanks @misteele and @cbarringer!</em></li>
-<li>Bug fix - More robust handling of font-family inherited CSS property to prevent accidental overriding.</li>
-<li>Added fe_f_inherits for more robust handling of numerous inherited CSS properties.<ul>
-<li>Will be bundled into fe_f_all in 2.0, but left separate for backwards compatibility.</li>
+<li>Sortable Table headings now align with their columns. Thanks for reporting this, @libby!</li>
+</ul>
+<p>Documentation:</p>
+<ul>
+<li>We&#39;ve added new Forge Guide demos for Form and ReduxForm showing a comparison between the default and compact layout modes.</li>
+<li>StatusTag guidance has been improved, with advice on how to properly display Attention- or Critical-level information</li>
+<li>DateInput&#39;s Forge Guide page now includes a new demo showing disabled days.</li>
+<li>Fixed typos on the Forge Guide ReduxForm page.</li>
+</ul>
+<h2 id="2-0-0-04-03-2019">2.0.0 - 04/03/2019</h2>
+<p><strong>Forge 2.0 is now GA!</strong></p>
+<p>To see everything we&#39;ve changed since version 1, read our <a href="http://go/forge-upgrade-guide">Forge Upgrade Guide</a>.</p>
+<p>Here&#39;s what we&#39;ve changed since the last release (2.0.0-beta.12):</p>
+<p>Breaking changes:</p>
+<ul>
+<li>The deprecated <code>onUpdate</code> method has been removed from SelectionList. Use <code>onChange</code> instead.</li>
+<li>FormField’s <code>inputWidth</code> prop no longer accepts the value <code>&#39;large&#39;</code>. Provide a valid CSS width instead. The related class <code>fe_c_form-field__input--large</code> has been removed from the HTML API.</li>
+</ul>
+<p>Maintenance:</p>
+<ul>
+<li>redux and react-redux dependencies changed to peerDependencies in core Forge and in the extensions MultiselectAsync and ToggleSwitch</li>
+<li>Toast no longer depends on redux, react-redux, or redux-form</li>
+<li>Core extensions now require Forge version 2.0.0 or newer</li>
+<li>Test coverage for redux-form and autogenerated icons has been improved</li>
+</ul>
+<p>Bug Fixes:</p>
+<ul>
+<li><p>Many form elements that were using the muted text color are now using the default text color, including:</p>
+<ul>
+<li>Unfocused text in Input, DateInput, and Typeahead</li>
+<li>Multiselect and MultiselectAsync dropdown options</li>
+<li>RadioGroup and Checkbox descriptions</li>
+<li>Non-string-matched portions of Typeahead suggestions</li>
 </ul>
 </li>
-<li>Bug fix - Modal has extra bottom padding when excluding buttons. <em>Thanks @kymurray!</em></li>
-<li>Added the $base-prefix Sass variable for customizing the base selector (and therefore specificity) of all Forge component styles.<ul>
-<li>If you customize the prefix, make sure it will apply to both your standard Forge root and to any portals (Modal, Tooltip, DateInput picker) that you create.</li>
-</ul>
+<li><p>All form element components (except Textarea) are now the same height</p>
 </li>
+<li>All form elements are now vertically centered in Multifield</li>
+<li>FormError  height has been decreased to match most other form components</li>
+<li>Fixed issues with required     Multiselect and MultiselectAsync components not triggering error validation in ReduxForm when left empty</li>
+<li>Fixed issue where the DateInput calendar was defaulting to the current month and date, even if that date was outside the allowed date range. In those cases, it will now default to January of the nearest valid year</li>
+<li>ReadOnlyText now uses the input line height (<code>1.25</code>)</li>
+<li>The padding beneath Textarea is now consistent across browsers</li>
+<li>Removed right padding on last child of RadioGroup in Multifield (to account for horizontal arrangement)</li>
+<li>Multiselect and MultiselectAsync’s options dropdown no longer shift when the inputs are hovered</li>
 </ul>
-<h2 id="1-1-0">1.1.0</h2>
+<h2 id="2-0-0-beta-12">2.0.0-beta.12</h2>
 <ul>
-<li>Bug Fixes<ul>
-<li>Fixed issues with DateInput around positioning, validation, shortcuts, styles <strong>Breaking change if you&#39;ve developed your own component with internal state validation</strong> -- this is not the same as using <code>constraints</code> (UXDS-1261, UXDS-1300, UXDS-1305, UXDS-1306, UXDS-1310).</li>
-<li>Fixed Checkbox checked not set by ReduxForm initialValues (UXDS-1380). <em>Thanks @kymurray!</em></li>
-<li>Fixed Table row hover in Safari (UXDS-1307).</li>
-<li>Fixed Select border color (UXDS-1303).</li>
-<li>Fixed too large margin on ReadOnlyInput (UXDS-1312).</li>
+<li><code>Typeahead</code> menu placement is now dynamic, and won&#39;t overflow offscreen. Also, search substring matches in options are now more visible. See the <code>Typeahead</code> HTML API for new classes.</li>
+<li><code>Loader</code> is now accessible. If your <code>Loader</code> does not use the <code>text</code> prop, use the new <code>aria-label</code> prop to indicate loading to a screen reader.</li>
+<li>Red, green, and blue colors have been updated. They now have WCAG 2.0 AA compliant contrast ratios against white and light gray (<code>$gray-88</code>, <code>rgb(225, 225, 225)</code>) backgrounds.</li>
+<li><code>Heading</code> descriptions&#39; line height and top margins have been increased slightly, and they now use <code>font-weight: regular</code> instead of light.</li>
+<li>We now allow minor version updates of <code>react-select</code> (our previous dependency allowed patches only).</li>
+<li>Sample &quot;Setting a default option&quot; code for <code>Select</code> has been simplified, and no longer includes a ReduxFormField.</li>
+<li>Bug fix: <code>ReduxForm</code> will no longer throw a console warning when required fields are invalid.</li>
+<li>Bug fix: <code>Stepper</code> no longer pushes other page content down when certain steps are selected.</li>
+<li>Bug fix: <code>Select</code> components no longer shrink in height when used inside of <code>Multifield</code>.</li>
+<li>Bug fix: Breaklines now show up in Forge Guide code examples.</li>
 </ul>
-</li>
-<li>Added Banner component, currently undocumented. <em>Thanks @znielsen!</em></li>
-<li>Now passes npm-kit-validate.</li>
-<li>Added example starter component (not exported) called Box -- use this as a blueprint to begin any component contributions or extensions.</li>
-</ul>
-<h2 id="1-0-0">1.0.0</h2>
-<p><strong>Forge release 1.0 is available for GA use.</strong>
-For guidance and documentation see <a href="http://go/forge">http://go/forge</a>.
-Forge 1.0 includes the following:</p>
+<h2 id="2-0-0-beta-11">2.0.0-beta.11</h2>
 <ul>
-<li>Components<ul>
-<li>Button</li>
-<li>Checkbox</li>
-<li>DateInput</li>
-<li>ForgeIcons</li>
-<li>Form</li>
-<li>FormField</li>
-<li>Grid</li>
-<li>Heading</li>
-<li>IconButton</li>
-<li>Loader</li>
-<li>Modal</li>
-<li>RadioGroup</li>
-<li>ReadOnlyInput</li>
-<li>ReduxForm</li>
-<li>ReduxFormField</li>
-<li>Select</li>
-<li>Table</li>
-<li>TextInput</li>
-<li>Textarea</li>
-<li>Tooltip</li>
+<li>Typeahead now announces available suggestions to screen readers. You can overwrite Typeahead&#39;s handling of this with the new <code>getSuggestionAnnouncement</code> prop, or provide the text yourself with the new <code>suggestionsAnnouncement</code> prop.</li>
+<li>Paginator is now more accessible to screen readers and keyboard navigation.</li>
+<li>The <code>tall</code> layout has been removed from <code>Table</code>. Available values for the <code>layout</code> prop are now <code>default</code> and <code>compact</code>.</li>
+<li>We no longer depend on a fixed version of highlight.js. This explicit version dependency was added in 2.0.0-beta.10 to address a highlight.js bug.</li>
+<li>Bug fix: Stepper, RemovableTag and Table sortable header buttons now have explicit type.</li>
 </ul>
-</li>
-<li>Style utility classes for<ul>
-<li>Typography</li>
-<li>Layout</li>
+<h2 id="2-0-0-beta-10">2.0.0-beta.10</h2>
+<ul>
+<li>SelectionListItem now automatically uses the text content of its children as the accessible label of the Checkbox. You can overwrite this with SelectionListItem&#39;s new <code>aria-label</code> prop.</li>
+<li>Checkbox now takes an <code>aria-label</code> prop. Use it when rendering a Checkbox without a <code>description</code> to ensure screen reader users know the purpose of the Checkbox.</li>
+<li>Grid and List icons added to the ForgeIcons iconSet.</li>
+<li>Updated dependencies with security issues.</li>
+<li>Bug fix: Accordion header button now has explicit type (Thanks @rvanderheyde !)</li>
+<li>Bug fix: Checkbox label and Radio Button labels now have the same font-size (Thanks @Alvaro Montoro !)</li>
 </ul>
-</li>
-<li>Sass constants for<ul>
-<li>Colors</li>
-<li>Typography</li>
+<h2 id="2-0-0-beta-9">2.0.0-beta.9</h2>
+<ul>
+<li>DateInput, Heading, SelectionList, Table, and Tooltip are now more accessible to screen reader users.</li>
+<li>Heading&#39;s <code>subheading</code> prop has been renamed to <code>headingDescription</code>.</li>
+<li>Focus is now trapped in Modals, Overlays, and Lightboxes.</li>
+<li>KeyboardUserContext added to Root, which notes if users are navigating with a keyboard vs. a mouse.</li>
+<li>Bug fix: Fixed issue where DateInput didn&#39;t process clicks on calendar days in some cases.</li>
 </ul>
-</li>
-<li>Source Sans font</li>
+<h2 id="2-0-0-beta-8">2.0.0-beta.8</h2>
+<ul>
+<li>Multiselect is now more accessible to screen reader users. Multiselect options can now be selected by using the Enter key. Multiselect now has improved keyboard navigation. Multiselect now reads correct instructions for selecting options.</li>
+<li>Multiselect no longer has <code>aria-describedby</code> and <code>openMenuOnClick</code> props. This is due to open issues in react-select that make these props not work.</li>
+<li>RemovableTag now has a <code>tabIndex</code> prop, which allows setting the <code>tabindex</code> of the button element.</li>
+</ul>
+<h2 id="2-0-0-beta-7">2.0.0-beta.7</h2>
+<ul>
+<li>Multiselect now uses react-select v2, making it more accessible to screen reader users and easier to customize. Multiselect &quot;no options found&quot; message can now be customized with the <code>noOptionsMessage</code> prop.</li>
+<li>Tabs are now more accessible to screen reader users. Tabs can now take a label to describe all tabs with the <code>tabGroupLabel</code> prop. Users can now use the left/right arrow keys to change tabs, use the Home key to go to the first tab, and use the End key to go to the last tab.</li>
+<li>Bug fix: MultiField fields now wrap on small screens.</li>
+<li>Bug fix: MultiField field labels are hidden if none are provided.</li>
+<li>Bug fix: Hovering over disabled select no longer removes chevron &amp; required bar.</li>
+</ul>
+<h2 id="2-0-0-beta-6">2.0.0-beta.6</h2>
+<ul>
+<li>Accordion now more accessible to screen reader users. Users can tab through AccordionItems, use Enter and Space Bar keys to toggle open AccordionItems, and screen reader will read the headingText of an AccordionItem when it is selected.</li>
+<li>Card now allows Space for click when onClick handler is provided for accessibility.</li>
+<li>Stepper now more accessible to screen reader users. Stepper now uses buttons for steps, has updated focus and hover styles, and screen reader will read if step is completed or current.</li>
+<li>Attention color updated to improve contrast.</li>
+<li>Bug fix: Accordion chevron now correctly aligned in IE11</li>
+</ul>
+<h2 id="2-0-0-beta-5">2.0.0-beta.5</h2>
+<ul>
+<li>Separated CSS/SASS linting and moved the config files into the forge-gulp-tasks package</li>
+<li>Added react-a11y eslint plug-in to help with developing with accessibility in mind</li>
+<li>Made padding-related props more consistent across components. This includes <strong>removing <code>padded</code> prop from Accordion</strong>, adding a <code>padded</code> prop to AccordionItem, adding a <code>padded</code> prop to Modal, and removing the padding style on the Tabs wrapper component.</li>
+<li>Updated Accordion styling - the grey background on the content has been removed and default font size has been made smaller</li>
+</ul>
+<h2 id="2-0-0-beta-4">2.0.0-beta.4</h2>
+<ul>
+<li>Changed patient safety alerts to critical alerts. Includes updates to color and typography variables, icons, Banner, and Modal.</li>
+<li>Restricted icon in <code>Button</code> to only be supported in default size.</li>
+<li>DateInput auto-completes 2-digit year to 4-digit year (up to 10 years in the future or 90 years in the past)</li>
+<li>Made input borders lighter.</li>
+<li>The following layout props can now be set on <code>Form</code> or <code>ReduxForm</code> and will serve as defaults for any rows in the form: <code>compact</code>, <code>labelAlwaysAbove</code>, <code>labelWidth</code>, and <code>nested</code>.</li>
+<li>Bug fix: Addressed some IE11 form layout bugs.</li>
+<li>Bug fix: <code>Form</code> submit button now aligns with inputs.</li>
+<li>Bug fix: Forge styles no longer conflict with resets that set <code>box-sizing: border-box</code> globally.</li>
+<li>Bug fix: Accordion expand/collapse icon now has title &quot;Collapse&quot; when expanded.</li>
+</ul>
+<h2 id="2-0-0-beta-3">2.0.0-beta.3</h2>
+<ul>
+<li>Enabled importing individual components as <code>@athena/forge/lib/component-name</code>. This can greatly reduce bundle size in some scenarios.</li>
+<li>Updated Info icon to display <code>i</code> instead of <code>?</code>.</li>
+<li>Updated focus styles for WCAG AA accessibility.</li>
+<li>Various other accessibility fixes for <code>Checkbox</code>, <code>IconButton</code>, and <code>RadioGroup</code>.</li>
+<li>Enabled adding an icon to <code>Button</code>. API is the same as for <code>IconButton</code>. The icon is not displayed for &#39;tiny&#39; or &#39;small&#39; size buttons.</li>
+<li>Removed all <code>Object.assign</code> usage. Forge should no longer require babel-polyfill.</li>
+<li>The form&#39;s error message display component can now be imported and used as <code>FormError</code>. This could be useful if you&#39;re creating a complex custom input and want greater control over when and where error messages appear.</li>
+<li>Removed all UNSAFE React methods for future version compatibility.</li>
+<li>Bug fix: <code>RemovableTag</code> removal button size stays constant on small tags (fix by lmcrae)</li>
+</ul>
+<h2 id="2-0-0-beta-2">2.0.0-beta.2</h2>
+<ul>
+<li>Improved accessibility of Button, IconButton, Checkbox and Radio components</li>
+<li>Bug fix: Updated Table component to pass all style overrides to Rectabular for conditional cell styling (fix by tesmond)</li>
+</ul>
+<h2 id="2-0-0-beta-1">2.0.0-beta.1</h2>
+<ul>
+<li>Modified greys to show up better on low contrast displays</li>
+<li>Updated dependencies including verified support for React 16.5. <strong>Webpack 1 is no longer supported.</strong></li>
+<li>Changed <code>ReduxMultiField</code> to use redux-form&#39;s <code>Fields</code> component to improve performance and code quality. <code>reduxFieldAs</code> prop was replaced with <code>reduxFieldsAs</code>. Further customization is needed for validation to work when setting <code>reduxFieldsAs</code>.</li>
+<li>The <code>fixedWidth</code> prop has been renamed to <code>inputWidth</code>. This replaces previous <code>inputWidth</code> functionality. The new <code>inputWidth</code> prop is now supported by all input components (Checkbox, DateInput, Select...)</li>
+<li>Bug fix: Radio extra props will be passed to input instead of container</li>
+</ul>
+<h2 id="2-0-0-alpha-4">2.0.0-alpha.4</h2>
+<ul>
+<li>Added MultiField, ReduxMultiField, RemovableTag, and StatusTag components</li>
+<li>Compact and labelAlwaysAbove props added to FormField</li>
+<li>React 16.5 removed from peer dependency range to avoid a suspected issue. Investigation ongoing.</li>
+<li>Select and Tabs triangles have been replaced with the Expand icon</li>
+<li>Bug fix: Typeahead no longer causes horizontal scrollbar to appear unnecessarily</li>
+<li>Bug fix: DateInput&#39;s calendar month and year selection works in Firefox when used in a Modal or Lightbox</li>
+<li>Bug fix: Loader spinner animation is now smooth in Chrome</li>
+</ul>
+<h2 id="2-0-0-alpha-3">2.0.0-alpha.3</h2>
+<ul>
+<li>Migrated Multiselect, Typeahead, Paginator, Lightbox, Card, Input and Stepper from Forge Extensions to Forge Core</li>
+<li>TextInput component has been removed and replaced with Input component</li>
+<li>Components that take an icon prop (IconButton, Input, Typeahead) can now take an <code>iconSet</code> prop</li>
+<li>Added Upgrade Guide from Forge 1.x to Forge 2.0</li>
+<li>Bug fix: Tabs no longer collapse under all widths under certain conditions</li>
+<li>Bug fix: Static methods of DateInput (e.g. DateInput.formatDate) available again</li>
+<li>Bug fix: DateInput calendar now closes on scrolling</li>
+</ul>
+<h2 id="2-0-0-alpha-2">2.0.0-alpha.2</h2>
+<ul>
+<li>Added Root component (and underlying ThemeProvider and ThemeConsumer HOC) to support providing a theme to Forge components</li>
+<li>Updated DateInput, Modal, and Tooltip to take <code>rootClasses</code> from theme</li>
+<li>Bug fix: ReduxForm no longer throws a warning when using <code>onSubmitSucceeded</code></li>
+</ul>
+<h2 id="2-0-0-alpha-1">2.0.0-alpha.1</h2>
+<p>This version has been branched from 1.8.0 and includes the following changes:</p>
+<ul>
+<li>Bug fix: ReduxForm no longer throws error on form submit when fields require validation</li>
+<li><code>.fe_f_inherits</code> styling is now included in <code>.fe_f_all</code></li>
+<li>Tabs default <code>padded</code> prop is now true</li>
+<li>Radios without a RadioGroup have a styling change. <code>display</code> is now <code>inline-block</code> to match checkboxes</li>
+</ul>
+<p><hr></p>
+<h4 id="upgrading-from-forge-1-x-">Upgrading from Forge 1.x?</h4>
+<ul>
+<li><a href="http://go/forge-upgrade-guide">Forge Upgrade Guide</a></li>
 </ul>
 
       
@@ -412,12 +483,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
         amplitude.getInstance().logEvent('viewed page', {
           pageName: 'Release Notes',
-          pageCategory: ''.length > 0
-            ? ''
+          pageCategory: 'resources'.length > 0
+            ? 'resources'
             : null,
-          forgeVersion: '2.0.0-beta.7',
-          forgeGeneralVersion: /^\d*(?=\.)/.exec('2.0.0-beta.7')
-            ? /^\d*(?=\.)/.exec('2.0.0-beta.7').toString()
+          forgeVersion: '2.1.0',
+          forgeGeneralVersion: /^\d*(?=\.)/.exec('2.1.0')
+            ? /^\d*(?=\.)/.exec('2.1.0').toString()
             : null
         });
       }
@@ -430,7 +501,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 
     </div>
-    <!--div class="debug"><pre><code class="language-json">{"id":"7bee4a71801086062b6b454cb324ea42","name":"release-notes","handle":"release-notes","label":"Release Notes","title":"Release Notes","order":50,"isHidden":false,"alias":null,"isEntity":true,"isDoc":true,"isIndex":false,"path":"resources/release-notes","status":null,"content":"## 1.5.0\n* Expanded access to Reactabular API through `Table`. Added props include `onRow` and `columns.props` among many others.\n* `FormField` provides mixins for input width and required bar for use by custom input components\n* Bug fix - `FormField` was incorrectly setting width of nested inputs\n* Updated CI to deploy workspace to S3\n\n## 1.4.0\n* Added `expanded` and `defaultExpanded` props to `AccordionItem`\n* Bug fix - Modal content is now visible even on very small viewports\n* Bug fix - Restored link styles\n* Added snapshot tests for some components\n\n## 1.3.1\n* Bug fix - Checkbox and Radio more visible on dark backgrounds\n* Bug fix - Accordion padding is now distributed properly\n* Bug fix - fe_f_inherit no longer changes Label cursor\n\n## 1.3.0\n* Added sortable columns in Table component.\n* Accordion component - Published documentation. It’s now fully supported.\n* SelectionList component - Published documentation. It’s now fully supported, including an API for use in ReduxForm.\n* Tabs component - Published documentation. It’s now fully supported.\n* Tweaked required bar alignment for Checkbox and RadioGroup in FormField\n* Tested with React 16.3 and expanded peer dependency\n* Added ability for custom inputs to define their own required field validator as `Component.validateRequired`\n* Added a changelog file\n* Now fail linting on warnings in addition to errors\n* Moved Box component to forge-extension repository\n* Bug fix - Tooltip in Modal not visible.\n\n## 1.2.0\n* Added styling for typographic list elements (ul, ol) and fe_u_list-style--no-bullet utility class.\n* List component - Published documentation. It’s now fully supported.\n* Banner component - Published documentation. It’s now fully supported.\n* Accordion component - Added, not yet documented or fully supported. *Thanks @misteele and @cbarringer!*\n* Bug fix - More robust handling of font-family inherited CSS property to prevent accidental overriding.\n* Added fe_f_inherits for more robust handling of numerous inherited CSS properties.\n    * Will be bundled into fe_f_all in 2.0, but left separate for backwards compatibility.\n* Bug fix - Modal has extra bottom padding when excluding buttons. *Thanks @kymurray!*\n* Added the $base-prefix Sass variable for customizing the base selector (and therefore specificity) of all Forge component styles.\n    * If you customize the prefix, make sure it will apply to both your standard Forge root and to any portals (Modal, Tooltip, DateInput picker) that you create.\n\n## 1.1.0\n* Bug Fixes\n    * Fixed issues with DateInput around positioning, validation, shortcuts, styles **Breaking change if you've developed your own component with internal state validation** -- this is not the same as using `constraints` (UXDS-1261, UXDS-1300, UXDS-1305, UXDS-1306, UXDS-1310).\n    * Fixed Checkbox checked not set by ReduxForm initialValues (UXDS-1380). *Thanks @kymurray!*\n    * Fixed Table row hover in Safari (UXDS-1307).\n    * Fixed Select border color (UXDS-1303).\n    * Fixed too large margin on ReadOnlyInput (UXDS-1312).\n* Added Banner component, currently undocumented. *Thanks @znielsen!*\n* Now passes npm-kit-validate.\n* Added example starter component (not exported) called Box -- use this as a blueprint to begin any component contributions or extensions.\n\n## 1.0.0\n__Forge release 1.0 is available for GA use.__\nFor guidance and documentation see [http://go/forge](http://go/forge).\nForge 1.0 includes the following:\n* Components\n    * Button\n    * Checkbox\n    * DateInput\n    * ForgeIcons\n    * Form\n    * FormField\n    * Grid\n    * Heading\n    * IconButton\n    * Loader\n    * Modal\n    * RadioGroup\n    * ReadOnlyInput\n    * ReduxForm\n    * ReduxFormField\n    * Select\n    * Table\n    * TextInput\n    * Textarea\n    * Tooltip\n* Style utility classes for\n    * Typography\n    * Layout\n* Sass constants for\n    * Colors\n    * Typography\n* Source Sans font\n","lang":{"name":"Markdown","mode":"markdown","scope":"source.gfm","color":"#083FA1"},"file":{"root":"C:\\","dir":"C:\\Users\\ctsui\\code\\forge-guide\\docs\\05-resources","base":"50-release-notes.md","ext":".md","name":"release-notes","relPath":"05-resources\\50-release-notes.md","fsName":"50-release-notes","path":"C:\\Users\\ctsui\\code\\forge-guide\\docs\\05-resources\\50-release-notes.md","dirs":["C:\\Users\\ctsui\\code\\forge-guide\\docs\\05-resources"],"isHidden":false,"order":50,"isFile":true,"isDirectory":false,"stat":{"dev":4102694615,"mode":33206,"nlink":1,"uid":0,"gid":0,"rdev":0,"ino":22517998136856104,"size":3903,"atimeMs":1529593159686.4033,"mtimeMs":1529593159696.844,"ctimeMs":1530119730234.91,"birthtimeMs":1528897076185.259,"atime":"2018-06-21T14:59:19.686Z","mtime":"2018-06-21T14:59:19.697Z","ctime":"2018-06-27T17:15:30.235Z","birthtime":"2018-06-13T13:37:56.185Z"},"lang":{"name":"Markdown","mode":"markdown","scope":"source.gfm","color":"#083FA1"},"isBinary":false},"context":{"extensions":{"core":{"forge-toast":{"name":"Toast","version":"0.2.2","description":"Toast component for Forge"},"forge-toggle-switch":{"name":"ToggleSwitch","version":"0.1.1","description":"ToggleSwitch component for Forge"}},"community":{"clinicals-forge-extension":{"name":"Clinicals Forge Extension","owner":"Nursing Flowsheets","url":"https://bitbucket.athenahealth.com/projects/CLIFS/repos/clinicals-forge-extension/browse","version":"2.1.1","description":"A forge-extension containing components used by inpatient clinicals"}}}}}</code></pre></div-->
+    <!--div class="debug"><pre><code class="language-json">{"id":"7bee4a71801086062b6b454cb324ea42","name":"release-notes","handle":"release-notes","label":"Release Notes","title":"Release Notes","order":50,"isHidden":false,"alias":null,"isEntity":true,"isDoc":true,"isIndex":false,"path":"resources/release-notes","status":null,"content":"## 2.1.0 - 05/01/2019\n\nHere's what we've changed since the last release (2.0.0):\n\nNew:\n\n* We've introduced a whole new set of colors - the secondary color palette. Read more about how to use these on the Colors Foundations page.\n* @tesmond has built a Virtualized Table component using Forge! Check it out on the Extensions page under Community Extensions.\n\nDeprecations:\n\n* The `$green-light` color variable has been deprecated. That color is a part of our new secondary color palette and is now called `$green-secondary-100`.\n\nImprovements:\n\n* DateInput's `disabledDays` prop now accepts many more types, including functions, objects (containing a days of week array, a from-to range, or before-after range), multiple Moment.utc dates, or any combination of these types. See the new DateInput disabledDays demo or the props table for details. Thanks for suggesting this, @Mike DeWitt!\n\nMaintenance:\n\n* All stories in Storybook are now wrapped with our `<Root>` component.\n* The `forge-app` repo (which is useful for spinning up a new Forge project or making a prototype) is now using Forge 2. Thanks for updating this, @dlynshue!\n\nBug fixes:\n\n* Sortable Table headings now align with their columns. Thanks for reporting this, @libby!\n\nDocumentation:\n\n* We've added new Forge Guide demos for Form and ReduxForm showing a comparison between the default and compact layout modes.\n* StatusTag guidance has been improved, with advice on how to properly display Attention- or Critical-level information\n* DateInput's Forge Guide page now includes a new demo showing disabled days.\n* Fixed typos on the Forge Guide ReduxForm page.\n\n\n\n## 2.0.0 - 04/03/2019\n\n**Forge 2.0 is now GA!**\n\nTo see everything we've changed since version 1, read our [Forge Upgrade Guide](http://go/forge-upgrade-guide).\n\nHere's what we've changed since the last release (2.0.0-beta.12):\n\nBreaking changes:\n\n* The deprecated `onUpdate` method has been removed from SelectionList. Use `onChange` instead.\n* FormField’s `inputWidth` prop no longer accepts the value `'large'`. Provide a valid CSS width instead. The related class `fe_c_form-field__input--large` has been removed from the HTML API.\n\nMaintenance:\n\n* redux and react-redux dependencies changed to peerDependencies in core Forge and in the extensions MultiselectAsync and ToggleSwitch\n* Toast no longer depends on redux, react-redux, or redux-form\n* Core extensions now require Forge version 2.0.0 or newer\n* Test coverage for redux-form and autogenerated icons has been improved\n\nBug Fixes:\n\n* Many form elements that were using the muted text color are now using the default text color, including:\n\n  * Unfocused text in Input, DateInput, and Typeahead\n  * Multiselect and MultiselectAsync dropdown options\n  * RadioGroup and Checkbox descriptions\n  * Non-string-matched portions of Typeahead suggestions\n\n* All form element components (except Textarea) are now the same height\n* All form elements are now vertically centered in Multifield\n* FormError  height has been decreased to match most other form components\n* Fixed issues with required \tMultiselect and MultiselectAsync components not triggering error validation in ReduxForm when left empty\n* Fixed issue where the DateInput calendar was defaulting to the current month and date, even if that date was outside the allowed date range. In those cases, it will now default to January of the nearest valid year\n* ReadOnlyText now uses the input line height (`1.25`)\n* The padding beneath Textarea is now consistent across browsers\n* Removed right padding on last child of RadioGroup in Multifield (to account for horizontal arrangement)\n* Multiselect and MultiselectAsync’s options dropdown no longer shift when the inputs are hovered\n\n\n\n## 2.0.0-beta.12\n* `Typeahead` menu placement is now dynamic, and won't overflow offscreen. Also, search substring matches in options are now more visible. See the `Typeahead` HTML API for new classes.\n* `Loader` is now accessible. If your `Loader` does not use the `text` prop, use the new `aria-label` prop to indicate loading to a screen reader.\n* Red, green, and blue colors have been updated. They now have WCAG 2.0 AA compliant contrast ratios against white and light gray (`$gray-88`, `rgb(225, 225, 225)`) backgrounds.\n* `Heading` descriptions' line height and top margins have been increased slightly, and they now use `font-weight: regular` instead of light.\n* We now allow minor version updates of `react-select` (our previous dependency allowed patches only).\n* Sample \"Setting a default option\" code for `Select` has been simplified, and no longer includes a ReduxFormField.\n* Bug fix: `ReduxForm` will no longer throw a console warning when required fields are invalid.\n* Bug fix: `Stepper` no longer pushes other page content down when certain steps are selected.\n* Bug fix: `Select` components no longer shrink in height when used inside of `Multifield`.\n* Bug fix: Breaklines now show up in Forge Guide code examples.\n\n\n## 2.0.0-beta.11\n* Typeahead now announces available suggestions to screen readers. You can overwrite Typeahead's handling of this with the new `getSuggestionAnnouncement` prop, or provide the text yourself with the new `suggestionsAnnouncement` prop.\n* Paginator is now more accessible to screen readers and keyboard navigation.\n* The `tall` layout has been removed from `Table`. Available values for the `layout` prop are now `default` and `compact`.\n* We no longer depend on a fixed version of highlight.js. This explicit version dependency was added in 2.0.0-beta.10 to address a highlight.js bug.\n* Bug fix: Stepper, RemovableTag and Table sortable header buttons now have explicit type.\n\n\n## 2.0.0-beta.10\n* SelectionListItem now automatically uses the text content of its children as the accessible label of the Checkbox. You can overwrite this with SelectionListItem's new `aria-label` prop.\n* Checkbox now takes an `aria-label` prop. Use it when rendering a Checkbox without a `description` to ensure screen reader users know the purpose of the Checkbox.\n* Grid and List icons added to the ForgeIcons iconSet.\n* Updated dependencies with security issues.\n* Bug fix: Accordion header button now has explicit type (Thanks @rvanderheyde !)\n* Bug fix: Checkbox label and Radio Button labels now have the same font-size (Thanks @Alvaro Montoro !)\n\n## 2.0.0-beta.9\n* DateInput, Heading, SelectionList, Table, and Tooltip are now more accessible to screen reader users.\n* Heading's `subheading` prop has been renamed to `headingDescription`.\n* Focus is now trapped in Modals, Overlays, and Lightboxes.\n* KeyboardUserContext added to Root, which notes if users are navigating with a keyboard vs. a mouse.\n* Bug fix: Fixed issue where DateInput didn't process clicks on calendar days in some cases.\n\n## 2.0.0-beta.8\n* Multiselect is now more accessible to screen reader users. Multiselect options can now be selected by using the Enter key. Multiselect now has improved keyboard navigation. Multiselect now reads correct instructions for selecting options.\n* Multiselect no longer has `aria-describedby` and `openMenuOnClick` props. This is due to open issues in react-select that make these props not work.\n* RemovableTag now has a `tabIndex` prop, which allows setting the `tabindex` of the button element.\n\n## 2.0.0-beta.7\n* Multiselect now uses react-select v2, making it more accessible to screen reader users and easier to customize. Multiselect \"no options found\" message can now be customized with the `noOptionsMessage` prop.\n* Tabs are now more accessible to screen reader users. Tabs can now take a label to describe all tabs with the `tabGroupLabel` prop. Users can now use the left/right arrow keys to change tabs, use the Home key to go to the first tab, and use the End key to go to the last tab.\n* Bug fix: MultiField fields now wrap on small screens.\n* Bug fix: MultiField field labels are hidden if none are provided.\n* Bug fix: Hovering over disabled select no longer removes chevron & required bar.\n\n## 2.0.0-beta.6\n* Accordion now more accessible to screen reader users. Users can tab through AccordionItems, use Enter and Space Bar keys to toggle open AccordionItems, and screen reader will read the headingText of an AccordionItem when it is selected.\n* Card now allows Space for click when onClick handler is provided for accessibility.\n* Stepper now more accessible to screen reader users. Stepper now uses buttons for steps, has updated focus and hover styles, and screen reader will read if step is completed or current.\n* Attention color updated to improve contrast.\n* Bug fix: Accordion chevron now correctly aligned in IE11\n\n## 2.0.0-beta.5\n* Separated CSS/SASS linting and moved the config files into the forge-gulp-tasks package\n* Added react-a11y eslint plug-in to help with developing with accessibility in mind\n* Made padding-related props more consistent across components. This includes **removing `padded` prop from Accordion**, adding a `padded` prop to AccordionItem, adding a `padded` prop to Modal, and removing the padding style on the Tabs wrapper component.\n* Updated Accordion styling - the grey background on the content has been removed and default font size has been made smaller\n\n## 2.0.0-beta.4\n* Changed patient safety alerts to critical alerts. Includes updates to color and typography variables, icons, Banner, and Modal.\n* Restricted icon in `Button` to only be supported in default size.\n* DateInput auto-completes 2-digit year to 4-digit year (up to 10 years in the future or 90 years in the past)\n* Made input borders lighter.\n* The following layout props can now be set on `Form` or `ReduxForm` and will serve as defaults for any rows in the form: `compact`, `labelAlwaysAbove`, `labelWidth`, and `nested`.\n* Bug fix: Addressed some IE11 form layout bugs.\n* Bug fix: `Form` submit button now aligns with inputs.\n* Bug fix: Forge styles no longer conflict with resets that set `box-sizing: border-box` globally.\n* Bug fix: Accordion expand/collapse icon now has title \"Collapse\" when expanded.\n\n\n## 2.0.0-beta.3\n* Enabled importing individual components as `@athena/forge/lib/component-name`. This can greatly reduce bundle size in some scenarios.\n* Updated Info icon to display `i` instead of `?`.\n* Updated focus styles for WCAG AA accessibility.\n* Various other accessibility fixes for `Checkbox`, `IconButton`, and `RadioGroup`.\n* Enabled adding an icon to `Button`. API is the same as for `IconButton`. The icon is not displayed for 'tiny' or 'small' size buttons.\n* Removed all `Object.assign` usage. Forge should no longer require babel-polyfill.\n* The form's error message display component can now be imported and used as `FormError`. This could be useful if you're creating a complex custom input and want greater control over when and where error messages appear.\n* Removed all UNSAFE React methods for future version compatibility.\n* Bug fix: `RemovableTag` removal button size stays constant on small tags (fix by lmcrae)\n\n## 2.0.0-beta.2\n* Improved accessibility of Button, IconButton, Checkbox and Radio components\n* Bug fix: Updated Table component to pass all style overrides to Rectabular for conditional cell styling (fix by tesmond)\n\n## 2.0.0-beta.1\n* Modified greys to show up better on low contrast displays\n* Updated dependencies including verified support for React 16.5. **Webpack 1 is no longer supported.**\n* Changed `ReduxMultiField` to use redux-form's `Fields` component to improve performance and code quality. `reduxFieldAs` prop was replaced with `reduxFieldsAs`. Further customization is needed for validation to work when setting `reduxFieldsAs`.\n* The `fixedWidth` prop has been renamed to `inputWidth`. This replaces previous `inputWidth` functionality. The new `inputWidth` prop is now supported by all input components (Checkbox, DateInput, Select...)\n* Bug fix: Radio extra props will be passed to input instead of container\n\n## 2.0.0-alpha.4\n* Added MultiField, ReduxMultiField, RemovableTag, and StatusTag components\n* Compact and labelAlwaysAbove props added to FormField\n* React 16.5 removed from peer dependency range to avoid a suspected issue. Investigation ongoing.\n* Select and Tabs triangles have been replaced with the Expand icon\n* Bug fix: Typeahead no longer causes horizontal scrollbar to appear unnecessarily\n* Bug fix: DateInput's calendar month and year selection works in Firefox when used in a Modal or Lightbox\n* Bug fix: Loader spinner animation is now smooth in Chrome\n\n## 2.0.0-alpha.3\n* Migrated Multiselect, Typeahead, Paginator, Lightbox, Card, Input and Stepper from Forge Extensions to Forge Core\n* TextInput component has been removed and replaced with Input component\n* Components that take an icon prop (IconButton, Input, Typeahead) can now take an `iconSet` prop\n* Added Upgrade Guide from Forge 1.x to Forge 2.0\n* Bug fix: Tabs no longer collapse under all widths under certain conditions\n* Bug fix: Static methods of DateInput (e.g. DateInput.formatDate) available again\n* Bug fix: DateInput calendar now closes on scrolling\n\n## 2.0.0-alpha.2\n* Added Root component (and underlying ThemeProvider and ThemeConsumer HOC) to support providing a theme to Forge components\n* Updated DateInput, Modal, and Tooltip to take `rootClasses` from theme\n* Bug fix: ReduxForm no longer throws a warning when using `onSubmitSucceeded`\n\n## 2.0.0-alpha.1\nThis version has been branched from 1.8.0 and includes the following changes:\n* Bug fix: ReduxForm no longer throws error on form submit when fields require validation\n* `.fe_f_inherits` styling is now included in `.fe_f_all`\n* Tabs default `padded` prop is now true\n* Radios without a RadioGroup have a styling change. `display` is now `inline-block` to match checkboxes\n\n<hr>\n#### Upgrading from Forge 1.x?\n* [Forge Upgrade Guide](http://go/forge-upgrade-guide)\n","lang":{"name":"Markdown","mode":"markdown","scope":"source.gfm","color":"#083FA1"},"file":{"root":"C:\\","dir":"C:\\Users\\ctsui\\code\\forge-guide\\docs\\06-resources","base":"50-release-notes.md","ext":".md","name":"release-notes","relPath":"06-resources\\50-release-notes.md","fsName":"50-release-notes","path":"C:\\Users\\ctsui\\code\\forge-guide\\docs\\06-resources\\50-release-notes.md","dirs":["C:\\Users\\ctsui\\code\\forge-guide\\docs\\06-resources"],"isHidden":false,"order":50,"isFile":true,"isDirectory":false,"stat":{"dev":4102694615,"mode":33206,"nlink":1,"uid":0,"gid":0,"rdev":0,"ino":64457769666867970,"size":13802,"atimeMs":1557323248727.895,"mtimeMs":1557323248742.9297,"ctimeMs":1557323248742.9297,"birthtimeMs":1551461122368.254,"atime":"2019-05-08T13:47:28.728Z","mtime":"2019-05-08T13:47:28.743Z","ctime":"2019-05-08T13:47:28.743Z","birthtime":"2019-03-01T17:25:22.368Z"},"lang":{"name":"Markdown","mode":"markdown","scope":"source.gfm","color":"#083FA1"},"isBinary":false},"context":{"extensions":{"core":{"forge-toast":{"name":"Toast","version":"0.3.0","description":"Toast component for Forge"},"forge-toggle-switch":{"name":"ToggleSwitch","version":"0.2.0","description":"ToggleSwitch component for Forge"},"forge-multiselect-async":{"name":"MultiselectAsync","version":"0.2.0","description":"Async version of Multiselect component"}},"community":{"clinicals-forge-extension":{"name":"Clinicals Forge Extension","owner":"Nursing Flowsheets","url":"https://bitbucket.athenahealth.com/projects/CLIFS/repos/clinicals-forge-extension/browse","version":"2.2.1","description":"A forge-extension containing components used by inpatient clinicals"},"forge-virtualized-table":{"name":"Virtualized Table","owner":"Pop Health","url":"https://bitbucket.athenahealth.com/projects/UXDS/repos/forge-virtualized-table/browse","version":"0.1.0","description":"Virtualization support for the Forge Table component."}}},"amplitudeCategory":"resources"}}</code></pre></div-->
   </div>
 </div>
 

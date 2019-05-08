@@ -1,0 +1,1289 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+    window.frctl = {
+        env: 'static'
+    };
+    </script>
+    <script>var cl = document.querySelector('html').classList; cl.remove('no-js'); cl.add('has-js');</script>
+    <link rel="shortcut icon" href="../../favicon.ico" type="image/ico">
+
+<link rel="stylesheet" href="../../assets/css/styles.css?cachebust=1.2.0" type="text/css">
+
+<link rel="stylesheet" href="../../assets/css/prism-atom-dark.css?cachebust=1.2.0" type="text/css">
+
+<link rel="stylesheet" href="../../assets/css/ascetic.css?cachebust=1.2.0" type="text/css">
+
+<link rel="stylesheet" href="../../css/forge.css?cachebust=1.2.0" type="text/css">
+
+
+<title>MultiselectAsync | athenahealth</title>
+
+</head>
+<body>
+
+
+
+<div class="fg_app">
+  <header class="fg_l_header">
+  <a class="fg_c_branding" href="../../index.html">
+    <img src="../../assets/images/logo.svg" />
+  </a>
+  <nav class="fg_c_nav-top">
+  <ul class="fg_c_nav-top__list">
+    
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link "
+            href="../guidelines/principles.html"
+            title="Guidelines"
+          >
+            Guidelines
+          </a>
+        </li>
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link "
+            href="../foundations/color.html"
+            title="Foundations"
+          >
+            Foundations
+          </a>
+        </li>
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link  fg_is-active"
+            href="accordion.html"
+            title="Components"
+          >
+            Components
+          </a>
+        </li>
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link "
+            href="../extensions/forge-extensions.html"
+            title="Extensions"
+          >
+            Extensions
+          </a>
+        </li>
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link "
+            href="../resources/downloads.html"
+            title="Resources"
+          >
+            Resources
+          </a>
+        </li>
+      
+    
+  </ul>
+</nav>
+
+
+  <div class="fg_c_nav-version">
+    Go to <a href="http://ah-uxds-forge-guide-release-v1.s3-website-us-east-1.amazonaws.com/">Forge 1.x</a>
+  </div>
+</header>
+
+
+  
+
+<div class="fg_l_sidebar" data-role="sidebar">
+  <nav class="fg_c_nav-left">
+  <ul class="fg_c_nav-left__list">
+  
+    
+  
+    
+  
+    
+  
+    
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="accordion.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Accordion</span>
+            
+              
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="banner.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Banner</span>
+            
+              
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="button.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Button</span>
+            
+              
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="card.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Card</span>
+            
+              
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="checkbox.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Checkbox</span>
+            
+              
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="date-input.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>DateInput</span>
+            
+              
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="form.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Form</span>
+            
+              
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="form-field.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>FormField</span>
+            
+              
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="grid.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Grid</span>
+            
+              
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="heading.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Heading</span>
+            
+              
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="icon.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Icon</span>
+            
+              
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="icon-button.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>IconButton</span>
+            
+              
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="input.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Input</span>
+            
+              
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="lightbox.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Lightbox</span>
+            
+              
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="list.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>List</span>
+            
+              
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="loader.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Loader</span>
+            
+              
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="modal.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Modal</span>
+            
+              
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="multi-field.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>MultiField</span>
+            
+              
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="multiselect.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Multiselect</span>
+            
+              
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href=""
+            
+            class="fg_c_nav-left__link  fg_is-active"
+          >
+            <span>MultiselectAsync</span>
+            
+              
+            
+              
+            
+              
+                <span class="fe_f_all"><span class="fe_c_status-tag">EXT</span></span>
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="paginator.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Paginator</span>
+            
+              
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="radio-group.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>RadioGroup</span>
+            
+              
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="read-only-input.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>ReadOnlyInput</span>
+            
+              
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="redux-form.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>ReduxForm</span>
+            
+              
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="redux-form-field.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>ReduxFormField</span>
+            
+              
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="redux-multi-field.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>ReduxMultiField</span>
+            
+              
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="removable-tag.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>RemovableTag</span>
+            
+              
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="root.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Root</span>
+            
+              
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="select.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Select</span>
+            
+              
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="selection-list.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>SelectionList</span>
+            
+              
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="status-tag.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>StatusTag</span>
+            
+              
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="stepper.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Stepper</span>
+            
+              
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="table.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Table</span>
+            
+              
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="tabs.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Tabs</span>
+            
+              
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="textarea.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Textarea</span>
+            
+              
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="toast.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Toast</span>
+            
+              
+                <span class="fe_f_all"><span class="fe_c_status-tag">EXT</span></span>
+              
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="toggle-switch.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>ToggleSwitch</span>
+            
+              
+            
+              
+                <span class="fe_f_all"><span class="fe_c_status-tag">EXT</span></span>
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="tooltip.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Tooltip</span>
+            
+              
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="typeahead.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Typeahead</span>
+            
+              
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+    
+  
+    
+  
+    
+  
+  </ul>
+</nav>
+
+</div>
+
+<div class="fg_l_main" data-role="main">
+  <div class="fg_doc">
+
+    
+      <nav class="fg_c_nav-page"></nav>
+
+    
+
+    <div class="fg_doc__header">
+      
+        <h1 class="fg_doc__title">MultiselectAsync</h1>
+      
+    </div>
+    <div class="fg_doc__content">
+      
+
+  <div class="fg_markdown">
+    
+
+      
+      
+
+      
+        <p class="p--lead">This variation on <a href="multiselect.html"><code>Multiselect</code></a> lets users choose multiple options from a dropdown list. The option list can be retrieved asynchronously.</p>
+
+<p><div class="fe_f_all fe_u_margin--bottom-large">  <div class="fe_c_banner fe_c_banner--info">    <div class="fe_c_banner__icon">      <svg xmlns="http://www.w3.org/2000/svg" class="fe_c_icon fe_c_icon--info-solid" viewBox="0 0 25 25">        <title>Info</title>        <g><g class="fe_c_icon__background"><rect width="25" height="25"></rect></g><g><circle cx="12.5" cy="12.5" r="10.6" class="fe_c_icon__icon fe_c_icon__icon--secondary"></circle><g class="fe_c_icon__icon fe_c_icon__icon--invert"><circle cx="12.375" cy="7.375" r="1.35"></circle><polygon points="14.49 17.28 10.51 17.28 10.51 16.31 11.67 16.31 11.67 11.63 10.51 11.63 10.51 10.6 13.33 10.6 13.33 16.31 14.49 16.31 14.49 17.28"></polygon></g></g></g>      </svg>    </div>    <div class="fe_c_banner__items">      <div class="fe_c_banner-item">                  <h2 class="fe_c_banner-item__header">            Forge Extension          </h2>                <div class="fe_c_banner-item__contents">            <strong>You must import this component separately.</strong><br>
+  It is not part of Forge Core yet. It may undergo further design/API changes. See the <a href="../extensions/forge-extensions.html">Extensions page</a> for more info.
+        </div>      </div>    </div>  </div></div></p>
+<h2 id="demos">Demos</h2>
+<p><div class="fg_c_demos"><div class="fg_c_demos__demo js-demo-34df21856eee636258f867ef6da8ef9c ">
+    <div class="fg_c_preview js-resize-preview" style="height: 300px">
+      <iframe height="300" src="../../components/preview/multiselect-async.html" class="fg_c_preview__iframe"></iframe>
+    </div>
+    <div class="fg_c_accordian js-accordian">
+      <button class="fg_c_accordian__button" role="heading">
+        <span class="fg_c_accordian__icon js-icon"></span>
+        <span class="fg_c_accordian__closed-text">Show Code</span>
+        <span class="fg_c_accordian__open-text">Hide Code</span>
+      </button>
+      <div class="fg_c_code-tabs fg_is-hidden js-tabs">
+        <ul class="fg_c_code-tabs__list" role="tablist">
+          <li class="fg_c_code-tabs__tab" role="tab">
+            <a href="#tab-jsx-34df21856eee636258f867ef6da8ef9c">JSX</a>
+          </li>
+          <li class="fg_c_code-tabs__tab" role="tab">
+            <a href="#tab-html-34df21856eee636258f867ef6da8ef9c">HTML</a>
+          </li>
+        </ul>
+        <div class="fg_c_code-tabs__panel" id="tab-jsx-34df21856eee636258f867ef6da8ef9c" role="tabpanel">
+          <button type="button" class="fg_c_button--inverted fg_c_button--copy js-copy-code" data-clipboard-target="#tab-jsx-34df21856eee636258f867ef6da8ef9c pre">Copy Code</button>
+          <pre class="fg_c_code-block"><code class="language-jsx"><span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">&#39;react&#39;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> FormField<span class="token punctuation">,</span> Heading <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&#39;@athena/forge&#39;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> MultiselectAsync <span class="token keyword">from</span> <span class="token string">&#39;@athena/forge-multiselect-async/build/components/multiselect-async/multiselect-async&#39;</span><span class="token punctuation">;</span>
+<span style='display:none'>empty line</span>
+<span class="token comment">// List of national payers</span>
+<span class="token comment">// url: <a href="http://share.athenahealth.com/tweety/knowledge%20management/o-helpcurrentint/content/features/eligibility&#95;verification&#95;list&#95;of&#95;payers&#95;a.htm">http://share.athenahealth.com/tweety/knowledge%20management/o-helpcurrentint/content/features/eligibility&#95;verification&#95;list&#95;of&#95;payers&#95;a.htm</a></span>
+<span class="token keyword">const</span> options <span class="token operator">=</span> <span class="token punctuation">[</span> <span class="token string">&#39;1199 National Benefit Fund&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;AARP&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;ACS Benefit Services&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Advantra Freedom&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Aetna&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Aetna Better Health-TX Medicaid&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Aetna Senior Supplemental Insurance&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;AFLAC&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;All Savers Health Plans&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Allegiance Health&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Allied Benefit Systems&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Alternative Insurance Resources&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Ameriben Solutions&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;American Family Insurance&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;American National Insurance Company&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;American Postal Workers Union&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;American Republic&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;American Retirement&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Amerigroup - Americaid&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;AmeriHealth&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;AmeriHealth Administrators&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Assurant Health&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Automated Benefit Solutions&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Auxiant&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Bankers Life&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Benefit Management Incorporation&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Boon Administrative Services&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Boon Chapman&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Capital Administrators&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Caremore Health Plan&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Central States Health and Wellness Funds&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Cepatico Behavioral Health&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Cerner Health Plan&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Champus Tricare For Life&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Champva&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Christian Brothers&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Christian Care&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Cigna&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Colonial Penn&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Constitution Life&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Cooperative Benefit Administrators&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Corporate Benefits Service Inc&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Coventry Healthcare&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Definity Health&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Diversified Administrators&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Employee Benefit Management Services&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Everence&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Farmers Bureau&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;FCE Benefit Administrators&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Federated Mutual Insurance&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;First Health Network&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;FMH Benefit Services&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;GEHA&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Gilsbar&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Globe Life Insurance&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;GMP Employee Trust&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Great-West Healthcare&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Group &amp; Pension Administrators&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;HealthCost&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;HealthPartners&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Healthscope Benefits Inc&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;HealthSmart Benefit Solutions&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Healthspring&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Humana&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Individual Assurance Company&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Key Benefit Administrators&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Lifetime Benefit Solutions&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Lonestar TPA&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Loyal American Medicare Supplement&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Magellan Behavioral&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Mail Handlers Benefit Plan&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Managed Care of America&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Mayo Clinic Management Services Inc.&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;MedBen&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Medicare&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Medico Insurance Company&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Mega Life &amp; Health&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Meritain Health&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;MHNet&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Mutual Health Services&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Mutual of Omaha&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;NALC Health Benefit Plan&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;New Era Life&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Nippon Life Ins Co of America&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Pan American Health Organization&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Passport Health Plan&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Physicians Mutual Insurance&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Premier Health Plan&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Principal Financial Group&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Professional Benefits Admin&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;QuikTrip Health Insurance&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Reserve National Insurance&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;SAMBA&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Secure Health Plans of Georgia&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;SISCO&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Standard Life Insurance&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Star Administrative Services&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;State Farm Insurance&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Stonebridge Life Insurance&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Summit America Insurance&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;The Loomis Company&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;TransactRx&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;TRICARE&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Tufts&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Unicare&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;United American Insurance&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;United Healthcare&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;United Healthcare Student Resources&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;United Medical Resources&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;United Mine Workers of America&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;UnitedHealthOne&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Universal Healthcare&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;USAA Life Insurance Company&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Washington Nationals&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Web TPA&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;Wellcare&#39;</span> <span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span style='display:none'>empty line</span>
+<span class="token comment">// This is a mock that resolves asynchronously in 1000 ms.</span>
+<span class="token keyword">const</span> <span class="token function-variable function">loadOptions</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">Promise</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">resolve<span class="token punctuation">,</span> reject</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token comment">// Replace this with your own async logic.</span>
+    <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      <span class="token function">resolve</span><span class="token punctuation">(</span>options<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">1000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span style='display:none'>empty line</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">function</span> <span class="token function">PayersDemo</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">className</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;u&#95;padding--large<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Heading</span></span> <span class="token attr-name">text</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>Add Payers<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">FormField</span></span>
+        <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>payers<span class="token punctuation">&quot;</span></span>
+        <span class="token attr-name">labelText</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>Payers<span class="token punctuation">&quot;</span></span>
+        <span class="token attr-name">inputAs</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>MultiselectAsync<span class="token punctuation">}</span></span>
+        <span class="token attr-name">loadOptions</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>loadOptions<span class="token punctuation">}</span></span>
+        <span class="token attr-name">required</span>
+      <span class="token punctuation">/&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+        </div>
+        <div class="fg_c_code-tabs__panel" id="tab-html-34df21856eee636258f867ef6da8ef9c" role="tabpanel">
+          <button type="button" class="fg_c_button--inverted fg_c_button--copy js-copy-code" data-clipboard-target="#tab-html-34df21856eee636258f867ef6da8ef9c pre">Copy Code</button>
+          <pre class="fg_c_code-block"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;u&#95;padding--large<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;heading fe&#95;c&#95;heading--page<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Add Payers<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;form-field<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row fe&#95;l&#95;grid-row--nested<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row&#95;&#95;col fe&#95;l&#95;grid-row&#95;&#95;col--small-12 fe&#95;l&#95;grid-row&#95;&#95;col--medium-3 fe&#95;c&#95;form-field&#95;&#95;label<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>payers<span class="token punctuation">&quot;</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>payers-label<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;label<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Payers<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;label&#95;&#95;required<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span> - Required<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;l&#95;grid-row&#95;&#95;col fe&#95;l&#95;grid-row&#95;&#95;col--small-12 fe&#95;l&#95;grid-row&#95;&#95;col--medium-9 fe&#95;c&#95;form-field&#95;&#95;right<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;form-field&#95;&#95;input-slot<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>css-t8xanh-container fe&#95;c&#95;multiselect fe&#95;is-required fe&#95;c&#95;form-field&#95;&#95;input<span class="token punctuation">&quot;</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>payers<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>css-0 fe&#95;c&#95;multiselect&#95;&#95;control<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>css-0 fe&#95;c&#95;multiselect&#95;&#95;value-container fe&#95;c&#95;multiselect&#95;&#95;value-container--is-multi<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>css-0 fe&#95;c&#95;multiselect&#95;&#95;placeholder<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>- Type or Select -<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>css-0<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;multiselect&#95;&#95;input<span class="token punctuation">&quot;</span></span><span class="token style-attr language-css"><span class="token attr-name"> <span class="token attr-name">style</span></span><span class="token punctuation">=&quot;</span><span class="token attr-value"><span class="token property">display</span><span class="token punctuation">:</span>inline-block</span><span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>text<span class="token punctuation">&quot;</span></span> <span class="token attr-name">autoCapitalize</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>none<span class="token punctuation">&quot;</span></span> <span class="token attr-name">autoComplete</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>off<span class="token punctuation">&quot;</span></span> <span class="token attr-name">autoCorrect</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>off<span class="token punctuation">&quot;</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>react-select-6-input<span class="token punctuation">&quot;</span></span> <span class="token attr-name">spellcheck</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>false<span class="token punctuation">&quot;</span></span> <span class="token attr-name">tabindex</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>0<span class="token punctuation">&quot;</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span><span class="token punctuation">&quot;</span></span> <span class="token attr-name">aria-autocomplete</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>list<span class="token punctuation">&quot;</span></span> <span class="token attr-name">aria-labelledby</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>payers-label<span class="token punctuation">&quot;</span></span><span class="token style-attr language-css"><span class="token attr-name"> <span class="token attr-name">style</span></span><span class="token punctuation">=&quot;</span><span class="token attr-value"><span class="token property">box-sizing</span><span class="token punctuation">:</span>content-box<span class="token punctuation">;</span><span class="token property">width</span><span class="token punctuation">:</span>1px<span class="token punctuation">;</span><span class="token property">label</span><span class="token punctuation">:</span>input<span class="token punctuation">;</span><span class="token property">background</span><span class="token punctuation">:</span>0<span class="token punctuation">;</span><span class="token property">border</span><span class="token punctuation">:</span>0<span class="token punctuation">;</span><span class="token property">font-size</span><span class="token punctuation">:</span>inherit<span class="token punctuation">;</span><span class="token property">opacity</span><span class="token punctuation">:</span>1<span class="token punctuation">;</span><span class="token property">outline</span><span class="token punctuation">:</span>0<span class="token punctuation">;</span><span class="token property">padding</span><span class="token punctuation">:</span>0<span class="token punctuation">;</span><span class="token property">color</span><span class="token punctuation">:</span>inherit</span><span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+                                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token style-attr language-css"><span class="token attr-name"> <span class="token attr-name">style</span></span><span class="token punctuation">=&quot;</span><span class="token attr-value"><span class="token property">position</span><span class="token punctuation">:</span>absolute<span class="token punctuation">;</span><span class="token property">top</span><span class="token punctuation">:</span>0<span class="token punctuation">;</span><span class="token property">left</span><span class="token punctuation">:</span>0<span class="token punctuation">;</span><span class="token property">visibility</span><span class="token punctuation">:</span>hidden<span class="token punctuation">;</span><span class="token property">height</span><span class="token punctuation">:</span>0<span class="token punctuation">;</span><span class="token property">overflow</span><span class="token punctuation">:</span>scroll<span class="token punctuation">;</span><span class="token property">white-space</span><span class="token punctuation">:</span>pre</span><span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>css-0 fe&#95;c&#95;multiselect&#95;&#95;indicators<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span> <span class="token attr-name">xmlns</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span><a href="http://www.w3.org/2000/svg">http://www.w3.org/2000/svg</a><span class="token punctuation">&quot;</span></span> <span class="token attr-name">aria-hidden</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>true<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;icon<span class="token punctuation">&quot;</span></span> <span class="token attr-name">viewBox</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>0 0 25 25<span class="token punctuation">&quot;</span></span><span class="token style-attr language-css"><span class="token attr-name"> <span class="token attr-name">style</span></span><span class="token punctuation">=&quot;</span><span class="token attr-value"><span class="token property">height</span><span class="token punctuation">:</span>20<span class="token punctuation">;</span><span class="token property">width</span><span class="token punctuation">:</span>20</span><span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span>Expand<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>g</span><span class="token punctuation">&gt;</span></span>
+                                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>g</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;icon&#95;&#95;background<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>rect</span> <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>25<span class="token punctuation">&quot;</span></span> <span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>25<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>rect</span><span class="token punctuation">&gt;</span></span>
+                                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>g</span><span class="token punctuation">&gt;</span></span>
+                                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>g</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;icon&#95;&#95;icon fe&#95;c&#95;icon&#95;&#95;icon--primary<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>polygon</span> <span class="token attr-name">points</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>12.5 16.6 6 10 7 9 12.5 14.4 18 9 19 10 12.5 16.6<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>polygon</span><span class="token punctuation">&gt;</span></span>
+                                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>g</span><span class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>g</span><span class="token punctuation">&gt;</span></span>
+                                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>hidden<span class="token punctuation">&quot;</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>payers<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;form-field&#95;&#95;message<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fe&#95;c&#95;form-field&#95;&#95;status<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+        </div>
+      </div>
+    </div>
+  </div></div></p>
+<h2 id="usage">Usage</h2>
+<p><code>MultiselectAsync</code> is a variation on <a href="multiselect.html"><code>Multiselect</code></a>, a selector that allows users to choose multiple options from a dropdown list by typing or by checking off options. It is compatible only with Forge 2.0.0-beta.8 and above.</p>
+<p>The main differences in this component are:</p>
+<ul>
+<li>Asynchronous fetching of the dropdown options</li>
+<li>Display of a loading state when option filtering begins</li>
+<li>No built-in option filtering (including string matching) based on user input</li>
+</ul>
+<p>When the user starts typing, the loading state is displayed instantly, followed by the dropdown list of options when they are loaded.</p>
+<p>Unlike in <code>Multiselect</code>, simply clicking into or focusing on the input field does <strong>not</strong> reveal the options by default. This behavior can be reset so that the options are revealed, or it can be customized so a predefined set of options is revealed instead. For example, if your full options list spanned hundreds of medications, you could provide a short &quot;top 5&quot; list for users to choose from without having to type and filter.</p>
+<p><code>MultiselectAsync</code> does not automatically handle option filtering (including string matching) based on user input. You must build this functionality into the <code>loadOptions</code> function, which handles fetching option data.</p>
+<h2 id="design">Design</h2>
+<p>Refer to <a href="multiselect.html"><code>Multiselect</code></a> for detailed design guidance.</p>
+<h3 id="loading-state">Loading State</h3>
+<p>The loading state displays a text string. Its default value is &quot;Loading …&quot;. This can be customized if there are concerns about clarity or usability (e.g., &quot;Loading procedure codes …&quot;, &quot;Loading diagnoses …&quot;).</p>
+<h2 id="accessibility">Accessibility</h2>
+<h3 id="screen-reader-support">Screen Reader Support</h3>
+<p><strong>Known bug:</strong> The loading state text does not get read aloud. The screen reader says only that there are zero options until the options are finally loaded. See <a href="https://athenajira.athenahealth.com/browse/UXDS-2326">Jira issue UXDS-2326</a> for the status of this problem.</p>
+<h2 id="implementation">Implementation</h2>
+<p><code>MultiselectAsync</code> can be used on its own or within a  <a href="form-field.html"><code>FormField</code></a>  or <a href="redux-form-field.html"><code>ReduxFormField</code></a> for features like field labels and error messaging.</p>
+<p>Under the hood, this component extends the <a href="multiselect.html"><code>Multiselect</code></a> Forge core component, which relies on the <a href="https://react-select.com/home">React Select v2</a> library. The underlying HTML elements that are rendered include a text input and a select component.</p>
+<h3 id="option-filtering">Option Filtering</h3>
+<p>Unlike <a href="multiselect.html"><code>Multiselect</code></a>, <code>MultiselectAsync</code> does not automatically handle option filtering (i.e., matching the user input string to options). This must be built into the <code>loadOptions</code> function. For examples of string matching formats to consider, refer to the <code>Multiselect</code> guidance.</p>
+<h3 id="controlled-vs-uncontrolled">Controlled vs. Uncontrolled</h3>
+<p>To use <code>MultiselectAsync</code> as a controlled component, set the <code>value</code> prop. To set a default value but allow it to control its own state, use the <code>defaultValue</code> prop instead.</p>
+<p>Note that that what these props accept is different than what the same props accept in the non-async <code>Multiselect</code> Forge component.</p>
+<h3 id="load-options-on-input-vs-load-options-on-mount">Load Options on Input vs. Load Options on Mount</h3>
+<p>By default, <code>MultiselectAsync</code> will not load options until the user begins typing in the input field. If you would like to display options before user input (i.e., on click or focus), you can do so using the <code>defaultOptions</code> prop.</p>
+<p>You have the option of providing <code>defaultOptions</code> with a predefined set of options to display or setting <code>defaultOptions</code> to <code>true</code>, which tells <code>MultiselectAsync</code> to load options on mount using the function provided to the <code>loadOptions</code> prop.</p>
+<h3 id="caching">Caching</h3>
+<p><code>MultiselectAsync</code> sets the <code>cacheOptions</code> prop to <code>true</code> by default. This causes the component to cache the options that are loaded for each unique input. Set this prop to <code>false</code> to disable this caching behavior. Be mindful of the size of your cache to maintain good application performance. <code>cacheOptions</code> will continue to cache loaded options until the prop&#39;s value changes; it can be manually reset or altered at any time.</p>
+<h2 id="api-tables">API Tables</h2>
+<h3 id="import-multiselectasync-only">Import MultiselectAsync Only</h3>
+<p><p>Importing individual components can reduce bundle size. <a href="https://athenaconfluence.athenahealth.com/display/UXDS/Forge+Import+for+Better+Tree+Shaking">Learn more</a></p><span class="code--small-text" style=""></p>
+<code><pre><span class="hljs-keyword">import</span> MultiselectAsync <span class="hljs-keyword">from</span> <span class="hljs-string">'@athena/forge-multiselect-async/build/components/multiselect-async/multiselect-async'</span>;</pre></code><p></span></p>
+<h3 id="multiselectasync-props">MultiselectAsync Props</h3>
+<table class="api-table api-table--react">
+  <thead>
+    <tr>
+      <th>Prop</th>
+      <th>Type</th>
+      <th>Default</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="api-table__required"><code>id</code> (required)</td>
+      <td>
+        string
+      </td>
+      <td></td>
+      <td>ID attribute for the input of the multiselect element</td>
+    </tr>
+    <tr>
+      <td><code>aria-label</code></td>
+      <td>
+        string
+      </td>
+      <td></td>
+      <td>Aria label (for assistive tech)</td>
+    </tr>
+    <tr>
+      <td><code>aria-labelledby</code></td>
+      <td>
+        string
+      </td>
+      <td></td>
+      <td>HTML ID of an element that should be used as the label (for assistive tech)</td>
+    </tr>
+    <tr>
+      <td><code>cacheOptions</code></td>
+      <td>
+        bool
+      </td>
+      <td>true</td>
+      <td>If truthy, loaded data will be cached. The cache will remain until cacheOptions changes value.</td>
+    </tr>
+    <tr>
+      <td><code>className</code></td>
+      <td>
+        string
+      </td>
+      <td></td>
+      <td>Adds a class to the root element of the component</td>
+    </tr>
+    <tr>
+      <td><code>defaultOptions</code></td>
+      <td>
+        oneOfType
+          <ul>
+              <li>enum
+                <ul>
+                  <li>true - bool</li>
+                </ul>
+              </li>
+              <li>
+                arrayOf
+                <ul>
+                    <li>string</li>
+                    <li>shape
+                      <ul>
+                        <li>disabled - bool</li>
+                        <li>text - string</li>
+                        <li>value - string</li>
+                      </ul>
+                    </li>
+                </ul>
+              </li>
+          </ul>
+      </td>
+      <td></td>
+      <td>The defaultOptions prop determines &quot;when&quot; your remote request is initially fired.
+Providing an option array to this prop will populate the initial set of options used when opening the select.
+Providing the prop with &#x27;true&#x27; tells it to immediately fire the remote request described by your loadOptions.</td>
+    </tr>
+    <tr>
+      <td><code>defaultValue</code></td>
+      <td>
+        arrayOf
+          <ul>
+              <li>string
+              </li>
+              <li>shape
+                <ul>
+                  <li>disabled - bool</li>
+                  <li>text - string</li>
+                  <li>value - string</li>
+                </ul>
+              </li>
+          </ul>
+      </td>
+      <td></td>
+      <td>Determines the initial set of selected items, but allows them to be updated internally (uncontrolled)</td>
+    </tr>
+    <tr>
+      <td><code>disabled</code></td>
+      <td>
+        bool
+      </td>
+      <td>false</td>
+      <td>Impacts the styling of the multiselect in addition to preventing selection</td>
+    </tr>
+    <tr>
+      <td><code>error</code></td>
+      <td>
+        string
+      </td>
+      <td></td>
+      <td>Highlights the input when defined (specific string doesn&#x27;t matter)</td>
+    </tr>
+    <tr>
+      <td><code>inputWidth</code></td>
+      <td>
+        string
+      </td>
+      <td></td>
+      <td>Styling to be applied to width css property.
+Specifying this will override all other behavior that affects input width.</td>
+    </tr>
+    <tr>
+      <td><code>loadingMessage</code></td>
+      <td>
+        string
+      </td>
+      <td>&#x27;Loading ...&#x27;</td>
+      <td>Text to display when the component is loading</td>
+    </tr>
+    <tr>
+      <td><code>loadOptions</code> (required)</td>
+      <td>
+        func
+      </td>
+      <td></td>
+      <td>Function to call to asynchronously get options.
+The function takes the current input typed and returns a promise of an array of options</td>
+    </tr>
+    <tr>
+      <td><code>name</code></td>
+      <td>
+        string
+      </td>
+      <td></td>
+      <td>Name attribute. Defaults to &#x60;id&#x60;</td>
+    </tr>
+    <tr>
+      <td><code>noOptionsMessage</code></td>
+      <td>
+        string
+      </td>
+      <td>&#x27;No options found&#x27;</td>
+      <td>Text to display when there are no options to show</td>
+    </tr>
+    <tr>
+      <td><code>onBlur</code></td>
+      <td>
+        func
+      </td>
+      <td></td>
+      <td>Handler function to trigger on blur</td>
+    </tr>
+    <tr>
+      <td><code>onChange</code></td>
+      <td>
+        func
+      </td>
+      <td></td>
+      <td>Handler function to call when value changes</td>
+    </tr>
+    <tr>
+      <td><code>onFocus</code></td>
+      <td>
+        func
+      </td>
+      <td></td>
+      <td>Handler function to trigger on focus</td>
+    </tr>
+    <tr>
+      <td><code>onMenuClose</code></td>
+      <td>
+        func
+      </td>
+      <td></td>
+      <td>Handler function to trigger when menu closes</td>
+    </tr>
+    <tr>
+      <td><code>onMenuOpen</code></td>
+      <td>
+        func
+      </td>
+      <td></td>
+      <td>Handler function to trigger when menu opens</td>
+    </tr>
+    <tr>
+      <td><code>openMenuOnFocus</code></td>
+      <td>
+        bool
+      </td>
+      <td>false</td>
+      <td>Open the options menu when the control gets focus</td>
+    </tr>
+    <tr>
+      <td><code>placeholder</code></td>
+      <td>
+        string
+      </td>
+      <td>&#x27;- Type or Select -&#x27;</td>
+      <td>Text shown for the null option. Read the UX Content Guidelines before changing</td>
+    </tr>
+    <tr>
+      <td><code>required</code></td>
+      <td>
+        bool
+      </td>
+      <td></td>
+      <td>Indicates whether multiselect is required</td>
+    </tr>
+    <tr>
+      <td><code>value</code></td>
+      <td>
+        arrayOf
+          <ul>
+              <li>string
+              </li>
+              <li>shape
+                <ul>
+                  <li>disabled - bool</li>
+                  <li>text - string</li>
+                  <li>value - string</li>
+                </ul>
+              </li>
+          </ul>
+      </td>
+      <td></td>
+      <td>Determines the selected items, and does not allow them to be updated internally (controlled)</td>
+    </tr>
+    <tr>
+      <td><code>...rest</code></td>
+      <td></td>
+      <td></td>
+      <td>Other props added get passed through to react-select&#39;s <code>Async</code> root component</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="html-api">HTML API</h3>
+<p><table class="api-table api-table--html">
+  <thead>
+      <tr>
+      <th>Class</th>
+      <th>Applies To</th>
+      <th>Description</th>
+      </tr>
+  </thead>
+  <tbody>
+    <tr><td><code>fe_c_multiselect</code></td><td>MultiselectAsync root</td><td>Base class required for multiselect-async</td></tr>
+    <tr><td><code>fe_is-error</code></td><td>MultiselectAsync root</td><td>Adds error styling to multiselect-async</td></tr>
+       <tr><td><code>fe_is-required</code></td><td>MultiselectAsync root</td><td>Adds required styling to multiselect-async when inside a <code>FormField</code></td></tr>
+  </tbody>
+</table>
+Note that there are many additional classes applied to the internals of <code>fe_c_multiselect</code> by <a href="https://github.com/JedWatson/react-select">react-select</a>.</p>
+
+      
+
+    
+  </div>
+
+  <script>
+document.addEventListener("DOMContentLoaded", function(event) {
+    if (window.amplitude) {
+        amplitude.getInstance().init('d426be2bbef81471eeac4bca0c061243');
+
+        amplitude.getInstance().logEvent('viewed page', {
+          pageName: 'MultiselectAsync',
+          pageCategory: 'components'.length > 0
+            ? 'components'
+            : null,
+          forgeVersion: '2.1.0',
+          forgeGeneralVersion: /^\d*(?=\.)/.exec('2.1.0')
+            ? /^\d*(?=\.)/.exec('2.1.0').toString()
+            : null
+        });
+      }
+      else {
+        console.warn("amplitude is not logging events");
+      }
+});
+</script>
+
+
+
+    </div>
+    <!--div class="debug"><pre><code class="language-json">{"id":"aeba9969e5640346532c7249511c91c7","name":"multiselect-async","handle":"multiselect-async","label":"Multiselect Async","title":"MultiselectAsync","order":1000000,"isHidden":false,"alias":null,"isEntity":true,"isDoc":true,"isIndex":false,"path":"components/multiselect-async","status":null,"content":"\n<p class=\"p--lead\">This variation on [`Multiselect`]({{ path '/docs/components/multiselect' }}) lets users choose multiple options from a dropdown list. The option list can be retrieved asynchronously.</p>\n\n{{#*inline \"content\"}}\n  <strong>You must import this component separately.</strong><br>\n  It is not part of Forge Core yet. It may undergo further design/API changes. See the [Extensions page]({{ path '/docs/extensions/forge-extensions'}}) for more info.\n{{/inline}}\n{{> bannerInfo heading='Forge Extension' }}\n\n## Demos\n\n{{demo '@multiselect-async'}}\n## Usage\n`MultiselectAsync` is a variation on [`Multiselect`]({{ path '/docs/components/multiselect' }}), a selector that allows users to choose multiple options from a dropdown list by typing or by checking off options. It is compatible only with Forge 2.0.0-beta.8 and above.\n\nThe main differences in this component are:\n\n* Asynchronous fetching of the dropdown options\n* Display of a loading state when option filtering begins\n* No built-in option filtering (including string matching) based on user input\n\nWhen the user starts typing, the loading state is displayed instantly, followed by the dropdown list of options when they are loaded.\n\nUnlike in `Multiselect`, simply clicking into or focusing on the input field does **not** reveal the options by default. This behavior can be reset so that the options are revealed, or it can be customized so a predefined set of options is revealed instead. For example, if your full options list spanned hundreds of medications, you could provide a short \"top 5\" list for users to choose from without having to type and filter.\n\n`MultiselectAsync` does not automatically handle option filtering (including string matching) based on user input. You must build this functionality into the `loadOptions` function, which handles fetching option data.\n\n## Design\nRefer to [`Multiselect`]({{ path '/docs/components/multiselect' }}) for detailed design guidance.\n\n### Loading State\nThe loading state displays a text string. Its default value is \"Loading …\". This can be customized if there are concerns about clarity or usability (e.g., \"Loading procedure codes …\", \"Loading diagnoses …\").\n\n\n## Accessibility\n### Screen Reader Support\n\n**Known bug:** The loading state text does not get read aloud. The screen reader says only that there are zero options until the options are finally loaded. See [Jira issue UXDS-2326](https://athenajira.athenahealth.com/browse/UXDS-2326) for the status of this problem.\n\n## Implementation\n`MultiselectAsync` can be used on its own or within a  [`FormField`]({{ path '/docs/components/form-field' }})  or [`ReduxFormField`]({{ path '/docs/components/redux-form-field' }}) for features like field labels and error messaging.\n\nUnder the hood, this component extends the [`Multiselect`]({{ path '/docs/components/multiselect' }}) Forge core component, which relies on the [React Select v2](https://react-select.com/home) library. The underlying HTML elements that are rendered include a text input and a select component.\n\n### Option Filtering\nUnlike [`Multiselect`]({{ path '/docs/components/multiselect' }}), `MultiselectAsync` does not automatically handle option filtering (i.e., matching the user input string to options). This must be built into the `loadOptions` function. For examples of string matching formats to consider, refer to the `Multiselect` guidance.\n\n### Controlled vs. Uncontrolled\nTo use `MultiselectAsync` as a controlled component, set the `value` prop. To set a default value but allow it to control its own state, use the `defaultValue` prop instead.\n\nNote that that what these props accept is different than what the same props accept in the non-async `Multiselect` Forge component.\n\n### Load Options on Input vs. Load Options on Mount\nBy default, `MultiselectAsync` will not load options until the user begins typing in the input field. If you would like to display options before user input (i.e., on click or focus), you can do so using the `defaultOptions` prop.\n\nYou have the option of providing `defaultOptions` with a predefined set of options to display or setting `defaultOptions` to `true`, which tells `MultiselectAsync` to load options on mount using the function provided to the `loadOptions` prop.\n\n### Caching\n`MultiselectAsync` sets the `cacheOptions` prop to `true` by default. This causes the component to cache the options that are loaded for each unique input. Set this prop to `false` to disable this caching behavior. Be mindful of the size of your cache to maintain good application performance. `cacheOptions` will continue to cache loaded options until the prop's value changes; it can be manually reset or altered at any time.\n\n## API Tables\n\n### Import MultiselectAsync Only\n{{> componentImportMessage}}\n<span class=\"code--small-text\" style=\"\">\n```\nimport MultiselectAsync from '@athena/forge-multiselect-async/build/components/multiselect-async/multiselect-async';\n```\n</span>\n\n### MultiselectAsync Props\n\n<table class=\"api-table api-table--react\">\n  <thead>\n    <tr>\n      <th>Prop</th>\n      <th>Type</th>\n      <th>Default</th>\n      <th>Description</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td class=\"api-table__required\">`id` (required)</td>\n      <td>\n        string\n      </td>\n      <td></td>\n      <td>ID attribute for the input of the multiselect element</td>\n    </tr>\n    <tr>\n      <td>`aria-label`</td>\n      <td>\n        string\n      </td>\n      <td></td>\n      <td>Aria label (for assistive tech)</td>\n    </tr>\n    <tr>\n      <td>`aria-labelledby`</td>\n      <td>\n        string\n      </td>\n      <td></td>\n      <td>HTML ID of an element that should be used as the label (for assistive tech)</td>\n    </tr>\n    <tr>\n      <td>`cacheOptions`</td>\n      <td>\n        bool\n      </td>\n      <td>true</td>\n      <td>If truthy, loaded data will be cached. The cache will remain until cacheOptions changes value.</td>\n    </tr>\n    <tr>\n      <td>`className`</td>\n      <td>\n        string\n      </td>\n      <td></td>\n      <td>Adds a class to the root element of the component</td>\n    </tr>\n    <tr>\n      <td>`defaultOptions`</td>\n      <td>\n        oneOfType\n          <ul>\n              <li>enum\n                <ul>\n                  <li>true - bool</li>\n                </ul>\n              </li>\n              <li>\n                arrayOf\n                <ul>\n                    <li>string</li>\n                    <li>shape\n                      <ul>\n                        <li>disabled - bool</li>\n                        <li>text - string</li>\n                        <li>value - string</li>\n                      </ul>\n                    </li>\n                </ul>\n              </li>\n          </ul>\n      </td>\n      <td></td>\n      <td>The defaultOptions prop determines &quot;when&quot; your remote request is initially fired.\nProviding an option array to this prop will populate the initial set of options used when opening the select.\nProviding the prop with &#x27;true&#x27; tells it to immediately fire the remote request described by your loadOptions.</td>\n    </tr>\n    <tr>\n      <td>`defaultValue`</td>\n      <td>\n        arrayOf\n          <ul>\n              <li>string\n              </li>\n              <li>shape\n                <ul>\n                  <li>disabled - bool</li>\n                  <li>text - string</li>\n                  <li>value - string</li>\n                </ul>\n              </li>\n          </ul>\n      </td>\n      <td></td>\n      <td>Determines the initial set of selected items, but allows them to be updated internally (uncontrolled)</td>\n    </tr>\n    <tr>\n      <td>`disabled`</td>\n      <td>\n        bool\n      </td>\n      <td>false</td>\n      <td>Impacts the styling of the multiselect in addition to preventing selection</td>\n    </tr>\n    <tr>\n      <td>`error`</td>\n      <td>\n        string\n      </td>\n      <td></td>\n      <td>Highlights the input when defined (specific string doesn&#x27;t matter)</td>\n    </tr>\n    <tr>\n      <td>`inputWidth`</td>\n      <td>\n        string\n      </td>\n      <td></td>\n      <td>Styling to be applied to width css property.\nSpecifying this will override all other behavior that affects input width.</td>\n    </tr>\n    <tr>\n      <td>`loadingMessage`</td>\n      <td>\n        string\n      </td>\n      <td>&#x27;Loading ...&#x27;</td>\n      <td>Text to display when the component is loading</td>\n    </tr>\n    <tr>\n      <td>`loadOptions` (required)</td>\n      <td>\n        func\n      </td>\n      <td></td>\n      <td>Function to call to asynchronously get options.\nThe function takes the current input typed and returns a promise of an array of options</td>\n    </tr>\n    <tr>\n      <td>`name`</td>\n      <td>\n        string\n      </td>\n      <td></td>\n      <td>Name attribute. Defaults to &#x60;id&#x60;</td>\n    </tr>\n    <tr>\n      <td>`noOptionsMessage`</td>\n      <td>\n        string\n      </td>\n      <td>&#x27;No options found&#x27;</td>\n      <td>Text to display when there are no options to show</td>\n    </tr>\n    <tr>\n      <td>`onBlur`</td>\n      <td>\n        func\n      </td>\n      <td></td>\n      <td>Handler function to trigger on blur</td>\n    </tr>\n    <tr>\n      <td>`onChange`</td>\n      <td>\n        func\n      </td>\n      <td></td>\n      <td>Handler function to call when value changes</td>\n    </tr>\n    <tr>\n      <td>`onFocus`</td>\n      <td>\n        func\n      </td>\n      <td></td>\n      <td>Handler function to trigger on focus</td>\n    </tr>\n    <tr>\n      <td>`onMenuClose`</td>\n      <td>\n        func\n      </td>\n      <td></td>\n      <td>Handler function to trigger when menu closes</td>\n    </tr>\n    <tr>\n      <td>`onMenuOpen`</td>\n      <td>\n        func\n      </td>\n      <td></td>\n      <td>Handler function to trigger when menu opens</td>\n    </tr>\n    <tr>\n      <td>`openMenuOnFocus`</td>\n      <td>\n        bool\n      </td>\n      <td>false</td>\n      <td>Open the options menu when the control gets focus</td>\n    </tr>\n    <tr>\n      <td>`placeholder`</td>\n      <td>\n        string\n      </td>\n      <td>&#x27;- Type or Select -&#x27;</td>\n      <td>Text shown for the null option. Read the UX Content Guidelines before changing</td>\n    </tr>\n    <tr>\n      <td>`required`</td>\n      <td>\n        bool\n      </td>\n      <td></td>\n      <td>Indicates whether multiselect is required</td>\n    </tr>\n    <tr>\n      <td>`value`</td>\n      <td>\n        arrayOf\n          <ul>\n              <li>string\n              </li>\n              <li>shape\n                <ul>\n                  <li>disabled - bool</li>\n                  <li>text - string</li>\n                  <li>value - string</li>\n                </ul>\n              </li>\n          </ul>\n      </td>\n      <td></td>\n      <td>Determines the selected items, and does not allow them to be updated internally (controlled)</td>\n    </tr>\n    <tr>\n      <td>`...rest`</td>\n      <td></td>\n      <td></td>\n      <td>Other props added get passed through to react-select's `Async` root component</td>\n    </tr>\n  </tbody>\n</table>\n\n### HTML API\n<table class=\"api-table api-table--html\">\n  <thead>\n      <tr>\n      <th>Class</th>\n      <th>Applies To</th>\n      <th>Description</th>\n      </tr>\n  </thead>\n  <tbody>\n    <tr><td>`fe_c_multiselect`</td><td>MultiselectAsync root</td><td>Base class required for multiselect-async</td></tr>\n    <tr><td>`fe_is-error`</td><td>MultiselectAsync root</td><td>Adds error styling to multiselect-async</td></tr>\n       <tr><td>`fe_is-required`</td><td>MultiselectAsync root</td><td>Adds required styling to multiselect-async when inside a `FormField`</td></tr>\n  </tbody>\n</table>\nNote that there are many additional classes applied to the internals of `fe_c_multiselect` by [react-select](https://github.com/JedWatson/react-select).\n","lang":{"name":"Markdown","mode":"markdown","scope":"source.gfm","color":"#083FA1"},"file":{"root":"C:\\","dir":"C:\\Users\\ctsui\\code\\forge-guide\\docs\\04-components","base":"multiselect-async.md","ext":".md","name":"multiselect-async","relPath":"04-components\\multiselect-async.md","fsName":"multiselect-async","path":"C:\\Users\\ctsui\\code\\forge-guide\\docs\\04-components\\multiselect-async.md","dirs":["C:\\Users\\ctsui\\code\\forge-guide\\docs\\04-components"],"isHidden":false,"order":1000000,"isFile":true,"isDirectory":false,"stat":{"dev":4102694615,"mode":33206,"nlink":1,"uid":0,"gid":0,"rdev":0,"ino":36310271995878210,"size":11809,"atimeMs":1556902887191.1023,"mtimeMs":1556902887192.1045,"ctimeMs":1556902887192.1045,"birthtimeMs":1551459688143.1536,"atime":"2019-05-03T17:01:27.191Z","mtime":"2019-05-03T17:01:27.192Z","ctime":"2019-05-03T17:01:27.192Z","birthtime":"2019-03-01T17:01:28.143Z"},"lang":{"name":"Markdown","mode":"markdown","scope":"source.gfm","color":"#083FA1"},"isBinary":false},"context":{"extensions":{"core":{"forge-toast":{"name":"Toast","version":"0.3.0","description":"Toast component for Forge"},"forge-toggle-switch":{"name":"ToggleSwitch","version":"0.2.0","description":"ToggleSwitch component for Forge"},"forge-multiselect-async":{"name":"MultiselectAsync","version":"0.2.0","description":"Async version of Multiselect component"}},"community":{"clinicals-forge-extension":{"name":"Clinicals Forge Extension","owner":"Nursing Flowsheets","url":"https://bitbucket.athenahealth.com/projects/CLIFS/repos/clinicals-forge-extension/browse","version":"2.2.1","description":"A forge-extension containing components used by inpatient clinicals"},"forge-virtualized-table":{"name":"Virtualized Table","owner":"Pop Health","url":"https://bitbucket.athenahealth.com/projects/UXDS/repos/forge-virtualized-table/browse","version":"0.1.0","description":"Virtualization support for the Forge Table component."}}},"isComponent":true,"amplitudeCategory":"components"}}</code></pre></div-->
+  </div>
+</div>
+
+
+
+</div>
+
+
+
+
+<script src="../../assets/clipboard.min.js?cachebust=1.2.0"></script>
+
+<script src="../../assets/main.js?cachebust=1.2.0"></script>
+
+<script src="../../assets/amplitude.js?cachebust=1.2.0"></script>
+
+
+
+</body>
+</html>

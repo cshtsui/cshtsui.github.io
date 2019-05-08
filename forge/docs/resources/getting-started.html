@@ -9,7 +9,7 @@
     };
     </script>
     <script>var cl = document.querySelector('html').classList; cl.remove('no-js'); cl.add('has-js');</script>
-    <link rel="shortcut icon" href="../../favicon_blue.ico" type="image/ico">
+    <link rel="shortcut icon" href="../../favicon.ico" type="image/ico">
 
 <link rel="stylesheet" href="../../assets/css/styles.css?cachebust=1.2.0" type="text/css">
 
@@ -28,7 +28,7 @@
 
 
 <div class="fg_app">
-  <header class="fg_l_header fg_l_header--alpha">
+  <header class="fg_l_header">
   <a class="fg_c_branding" href="../../index.html">
     <img src="../../assets/images/logo.svg" />
   </a>
@@ -94,19 +94,6 @@
           
           <a
             class="fg_c_nav-top__link  fg_is-active"
-            href="release-notes.html"
-            title="Resources"
-          >
-            Resources
-          </a>
-        </li>
-      
-    
-      
-        <li class="fg_c_nav-top__list-item">
-          
-          <a
-            class="fg_c_nav-top__link  fg_is-active"
             href="downloads.html"
             title="Resources"
           >
@@ -120,7 +107,7 @@
 
 
   <div class="fg_c_nav-version">
-    v2.0.0-beta.7
+    Go to <a href="http://ah-uxds-forge-guide-release-v1.s3-website-us-east-1.amazonaws.com/">Forge 1.x</a>
   </div>
 </header>
 
@@ -145,25 +132,6 @@
       
         <li class="fg_c_nav-left__list-item">
           <a
-            href="release-notes.html"
-            
-            class="fg_c_nav-left__link "
-          >
-            <span>Release Notes</span>
-            
-              
-            
-              
-            
-          </a>
-        </li>
-      
-    
-  
-    
-      
-        <li class="fg_c_nav-left__list-item">
-          <a
             href="downloads.html"
             
             class="fg_c_nav-left__link "
@@ -171,19 +139,6 @@
             <span>Downloads</span>
             
               
-            
-              
-            
-          </a>
-        </li>
-      
-        <li class="fg_c_nav-left__list-item">
-          <a
-            href="community-resources.html"
-            
-            class="fg_c_nav-left__link "
-          >
-            <span>Community Resources</span>
             
               
             
@@ -204,6 +159,8 @@
             
               
             
+              
+            
           </a>
         </li>
       
@@ -214,6 +171,8 @@
             class="fg_c_nav-left__link "
           >
             <span>Sass Utilities</span>
+            
+              
             
               
             
@@ -234,6 +193,8 @@
             
               
             
+              
+            
           </a>
         </li>
       
@@ -249,6 +210,8 @@
             
               
             
+              
+            
           </a>
         </li>
       
@@ -259,6 +222,8 @@
             class="fg_c_nav-left__link "
           >
             <span>Release Notes</span>
+            
+              
             
               
             
@@ -362,9 +327,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
           pageCategory: 'resources'.length > 0
             ? 'resources'
             : null,
-          forgeVersion: '2.0.0-beta.7',
-          forgeGeneralVersion: /^\d*(?=\.)/.exec('2.0.0-beta.7')
-            ? /^\d*(?=\.)/.exec('2.0.0-beta.7').toString()
+          forgeVersion: '2.1.0',
+          forgeGeneralVersion: /^\d*(?=\.)/.exec('2.1.0')
+            ? /^\d*(?=\.)/.exec('2.1.0').toString()
             : null
         });
       }
@@ -377,7 +342,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 
     </div>
-    <!--div class="debug"><pre><code class="language-json">{"id":"b66f92093fe7ebaa78e440b72f745cdf","name":"getting-started","handle":"getting-started","label":"Getting Started","title":"Getting Started","order":2,"isHidden":false,"alias":null,"isEntity":true,"isDoc":true,"isIndex":false,"path":"resources/getting-started","status":null,"content":"<p class=\"p--lead\">Get up and running with Forge in a few simple steps.</p>\r\n\r\n## Prerequisite Knowledge\r\nForge components are built in [React](https://reactjs.org/) and styled by [CSS](https://www.w3schools.com/css/). You should be familiar with the basics of React before using them. For more advanced usage, familiarity with [BEM](https://en.bem.info/methodology/) and [Sass](https://sass-lang.com/) will also be helpful.\r\n\r\n## Installation\r\nTo get started, you should already have the following installed:\r\n* [Node.js](https://nodejs.org/en/) - at least 8.9.4\r\n* [npm](https://docs.npmjs.com/getting-started/installing-node) - at least 5.6.0\r\n\r\nYou'll also want to make sure you have permissions to access Artifactory, our local npm package repository. An easy way to check is to visit the [Artifactory web page](http://artifactory.aws.athenahealth.com/webapp/#/home). If you can't view the content there, you'll need to upgrade your permissions.\r\n\r\n### Using Forge-App\r\nIf you haven't created your project yet, we recommend forking [forge-app](https://bitbucket.athenahealth.com/projects/UXDS/repos/forge-app/browse), a quick-starter project based on [create-react-app](https://github.com/facebook/create-react-app), but pre-configured to use Forge. The rest of the forge-app installation process is documented in the [forge-app readme](https://bitbucket.athenahealth.com/projects/UXDS/repos/forge-app/browse/README.md).\r\n\r\nNote that if you are unable to see content at the forge-app link above you may need to request Bitbucket permissions from IdentityIQ.\r\n\r\n### From Scratch\r\nIf your project already exists or you can't use forge-app, start by creating a `.npmrc` file in your project's root directory and add this single line so npm knows to pull from the athenahealth Artifactory:\r\n```\r\n@athena:registry=http://artifactory.aws.athenahealth.com:80/api/npm/npm-local/\r\n```\r\n\r\nTo start using Forge components in your project, add it as a dependency. In the commandline, from the root of your project:\r\n```\r\nnpm install --save @athena/forge\r\n```\r\n\r\nYou'll need to [add React and ReactDOM (v16+)](https://github.com/facebook/react/#installation) if you don't already have them. We also recommend installing [validate.js](https://validatejs.org/) and [momentjs](https://momentjs.com/docs/), but they aren't strictly required.\r\n\r\n## Hello World\r\nYou can now import Forge components from '@athena/forge' and render them within your own React code. If you go to [App.js](https://bitbucket.athenahealth.com/projects/UXDS/repos/forge-app/browse/src/App.js) in forge-app, you'll see it import the heading component via:\r\n\r\n```\r\nimport { Heading } from '@athena/forge';\r\n```\r\n\r\nAnd later render a Heading:\r\n\r\n```\r\n<Heading text=\"Welcome to Forge App!\" />\r\n```\r\n**But wait!** If you aren't using forge-app, there are a couple more steps to get your page looking right.\r\n1. Include '@athena/forge/static/css/forge.css' in your app however you are including stylesheets (webpack, link tags, …). If you need to copy the CSS file somewhere to include it, don't forget to grab the fonts as well.\r\n2. Add the `fe_f_all` class to the root of the Forge section in your app. Forge styles are polite (scoped) and only go where invited (under `fe_f_all`). Hopefully you want Forge styles on the entire page, so just put it at the root element.\r\n\r\nIf you are using forge-app, the above steps are taken care of already.\r\n\r\nCongrats! You should now be up and running with Forge.\r\n\r\nDocumentation about `Heading` and all the other Forge components, including live demos and copy-ready code, is available in the [components section of this guide]({{ path '/docs/components/heading' }}).\r\n\r\n## Advanced Topics\r\n### Forge on Part of a Page\r\nUnlike many pattern libraries, Forge is built to be consumable only on part of a page. If that's how you're using Forge, put the `fe_f_all` class on the root element of the Forge section (or each section if there are multiple) instead of at the root of the page. Note that this can't be a Forge component. Forge components must be _descendants_ of the `fe_f_all` element.\r\n\r\nIt's recommended to put the class `fe_f_typography` at the root of the page so that the entire page will at least use the same fonts.\r\n\r\n### Customizing CSS for Forge Components\r\nWith tools like [Grid]({{ path '/docs/components/grid' }}), the [typography utilities]({{ path '/docs/foundations/typography-utilities' }}), and the [layout utilities]({{ path '/docs/foundations/layout-utilities' }}), you can get pretty far with Forge without writing any of your own CSS. Further localized styling of Forge is discouraged as a general practice. Doing so defeats the maintainability of user interface patterns and undermines the overall goal of providing consistency to athenaNet user interfaces. Consider working with user experience and/or the Forge team to arrive at consistent, reusable solutions.\r\n\r\nHowever, there may be instances (e.g. legacy integrations or prototyping) where it's necessary to make some tweaks to the default Forge visuals. This will work fine out of the box, but there are things you should know if your CSS will interact with Forge CSS:\r\n* If you want to use the Forge Sass constants: ```import '@athena/forge/sass/forge-abstracts';```\r\nYou may need to add 'node_modules' to the include path for your Sass compiler, depending on your setup.\r\n* If you want to target a Forge component, add a custom class to the root of the component with the `className` prop. This prop is supported by every Forge component. Use the custom class in combination with Forge BEM classes to target elements of the component, e.g\r\n```\r\n.my-custom-tip-class .fe_c_form-field__input {\r\n    transform: rotate(12deg);\r\n}\r\n```\r\n* Most Forge CSS rules have [specificity](https://www.smashingmagazine.com/2007/07/css-specificity-things-you-should-know/) of two classes (three classes for states). Your CSS rules will need higher specificity to override them. An easy way to increase specificity is to duplicate a selector, e.g `.my-heading.my-heading.my-heading` to override the Forge rule `.fe_f_all .fe_c_heading`.\r\n\r\n\r\n## Additional Resources\r\n* [Forge Downloads]({{ path '/docs/resources/downloads' }})\r\n* [Design Systems on Confluence](https://athenaconfluence.athenahealth.com/display/UXDS/Design+Systems)\r\n * [Forge HTML/CSS Guidelines](https://athenaconfluence.athenahealth.com/pages/viewpage.action?pageId=143724287)\r\n","lang":{"name":"Markdown","mode":"markdown","scope":"source.gfm","color":"#083FA1"},"file":{"root":"C:\\","dir":"C:\\Users\\ctsui\\code\\forge-guide\\docs\\06-resources","base":"02-getting-started.md","ext":".md","name":"getting-started","relPath":"06-resources\\02-getting-started.md","fsName":"02-getting-started","path":"C:\\Users\\ctsui\\code\\forge-guide\\docs\\06-resources\\02-getting-started.md","dirs":["C:\\Users\\ctsui\\code\\forge-guide\\docs\\06-resources"],"isHidden":false,"order":2,"isFile":true,"isDirectory":false,"stat":{"dev":4102694615,"mode":33206,"nlink":1,"uid":0,"gid":0,"rdev":0,"ino":2814749768206163,"size":6452,"atimeMs":1541785521244.814,"mtimeMs":1541785521244.814,"ctimeMs":1542220931997.8418,"birthtimeMs":1541785521244.814,"atime":"2018-11-09T17:45:21.245Z","mtime":"2018-11-09T17:45:21.245Z","ctime":"2018-11-14T18:42:11.998Z","birthtime":"2018-11-09T17:45:21.245Z"},"lang":{"name":"Markdown","mode":"markdown","scope":"source.gfm","color":"#083FA1"},"isBinary":false},"context":{"extensions":{"core":{"forge-toast":{"name":"Toast","version":"0.2.2","description":"Toast component for Forge"},"forge-toggle-switch":{"name":"ToggleSwitch","version":"0.1.1","description":"ToggleSwitch component for Forge"}},"community":{"clinicals-forge-extension":{"name":"Clinicals Forge Extension","owner":"Nursing Flowsheets","url":"https://bitbucket.athenahealth.com/projects/CLIFS/repos/clinicals-forge-extension/browse","version":"2.1.1","description":"A forge-extension containing components used by inpatient clinicals"}}},"amplitudeCategory":"resources"}}</code></pre></div-->
+    <!--div class="debug"><pre><code class="language-json">{"id":"b66f92093fe7ebaa78e440b72f745cdf","name":"getting-started","handle":"getting-started","label":"Getting Started","title":"Getting Started","order":2,"isHidden":false,"alias":null,"isEntity":true,"isDoc":true,"isIndex":false,"path":"resources/getting-started","status":null,"content":"<p class=\"p--lead\">Get up and running with Forge in a few simple steps.</p>\n\n## Prerequisite Knowledge\nForge components are built in [React](https://reactjs.org/) and styled by [CSS](https://www.w3schools.com/css/). You should be familiar with the basics of React before using them. For more advanced usage, familiarity with [BEM](https://en.bem.info/methodology/) and [Sass](https://sass-lang.com/) will also be helpful.\n\n## Installation\nTo get started, you should already have the following installed:\n* [Node.js](https://nodejs.org/en/) - at least 8.9.4\n* [npm](https://docs.npmjs.com/getting-started/installing-node) - at least 5.6.0\n\nYou'll also want to make sure you have permissions to access Artifactory, our local npm package repository. An easy way to check is to visit the [Artifactory web page](http://artifactory.aws.athenahealth.com/webapp/#/home). If you can't view the content there, you'll need to upgrade your permissions.\n\n### Using Forge-App\nIf you haven't created your project yet, we recommend forking [forge-app](https://bitbucket.athenahealth.com/projects/UXDS/repos/forge-app/browse), a quick-starter project based on [create-react-app](https://github.com/facebook/create-react-app), but pre-configured to use Forge. The rest of the forge-app installation process is documented in the [forge-app readme](https://bitbucket.athenahealth.com/projects/UXDS/repos/forge-app/browse/README.md).\n\nNote that if you are unable to see content at the forge-app link above you may need to request Bitbucket permissions from IdentityIQ.\n\n### From Scratch\nIf your project already exists or you can't use forge-app, start by creating a `.npmrc` file in your project's root directory and add this single line so npm knows to pull from the athenahealth Artifactory:\n```\n@athena:registry=http://artifactory.aws.athenahealth.com:80/api/npm/npm-local/\n```\n\nTo start using Forge components in your project, add it as a dependency. In the commandline, from the root of your project:\n```\nnpm install --save @athena/forge\n```\n\nYou'll need to [add React and ReactDOM (v16+)](https://github.com/facebook/react/#installation) if you don't already have them. We also recommend installing [validate.js](https://validatejs.org/) and [momentjs](https://momentjs.com/docs/), but they aren't strictly required.\n\n## Hello World\nYou can now import Forge components from '@athena/forge' and render them within your own React code. If you go to [App.js](https://bitbucket.athenahealth.com/projects/UXDS/repos/forge-app/browse/src/App.js) in forge-app, you'll see it import the heading component via:\n\n```\nimport { Heading } from '@athena/forge';\n```\n\nAnd later render a Heading:\n\n```\n<Heading text=\"Welcome to Forge App!\" />\n```\n**But wait!** If you aren't using forge-app, there are a couple more steps to get your page looking right.\n1. Include '@athena/forge/static/css/forge.css' in your app however you are including stylesheets (webpack, link tags, …). If you need to copy the CSS file somewhere to include it, don't forget to grab the fonts as well.\n2. Add the `fe_f_all` class to the root of the Forge section in your app. Forge styles are polite (scoped) and only go where invited (under `fe_f_all`). Hopefully you want Forge styles on the entire page, so just put it at the root element.\n\nIf you are using forge-app, the above steps are taken care of already.\n\nCongrats! You should now be up and running with Forge.\n\nDocumentation about `Heading` and all the other Forge components, including live demos and copy-ready code, is available in the [components section of this guide]({{ path '/docs/components/heading' }}).\n\n## Advanced Topics\n### Forge on Part of a Page\nUnlike many pattern libraries, Forge is built to be consumable only on part of a page. If that's how you're using Forge, put the `fe_f_all` class on the root element of the Forge section (or each section if there are multiple) instead of at the root of the page. Note that this can't be a Forge component. Forge components must be _descendants_ of the `fe_f_all` element.\n\nIt's recommended to put the class `fe_f_typography` at the root of the page so that the entire page will at least use the same fonts.\n\n### Customizing CSS for Forge Components\nWith tools like [Grid]({{ path '/docs/components/grid' }}), the [typography utilities]({{ path '/docs/foundations/typography-utilities' }}), and the [layout utilities]({{ path '/docs/foundations/layout-utilities' }}), you can get pretty far with Forge without writing any of your own CSS. Further localized styling of Forge is discouraged as a general practice. Doing so defeats the maintainability of user interface patterns and undermines the overall goal of providing consistency to athenaNet user interfaces. Consider working with user experience and/or the Forge team to arrive at consistent, reusable solutions.\n\nHowever, there may be instances (e.g. legacy integrations or prototyping) where it's necessary to make some tweaks to the default Forge visuals. This will work fine out of the box, but there are things you should know if your CSS will interact with Forge CSS:\n* If you want to use the Forge Sass constants: ```import '@athena/forge/sass/forge-abstracts';```\nYou may need to add 'node_modules' to the include path for your Sass compiler, depending on your setup.\n* If you want to target a Forge component, add a custom class to the root of the component with the `className` prop. This prop is supported by every Forge component. Use the custom class in combination with Forge BEM classes to target elements of the component, e.g\n```\n.my-custom-tip-class .fe_c_form-field__input {\n    transform: rotate(12deg);\n}\n```\n* Most Forge CSS rules have [specificity](https://www.smashingmagazine.com/2007/07/css-specificity-things-you-should-know/) of two classes (three classes for states). Your CSS rules will need higher specificity to override them. An easy way to increase specificity is to duplicate a selector, e.g `.my-heading.my-heading.my-heading` to override the Forge rule `.fe_f_all .fe_c_heading`.\n\n\n## Additional Resources\n* [Forge Downloads]({{ path '/docs/resources/downloads' }})\n* [Design Systems on Confluence](https://athenaconfluence.athenahealth.com/display/UXDS/Design+Systems)\n * [Forge HTML/CSS Guidelines](https://athenaconfluence.athenahealth.com/pages/viewpage.action?pageId=143724287)\n","lang":{"name":"Markdown","mode":"markdown","scope":"source.gfm","color":"#083FA1"},"file":{"root":"C:\\","dir":"C:\\Users\\ctsui\\code\\forge-guide\\docs\\06-resources","base":"02-getting-started.md","ext":".md","name":"getting-started","relPath":"06-resources\\02-getting-started.md","fsName":"02-getting-started","path":"C:\\Users\\ctsui\\code\\forge-guide\\docs\\06-resources\\02-getting-started.md","dirs":["C:\\Users\\ctsui\\code\\forge-guide\\docs\\06-resources"],"isHidden":false,"order":2,"isFile":true,"isDirectory":false,"stat":{"dev":4102694615,"mode":33206,"nlink":1,"uid":0,"gid":0,"rdev":0,"ino":21955048183636210,"size":6372,"atimeMs":1551459688156.1887,"mtimeMs":1551459688157.192,"ctimeMs":1551895016022.545,"birthtimeMs":1551459688156.1887,"atime":"2019-03-01T17:01:28.156Z","mtime":"2019-03-01T17:01:28.157Z","ctime":"2019-03-06T17:56:56.023Z","birthtime":"2019-03-01T17:01:28.156Z"},"lang":{"name":"Markdown","mode":"markdown","scope":"source.gfm","color":"#083FA1"},"isBinary":false},"context":{"extensions":{"core":{"forge-toast":{"name":"Toast","version":"0.3.0","description":"Toast component for Forge"},"forge-toggle-switch":{"name":"ToggleSwitch","version":"0.2.0","description":"ToggleSwitch component for Forge"},"forge-multiselect-async":{"name":"MultiselectAsync","version":"0.2.0","description":"Async version of Multiselect component"}},"community":{"clinicals-forge-extension":{"name":"Clinicals Forge Extension","owner":"Nursing Flowsheets","url":"https://bitbucket.athenahealth.com/projects/CLIFS/repos/clinicals-forge-extension/browse","version":"2.2.1","description":"A forge-extension containing components used by inpatient clinicals"},"forge-virtualized-table":{"name":"Virtualized Table","owner":"Pop Health","url":"https://bitbucket.athenahealth.com/projects/UXDS/repos/forge-virtualized-table/browse","version":"0.1.0","description":"Virtualization support for the Forge Table component."}}},"amplitudeCategory":"resources"}}</code></pre></div-->
   </div>
 </div>
 

@@ -292,15 +292,15 @@
       yRange: 0.3,
       zRange: 0.8,
       ambient: '#1f1f1f',
-      diffuse: '#4997A5',
+      diffuse: '#ff5200',
       speed: 0.0003
     };
 
     var LIGHT = {
-      count: 2,
+      count: 3,
       zOffset: 150,
-      ambient: '#9F00EB',
-      diffuse: '#dddddd',
+      ambient: '#000088',
+      diffuse: '#ffffff',
       maxSpeed: 25,
       maxForce: 2,
       angle: 0,

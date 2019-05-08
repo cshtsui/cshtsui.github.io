@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+    window.frctl = {
+        env: 'static'
+    };
+    </script>
+    <script>var cl = document.querySelector('html').classList; cl.remove('no-js'); cl.add('has-js');</script>
+    <link rel="shortcut icon" href="../../favicon.ico" type="image/ico">
+
+<link rel="stylesheet" href="../../assets/css/styles.css?cachebust=1.2.0" type="text/css">
+
+<link rel="stylesheet" href="../../assets/css/prism-atom-dark.css?cachebust=1.2.0" type="text/css">
+
+<link rel="stylesheet" href="../../assets/css/ascetic.css?cachebust=1.2.0" type="text/css">
+
+<link rel="stylesheet" href="../../css/forge.css?cachebust=1.2.0" type="text/css">
+
+
+<title>Accessibility | athenahealth</title>
+
+</head>
+<body>
+
+
+
+<div class="fg_app">
+  <header class="fg_l_header">
+  <a class="fg_c_branding" href="../../index.html">
+    <img src="../../assets/images/logo.svg" />
+  </a>
+  <nav class="fg_c_nav-top">
+  <ul class="fg_c_nav-top__list">
+    
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link  fg_is-active"
+            href="principles.html"
+            title="Guidelines"
+          >
+            Guidelines
+          </a>
+        </li>
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link "
+            href="../foundations/color.html"
+            title="Foundations"
+          >
+            Foundations
+          </a>
+        </li>
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link "
+            href="../components/accordion.html"
+            title="Components"
+          >
+            Components
+          </a>
+        </li>
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link "
+            href="../extensions/forge-extensions.html"
+            title="Extensions"
+          >
+            Extensions
+          </a>
+        </li>
+      
+    
+      
+        <li class="fg_c_nav-top__list-item">
+          
+          <a
+            class="fg_c_nav-top__link "
+            href="../resources/downloads.html"
+            title="Resources"
+          >
+            Resources
+          </a>
+        </li>
+      
+    
+  </ul>
+</nav>
+
+
+  <div class="fg_c_nav-version">
+    Go to <a href="http://ah-uxds-forge-guide-release-v1.s3-website-us-east-1.amazonaws.com/">Forge 1.x</a>
+  </div>
+</header>
+
+
+  
+
+<div class="fg_l_sidebar" data-role="sidebar">
+  <nav class="fg_c_nav-left">
+  <ul class="fg_c_nav-left__list">
+  
+    
+  
+    
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="principles.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Principles</span>
+            
+              
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href="content-style-guide.html"
+            
+            class="fg_c_nav-left__link "
+          >
+            <span>Content Style Guide</span>
+            
+              
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+        <li class="fg_c_nav-left__list-item">
+          <a
+            href=""
+            
+            class="fg_c_nav-left__link  fg_is-active"
+          >
+            <span>Accessibility</span>
+            
+              
+            
+              
+            
+              
+            
+          </a>
+        </li>
+      
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  </ul>
+</nav>
+
+</div>
+
+<div class="fg_l_main" data-role="main">
+  <div class="fg_doc">
+
+    
+
+    <div class="fg_doc__header">
+      
+        <h1 class="fg_doc__title">Accessibility</h1>
+      
+    </div>
+    <div class="fg_doc__content">
+      
+
+  <div class="fg_markdown">
+    
+
+      
+      
+
+      
+        <p class="p--lead">The Forge design system is built to meet WCAG 2.0 AA accessibility requirements. Using this system is just the first step; you still need to take action on your part to build accessible products.</p>
+
+<h2 id="table-of-contents">Table of Contents</h2>
+<ul>
+<li><a href="#impairments">Types of Impairments</a></li>
+<li><a href="#why">Why This Matters</a></li>
+<li><a href="#forgeaccessibility">Forge&#39;s Support for Accessibility</a></li>
+<li><a href="#forgetesting">Forge&#39;s Testing Process</a></li>
+<li><a href="#buildingwithforge">Making Accessible Products with Forge</a></li>
+<li><a href="#community">Forge Extensions and Community Contributions</a></li>
+<li><a href="#reportissues">Reporting Accessibility Issues in Forge</a></li>
+<li><a href="#resources">Resources and Tools</a></li>
+</ul>
+<h2 id="impairments">Types of Impairments</h2>
+
+<p>Technology and assistive tools (such as screen readers) help make the web usable to people with disabilities and other impairments. But these tools can&#39;t do all the work just on their own. For these tools to provide a good experience to their users, applications need to be created using specific accessibility practices.</p>
+<p>The Forge team builds accessibility into its design system to address 3 types of impairment or disability: visual, motor, and cognitive. These cover a number of conditions and situations and affect different areas of the user experience (see table below).</p>
+<table class="fg_content-table">
+  <thead>
+    <tr>
+      <th>Type of Impairment</th>
+      <th>Examples of Conditions and Situations</th>
+      <th>Examples of UX Impact</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr>
+      <td>
+              Visual
+      </td>
+      <td>
+              <ul>
+                  <li>Blindness</li>
+                  <li>Partial sight loss (from age or illness)</li>
+                  <li>Color blindness</li>
+                  <li>Low-quality monitor</li>
+              </ul>
+      </td>
+      <td>
+              <ul>
+                  <li>Unable to see interface</li>
+                  <li>Unable to perceive color differences among elements</li>
+              </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>
+              Motor
+      </td>
+      <td>
+              <ul>
+                  <li>Muscle tremor</li>
+                  <li>Musculoskeletal disorders</li>
+                  <li>Carpal tunnel syndrome</li>
+                  <li>Hands partially full</li>
+              </ul>
+      </td>
+      <td>
+          <ul>
+                  <li>Trouble clicking on small targets</li>
+                  <li>Trouble using mouse</li>
+              </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>
+              Cognitive
+      </td>
+      <td>
+              <ul>
+                  <li>Memory problems</li>
+                  <li>ADHD</li>
+                  <li>Dyslexia, dyscalculia</li>
+                  <li>Distracting environment</li>
+                  <li>Multitasking</li>
+                  <li>Speaking English as a second language</li>
+              </ul>
+      </td>
+      <td>
+          <ul>
+                  <li>Trouble remembering where you are in a multi-step process</li>
+                  <li>Trouble reading long chunks of text</li>
+              </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>General accessibility practices usually include 2 more types: auditory (which can affect how users interpret sound) and vestibular disorders and seizures (which can affect how users react to animation). The Forge design system will address these when there is demonstrated product demand.</p>
+<h2 id="why">Why This Matters</h2>
+
+<p><strong>1. Lack of accessibility can lead to legal problems.</strong></p>
+<ul>
+<li>Inaccessible websites&#39; gaps in usability may be considered discrimination. One way that people have approached this problem is through legal action.</li>
+<li>This isn&#39;t limited to government web technology, which is required by law to be accessible (specifically, <a href="https://www.section508.gov/manage/laws-and-policies">Section 508 of the Rehabilitation Act</a>). <a href="https://www.beckershospitalreview.com/ehrs/epic-sued-by-national-federation-of-the-blind-4-things-to-know.html">Epic was sued in January 2019</a> for the lack of accessibility in its EHR software.</li>
+</ul>
+<p><strong>2. Anyone may need these features temporarily or in certain situations.</strong></p>
+<ul>
+<li>It&#39;s not just people with ongoing conditions who benefit from accessibility features. <em>All</em> of us may have a temporary issue or a situation that limits how well we can use technology. For example:<ul>
+<li>Having a broken arm that makes it hard to use a mouse</li>
+<li>Using a mobile phone with one hand while holding an infant with the other</li>
+<li>Being stuck with a low-quality monitor that renders colors and visuals poorly</li>
+<li>Working in a high-distraction environment such as an ER front desk (which can tax users&#39; cognitive abilities)</li>
+</ul>
+</li>
+</ul>
+<p><strong>3. More people may benefit from these features than just the target users.</strong></p>
+<ul>
+<li>A feature built to help users with a specific need or disability can end up helping other users, too. For example:<ul>
+<li>Designing for keyboard-only use helps both people who can&#39;t use a mouse and data entry power users who save time by not switching between mouse and keyboard.</li>
+</ul>
+</li>
+</ul>
+<p><strong>4. More people can use our products when they&#39;re accessible.</strong></p>
+<ul>
+<li>We want a wide range of people to use our products and to enjoy using them. When we build for accessibility, we welcome more possible users. By meeting them where they are, we tell them that they matter to us.</li>
+<li>In the healthcare arena, people with disabilities face challenges both as providers and patients. By accounting for accessibility in our products, we&#39;re helping to address these problems.<ul>
+<li><a href="https://www.nytimes.com/2017/07/11/upshot/doctors-with-disabilities-why-theyre-important.html">Doctors With Disabilities: Why They’re Important</a> (New York Times)</li>
+<li><a href="https://www.cdc.gov/features/disabilities-health-care-access/index.html">Disability and Access to Healthcare</a> (CDC) </li>
+</ul>
+</li>
+</ul>
+<h2 id="forgeaccessibility">Forge&#39;s Support for Accessibility</h2>
+
+<h3 id="accessibility-standards">Accessibility Standards</h3>
+<p>The Forge team builds accessibility features to meet the <a href="https://www.w3.org/TR/WCAG20/">Web Content Accessibility Guidelines (WCAG) 2.0 level AA</a>.</p>
+<h3 id="interaction-styles-and-assistive-technology">Interaction Styles and Assistive Technology</h3>
+<p>Forge components are built to be functional when used with keyboard only (no mouse) and when interpreted by screen readers.</p>
+<p>For example, the <a href="../components/toast.html"><code>Toast</code></a> component provides a keyboard shortcut to dismiss it with keystrokes rather than with a mouse. It is also built to be announced by screen readers when it appears; otherwise, users with visual impairments might not know that it is present.</p>
+<h3 id="color">Color</h3>
+<p>The <a href="../foundations/color.html">Forge color palette</a> has been designed to meet usability criteria and accessibility requirements (it&#39;s not just a matter of choosing which colors &quot;look good&quot;).</p>
+<p><strong>Contrast:</strong> <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html">WCAG 2.0 AA requires specific contrast ratios for text and background colors.</a> The Forge color palette supports this, when used appropriately. Forge components are also designed to meet this contrast level; this is confirmed with testing (see <a href="#testingtools">Testing Tools and Checklists</a>).</p>
+<p><strong>Colorblind support:</strong> Forge components incorporate color but don&#39;t rely on it solely to communicate. For example, the <a href="../components/banner.html"><code>Banner</code></a> uses alert colors and icons to convey level of importance. The Forge team has consulted people with color blindness in testing color choices.</p>
+<h3 id="copywriting">Copywriting</h3>
+<p>Writing clear and simple copy is an important part of accessibility. Product teams are responsible for writing their own copy. Forge provides support for this in the <a href="content-style-guide.html">content style guide</a> and in component-specific guidance.</p>
+<h3 id="code">Code</h3>
+<p>Under the hood, Forge&#39;s components use semantically correct HTML markup along with attributes from the <a href="https://www.w3.org/WAI/standards-guidelines/aria/">Web Accessibility Initiative - Accessible Rich Internet Applications (WAI-ARIA)</a> standards where possible. These provide information to help assistive technology interpret the screen&#39;s hierarchy and elements.</p>
+<p>Forge&#39;s developers use <a href="https://www.npmjs.com/package/eslint-plugin-jsx-a11y">eslint-plugin-jsx-a11y</a>, an eslint plugin that spots accessibility issues during coding. For example, if an element has an added onClick behavior but no equivalent for keyboard use, the plugin will call out this issue for attention.</p>
+<h2 id="forgetesting">Forge&#39;s Testing Process</h2>
+
+<p>The Forge team uses these tools and processes to carry out accessibility testing as part of component development:</p>
+<ul>
+<li><strong>Screen reader testing</strong><ul>
+<li>Apple Voiceover (system utility) with Safari</li>
+<li><a href="https://www.nvaccess.org/">NVDA screen reader</a> with Firefox</li>
+<li>The process includes confirming that:<ul>
+<li>Page elements are read aloud in the expected order (the same order as they appear visually)</li>
+<li>Alt text is present where needed and is read aloud</li>
+<li>Dynamic elements (such as Toast) are properly announced</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Keyboard-only use</strong><ul>
+<li>No special software is needed for testing keyboard-only use</li>
+<li>The process includes confirming that:<ul>
+<li>The screen can be navigated using the tab key</li>
+<li>Elements get tabbed to in the expected order (the same order as they appear visually)</li>
+<li>Users can&#39;t navigate to hidden elements</li>
+<li>Focus styles are visible</li>
+<li>Users can actually interact with elements, not just navigate to them</li>
+<li>Hotkeys/shortcut keys work</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="buildingwithforge">Making Accessible Products with Forge</h2>
+
+<p>The Forge design system is steadily working to include accessibility support for all components in the main Forge package, but <strong>this doesn&#39;t mean that any product using it is automatically accessible</strong>. Teams must also take steps themselves during design, development, and testing processes.</p>
+<h3 id="design">Design</h3>
+<p>Design aspects to consider include:</p>
+<ul>
+<li>Workflow design (e.g., planning for keyboard-only use and screen reader use, assessing the workflow for parts that may be cognitively challenging)</li>
+<li>Color choice</li>
+<li>Copywriting</li>
+</ul>
+<p><a href="https://webaim.org/resources/designers/">WebAIM&#39;s Web Accessibility for Designers</a> offers a list of principles to follow.</p>
+<h3 id="development">Development</h3>
+<p>Developers should review the documentation for Forge components. Components may have accessibility features that require implementation. For example, some include props for copy used specifically by screen readers to provide additional context.</p>
+<p>For the best results, test keyboard navigation and screen reader compatibility often, not just at the end of development. If you are using React and eslint, consider adding the <a href="https://www.npmjs.com/package/eslint-plugin-jsx-a11y">eslint-plugin-jsx-a11y</a> plugin to your project.</p>
+<h3 id="testing">Testing</h3>
+<p>Teams are responsible for testing their own applications for accessibility. This can include:</p>
+<ul>
+<li>Testing keyboard-only and screen reader use</li>
+<li>Assessing <a href="https://webaim.org/articles/evaluatingcognitive/">cognitive accessibility</a></li>
+<li>Confirming color contrast ratios</li>
+<li>Checking how the application looks on a lower-quality monitor or projector</li>
+</ul>
+<p>See the <a href="#testingtools">list of testing tools</a> below for useful plugins, checklists, and apps for accessibility testing.</p>
+<p>To thoroughly test and review your entire application, consider having an accessibility audit done by experts (which can include external consultants). This will find issues in workflows and the overall application beyond just the individual Forge components.</p>
+<h2 id="community">Forge Extensions and Community Contributions</h2>
+
+<p>WCAG 2.0 AA accessibility compliance is now required for Forge core extensions (components that will eventually be incorporated into Forge core library). The Forge team will not merge new component code to the core library unless it is accessible.</p>
+<p>Forge community extensions (components developed by product teams, often for specific product use) are supported by the teams that build them; they can meet any level of accessibility that their team is able to support. Keep in mind that a mix of accessibility standards in a screen will lower the overall accessibility experience.</p>
+<p>See the <a href="../extensions/forge-extensions.html">Extensions page</a> for more detail about core and community extensions.</p>
+<h2 id="reportissues">Reporting Accessibility Issues in Forge</h2>
+
+<p>If you spot any areas in Forge where accessibility support is missing or could use improvement, please report them to the Forge team through the <a href="http://go/forge-issues">Issue Tracker</a>. </p>
+<h2 id="resources">Resources and Tools</h2>
+
+<h3 id="standards-guidelines-and-further-reading">Standards, Guidelines, and Further Reading</h3>
+<ul>
+<li><a href="https://www.w3.org/TR/WCAG20/">Web Content Accessibility Guidelines (WCAG) 2.0</a></li>
+<li><a href="https://www.w3.org/WAI/standards-guidelines/aria/">Web Accessibility Initiative - Accessible Rich Internet Applications (WAI-ARIA)</a></li>
+<li><a href="https://www.microsoft.com/design/inclusive/">Microsoft Design: Inclusive Design</a></li>
+<li><a href="https://abookapart.com/products/accessibility-for-everyone"><em>Accessibility for Everyone</em> by Laura Kalbag</a> (2017, A Book Apart)</li>
+</ul>
+<h3 id="design-and-development">Design and Development</h3>
+<ul>
+<li><a href="https://webaim.org/resources/designers/">Web accessibility for designers</a> (WebAIM)</li>
+<li><a href="https://www.washington.edu/accessibility/checklist/keyboard/">Designing for keyboard access</a> (University of Washington)</li>
+<li><a href="https://webaim.org/articles/cognitive/design">Cognitive disabilities - Design considerations</a> (WebAIM)</li>
+</ul>
+<p><h3 id="testingtools">Testing Tools and Checklists</h3></p>
+<ul>
+<li>Development<ul>
+<li><a href="https://wave.webaim.org/extension/">WAVE browser extension for Chrome and Firefox</a> - automatically audits a website from within the browser and flags accessibility issues</li>
+</ul>
+</li>
+<li>Color and visual testing<ul>
+<li><a href="https://webaim.org/resources/contrastchecker/">Contrast checker for foreground and background values</a> (WebAIM)</li>
+</ul>
+</li>
+<li>Screen readers<ul>
+<li><a href="http://www.perkinselearning.org/technology/posts/pairing-screen-reader-web-browser">Recommended pairings of browsers and screen readers</a> (Perkins School for the Blind)</li>
+</ul>
+</li>
+<li>Other tools and checklists<ul>
+<li><a href="https://accessibility.18f.gov/keyboard/">Keyboard access testing</a> (18F)</li>
+<li><a href="https://webaim.org/articles/evaluatingcognitive/">Cognitive evaluation checklist</a> (WebAIM)</li>
+</ul>
+</li>
+</ul>
+
+      
+
+    
+  </div>
+
+  <script>
+document.addEventListener("DOMContentLoaded", function(event) {
+    if (window.amplitude) {
+        amplitude.getInstance().init('d426be2bbef81471eeac4bca0c061243');
+
+        amplitude.getInstance().logEvent('viewed page', {
+          pageName: 'Accessibility',
+          pageCategory: 'guidelines'.length > 0
+            ? 'guidelines'
+            : null,
+          forgeVersion: '2.1.0',
+          forgeGeneralVersion: /^\d*(?=\.)/.exec('2.1.0')
+            ? /^\d*(?=\.)/.exec('2.1.0').toString()
+            : null
+        });
+      }
+      else {
+        console.warn("amplitude is not logging events");
+      }
+});
+</script>
+
+
+
+    </div>
+    <!--div class="debug"><pre><code class="language-json">{"id":"cc26808a849eb1290bafc265560c2589","name":"accessibility","handle":"accessibility","label":"Accessibility","title":"Accessibility","order":3,"isHidden":false,"alias":null,"isEntity":true,"isDoc":true,"isIndex":false,"path":"guidelines/accessibility","status":null,"content":"\n<p class=\"p--lead\">The Forge design system is built to meet WCAG 2.0 AA accessibility requirements. Using this system is just the first step; you still need to take action on your part to build accessible products.</p>\n\n## Table of Contents\n* [Types of Impairments](#impairments)\n* [Why This Matters](#why)\n* [Forge's Support for Accessibility](#forgeaccessibility)\n* [Forge's Testing Process](#forgetesting)\n* [Making Accessible Products with Forge](#buildingwithforge)\n* [Forge Extensions and Community Contributions](#community)\n* [Reporting Accessibility Issues in Forge](#reportissues)\n* [Resources and Tools](#resources)\n\n\n<h2 id=\"impairments\">Types of Impairments</h2>\n\nTechnology and assistive tools (such as screen readers) help make the web usable to people with disabilities and other impairments. But these tools can't do all the work just on their own. For these tools to provide a good experience to their users, applications need to be created using specific accessibility practices.\n\nThe Forge team builds accessibility into its design system to address 3 types of impairment or disability: visual, motor, and cognitive. These cover a number of conditions and situations and affect different areas of the user experience (see table below).\n\n<table class=\"fg_content-table\">\n  <thead>\n    <tr>\n      <th>Type of Impairment</th>\n      <th>Examples of Conditions and Situations</th>\n      <th>Examples of UX Impact</th>\n    </tr>\n  </thead>\n  <tbody>\n  \t<tr>\n      <td>\n      \t\tVisual\n      </td>\n      <td>\n      \t\t<ul>\n      \t\t\t<li>Blindness</li>\n      \t\t\t<li>Partial sight loss (from age or illness)</li>\n      \t\t\t<li>Color blindness</li>\n      \t\t\t<li>Low-quality monitor</li>\n      \t\t</ul>\n      </td>\n      <td>\n      \t\t<ul>\n      \t\t\t<li>Unable to see interface</li>\n      \t\t\t<li>Unable to perceive color differences among elements</li>\n      \t\t</ul>\n      </td>\n    </tr>\n    <tr>\n      <td>\n      \t\tMotor\n      </td>\n      <td>\n      \t\t<ul>\n      \t\t\t<li>Muscle tremor</li>\n      \t\t\t<li>Musculoskeletal disorders</li>\n      \t\t\t<li>Carpal tunnel syndrome</li>\n      \t\t\t<li>Hands partially full</li>\n      \t\t</ul>\n      </td>\n      <td>\n      \t<ul>\n      \t\t\t<li>Trouble clicking on small targets</li>\n      \t\t\t<li>Trouble using mouse</li>\n      \t\t</ul>\n      </td>\n    </tr>\n    <tr>\n      <td>\n      \t\tCognitive\n      </td>\n      <td>\n      \t\t<ul>\n      \t\t\t<li>Memory problems</li>\n      \t\t\t<li>ADHD</li>\n      \t\t\t<li>Dyslexia, dyscalculia</li>\n      \t\t\t<li>Distracting environment</li>\n      \t\t\t<li>Multitasking</li>\n      \t\t\t<li>Speaking English as a second language</li>\n      \t\t</ul>\n      </td>\n      <td>\n      \t<ul>\n      \t\t\t<li>Trouble remembering where you are in a multi-step process</li>\n      \t\t\t<li>Trouble reading long chunks of text</li>\n      \t\t</ul>\n      </td>\n    </tr>\n  </tbody>\n</table>\n\nGeneral accessibility practices usually include 2 more types: auditory (which can affect how users interpret sound) and vestibular disorders and seizures (which can affect how users react to animation). The Forge design system will address these when there is demonstrated product demand.\n\n<h2 id=\"why\">Why This Matters</h2>\n\n**1. Lack of accessibility can lead to legal problems.**\n\n* Inaccessible websites' gaps in usability may be considered discrimination. One way that people have approached this problem is through legal action.\n* This isn't limited to government web technology, which is required by law to be accessible (specifically, [Section 508 of the Rehabilitation Act](https://www.section508.gov/manage/laws-and-policies)). [Epic was sued in January 2019](https://www.beckershospitalreview.com/ehrs/epic-sued-by-national-federation-of-the-blind-4-things-to-know.html) for the lack of accessibility in its EHR software.\n\n**2. Anyone may need these features temporarily or in certain situations.**\n\n* It's not just people with ongoing conditions who benefit from accessibility features. _All_ of us may have a temporary issue or a situation that limits how well we can use technology. For example:\n\t* Having a broken arm that makes it hard to use a mouse\n\t* Using a mobile phone with one hand while holding an infant with the other\n\t* Being stuck with a low-quality monitor that renders colors and visuals poorly\n\t* Working in a high-distraction environment such as an ER front desk (which can tax users' cognitive abilities)\n\n**3. More people may benefit from these features than just the target users.**\n\n* A feature built to help users with a specific need or disability can end up helping other users, too. For example:\n\t* Designing for keyboard-only use helps both people who can't use a mouse and data entry power users who save time by not switching between mouse and keyboard.\n\n**4. More people can use our products when they're accessible.**\n\n* We want a wide range of people to use our products and to enjoy using them. When we build for accessibility, we welcome more possible users. By meeting them where they are, we tell them that they matter to us.\n* In the healthcare arena, people with disabilities face challenges both as providers and patients. By accounting for accessibility in our products, we're helping to address these problems.\n\t* [Doctors With Disabilities: Why They’re Important](https://www.nytimes.com/2017/07/11/upshot/doctors-with-disabilities-why-theyre-important.html) (New York Times)\n\t* [Disability and Access to Healthcare](https://www.cdc.gov/features/disabilities-health-care-access/index.html) (CDC) \n\n\n<h2 id=\"forgeaccessibility\">Forge's Support for Accessibility</h2>\n\n### Accessibility Standards\n\nThe Forge team builds accessibility features to meet the [Web Content Accessibility Guidelines (WCAG) 2.0 level AA](https://www.w3.org/TR/WCAG20/).\n\n### Interaction Styles and Assistive Technology\n\nForge components are built to be functional when used with keyboard only (no mouse) and when interpreted by screen readers.\n\nFor example, the [`Toast`]({{ path '/docs/components/toast' }}) component provides a keyboard shortcut to dismiss it with keystrokes rather than with a mouse. It is also built to be announced by screen readers when it appears; otherwise, users with visual impairments might not know that it is present.\n\n### Color\n\nThe [Forge color palette]({{ path '/docs/foundations/color' }}) has been designed to meet usability criteria and accessibility requirements (it's not just a matter of choosing which colors \"look good\").\n\n**Contrast:** [WCAG 2.0 AA requires specific contrast ratios for text and background colors.](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html) The Forge color palette supports this, when used appropriately. Forge components are also designed to meet this contrast level; this is confirmed with testing (see [Testing Tools and Checklists](#testingtools)).\n\n**Colorblind support:** Forge components incorporate color but don't rely on it solely to communicate. For example, the [`Banner`]({{ path '/docs/components/banner' }}) uses alert colors and icons to convey level of importance. The Forge team has consulted people with color blindness in testing color choices.\n\n### Copywriting\n\nWriting clear and simple copy is an important part of accessibility. Product teams are responsible for writing their own copy. Forge provides support for this in the [content style guide]({{ path '/docs/guidelines/content-style-guide' }}) and in component-specific guidance.\n\n### Code\n\nUnder the hood, Forge's components use semantically correct HTML markup along with attributes from the [Web Accessibility Initiative - Accessible Rich Internet Applications (WAI-ARIA)](https://www.w3.org/WAI/standards-guidelines/aria/) standards where possible. These provide information to help assistive technology interpret the screen's hierarchy and elements.\n\nForge's developers use [eslint-plugin-jsx-a11y](https://www.npmjs.com/package/eslint-plugin-jsx-a11y), an eslint plugin that spots accessibility issues during coding. For example, if an element has an added onClick behavior but no equivalent for keyboard use, the plugin will call out this issue for attention.\n\n<h2 id=\"forgetesting\">Forge's Testing Process</h2>\n\nThe Forge team uses these tools and processes to carry out accessibility testing as part of component development:\n\n* **Screen reader testing**\n\t* Apple Voiceover (system utility) with Safari\n\t* [NVDA screen reader](https://www.nvaccess.org/) with Firefox\n\t*  The process includes confirming that:\n\t\t* Page elements are read aloud in the expected order (the same order as they appear visually)\n\t\t* Alt text is present where needed and is read aloud\n\t\t* Dynamic elements (such as Toast) are properly announced\n* **Keyboard-only use**\n\t* No special software is needed for testing keyboard-only use\n\t* The process includes confirming that:\n\t\t* The screen can be navigated using the tab key\n\t\t* Elements get tabbed to in the expected order (the same order as they appear visually)\n\t\t* Users can't navigate to hidden elements\n\t\t* Focus styles are visible\n\t\t* Users can actually interact with elements, not just navigate to them\n\t\t* Hotkeys/shortcut keys work\n\n\n<h2 id=\"buildingwithforge\">Making Accessible Products with Forge</h2>\n\nThe Forge design system is steadily working to include accessibility support for all components in the main Forge package, but **this doesn't mean that any product using it is automatically accessible**. Teams must also take steps themselves during design, development, and testing processes.\n\n### Design\n\nDesign aspects to consider include:\n\n* Workflow design (e.g., planning for keyboard-only use and screen reader use, assessing the workflow for parts that may be cognitively challenging)\n* Color choice\n* Copywriting\n\n[WebAIM's Web Accessibility for Designers](https://webaim.org/resources/designers/) offers a list of principles to follow.\n\n### Development\n\nDevelopers should review the documentation for Forge components. Components may have accessibility features that require implementation. For example, some include props for copy used specifically by screen readers to provide additional context.\n\nFor the best results, test keyboard navigation and screen reader compatibility often, not just at the end of development. If you are using React and eslint, consider adding the [eslint-plugin-jsx-a11y](https://www.npmjs.com/package/eslint-plugin-jsx-a11y) plugin to your project.\n\n### Testing\n\nTeams are responsible for testing their own applications for accessibility. This can include:\n\n* Testing keyboard-only and screen reader use\n* Assessing [cognitive accessibility](https://webaim.org/articles/evaluatingcognitive/)\n* Confirming color contrast ratios\n* Checking how the application looks on a lower-quality monitor or projector\n\nSee the [list of testing tools](#testingtools) below for useful plugins, checklists, and apps for accessibility testing.\n\nTo thoroughly test and review your entire application, consider having an accessibility audit done by experts (which can include external consultants). This will find issues in workflows and the overall application beyond just the individual Forge components.\n \n<h2 id=\"community\">Forge Extensions and Community Contributions</h2>\n\nWCAG 2.0 AA accessibility compliance is now required for Forge core extensions (components that will eventually be incorporated into Forge core library). The Forge team will not merge new component code to the core library unless it is accessible.\n\nForge community extensions (components developed by product teams, often for specific product use) are supported by the teams that build them; they can meet any level of accessibility that their team is able to support. Keep in mind that a mix of accessibility standards in a screen will lower the overall accessibility experience.\n\nSee the [Extensions page]({{ path '/docs/extensions/forge-extensions' }}) for more detail about core and community extensions.\n\n<h2 id=\"reportissues\">Reporting Accessibility Issues in Forge</h2>\n\nIf you spot any areas in Forge where accessibility support is missing or could use improvement, please report them to the Forge team through the [Issue Tracker](http://go/forge-issues). \n \n<h2 id=\"resources\">Resources and Tools</h2>\n\n### Standards, Guidelines, and Further Reading\n\n* [Web Content Accessibility Guidelines (WCAG) 2.0](https://www.w3.org/TR/WCAG20/)\n* [Web Accessibility Initiative - Accessible Rich Internet Applications (WAI-ARIA)](https://www.w3.org/WAI/standards-guidelines/aria/)\n* [Microsoft Design: Inclusive Design](https://www.microsoft.com/design/inclusive/)\n* [_Accessibility for Everyone_ by Laura Kalbag](https://abookapart.com/products/accessibility-for-everyone) (2017, A Book Apart)\n\n### Design and Development\n* [Web accessibility for designers](https://webaim.org/resources/designers/) (WebAIM)\n* [Designing for keyboard access](https://www.washington.edu/accessibility/checklist/keyboard/) (University of Washington)\n* [Cognitive disabilities - Design considerations](https://webaim.org/articles/cognitive/design) (WebAIM)\n\n<h3 id=\"testingtools\">Testing Tools and Checklists</h3>\n* Development\n\t* [WAVE browser extension for Chrome and Firefox](https://wave.webaim.org/extension/) - automatically audits a website from within the browser and flags accessibility issues\n* Color and visual testing\n\t* [Contrast checker for foreground and background values](https://webaim.org/resources/contrastchecker/) (WebAIM)\n* Screen readers\n\t* [Recommended pairings of browsers and screen readers](http://www.perkinselearning.org/technology/posts/pairing-screen-reader-web-browser) (Perkins School for the Blind)\n* Other tools and checklists\n\t* [Keyboard access testing](https://accessibility.18f.gov/keyboard/) (18F)\n\t* [Cognitive evaluation checklist](https://webaim.org/articles/evaluatingcognitive/) (WebAIM)\n\n\n\n","lang":{"name":"Markdown","mode":"markdown","scope":"source.gfm","color":"#083FA1"},"file":{"root":"C:\\","dir":"C:\\Users\\ctsui\\code\\forge-guide\\docs\\02-guidelines","base":"03-accessibility.md","ext":".md","name":"accessibility","relPath":"02-guidelines\\03-accessibility.md","fsName":"03-accessibility","path":"C:\\Users\\ctsui\\code\\forge-guide\\docs\\02-guidelines\\03-accessibility.md","dirs":["C:\\Users\\ctsui\\code\\forge-guide\\docs\\02-guidelines"],"isHidden":false,"order":3,"isFile":true,"isDirectory":false,"stat":{"dev":4102694615,"mode":33206,"nlink":1,"uid":0,"gid":0,"rdev":0,"ino":3096224745204550,"size":13826,"atimeMs":1556902887180.0732,"mtimeMs":1556902887180.0732,"ctimeMs":1556902887180.0732,"birthtimeMs":1556902887180.0732,"atime":"2019-05-03T17:01:27.180Z","mtime":"2019-05-03T17:01:27.180Z","ctime":"2019-05-03T17:01:27.180Z","birthtime":"2019-05-03T17:01:27.180Z"},"lang":{"name":"Markdown","mode":"markdown","scope":"source.gfm","color":"#083FA1"},"isBinary":false},"context":{"extensions":{"core":{"forge-toast":{"name":"Toast","version":"0.3.0","description":"Toast component for Forge"},"forge-toggle-switch":{"name":"ToggleSwitch","version":"0.2.0","description":"ToggleSwitch component for Forge"},"forge-multiselect-async":{"name":"MultiselectAsync","version":"0.2.0","description":"Async version of Multiselect component"}},"community":{"clinicals-forge-extension":{"name":"Clinicals Forge Extension","owner":"Nursing Flowsheets","url":"https://bitbucket.athenahealth.com/projects/CLIFS/repos/clinicals-forge-extension/browse","version":"2.2.1","description":"A forge-extension containing components used by inpatient clinicals"},"forge-virtualized-table":{"name":"Virtualized Table","owner":"Pop Health","url":"https://bitbucket.athenahealth.com/projects/UXDS/repos/forge-virtualized-table/browse","version":"0.1.0","description":"Virtualization support for the Forge Table component."}}},"amplitudeCategory":"guidelines"}}</code></pre></div-->
+  </div>
+</div>
+
+
+
+</div>
+
+
+
+
+<script src="../../assets/clipboard.min.js?cachebust=1.2.0"></script>
+
+<script src="../../assets/main.js?cachebust=1.2.0"></script>
+
+<script src="../../assets/amplitude.js?cachebust=1.2.0"></script>
+
+
+
+</body>
+</html>
