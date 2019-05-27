@@ -1,0 +1,156 @@
+$stepper-step-width:96px;
+$ball-top-margin:map-get($global-margin,xsmall);
+$stepper-step-label-width:96px;
+//min-width is # of steps * 120px;
+
+@mixin fe-stepper-ball {
+	background-color: map-get($color-font,muted);
+	border-radius:50%;
+	color: map-get($color-font,invert);
+	height:18px;
+	margin:0 auto;
+	text-align:center;
+	width:18px;
+}
+
+@mixin fe-step {
+	display:flex;
+	justify-content:space-around;
+	//The step balls are narrower so that the lines between steps are
+	//closer to the balls.
+	min-width:$stepper-step-width/2;
+}
+
+@mixin fe-step-first-last-offset {
+	&:first-child {
+		margin-left: $stepper-step-width/4;
+	}
+	&:last-child {
+		margin-right: $stepper-step-width/4;
+	}
+}
+
+@mixin fe-stepper {
+
+	.fe_c_stepper {
+		width:100%;
+
+		&__step-row {
+			display:flex;
+		}
+
+		//Step description
+		&__description {
+			display:block;
+			font-size: map-get($font-size,small);
+			margin:map-get($global-margin,xsmall) 0 0 0;
+			text-align:center;
+			width:$stepper-step-width;
+		}
+
+		&__ball {
+			@include fe-stepper-ball;
+			display:block;
+			margin-top:$ball-top-margin;
+			text-align:center;
+
+			&-label {
+				display:block;
+				font-size:small;
+				padding:0;
+			}
+		}
+
+		&__line {
+			border-bottom:3px solid grey;
+			height:3px;
+			position:relative;
+			top:11px;
+			width:100%;
+		}
+
+		&__step {
+			@include fe-step;
+			@include fe-step-first-last-offset;
+
+			&--selected {
+				@include fe-step;
+				@include fe-step-first-last-offset;
+				.fe_c_stepper__ball {
+					@include fe-stepper-ball;
+					//TODO: No semantic definition for black background
+					background-color: map-get($color-font,dark);
+					color:map-get($color-font,invert);
+					height:26px;
+					width:26px;
+					
+					&-label {
+						font-size:map-get($font-size,large);
+						font-weight:map-get($font-weights,bold);
+					}
+				}
+
+				//Style for those balls after current step
+				& ~ .fe_c_stepper__step .fe_c_stepper__ball {
+					@include fe-stepper-ball;
+					background-color:map-get($color-background,default);
+					//TODO: Add $color-border, muted?
+					border:2px solid map-get($color-font,muted);
+					color: map-get($color-font,muted);
+					margin-top:$ball-top-margin;
+					height:18px;
+					width:18px;
+
+					> .fe_c_stepper__ball-label {
+						font-size:map-get($font-size,small);
+						margin-top:-($ball-top-margin)/2;
+					}
+				}
+			}
+		}
+
+		//Navigble version has interactive styles for ball and labels
+		&--navigable {
+			.fe_c_stepper {
+				&__link {
+					border-bottom:none;
+					.fe_c_stepper__ball {
+						background-color: map-get($color-interaction,default);
+					}
+				}
+			}
+			
+
+			.fe_c_stepper__step--selected {
+				.fe_c_stepper__ball {
+					background-color: map-get($color-interaction,select);
+				}
+
+				//Style for those balls after current step
+				& ~ .fe_c_stepper__step .fe_c_stepper__ball {
+					@include fe-stepper-ball;
+					background-color: map-get($color-background,default);
+					//TODO: Need $color-border, muted instead of using $color-font?
+					border:2px solid map-get($color-font,muted);
+					color: map-get($color-font,muted);
+					margin-top:$ball-top-margin;
+					height:18px;
+					width:18px;
+
+					> .fe_c_stepper__ball-label {
+						font-size:map-get($font-size,small);
+						margin-top:-($ball-top-margin)/2;
+					}
+				}
+
+				//Style for those balls after current step but are part of a link
+				//(and therefore a previously visited step)
+				& ~ .fe_c_stepper__step .fe_c_stepper__link .fe_c_stepper__ball {
+					background-color:map-get($color-interaction,default);
+					border:2px solid map-get($color-interaction,default);
+					color: map-get($color-font,invert);
+				}
+			}
+		}
+	}
+}
